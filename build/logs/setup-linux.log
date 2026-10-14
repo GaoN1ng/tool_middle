@@ -1,0 +1,48 @@
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.12-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python3.12
+
+Processing ./build/wheelhouse/pip-25.2-py3-none-any.whl
+Installing collected packages: pip
+Successfully installed pip-25.2
+Looking in links: /var/home/gzn/ourtask/ustc_tool_middle/build/wheelhouse
+Processing ./build/wheelhouse/yara_python-4.5.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r requirements.lock (line 2))
+Processing ./build/wheelhouse/pyelftools-0.32-py3-none-any.whl (from -r requirements.lock (line 3))
+Processing ./build/wheelhouse/pefile-2024.8.26-py3-none-any.whl (from -r requirements.lock (line 4))
+Processing ./build/wheelhouse/setuptools-80.9.0-py3-none-any.whl (from -r requirements.lock (line 5))
+Processing ./build/wheelhouse/tree_sitter-0.25.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r requirements.lock (line 7))
+Processing ./build/wheelhouse/tree_sitter_javascript-0.25.0-cp310-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (from -r requirements.lock (line 8))
+Processing ./build/wheelhouse/capstone-5.0.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r requirements.lock (line 10))
+Processing ./build/wheelhouse/tree_sitter_c-0.24.1-cp310-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r requirements.lock (line 11))
+Processing ./build/wheelhouse/tree_sitter_cpp-0.23.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r requirements.lock (line 12))
+Installing collected packages: yara-python, pyelftools, tree-sitter-javascript, tree-sitter-cpp, tree-sitter-c, tree-sitter, setuptools, pefile, capstone
+
+Successfully installed capstone-5.0.6 pefile-2024.8.26 pyelftools-0.32 setuptools-80.9.0 tree-sitter-0.25.2 tree-sitter-c-0.24.1 tree-sitter-cpp-0.23.4 tree-sitter-javascript-0.25.0 yara-python-4.5.4
+Looking in links: /var/home/gzn/ourtask/ustc_tool_middle/build/wheelhouse
+Processing /var/home/gzn/ourtask/ustc_tool_middle
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: yara-python==4.5.4 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (4.5.4)
+Requirement already satisfied: pyelftools==0.32 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (0.32)
+Requirement already satisfied: pefile==2024.8.26 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (2024.8.26)
+Requirement already satisfied: tree-sitter==0.25.2 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (0.25.2)
+Requirement already satisfied: tree-sitter-javascript==0.25.0 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (0.25.0)
+Requirement already satisfied: capstone==5.0.6 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (5.0.6)
+Requirement already satisfied: tree-sitter-c==0.24.1 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (0.24.1)
+Requirement already satisfied: tree-sitter-cpp==0.23.4 in ./build/venv/lib/python3.12/site-packages (from qcs-prototype==0.1.0.post1) (0.23.4)
+Building wheels for collected packages: qcs-prototype
+  Building wheel for qcs-prototype (pyproject.toml): started
+  Building wheel for qcs-prototype (pyproject.toml): finished with status 'done'
+  Created wheel for qcs-prototype: filename=qcs_prototype-0.1.0.post1-py3-none-any.whl size=4860413 sha256=13f69dc9be26379a232164e80dd26381ce40b51411ab797994f04b674da8b27f
+  Stored in directory: /var/home/gzn/ourtask/ustc_tool_middle/build/tmp/pip-ephem-wheel-cache-13g9gb_g/wheels/35/46/d0/99009bd63a7debe824bdefc1fbacfc020215dafff9f9b5aae1
+Successfully built qcs-prototype
+Installing collected packages: qcs-prototype
+Successfully installed qcs-prototype-0.1.0.post1
+Installed. Run /var/home/gzn/ourtask/ustc_tool_middle/bin/qcs scan INPUT --output reports/scan.json

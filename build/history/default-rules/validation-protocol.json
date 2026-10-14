@@ -1,0 +1,14 @@
+{
+  "baseline": "quantum-crypto-scanner/artifacts/semantic-followup-20261013/frozen",
+  "current": "quantum-crypto-scanner/artifacts/controlflow-primitives-20261014/frozen",
+  "current_digest": "6432b91a73bbcb63b74c96f7ffca6a5b25b88839422b5a1c1243185835c6eae2",
+  "manifest_hashes": {
+    "conventional": "ec062cebc0cd22fd084e56a5a9d5f06b5de7a076df8f32fe8f198bb26b4889f7",
+    "guomi": "7644c814ba8bd20f54e90726934e0e0852e1d5b912fc459e248106b330ec3c61",
+    "cifra-sodium": "a27c65ad10d81164d0b0e0604f5dab50ca448314221a4c9dcacd9e858f42334c",
+    "axtls": "54d251dc83fa8a1f1533c3b662251ef258e39b848e849fe79f12526576d4c9ff",
+    "new-holdout": "02522f32c57a78fb2d76e67d11cb3e888a3a844539944ae8cb543ec51fd4b7e7"
+  },
+  "new_holdout_lock": "50dae5208c9e2331a2c86697621d64d9d2d2cb5553f7d28813dc6931629ee222",
+  "policy": "Results may only be reported; cannot drive detector edits or reference expansion this round"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "declared_at": "2026-10-12T07:55:24.011188+00:00",
+  "policy": "All selections, labels and build settings fixed before the first scan; frozen/current detector code, signatures, source hashes, YARA and API rules must remain unchanged. No detector output is used to select/delete/relabel samples or repair scanner behavior.",
+  "requested_size": "At least 500 distinct labeled source/linked binary objects, including positives and core-algorithm negatives. Actual count is content-hash deduplicated; counts of projects, source modules and compiler variants must be reported separately.",
+  "candidate_projects": [
+    "libtomcrypt",
+    "wolfssl",
+    "monocypher",
+    "rhash",
+    "nettle",
+    "libgcrypt"
+  ],
+  "metric_algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256"
+  ],
+  "truth": "Implementation presence follows reviewed upstream bodies, configuration and linked compilation units; explicitly named API references, if annotated, remain a separate scope. Non-core algorithms are core-universe negatives, not no-crypto claims. Header names, filenames, detector predictions and a library dependency alone do not establish implementation truth.",
+  "binary_plan": {
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "optimizations": [
+      "O0",
+      "O2",
+      "Os"
+    ],
+    "compiler": "Existing pinned Zig 0.13.0 / Clang 18.1.6",
+    "link": "Compile upstream modules with minimal reviewed feature configuration, preserve all code, independently link shared objects, hide definitions and strip symbol tables. Targets are never executed. Undefined auxiliary references are allowed and disclosed; no cryptographic function is stubbed. Build failures remain in inventory, never silently replaced based on scanner output."
+  },
+  "selection": "Manual pre-scan review of algorithm implementations and adjacent non-core/utility modules; generic EC arithmetic alone cannot be labeled ECDH/ECDSA. SHA224-only wrappers must not be labeled SHA256. Confirm no exact source/binary hash overlap with old manifests/reference libraries. Genealogical or undocumented upstream overlap cannot be ruled out solely by hashes.",
+  "independence": "New upstream module bytes not used by this project's builders or tuning; all are acceptance-only for this experiment. Same-module architecture/optimization variants are related regression objects, not independent devices. Existing upstream YARA rule design predates this project and may have undisclosed reference overlap; disclose this limitation.",
+  "outputs": [
+    "freeze.json",
+    "downloads.lock.json",
+    "annotations.json",
+    "build-log.json",
+    "manifest.json",
+    "pre-scan-lock.json",
+    "results/summary.json",
+    "results/samples.csv",
+    "results/metrics.csv",
+    "results/overview.json",
+    "README.md"
+  ],
+  "success": "A complete, reproducible assessment with accurate error/miss reporting, not a preselected accuracy or recall threshold. No success condition depends on detecting all new samples.",
+  "preparation_notes": "All preparation completed before first scanning. Upstream LTC_SOURCE and wolfSSL BLAKE2 macros corrected; inspected Nettle DES build helper generated headers. Debug symbols retained for pre-strip checking, then nonallocated symbols/debug metadata zeroed in place to preserve all loaded bytes on both byte orders. Earlier unsuccessful/interrupted setup attempts retained. No detector prediction used.",
+  "detector_frozen_at": "2026-10-12T07:27:34.289004+00:00"
+}

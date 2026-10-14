@@ -1,0 +1,2337 @@
+{
+  "schema_version": "1.0",
+  "algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256"
+  ],
+  "split_policy": "Reference database uses O1/O2/Os. Validation relinks original sources with different module order and diagnostic padding. O0 and SHA256-only configuration are held out. An initial O3 probe yielded binaries identical to O2, so it is preserved in build artifacts and is not counted as independent validation. All are related build variants, not independent blind implementation families; negatives and failures remain in denominators.",
+  "samples": [
+    {
+      "id": "x86_64-rsa-O2",
+      "path": "binaries/x86_64/rsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "218859d8dd86575fd9ba53e6d624ae75b8eddc8cb233e4e9aa63e49a2e2e5d35",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-rsa-O0",
+      "path": "binaries/x86_64/rsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "786b6affdd41b6eb01267728aa9a352376f6299875a6825b4fe79a734468dd3f",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-ecdh-O2",
+      "path": "binaries/x86_64/ecdh-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "f4979306a2a185a238148d51db1146027a26cd7e23b93ea72aa8ac0e7034b826",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-ecdh-O0",
+      "path": "binaries/x86_64/ecdh-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "3be1d6a9d1659ba524ae3e8f9a669299591276c3fae815e550383730aebcd1d0",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-ecdsa-O2",
+      "path": "binaries/x86_64/ecdsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "f569622292a350d8b5a89ad8ddd1d1aa8e8eab307853ea11382edd9cfd7e086f",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-ecdsa-O0",
+      "path": "binaries/x86_64/ecdsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "0a63126f8e2d1016c9875c32c7927e76ba37b9c4202d93edeb073241ac07a53a",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-sha256-O2",
+      "path": "binaries/x86_64/sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "051e42de580663c429f061e9175a90241a5e549347fad752bc77e6144a0027c6",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-sha256-O0",
+      "path": "binaries/x86_64/sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "97b0abda96fe091cf6a6d0a17148a340b500165848c8e7c79417cd313968c0ec",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-mbed-sha256-O2",
+      "path": "binaries/x86_64/mbed-sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "59300c302b5aaa808179d51efffd135b079bd06ebc25e93e54090746af968bf3",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-mbed-sha256-O0",
+      "path": "binaries/x86_64/mbed-sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "335c86996b418893aa26a8ff318eab7b9a51f213f21d29e0d0e76b21c79f025f",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-micro-ecc-O2",
+      "path": "binaries/x86_64/micro-ecc-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "8ae2939c5d26312e50e9df5c5829cf1d6771212afa4616f0e3bd043db30a65b8",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-micro-ecc-O0",
+      "path": "binaries/x86_64/micro-ecc-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "f39f4cd576401babef7814e76e06462b2f571ad768bbea98429bd1e5e83588ec",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-sha224-only-O2",
+      "path": "binaries/x86_64/sha224-only-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA224_C enabled, SHA256 variant excluded by preprocessor; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "2d8e11069b20dc2cb302a5709fc3089c8a38bbda36c4f66e60be07a19ad463b4",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha224-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha224-only",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-sha256-only-config-O2",
+      "path": "binaries/x86_64/sha256-only-config-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "6f62a98e5922d28aeab922961b6343dedefc374d0c8df6cb085788a196275cbc",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-sha256-only-config-O0",
+      "path": "binaries/x86_64/sha256-only-config-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "0f9243bd84594d3a2bc7cc99c06440fb7e25df12676c3064182b5dd616037320",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "x86_64-tiny-sha224-decoy-O2",
+      "path": "binaries/x86_64/tiny-sha224-decoy-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "RFC6234 SHA224 IV and 7 output words replace original TinyCrypt SHA256; original SHA256 IV/K added as inert decoy; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "61513d45d3e54e047ec49c5ca7efb1f37edc30f1d828ad214163f6189c94da77",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "tiny-sha224-decoy",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-blake2s-O2",
+      "path": "binaries/x86_64/blake2s-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Official BLAKE2s reference implementation; shares SHA256 IV but different algorithm, outside ten-core universe; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "03b512a5137db72ba180e587e5c66ededcbc81c02b0d9ccba52cab0440137f54",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/BLAKE2-ed1974ea83433eba7b2d95c5dcd9ac33cb847913/ref"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "blake2s",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-generic-ec-O2",
+      "path": "binaries/x86_64/generic-ec-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic curve math only; ecc_dh.c and ecc_dsa.c deliberately excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "c0f467d291925a0f53ade43f0ff4b4b6ab2c632695d90a6d33b649ed42e4017b",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-ec",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-generic-bignum-O2",
+      "path": "binaries/x86_64/generic-bignum-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic arbitrary precision arithmetic module only; rsa.c excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "bddccb95d78eebf43b76c93e5e23a2c483805f122f18219b8816a152ee18034c",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-bignum",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-inert-constants-O2",
+      "path": "binaries/x86_64/inert-constants-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "IV and all64 round constants in data only; no SHA function; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "7659f9833ec8226d8295dae8bce7ca31a86c8a3b75c9dec77874fffc52fa7e85",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "inert-constants",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "x86_64-code-as-data-O2",
+      "path": "binaries/x86_64/code-as-data-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known function bytes stored only in non-executable load segment; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "b920849dea331236b55288ed6625f735276ec46168eec34c01dd14d72dad3aca",
+      "architecture": "x86_64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "x86_64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "code-as-data",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-rsa-O2",
+      "path": "binaries/aarch64/rsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "696bbb47746957705899926509645de69357815f48d0b4cb5922f3312b430cd7",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-rsa-O0",
+      "path": "binaries/aarch64/rsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "a3d84c4bc8f44702124a9a50f34ce7bc7a1b2b9534e411f743680aef2180c5e0",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-ecdh-O2",
+      "path": "binaries/aarch64/ecdh-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "e3de8e2e3ad5a80ef03708f28357392f9381cda6e84c3f9c11f02824fcbe38e6",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-ecdh-O0",
+      "path": "binaries/aarch64/ecdh-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "b42997b67ae6fc1307d5e0dd56d7002a105547502c661b514b8496ca8b3c928b",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-ecdsa-O2",
+      "path": "binaries/aarch64/ecdsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "bf6c55d11ba736f1479152a4744419124ca46705fa80af410b7b378cb0de9495",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-ecdsa-O0",
+      "path": "binaries/aarch64/ecdsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "877bde88392c88ee7abfa4740aeee861328d19432335ca7045ecddd396f8618e",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-sha256-O2",
+      "path": "binaries/aarch64/sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "782ff25881c1907da1d45f09a7e29c0686d728e1a5bd88317a1852f4e7f56df9",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-sha256-O0",
+      "path": "binaries/aarch64/sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "c3a45c41a95c152b1f1e28da65d25eb4b532e32a9c042853d0aa4ab851108b0b",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-mbed-sha256-O2",
+      "path": "binaries/aarch64/mbed-sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "9ca1ed90ad4aac386b208dde540aead4b8abf4e14add0068452328bfb5ed18c2",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-mbed-sha256-O0",
+      "path": "binaries/aarch64/mbed-sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "7675ae506ee9c629c907453050eb5cfed43c17995874175684c92bf1b3962486",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-micro-ecc-O2",
+      "path": "binaries/aarch64/micro-ecc-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "31116f393e3f9f2ccdcc17582e4e428e13597f08106ad7d3265b801571eb840d",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-micro-ecc-O0",
+      "path": "binaries/aarch64/micro-ecc-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "e6db282c4ffdabbcf7a43180faef81fa219023470dd3e9ae570344584489895d",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-sha224-only-O2",
+      "path": "binaries/aarch64/sha224-only-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA224_C enabled, SHA256 variant excluded by preprocessor; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "4e618aec2a9541f3b0eef1a9a8432d111d9bfcad90f118814d973bd741acfdd2",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha224-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha224-only",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-sha256-only-config-O2",
+      "path": "binaries/aarch64/sha256-only-config-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "e10426270487cdd18e3e225a95d00d46ab8fcc5962e7b726b63d1a9065a96520",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-sha256-only-config-O0",
+      "path": "binaries/aarch64/sha256-only-config-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "4f9861d70ce226d9b766f1b7789257f729dcd6847173d473424114b20a1c05c4",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "aarch64-tiny-sha224-decoy-O2",
+      "path": "binaries/aarch64/tiny-sha224-decoy-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "RFC6234 SHA224 IV and 7 output words replace original TinyCrypt SHA256; original SHA256 IV/K added as inert decoy; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "5188e46fb2ce931dfe5d476151bbccff6f4592dff11c8b385514a5b896d0f9c3",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "tiny-sha224-decoy",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-blake2s-O2",
+      "path": "binaries/aarch64/blake2s-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Official BLAKE2s reference implementation; shares SHA256 IV but different algorithm, outside ten-core universe; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "b18a5ce38e3bba493a3c5290f00a078126aa24cf7e47c5a091418e182beb3f27",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/BLAKE2-ed1974ea83433eba7b2d95c5dcd9ac33cb847913/ref"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "blake2s",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-generic-ec-O2",
+      "path": "binaries/aarch64/generic-ec-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic curve math only; ecc_dh.c and ecc_dsa.c deliberately excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "09df7831479c4ef00e1ca1bb4a184380fdb63ec7e3fa724765247923bde2fea4",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-ec",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-generic-bignum-O2",
+      "path": "binaries/aarch64/generic-bignum-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic arbitrary precision arithmetic module only; rsa.c excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "7f93de582b12c24d45c0451e395b072b5ee9fbf72522e2d351613bd13ddbf048",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-bignum",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-inert-constants-O2",
+      "path": "binaries/aarch64/inert-constants-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "IV and all64 round constants in data only; no SHA function; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "481eb7a54df51374cafffa1071d3063edc80607ae8a3d26a05a17db58af4f47a",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "inert-constants",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "aarch64-code-as-data-O2",
+      "path": "binaries/aarch64/code-as-data-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known function bytes stored only in non-executable load segment; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "70ef79102b3bd1a50723f2c2eb5fd6302a211880aff5a18622637b271012389e",
+      "architecture": "aarch64",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "aarch64-linux-musl",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "code-as-data",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-rsa-O2",
+      "path": "binaries/arm/rsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "2cb6087685a603a8c34a4885c8b15a0293247c8f09d27ae564d63d5ee3d99828",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-rsa-O0",
+      "path": "binaries/arm/rsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known mbedTLS RSA module; functions retained despite symbol hiding and stripping; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "sha256": "4829921a33285f2902b9bb48a55c2a0c502b517d679a3698c53ece906ff7e9bb",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "rsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-ecdh-O2",
+      "path": "binaries/arm/ecdh-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "23a25df91c3310d1288e7cda454378c7eb9ea36c43621bf20dab74ff0089306b",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-ecdh-O0",
+      "path": "binaries/arm/ecdh-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECC agreement module; generic ECC is support only; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "sha256": "8ed1e326940b391b6a340befdcd356d51af2d36f64f392e0597cc43e63783f0f",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdh",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-ecdsa-O2",
+      "path": "binaries/arm/ecdsa-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "7a4e160f985c854f53939ca549437013125f2b1c849163e10a8d3e94348a6f1f",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-ecdsa-O0",
+      "path": "binaries/arm/ecdsa-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt ECDSA compilation units include SHA256/HMAC support; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA",
+          "SHA-256"
+        ]
+      },
+      "sha256": "c2f349a1328c0d059e099fc12943ba469bb78a0c6a3f4b1a29f341c9412bd85b",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "ecdsa",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-sha256-O2",
+      "path": "binaries/arm/sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "4870d79a19c3e6da56ee38d0cee40935b50fb6eae5243fefd1abe9fe03a7db20",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-sha256-O0",
+      "path": "binaries/arm/sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "TinyCrypt SHA256 init/update/final implementation; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "89215765d0d1e118c2e1c46a72e8001b4aa48aa162814e5757f6d4c7b9c732df",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-mbed-sha256-O2",
+      "path": "binaries/arm/mbed-sha256-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "4a2218c1fa275e647e8aa18c8b0719dd12e6ba055ad6476975ce18bbcc490978",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-mbed-sha256-O0",
+      "path": "binaries/arm/mbed-sha256-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Default mbedTLS configuration contains both SHA224 and SHA256; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "56050ba9189a63fe630ee4ea5529a21c9b7c4ca4d69e5c056bdc78cc713daf53",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "mbed-sha256",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-micro-ecc-O2",
+      "path": "binaries/arm/micro-ecc-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "83757e6ffd0aabe3d3f4d3c6481b9a2909a9c5d074fefc72687e1fb95da51486",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-micro-ecc-O0",
+      "path": "binaries/arm/micro-ecc-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Original micro-ecc uECC.c contains agreement and signature implementations; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH",
+          "ECDSA"
+        ]
+      },
+      "sha256": "25a4f67091e08f70455650a5b32780be3087fc06236530466cc5263f752c0179",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DuECC_PLATFORM=uECC_arch_other",
+        "-DuECC_WORD_SIZE=4",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "micro-ecc",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-sha224-only-O2",
+      "path": "binaries/arm/sha224-only-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA224_C enabled, SHA256 variant excluded by preprocessor; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "9d644f8a5ebed5b58425de70f77ed439d1801523a7ec1fdd79cfd837a78364eb",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha224-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha224-only",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-sha256-only-config-O2",
+      "path": "binaries/arm/sha256-only-config-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "3e7724cbe2881eda31972908797be32990d69b1348be54aec25cc8d02d6f870c",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "configured_O2",
+      "negative_control": false
+    },
+    {
+      "id": "arm-sha256-only-config-O0",
+      "path": "binaries/arm/sha256-only-config-O0.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Only MBEDTLS_SHA256_C enabled; changed configuration held out from signature database; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "sha256": "190ff18d8c0aca5d7ba018ae35e1f793925103afa46e925965d89beadfbe851f",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O0",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-DMBEDTLS_CONFIG_FILE=\"/var/home/gzn/ourtask/samples/stripped-repair/authored/sha256-config.h\"",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "sha256-only-config",
+      "signature_domain": "O0_holdout",
+      "negative_control": false
+    },
+    {
+      "id": "arm-tiny-sha224-decoy-O2",
+      "path": "binaries/arm/tiny-sha224-decoy-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "RFC6234 SHA224 IV and 7 output words replace original TinyCrypt SHA256; original SHA256 IV/K added as inert decoy; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "4ceb7a808e9610d6eea52064ea1c0446863827e843582da15127899afa69eaf2",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "tiny-sha224-decoy",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-blake2s-O2",
+      "path": "binaries/arm/blake2s-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Official BLAKE2s reference implementation; shares SHA256 IV but different algorithm, outside ten-core universe; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "133b9909fbf77ba701ee81974b360d71865a778012bc741ef73c50a38319acc2",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/stripped-repair/sources/BLAKE2-ed1974ea83433eba7b2d95c5dcd9ac33cb847913/ref"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "blake2s",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-generic-ec-O2",
+      "path": "binaries/arm/generic-ec-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic curve math only; ecc_dh.c and ecc_dsa.c deliberately excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "d869d11ccc44f97ccf4b0ddc6829598d281050e6ee1c520746b0feb0521c786a",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+        "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-ec",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-generic-bignum-O2",
+      "path": "binaries/arm/generic-bignum-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Generic arbitrary precision arithmetic module only; rsa.c excluded; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "02d42b476619526f7c9abe81b9a30144e2cf19628c7fa547060336ce53964a2d",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library"
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "generic-bignum",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-inert-constants-O2",
+      "path": "binaries/arm/inert-constants-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "IV and all64 round constants in data only; no SHA function; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "a072b1a847b4ceabae23ece1c8931c0a0476cb4df91a1c996ed9d5868afdc004",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "inert-constants",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    },
+    {
+      "id": "arm-code-as-data-O2",
+      "path": "binaries/arm/code-as-data-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Pinned upstream compilation units; see build-log.json and sources.lock.json",
+      "license": "Upstream BSD-3-Clause/BSD-2-Clause/Apache-2.0 or GPL-2.0-or-later/CC0 retained in source",
+      "build": "python tools/build_signature_validation.py",
+      "truth_basis": "Known function bytes stored only in non-executable load segment; shared module may have unresolved support imports; no target execution or runtime-use claim",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": []
+      },
+      "sha256": "a91ad098fc35a32643c10b77aef9fc4c920128e5d10af9ae8804ee3af629ec74",
+      "architecture": "arm",
+      "symbol_state": "stripped",
+      "compiler_flags": [
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-target",
+        "arm-linux-musleabihf",
+        "-s",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "terminal_business_type": null,
+      "project": "repair-regression",
+      "family": "code-as-data",
+      "signature_domain": "configured_O2",
+      "negative_control": true
+    }
+  ]
+}

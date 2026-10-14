@@ -1,0 +1,257 @@
+"""SM2 arithmetic-call equations in ELF with generic imported math operations.
+
+Relocation-backed imports or complete development primitive/callee matches
+supply semantics. Unrecognised static functions are never guessed from names. Pointer lifting
+is bounded to x86-64 SysV, AArch64 and ARM AAPCS and follows recorded successful-operation
+order; it is not execution or a full CFG feasibility proof.
+"""
+from .bignum import Equations, OPERATIONS
+from ..operation_bignum import ConventionalEquations,EXPONENTS,CURVE_MUL
+import re
+
+TRUSTED=set(OPERATIONS)|{'EC_POINT_mul','EC_POINT_get_affine_coordinates',
+    'EC_POINT_get_affine_coordinates_GFp','BN_value_one','ossl_ec_group_do_inverse_ord',
+    'bn_to_mont_fixed_top','BN_to_montgomery','bn_mul_mont_fixed_top','BN_mod_mul_montgomery',
+    'EC_GROUP_get0_order','EC_GROUP_get_mont_data'}
+TRUSTED.update(EXPONENTS)
+TRUSTED.update(CURVE_MUL)
+TRUSTED.update({'BN_bn2bin','BN_bn2binpad','mbedtls_mpi_write_binary'})
+TRUSTED.update({'nn_inc','nn_export_to_buf','fp_export_to_buf','prj_pt_unique',
+                'prj_pt_import_from_buf','prj_pt_import_from_aff_buf',
+                'ec_pub_key_import_from_aff_buf','_prj_pt_unprotected_mult'})
+
+
+def import_slots(path):
+    from elftools.elf.elffile import ELFFile
+    from elftools.elf.relocation import RelocationSection
+    slots={}
+    with path.open('rb') as f:
+        if f.read(4)!=b'\x7fELF':return slots
+        f.seek(0);elf=ELFFile(f)
+        for section in elf.iter_sections():
+            if not isinstance(section,RelocationSection):continue
+            syms=elf.get_section(section['sh_link'])
+            for reloc in section.iter_relocations():
+                index=reloc['r_info_sym']
+                if not index:continue
+                sym=syms.get_symbol(index)
+                if sym['st_shndx']=='SHN_UNDEF':slots[reloc['r_offset']]=sym.name
+    return slots
+
+
+class PointerLift:
+    def __init__(self,domain,regions,slots,static_targets=None):
+        from .binary_semantics import Lift
+        self.domain,self.regions,self.slots=domain,regions,slots
+        self.keys=Lift(domain,[],regions)
+        self.regs={};self.memory={};self.equations=ConventionalEquations();self.matches=[]
+        self.frame=0;self.calls=0
+        self.target_cache={}
+        self.static_targets=static_targets or {}
+
+    def key(self,ins,reg):return self.keys.key(ins,reg)
+    def reg(self,ins,reg):
+        key=self.key(ins,reg)
+        if key in {'xzr','wzr'}:return '0'
+        if key not in self.regs:self.regs[key]=('stack:'+str(self.frame)+'[0]' if key=='sp' else 'input:'+str(self.frame)+':'+key)
+        return self.regs[key]
+    def address(self,ins,op):
+        mem=op.mem
+        if mem.base and ins.reg_name(mem.base)=='rip':return ins.address+ins.size+mem.disp
+        if not mem.base:return mem.disp
+        base=self.reg(ins,mem.base)
+        if mem.index:return None
+        if base.isdigit():return int(base)+mem.disp
+        return self.offset(base,mem.disp)
+    @staticmethod
+    def offset(base,delta):
+        if str(base).lstrip('-').isdigit():return int(base)+delta
+        match=re.fullmatch(r'(.*)\[(-?\d+)\]',str(base))
+        if match:base,old=match.groups();delta+=int(old)
+        return str(base)+'['+str(delta)+']'
+    def value(self,ins,op):
+        if op.type==1:return self.reg(ins,op.reg)
+        if op.type==2:return str(op.imm)
+        if op.type==3:
+            address=self.address(ins,op)
+            if address is None:return 'unknown@'+str(ins.address)
+            return self.memory.get(address,'load:'+str(address))
+        return 'unknown@'+str(ins.address)
+    def write(self,ins,op,value):
+        if op.type==1:self.regs[self.key(ins,op.reg)]=value
+        elif op.type==3:
+            address=self.address(ins,op)
+            if address is not None:self.memory[address]=value
+
+    def target(self,ins):
+        from .binary_semantics import disassembler,decode
+        ops=ins.operands
+        if len(ops)!=1:return None
+        if ops[0].type==3:return self.slots.get(self.address(ins,ops[0]))
+        if ops[0].type!=2:return None
+        dest=ops[0].imm
+        if dest in self.static_targets:return self.static_targets[dest]
+        if self.domain=='thumb' and ins.mnemonic.split('.')[0]=='b':
+            dest=self.thumb_veneer(dest)
+            if dest is None:return None
+        if (dest,self.domain) in self.target_cache:return self.target_cache[dest,self.domain]
+        result=self.resolve_stub(dest)
+        self.target_cache[dest,self.domain]=result
+        return result
+
+    def thumb_veneer(self,dest):
+        """Resolve a small interworking tail veneer, no arbitrary function."""
+        from .binary_semantics import disassembler,decode
+        raw=next((data[dest-base:dest-base+24] for base,_,data,flags in self.regions if flags&1 and base<=dest<base+len(data)),None)
+        if not raw:return None
+        regs={}
+        for n,op in enumerate(decode(disassembler('thumb'),raw,dest)):
+            if n>=5 or not op.id:return None
+            o=op.operands;m=op.mnemonic.split('.')[0]
+            if m in {'movw','movt'} and len(o)==2 and o[1].type==2:
+                k=op.reg_name(o[0].reg)
+                if m=='movt' and k not in regs:return None
+                regs[k]=o[1].imm if m=='movw' else (regs[k]&65535)|(o[1].imm<<16)
+            elif m=='add' and len(o)==2 and o[1].type==1 and op.reg_name(o[1].reg)=='pc':
+                k=op.reg_name(o[0].reg)
+                if k not in regs:return None
+                regs[k]+=op.address+4
+            elif m=='bx' and len(o)==1:return regs.get(op.reg_name(o[0].reg))
+            else:return None
+        return None
+
+    def resolve_stub(self,dest):
+        from .binary_semantics import disassembler,decode
+        raw=next((data[dest-base:dest-base+32] for base,_,data,flags in self.regions
+                  if flags&1 and base<=dest<base+len(data)),None)
+        if not raw:return None
+        # PLT stubs only. The resolved import must have an undefined relocation.
+        regs={}
+        # Thumb BLX calls ARM-mode ELF PLT entries. Decode that interworking
+        # target with ARM, never infer the API from the target's own symbols.
+        stub_domain='arm' if self.domain in {'arm','thumb'} else self.domain
+        for n,op in enumerate(decode(disassembler(stub_domain),raw,dest)):
+            if n>5 or not op.id:break
+            if self.domain=='x86_64' and op.mnemonic=='jmp' and op.operands[0].type==3:
+                mem=op.operands[0].mem
+                if op.reg_name(mem.base)=='rip':return self.slots.get(op.address+op.size+mem.disp)
+            if self.domain=='aarch64':
+                o=op.operands
+                if op.mnemonic=='adrp':regs[op.reg_name(o[0].reg)]=o[1].imm
+                elif op.mnemonic=='ldr' and o[1].type==3:
+                    base=regs.get(op.reg_name(o[1].mem.base))
+                    if base is not None:
+                        name=self.slots.get(base+o[1].mem.disp)
+                        if name:regs[op.reg_name(o[0].reg)]=name
+                elif op.mnemonic=='br':
+                    name=regs.get(op.reg_name(o[0].reg))
+                    return name if isinstance(name,str) else None
+            if stub_domain=='arm':
+                o=op.operands
+                if op.mnemonic=='add' and len(o)>=3 and o[1].type==1 and o[2].type==2:
+                    source=op.reg_name(o[1].reg)
+                    base=op.address+8 if source=='pc' else regs.get(source)
+                    # Capstone represents ARM modified-immediate PLT ADDs
+                    # as #imm,#rotation, not the already rotated constant.
+                    imm=o[2].imm&0xffffffff
+                    if len(o)==4 and o[3].type==2:
+                        r=o[3].imm&31;imm=((imm>>r)|(imm<<(32-r)))&0xffffffff if r else imm
+                    if isinstance(base,int):regs[op.reg_name(o[0].reg)]=base+imm
+                elif op.mnemonic=='ldr' and len(o)==2 and o[1].type==3 and op.reg_name(o[0].reg)=='pc':
+                    base=regs.get(op.reg_name(o[1].mem.base))
+                    return self.slots.get(base+o[1].mem.disp) if isinstance(base,int) else None
+        return None
+
+    def finish(self):
+        self.matches.extend(self.equations.matches)
+        self.matches.extend(self.equations.general_matches)
+        self.equations=ConventionalEquations();self.regs={};self.memory={};self.frame+=1
+
+    def step(self,ins):
+        import capstone as cs
+        if not ins.id:return
+        ops=ins.operands;m=ins.mnemonic.split('.')[0]
+        arm=self.domain in {'arm','thumb'}
+        if arm and m in {'movs','adds','subs'}:m=m[:-1]
+        if ins.group(cs.CS_GRP_RET) or (arm and ((m=='pop' and any(o.type==1 and ins.reg_name(o.reg)=='pc' for o in ops)) or (m=='bx' and ops and ins.reg_name(ops[0].reg)=='lr'))):
+            self.finish();return
+        tail=ins.group(cs.CS_GRP_JUMP) and m in {'jmp','b'} and self.target(ins) in TRUSTED
+        if ins.group(cs.CS_GRP_CALL) or tail:
+            name=self.target(ins);self.calls+=1
+            argsregs=(['rdi','rsi','rdx','rcx','r8','r9'] if self.domain=='x86_64' else ['r'+str(i) for i in range(4)] if arm else ['x'+str(i) for i in range(8)])
+            args=[self.regs.get(k,'unknown-argument@'+str(ins.address)+':'+k) for k in argsregs]
+            if arm:
+                sp=self.regs.get('sp','stack:'+str(self.frame)+'[0]')
+                args.extend(self.memory.get(self.offset(sp,i),'load:'+str(self.offset(sp,i))) for i in range(0,16,4))
+            self.equations.feed(name or 'unknown-local-call',args,ins.address)
+            saved=({'rbx','rbp','rsp','r12','r13','r14','r15'} if self.domain=='x86_64' else {'sp','fp','sb','sl',*('r'+str(i) for i in range(4,12))} if arm else {'sp','fp',*('x'+str(i) for i in range(19,30))})
+            self.regs={k:v for k,v in self.regs.items() if k in saved}
+            ret='rax' if self.domain=='x86_64' else 'r0' if arm else 'x0'
+            self.regs[ret]='1' if name=='BN_value_one' else 'result@'+str(ins.address)
+            if name=='EC_GROUP_get0_order':self.equations.group_orders[args[0]]=self.regs[ret]
+            elif name=='EC_GROUP_get_mont_data':self.equations.mont_groups[self.regs[ret]]=args[0]
+            if tail:
+                self.finish()
+            return
+        if arm and m=='push':
+            sp=self.regs.get('sp','stack:'+str(self.frame)+'[0]');new=self.offset(sp,-4*len(ops))
+            for i,o in enumerate(ops):self.memory[self.offset(new,4*i)]=self.value(ins,o)
+            self.regs['sp']=str(new);return
+        if arm and m=='pop':
+            sp=self.regs.get('sp','stack:'+str(self.frame)+'[0]')
+            for i,o in enumerate(ops):self.write(ins,o,self.memory.get(self.offset(sp,4*i),'load:'+str(self.offset(sp,4*i))))
+            self.regs['sp']=str(self.offset(sp,4*len(ops)));return
+        if arm and m in {'stm','stmia','ldm','ldmia'} and len(ops)>1 and ops[0].type==1:
+            base=self.value(ins,ops[0]);values=[self.value(ins,o) for o in ops[1:]]
+            for i,o in enumerate(ops[1:]):
+                address=self.offset(base,4*i)
+                if m.startswith('stm'):self.memory[address]=values[i]
+                else:self.write(ins,o,self.memory.get(address,'load:'+str(address)))
+            if ins.writeback:self.write(ins,ops[0],str(self.offset(base,4*(len(ops)-1))))
+            return
+        if m in {'mov','movw','movabs','movzx','movsxd','ldr','ldur','str','stur'} and len(ops)==2:
+            dest,src=(ops[1],ops[0]) if m in {'str','stur'} else ops
+            self.write(ins,dest,self.value(ins,src));return
+        if m=='lea' and len(ops)==2:
+            self.write(ins,ops[0],str(self.address(ins,ops[1])));return
+        if m in {'xor','eor'} and len(ops)>=2 and ops[-1].type==ops[-2].type==1 and ops[-1].reg==ops[-2].reg:
+            self.write(ins,ops[0],'0');return
+        if m in {'adr','adrp'} and len(ops)==2:
+            self.write(ins,ops[0],str(ops[1].imm));return
+        if m in {'add','sub'} and len(ops)>=2 and ops[-1].type==2:
+            source=ops[0] if self.domain=='x86_64' or len(ops)==2 else ops[1]
+            value=self.value(ins,source);delta=ops[-1].imm*(1 if m=='add' else -1)
+            self.write(ins,ops[0],str(self.offset(value,delta)));return
+        if m in {'stp','ldp','strd','ldrd'} and len(ops)==3 and ops[2].type==3:
+            address=self.address(ins,ops[2]);second=self.offset(address,4 if arm else 8)
+            if m in {'stp','strd'}:self.memory[address]=self.value(ins,ops[0]);self.memory[second]=self.value(ins,ops[1])
+            else:
+                self.write(ins,ops[0],self.memory.get(address,'load:'+str(address)))
+                self.write(ins,ops[1],self.memory.get(second,'load:'+str(second)))
+            return
+        if ins.group(cs.CS_GRP_JUMP):return
+        try:_,written=ins.regs_access()
+        except cs.CsError:written=[]
+        for reg in written:
+            key=self.key(ins,reg)
+            if key not in {'rsp','sp','rip','pc','eflags','nzcv'}:self.regs[key]='unknown@'+str(ins.address)+':'+key
+
+
+def binary_equations(path,regions,domain,deadline,*,primitive_records=None):
+    import time
+    from .binary_semantics import disassembler,decode
+    if domain not in {'x86_64','aarch64','arm','thumb'}:return []
+    slots=import_slots(path)
+    from ..static_binary import targets
+    static_targets,static_witnesses=targets(regions,domain,deadline,path=path)
+    if primitive_records is not None:primitive_records.extend(static_witnesses)
+    if not set(slots.values())&TRUSTED and not static_targets:return []
+    lift=PointerLift(domain,regions,slots,static_targets)
+    n=0
+    for base,_,data,flags in regions:
+        if not flags&1:continue
+        for ins in decode(disassembler(domain),data,base):
+            n+=1
+            if n%1024==0 and (n>500000 or time.monotonic()>deadline):raise ValueError('Big-number call analysis budget exhausted')
+            lift.step(ins)
+    return [*lift.matches,*lift.equations.matches,*lift.equations.general_matches]

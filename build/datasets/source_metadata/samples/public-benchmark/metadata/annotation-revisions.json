@@ -1,0 +1,121 @@
+{
+  "at": "2026-10-11T07:39:01.124966+00:00",
+  "revisions": [
+    {
+      "path": "sources/esphome/esphome/components/ble_device_base/ble_aes_ccm.cpp",
+      "old_truth": {
+        "api_reference": [
+          "AES"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "reason": "Complete body review confirms local AES rounds/SBOX/CCM implementation, rather than an external API-reference-only module."
+    },
+    {
+      "path": "sources/esp-idf/components/protocomm/src/security/security1.c",
+      "old_truth": {
+        "api_reference": [
+          "AES"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": [
+          "AES",
+          "ECDH",
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "reason": "Complete source review: mbedtls_ecdh_compute_shared at line 297 and mbedtls_sha256(...,0) at line 317 were omitted from initial draft label."
+    },
+    {
+      "path": "sources/esp-idf/components/protocomm/src/security/security2.c",
+      "old_truth": {
+        "api_reference": [
+          "AES",
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": [
+          "AES"
+        ],
+        "implementation_contains": null
+      },
+      "reason": "Complete source review: explicit AES GCM selector present; SRP helper is transitive and no direct SHA256 selector exists in this file."
+    },
+    {
+      "path": "binaries/alpine/x86_64/openvpn-2.6.20-r0/usr/sbin/openvpn",
+      "old_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256",
+          "ECDSA"
+        ],
+        "implementation_contains": null
+      },
+      "reason": "Corresponding OpenVPN 2.6.20 xkey_helper.c lines 419-438 explicitly manipulate ECDSA_SIG for raw-to-DER signature formatting, matching .dynsym ECDSA_SIG_new/set0/free. It is an ECDSA API reference; no actual signing/runtime claim. This was omitted in the draft label, not a detector false positive under the declared API-reference scope."
+    },
+    {
+      "path": "binaries/alpine/aarch64/openvpn-2.6.20-r0/usr/sbin/openvpn",
+      "old_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256",
+          "ECDSA"
+        ],
+        "implementation_contains": null
+      },
+      "reason": "Corresponding OpenVPN 2.6.20 xkey_helper.c lines 419-438 explicitly manipulate ECDSA_SIG for raw-to-DER signature formatting, matching .dynsym ECDSA_SIG_new/set0/free. It is an ECDSA API reference; no actual signing/runtime claim. This was omitted in the draft label, not a detector false positive under the declared API-reference scope."
+    },
+    {
+      "path": "binaries/alpine/armv7/openvpn-2.6.20-r0/usr/sbin/openvpn",
+      "old_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "new_truth": {
+        "api_reference": [
+          "MD5",
+          "SHA-1",
+          "SHA-256",
+          "ECDSA"
+        ],
+        "implementation_contains": null
+      },
+      "reason": "Corresponding OpenVPN 2.6.20 xkey_helper.c lines 419-438 explicitly manipulate ECDSA_SIG for raw-to-DER signature formatting, matching .dynsym ECDSA_SIG_new/set0/free. It is an ECDSA API reference; no actual signing/runtime claim. This was omitted in the draft label, not a detector false positive under the declared API-reference scope."
+    }
+  ],
+  "policy": "Correct factual annotation errors with source-line evidence, preserving the initial draft runs. Same corrected manifest used for both baseline and updated scanner.",
+  "final_audit_at": "2026-10-11T07:45:17.975914+00:00"
+}

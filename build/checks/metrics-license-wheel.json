@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "wheel": "build/dist/qcs_prototype-0.1.0.post1-py3-none-any.whl",
+  "bytes": 4903778,
+  "sha256": "a357809c22375e10215b83daaebf9927b8a18b68e1e8df25af3692d3c59f1add",
+  "verified_unchanged_package_entries": 107,
+  "verified_central_legal_metadata_files": 13,
+  "readme_metadata_current": true,
+  "issues": []
+}

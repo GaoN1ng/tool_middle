@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/libtom/libtommath",
+  "commit": "ae40a87a920099a7d9d00979570e0c8d917a1fd7",
+  "split": "development-primitive-only",
+  "archive_sha256": "837031abd783812beec5377cd167581a3bd3935ac160be1b8ad252da499a2e57",
+  "archive": "samples/controlflow-development-20261014/downloads/libtommath.tar.gz",
+  "policy": "Assigned before detector development; no targets executed; primitive-only LibTomMath is not an independent-family claim (existing mp API ancestry)"
+}

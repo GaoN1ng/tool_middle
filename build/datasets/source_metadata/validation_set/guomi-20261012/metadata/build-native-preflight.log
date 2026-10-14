@@ -1,0 +1,15 @@
+FAIL openhitls-sm3-small-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sm2-exchange-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sm4-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sm3-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sm2-encrypt-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sm2-sign-x86_64-O0 Compilation/link command failed
+FAIL openhitls-bignum-x86_64-O0 Compilation/link command failed
+FAIL openhitls-base64-x86_64-O0 Compilation/link command failed
+FAIL openhitls-sha256-x86_64-O0 Compilation/link command failed
+FAIL openhitls-ec-generic-x86_64-O0 Compilation/link command failed
+FAIL openhitls-md5-x86_64-O0 Compilation/link command failed
+FAIL openhitls-aes-x86_64-O0 Compilation/link command failed
+Prepared 30/42, success 18, failures 12
+Prepared 42/42, success 30, failures 12
+{"timestamp": "2026-10-12T10:16:57.130898+00:00", "attempt": "native-preflight", "planned": 42, "completed": 30, "failed": 12, "unique_samples": 80}

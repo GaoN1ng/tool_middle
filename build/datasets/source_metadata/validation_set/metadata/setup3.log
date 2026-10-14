@@ -1,0 +1,4 @@
+Prepared 30/66, success 30, failures 0
+Prepared 60/66, success 60, failures 0
+Prepared 66/66, success 66, failures 0
+{"timestamp": "2026-10-12T07:46:31.757527+00:00", "attempt": "setup3", "planned": 66, "completed": 66, "failed": 0, "unique_samples": 155}

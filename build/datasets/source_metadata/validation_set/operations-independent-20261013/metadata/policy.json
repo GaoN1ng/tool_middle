@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-13 Asia/Shanghai",
+  "frozen_digest": "c152abdc46d2929904970b3dbda4930e6da5edcf20e0ff7a4a2885f798d13e16",
+  "families": ["ctz/cifra", "jedisct1/libsodium"],
+  "policy": "New holdout implementation families selected after scanner freeze. No detector/rule/table/threshold change using this corpus. Build corrections allowed without changing target implementations or labels. Targets never executed. Compilation variants are correlated, not independent projects.",
+  "scope": "Available implementation labels for supported algorithms; controls from different non-target algorithm units; exclude wrappers with no implementation. Source and stripped ELF separate. No representative competition-data claim."
+}

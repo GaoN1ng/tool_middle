@@ -1,0 +1,497 @@
+[
+  {
+    "id": "arduinolibs-aes",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/AESCommon.cpp",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/AES128.cpp"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/AESCommon.cpp": "1e8f689ed0cff81ceb8876ee23a15b1c8a2f0f01c8ff8f6bfb769850dddc2748",
+      "libraries/Crypto/AES128.cpp": "6b1460a7d2d781fa694bc78ce2ca4b93c7c85f2e1300920155cb6a11e9cda73f"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-sha256",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/SHA256.cpp"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/SHA256.cpp": "a53c030e47c60e4638aa22b667907b5f3eefd0c283ad3d8c083ce56cba4c7be3"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-sha1",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src/SHA1.cpp"
+    ],
+    "truth": [
+      "SHA-1"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/CryptoLegacy/src/SHA1.cpp": "4170ec3b3e0a91b3dec6b4ba4dd5a4381680760b7e00a1a4ed2ca4d931e2d33e"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-chacha",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/ChaCha.cpp"
+    ],
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/ChaCha.cpp": "8e8c8d0874c8ce2874a95f4f27d4f32eab820b1b06b6588cd2488682a8fcb379"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-curve25519",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/Curve25519.cpp"
+    ],
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/Curve25519.cpp": "f68e22f4e3aa4a81c9091abbf03969728b0e3702fe5de8bd63e57099703fbc83"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-sha224",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/SHA224.cpp"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/SHA224.cpp": "6b38ecae3489c1e61dd1d7d5dd19c4bb40d289434bd8b4446b2ad65f1eef222c"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-sha512",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/SHA512.cpp"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/SHA512.cpp": "e519c4be0713efd51fc880b718ec66df4fe42aaead20176ecce9c6f6d0da8691"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-blake2s",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/BLAKE2s.cpp"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/BLAKE2s.cpp": "85d883ddc375a0e8b39971ab1b85b78bec1158359a09e6652b8b1348e28040a0"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "arduinolibs-ed25519",
+    "project": "arduinolibs",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto/Ed25519.cpp"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/Crypto",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/arduinolibs/libraries/CryptoLegacy/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DARDUINO=100"
+    ],
+    "expression": "Portable C++ compact round/limb implementation; non-AVR branch",
+    "repository": "https://github.com/rweather/arduinolibs",
+    "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+    "sha256": {
+      "libraries/Crypto/Ed25519.cpp": "f7e86fe25962408a623eeb5a92cc16c2e180fec29883738b00ad2006916892be"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-sha256",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/hash/sha256.c"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/hash/sha256.c": "6307b02dbd6e15f93e6d346b7ca8869a32c2c014f10866c53d463d0bb475c007"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-sm3",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/hash/sm3.c"
+    ],
+    "truth": [
+      "SM3"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/hash/sm3.c": "133dd03da96d6205c794613a7ae964bb81700e307c70b1bf733a5cb25f3f6f59"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-ecdsa",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/sig/ecdsa.c"
+    ],
+    "truth": [
+      "ECDSA"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/sig/ecdsa.c": "e4cc9586a8e3ed1fb92192f256ca2ba2b9456b8b292babc599697eb02c787b1a"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-ecdsa-common",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/sig/ecdsa_common.c"
+    ],
+    "truth": [
+      "ECDSA"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/sig/ecdsa_common.c": "e66ab90dc9752bdc6cfc52a03d63e4dfa9f6e64c135b240efa0b750ba08b9171"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-sm2",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/sig/sm2.c"
+    ],
+    "truth": [
+      "SM2"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/sig/sm2.c": "dee5b253cdc9aa620b4e6428cc0ea2736da37ee3716929037fa99f78b6a8da07"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-ecdh",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/ecdh/ecccdh.c"
+    ],
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/ecdh/ecccdh.c": "5bb0f023a4bef0be6c786b514a7e21856499a1d93c8928be05a2a3ff9687d1ef"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-sha224",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/hash/sha224.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/hash/sha224.c": "5ad81ce04a73c83b8d4ecf47a1bf51f161f8fc174d1706fb338277cc35d35937"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-sha512",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/hash/sha512.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/hash/sha512.c": "9bb1ee1c4f77dd90845327aae84bb7e8cc56584e13f8e701fe14c28ee3ffcfd7"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-limb-add",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/nn/nn_add.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/nn/nn_add.c": "82f9a898ca1adf08ebd60573de85553582d55d57a869d3b0a1420ec98d2e6132"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-limb-mul",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/nn/nn_mul.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/nn/nn_mul.c": "41c9a474f4de519cef109be302b45d4e4bc28841a8bf1e73612c5ff98ba68f53"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-modinv",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/nn/nn_modinv.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/nn/nn_modinv.c": "5567496d8db48abb9594abdf23f90cf547c05cba0925b45026b26faef1cc1bdf"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  },
+  {
+    "id": "libecc-modpow",
+    "project": "libecc",
+    "files": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src/nn/nn_mod_pow.c"
+    ],
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libecc/src",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat"
+    ],
+    "flags": [
+      "-DWORDSIZE=32"
+    ],
+    "expression": "ANSSI modular/curve equations or compact hash rounds; 32-bit limb config",
+    "repository": "https://github.com/ANSSI-FR/libecc",
+    "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+    "sha256": {
+      "src/nn/nn_mod_pow.c": "ad4e570de92e4ab32845950ffb2298c3d29cd60e852c827a19b0163bf1c22cfc"
+    },
+    "basis": "Predeclared upstream implementation bodies; generic math/other algorithms are target-label negatives; compiled target never executed"
+  }
+]

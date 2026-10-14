@@ -1,0 +1,556 @@
+{
+  "source": {
+    "view": "context",
+    "thresholds": {
+      "AES": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "positives": 8,
+        "negatives": 96,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "DES": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "RC4": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "ChaCha20": {
+        "threshold": 0.29255694731696175,
+        "tp": 2,
+        "fp": 0,
+        "fn": 4,
+        "positives": 6,
+        "negatives": 98,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "RSA": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "ECDSA": {
+        "threshold": 0.210510924150677,
+        "tp": 2,
+        "fp": 0,
+        "fn": 3,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "ECDH": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "MD5": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "SHA-1": {
+        "threshold": 0.5331474620270826,
+        "tp": 1,
+        "fp": 0,
+        "fn": 7,
+        "positives": 8,
+        "negatives": 96,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "SHA-256": {
+        "threshold": 0.49298451465354526,
+        "tp": 4,
+        "fp": 0,
+        "fn": 6,
+        "positives": 10,
+        "negatives": 94,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "SM2": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 106,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "SM3": {
+        "threshold": 0.3463612408143478,
+        "tp": 2,
+        "fp": 0,
+        "fn": 6,
+        "positives": 8,
+        "negatives": 105,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "SM4": {
+        "threshold": 0.46104114798950596,
+        "tp": 2,
+        "fp": 0,
+        "fn": 6,
+        "positives": 8,
+        "negatives": 105,
+        "fpr": 0.0,
+        "disabled": false
+      }
+    },
+    "relaxed_thresholds": {
+      "AES": {
+        "threshold": 0.2895918800512868,
+        "tp": 3,
+        "fp": 1,
+        "fn": 5,
+        "positives": 8,
+        "negatives": 96,
+        "fpr": 0.010416666666666666,
+        "disabled": false
+      },
+      "DES": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "RC4": {
+        "threshold": 0.26550168503783805,
+        "tp": 1,
+        "fp": 1,
+        "fn": 4,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.010101010101010102,
+        "disabled": false
+      },
+      "ChaCha20": {
+        "threshold": 0.29255694731696175,
+        "tp": 2,
+        "fp": 0,
+        "fn": 4,
+        "positives": 6,
+        "negatives": 98,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "RSA": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "ECDSA": {
+        "threshold": 0.210510924150677,
+        "tp": 2,
+        "fp": 0,
+        "fn": 3,
+        "positives": 5,
+        "negatives": 99,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "ECDH": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "MD5": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "positives": 7,
+        "negatives": 97,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "SHA-1": {
+        "threshold": 0.44109634731458025,
+        "tp": 2,
+        "fp": 1,
+        "fn": 6,
+        "positives": 8,
+        "negatives": 96,
+        "fpr": 0.010416666666666666,
+        "disabled": false
+      },
+      "SHA-256": {
+        "threshold": 0.4623965047742121,
+        "tp": 5,
+        "fp": 1,
+        "fn": 5,
+        "positives": 10,
+        "negatives": 94,
+        "fpr": 0.010638297872340425,
+        "disabled": false
+      },
+      "SM2": {
+        "threshold": 0.5591308653898459,
+        "tp": 1,
+        "fp": 1,
+        "fn": 6,
+        "positives": 7,
+        "negatives": 106,
+        "fpr": 0.009433962264150943,
+        "disabled": false
+      },
+      "SM3": {
+        "threshold": 0.3157144584793817,
+        "tp": 3,
+        "fp": 2,
+        "fn": 5,
+        "positives": 8,
+        "negatives": 105,
+        "fpr": 0.01904761904761905,
+        "disabled": false
+      },
+      "SM4": {
+        "threshold": 0.27563415971229727,
+        "tp": 5,
+        "fp": 2,
+        "fn": 3,
+        "positives": 8,
+        "negatives": 105,
+        "fpr": 0.01904761904761905,
+        "disabled": false
+      }
+    },
+    "candidate_threshold": {
+      "threshold": 0.9884593023255814,
+      "tp": 21,
+      "fp": 4,
+      "fn": 197,
+      "positives": 218,
+      "negatives": 200,
+      "fpr": 0.02,
+      "disabled": false
+    }
+  },
+  "binary": {
+    "view": "context",
+    "thresholds": {
+      "AES": {
+        "threshold": 0.3331257623842937,
+        "tp": 15,
+        "fp": 2,
+        "fn": 43,
+        "positives": 58,
+        "negatives": 577,
+        "fpr": 0.0034662045060658577,
+        "disabled": false
+      },
+      "DES": {
+        "threshold": 0.26093441170966586,
+        "tp": 19,
+        "fp": 2,
+        "fn": 27,
+        "positives": 46,
+        "negatives": 589,
+        "fpr": 0.003395585738539898,
+        "disabled": false
+      },
+      "RC4": {
+        "threshold": 0.4098861161489026,
+        "tp": 12,
+        "fp": 1,
+        "fn": 20,
+        "positives": 32,
+        "negatives": 603,
+        "fpr": 0.001658374792703151,
+        "disabled": false
+      },
+      "ChaCha20": {
+        "threshold": 0.4217072477422491,
+        "tp": 22,
+        "fp": 1,
+        "fn": 17,
+        "positives": 39,
+        "negatives": 596,
+        "fpr": 0.0016778523489932886,
+        "disabled": false
+      },
+      "RSA": {
+        "threshold": 0.45652729963677297,
+        "tp": 1,
+        "fp": 1,
+        "fn": 25,
+        "positives": 26,
+        "negatives": 609,
+        "fpr": 0.0016420361247947454,
+        "disabled": false
+      },
+      "ECDSA": {
+        "threshold": 0.23562947004000206,
+        "tp": 2,
+        "fp": 3,
+        "fn": 25,
+        "positives": 27,
+        "negatives": 608,
+        "fpr": 0.004934210526315789,
+        "disabled": false
+      },
+      "ECDH": {
+        "threshold": 0.3180946915942796,
+        "tp": 2,
+        "fp": 2,
+        "fn": 36,
+        "positives": 38,
+        "negatives": 597,
+        "fpr": 0.0033500837520938024,
+        "disabled": false
+      },
+      "MD5": {
+        "threshold": 0.3315564750926269,
+        "tp": 29,
+        "fp": 2,
+        "fn": 17,
+        "positives": 46,
+        "negatives": 589,
+        "fpr": 0.003395585738539898,
+        "disabled": false
+      },
+      "SHA-1": {
+        "threshold": 0.4186277054339376,
+        "tp": 12,
+        "fp": 0,
+        "fn": 36,
+        "positives": 48,
+        "negatives": 587,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "SHA-256": {
+        "threshold": 1.000001,
+        "tp": 0,
+        "fp": 0,
+        "fn": 66,
+        "positives": 66,
+        "negatives": 569,
+        "fpr": 0.0,
+        "disabled": true
+      },
+      "SM2": {
+        "threshold": 0.44168331045029774,
+        "tp": 2,
+        "fp": 3,
+        "fn": 28,
+        "positives": 30,
+        "negatives": 669,
+        "fpr": 0.004484304932735426,
+        "disabled": false
+      },
+      "SM3": {
+        "threshold": 0.67125842064806,
+        "tp": 18,
+        "fp": 0,
+        "fn": 36,
+        "positives": 54,
+        "negatives": 645,
+        "fpr": 0.0,
+        "disabled": false
+      },
+      "SM4": {
+        "threshold": 0.5553172781669915,
+        "tp": 18,
+        "fp": 1,
+        "fn": 30,
+        "positives": 48,
+        "negatives": 651,
+        "fpr": 0.0015360983102918587,
+        "disabled": false
+      }
+    },
+    "relaxed_thresholds": {
+      "AES": {
+        "threshold": 0.3100219211377221,
+        "tp": 17,
+        "fp": 7,
+        "fn": 41,
+        "positives": 58,
+        "negatives": 577,
+        "fpr": 0.012131715771230503,
+        "disabled": false
+      },
+      "DES": {
+        "threshold": 0.23487640990994813,
+        "tp": 23,
+        "fp": 3,
+        "fn": 23,
+        "positives": 46,
+        "negatives": 589,
+        "fpr": 0.0050933786078098476,
+        "disabled": false
+      },
+      "RC4": {
+        "threshold": 0.3759028896440285,
+        "tp": 13,
+        "fp": 4,
+        "fn": 19,
+        "positives": 32,
+        "negatives": 603,
+        "fpr": 0.006633499170812604,
+        "disabled": false
+      },
+      "ChaCha20": {
+        "threshold": 0.27210513373318973,
+        "tp": 27,
+        "fp": 10,
+        "fn": 12,
+        "positives": 39,
+        "negatives": 596,
+        "fpr": 0.016778523489932886,
+        "disabled": false
+      },
+      "RSA": {
+        "threshold": 0.45652729963677297,
+        "tp": 1,
+        "fp": 1,
+        "fn": 25,
+        "positives": 26,
+        "negatives": 609,
+        "fpr": 0.0016420361247947454,
+        "disabled": false
+      },
+      "ECDSA": {
+        "threshold": 0.2317073015484802,
+        "tp": 3,
+        "fp": 5,
+        "fn": 24,
+        "positives": 27,
+        "negatives": 608,
+        "fpr": 0.008223684210526315,
+        "disabled": false
+      },
+      "ECDH": {
+        "threshold": 0.3180946915942796,
+        "tp": 2,
+        "fp": 2,
+        "fn": 36,
+        "positives": 38,
+        "negatives": 597,
+        "fpr": 0.0033500837520938024,
+        "disabled": false
+      },
+      "MD5": {
+        "threshold": 0.3042005340331209,
+        "tp": 30,
+        "fp": 4,
+        "fn": 16,
+        "positives": 46,
+        "negatives": 589,
+        "fpr": 0.006791171477079796,
+        "disabled": false
+      },
+      "SHA-1": {
+        "threshold": 0.3121484807777929,
+        "tp": 17,
+        "fp": 9,
+        "fn": 31,
+        "positives": 48,
+        "negatives": 587,
+        "fpr": 0.015332197614991482,
+        "disabled": false
+      },
+      "SHA-256": {
+        "threshold": 0.5827390353596446,
+        "tp": 5,
+        "fp": 8,
+        "fn": 61,
+        "positives": 66,
+        "negatives": 569,
+        "fpr": 0.014059753954305799,
+        "disabled": false
+      },
+      "SM2": {
+        "threshold": 0.3624398749288153,
+        "tp": 5,
+        "fp": 10,
+        "fn": 25,
+        "positives": 30,
+        "negatives": 669,
+        "fpr": 0.014947683109118086,
+        "disabled": false
+      },
+      "SM3": {
+        "threshold": 0.38057002535740464,
+        "tp": 28,
+        "fp": 11,
+        "fn": 26,
+        "positives": 54,
+        "negatives": 645,
+        "fpr": 0.017054263565891473,
+        "disabled": false
+      },
+      "SM4": {
+        "threshold": 0.5029186837312289,
+        "tp": 23,
+        "fp": 6,
+        "fn": 25,
+        "positives": 48,
+        "negatives": 651,
+        "fpr": 0.009216589861751152,
+        "disabled": false
+      }
+    },
+    "candidate_threshold": {
+      "threshold": 0.98128982809056,
+      "tp": 104,
+      "fp": 21,
+      "fn": 1184,
+      "positives": 1288,
+      "negatives": 1277,
+      "fpr": 0.01644479248238058,
+      "disabled": false
+    }
+  }
+}

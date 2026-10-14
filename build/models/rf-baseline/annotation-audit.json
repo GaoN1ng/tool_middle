@@ -1,0 +1,3598 @@
+{
+  "binary_checks": [
+    {
+      "id": "mbedtls-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-chacha20_ct-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-chacha20_ct-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-sha2small-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-sha2small-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_big_enc-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_big_enc-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_big_enc-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_big_enc-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_big_enc-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_big_enc-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_big_enc-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_big_enc-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_big_enc-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_big_enc-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-aes_small_enc-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-aes_small_enc-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-des-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-des-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-aes-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-aes-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-md5-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-md5-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha1-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha1-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-chacha20-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-chacha20-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bearssl-des_tab-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/bearssl-des_tab-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdsa-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdsa-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-ecdh-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-ecdh-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-gcc-O1",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-gcc-O1/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-gcc-O3",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-gcc-O3/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-rsa-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-rsa-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-aarch64-sha2-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-aarch64-sha2-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-aarch64-sha2-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-aarch64-sha2-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-rc4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-rc4-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mbedtls-sha256-aarch64-sha2-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/operation-development-20261013/builds/mbedtls-sha256-aarch64-sha2-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-chacha-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-chacha-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/openssl-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rc4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rc4-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-chacha-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-chacha-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-des-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-des-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-ecdh-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-ecdh-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rc4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rc4-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rc4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rc4-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rc4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rc4-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rc4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rc4-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rc4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rc4-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "boringssl-rsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/boringssl-rsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-rsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-rsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-ecdh-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-ecdh-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm3-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm3-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm2-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm2-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "ippcrypto-sm4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/research-development-20261013/builds/ippcrypto-sm4-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm4/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm4/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm4/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm4/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm4/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/openssl/sm3/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-small-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-small-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm3-plain-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm3-plain-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "wolfsm-sm4-plain-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/wolfsm-sm4-plain-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-plain-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm4-plain-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-plain-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm4-plain-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-plain-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm4-plain-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-plain-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm4-plain-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm4-plain-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm4-plain-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "openssl-sm3-plain-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/openssl-sm3-plain-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-des-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-des-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-arcfour-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-arcfour-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md5-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md5-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-aes-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-aes-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha1-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha1-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-sha256-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-sha256-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-base64-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-base64-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-md2-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-md2-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-rot-13-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-rot-13-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-gcc-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-gcc-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-gcc-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-gcc-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-gcc-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-gcc-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "bcon-blowfish-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/semantic-development-20261013/builds/bcon-blowfish-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-aes-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-aes-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha224-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha224-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha224-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha224-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha224-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha224-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-chacha-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-chacha-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha224-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha224-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha224-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha224-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-curve25519-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-sha512-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-sha512-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-blake2s-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-blake2s-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "arduinolibs-ed25519-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/arduinolibs-ed25519-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm3-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm3-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdsa-common-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sm2-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sm2-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-ecdh-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-ecdh-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha224-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha224-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-sha512-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-sha512-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-add-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-add-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-limb-mul-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-limb-mul-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modinv-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modinv-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-modpow-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libecc-modpow-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libtommath-generic-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/primitive-builds/x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libtommath-generic-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/primitive-builds/x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libtommath-generic-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/primitive-builds/x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libtommath-generic-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/primitive-builds/aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-arcfour-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-arcfour-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-des-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-des-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-rijndael-128-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-blowfish-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-blowfish-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-md5-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-md5-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-md5-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-md5-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-md5-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-md5-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-md5-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-md5-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-md5-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-md5-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libmcrypt-twofish-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/libmcrypt-twofish-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha1-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha1-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_stream_chacha20-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-ripemd-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-ripemd-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm4-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm4-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm4-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm4-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm4-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm4-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm4-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm4-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm3-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm3-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_z256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_z256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm4-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm4-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_sign-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_sign-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-modern-sm2_exch-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/mhash-sha256_sha224-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_scalarmult_curve25519-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_scalarmult_curve25519-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_scalarmult_curve25519-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_scalarmult_curve25519-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha256-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_scalarmult_curve25519-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "libecc-generic-static-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/ecc-primitive-builds/x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha512_tinyssh-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/tinyssh-crypto_hash_sha512_tinyssh-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_avx2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_avx2-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_avx2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_avx2-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_avx2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_avx2-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_aesni-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_aesni-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_aesni-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_aesni-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-rsa-sign-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-rsa-sign-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-rsa-sign-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-rsa-sign-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-mini-gmp-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-mini-gmp-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-rsa-sign-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-rsa-sign-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-rsa-sign-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-rsa-sign-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_ce-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_ce-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_ce-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_ce-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_aesni-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_aesni-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "nettle-rsa-sign-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/nettle-rsa-sign-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm4_ce-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm4_ce-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_arm64-aarch64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_avx2-x86_64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_avx2-x86_64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_arm64-aarch64-Os/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_avx2-x86_64-O2",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_avx2-x86_64-O2/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-O0",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_arm64-aarch64-O0/inspection.so",
+      "allocated_bytes_match": true
+    },
+    {
+      "id": "gmssl-sm3_avx2-x86_64-Os",
+      "sibling": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/builds/gmssl-sm3_avx2-x86_64-Os/inspection.so",
+      "allocated_bytes_match": true
+    }
+  ],
+  "role_counts": {
+    "unlabeled": 165924,
+    "target_crypto": 1425,
+    "ordinary_runtime": 32906,
+    "other_crypto": 484,
+    "generic_math_or_control": 7946
+  },
+  "algorithm_groups": {
+    "MD5": [
+      "bcon",
+      "bearssl",
+      "mbedtls",
+      "openssl-derived"
+    ],
+    "DES": [
+      "bcon",
+      "bearssl",
+      "libmcrypt",
+      "mbedtls",
+      "openssl-derived"
+    ],
+    "ChaCha20": [
+      "arduinolibs",
+      "bearssl",
+      "mbedtls",
+      "tinyssh"
+    ],
+    "SHA-1": [
+      "arduinolibs",
+      "bcon",
+      "bearssl",
+      "mbedtls"
+    ],
+    "AES": [
+      "arduinolibs",
+      "bcon",
+      "bearssl",
+      "libmcrypt",
+      "mbedtls",
+      "openssl-derived"
+    ],
+    "ECDH": [
+      "arduinolibs",
+      "ippcrypto",
+      "libecc",
+      "mbedtls",
+      "tinyssh"
+    ],
+    "SHA-256": [
+      "arduinolibs",
+      "bcon",
+      "bearssl",
+      "libecc",
+      "mbedtls",
+      "mhash",
+      "openssl-derived",
+      "tinyssh"
+    ],
+    "ECDSA": [
+      "ippcrypto",
+      "libecc",
+      "mbedtls"
+    ],
+    "RSA": [
+      "ippcrypto",
+      "mbedtls",
+      "nettle",
+      "openssl-derived"
+    ],
+    "RC4": [
+      "bcon",
+      "libmcrypt",
+      "openssl-derived"
+    ],
+    "SM2": [
+      "gmssl",
+      "ippcrypto",
+      "libecc",
+      "openssl-derived",
+      "wolfssl"
+    ],
+    "SM3": [
+      "gmssl",
+      "libecc",
+      "libgcrypt",
+      "openssl-derived",
+      "wolfssl"
+    ],
+    "SM4": [
+      "gmssl",
+      "libgcrypt",
+      "openssl-derived",
+      "wolfssl"
+    ]
+  },
+  "learning_group_corrections": {
+    "libecc-generic": "libecc"
+  },
+  "policy": "Inference never reads symbols; only annotation sibling allocated bytes verified here."
+}

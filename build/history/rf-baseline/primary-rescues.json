@@ -1,0 +1,37 @@
+{
+  "rescues": [
+    {
+      "id": "hacl-md5-aarch64-O1-inspection",
+      "family": "hacl-md5",
+      "variant": "inspection",
+      "algorithms": [
+        "MD5"
+      ]
+    },
+    {
+      "id": "hacl-md5-aarch64-O1-stripped",
+      "family": "hacl-md5",
+      "variant": "stripped",
+      "algorithms": [
+        "MD5"
+      ]
+    },
+    {
+      "id": "hacl-md5-aarch64-Os-inspection",
+      "family": "hacl-md5",
+      "variant": "inspection",
+      "algorithms": [
+        "MD5"
+      ]
+    },
+    {
+      "id": "hacl-md5-aarch64-Os-stripped",
+      "family": "hacl-md5",
+      "variant": "stripped",
+      "algorithms": [
+        "MD5"
+      ]
+    }
+  ],
+  "interpretation": "Four file-algorithm labels are one HACL MD5 author implementation, two AArch64 optimizations, each with symbolic and stripped copies. This is not four independent implementations or multi-algorithm generalization."
+}

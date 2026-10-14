@@ -1,0 +1,931 @@
+{
+  "algorithms": {
+    "AES": {
+      "projects": [
+        "arduinolibs",
+        "bcon",
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "libmcrypt",
+        "mbedtls",
+        "openssl"
+      ],
+      "implementation_units": [
+        "arduinolibs:arduinolibs-aes",
+        "bcon:bcon-aes",
+        "bearssl:bearssl-aes_big_enc",
+        "bearssl:bearssl-aes_small_enc",
+        "boringssl:boringssl-aes",
+        "ippcrypto:ippcrypto-aes",
+        "libmcrypt:libmcrypt-rijndael-128",
+        "mbedtls:mbedtls-aes",
+        "openssl:openssl-aes"
+      ],
+      "full_new_gains": [],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 123,
+        "FP": 1,
+        "FN": 22,
+        "TN": 1715,
+        "recall": 0.8482758620689655,
+        "false_negative_rate": 0.15172413793103448,
+        "precision": 0.9919354838709677
+      },
+      "after": {
+        "TP": 123,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1716,
+        "recall": 0.8482758620689655,
+        "false_negative_rate": 0.15172413793103448,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 23,
+        "FP": 0,
+        "FN": 122,
+        "TN": 1716,
+        "recall": 0.15862068965517243,
+        "false_negative_rate": 0.8413793103448276,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 23,
+        "FP": 0,
+        "FN": 122,
+        "TN": 1716,
+        "recall": 0.15862068965517243,
+        "false_negative_rate": 0.8413793103448276,
+        "precision": 1.0
+      }
+    },
+    "DES": {
+      "projects": [
+        "bcon",
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "libmcrypt",
+        "mbedtls",
+        "openssl",
+        "reference"
+      ],
+      "implementation_units": [
+        "bcon:bcon-des",
+        "bearssl:bearssl-des_tab",
+        "boringssl:boringssl-des",
+        "ippcrypto:ippcrypto-des",
+        "libmcrypt:libmcrypt-des",
+        "mbedtls:mbedtls-des",
+        "openssl:openssl-des",
+        "reference:reference-des_naive"
+      ],
+      "full_new_gains": [],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 109,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1730,
+        "recall": 0.8320610687022901,
+        "false_negative_rate": 0.16793893129770993,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 109,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1730,
+        "recall": 0.8320610687022901,
+        "false_negative_rate": 0.16793893129770993,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 27,
+        "FP": 0,
+        "FN": 104,
+        "TN": 1730,
+        "recall": 0.20610687022900764,
+        "false_negative_rate": 0.7938931297709924,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 27,
+        "FP": 0,
+        "FN": 104,
+        "TN": 1730,
+        "recall": 0.20610687022900764,
+        "false_negative_rate": 0.7938931297709924,
+        "precision": 1.0
+      }
+    },
+    "MD5": {
+      "projects": [
+        "bcon",
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "mhash",
+        "openssl"
+      ],
+      "implementation_units": [
+        "bcon:bcon-md5",
+        "bearssl:bearssl-md5",
+        "boringssl:boringssl-md5",
+        "ippcrypto:ippcrypto-md5",
+        "mbedtls:mbedtls-md5",
+        "mhash:mhash-md5",
+        "openssl:openssl-md5"
+      ],
+      "full_new_gains": [],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 103,
+        "FP": 0,
+        "FN": 5,
+        "TN": 1753,
+        "recall": 0.9537037037037037,
+        "false_negative_rate": 0.046296296296296294,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 103,
+        "FP": 0,
+        "FN": 5,
+        "TN": 1753,
+        "recall": 0.9537037037037037,
+        "false_negative_rate": 0.046296296296296294,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 56,
+        "FP": 0,
+        "FN": 52,
+        "TN": 1753,
+        "recall": 0.5185185185185185,
+        "false_negative_rate": 0.48148148148148145,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 56,
+        "FP": 0,
+        "FN": 52,
+        "TN": 1753,
+        "recall": 0.5185185185185185,
+        "false_negative_rate": 0.48148148148148145,
+        "precision": 1.0
+      }
+    },
+    "SHA-1": {
+      "projects": [
+        "arduinolibs",
+        "bcon",
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "mhash",
+        "openssl"
+      ],
+      "implementation_units": [
+        "arduinolibs:arduinolibs-sha1",
+        "bcon:bcon-sha1",
+        "bearssl:bearssl-sha1",
+        "boringssl:boringssl-sha1",
+        "ippcrypto:ippcrypto-sha1",
+        "mbedtls:mbedtls-sha1",
+        "mhash:mhash-sha1",
+        "openssl:openssl-sha1"
+      ],
+      "full_new_gains": [],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 102,
+        "FP": 0,
+        "FN": 20,
+        "TN": 1739,
+        "recall": 0.8360655737704918,
+        "false_negative_rate": 0.16393442622950818,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 102,
+        "FP": 0,
+        "FN": 20,
+        "TN": 1739,
+        "recall": 0.8360655737704918,
+        "false_negative_rate": 0.16393442622950818,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 56,
+        "FP": 0,
+        "FN": 66,
+        "TN": 1739,
+        "recall": 0.45901639344262296,
+        "false_negative_rate": 0.5409836065573771,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 56,
+        "FP": 0,
+        "FN": 66,
+        "TN": 1739,
+        "recall": 0.45901639344262296,
+        "false_negative_rate": 0.5409836065573771,
+        "precision": 1.0
+      }
+    },
+    "SHA-256": {
+      "projects": [
+        "arduinolibs",
+        "bcon",
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "libecc",
+        "mbedtls",
+        "mhash",
+        "openssl",
+        "tinyssh"
+      ],
+      "implementation_units": [
+        "arduinolibs:arduinolibs-sha256",
+        "bcon:bcon-sha256",
+        "bearssl:bearssl-sha2small",
+        "boringssl:boringssl-sha256",
+        "ippcrypto:ippcrypto-sha256",
+        "libecc:libecc-sha256",
+        "mbedtls:mbedtls-sha256",
+        "mhash:mhash-sha256_sha224",
+        "openssl:openssl-sha256",
+        "tinyssh:tinyssh-crypto_hash_sha256"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:arduinolibs-sha256-x86_64-O0"
+        ],
+        [
+          "new-development:tinyssh-crypto_hash_sha256-x86_64-Os"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 77,
+        "FP": 0,
+        "FN": 92,
+        "TN": 1692,
+        "recall": 0.4556213017751479,
+        "false_negative_rate": 0.5443786982248521,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 79,
+        "FP": 0,
+        "FN": 90,
+        "TN": 1692,
+        "recall": 0.46745562130177515,
+        "false_negative_rate": 0.5325443786982249,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 36,
+        "FP": 0,
+        "FN": 133,
+        "TN": 1692,
+        "recall": 0.21301775147928995,
+        "false_negative_rate": 0.7869822485207101,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 39,
+        "FP": 0,
+        "FN": 130,
+        "TN": 1692,
+        "recall": 0.23076923076923078,
+        "false_negative_rate": 0.7692307692307693,
+        "precision": 1.0
+      }
+    },
+    "ChaCha20": {
+      "projects": [
+        "arduinolibs",
+        "bearssl",
+        "boringssl",
+        "controls",
+        "mbedtls",
+        "openssl",
+        "reference",
+        "tinyssh"
+      ],
+      "implementation_units": [
+        "arduinolibs:arduinolibs-chacha",
+        "bearssl:bearssl-chacha20_ct",
+        "boringssl:boringssl-chacha",
+        "controls:control-quarter",
+        "mbedtls:mbedtls-chacha20",
+        "openssl:openssl-chacha",
+        "reference:reference-chacha_reference",
+        "tinyssh:tinyssh-crypto_stream_chacha20"
+      ],
+      "full_new_gains": [
+        [
+          "old-development:control-quarter-arm-O0"
+        ],
+        [
+          "new-development:arduinolibs-chacha-arm-O0"
+        ],
+        [
+          "new-development:tinyssh-crypto_stream_chacha20-arm-O0"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 126,
+        "FP": 0,
+        "FN": 14,
+        "TN": 1721,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 129,
+        "FP": 0,
+        "FN": 11,
+        "TN": 1721,
+        "recall": 0.9214285714285714,
+        "false_negative_rate": 0.07857142857142857,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 103,
+        "FP": 0,
+        "FN": 37,
+        "TN": 1721,
+        "recall": 0.7357142857142858,
+        "false_negative_rate": 0.2642857142857143,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 108,
+        "FP": 0,
+        "FN": 32,
+        "TN": 1721,
+        "recall": 0.7714285714285715,
+        "false_negative_rate": 0.22857142857142856,
+        "precision": 1.0
+      }
+    },
+    "RSA": {
+      "projects": [
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "nettle",
+        "openssl",
+        "static-controls"
+      ],
+      "implementation_units": [
+        "boringssl:boringssl-rsa",
+        "ippcrypto:ippcrypto-rsa",
+        "mbedtls:mbedtls-rsa",
+        "nettle:nettle-rsa-sign",
+        "openssl:openssl-rsa",
+        "static-controls:static-controls-rsa"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:static-controls-rsa-x86_64-O0"
+        ],
+        [
+          "new-development:static-controls-rsa-x86_64-O2"
+        ],
+        [
+          "new-development:static-controls-rsa-x86_64-Os"
+        ],
+        [
+          "new-development:nettle-rsa-sign-source"
+        ],
+        [
+          "new-development:nettle-rsa-sign-x86_64-O0"
+        ],
+        [
+          "new-development:nettle-rsa-sign-x86_64-O2"
+        ],
+        [
+          "new-development:nettle-rsa-sign-x86_64-Os"
+        ],
+        [
+          "new-development:nettle-rsa-sign-aarch64-O0"
+        ],
+        [
+          "new-development:nettle-rsa-sign-aarch64-O2"
+        ],
+        [
+          "new-development:nettle-rsa-sign-arm-O0"
+        ],
+        [
+          "new-development:nettle-rsa-sign-arm-O2"
+        ],
+        [
+          "new-development:nettle-rsa-sign-arm-Os"
+        ],
+        [
+          "new-development:nettle-rsa-sign-thumb-O0"
+        ],
+        [
+          "new-development:nettle-rsa-sign-thumb-O2"
+        ],
+        [
+          "new-development:nettle-rsa-sign-thumb-Os"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 42,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1797,
+        "recall": 0.65625,
+        "false_negative_rate": 0.34375,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 57,
+        "FP": 0,
+        "FN": 7,
+        "TN": 1797,
+        "recall": 0.890625,
+        "false_negative_rate": 0.109375,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 15,
+        "FP": 0,
+        "FN": 49,
+        "TN": 1797,
+        "recall": 0.234375,
+        "false_negative_rate": 0.765625,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 30,
+        "FP": 0,
+        "FN": 34,
+        "TN": 1797,
+        "recall": 0.46875,
+        "false_negative_rate": 0.53125,
+        "precision": 1.0
+      }
+    },
+    "ECDSA": {
+      "projects": [
+        "boringssl",
+        "ippcrypto",
+        "libecc",
+        "mbedtls",
+        "openssl"
+      ],
+      "implementation_units": [
+        "boringssl:boringssl-ecdsa",
+        "ippcrypto:ippcrypto-ecdsa",
+        "libecc:libecc-ecdsa-common",
+        "mbedtls:mbedtls-ecdsa",
+        "openssl:openssl-ecdsa"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:libecc-ecdsa-common-source"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 40,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1799,
+        "recall": 0.6451612903225806,
+        "false_negative_rate": 0.3548387096774194,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 41,
+        "FP": 0,
+        "FN": 21,
+        "TN": 1799,
+        "recall": 0.6612903225806451,
+        "false_negative_rate": 0.3387096774193548,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 62,
+        "TN": 1799,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "after_operations": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 61,
+        "TN": 1799,
+        "recall": 0.016129032258064516,
+        "false_negative_rate": 0.9838709677419355,
+        "precision": 1.0
+      }
+    },
+    "ECDH": {
+      "projects": [
+        "arduinolibs",
+        "authored-EC-controls",
+        "boringssl",
+        "ippcrypto",
+        "libecc",
+        "mbedtls",
+        "openssl",
+        "tinyssh"
+      ],
+      "implementation_units": [
+        "arduinolibs:arduinolibs-curve25519",
+        "authored-EC-controls:bound-peer-projective-equation",
+        "boringssl:boringssl-ecdh",
+        "ippcrypto:ippcrypto-ecdh",
+        "libecc:libecc-ecdh",
+        "mbedtls:mbedtls-ecdh",
+        "openssl:openssl-ecdh",
+        "tinyssh:tinyssh-crypto_scalarmult_curve25519"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:libecc-ecdh-source"
+        ],
+        [
+          "new-development:static-ec-ecdh-source"
+        ],
+        [
+          "new-development:static-ec-ecdh-x86_64-O2"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 39,
+        "FP": 0,
+        "FN": 62,
+        "TN": 1760,
+        "recall": 0.38613861386138615,
+        "false_negative_rate": 0.6138613861386139,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 42,
+        "FP": 0,
+        "FN": 59,
+        "TN": 1760,
+        "recall": 0.4158415841584158,
+        "false_negative_rate": 0.5841584158415841,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 99,
+        "TN": 1760,
+        "recall": 0.019801980198019802,
+        "false_negative_rate": 0.9801980198019802,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 5,
+        "FP": 0,
+        "FN": 96,
+        "TN": 1760,
+        "recall": 0.04950495049504951,
+        "false_negative_rate": 0.9504950495049505,
+        "precision": 1.0
+      }
+    },
+    "RC4": {
+      "projects": [
+        "bcon",
+        "boringssl",
+        "controls",
+        "ippcrypto",
+        "libmcrypt",
+        "openssl",
+        "reference"
+      ],
+      "implementation_units": [
+        "bcon:bcon-arcfour",
+        "boringssl:boringssl-rc4",
+        "controls:control-stream",
+        "ippcrypto:ippcrypto-rc4",
+        "libmcrypt:libmcrypt-arcfour",
+        "openssl:openssl-rc4",
+        "reference:reference-rc4"
+      ],
+      "full_new_gains": [
+        [
+          "old-development:control-stream-x86_64-O0"
+        ],
+        [
+          "old-development:control-stream-aarch64-O0"
+        ],
+        [
+          "old-development:control-stream-arm-O0"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 86,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1753,
+        "recall": 0.7962962962962963,
+        "false_negative_rate": 0.2037037037037037,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 89,
+        "FP": 0,
+        "FN": 19,
+        "TN": 1753,
+        "recall": 0.8240740740740741,
+        "false_negative_rate": 0.17592592592592593,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 31,
+        "FP": 0,
+        "FN": 77,
+        "TN": 1753,
+        "recall": 0.28703703703703703,
+        "false_negative_rate": 0.7129629629629629,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 42,
+        "FP": 0,
+        "FN": 66,
+        "TN": 1753,
+        "recall": 0.3888888888888889,
+        "false_negative_rate": 0.6111111111111112,
+        "precision": 1.0
+      }
+    },
+    "SM2": {
+      "projects": [
+        "authored-equation-controls",
+        "gmssl-modern",
+        "ippcrypto",
+        "libecc",
+        "openssl",
+        "static-controls",
+        "wolfsm"
+      ],
+      "implementation_units": [
+        "authored-equation-controls:bn-sign",
+        "authored-equation-controls:bn-verify",
+        "authored-equation-controls:mp_sign",
+        "authored-equation-controls:sp_sign",
+        "gmssl-modern:gmssl-modern-sm2_exch",
+        "gmssl-modern:gmssl-modern-sm2_sign",
+        "ippcrypto:ippcrypto-sm2",
+        "libecc:libecc-sm2",
+        "openssl:openssl-sm2",
+        "openssl:openssl-sm2-crypt",
+        "openssl:openssl-sm2-sign",
+        "static-controls:static-controls-sm2",
+        "wolfsm:wolfsm-sm2"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:libecc-sm2-x86_64-O0"
+        ],
+        [
+          "new-development:libecc-sm2-x86_64-O2"
+        ],
+        [
+          "new-development:libecc-sm2-x86_64-Os"
+        ],
+        [
+          "new-development:libecc-sm2-aarch64-O0"
+        ],
+        [
+          "new-development:libecc-sm2-aarch64-O2"
+        ],
+        [
+          "new-development:libecc-sm2-aarch64-Os"
+        ],
+        [
+          "new-development:libecc-sm2-arm-O0"
+        ],
+        [
+          "new-development:libecc-sm2-arm-O2"
+        ],
+        [
+          "new-development:libecc-sm2-arm-Os"
+        ],
+        [
+          "new-development:libecc-sm2-thumb-O2"
+        ],
+        [
+          "new-development:libecc-sm2-thumb-Os"
+        ],
+        [
+          "new-development:libecc-sm2-source"
+        ],
+        [
+          "new-development:static-controls-sm2-x86_64-O0"
+        ],
+        [
+          "new-development:static-controls-sm2-x86_64-O2"
+        ],
+        [
+          "new-development:static-controls-sm2-x86_64-Os"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 92,
+        "FP": 0,
+        "FN": 65,
+        "TN": 2187,
+        "recall": 0.5859872611464968,
+        "false_negative_rate": 0.4140127388535032,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 107,
+        "FP": 0,
+        "FN": 50,
+        "TN": 2187,
+        "recall": 0.6815286624203821,
+        "false_negative_rate": 0.3184713375796178,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 63,
+        "FP": 0,
+        "FN": 94,
+        "TN": 2187,
+        "recall": 0.4012738853503185,
+        "false_negative_rate": 0.5987261146496815,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 78,
+        "FP": 0,
+        "FN": 79,
+        "TN": 2187,
+        "recall": 0.4968152866242038,
+        "false_negative_rate": 0.5031847133757962,
+        "precision": 1.0
+      }
+    },
+    "SM3": {
+      "projects": [
+        "authored-ISA-controls",
+        "authored-equation-controls",
+        "gmssl-modern",
+        "ippcrypto",
+        "libecc",
+        "libgcrypt",
+        "openssl",
+        "wolfsm"
+      ],
+      "implementation_units": [
+        "authored-ISA-controls:isa-sm3",
+        "authored-equation-controls:split-compression",
+        "gmssl-modern:gmssl-modern-sm3",
+        "gmssl-modern:gmssl-sm3_arm64",
+        "gmssl-modern:gmssl-sm3_avx2",
+        "ippcrypto:ippcrypto-sm3",
+        "libecc:libecc-sm3",
+        "libgcrypt:libgcrypt-sm3",
+        "openssl:openssl-sm3",
+        "openssl:openssl-sm3-plain",
+        "wolfsm:wolfsm-sm3",
+        "wolfsm:wolfsm-sm3-plain",
+        "wolfsm:wolfsm-sm3-small"
+      ],
+      "full_new_gains": [],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 113,
+        "FP": 0,
+        "FN": 32,
+        "TN": 2199,
+        "recall": 0.7793103448275862,
+        "false_negative_rate": 0.2206896551724138,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 113,
+        "FP": 0,
+        "FN": 32,
+        "TN": 2199,
+        "recall": 0.7793103448275862,
+        "false_negative_rate": 0.2206896551724138,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 90,
+        "FP": 0,
+        "FN": 55,
+        "TN": 2199,
+        "recall": 0.6206896551724138,
+        "false_negative_rate": 0.3793103448275862,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 90,
+        "FP": 0,
+        "FN": 55,
+        "TN": 2199,
+        "recall": 0.6206896551724138,
+        "false_negative_rate": 0.3793103448275862,
+        "precision": 1.0
+      }
+    },
+    "SM4": {
+      "projects": [
+        "authored-ISA-controls",
+        "authored-equation-controls",
+        "gmssl-modern",
+        "ippcrypto",
+        "libgcrypt",
+        "openssl",
+        "wolfsm"
+      ],
+      "implementation_units": [
+        "authored-ISA-controls:isa-sm4",
+        "authored-equation-controls:split-word-rounds",
+        "gmssl-modern:gmssl-modern-sm4",
+        "gmssl-modern:gmssl-sm4_aesni",
+        "gmssl-modern:gmssl-sm4_avx2",
+        "gmssl-modern:gmssl-sm4_ce",
+        "ippcrypto:ippcrypto-sm4",
+        "libgcrypt:libgcrypt-sm4",
+        "openssl:openssl-sm4",
+        "openssl:openssl-sm4-plain",
+        "wolfsm:wolfsm-sm4",
+        "wolfsm:wolfsm-sm4-plain",
+        "wolfsm:wolfsm-sm4-small"
+      ],
+      "full_new_gains": [
+        [
+          "new-development:gmssl-sm4_ce-source"
+        ]
+      ],
+      "operation_new_gains": [],
+      "before": {
+        "TP": 105,
+        "FP": 0,
+        "FN": 15,
+        "TN": 2224,
+        "recall": 0.875,
+        "false_negative_rate": 0.125,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 106,
+        "FP": 0,
+        "FN": 14,
+        "TN": 2224,
+        "recall": 0.8833333333333333,
+        "false_negative_rate": 0.11666666666666667,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 28,
+        "FP": 0,
+        "FN": 92,
+        "TN": 2224,
+        "recall": 0.23333333333333334,
+        "false_negative_rate": 0.7666666666666667,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 30,
+        "FP": 0,
+        "FN": 90,
+        "TN": 2224,
+        "recall": 0.25,
+        "false_negative_rate": 0.75,
+        "precision": 1.0
+      }
+    }
+  },
+  "limitations": [
+    "Project/unit counts are documented source groupings; not independent author counts",
+    "GmSSL and LibTomMath retain previously documented family lineage",
+    "sm4ni is excluded after historical validation lineage audit",
+    "Generic primitive and synthetic equation controls are separately marked and cannot claim independent author diversity"
+  ]
+}

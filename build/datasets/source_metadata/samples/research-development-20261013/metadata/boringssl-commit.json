@@ -1,0 +1,151 @@
+{
+  "sha": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+  "node_id": "C_kwDOAytildoAKDViODNlNWQxYWJmMGFlMDAzM2FlNTJhYjU3OWQ5MDZiNjc2MzNiMmM",
+  "commit": {
+    "author": {
+      "name": "Xiangfei Ding",
+      "email": "xfding@google.com",
+      "date": "2026-09-23T09:39:07Z"
+    },
+    "committer": {
+      "name": "boringssl-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "email": "boringssl-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2026-10-11T19:11:41Z"
+    },
+    "message": "util/fipstools/inject_hash: Add -ignore-missing-symbols flag and tests\n\nBug: 545142241\nSigned-off-by: Xiangfei Ding <xfding@google.com>\nChange-Id: Ic885c8c5db85be987ba08b79b44d61386a6a6964\nReviewed-on: https://boringssl-review.googlesource.com/c/boringssl/+/103787\nSLSA-Policy-Verified: SLSA Policy Verification Service <devtools-gerritcodereview-exitgate@google.com>\nReviewed-by: David Benjamin <davidben@google.com>",
+    "tree": {
+      "sha": "42c05208f438fdecee49eea0fa1e128957193dd3",
+      "url": "https://api.github.com/repos/google/boringssl/git/trees/42c05208f438fdecee49eea0fa1e128957193dd3"
+    },
+    "url": "https://api.github.com/repos/google/boringssl/git/commits/5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/google/boringssl/commits/5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+  "html_url": "https://github.com/google/boringssl/commit/5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+  "comments_url": "https://api.github.com/repos/google/boringssl/commits/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/comments",
+  "author": {
+    "login": "dingxiangfei2009",
+    "id": 6884440,
+    "node_id": "MDQ6VXNlcjY4ODQ0NDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6884440?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dingxiangfei2009",
+    "html_url": "https://github.com/dingxiangfei2009",
+    "followers_url": "https://api.github.com/users/dingxiangfei2009/followers",
+    "following_url": "https://api.github.com/users/dingxiangfei2009/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dingxiangfei2009/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dingxiangfei2009/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dingxiangfei2009/subscriptions",
+    "organizations_url": "https://api.github.com/users/dingxiangfei2009/orgs",
+    "repos_url": "https://api.github.com/users/dingxiangfei2009/repos",
+    "events_url": "https://api.github.com/users/dingxiangfei2009/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dingxiangfei2009/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "b4b1cee6652af14ff36c1ee6f52caa25a7bd5eed",
+      "url": "https://api.github.com/repos/google/boringssl/commits/b4b1cee6652af14ff36c1ee6f52caa25a7bd5eed",
+      "html_url": "https://github.com/google/boringssl/commit/b4b1cee6652af14ff36c1ee6f52caa25a7bd5eed"
+    }
+  ],
+  "stats": {
+    "total": 243,
+    "additions": 241,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "4522e96ca6ef36fbc471f03045e4d5305010ada1",
+      "filename": "util/fipstools/inject_hash/inject_hash.go",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 2,
+      "changes": 21,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Finject_hash.go",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Finject_hash.go",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Finject_hash.go?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+      "patch": "@@ -34,7 +34,7 @@ import (\n \t\"boringssl.googlesource.com/boringssl.git/util/fipstools/fipscommon\"\n )\n \n-func do(outPath, oInput, arInput, hashInput string) error {\n+func do(outPath, oInput, arInput, hashInput string, ignoreMissing bool) error {\n \tvar objectBytes []byte\n \tvar isStatic bool\n \tvar perm os.FileMode\n@@ -98,6 +98,9 @@ func do(outPath, oInput, arInput, hashInput string) error {\n \n \tobject, err := elf.NewFile(bytes.NewReader(hashBytes))\n \tif err != nil {\n+\t\tif ignoreMissing {\n+\t\t\treturn os.WriteFile(outPath, objectBytes, perm&0777)\n+\t\t}\n \t\treturn errors.New(\"failed to parse object: \" + err.Error())\n \t}\n \n@@ -117,6 +120,9 @@ func do(outPath, oInput, arInput, hashInput string) error {\n \t}\n \n \tif textSection == nil {\n+\t\tif ignoreMissing {\n+\t\t\treturn os.WriteFile(outPath, objectBytes, perm&0777)\n+\t\t}\n \t\treturn errors.New(\"failed to find .text section in object\")\n \t}\n \n@@ -131,6 +137,9 @@ func do(outPath, oInput, arInput, hashInput string) error {\n \t\tsymbols, err = object.DynamicSymbols()\n \t}\n \tif err != nil {\n+\t\tif ignoreMissing {\n+\t\t\treturn os.WriteFile(outPath, objectBytes, perm&0777)\n+\t\t}\n \t\treturn errors.New(\"failed to parse symbols: \" + err.Error())\n \t}\n \n@@ -184,6 +193,9 @@ func do(outPath, oInput, arInput, hashInput string) error {\n \t}\n \n \tif textStart == nil || textEnd == nil {\n+\t\tif ignoreMissing {\n+\t\t\treturn os.WriteFile(outPath, objectBytes, perm&0777)\n+\t\t}\n \t\treturn errors.New(\"could not find .text module boundaries in object\")\n \t}\n \n@@ -250,6 +262,9 @@ func do(outPath, oInput, arInput, hashInput string) error {\n \n \toffset := bytes.Index(objectBytes, fipscommon.UninitHashValue[:])\n \tif offset < 0 {\n+\t\tif ignoreMissing {\n+\t\t\treturn os.WriteFile(outPath, objectBytes, perm&0777)\n+\t\t}\n \t\treturn errors.New(\"did not find uninitialised hash value in object file\")\n \t}\n \n@@ -270,10 +285,12 @@ func main() {\n \toInput := flag.String(\"in-object\", \"\", \"Path to a .o file\")\n \thashInput := flag.String(\"in-hash\", \"\", \"Path to an input object file to hash instead\")\n \toutPath := flag.String(\"o\", \"\", \"Path to output object\")\n+\tvar ignoreMissing bool\n+\tflag.BoolVar(&ignoreMissing, \"ignore-missing-symbols\", false, \"If true, treat non-ELF inputs, missing BCM symbols, or missing uninitialized hash values as a no-op.\")\n \n \tflag.Parse()\n \n-\tif err := do(*outPath, *oInput, *arInput, *hashInput); err != nil {\n+\tif err := do(*outPath, *oInput, *arInput, *hashInput, ignoreMissing); err != nil {\n \t\tfmt.Fprintf(os.Stderr, \"%s\\n\", err)\n \t\tos.Exit(1)\n \t}"
+    },
+    {
+      "sha": "978238d41104fd6d8acbfa883d8b682f04a5210c",
+      "filename": "util/fipstools/inject_hash/inject_hash_test.go",
+      "status": "added",
+      "additions": 134,
+      "deletions": 0,
+      "changes": 134,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Finject_hash_test.go",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Finject_hash_test.go",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Finject_hash_test.go?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+      "patch": "@@ -0,0 +1,134 @@\n+// Copyright 2026 The BoringSSL Authors\n+//\n+// Licensed under the Apache License, Version 2.0 (the \"License\");\n+// you may not use this file except in compliance with the License.\n+// You may obtain a copy of the License at\n+//\n+//     https://www.apache.org/licenses/LICENSE-2.0\n+//\n+// Unless required by applicable law or agreed to in writing, software\n+// distributed under the License is distributed on an \"AS IS\" BASIS,\n+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+// See the License for the specific language governing permissions and\n+// limitations under the License.\n+\n+package main\n+\n+import (\n+\t\"bytes\"\n+\t_ \"embed\"\n+\t\"fmt\"\n+\t\"os\"\n+\t\"path/filepath\"\n+\t\"strings\"\n+\t\"testing\"\n+\n+\t\"boringssl.googlesource.com/boringssl.git/util/fipstools/fipscommon\"\n+)\n+\n+//go:embed testdata/test.o\n+var testObj []byte\n+\n+//go:embed testdata/empty.o\n+var emptyObj []byte\n+\n+func TestInjectHashTextAndROData(t *testing.T) {\n+\ttmpDir := t.TempDir()\n+\tinPath := filepath.Join(tmpDir, \"input.o\")\n+\toutPath := filepath.Join(tmpDir, \"output.o\")\n+\n+\tif err := os.WriteFile(inPath, testObj, 0644); err != nil {\n+\t\tt.Fatalf(\"failed to write input file: %s\", err)\n+\t}\n+\n+\tif err := do(outPath, inPath, \"\", \"\", false); err != nil {\n+\t\tt.Fatalf(\"do() failed: %s\", err)\n+\t}\n+\n+\toutBytes, err := os.ReadFile(outPath)\n+\tif err != nil {\n+\t\tt.Fatalf(\"failed to read output file: %s\", err)\n+\t}\n+\n+\tif len(outBytes) != len(testObj) {\n+\t\tt.Fatalf(\"output length %d does not match input length %d\", len(outBytes), len(testObj))\n+\t}\n+\n+\thashOffset := bytes.Index(testObj, fipscommon.UninitHashValue[:])\n+\tif hashOffset < 0 {\n+\t\tt.Fatalf(\"could not find uninit hash value in testObj\")\n+\t}\n+\n+\t// Verify all surrounding bytes before the hash are strictly unchanged.\n+\tif !bytes.Equal(outBytes[:hashOffset], testObj[:hashOffset]) {\n+\t\tt.Errorf(\"bytes before the hash value were modified\")\n+\t}\n+\n+\t// Verify all surrounding bytes after the hash are strictly unchanged.\n+\tif !bytes.Equal(outBytes[hashOffset+32:], testObj[hashOffset+32:]) {\n+\t\tt.Errorf(\"bytes after the hash value were modified\")\n+\t}\n+\n+\t// Verify the placeholder was overwritten with the expected hash.\n+\tconst wantHash = \"28369e972bef5e55f32607c72f3434d94b621e141f32f4d196c73183b15c9297\"\n+\tgotHash := fmt.Sprintf(\"%x\", outBytes[hashOffset:hashOffset+32])\n+\tif gotHash != wantHash {\n+\t\tt.Errorf(\"injected hash mismatch:\\n  got:  %s\\n  want: %s\", gotHash, wantHash)\n+\t}\n+}\n+\n+func TestIgnoreMissing(t *testing.T) {\n+\tnoHashObj := bytes.ReplaceAll(testObj, fipscommon.UninitHashValue[:], make([]byte, 32))\n+\n+\ttests := []struct {\n+\t\tname       string\n+\t\tinputBytes []byte\n+\t\twantErr    string\n+\t}{\n+\t\t{\n+\t\t\tname:       \"MissingSymbols\",\n+\t\t\tinputBytes: emptyObj,\n+\t\t\twantErr:    \"could not find .text module boundaries\",\n+\t\t},\n+\t\t{\n+\t\t\tname:       \"MissingUninitHash\",\n+\t\t\tinputBytes: noHashObj,\n+\t\t\twantErr:    \"did not find uninitialised hash value\",\n+\t\t},\n+\t\t{\n+\t\t\tname:       \"NonELFInput\",\n+\t\t\tinputBytes: []byte(\"THIS_IS_A_TEXT_FILE_NOT_AN_ELF_OBJECT\"),\n+\t\t\twantErr:    \"failed to parse object\",\n+\t\t},\n+\t}\n+\n+\tfor _, tc := range tests {\n+\t\tt.Run(tc.name, func(t *testing.T) {\n+\t\t\ttmpDir := t.TempDir()\n+\t\t\tinPath := filepath.Join(tmpDir, \"input.o\")\n+\t\t\toutPath := filepath.Join(tmpDir, \"output.o\")\n+\n+\t\t\tif err := os.WriteFile(inPath, tc.inputBytes, 0644); err != nil {\n+\t\t\t\tt.Fatalf(\"failed to write input file: %s\", err)\n+\t\t\t}\n+\n+\t\t\t// Without ignoreMissing: must fail with expected error\n+\t\t\terr := do(outPath, inPath, \"\", \"\", false)\n+\t\t\tif err == nil || !strings.Contains(err.Error(), tc.wantErr) {\n+\t\t\t\tt.Errorf(\"expected error containing %q, got: %v\", tc.wantErr, err)\n+\t\t\t}\n+\n+\t\t\t// With ignoreMissing: must succeed and keep output byte-identical to input\n+\t\t\tif err := do(outPath, inPath, \"\", \"\", true); err != nil {\n+\t\t\t\tt.Fatalf(\"do(ignoreMissing=true) failed: %s\", err)\n+\t\t\t}\n+\t\t\toutBytes, err := os.ReadFile(outPath)\n+\t\t\tif err != nil {\n+\t\t\t\tt.Fatalf(\"failed to read output file: %s\", err)\n+\t\t\t}\n+\t\t\tif !bytes.Equal(outBytes, tc.inputBytes) {\n+\t\t\t\tt.Errorf(\"output was modified when ignoring missing symbols/hashes\")\n+\t\t\t}\n+\t\t})\n+\t}\n+}"
+    },
+    {
+      "sha": "19ed8f5fd7f1d0759862864d57752a6e23af02f4",
+      "filename": "util/fipstools/inject_hash/testdata/empty.S",
+      "status": "added",
+      "additions": 23,
+      "deletions": 0,
+      "changes": 23,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.S",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.S",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.S?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+      "patch": "@@ -0,0 +1,23 @@\n+# Copyright 2026 The BoringSSL Authors\n+#\n+# Licensed under the Apache License, Version 2.0 (the \"License\");\n+# you may not use this file except in compliance with the License.\n+# You may obtain a copy of the License at\n+#\n+#     https://www.apache.org/licenses/LICENSE-2.0\n+#\n+# Unless required by applicable law or agreed to in writing, software\n+# distributed under the License is distributed on an \"AS IS\" BASIS,\n+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+# See the License for the specific language governing permissions and\n+# limitations under the License.\n+\n+# To regenerate empty.o, run:\n+#   as -o util/fipstools/inject_hash/testdata/empty.o util/fipstools/inject_hash/testdata/empty.S\n+# or:\n+#   clang -c -o util/fipstools/inject_hash/testdata/empty.o util/fipstools/inject_hash/testdata/empty.S\n+\n+\t.text\n+.globl some_other_symbol\n+some_other_symbol:\n+\t.byte 0x00"
+    },
+    {
+      "sha": "bb3bea8e12677efc6f2f6cb4257a68dff017f44a",
+      "filename": "util/fipstools/inject_hash/testdata/empty.o",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.o",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.o",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Ftestdata%2Fempty.o?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c"
+    },
+    {
+      "sha": "86ba88e92e2d2d6516fcfbc7025dd49fed4864d1",
+      "filename": "util/fipstools/inject_hash/testdata/test.S",
+      "status": "added",
+      "additions": 64,
+      "deletions": 0,
+      "changes": 64,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.S",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.S",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.S?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+      "patch": "@@ -0,0 +1,64 @@\n+# Copyright 2026 The BoringSSL Authors\n+#\n+# Licensed under the Apache License, Version 2.0 (the \"License\");\n+# you may not use this file except in compliance with the License.\n+# You may obtain a copy of the License at\n+#\n+#     https://www.apache.org/licenses/LICENSE-2.0\n+#\n+# Unless required by applicable law or agreed to in writing, software\n+# distributed under the License is distributed on an \"AS IS\" BASIS,\n+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+# See the License for the specific language governing permissions and\n+# limitations under the License.\n+\n+# To regenerate test.o, run:\n+#   as -o util/fipstools/inject_hash/testdata/test.o util/fipstools/inject_hash/testdata/test.S\n+# or:\n+#   clang -c -o util/fipstools/inject_hash/testdata/test.o util/fipstools/inject_hash/testdata/test.S\n+\n+\t.text\n+.globl some_text_symbol_before\n+some_text_symbol_before:\n+\t.byte 0x01, 0x02, 0x03, 0x04\n+\n+.globl BORINGSSL_bcm_text_start\n+BORINGSSL_bcm_text_start:\n+\t.byte 0xef, 0xbe, 0xad, 0xde\n+\n+.globl BORINGSSL_bcm_text_end\n+BORINGSSL_bcm_text_end:\n+\t.byte 0x11, 0x22, 0x33, 0x44\n+\n+.globl some_text_symbol_after\n+some_text_symbol_after:\n+\t.byte 0x55, 0x66, 0x77, 0x88\n+\n+.section .rodata\n+.globl some_rodata_symbol_before\n+some_rodata_symbol_before:\n+\t.byte 0x01, 0x02, 0x03, 0x04\n+\n+.globl BORINGSSL_bcm_rodata_start\n+BORINGSSL_bcm_rodata_start:\n+\t.byte 0xde, 0xad, 0xbe, 0xef\n+\n+.globl BORINGSSL_bcm_rodata_end\n+BORINGSSL_bcm_rodata_end:\n+\t.byte 0x11, 0x22, 0x33, 0x44\n+\n+.globl some_rodata_symbol_after\n+some_rodata_symbol_after:\n+\t.byte 0x55, 0x66, 0x77, 0x88\n+\n+.globl BORINGSSL_bcm_text_hash\n+BORINGSSL_bcm_text_hash:\n+\t.byte 0xae, 0x2c, 0xea, 0x2a, 0xbd, 0xa6, 0xf3, 0xec\n+\t.byte 0x97, 0x7f, 0x9b, 0xf6, 0x94, 0x9a, 0xfc, 0x83\n+\t.byte 0x68, 0x27, 0xcb, 0xa0, 0xa0, 0x9f, 0x6b, 0x6f\n+\t.byte 0xde, 0x52, 0xcd, 0xe2, 0xcd, 0xff, 0x31, 0x80\n+\n+.data\n+.globl some_data_symbol\n+some_data_symbol:\n+\t.quad 0xdeadbeef"
+    },
+    {
+      "sha": "73bd80d9a023d7d9fc512b6bec9ec4982b3db882",
+      "filename": "util/fipstools/inject_hash/testdata/test.o",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.o",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.o",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Ffipstools%2Finject_hash%2Ftestdata%2Ftest.o?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c"
+    },
+    {
+      "sha": "4c83b42555bf0653826061c915f89ed2b823a6e4",
+      "filename": "util/go_tests.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Fgo_tests.txt",
+      "raw_url": "https://github.com/google/boringssl/raw/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/util%2Fgo_tests.txt",
+      "contents_url": "https://api.github.com/repos/google/boringssl/contents/util%2Fgo_tests.txt?ref=5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+      "patch": "@@ -2,3 +2,4 @@\n ./util/ar\n ./util/fipstools/acvp/acvptool/testmodulewrapper\n ./util/fipstools/delocate\n+./util/fipstools/inject_hash"
+    }
+  ]
+}

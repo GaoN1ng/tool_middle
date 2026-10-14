@@ -1,0 +1,23 @@
+QCS 许可适用范围说明
+更新：2026-10-14（Asia/Shanghai）
+
+1. project/qcs/：QCS 自有扫描器为 Apache-2.0，根 LICENSE 是主副本。
+2. components/：Wind River 检测器和 crypto-detection YARA 为集成组件；
+   crypto-reverse-mcp、CryptoScan 为国密规则/API/配置审查参考。CryptoScan 的
+   Binary Ninja 插件及原正则引擎没有嵌入。具体来源见 INDEX.txt 及国密 provenance。
+3. reference_data/：函数指纹、静态大数原语及国密建库参考的归属声明。
+   编译生成的数据继续受原实现声明约束，不能只以扫描器许可概括。
+4. samples/：分析输入的上游许可，按项目分类，与运行代码及建库数据分开导航。
+   同一项目不同版本/子目录/文件的许可可能不同；完整原文和文件头为准。
+
+本次仅整理已有声明并原样保留其字节，不改变上游许可、版权或检测算法。
+中央副本与 src/qcs/ 资源旁副本共存：后者由安装包直接携带，不应任意删除。
+同项目相同文本去重时保留所有来源映射；不同文本没有覆盖合并。
+旧 NOTICE 及 PuTTY 许可生成脚本另存 build/licenses/，不混入样本许可目录。
+
+导航：licenses/INDEX.txt；机器可读来源对照：build/licenses/catalog.json。
+样本逐文件原路径：build/datasets/catalog.json；来源 URL、固定提交及标注范围：
+build/datasets/original_manifests/ 与 build/datasets/source_metadata/。
+祖先目录的 LICENSE 不自动取代子模块及源文件头声明；现有记录尚不构成
+所有样本/固件内部组件的完整许可审计。后续缺项按来源补齐，见 todo.md。
+Python 安装依赖的声明随各自 wheel 分发，build/wheelhouse/ 的轮子原样保留。

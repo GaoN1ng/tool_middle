@@ -1,0 +1,4527 @@
+{
+  "schema": "rf-independent-1",
+  "date": "2026-10-14T16:34:55.800276+08:00",
+  "algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256",
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "samples": [
+    {
+      "id": "kokke--tiny-AES-c-aes-source",
+      "path": "sources/kokke--tiny-AES-c/aes.c",
+      "sha256": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e",
+      "kind": "source",
+      "architecture": "source",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "amosnier--sha-2-sha-256-source",
+      "path": "sources/amosnier--sha-2/sha-256.c",
+      "sha256": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27",
+      "kind": "source",
+      "architecture": "source",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "dhuertas--DES-des-source",
+      "path": "sources/dhuertas--DES/des.c",
+      "sha256": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068",
+      "kind": "source",
+      "architecture": "source",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "marcizhu--ChaCha20-ChaCha20-source",
+      "path": "sources/marcizhu--ChaCha20/ChaCha20.h",
+      "sha256": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642",
+      "kind": "source",
+      "architecture": "source",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "maandree--libsha1-init-source",
+      "path": "sources/maandree--libsha1/init.c",
+      "sha256": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "maandree--libsha1-process-source",
+      "path": "sources/maandree--libsha1/process.c",
+      "sha256": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "maandree--libsha1-update-source",
+      "path": "sources/maandree--libsha1/update.c",
+      "sha256": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "maandree--libsha1-digest-source",
+      "path": "sources/maandree--libsha1/digest.c",
+      "sha256": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "maandree--libsha1-behex_lower-source",
+      "path": "sources/maandree--libsha1/behex_lower.c",
+      "sha256": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "maandree--libsha1-behex_upper-source",
+      "path": "sources/maandree--libsha1/behex_upper.c",
+      "sha256": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "maandree--libsha1-unhex-source",
+      "path": "sources/maandree--libsha1/unhex.c",
+      "sha256": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4",
+      "kind": "source",
+      "architecture": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_MD5-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "sha256": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA1-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "sha256": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA2-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "sha256": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Chacha20-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "sha256": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_RSAPSS-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "sha256": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "RSA"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_P256-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "sha256": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Curve25519_51-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "sha256": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Bignum32-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "sha256": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Bignum64-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "sha256": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_MAC_Poly1305-source",
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "sha256": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395",
+      "kind": "source",
+      "architecture": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "rurban--smhasher-MurmurHash3-source",
+      "path": "sources/rurban--smhasher/MurmurHash3.cpp",
+      "sha256": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c",
+      "kind": "source",
+      "architecture": "source",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-O0-inspection",
+      "path": "builds/tiny-aes-x86_64-O0/inspection.so",
+      "sha256": "d9c8d1c08cc5e7f9e337fc997507eb03328a946b83555b3cf2e7730be0f1678c",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-O0-stripped",
+      "path": "builds/tiny-aes-x86_64-O0/stripped.so",
+      "sha256": "27688c509dbcd564b251ca6f9d078320e0047fd8821d69b995bfa3b9ae4c8f48",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-O1-inspection",
+      "path": "builds/tiny-aes-x86_64-O1/inspection.so",
+      "sha256": "bfb38e38b97edc37661ebb5141861ec75e7bbd52906e0a3b3440e8d65066821f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-O1-stripped",
+      "path": "builds/tiny-aes-x86_64-O1/stripped.so",
+      "sha256": "0304b733e81e6658aada5a9e695b41352abf9bf15be70c0f58224f75032ecd90",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-Os-inspection",
+      "path": "builds/tiny-aes-x86_64-Os/inspection.so",
+      "sha256": "bd707843c9cec42c81173a7eff1a2e88c8582cc46086f9f3ed0498fa3f1fbe0e",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-x86_64-Os-stripped",
+      "path": "builds/tiny-aes-x86_64-Os/stripped.so",
+      "sha256": "080433dbf1abc33399a691cdd16ae53886eb40216a0ec3dbf7c91b5b8b113e19",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-O0-inspection",
+      "path": "builds/tiny-aes-aarch64-O0/inspection.so",
+      "sha256": "8fddb039424da90016cfd75397f79cf861745aa8a4b7668ded05fa54fe837b2f",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-O0-stripped",
+      "path": "builds/tiny-aes-aarch64-O0/stripped.so",
+      "sha256": "e4d71fcbc1c65ba12b6ff528e8ac95de0c3ac632e08e9762e4dd5856ba1c9cc5",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-O1-inspection",
+      "path": "builds/tiny-aes-aarch64-O1/inspection.so",
+      "sha256": "907bba1bc6488075b529ab7da256f264140541b86d282d04432a836b1b759ec1",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-O1-stripped",
+      "path": "builds/tiny-aes-aarch64-O1/stripped.so",
+      "sha256": "d0314a11e6533fefa37af77afa623171440ab3d8b0ded4fbe94017a619de122e",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-Os-inspection",
+      "path": "builds/tiny-aes-aarch64-Os/inspection.so",
+      "sha256": "6a7693e6540ef609e368e755d3ec7460fa25639cb57f61255489da5738b8f8db",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "tiny-aes-aarch64-Os-stripped",
+      "path": "builds/tiny-aes-aarch64-Os/stripped.so",
+      "sha256": "f1c228b1e58349e07e4ecdb760f40e3accccba245892772859504728a3a1a6bc",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "AES"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-O0-inspection",
+      "path": "builds/sha256-x86_64-O0/inspection.so",
+      "sha256": "367307ba8c325bedd7f6cbfd2253f60abb8d590150a35d0523f0ec331f7b6db8",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-O0-stripped",
+      "path": "builds/sha256-x86_64-O0/stripped.so",
+      "sha256": "b5ab13c79a3e6564ec85d204374bd7e6a716a567e92981ec4ca32dbdca7f04dd",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-O1-inspection",
+      "path": "builds/sha256-x86_64-O1/inspection.so",
+      "sha256": "3089e843aaccdae7ab0ec71c93a0e10ab97c4ebf146530e0350c6f52e2945d33",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-O1-stripped",
+      "path": "builds/sha256-x86_64-O1/stripped.so",
+      "sha256": "1955795f4455e84ab7139ed0675d5b275088a989be0a007c0dca66a9859294e9",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-Os-inspection",
+      "path": "builds/sha256-x86_64-Os/inspection.so",
+      "sha256": "187ab714b71c35bca65335ccaf916291bc268a56553c31d9db83864fa225e364",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-x86_64-Os-stripped",
+      "path": "builds/sha256-x86_64-Os/stripped.so",
+      "sha256": "6b076640034b0e42191ddee321fcf5452ef841ae81742870c5a8740161c21311",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-O0-inspection",
+      "path": "builds/sha256-aarch64-O0/inspection.so",
+      "sha256": "71da48a4e1732cf8039923d444c9e2ad85d4d0a8e0b0ca7445aae138a78939d6",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-O0-stripped",
+      "path": "builds/sha256-aarch64-O0/stripped.so",
+      "sha256": "336d99b54ab0e4389e9c09b6bf28630c48a670191276b646470bd25d5d752575",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-O1-inspection",
+      "path": "builds/sha256-aarch64-O1/inspection.so",
+      "sha256": "03d862d5be65486d85d913aa508f959a8b11cae996ddc0400e42ba42c23d8490",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-O1-stripped",
+      "path": "builds/sha256-aarch64-O1/stripped.so",
+      "sha256": "62d551f2f1490d72c3df51895fd5a82c174a25d51828887138f901f98a87c2d7",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-Os-inspection",
+      "path": "builds/sha256-aarch64-Os/inspection.so",
+      "sha256": "320901fdc5d13f3932890dee3113fb2ce3f38ee6318d12558dfb637e2b2d050f",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "sha256-aarch64-Os-stripped",
+      "path": "builds/sha256-aarch64-Os/stripped.so",
+      "sha256": "df12006a06d10530788e3f51a5a36c0e79ae4936c3052143ce0cd715e57ea072",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-O0-inspection",
+      "path": "builds/des-x86_64-O0/inspection.so",
+      "sha256": "d071605d597fc1ef286c285cc8ca8c96cc8a8989855e5705ee4f56f5caddebf6",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-O0-stripped",
+      "path": "builds/des-x86_64-O0/stripped.so",
+      "sha256": "baab1a50f4458c2df22649e02cf0ae3a01954ebc4d4dbc4be4493dd67169ce99",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-O1-inspection",
+      "path": "builds/des-x86_64-O1/inspection.so",
+      "sha256": "a78917bd20d6588b6c361770482041d7401a05d70efc7b8030afda9e8f2565d5",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-O1-stripped",
+      "path": "builds/des-x86_64-O1/stripped.so",
+      "sha256": "ccbb80d30f224d52348d235ef60f089a89f02c9e752a6cf46446856e69d0bf77",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-Os-inspection",
+      "path": "builds/des-x86_64-Os/inspection.so",
+      "sha256": "de66886d246e2139c5fe21dc5e9d3b51fbc2dd8981ca6d979cbd7d1475347c88",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-x86_64-Os-stripped",
+      "path": "builds/des-x86_64-Os/stripped.so",
+      "sha256": "e58d886bf986fd740033c691f5e5f771f961558d6bf260276d5ec11777ed9493",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-O0-inspection",
+      "path": "builds/des-aarch64-O0/inspection.so",
+      "sha256": "3ce30092575626e58d8a9c8aac8c2c7116df8ac5d88899e043df18453425eee7",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-O0-stripped",
+      "path": "builds/des-aarch64-O0/stripped.so",
+      "sha256": "81ad4e68fae9b1dcd12cd471feb1767c76cbb42575334a69994fc1749fde842a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-O1-inspection",
+      "path": "builds/des-aarch64-O1/inspection.so",
+      "sha256": "a50025a691e4928d623a76f42c4cccd67db5631e0ffc73d2de05d9c5eaf12927",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-O1-stripped",
+      "path": "builds/des-aarch64-O1/stripped.so",
+      "sha256": "6dac3fd279d19e9874316dc7135f3c2fbb3924e1dca233924c05c0a77238e0b1",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-Os-inspection",
+      "path": "builds/des-aarch64-Os/inspection.so",
+      "sha256": "35caaa7b7632d1306024a7a52a4bc50ebba773e6d0594e8d326b42343069d218",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "des-aarch64-Os-stripped",
+      "path": "builds/des-aarch64-Os/stripped.so",
+      "sha256": "604c2cd09f090fdf5b5008aa019b4af7327a748fe98d13456008117e677cda35",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "DES"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-O0-inspection",
+      "path": "builds/chacha-x86_64-O0/inspection.so",
+      "sha256": "970d2be2f62527d62c645ef6572b582cd2299d4032762d55f5a0987f8c46382e",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-O0-stripped",
+      "path": "builds/chacha-x86_64-O0/stripped.so",
+      "sha256": "cbb6bdc9ddf0a1be153116ce0e49eba9129e25afafd2d6acd5ff1bc1db288848",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-O1-inspection",
+      "path": "builds/chacha-x86_64-O1/inspection.so",
+      "sha256": "54de8f37fcf0f8302c92f39629ec0daa95ffdeca04c33d88546162cc6c24c051",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-O1-stripped",
+      "path": "builds/chacha-x86_64-O1/stripped.so",
+      "sha256": "5db6ceb7d625dba7d18d4fff4922aa9fbce6af5a10d9cdbca4cd83a7c449f0d7",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-Os-inspection",
+      "path": "builds/chacha-x86_64-Os/inspection.so",
+      "sha256": "30d67be68c78f77e037560a07a1665ed0b23a0f48306d636a85581b625bd6744",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-x86_64-Os-stripped",
+      "path": "builds/chacha-x86_64-Os/stripped.so",
+      "sha256": "664403f48bd60123e739c05de03ebf49ba189952afcafc5891a3db1cd656a6ea",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-O0-inspection",
+      "path": "builds/chacha-aarch64-O0/inspection.so",
+      "sha256": "36d75a3556e4ce2693a496cf16d8e16e71fecb5bae5ab1a143d2bbcab2d8347c",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-O0-stripped",
+      "path": "builds/chacha-aarch64-O0/stripped.so",
+      "sha256": "11685606407da2faafd1e3b87bb9756df831756208aef36689ed557cf29291ad",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-O1-inspection",
+      "path": "builds/chacha-aarch64-O1/inspection.so",
+      "sha256": "436bd5e528fcdd7c3593c040c38a552441eb5248aa93b125f95950aaae9f330c",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-O1-stripped",
+      "path": "builds/chacha-aarch64-O1/stripped.so",
+      "sha256": "c5d9d2368ed3205de96fd37118fc98a15fdc70971a0da99503222e4e27273293",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-Os-inspection",
+      "path": "builds/chacha-aarch64-Os/inspection.so",
+      "sha256": "02698215db0429c329a0840b0529562994d2da51646fe0e88df9d7d5efd51f80",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "chacha-aarch64-Os-stripped",
+      "path": "builds/chacha-aarch64-Os/stripped.so",
+      "sha256": "7c98afead6233629381a4eae8a3472261ba9d521cc2fa3443865670e4100f8ee",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-O0-inspection",
+      "path": "builds/sha1-x86_64-O0/inspection.so",
+      "sha256": "9f6a26616b9504d3c4a8cf06ff765c821eb2540ab70455ff56fa1454033d7198",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-O0-stripped",
+      "path": "builds/sha1-x86_64-O0/stripped.so",
+      "sha256": "9f7fcb27200b1df0cd68dd2663b52255525a91d18592f547267cdeada36005e2",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-O1-inspection",
+      "path": "builds/sha1-x86_64-O1/inspection.so",
+      "sha256": "a606b1ab52c9fa4a077b867a9622f929c3af7110e5a1db3ccf70e29f6216262d",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-O1-stripped",
+      "path": "builds/sha1-x86_64-O1/stripped.so",
+      "sha256": "2588db02d79f1e5180d5822cc2137104e753716d5be7b618419b7a1ac16ca966",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-Os-inspection",
+      "path": "builds/sha1-x86_64-Os/inspection.so",
+      "sha256": "41d7642f8236134892a4458fab11559d78050014394d0964194e3a911b551102",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "sha1-x86_64-Os-stripped",
+      "path": "builds/sha1-x86_64-Os/stripped.so",
+      "sha256": "4be53ff6b64907f9becefcf3371a9b84b49ac0ea8bf9fa926ef31fb6cbc46e08",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hex-x86_64-O0-inspection",
+      "path": "builds/hex-x86_64-O0/inspection.so",
+      "sha256": "7fb3c222a12390cedecb45fb5a3c0607cebe07433cdff6f56bae1377e802f5de",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-x86_64-O0-stripped",
+      "path": "builds/hex-x86_64-O0/stripped.so",
+      "sha256": "edc1fa2d3a139ea18ad388d1817d7948bb5b13df41157657ce7ae0e2e4e0f41b",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-x86_64-O1-inspection",
+      "path": "builds/hex-x86_64-O1/inspection.so",
+      "sha256": "902598bda212564bf9e734a3dfb260f34ec5a6186dff1781e4f5908ab1abcd11",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-x86_64-O1-stripped",
+      "path": "builds/hex-x86_64-O1/stripped.so",
+      "sha256": "d5251ccdf2e73e9825e31aaaa545d5a145b27eafc9438eadb0ec8a306cd8f918",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-x86_64-Os-inspection",
+      "path": "builds/hex-x86_64-Os/inspection.so",
+      "sha256": "5f81765188fbaa77744cc5e3405c3816fcf9b0fbb57e88f7a30d8fe3a73fb180",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-x86_64-Os-stripped",
+      "path": "builds/hex-x86_64-Os/stripped.so",
+      "sha256": "596646bb63fdc504ef7cf1ba9cc3deac063e71931027d9db64b167a3264b6e87",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-O0-inspection",
+      "path": "builds/hex-aarch64-O0/inspection.so",
+      "sha256": "206047e70d9c8c30451a26fb2be7d5f6518297db8dee24db476628d406ce4e7d",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-O0-stripped",
+      "path": "builds/hex-aarch64-O0/stripped.so",
+      "sha256": "47ae319194d667cba501a4a7a0e19e7ef4b4186842cab827168e51efe17ad3d9",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-O1-inspection",
+      "path": "builds/hex-aarch64-O1/inspection.so",
+      "sha256": "c453a9d73a70e6af49f4c5bf2e6a252ae8d8dd6c9a49b02655d610f516eb2964",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-O1-stripped",
+      "path": "builds/hex-aarch64-O1/stripped.so",
+      "sha256": "c4e33b380c2f983018b8260b448a193f0d0dbb1dd3effb0370a68f71d6fd5c07",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-Os-inspection",
+      "path": "builds/hex-aarch64-Os/inspection.so",
+      "sha256": "5ac21cd02c0c7d4df02ad869d4850ffbacbf042e2153c52b880f63b68e6cc50b",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hex-aarch64-Os-stripped",
+      "path": "builds/hex-aarch64-Os/stripped.so",
+      "sha256": "b158b70a2a9c9338bf9a447d49d8af06356a6877a8ca11f59b06258157e9ff8e",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-O0-inspection",
+      "path": "builds/hacl-md5-x86_64-O0/inspection.so",
+      "sha256": "d29bc374e0e8c8c5ad991896bfbdca4aa515b411bbde916fcda12f903a21592f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-O0-stripped",
+      "path": "builds/hacl-md5-x86_64-O0/stripped.so",
+      "sha256": "7b488c113540eb6ac0bd7e1c257028aa28cd5c45eb1118c141faf7cfa532d431",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-O1-inspection",
+      "path": "builds/hacl-md5-x86_64-O1/inspection.so",
+      "sha256": "f1f66a19c647aa6c2f7361725ede8dd32f377261a72109ee16c8cd914e463d14",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-O1-stripped",
+      "path": "builds/hacl-md5-x86_64-O1/stripped.so",
+      "sha256": "bef58f5d035e057b27316017c31b040094fa4639ed2309cf1b8520a709443cef",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-Os-inspection",
+      "path": "builds/hacl-md5-x86_64-Os/inspection.so",
+      "sha256": "485aba6774c3add82b069ec055dd00414e29beeaea763cd97f3fdfc794185f1b",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-x86_64-Os-stripped",
+      "path": "builds/hacl-md5-x86_64-Os/stripped.so",
+      "sha256": "c43f7af55864db396f60ed71ef46c0f6ec4f05f63b1ce1faec27759e1121288f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-O0-inspection",
+      "path": "builds/hacl-md5-aarch64-O0/inspection.so",
+      "sha256": "2a438bb44c7d4de83d112d859e935b092ccd13b9138b019d09e5a3c9be4a231a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-O0-stripped",
+      "path": "builds/hacl-md5-aarch64-O0/stripped.so",
+      "sha256": "918c6693eafd78be58bc36eb30462bedd74c2e99a7b7cd7a0770a6efe5537bd0",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-O1-inspection",
+      "path": "builds/hacl-md5-aarch64-O1/inspection.so",
+      "sha256": "b76f441ce60d7211dbebd182de7334ba4a2f67ee8d02d7adf29399cb0e37d34c",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-O1-stripped",
+      "path": "builds/hacl-md5-aarch64-O1/stripped.so",
+      "sha256": "28215a996adebab5342a1ab04f8a82e5bd3e853751f04a16329d534b003f9e49",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-Os-inspection",
+      "path": "builds/hacl-md5-aarch64-Os/inspection.so",
+      "sha256": "283ff82c3a586cf4445b4e5151f00edcd7b15b91b307d6667bbfb13cc7175f79",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-md5-aarch64-Os-stripped",
+      "path": "builds/hacl-md5-aarch64-Os/stripped.so",
+      "sha256": "a6d095529c4f88ed8fa5063ca997003f0041692b78ab78d32d9a05a8cecc610c",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "MD5"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-O0-inspection",
+      "path": "builds/hacl-sha1-x86_64-O0/inspection.so",
+      "sha256": "7bf9008cfec0848d4b52c05bade4e9bc879045343d35b4ccfb545d2d00a45713",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-O0-stripped",
+      "path": "builds/hacl-sha1-x86_64-O0/stripped.so",
+      "sha256": "910a2d950edbd963707e84004a380d4349e8e98a00102ad14baa5a54cc0c92b5",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-O1-inspection",
+      "path": "builds/hacl-sha1-x86_64-O1/inspection.so",
+      "sha256": "767677b81d74cbe09907bff31302e514d30829ec29b586588bfaa776e9291f16",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-O1-stripped",
+      "path": "builds/hacl-sha1-x86_64-O1/stripped.so",
+      "sha256": "58272c3e491d0f6835c8ab67e8adc315495fb3d33cb2a891474f6ff33ab03c83",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-Os-inspection",
+      "path": "builds/hacl-sha1-x86_64-Os/inspection.so",
+      "sha256": "cc6a166318b25b05964c11ad5add699cd5c20cfb772050d18733e51ec7ff7efd",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-x86_64-Os-stripped",
+      "path": "builds/hacl-sha1-x86_64-Os/stripped.so",
+      "sha256": "50330fea1dc92dcb09557085fcb2cfde9b44c14341a9a9302efc43af1d0aa01b",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-O0-inspection",
+      "path": "builds/hacl-sha1-aarch64-O0/inspection.so",
+      "sha256": "8fcf7843e915eb7366a7ecf728e0f7dd7dc276450bd03fd512b9079fe3c359a1",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-O0-stripped",
+      "path": "builds/hacl-sha1-aarch64-O0/stripped.so",
+      "sha256": "2890d13f12454b4d1f24742b7599aedf68bdb18d760730218bdbbf9ecb1992e5",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-O1-inspection",
+      "path": "builds/hacl-sha1-aarch64-O1/inspection.so",
+      "sha256": "35cd7b25d7112e5df02410d2b47b9c00ecfacce54c5e88099aa9d9f300564ae1",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-O1-stripped",
+      "path": "builds/hacl-sha1-aarch64-O1/stripped.so",
+      "sha256": "d8c8f3a473e79f0ebb32969b81d8808e56837bae65854252e7277a5c354b22d3",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-Os-inspection",
+      "path": "builds/hacl-sha1-aarch64-Os/inspection.so",
+      "sha256": "ca31ae69cd5722c92ebcd91566db00245f358a8357a31bdc1b85419bc4bcc4b8",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha1-aarch64-Os-stripped",
+      "path": "builds/hacl-sha1-aarch64-Os/stripped.so",
+      "sha256": "2415d46d7a4d2be97f29f2e1199582e77a64d9fce74534c92aeb73fb10b8ba6d",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-O0-inspection",
+      "path": "builds/hacl-sha2-x86_64-O0/inspection.so",
+      "sha256": "dc6780e13cee1bd9b27255beb3ceb917465fd619c8faafb647624ae2f8ce073c",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-O0-stripped",
+      "path": "builds/hacl-sha2-x86_64-O0/stripped.so",
+      "sha256": "7ce81f83a3cccf9302c13bcddefd26ae0f17a5678efdc0a7aa11b3f36a3ba25b",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-O1-inspection",
+      "path": "builds/hacl-sha2-x86_64-O1/inspection.so",
+      "sha256": "5e3c9ed25d27bc89e8ec1d9878757023ca1a3232f288ad86f2f27a0f6a36aa41",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-O1-stripped",
+      "path": "builds/hacl-sha2-x86_64-O1/stripped.so",
+      "sha256": "b1bb644ecc67f86c44729023cb388528895f6912e2364bfd03e88935fc1670ce",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-Os-inspection",
+      "path": "builds/hacl-sha2-x86_64-Os/inspection.so",
+      "sha256": "8d1a78e38bfb62c1cf00ed6f7f0dd6297fbb87518c14e750b90ba537c8b109a8",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-x86_64-Os-stripped",
+      "path": "builds/hacl-sha2-x86_64-Os/stripped.so",
+      "sha256": "b94d64f6d819ac3838a4f5b6e43d025f567dbf7be6b2262eaee5588e59ade0bd",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-O0-inspection",
+      "path": "builds/hacl-sha2-aarch64-O0/inspection.so",
+      "sha256": "eebe0fc217ba8996793e430994bdf17bf95f2a56e596703d00bae4eb0cf75a71",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-O0-stripped",
+      "path": "builds/hacl-sha2-aarch64-O0/stripped.so",
+      "sha256": "94f0e6bd8816444626bf2d5fd8928681165a8c80057e7ccea7370d29f8f428e3",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-O1-inspection",
+      "path": "builds/hacl-sha2-aarch64-O1/inspection.so",
+      "sha256": "63a7d213119de5e97c888b39ad3389322b8b7d0298b3d90c784c09181f3a32d5",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-O1-stripped",
+      "path": "builds/hacl-sha2-aarch64-O1/stripped.so",
+      "sha256": "69a40e780b24b69ddcaceaa8848da5e78fdf00355e4cbf44bbbeb7f4faa7bf40",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-Os-inspection",
+      "path": "builds/hacl-sha2-aarch64-Os/inspection.so",
+      "sha256": "9cc27e3ee65f84c14a9be25d02b8f624669aea508d60124cb44772088ab44879",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-sha2-aarch64-Os-stripped",
+      "path": "builds/hacl-sha2-aarch64-Os/stripped.so",
+      "sha256": "7547e004df18dc1f67d27e6c7f06153d7fa4ed65da049e90064fd7f0029a41e1",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-O0-inspection",
+      "path": "builds/hacl-chacha-x86_64-O0/inspection.so",
+      "sha256": "2aae121b126d2491579e819d4cdb6636f10c67933af855d844557c1f26a802d1",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-O0-stripped",
+      "path": "builds/hacl-chacha-x86_64-O0/stripped.so",
+      "sha256": "c96018b3d1da63fd2aa046f558631722763b2e84e4b16c5b392fcb1af16f4cc6",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-O1-inspection",
+      "path": "builds/hacl-chacha-x86_64-O1/inspection.so",
+      "sha256": "74c8e1347824a4c19290d2d6e5784cb4da3e9d5664d4fc3af28d119ad98b7027",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-O1-stripped",
+      "path": "builds/hacl-chacha-x86_64-O1/stripped.so",
+      "sha256": "014a39a21e34709f3bcba5110f01a18ac68098bd386bc9e1ee15f9dbc900f111",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-Os-inspection",
+      "path": "builds/hacl-chacha-x86_64-Os/inspection.so",
+      "sha256": "beaee1527cb09933742564054811801f5e9b5c6bdbd0072da935bbfb04546088",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-x86_64-Os-stripped",
+      "path": "builds/hacl-chacha-x86_64-Os/stripped.so",
+      "sha256": "bd883c1ed2008cb2acb4e010091780b6b01ec37f5430ea91b1062796842fe5f8",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-O0-inspection",
+      "path": "builds/hacl-chacha-aarch64-O0/inspection.so",
+      "sha256": "63e1e4d05ca759786af02035e8d91ba1a40aa93023fa9ba5fe810804c0026c75",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-O0-stripped",
+      "path": "builds/hacl-chacha-aarch64-O0/stripped.so",
+      "sha256": "e204f69261ab28eb3331709ebd29a50c3db0cf99554ee5404ccc83ca97753719",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-O1-inspection",
+      "path": "builds/hacl-chacha-aarch64-O1/inspection.so",
+      "sha256": "c11ef5aceae291e1ad92d822ab4caad7c4c60e464b7132cb62b28c06f2487c29",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-O1-stripped",
+      "path": "builds/hacl-chacha-aarch64-O1/stripped.so",
+      "sha256": "4542b97cbe4914a6c4d3a7d87e74e99c27c76673f12f026ec04c89230d3fa2de",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-Os-inspection",
+      "path": "builds/hacl-chacha-aarch64-Os/inspection.so",
+      "sha256": "4b9c08dc324a33a49ff6316de12fb9e0c314ffa0e64f0139dd64bcc026c8f12a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-chacha-aarch64-Os-stripped",
+      "path": "builds/hacl-chacha-aarch64-Os/stripped.so",
+      "sha256": "1ec69b46fd180d36c01b5a08b3cef0859238e606745e8f00f9c011ffa67b1b40",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-O0-inspection",
+      "path": "builds/hacl-rsa-x86_64-O0/inspection.so",
+      "sha256": "d9a46b5b4747ccb2598de6c7c259e3da3568f4f06ddab96bb0e622c057cba6a0",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-O0-stripped",
+      "path": "builds/hacl-rsa-x86_64-O0/stripped.so",
+      "sha256": "a0648535cf54c068fd023c57f1d4de11ea6a0f14eec69a349a24130cd6424384",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-O1-inspection",
+      "path": "builds/hacl-rsa-x86_64-O1/inspection.so",
+      "sha256": "3c0db7febb9fad903316a04d741c3e376b6715aefd83acc3d995f06d6aed2697",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-O1-stripped",
+      "path": "builds/hacl-rsa-x86_64-O1/stripped.so",
+      "sha256": "040e603caa7d0dcf9bc27be0c60597d7529a0f3a8f4329acb210cb96cda4c583",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-Os-inspection",
+      "path": "builds/hacl-rsa-x86_64-Os/inspection.so",
+      "sha256": "0dd9ce701ba93fa2fad786b5884152485b372bc4be07b5c853b77b1e59d7da49",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-x86_64-Os-stripped",
+      "path": "builds/hacl-rsa-x86_64-Os/stripped.so",
+      "sha256": "fb6a1b8b9f59aea6011eefad778ddf06faf809c2e04b850bfa6a55b2ab9a8e06",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-O0-inspection",
+      "path": "builds/hacl-rsa-aarch64-O0/inspection.so",
+      "sha256": "4e72fcb5c38d640ed93f4dfe3c81b0ce46bc1b6a500b28663f8a15329c5df1d6",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-O0-stripped",
+      "path": "builds/hacl-rsa-aarch64-O0/stripped.so",
+      "sha256": "dfa8d41f39dc9da68428ffc5762665adc0c5f1903b4faf04fc2b1d83c7d4ae74",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-O1-inspection",
+      "path": "builds/hacl-rsa-aarch64-O1/inspection.so",
+      "sha256": "bf2286ca84a36c02ae7ddb4873455a916877ebd8d1ef612eac6a9896d40c3118",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-O1-stripped",
+      "path": "builds/hacl-rsa-aarch64-O1/stripped.so",
+      "sha256": "60ed0e53ceeca85790d20b2f7ab2fcb40ba04c3886ab099dcc4d406ce5f39020",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-Os-inspection",
+      "path": "builds/hacl-rsa-aarch64-Os/inspection.so",
+      "sha256": "6a080de2746917812e7858d65ed401b38981092fcbde80de9b912b5ba022f446",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-rsa-aarch64-Os-stripped",
+      "path": "builds/hacl-rsa-aarch64-Os/stripped.so",
+      "sha256": "2dcbb978aaf186b6bc43ddfd20c5f2d01624064e7a223a0f5b3c7c399421f8b6",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "RSA",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-O0-inspection",
+      "path": "builds/hacl-p256-x86_64-O0/inspection.so",
+      "sha256": "6dea34557388e1e5acfc7e400cea8b0d13b41a4fe2976a3a01564bd37f8d74dd",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-O0-stripped",
+      "path": "builds/hacl-p256-x86_64-O0/stripped.so",
+      "sha256": "e3284bafdc67ef68d2615d1ed5be3a91831c989c77235c1ef95af0354c10e463",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-O1-inspection",
+      "path": "builds/hacl-p256-x86_64-O1/inspection.so",
+      "sha256": "8b766decd8c808310baa129fba3e3f04bc2307de81d7f66f171d2a7140bfeb35",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-O1-stripped",
+      "path": "builds/hacl-p256-x86_64-O1/stripped.so",
+      "sha256": "ea064115b5b0da139054859388f859a9eaece6f3bf4cd012991cd153b33e48d6",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-Os-inspection",
+      "path": "builds/hacl-p256-x86_64-Os/inspection.so",
+      "sha256": "7c8a9b6d3a90a507ead4458a46acf416b138f16cbfadf195e642c540d029486f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-x86_64-Os-stripped",
+      "path": "builds/hacl-p256-x86_64-Os/stripped.so",
+      "sha256": "40b4d28c9fc0ddc1587b16a29e52e96d82b9345dca0b07064a72607a0c20370e",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-O0-inspection",
+      "path": "builds/hacl-p256-aarch64-O0/inspection.so",
+      "sha256": "b80bacf532b69af53c4b7d6a54ad3dc1401232627982143cfa5cfa2f4d2dde7a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-O0-stripped",
+      "path": "builds/hacl-p256-aarch64-O0/stripped.so",
+      "sha256": "ec2e841310d8bed59e90eb195780c46d1c3345e0ed613ec8c87e5b340984b50a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-O1-inspection",
+      "path": "builds/hacl-p256-aarch64-O1/inspection.so",
+      "sha256": "0f8e8b8c0cd78363d55abc188d0bc65bd490403e1eb0d5de217582763cd799ef",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-O1-stripped",
+      "path": "builds/hacl-p256-aarch64-O1/stripped.so",
+      "sha256": "da1b1a22c0690d59e6ac1806c48d86868a63f131d70abd4dd5c1adf64f0ff82f",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-Os-inspection",
+      "path": "builds/hacl-p256-aarch64-Os/inspection.so",
+      "sha256": "72d6976d51a665fc68329ab2046afea8c72379e6b927e06f75a95b2ecb939cc9",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-p256-aarch64-Os-stripped",
+      "path": "builds/hacl-p256-aarch64-Os/stripped.so",
+      "sha256": "b7174f8c5f71f49b3390d3437a84cd4d9266dedae4c02735292c4d31795a50ae",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDSA",
+          "ECDH",
+          "SHA-256"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O0-inspection",
+      "path": "builds/hacl-curve25519-x86_64-O0/inspection.so",
+      "sha256": "62fe09dbe2e006fc210e4d2df3d2b5657cc10d6e0f581689032289625e2a528c",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O0-stripped",
+      "path": "builds/hacl-curve25519-x86_64-O0/stripped.so",
+      "sha256": "ccfc12edeea86fef95d4e9d9ae0a4433a2a7be10ccce969ad58cfa38e8b8545e",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O1-inspection",
+      "path": "builds/hacl-curve25519-x86_64-O1/inspection.so",
+      "sha256": "2e2d7e2535cbf62c004d1746b232c45ab7627032f124e698440e9779ced62340",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O1-stripped",
+      "path": "builds/hacl-curve25519-x86_64-O1/stripped.so",
+      "sha256": "94e6598c8cf860f51d7e3c4e1337b34894e1d59bf02bcb38f5f1bbc1c9d7a34a",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-Os-inspection",
+      "path": "builds/hacl-curve25519-x86_64-Os/inspection.so",
+      "sha256": "9ddabd233fe18a1a72a7fc6e44623d40647a544fd196f1c647f253ef32583fbf",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-x86_64-Os-stripped",
+      "path": "builds/hacl-curve25519-x86_64-Os/stripped.so",
+      "sha256": "cac549db847312d43dc89a3a659bab0caa3867cfc418b84d18444a42becc2169",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O0-inspection",
+      "path": "builds/hacl-curve25519-aarch64-O0/inspection.so",
+      "sha256": "7a744b55a77a7408b82542e6baf9a315afcef5265e3628b15f3d123098946d5a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O0-stripped",
+      "path": "builds/hacl-curve25519-aarch64-O0/stripped.so",
+      "sha256": "110538be2c371e1df3ba56e61ff6e134978d65da64ad52a3d51cd78e7a071d38",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O1-inspection",
+      "path": "builds/hacl-curve25519-aarch64-O1/inspection.so",
+      "sha256": "96aaba01d9f1f7eb453666211439441ce0e4e0699cd911cccf448554607a552b",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O1-stripped",
+      "path": "builds/hacl-curve25519-aarch64-O1/stripped.so",
+      "sha256": "c528051836b8ed0dca209446d0900956eb23034f44d8dc9283d87f4dbc439bb5",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-Os-inspection",
+      "path": "builds/hacl-curve25519-aarch64-Os/inspection.so",
+      "sha256": "7ef2949a2468149f002bb5fdc00d7c617cbf927c4dfa63d309c16b22011511a7",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-curve25519-aarch64-Os-stripped",
+      "path": "builds/hacl-curve25519-aarch64-Os/stripped.so",
+      "sha256": "3eed2278d36aa7fcc87d808b735fecd8d3be96073f05407acdc8cd9db76f4403",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "ECDH"
+        ]
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O0-inspection",
+      "path": "builds/hacl-bignum32-x86_64-O0/inspection.so",
+      "sha256": "6655b7f05194effaf35e8f425955f31d1479b3bb2a47acb92087a9887742b774",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O0-stripped",
+      "path": "builds/hacl-bignum32-x86_64-O0/stripped.so",
+      "sha256": "23e372c0c7797b3f02a9b7c005ab2de9ad88f6c3e39b1509110e2e66600629d2",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O1-inspection",
+      "path": "builds/hacl-bignum32-x86_64-O1/inspection.so",
+      "sha256": "9d430a074306e2ef4addf41befe91d53ffe90ed9c8adfba0552777be728f789a",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O1-stripped",
+      "path": "builds/hacl-bignum32-x86_64-O1/stripped.so",
+      "sha256": "68ec56f5104ed45eb75828d7fc04abe7d727b8aba33558f609968c85139e74f2",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-Os-inspection",
+      "path": "builds/hacl-bignum32-x86_64-Os/inspection.so",
+      "sha256": "7ef74526a3f81c3b8b6064e83c9da0b9737a94cfead81288943b18e4a4b88082",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-x86_64-Os-stripped",
+      "path": "builds/hacl-bignum32-x86_64-Os/stripped.so",
+      "sha256": "2db82b642a96af2d33a802832e148429c0d471368939db7d59dd27ecdc35b03c",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O0-inspection",
+      "path": "builds/hacl-bignum32-aarch64-O0/inspection.so",
+      "sha256": "8ddca0769585eaeb19ccf1bf7c8b853e0d8ca9bad84304e468a4663f31295405",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O0-stripped",
+      "path": "builds/hacl-bignum32-aarch64-O0/stripped.so",
+      "sha256": "6d877051e79a01972f43314dcbf6a5fccfe3608e53192a202ad42fb42344f123",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O1-inspection",
+      "path": "builds/hacl-bignum32-aarch64-O1/inspection.so",
+      "sha256": "517f2efd96723591277509c3bf559da5614e77b1346811db95c8d7efd45e7c86",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O1-stripped",
+      "path": "builds/hacl-bignum32-aarch64-O1/stripped.so",
+      "sha256": "dd96bca10817906b150f5c1a0a8435ac615c439bf1f045af94649df0ff864f5c",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-Os-inspection",
+      "path": "builds/hacl-bignum32-aarch64-Os/inspection.so",
+      "sha256": "f9dd2da632cf4f137909bfacc65578864dd2669783fd028feb3d38940974efdd",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum32-aarch64-Os-stripped",
+      "path": "builds/hacl-bignum32-aarch64-Os/stripped.so",
+      "sha256": "59fe2970c463ae4a3dea9ef2c38f1a04badb72483091c18dc9af5f5693ea887a",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O0-inspection",
+      "path": "builds/hacl-bignum64-x86_64-O0/inspection.so",
+      "sha256": "27f01c5c3dbbbb1c2f547fb168962078b9293c07527dca2c55966e9f318e73fa",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O0-stripped",
+      "path": "builds/hacl-bignum64-x86_64-O0/stripped.so",
+      "sha256": "2fb7ac807221a536b11acf9cb66c3efacd928fbd33c70ceb112db7625d80c650",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O1-inspection",
+      "path": "builds/hacl-bignum64-x86_64-O1/inspection.so",
+      "sha256": "aa80daf9dac852eeb505b76a0705b276fc6ebc5242045f4c93c96d61c37b70eb",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O1-stripped",
+      "path": "builds/hacl-bignum64-x86_64-O1/stripped.so",
+      "sha256": "f540a4f4aa19706743be2e497826a6f4b0ba3fccb6aee43ea33d0cbc06a8c795",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-Os-inspection",
+      "path": "builds/hacl-bignum64-x86_64-Os/inspection.so",
+      "sha256": "7a5e3da093fc3e9d7b75d4a96d9dad82fc602f4b19c47787d05032639987253f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-x86_64-Os-stripped",
+      "path": "builds/hacl-bignum64-x86_64-Os/stripped.so",
+      "sha256": "86e51cad7fbb4af2a4588e29b716db72c03ddd6553caaed188b867f70ecd1549",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O0-inspection",
+      "path": "builds/hacl-bignum64-aarch64-O0/inspection.so",
+      "sha256": "aa616a73b74722243e3ee979b4619a185397918063525fb1b410af7f5134bf3d",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O0-stripped",
+      "path": "builds/hacl-bignum64-aarch64-O0/stripped.so",
+      "sha256": "a890c5e9263127e80b89066a6f12df484499b237e1366970d86d42f7fad27658",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O1-inspection",
+      "path": "builds/hacl-bignum64-aarch64-O1/inspection.so",
+      "sha256": "92780f22f6e6abbc5e7d27e8501f15872449f3e2a0ec1dd1b155584930ceff4e",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O1-stripped",
+      "path": "builds/hacl-bignum64-aarch64-O1/stripped.so",
+      "sha256": "1dc3ce19c4dbc7448c3fbcf297ad8883bc8f86b167e9c2c97a408ad04092e7a5",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-Os-inspection",
+      "path": "builds/hacl-bignum64-aarch64-Os/inspection.so",
+      "sha256": "913cd0d092a84542b137893e6f02f7e48e421362ef802e24465dd56f0873e56b",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-bignum64-aarch64-Os-stripped",
+      "path": "builds/hacl-bignum64-aarch64-Os/stripped.so",
+      "sha256": "7588c4946fe58caa410a98cd6466fa81916263d1d0f64bb701a919c55236027d",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O0-inspection",
+      "path": "builds/hacl-poly1305-x86_64-O0/inspection.so",
+      "sha256": "f33eecdd742e7dafd689ffff7b17434cf6a2d03645f31a341863d888d99f8eed",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O0-stripped",
+      "path": "builds/hacl-poly1305-x86_64-O0/stripped.so",
+      "sha256": "ca138383849222c2e4de3ddcf0f134a63f6cef0c949cbfe552cee39e883a7f2f",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O1-inspection",
+      "path": "builds/hacl-poly1305-x86_64-O1/inspection.so",
+      "sha256": "04cec7ad23b74b52491d870ec55c83849d397f2caa24f87b795c7188d5917965",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O1-stripped",
+      "path": "builds/hacl-poly1305-x86_64-O1/stripped.so",
+      "sha256": "0e2c051e240626249d366b41c98f89cbe2862bfb98d9e5e397afba99b3450f11",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-Os-inspection",
+      "path": "builds/hacl-poly1305-x86_64-Os/inspection.so",
+      "sha256": "7a3936be4da7ddbad013e66abe0d70232449c72d8a69b913566d4f40366fb346",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-x86_64-Os-stripped",
+      "path": "builds/hacl-poly1305-x86_64-Os/stripped.so",
+      "sha256": "62c69721911715f35b4efc16548daff62e2a39fbaba04cffe815d8ded44d0e83",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O0-inspection",
+      "path": "builds/hacl-poly1305-aarch64-O0/inspection.so",
+      "sha256": "a00dee5bd670e7348d60894929715dab36ebb9bfa2c3852b9702423376b8a161",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O0-stripped",
+      "path": "builds/hacl-poly1305-aarch64-O0/stripped.so",
+      "sha256": "855c6ca7b7d2f84378cd8da42d3dbc9bbe9382cc5a55c144d7dd6084e36df742",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O1-inspection",
+      "path": "builds/hacl-poly1305-aarch64-O1/inspection.so",
+      "sha256": "258cc88022ed83fc32d13f78b96ec5ec50d998df1fe8166f0b2f6eb425e54e95",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O1-stripped",
+      "path": "builds/hacl-poly1305-aarch64-O1/stripped.so",
+      "sha256": "ca4177a239ff9100b816675c40f767a2a13f216bb48639659b66cde93a4f8823",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-Os-inspection",
+      "path": "builds/hacl-poly1305-aarch64-Os/inspection.so",
+      "sha256": "cd68b749802d41c4eaf1be3324aa725cf8507e6251c5af91ec7daf507c492b0f",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "hacl-poly1305-aarch64-Os-stripped",
+      "path": "builds/hacl-poly1305-aarch64-Os/stripped.so",
+      "sha256": "beefbfec3216a0f00349e0e6d34c519d7a9c770d0107847c7c5207b8ac4ef616",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-O0-inspection",
+      "path": "builds/murmur3-x86_64-O0/inspection.so",
+      "sha256": "6d3e0cc257e10d05b2a40ee832b9ae9f8f2aac07fcba91794e4134b090f61639",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-O0-stripped",
+      "path": "builds/murmur3-x86_64-O0/stripped.so",
+      "sha256": "6b641c6b331c6ce466d03e3964bb1a0a98479f6945def182683c96e0328d6691",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-O1-inspection",
+      "path": "builds/murmur3-x86_64-O1/inspection.so",
+      "sha256": "cc40dab92a2ab7f20228b37462da10885834a320cce7fd0f09e23df553047d8d",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-O1-stripped",
+      "path": "builds/murmur3-x86_64-O1/stripped.so",
+      "sha256": "c34626313c738149b0beff62b2c3edce3fa49d2daaa738641ef7c872d4a256c0",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-Os-inspection",
+      "path": "builds/murmur3-x86_64-Os/inspection.so",
+      "sha256": "98c2923d7f7f050f6f656b4a21fefa0998203ec2944e6361241c351a2108ee15",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "Os",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-x86_64-Os-stripped",
+      "path": "builds/murmur3-x86_64-Os/stripped.so",
+      "sha256": "2460736fbda8ed7d2b35db531eaa9c19b8ff0c11b8c566db36f2e1ba3641b97e",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "Os",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-aarch64-O0-inspection",
+      "path": "builds/murmur3-aarch64-O0/inspection.so",
+      "sha256": "c27e2485514313970ff048f37827d29724e1948cd0ed581a105cf8a1964c08b7",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-aarch64-O0-stripped",
+      "path": "builds/murmur3-aarch64-O0/stripped.so",
+      "sha256": "abd8a53a010944dc8a480e40d472c2b9b590ecb29fb558ae4d0eecde5ddf4a30",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-aarch64-O1-inspection",
+      "path": "builds/murmur3-aarch64-O1/inspection.so",
+      "sha256": "d17371518b773601e1692c0a2728ab96b83662e17fb3509e48b8b975f8c4a4e0",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "murmur3-aarch64-O1-stripped",
+      "path": "builds/murmur3-aarch64-O1/stripped.so",
+      "sha256": "46e330c53ed202c1ff24207f3d99b537f48c898d99212ebe58a2e2ffb8995159",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "optimization": "O1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": []
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O0-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-O0-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "c120a77d2055231596c7adc8fad46507593b1683706ba1804f35e2be850851b5",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O0-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-O0-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "b465faafcd73f1061f04dd9db5b50b6b6ea20114b43d4d17a693623e6662ccbc",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O1-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-O1-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "c7f22e96f6d9fabc9d82f198e1edc47aecfe8fb39a828ab16d6b076f24512403",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O1-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-O1-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "6a9353906f5f9ac1b2de42e7a7432dd0b16ff7e6d73355d7f35a5c19e8ba44d4",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O2-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-O2-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "9704011b4bb82ad724884c8b099f164dfcd7d5b24a3fb634e97dafe8c379a355",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "2",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O2-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-O2-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "d553b71506742be692886b6df58a4df3fa77e2e72aeec6f00b863438e2f457dc",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "2",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O3-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-O3-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "1f5dbad54ff8f02d752fe3b091d4e4e3435accbb045bc4350f42b5bafe3c58d6",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "3",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-O3-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-O3-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "79887565f17da882f7bbea46065d37c910d07c878c773bc6d419ae96b8ab1c04",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "3",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-Os-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-Os-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "b5df97349c6984963b3a27bd34952c53b9b16cb4d43aab70a932e41251cf74d8",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "s",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-Os-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-Os-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "122ebce89ad0ab19cf497c925848c508459b1aefcf7146c26845faacaee87860",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "s",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-Oz-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm3-x86_64-Oz-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "13fc3b450b0bf84b6f634eb80ac2f326b16cc25587ce79ec7463df85b6b1c51e",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "z",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm3-x86_64-Oz-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm3-x86_64-Oz-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "2a97ede9bdf2890c030473dbb03fff1d9d809ec80965188b9ea43af24bda5d12",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm3",
+      "optimization": "z",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O0-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm4-x86_64-O0-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "59676357fb59f36d62be04b7d60d7f97ef61c78163ed69dfeeee6ef8d48a3c4f",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O0-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm4-x86_64-O0-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "235ac2319718c39d8071f058aabfc2111f2fc30df0504f7e21d95f0173d61ed0",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O1-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm4-x86_64-O1-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "664380de384ac0bc1eed010f1746a782a733b06a23f54a713bb2fcb60aad7fa4",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O1-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm4-x86_64-O1-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "da7759bee5fe0cca90c877f1328df0d0f7afbb2979a2fc03744b10898b09cd53",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O2-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm4-x86_64-O2-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "c8dd8f0906e65f26badbe5fca2c1f719b81d0835c8703309322c8411bfaa8c8b",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "2",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O2-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm4-x86_64-O2-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "9f57f56548d0c71b2cff5d82b622042ef72fd6ba03fcaa3740f80c16c986905e",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "2",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-Os-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm4-x86_64-Os-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "5dbed254f130bc8807e2f6175894036921845f7c547d95690a643f2bd1ecee67",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "s",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-Os-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm4-x86_64-Os-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "7767b8acc2ce2be3af42d006ca66e32a7074e2fa5d18076260a9cd53d60c9ba8",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "s",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-Oz-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm4-x86_64-Oz-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "d52324da6364e62b07a5c232574dcc22b2a98052a9fd217ab55ee02564e3476a",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "z",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-Oz-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm4-x86_64-Oz-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "ee6468c5bd6b3be6820171c58ab1e25c8fddc6bf6fc2bc76b627f95fec8472e5",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm4",
+      "optimization": "z",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O0-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-O0-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "f54a70d9744e1b708f2616c2217f6e14893d5111a67a8c4851959f9512ff5ddb",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "0",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O0-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-O0-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "285ddde396eb0824a18090697fd76c60cfcc43cc3c7a3ee0f422745e9f069c6d",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "0",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O1-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-O1-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "5081d0f0e6fb49ec58cace26ccbf0ef0c0e858c18203317e041254bf59f0a024",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "1",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O1-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-O1-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "1e95bbc8f7cfa3a3acdfa8aab3146ae1beefbaec9261275e97afabbd7f103908",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "1",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O2-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-O2-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "ee6672dd21efb2a53067191548a994e7deb5e3133fe1a13179fe45b368524222",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "2",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O2-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-O2-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "0559ef82d8fe8809d997aedaccf6e3a45b9c04bbffe9b4a07e079a5e0dc5fc86",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "2",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O3-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-O3-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "b37e31678ea1f35c421ba2bf9c367042f3252d4591f9741af1afc5e2e1288d5d",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "3",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-O3-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-O3-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "6474ccf31100bfc7f31fe9545b863d0ed30e1fdea52c54c938bfb88c23441ed1",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "3",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-Os-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-Os-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "76a1388df4db2980d79b750eb10361a1095d3259611a011105d72853329512e8",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "s",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-Os-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-Os-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "805af7d214485d5bdde73a25aaa0fd0c1549b1f092ce64ff1bda0e0ef372ee65",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "s",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-Oz-linux-linker-inspection",
+      "path": "builds/rustcrypto-sm2-x86_64-Oz-linux-linker/inspection.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "2aa7a8489c9eac31ab0bcf3bdfcc390e2c87a015b07245df577c18a3e1c94c45",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "z",
+      "variant": "inspection",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    },
+    {
+      "id": "rustcrypto-sm2-x86_64-Oz-linux-linker-stripped",
+      "path": "builds/rustcrypto-sm2-x86_64-Oz-linux-linker/stripped.so",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "sha256": "736e5ad651390ff3021365e750fdc5462a468099d5c24bac4e532240631622fb",
+      "project": "RustCrypto",
+      "group": "RustCrypto",
+      "family": "rustcrypto-sm2",
+      "optimization": "z",
+      "variant": "stripped",
+      "truth": {
+        "implementation_contains": [
+          "SM2",
+          "SM3"
+        ]
+      }
+    }
+  ],
+  "duplicate_exclusions": [
+    {
+      "id": "tiny-aes-x86_64-O2-inspection",
+      "duplicate_of": "tiny-aes-x86_64-O1-inspection",
+      "sha256": "bfb38e38b97edc37661ebb5141861ec75e7bbd52906e0a3b3440e8d65066821f"
+    },
+    {
+      "id": "tiny-aes-x86_64-O2-stripped",
+      "duplicate_of": "tiny-aes-x86_64-O1-stripped",
+      "sha256": "0304b733e81e6658aada5a9e695b41352abf9bf15be70c0f58224f75032ecd90"
+    },
+    {
+      "id": "tiny-aes-aarch64-O2-inspection",
+      "duplicate_of": "tiny-aes-aarch64-O1-inspection",
+      "sha256": "907bba1bc6488075b529ab7da256f264140541b86d282d04432a836b1b759ec1"
+    },
+    {
+      "id": "tiny-aes-aarch64-O2-stripped",
+      "duplicate_of": "tiny-aes-aarch64-O1-stripped",
+      "sha256": "d0314a11e6533fefa37af77afa623171440ab3d8b0ded4fbe94017a619de122e"
+    },
+    {
+      "id": "sha256-x86_64-O2-inspection",
+      "duplicate_of": "sha256-x86_64-O1-inspection",
+      "sha256": "3089e843aaccdae7ab0ec71c93a0e10ab97c4ebf146530e0350c6f52e2945d33"
+    },
+    {
+      "id": "sha256-x86_64-O2-stripped",
+      "duplicate_of": "sha256-x86_64-O1-stripped",
+      "sha256": "1955795f4455e84ab7139ed0675d5b275088a989be0a007c0dca66a9859294e9"
+    },
+    {
+      "id": "sha256-aarch64-O2-inspection",
+      "duplicate_of": "sha256-aarch64-O1-inspection",
+      "sha256": "03d862d5be65486d85d913aa508f959a8b11cae996ddc0400e42ba42c23d8490"
+    },
+    {
+      "id": "sha256-aarch64-O2-stripped",
+      "duplicate_of": "sha256-aarch64-O1-stripped",
+      "sha256": "62d551f2f1490d72c3df51895fd5a82c174a25d51828887138f901f98a87c2d7"
+    },
+    {
+      "id": "des-x86_64-O2-inspection",
+      "duplicate_of": "des-x86_64-O1-inspection",
+      "sha256": "a78917bd20d6588b6c361770482041d7401a05d70efc7b8030afda9e8f2565d5"
+    },
+    {
+      "id": "des-x86_64-O2-stripped",
+      "duplicate_of": "des-x86_64-O1-stripped",
+      "sha256": "ccbb80d30f224d52348d235ef60f089a89f02c9e752a6cf46446856e69d0bf77"
+    },
+    {
+      "id": "des-aarch64-O2-inspection",
+      "duplicate_of": "des-aarch64-O1-inspection",
+      "sha256": "a50025a691e4928d623a76f42c4cccd67db5631e0ffc73d2de05d9c5eaf12927"
+    },
+    {
+      "id": "des-aarch64-O2-stripped",
+      "duplicate_of": "des-aarch64-O1-stripped",
+      "sha256": "6dac3fd279d19e9874316dc7135f3c2fbb3924e1dca233924c05c0a77238e0b1"
+    },
+    {
+      "id": "chacha-x86_64-O2-inspection",
+      "duplicate_of": "chacha-x86_64-O1-inspection",
+      "sha256": "54de8f37fcf0f8302c92f39629ec0daa95ffdeca04c33d88546162cc6c24c051"
+    },
+    {
+      "id": "chacha-x86_64-O2-stripped",
+      "duplicate_of": "chacha-x86_64-O1-stripped",
+      "sha256": "5db6ceb7d625dba7d18d4fff4922aa9fbce6af5a10d9cdbca4cd83a7c449f0d7"
+    },
+    {
+      "id": "chacha-aarch64-O2-inspection",
+      "duplicate_of": "chacha-aarch64-O1-inspection",
+      "sha256": "436bd5e528fcdd7c3593c040c38a552441eb5248aa93b125f95950aaae9f330c"
+    },
+    {
+      "id": "chacha-aarch64-O2-stripped",
+      "duplicate_of": "chacha-aarch64-O1-stripped",
+      "sha256": "c5d9d2368ed3205de96fd37118fc98a15fdc70971a0da99503222e4e27273293"
+    },
+    {
+      "id": "sha1-x86_64-O2-inspection",
+      "duplicate_of": "sha1-x86_64-O1-inspection",
+      "sha256": "a606b1ab52c9fa4a077b867a9622f929c3af7110e5a1db3ccf70e29f6216262d"
+    },
+    {
+      "id": "sha1-x86_64-O2-stripped",
+      "duplicate_of": "sha1-x86_64-O1-stripped",
+      "sha256": "2588db02d79f1e5180d5822cc2137104e753716d5be7b618419b7a1ac16ca966"
+    },
+    {
+      "id": "hex-x86_64-O2-inspection",
+      "duplicate_of": "hex-x86_64-O1-inspection",
+      "sha256": "902598bda212564bf9e734a3dfb260f34ec5a6186dff1781e4f5908ab1abcd11"
+    },
+    {
+      "id": "hex-x86_64-O2-stripped",
+      "duplicate_of": "hex-x86_64-O1-stripped",
+      "sha256": "d5251ccdf2e73e9825e31aaaa545d5a145b27eafc9438eadb0ec8a306cd8f918"
+    },
+    {
+      "id": "hex-aarch64-O2-inspection",
+      "duplicate_of": "hex-aarch64-O1-inspection",
+      "sha256": "c453a9d73a70e6af49f4c5bf2e6a252ae8d8dd6c9a49b02655d610f516eb2964"
+    },
+    {
+      "id": "hex-aarch64-O2-stripped",
+      "duplicate_of": "hex-aarch64-O1-stripped",
+      "sha256": "c4e33b380c2f983018b8260b448a193f0d0dbb1dd3effb0370a68f71d6fd5c07"
+    },
+    {
+      "id": "hacl-md5-x86_64-O2-inspection",
+      "duplicate_of": "hacl-md5-x86_64-O1-inspection",
+      "sha256": "f1f66a19c647aa6c2f7361725ede8dd32f377261a72109ee16c8cd914e463d14"
+    },
+    {
+      "id": "hacl-md5-x86_64-O2-stripped",
+      "duplicate_of": "hacl-md5-x86_64-O1-stripped",
+      "sha256": "bef58f5d035e057b27316017c31b040094fa4639ed2309cf1b8520a709443cef"
+    },
+    {
+      "id": "hacl-md5-aarch64-O2-inspection",
+      "duplicate_of": "hacl-md5-aarch64-O1-inspection",
+      "sha256": "b76f441ce60d7211dbebd182de7334ba4a2f67ee8d02d7adf29399cb0e37d34c"
+    },
+    {
+      "id": "hacl-md5-aarch64-O2-stripped",
+      "duplicate_of": "hacl-md5-aarch64-O1-stripped",
+      "sha256": "28215a996adebab5342a1ab04f8a82e5bd3e853751f04a16329d534b003f9e49"
+    },
+    {
+      "id": "hacl-sha1-x86_64-O2-inspection",
+      "duplicate_of": "hacl-sha1-x86_64-O1-inspection",
+      "sha256": "767677b81d74cbe09907bff31302e514d30829ec29b586588bfaa776e9291f16"
+    },
+    {
+      "id": "hacl-sha1-x86_64-O2-stripped",
+      "duplicate_of": "hacl-sha1-x86_64-O1-stripped",
+      "sha256": "58272c3e491d0f6835c8ab67e8adc315495fb3d33cb2a891474f6ff33ab03c83"
+    },
+    {
+      "id": "hacl-sha1-aarch64-O2-inspection",
+      "duplicate_of": "hacl-sha1-aarch64-O1-inspection",
+      "sha256": "35cd7b25d7112e5df02410d2b47b9c00ecfacce54c5e88099aa9d9f300564ae1"
+    },
+    {
+      "id": "hacl-sha1-aarch64-O2-stripped",
+      "duplicate_of": "hacl-sha1-aarch64-O1-stripped",
+      "sha256": "d8c8f3a473e79f0ebb32969b81d8808e56837bae65854252e7277a5c354b22d3"
+    },
+    {
+      "id": "hacl-sha2-x86_64-O2-inspection",
+      "duplicate_of": "hacl-sha2-x86_64-O1-inspection",
+      "sha256": "5e3c9ed25d27bc89e8ec1d9878757023ca1a3232f288ad86f2f27a0f6a36aa41"
+    },
+    {
+      "id": "hacl-sha2-x86_64-O2-stripped",
+      "duplicate_of": "hacl-sha2-x86_64-O1-stripped",
+      "sha256": "b1bb644ecc67f86c44729023cb388528895f6912e2364bfd03e88935fc1670ce"
+    },
+    {
+      "id": "hacl-sha2-aarch64-O2-inspection",
+      "duplicate_of": "hacl-sha2-aarch64-O1-inspection",
+      "sha256": "63a7d213119de5e97c888b39ad3389322b8b7d0298b3d90c784c09181f3a32d5"
+    },
+    {
+      "id": "hacl-sha2-aarch64-O2-stripped",
+      "duplicate_of": "hacl-sha2-aarch64-O1-stripped",
+      "sha256": "69a40e780b24b69ddcaceaa8848da5e78fdf00355e4cbf44bbbeb7f4faa7bf40"
+    },
+    {
+      "id": "hacl-chacha-x86_64-O2-inspection",
+      "duplicate_of": "hacl-chacha-x86_64-O1-inspection",
+      "sha256": "74c8e1347824a4c19290d2d6e5784cb4da3e9d5664d4fc3af28d119ad98b7027"
+    },
+    {
+      "id": "hacl-chacha-x86_64-O2-stripped",
+      "duplicate_of": "hacl-chacha-x86_64-O1-stripped",
+      "sha256": "014a39a21e34709f3bcba5110f01a18ac68098bd386bc9e1ee15f9dbc900f111"
+    },
+    {
+      "id": "hacl-chacha-aarch64-O2-inspection",
+      "duplicate_of": "hacl-chacha-aarch64-O1-inspection",
+      "sha256": "c11ef5aceae291e1ad92d822ab4caad7c4c60e464b7132cb62b28c06f2487c29"
+    },
+    {
+      "id": "hacl-chacha-aarch64-O2-stripped",
+      "duplicate_of": "hacl-chacha-aarch64-O1-stripped",
+      "sha256": "4542b97cbe4914a6c4d3a7d87e74e99c27c76673f12f026ec04c89230d3fa2de"
+    },
+    {
+      "id": "hacl-rsa-x86_64-O2-inspection",
+      "duplicate_of": "hacl-rsa-x86_64-O1-inspection",
+      "sha256": "3c0db7febb9fad903316a04d741c3e376b6715aefd83acc3d995f06d6aed2697"
+    },
+    {
+      "id": "hacl-rsa-x86_64-O2-stripped",
+      "duplicate_of": "hacl-rsa-x86_64-O1-stripped",
+      "sha256": "040e603caa7d0dcf9bc27be0c60597d7529a0f3a8f4329acb210cb96cda4c583"
+    },
+    {
+      "id": "hacl-rsa-aarch64-O2-inspection",
+      "duplicate_of": "hacl-rsa-aarch64-O1-inspection",
+      "sha256": "bf2286ca84a36c02ae7ddb4873455a916877ebd8d1ef612eac6a9896d40c3118"
+    },
+    {
+      "id": "hacl-rsa-aarch64-O2-stripped",
+      "duplicate_of": "hacl-rsa-aarch64-O1-stripped",
+      "sha256": "60ed0e53ceeca85790d20b2f7ab2fcb40ba04c3886ab099dcc4d406ce5f39020"
+    },
+    {
+      "id": "hacl-p256-x86_64-O2-inspection",
+      "duplicate_of": "hacl-p256-x86_64-O1-inspection",
+      "sha256": "8b766decd8c808310baa129fba3e3f04bc2307de81d7f66f171d2a7140bfeb35"
+    },
+    {
+      "id": "hacl-p256-x86_64-O2-stripped",
+      "duplicate_of": "hacl-p256-x86_64-O1-stripped",
+      "sha256": "ea064115b5b0da139054859388f859a9eaece6f3bf4cd012991cd153b33e48d6"
+    },
+    {
+      "id": "hacl-p256-aarch64-O2-inspection",
+      "duplicate_of": "hacl-p256-aarch64-O1-inspection",
+      "sha256": "0f8e8b8c0cd78363d55abc188d0bc65bd490403e1eb0d5de217582763cd799ef"
+    },
+    {
+      "id": "hacl-p256-aarch64-O2-stripped",
+      "duplicate_of": "hacl-p256-aarch64-O1-stripped",
+      "sha256": "da1b1a22c0690d59e6ac1806c48d86868a63f131d70abd4dd5c1adf64f0ff82f"
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O2-inspection",
+      "duplicate_of": "hacl-curve25519-x86_64-O1-inspection",
+      "sha256": "2e2d7e2535cbf62c004d1746b232c45ab7627032f124e698440e9779ced62340"
+    },
+    {
+      "id": "hacl-curve25519-x86_64-O2-stripped",
+      "duplicate_of": "hacl-curve25519-x86_64-O1-stripped",
+      "sha256": "94e6598c8cf860f51d7e3c4e1337b34894e1d59bf02bcb38f5f1bbc1c9d7a34a"
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O2-inspection",
+      "duplicate_of": "hacl-curve25519-aarch64-O1-inspection",
+      "sha256": "96aaba01d9f1f7eb453666211439441ce0e4e0699cd911cccf448554607a552b"
+    },
+    {
+      "id": "hacl-curve25519-aarch64-O2-stripped",
+      "duplicate_of": "hacl-curve25519-aarch64-O1-stripped",
+      "sha256": "c528051836b8ed0dca209446d0900956eb23034f44d8dc9283d87f4dbc439bb5"
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O2-inspection",
+      "duplicate_of": "hacl-bignum32-x86_64-O1-inspection",
+      "sha256": "9d430a074306e2ef4addf41befe91d53ffe90ed9c8adfba0552777be728f789a"
+    },
+    {
+      "id": "hacl-bignum32-x86_64-O2-stripped",
+      "duplicate_of": "hacl-bignum32-x86_64-O1-stripped",
+      "sha256": "68ec56f5104ed45eb75828d7fc04abe7d727b8aba33558f609968c85139e74f2"
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O2-inspection",
+      "duplicate_of": "hacl-bignum32-aarch64-O1-inspection",
+      "sha256": "517f2efd96723591277509c3bf559da5614e77b1346811db95c8d7efd45e7c86"
+    },
+    {
+      "id": "hacl-bignum32-aarch64-O2-stripped",
+      "duplicate_of": "hacl-bignum32-aarch64-O1-stripped",
+      "sha256": "dd96bca10817906b150f5c1a0a8435ac615c439bf1f045af94649df0ff864f5c"
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O2-inspection",
+      "duplicate_of": "hacl-bignum64-x86_64-O1-inspection",
+      "sha256": "aa80daf9dac852eeb505b76a0705b276fc6ebc5242045f4c93c96d61c37b70eb"
+    },
+    {
+      "id": "hacl-bignum64-x86_64-O2-stripped",
+      "duplicate_of": "hacl-bignum64-x86_64-O1-stripped",
+      "sha256": "f540a4f4aa19706743be2e497826a6f4b0ba3fccb6aee43ea33d0cbc06a8c795"
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O2-inspection",
+      "duplicate_of": "hacl-bignum64-aarch64-O1-inspection",
+      "sha256": "92780f22f6e6abbc5e7d27e8501f15872449f3e2a0ec1dd1b155584930ceff4e"
+    },
+    {
+      "id": "hacl-bignum64-aarch64-O2-stripped",
+      "duplicate_of": "hacl-bignum64-aarch64-O1-stripped",
+      "sha256": "1dc3ce19c4dbc7448c3fbcf297ad8883bc8f86b167e9c2c97a408ad04092e7a5"
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O2-inspection",
+      "duplicate_of": "hacl-poly1305-x86_64-O1-inspection",
+      "sha256": "04cec7ad23b74b52491d870ec55c83849d397f2caa24f87b795c7188d5917965"
+    },
+    {
+      "id": "hacl-poly1305-x86_64-O2-stripped",
+      "duplicate_of": "hacl-poly1305-x86_64-O1-stripped",
+      "sha256": "0e2c051e240626249d366b41c98f89cbe2862bfb98d9e5e397afba99b3450f11"
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O2-inspection",
+      "duplicate_of": "hacl-poly1305-aarch64-O1-inspection",
+      "sha256": "258cc88022ed83fc32d13f78b96ec5ec50d998df1fe8166f0b2f6eb425e54e95"
+    },
+    {
+      "id": "hacl-poly1305-aarch64-O2-stripped",
+      "duplicate_of": "hacl-poly1305-aarch64-O1-stripped",
+      "sha256": "ca4177a239ff9100b816675c40f767a2a13f216bb48639659b66cde93a4f8823"
+    },
+    {
+      "id": "murmur3-x86_64-O2-inspection",
+      "duplicate_of": "murmur3-x86_64-O1-inspection",
+      "sha256": "cc40dab92a2ab7f20228b37462da10885834a320cce7fd0f09e23df553047d8d"
+    },
+    {
+      "id": "murmur3-x86_64-O2-stripped",
+      "duplicate_of": "murmur3-x86_64-O1-stripped",
+      "sha256": "c34626313c738149b0beff62b2c3edce3fa49d2daaa738641ef7c872d4a256c0"
+    },
+    {
+      "id": "murmur3-aarch64-O2-inspection",
+      "duplicate_of": "murmur3-aarch64-O1-inspection",
+      "sha256": "d17371518b773601e1692c0a2728ab96b83662e17fb3509e48b8b975f8c4a4e0"
+    },
+    {
+      "id": "murmur3-aarch64-O2-stripped",
+      "duplicate_of": "murmur3-aarch64-O1-stripped",
+      "sha256": "46e330c53ed202c1ff24207f3d99b537f48c898d99212ebe58a2e2ffb8995159"
+    },
+    {
+      "id": "murmur3-aarch64-Os-inspection",
+      "duplicate_of": "murmur3-aarch64-O1-inspection",
+      "sha256": "d17371518b773601e1692c0a2728ab96b83662e17fb3509e48b8b975f8c4a4e0"
+    },
+    {
+      "id": "murmur3-aarch64-Os-stripped",
+      "duplicate_of": "murmur3-aarch64-O1-stripped",
+      "sha256": "46e330c53ed202c1ff24207f3d99b537f48c898d99212ebe58a2e2ffb8995159"
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O3-linux-linker-inspection",
+      "duplicate_of": "rustcrypto-sm4-x86_64-O2-linux-linker-inspection",
+      "sha256": "c8dd8f0906e65f26badbe5fca2c1f719b81d0835c8703309322c8411bfaa8c8b"
+    },
+    {
+      "id": "rustcrypto-sm4-x86_64-O3-linux-linker-stripped",
+      "duplicate_of": "rustcrypto-sm4-x86_64-O2-linux-linker-stripped",
+      "sha256": "9f57f56548d0c71b2cff5d82b622042ef72fd6ba03fcaa3740f80c16c986905e"
+    }
+  ],
+  "policy": "All ground truth fixed before model/rule scoring. Never used for development. Sources verified upstream roles; only compiled units, no target execution."
+}

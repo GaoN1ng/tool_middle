@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ippcrypto",
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "url": "https://codeload.github.com/intel/ipp-crypto/tar.gz/aabec7cbba913833bb4a213e08f2447e25008d42",
+    "archive_sha256": "9302c032bff19cacc621e79f68649f7a971ba6804b69a15d2d9cbdaadc33b9a8",
+    "license_files": [
+      "sources/ippcrypto/LICENSE"
+    ]
+  },
+  {
+    "name": "boringssl",
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "url": "https://codeload.github.com/google/boringssl/tar.gz/5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "archive_sha256": "4117ae02de040d4469284673ed63a14e648af7c3974aa9e85bcef2975a9c9ea8",
+    "license_files": [
+      "sources/boringssl/LICENSE"
+    ]
+  }
+]

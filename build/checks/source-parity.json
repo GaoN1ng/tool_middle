@@ -1,0 +1,17 @@
+{
+  "unchanged_runtime_files": 89,
+  "adapted_runtime_files": [
+    "src/qcs/api_rules.py",
+    "src/qcs/yara_engine.py",
+    "src/qcs/firmware.py",
+    "src/qcs/cli.py",
+    "src/qcs/function_signatures.py",
+    "src/qcs/source_reference.py",
+    "src/qcs/paths.py",
+    "src/qcs/static_binary.py",
+    "src/qcs/guomi/__init__.py",
+    "src/qcs/guomi/binary_semantics.py"
+  ],
+  "all_json_resources_unchanged": true,
+  "model_sha256": "cbe8d124190d9a14bccdd3bd1fc0bc981f6ca180524a9270db4cb9aaff0ac925"
+}

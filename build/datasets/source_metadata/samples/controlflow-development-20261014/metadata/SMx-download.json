@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/NEWPLAN/SMx",
+  "commit": "703ba41e52d73a0a496c0d0df06aa686299e98ea",
+  "archive_sha256": "3f1d31ff41dc598eac45acdc0d6aa6f41151c320f67ae86d2b4cd79eede12e22",
+  "split": "development",
+  "policy": "Assigned before scans; author provenance retained; not all repos are independent ancestry"
+}

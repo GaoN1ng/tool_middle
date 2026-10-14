@@ -1,0 +1,11 @@
+{
+  "manifest_sha256": "bd46ff850b59d2efea5c82d0932938fd6b69fee9b6233efbea7ad8715c286ecd",
+  "corpus_lock_sha256": "0e33f1b1373a24509a18f6123793cb6f4191b27de088cbf44cac6013c0b0e06a",
+  "algorithms": [
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "evaluation_type": "fixed_validation_set_retest",
+  "policy": "791 unchanged prior validation files. All tuning uses development files only. This is not a new blind test. No changes to scanner after frozen retest; negatives and prior misses retained."
+}

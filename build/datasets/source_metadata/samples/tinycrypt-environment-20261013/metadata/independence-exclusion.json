@@ -1,0 +1,5 @@
+{
+  "reason": "tools/build_function_signatures.py already references TinyCrypt and micro-ecc implementations",
+  "status": "excluded_from_independent_validation",
+  "detector_scan_before_reclassification": false
+}

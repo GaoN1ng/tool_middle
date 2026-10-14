@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-12T10:24:38.641814+00:00",
+  "candidate_hashes": 791,
+  "prior_files_enumerated": 33445,
+  "prior_files_hashed": 72,
+  "old_validation_inputs_compared": 6620,
+  "prior_registries_checked": 11,
+  "file_overlaps": [],
+  "old_validation_overlaps": [],
+  "registered_overlaps": [],
+  "exact_hash_independent": true,
+  "genealogy_limits": [
+    "Crypto++ SM3 explicitly credits Krzysztof Kwiatkowski/Jack Lloyd code used by Botan; treat projects as separate repositories, not fully independent ancestry.",
+    "sm4ni reference/AES-NI variants share key schedule; openHiTLS SM3 default/small share public code.",
+    "Exact hash audit cannot prove absence of older upstream common ancestry.",
+    "Third-party YARA historical training/design corpora are not exhaustively documented. No new upstream sample was used to modify the current detector."
+  ]
+}

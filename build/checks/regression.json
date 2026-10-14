@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "distinct_test_count": 158,
+  "full_run_seconds": 1299.341,
+  "full_run_initial_failures": 11,
+  "full_run_initial_errors": 6,
+  "affected_unique_tests": [
+    "test_coverage_repairs.CoverageRepairTests.test_new_architectures_and_compiler_have_real_hidden_witnesses",
+    "test_coverage_repairs.CoverageRepairTests.test_pe_o0_pointer_relocations_preserve_hidden_ec_operations",
+    "test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_preserved_constant_and_code_payloads_in_nonexecuting_data",
+    "test_semantic_followup.SemanticFollowupTests.test_rc4_indexed_memory_on_three_isas"
+  ],
+  "targeted_reruns": [
+    {
+      "log": "tests-coverage-addendum.log",
+      "passed": true,
+      "test_ids": [
+        "test_coverage_repairs.CoverageRepairTests.test_new_architectures_and_compiler_have_real_hidden_witnesses",
+        "test_coverage_repairs.CoverageRepairTests.test_pe_o0_pointer_relocations_preserve_hidden_ec_operations"
+      ]
+    },
+    {
+      "log": "tests-support-addendum.log",
+      "passed": true,
+      "test_ids": [
+        "test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_preserved_constant_and_code_payloads_in_nonexecuting_data"
+      ]
+    },
+    {
+      "log": "tests-alias-addendum.log",
+      "passed": true,
+      "test_ids": [
+        "test_semantic_followup.SemanticFollowupTests.test_rc4_indexed_memory_on_three_isas"
+      ]
+    }
+  ],
+  "policy": "Full 158-case run plus targeted reruns of the four cases affected by missing migrated inputs/aliases. No detector changes. Do not describe as a single clean full run."
+}

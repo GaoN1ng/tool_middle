@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "checks": [
+    {
+      "dependency": "linux_runtime",
+      "status": "available",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "python_executable": "/var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python"
+    },
+    {
+      "dependency": "yara-python",
+      "status": "available",
+      "version": "4.5.4"
+    },
+    {
+      "dependency": "pyelftools",
+      "status": "available",
+      "version": "0.32"
+    },
+    {
+      "dependency": "pefile",
+      "status": "available",
+      "version": "2024.8.26"
+    },
+    {
+      "dependency": "capstone",
+      "status": "available",
+      "version": "5.0.6"
+    },
+    {
+      "dependency": "tree-sitter",
+      "status": "available",
+      "version": "0.25.2"
+    },
+    {
+      "dependency": "tree-sitter-javascript",
+      "status": "available",
+      "version": "0.25.0"
+    },
+    {
+      "dependency": "tree-sitter-c",
+      "status": "available",
+      "version": "0.24.1"
+    },
+    {
+      "dependency": "tree-sitter-cpp",
+      "status": "available",
+      "version": "0.23.4"
+    },
+    {
+      "dependency": "yara_rules",
+      "status": "available",
+      "sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5"
+    },
+    {
+      "dependency": "function_signatures",
+      "status": "available",
+      "sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "signature_count": 1028
+    },
+    {
+      "dependency": "source_implementations",
+      "status": "available",
+      "sha256": "91a01301abad78d85c2d9c3041800d1adb294bb15b328fc698a3af1e71da94b6",
+      "reference_count": 125
+    },
+    {
+      "dependency": "windriver",
+      "status": "available",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/src/qcs/resources/windriver"
+    },
+    {
+      "dependency": "guomi_module",
+      "status": "available",
+      "signature_count": 152,
+      "source_modules": 4,
+      "development_signature_count": 211,
+      "development_source_modules": 9,
+      "api_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+      "signatures_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99"
+    },
+    {
+      "dependency": "guomi_operation_parsers",
+      "status": "available",
+      "capstone_version": "5.0.6"
+    },
+    {
+      "dependency": "binwalk",
+      "status": "missing_or_unsupported",
+      "optional": true,
+      "reason": "Binwalk missing; install Binwalk v2 or use --binwalk PATH. Native adapters remain available.",
+      "remedy": "Native SquashFS/ESP/gzip remain usable; use pinned Binwalk v2 for the legacy fallback"
+    },
+    {
+      "dependency": "unsquashfs",
+      "status": "available",
+      "path": "/usr/bin/unsquashfs",
+      "optional": true,
+      "purpose": "SquashFS extraction",
+      "remedy": "Install squashfs-tools using your Linux distribution package manager"
+    },
+    {
+      "dependency": "mksquashfs",
+      "status": "available",
+      "path": "/usr/bin/mksquashfs",
+      "optional": true,
+      "purpose": "SquashFS fixture generation only",
+      "remedy": "Install squashfs-tools using your Linux distribution package manager"
+    },
+    {
+      "dependency": "python",
+      "status": "available",
+      "version": "3.12.3",
+      "remedy": "Use Python 3.12; preserve existing virtual environments"
+    }
+  ],
+  "ready": true,
+  "capabilities": {
+    "source": true,
+    "executable": true,
+    "firmware_esp_gzip": true,
+    "firmware_squashfs": true,
+    "squashfs_fixture_build": true
+  }
+}

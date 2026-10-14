@@ -1,0 +1,617 @@
+{
+  "runtime_and_source": {
+    "src/qcs/__init__.py": "e01e0bbf32b7314df535ac38f79b72f210cb36becfea21bddf62afee6ff2823f",
+    "src/qcs/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/qcs/api_rules.py": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "src/qcs/source.py": "4f569e7f3070be4bb8790fe47493d05331cf25cec6fb5747fd474d07de014da7",
+    "src/qcs/symbols.py": "99af1ba04624ae2e3fa4c93e8fece4396b6eae72e7954352918ce4e26ab7602a",
+    "src/qcs/windriver.py": "7471621289e47ec93178dac8e1cbdaf58d8fac3b7195837023e5e44a2343a518",
+    "src/qcs/yara_engine.py": "77c7b1ab2ff54b76a567c16a25bb3891df69cba2bcd117a2bb31dc03d1a36b3b",
+    "src/qcs/process.py": "306402ca402b996a157a894d9c5330c980b5b73beb1edcbd93ab64fde89a593b",
+    "src/qcs/firmware.py": "e09e0683f262a67a04ab9fd86bef614652b0e7f1f4d75b97488bdb54300638fb",
+    "src/qcs/evaluate.py": "135b635de2da7a8446a731f333b031e3a81402038c91da1a34d89f89f7bd6bfc",
+    "src/qcs/text.py": "42b667de436019f89e0e9fb266cb67bd707ce7396517c3f0ddd0bb5469f45d53",
+    "src/qcs/scanner.py": "597f4c8c25e310e896fa885e8091dfc55bb3aaa327037868c82f677195a71f66",
+    "src/qcs/model.py": "95c426626fee112bbd7bd160773f55b8b76e37d4316a9383940f8d92edf1c3c4",
+    "src/qcs/cli.py": "48c3b4d42480064916f6257cea641d01deef355535c30f99f3f66e9366f501b1",
+    "src/qcs/function_signatures.py": "1366548e6ed07a80e0ef3ce28b6635fa90cb64cbe863db7d25c8e33a35ad3d1c",
+    "src/qcs/source_reference.py": "8e8e09585bdb3d2345e5d146748b36524b2636e34eea7b84f233d0666fa4f142",
+    "src/qcs/firmware_native.py": "cc10f31593d8b3a44163c2d9235d7146cf19880ba303ad536e7ebbfcce00b51f",
+    "src/qcs/paths.py": "c206230be998a824a19775e1d1a959e6bd1d9faade7b35d7a064749737014ed2",
+    "src/qcs/operation_tables.py": "9bb4529c530a79e065c6c1a4ca8cec39ad387e76344c4263655d31bda7afacd8",
+    "src/qcs/operations.py": "d818287d56e64377db4920c9d59265ba246c6905eee4f1b56a5bed88eca7045b",
+    "src/qcs/operation_arrays.py": "c2df03bad4138a273469b5ef2060299a81e33a331127dbea8713798e2417e954",
+    "src/qcs/operation_bignum.py": "59b536a6ec8101c59306346dc50fdde05d45d08654ba4b2a201b39f7024cbcee",
+    "src/qcs/controlflow.py": "d0f1f5e8a4659a030569412b6dab77bcd9755a1783419a09501e2737c6b3b629",
+    "src/qcs/static_primitives.py": "86e0b29a6e7bcaf2e5313ab6f8a794906856690dcfd7919c543005d41bb2363d",
+    "src/qcs/static_binary.py": "62d665171eb118b61dae23528486540ecb2a8d04a5d4ed1db84db82e8e288bc6",
+    "src/qcs/message_schedule.py": "393313649431ceeb83dd14578944451fe8ade49a6f027be74fa5267db61f6e03",
+    "src/qcs/source_state.py": "18a2b858daa0ccd1ba4d6e876b0fb036566c741534cc288a2a422e217b33b9ce",
+    "src/qcs_ml/features.py": "171a5d76bd6badabe57a8af8dc9c1152a5a12cb0d479783e08b148e7e2d4828c",
+    "src/qcs_ml/rf.py": "0efc7dc75b3b2da8fcadab9f16f6529e3bafa9d294fb11bfa5204a6d13fd2753",
+    "src/qcs_ml/curate.py": "cb7cb1a9988a58ba19a92314685005601019c41c95fc34b6ae06df503ab35bad",
+    "src/qcs_ml/dataset.py": "0e2f3188f2f10cd22e52eef8e2a4683359437b667bfa619ce0d3132f07f6ebb2",
+    "src/qcs_ml/audit_dataset.py": "5c3e11c7c6460384c6886e1a2ecc34143b7ef8e1734e25690a4dfa7525592801",
+    "src/qcs_ml/learn.py": "d7467a4121f9dcfdf107c88a2ba92e98c303dd7e2633f43a6a13bb5a4f5cac08",
+    "src/qcs_ml/__init__.py": "f1f1d819871bb2dbc4b85ecb43f4515d2e9e9c14af435e7d253996646e0f188d",
+    "src/qcs_ml/paths.py": "ec537d9965fe090d20e81558a3f27a8bd7e0e6f116a2910bb7167e23ed7d7c49",
+    "src/qcs/rules/function_signature_notices.txt": "6b8fb036efb3532347c7d674a5b73710cebaf55eb4c87d07ca0bf23d192c9bc9",
+    "src/qcs/rules/static_primitives-LICENSE.txt": "351815f734b0455c086bbf9c2f0674d14a64d5aef5b5f543e4b5425e6ef015c1",
+    "src/qcs/guomi/__init__.py": "c142360536ec32d8dc2e9aa47d5c033d8a2de961f2e0d2f7293539f43f7a43a8",
+    "src/qcs/guomi/constants.yar": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+    "src/qcs/guomi/javascript.py": "a733c8061e9f7612b99cf4080b267b82b58f8828abd878fee34f0e6eb27fb631",
+    "src/qcs/guomi/linear.py": "96e7846ae9d70094ecdc147097617ef4f137825138c2d51e635b59514e22a6af",
+    "src/qcs/guomi/binary_semantics.py": "08267fcc233a1f4f1bfb7b520be95347ea9dc84b43afd92b2e7f122d469e649d",
+    "src/qcs/guomi/source_semantics.py": "34765ece77e343d64f4caaaf86a4f0c784ad0ab375abfa31886f40afaf3ea3e9",
+    "src/qcs/guomi/bignum.py": "8e7199376f6eccf96bbedebef3a15d9de934a604db01f3132e5417933e0dcd5e",
+    "src/qcs/guomi/binary_bignum.py": "7a1418168411b6c79ec989d106a30a0c971a4a638039acb3aac0751288e8ef17",
+    "src/qcs/guomi/source_context.py": "c56e0c0364dc9fbda058f763b8fddcfe32679896cb9929f014b033ded1ffe321",
+    "src/qcs/resources/yara/LICENSE": "fe91e5f0d13df520b8a4100434ba8c5734491f45bf4a512d813f554443231808",
+    "src/qcs/resources/yara/rules.yar": "13187461b448b1c300b4fbcdcab0db08fba08cadeeef8d8bb06c07d60843a652",
+    "src/qcs/resources/windriver/LICENSE": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7",
+    "src/qcs/resources/windriver/cryptodetector/__init__.py": "fe79720b125aab41490aee87d35e0c438c112ed228669d4d954884d98dba338c",
+    "src/qcs/resources/windriver/cryptodetector/crypto_output.py": "2a4c9bc668e499e0e729c008ff06911b6c5474efdc243adddc97bcdcfe1df6fd",
+    "src/qcs/resources/windriver/cryptodetector/cryptodetector.py": "a389b7278cb89418a219600f3f9a02eea233f9b7bb049c5d9fea59a1137b852d",
+    "src/qcs/resources/windriver/cryptodetector/exceptions.py": "7dfd3d61b98170aad189112d99ba0b7c8ca1f779d5f5246ab0efa70d23125b22",
+    "src/qcs/resources/windriver/cryptodetector/filelister.py": "93d6d3821be892f90bef4ad22f8a869ed97c241e84c738e431c22800d253ab40",
+    "src/qcs/resources/windriver/cryptodetector/language.py": "a7ecb43add141e1bdd9506395ffc93abf77abeb44d3afd7562bfc16d256cba19",
+    "src/qcs/resources/windriver/cryptodetector/logger.py": "1ddaf10a8c40b7cfb6cb622a7ff8e6ed07a3acd114fbddb957c640d56749789c",
+    "src/qcs/resources/windriver/cryptodetector/method.py": "9a36c6dcbc3f2e2cd358e32488924ed07a21abcaee122fe044c6259f86704fe7",
+    "src/qcs/resources/windriver/cryptodetector/options.py": "30f72883c3e42f776630076912c58495b748995588c5ac395fa5b9785b977935",
+    "src/qcs/resources/windriver/cryptodetector/output.py": "731c34be929687466bf899eced17252bff9726b086938384981cdd892b329786",
+    "src/qcs/resources/windriver/cryptodetector/regex.py": "c66d80b0323fca3da64277bc5623c62cb1802add231161824202b7c8f7172558",
+    "src/qcs/resources/windriver/cryptodetector/rpm.py": "9d002b99625570c9af85f9ceaa345cd6d1a47b3c822b1faab6fb787c6d5a3dec",
+    "src/qcs/resources/windriver/cryptodetector/methods/api/api_definitions.txt": "187bffb04cdb510fbdedf7d5f360a2abcb0b57d5d2ae19e179b0834ff52fa5f7",
+    "src/qcs/resources/windriver/cryptodetector/methods/api/api_finder.py": "1c7919309e4b3b6a5d64b20fe564e2e4a9af10333b6f86b340f4d5240845c9cc",
+    "src/qcs/resources/windriver/cryptodetector/methods/hello_world/hello_world_method.py": "785747c397fc4cac9eea0ebf33118b92bfcb64c71ada29515220e4699075770c",
+    "src/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_list.txt": "cc028f546fcf653ccc3b11b57c8c463fc8e9bfdbb67e300efecb7f6c51604409",
+    "src/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_search.py": "c57fa9322528f43342224bee537e485c89b82d36599825639655af95e3453a30",
+    "src/qcs/resources/yara/aes/aes_common.yar": "5b6e19aef5e48888ab307e0b016a66c51a347ed9afae67b4b080a7bb138eb139",
+    "src/qcs/resources/yara/aes/aes_x64.yar": "86b707ff086d4269d75fb8b6f1a0cda5858e242e2eb2f7fb3fe1a66f8c2c4b87",
+    "src/qcs/resources/yara/base64/base64_common.yar": "84f43cbfc3d4ac33f75fa7cd36e95407fa3d7652dbcaeec91d3b50149186f9d3",
+    "src/qcs/resources/yara/base64/base64_x64.yar": "559187fa2413d0b2ca65f720e2dab575ca7ebc5ba4ca9a37f2bb0d8a61160bb0",
+    "src/qcs/resources/yara/chacha/chacha_common.yar": "d33ef5e6ba7548f9df81715d54d59986c9ad27c7b9865be8201c5ed7d114bedf",
+    "src/qcs/resources/yara/chacha/chacha_x64.yar": "168665f07f6827c306aa5f33e7e51e9a937ea38d65d008d6e8e5389abf3ff4ae",
+    "src/qcs/resources/yara/des/des_common.yar": "feb5fa3e7d526699d1dbcf372055341992db54cc673956ae77e00b9b65d5c0f1",
+    "src/qcs/resources/yara/des/des_x64.yar": "ca0ed9251549817481db68f791b2c9f1228d86f42b6ff9fa997499ef8ca24de4",
+    "src/qcs/resources/yara/md5/md5_common.yar": "fe137609a41584bdd3795aae73473d52945c8c0edf525fdfd97173fbd262943e",
+    "src/qcs/resources/yara/md5/md5_x64.yar": "33a474e26fb718cb6862987808a1a788681fa61c6dd2a279fc66711e55303aa9",
+    "src/qcs/resources/yara/rc4/rc4_common.yar": "079bafa0e73a38ff5b893d3dd59428609db2160c958ec00daa5367eaa1a3da7b",
+    "src/qcs/resources/yara/rc4/rc4_x64.yar": "21554a258c4fc3a2a21a0e7509d6f1ed8b9e7019400615fbc1d29e7eb8990d6e",
+    "src/qcs/resources/yara/sha1/sha1_common.yar": "847d2938ea5ca1936a8c00368bccb0d563698f1a2d0f9bf9cce4e2fdaabec245",
+    "src/qcs/resources/yara/sha1/sha1_x64.yar": "78b39331e44981fb04ec6eec798d6d631fc7d211805399e0a9a9f0392d7faad0",
+    "src/qcs/resources/yara/sha2/sha2_common.yar": "3cdf83b28b6f1d0187069dd1ff07c1042ec8a61a827f51e9cf2c5746ac6abc02",
+    "src/qcs/resources/yara/sha2/sha2_x64.yar": "2e75490dcc429a2de462390bdc5cb81833c8522f2ff50ddf2097bddcf7b90917",
+    "src/qcs/resources/yara/sha3/sha3_common.yar": "e63f44357ddf6e3539f0343ffbc3c47252be5dfd1f4644548b8f7bccdfda98af",
+    "src/qcs/resources/yara/sha3/sha3_x64.yar": "e6a0fde4f34128f66ab89db185296c1f9bb27bbfbfdfd40cf027a22d947b03e2",
+    "src/qcs/guomi/licenses/cryptoscan-LICENSE": "9c834f03d3bd24747cf13c9ca47275480d99d2c9bb131bed512424823ba785f2",
+    "src/qcs/guomi/licenses/crypto-reverse-mcp-LICENSE": "8da39ff8ab9439f7e8836a9fe69d4425043b7c25c51ae5c9118cd65c8795bb48",
+    "src/qcs/guomi/licenses/gmssl-LICENSE": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "src/qcs/guomi/licenses/gmssl-NOTICE.txt": "d349e030d51ff0f27c49025d6a3ec205892803ed2a85c834801a18b1f972f55d",
+    "src/qcs/guomi/licenses/openssl-development-Apache-2.0.txt": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+    "src/qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+    "src/qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "src/qcs/guomi/licenses/development-source-notices.txt": "768ff66d7965be0d9ef7e51c6fe2787c2a9c30193d8d11465416a81d47f546a7",
+    "src/qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "build/runtime/qcs/rules/yara_mapping.json": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+    "build/runtime/qcs/rules/terminal_api_mapping.json": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "build/runtime/qcs/rules/function_signatures.json": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+    "build/runtime/qcs/rules/source_implementations.json": "91a01301abad78d85c2d9c3041800d1adb294bb15b328fc698a3af1e71da94b6",
+    "build/runtime/qcs/rules/static_primitives.json": "0e9964bb925e43d594c99799eca5b720fdfe0fcaf9e31a384fe609a95b40b35d",
+    "build/runtime/qcs/guomi/api_mapping.json": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "build/runtime/qcs/guomi/provenance.json": "eeb4e431a52ba4bca35ba0612f2b82ac4cd0f07e188fa3588c83d826f6d329c4",
+    "build/runtime/qcs/guomi/function_signatures.json": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+    "build/runtime/qcs/guomi/source_references.json": "9e4f4321c0f33a583bc7cb0eb1ace0727fcc7acfac23ed300fd6607a1f060522",
+    "build/runtime/qcs/guomi/standard.json": "914deec5e3c6c09f7e42f768bf0585873663e2766d3dfe2c710011e08343ec15",
+    "build/runtime/qcs/guomi/development_function_signatures.json": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+    "build/runtime/qcs/guomi/development_source_references.json": "a309b103828f190ddbb9f584acac02bc535a2aad0849e373ff4d8a7917531f69",
+    "build/runtime/qcs/guomi/development_provenance.json": "a7714e05bbf952e0be87ca084c7a5b1a67ac4772b3589e3345faa2abc4f0fe03",
+    "build/runtime/qcs/guomi/constants.yar": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+    "build/runtime/qcs/resources/provenance.json": "d61967b675d6a2e850633935ae8af07ebe6488ef3af4eac98558be7e37fae5a2",
+    "build/models/rf-baseline/features.py": "171a5d76bd6badabe57a8af8dc9c1152a5a12cb0d479783e08b148e7e2d4828c",
+    "build/models/rf-baseline/rf.py": "c4f1e211efec111993ba5ba2ca0b04a1b8d64ef30b3f93c410581b694dd013d2",
+    "build/models/rf-baseline/learn.py": "df21e3ad8a4c77e36466bcca97ad6a3215090d04d326397af6493b23f7a7e062",
+    "build/models/rf-baseline/curate.py": "20d811a1bbf33fbd4ed476323ed1c5550207b33fd6e6b304316c65a0ce12179b",
+    "build/models/rf-baseline/dataset.py": "c3ceb7433bc79f4d70b0626b51a35259036aef3b8f649ffd6468054e3be83335",
+    "build/models/rf-baseline/audit_dataset.py": "f2be7999775b07081b1f4f30905f8db29ba3df8ffacfa25ae0274e68687bb072",
+    "build/models/rf-baseline/freeze.py": "97e119a2f2d5b81f9f045533ed99ac0972bb409d9fe9e6271b4bca65e9244c5b",
+    "build/models/rf-baseline/requirements.txt": "b5107cb9bf240bce804f7420c9a189b95c8b17f3c3035fbc0b7bbb6e696cc6b0",
+    "build/models/rf-baseline/test_features.py": "3e397fb21f62ab1b93a77619d9203c84b5628338b562c3e47bd0ee9ea4edf3d5",
+    "build/models/rf-baseline/test_learning.py": "f24396910cb79d840db4115d97b8b68efecb0485c30d686fd4da11f1dfac8d5a",
+    "build/models/rf-baseline/model.joblib": "cbe8d124190d9a14bccdd3bd1fc0bc981f6ca180524a9270db4cb9aaff0ac925",
+    "build/models/rf-baseline/training-summary.json": "38e1ad36787152c5a39152441e29b95738f1cb048043ac15e7aeb7d53c5fd633",
+    "build/models/rf-baseline/protocol.json": "5c8bcf9e0286de5eaa015b1902afad3a41ce31e3ae04b271baf136851eada431",
+    "build/models/rf-baseline/annotation-audit.json": "503a4beac37194c2e94498f9254264de0264776abe0220cfb8163de3aa44fea1",
+    "build/models/rf-baseline/environment.txt": "44a7c67f241a7663f501aa4a53d35355dbba5d7948edb94ce551e29b83d14f6d",
+    "build/models/rf-baseline/feature-dictionary.json": "69e7344955f9612825170790138f4f249213e5da414d112882ded155482b3908",
+    "build/models/rf-baseline/thresholds.json": "15e220f75781fcfda8530a7c1f8270429a7d31cfc7e9c3266506fce97c04f453",
+    "build/models/rf-baseline/feature-importance.json": "a8628c096312105b1c42c8f264b7e9d0e748637449fcb46434a03501a497f091",
+    "build/models/rf-baseline/freeze.json": "1de90d7dbc1876fee4048dc6bd87b9e0b91b1a834e44989069099cc8ff5a7745"
+  },
+  "legal_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 16396,
+      "sha256": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7"
+    },
+    {
+      "path": "licenses/NOTICE.txt",
+      "bytes": 650,
+      "sha256": "eea75b0a85dd5310bc4fce0915ed4e5081a1c18a89f967a6c6ed8e41f23fe6ac"
+    },
+    {
+      "path": "licenses/samples/quantum-crypto-scanner/LICENSE",
+      "bytes": 16396,
+      "sha256": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7"
+    },
+    {
+      "path": "licenses/samples/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/mbedtls-3.6.5/LICENSE",
+      "bytes": 29852,
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    {
+      "path": "licenses/samples/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/LICENSE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/arduinolibs/libraries/LICENSE.txt",
+      "bytes": 1139,
+      "sha256": "f13c4b739edb20ac61006a0a5adb705148673b3f3e2514dcaadaea7318fb7d09"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/gmssl-modern/LICENSE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/libecc/LICENSE",
+      "bytes": 2232,
+      "sha256": "736943da6364b64eda78c48d162c8498807010dc947170cd0199f529d19b0241"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/libmcrypt/COPYING.LIB",
+      "bytes": 26536,
+      "sha256": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/mhash/COPYING",
+      "bytes": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/nettle/COPYING.LESSERv3",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/nettle/COPYINGv2",
+      "bytes": 17984,
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/nettle/COPYINGv3",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-development-20261014/sources/tinyssh/LICENSE.txt",
+      "bytes": 841,
+      "sha256": "216f62311707f543cee4e20842ff6c24b03df090f9337ec225382c400cfc3d1e"
+    },
+    {
+      "path": "licenses/samples/samples/controlflow-diversity-addendum-20261014/sources/sm4ni/LICENSE",
+      "bytes": 1082,
+      "sha256": "9cea42107a63af15553ebbce7b731de71ada957c228a578b6d76ccdc9d252186"
+    },
+    {
+      "path": "licenses/samples/samples/guomi-development-20261012/sources/libgcrypt/COPYING",
+      "bytes": 17984,
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "licenses/samples/samples/guomi-development-20261012/sources/libgcrypt/COPYING.LIB",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "licenses/samples/samples/guomi-development-20261012/sources/libgcrypt/LICENSES",
+      "bytes": 16356,
+      "sha256": "2a047a5799926c3cd705ce6df4b560d67578061ad5019fbff2a4609a3f0090bd"
+    },
+    {
+      "path": "licenses/samples/samples/guomi-development-20261012/sources/openssl/LICENSE.txt",
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/contiki-ng/LICENSE.txt",
+      "bytes": 1517,
+      "sha256": "cbdd874f179d9cb90784c20c81e91d1a6ad92facce008ff2306545deefb11255"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/esp-idf/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/LICENSE",
+      "bytes": 3254,
+      "sha256": "270e0b63ce74421f1ccaaf03f9c7daa430cdb16c9856259ca4c2e3c74880d589"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/esphome/LICENSE",
+      "bytes": 36664,
+      "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/gurux/LICENSE",
+      "bytes": 18071,
+      "sha256": "1be990a929b50ca91d815cea1cd3cebb5c49e86076ade82b1103f2b9cd71a3af"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/tasmota/LICENSE.txt",
+      "bytes": 35140,
+      "sha256": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c"
+    },
+    {
+      "path": "licenses/samples/samples/public-benchmark/sources/zephyr/LICENSE",
+      "bytes": 11358,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "licenses/samples/samples/research-development-20261013/sources/boringssl/LICENSE",
+      "bytes": 13115,
+      "sha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f"
+    },
+    {
+      "path": "licenses/samples/samples/research-development-20261013/sources/ippcrypto/LICENSE",
+      "bytes": 10170,
+      "sha256": "30452bdf81f0c9aa4d9d797b3946c79d220b69478e4655966eb2b519e3e0b32c"
+    },
+    {
+      "path": "licenses/samples/samples/stripped-repair/sources/micro-ecc-541b3a78026420a3e369c4c9281c396b5e531113/LICENSE.txt",
+      "bytes": 1300,
+      "sha256": "ffd8b033d2df7568c25a98866bd92b1656f7da82d7f813c0b2eb85ec36611193"
+    },
+    {
+      "path": "licenses/samples/samples/tinycrypt-environment-20261013/sources/tinycrypt/LICENSE",
+      "bytes": 3313,
+      "sha256": "b2d451fcba3577b118741d733d37ebd15bdd0b6b381e554a7345bdbfa3743108"
+    },
+    {
+      "path": "licenses/samples/third_party/crypto-detection/LICENSE",
+      "bytes": 11335,
+      "sha256": "fe91e5f0d13df520b8a4100434ba8c5734491f45bf4a512d813f554443231808"
+    },
+    {
+      "path": "licenses/samples/third_party/mbedtls/LICENSE",
+      "bytes": 29852,
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    {
+      "path": "licenses/samples/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/forcing-a-files-crc-to-any-value/COPYING.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "licenses/samples/validation_set/controlflow-independent-20261014/sources/putty/LICENCE",
+      "bytes": 1473,
+      "sha256": "3b02f87e0063430289d9681727a98818c844fc8a4d79b24b76047fa061e77f13"
+    },
+    {
+      "path": "licenses/samples/validation_set/controlflow-independent-20261014/sources/putty/licence.pl",
+      "bytes": 3795,
+      "sha256": "958895b768b349d72852dece36e52f92670e368a45ca56aacd19deda6ef5abbf"
+    },
+    {
+      "path": "licenses/samples/validation_set/guomi-20261012/sources/botan/license.txt",
+      "bytes": 1311,
+      "sha256": "758ea6b4a65d5611bf79c24920f92473ef44bdde0b3b97fa578470a0ffc34f14"
+    },
+    {
+      "path": "licenses/samples/validation_set/guomi-20261012/sources/cryptopp/License.txt",
+      "bytes": 4032,
+      "sha256": "78e4010b682cb94187fe0b57e50116d0ba271ef81104d1ddb35c80c3d81e3169"
+    },
+    {
+      "path": "licenses/samples/validation_set/guomi-20261012/sources/cyclone/LICENSE",
+      "bytes": 18046,
+      "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+    },
+    {
+      "path": "licenses/samples/validation_set/guomi-20261012/sources/openhitls/LICENSE",
+      "bytes": 9276,
+      "sha256": "2d14a14a45065e21e8021fb6cc9b8eb6542f8e327591ba4e0f2056aada1235d6"
+    },
+    {
+      "path": "licenses/samples/validation_set/guomi-20261012/sources/sm4ni/LICENSE",
+      "bytes": 1082,
+      "sha256": "9cea42107a63af15553ebbce7b731de71ada957c228a578b6d76ccdc9d252186"
+    },
+    {
+      "path": "licenses/samples/validation_set/operations-independent-20261013/sources/cifra/COPYING",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "licenses/samples/validation_set/operations-independent-20261013/sources/libsodium/LICENSE",
+      "bytes": 823,
+      "sha256": "508a76d186356c0dd807a670ef510964f8724557024796a2c426c6c0e19ab683"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/amosnier--sha-2/LICENSE.txt",
+      "bytes": 2202,
+      "sha256": "506de94a03e23bbc34e32a8b628b56688ac7c33672982388822816887727f1ac"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/dhuertas--DES/LICENSE",
+      "bytes": 1069,
+      "sha256": "bb7d50cf8b080c882f33387dcc35ed3b2040b268d3e42586adf0eec0fe170c57"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/LICENSE",
+      "bytes": 11356,
+      "sha256": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/LICENSE.txt",
+      "bytes": 1207,
+      "sha256": "998ce04fb8ad9dedb0bc1b44938f8c3dcf1089780fa105ce1c8c30fb5554d78c"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/maandree--libsha1/LICENSE",
+      "bytes": 769,
+      "sha256": "e0d8f06bc5c4e49ada3d4562836f5d3044ef758e543a000ae4809a4c4ff25ce4"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/LICENSE",
+      "bytes": 1071,
+      "sha256": "4894babc8810ebeb5e685af471fc2634709b1785152e7950882185c1d5382aa9"
+    },
+    {
+      "path": "licenses/samples/validation_set/rf-independent-20261014/sources/rurban--smhasher/LICENSE",
+      "bytes": 214,
+      "sha256": "dbccda740d544de8245b05d2c56a8ec73acaf9a9bb206676709fe1df1032a4a1"
+    },
+    {
+      "path": "licenses/samples/validation_set/semantic-independent-20261013/sources/axtls/LICENSE",
+      "bytes": 1461,
+      "sha256": "944bb6294db04785240db2746b220b64bc256a1a272b29ef5d3eb7a313d0973d"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/libgcrypt/COPYING",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/libgcrypt/COPYING.LIB",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/libgcrypt/LICENSES",
+      "bytes": 14713,
+      "sha256": "289f9561592dbcee8f1f9a1aca26df3cb0dbf3a989dbdd08effac19a8192c834"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/libtomcrypt/LICENSE",
+      "bytes": 719,
+      "sha256": "8f196cb13afd271f5e267fd29543fc454596382ad580e7592709492843996ac8"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/monocypher/LICENCE.txt",
+      "bytes": 9256,
+      "sha256": "a5781770269d2516e52ba4863f790c10a16da4089a1e81823aee19ff1e9026b0"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/nettle/COPYING.LESSERv3",
+      "bytes": 7639,
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/nettle/COPYINGv2",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/nettle/COPYINGv3",
+      "bytes": 35150,
+      "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/rhash/COPYING",
+      "bytes": 736,
+      "sha256": "953e55838353335148c90b5a38a4894292680b1d4c37228ffddddbf18ce54bf5"
+    },
+    {
+      "path": "licenses/samples/validation_set/sources/wolfssl/COPYING",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/crypto-reverse-mcp-LICENSE",
+      "bytes": 1088,
+      "sha256": "8da39ff8ab9439f7e8836a9fe69d4425043b7c25c51ae5c9118cd65c8795bb48"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/cryptoscan-LICENSE",
+      "bytes": 1064,
+      "sha256": "9c834f03d3bd24747cf13c9ca47275480d99d2c9bb131bed512424823ba785f2"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/development-source-notices.txt",
+      "bytes": 10331,
+      "sha256": "768ff66d7965be0d9ef7e51c6fe2787c2a9c30193d8d11465416a81d47f546a7"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/gmssl-LICENSE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/gmssl-NOTICE.txt",
+      "bytes": 1041,
+      "sha256": "d349e030d51ff0f27c49025d6a3ec205892803ed2a85c834801a18b1f972f55d"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/openssl-development-Apache-2.0.txt",
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt",
+      "bytes": 17984,
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "src/qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "src/qcs/rules/static_primitives-LICENSE.txt",
+      "bytes": 4877,
+      "sha256": "351815f734b0455c086bbf9c2f0674d14a64d5aef5b5f543e4b5425e6ef015c1"
+    },
+    {
+      "path": "src/qcs/rules/function_signature_notices.txt",
+      "bytes": 53104,
+      "sha256": "6b8fb036efb3532347c7d674a5b73710cebaf55eb4c87d07ca0bf23d192c9bc9"
+    },
+    {
+      "path": "src/qcs/resources/yara/LICENSE",
+      "bytes": 11335,
+      "sha256": "fe91e5f0d13df520b8a4100434ba8c5734491f45bf4a512d813f554443231808"
+    },
+    {
+      "path": "src/qcs/resources/windriver/LICENSE",
+      "bytes": 16396,
+      "sha256": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7"
+    }
+  ],
+  "old_wheel": {
+    "path": "build/dist/qcs_prototype-0.1.0.post1-py3-none-any.whl",
+    "sha256": "660a88558b6c3adbda8bf267701312852ba4388ae97c362badcfaddcc5f3060a",
+    "entries": {
+      "qcs/__init__.py": "e01e0bbf32b7314df535ac38f79b72f210cb36becfea21bddf62afee6ff2823f",
+      "qcs/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "qcs/api_rules.py": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+      "qcs/cli.py": "48c3b4d42480064916f6257cea641d01deef355535c30f99f3f66e9366f501b1",
+      "qcs/controlflow.py": "d0f1f5e8a4659a030569412b6dab77bcd9755a1783419a09501e2737c6b3b629",
+      "qcs/evaluate.py": "135b635de2da7a8446a731f333b031e3a81402038c91da1a34d89f89f7bd6bfc",
+      "qcs/firmware.py": "e09e0683f262a67a04ab9fd86bef614652b0e7f1f4d75b97488bdb54300638fb",
+      "qcs/firmware_native.py": "cc10f31593d8b3a44163c2d9235d7146cf19880ba303ad536e7ebbfcce00b51f",
+      "qcs/function_signatures.py": "1366548e6ed07a80e0ef3ce28b6635fa90cb64cbe863db7d25c8e33a35ad3d1c",
+      "qcs/message_schedule.py": "393313649431ceeb83dd14578944451fe8ade49a6f027be74fa5267db61f6e03",
+      "qcs/model.py": "95c426626fee112bbd7bd160773f55b8b76e37d4316a9383940f8d92edf1c3c4",
+      "qcs/operation_arrays.py": "c2df03bad4138a273469b5ef2060299a81e33a331127dbea8713798e2417e954",
+      "qcs/operation_bignum.py": "59b536a6ec8101c59306346dc50fdde05d45d08654ba4b2a201b39f7024cbcee",
+      "qcs/operation_tables.py": "9bb4529c530a79e065c6c1a4ca8cec39ad387e76344c4263655d31bda7afacd8",
+      "qcs/operations.py": "d818287d56e64377db4920c9d59265ba246c6905eee4f1b56a5bed88eca7045b",
+      "qcs/paths.py": "c206230be998a824a19775e1d1a959e6bd1d9faade7b35d7a064749737014ed2",
+      "qcs/process.py": "306402ca402b996a157a894d9c5330c980b5b73beb1edcbd93ab64fde89a593b",
+      "qcs/scanner.py": "597f4c8c25e310e896fa885e8091dfc55bb3aaa327037868c82f677195a71f66",
+      "qcs/source.py": "4f569e7f3070be4bb8790fe47493d05331cf25cec6fb5747fd474d07de014da7",
+      "qcs/source_reference.py": "8e8e09585bdb3d2345e5d146748b36524b2636e34eea7b84f233d0666fa4f142",
+      "qcs/source_state.py": "18a2b858daa0ccd1ba4d6e876b0fb036566c741534cc288a2a422e217b33b9ce",
+      "qcs/static_binary.py": "62d665171eb118b61dae23528486540ecb2a8d04a5d4ed1db84db82e8e288bc6",
+      "qcs/static_primitives.py": "86e0b29a6e7bcaf2e5313ab6f8a794906856690dcfd7919c543005d41bb2363d",
+      "qcs/symbols.py": "99af1ba04624ae2e3fa4c93e8fece4396b6eae72e7954352918ce4e26ab7602a",
+      "qcs/text.py": "42b667de436019f89e0e9fb266cb67bd707ce7396517c3f0ddd0bb5469f45d53",
+      "qcs/windriver.py": "7471621289e47ec93178dac8e1cbdaf58d8fac3b7195837023e5e44a2343a518",
+      "qcs/yara_engine.py": "77c7b1ab2ff54b76a567c16a25bb3891df69cba2bcd117a2bb31dc03d1a36b3b",
+      "qcs/guomi/__init__.py": "c142360536ec32d8dc2e9aa47d5c033d8a2de961f2e0d2f7293539f43f7a43a8",
+      "qcs/guomi/api_mapping.json": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+      "qcs/guomi/bignum.py": "8e7199376f6eccf96bbedebef3a15d9de934a604db01f3132e5417933e0dcd5e",
+      "qcs/guomi/binary_bignum.py": "7a1418168411b6c79ec989d106a30a0c971a4a638039acb3aac0751288e8ef17",
+      "qcs/guomi/binary_semantics.py": "08267fcc233a1f4f1bfb7b520be95347ea9dc84b43afd92b2e7f122d469e649d",
+      "qcs/guomi/constants.yar": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+      "qcs/guomi/development_function_signatures.json": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+      "qcs/guomi/development_provenance.json": "a7714e05bbf952e0be87ca084c7a5b1a67ac4772b3589e3345faa2abc4f0fe03",
+      "qcs/guomi/development_source_references.json": "a309b103828f190ddbb9f584acac02bc535a2aad0849e373ff4d8a7917531f69",
+      "qcs/guomi/function_signatures.json": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+      "qcs/guomi/javascript.py": "a733c8061e9f7612b99cf4080b267b82b58f8828abd878fee34f0e6eb27fb631",
+      "qcs/guomi/linear.py": "96e7846ae9d70094ecdc147097617ef4f137825138c2d51e635b59514e22a6af",
+      "qcs/guomi/provenance.json": "eeb4e431a52ba4bca35ba0612f2b82ac4cd0f07e188fa3588c83d826f6d329c4",
+      "qcs/guomi/source_context.py": "c56e0c0364dc9fbda058f763b8fddcfe32679896cb9929f014b033ded1ffe321",
+      "qcs/guomi/source_references.json": "9e4f4321c0f33a583bc7cb0eb1ace0727fcc7acfac23ed300fd6607a1f060522",
+      "qcs/guomi/source_semantics.py": "34765ece77e343d64f4caaaf86a4f0c784ad0ab375abfa31886f40afaf3ea3e9",
+      "qcs/guomi/standard.json": "914deec5e3c6c09f7e42f768bf0585873663e2766d3dfe2c710011e08343ec15",
+      "qcs/guomi/licenses/crypto-reverse-mcp-LICENSE": "8da39ff8ab9439f7e8836a9fe69d4425043b7c25c51ae5c9118cd65c8795bb48",
+      "qcs/guomi/licenses/cryptoscan-LICENSE": "9c834f03d3bd24747cf13c9ca47275480d99d2c9bb131bed512424823ba785f2",
+      "qcs/guomi/licenses/development-source-notices.txt": "768ff66d7965be0d9ef7e51c6fe2787c2a9c30193d8d11465416a81d47f546a7",
+      "qcs/guomi/licenses/gmssl-LICENSE": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "qcs/guomi/licenses/gmssl-NOTICE.txt": "d349e030d51ff0f27c49025d6a3ec205892803ed2a85c834801a18b1f972f55d",
+      "qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+      "qcs/guomi/licenses/openssl-development-Apache-2.0.txt": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "qcs/resources/provenance.json": "d61967b675d6a2e850633935ae8af07ebe6488ef3af4eac98558be7e37fae5a2",
+      "qcs/resources/windriver/LICENSE": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7",
+      "qcs/resources/windriver/cryptodetector/__init__.py": "fe79720b125aab41490aee87d35e0c438c112ed228669d4d954884d98dba338c",
+      "qcs/resources/windriver/cryptodetector/crypto_output.py": "2a4c9bc668e499e0e729c008ff06911b6c5474efdc243adddc97bcdcfe1df6fd",
+      "qcs/resources/windriver/cryptodetector/cryptodetector.py": "a389b7278cb89418a219600f3f9a02eea233f9b7bb049c5d9fea59a1137b852d",
+      "qcs/resources/windriver/cryptodetector/exceptions.py": "7dfd3d61b98170aad189112d99ba0b7c8ca1f779d5f5246ab0efa70d23125b22",
+      "qcs/resources/windriver/cryptodetector/filelister.py": "93d6d3821be892f90bef4ad22f8a869ed97c241e84c738e431c22800d253ab40",
+      "qcs/resources/windriver/cryptodetector/language.py": "a7ecb43add141e1bdd9506395ffc93abf77abeb44d3afd7562bfc16d256cba19",
+      "qcs/resources/windriver/cryptodetector/logger.py": "1ddaf10a8c40b7cfb6cb622a7ff8e6ed07a3acd114fbddb957c640d56749789c",
+      "qcs/resources/windriver/cryptodetector/method.py": "9a36c6dcbc3f2e2cd358e32488924ed07a21abcaee122fe044c6259f86704fe7",
+      "qcs/resources/windriver/cryptodetector/options.py": "30f72883c3e42f776630076912c58495b748995588c5ac395fa5b9785b977935",
+      "qcs/resources/windriver/cryptodetector/output.py": "731c34be929687466bf899eced17252bff9726b086938384981cdd892b329786",
+      "qcs/resources/windriver/cryptodetector/regex.py": "c66d80b0323fca3da64277bc5623c62cb1802add231161824202b7c8f7172558",
+      "qcs/resources/windriver/cryptodetector/rpm.py": "9d002b99625570c9af85f9ceaa345cd6d1a47b3c822b1faab6fb787c6d5a3dec",
+      "qcs/resources/windriver/cryptodetector/methods/api/api_definitions.txt": "187bffb04cdb510fbdedf7d5f360a2abcb0b57d5d2ae19e179b0834ff52fa5f7",
+      "qcs/resources/windriver/cryptodetector/methods/api/api_finder.py": "1c7919309e4b3b6a5d64b20fe564e2e4a9af10333b6f86b340f4d5240845c9cc",
+      "qcs/resources/windriver/cryptodetector/methods/hello_world/hello_world_method.py": "785747c397fc4cac9eea0ebf33118b92bfcb64c71ada29515220e4699075770c",
+      "qcs/resources/windriver/cryptodetector/methods/keyword/keyword_list.txt": "cc028f546fcf653ccc3b11b57c8c463fc8e9bfdbb67e300efecb7f6c51604409",
+      "qcs/resources/windriver/cryptodetector/methods/keyword/keyword_search.py": "c57fa9322528f43342224bee537e485c89b82d36599825639655af95e3453a30",
+      "qcs/resources/yara/LICENSE": "fe91e5f0d13df520b8a4100434ba8c5734491f45bf4a512d813f554443231808",
+      "qcs/resources/yara/rules.yar": "13187461b448b1c300b4fbcdcab0db08fba08cadeeef8d8bb06c07d60843a652",
+      "qcs/resources/yara/aes/aes_common.yar": "5b6e19aef5e48888ab307e0b016a66c51a347ed9afae67b4b080a7bb138eb139",
+      "qcs/resources/yara/aes/aes_x64.yar": "86b707ff086d4269d75fb8b6f1a0cda5858e242e2eb2f7fb3fe1a66f8c2c4b87",
+      "qcs/resources/yara/base64/base64_common.yar": "84f43cbfc3d4ac33f75fa7cd36e95407fa3d7652dbcaeec91d3b50149186f9d3",
+      "qcs/resources/yara/base64/base64_x64.yar": "559187fa2413d0b2ca65f720e2dab575ca7ebc5ba4ca9a37f2bb0d8a61160bb0",
+      "qcs/resources/yara/chacha/chacha_common.yar": "d33ef5e6ba7548f9df81715d54d59986c9ad27c7b9865be8201c5ed7d114bedf",
+      "qcs/resources/yara/chacha/chacha_x64.yar": "168665f07f6827c306aa5f33e7e51e9a937ea38d65d008d6e8e5389abf3ff4ae",
+      "qcs/resources/yara/des/des_common.yar": "feb5fa3e7d526699d1dbcf372055341992db54cc673956ae77e00b9b65d5c0f1",
+      "qcs/resources/yara/des/des_x64.yar": "ca0ed9251549817481db68f791b2c9f1228d86f42b6ff9fa997499ef8ca24de4",
+      "qcs/resources/yara/md5/md5_common.yar": "fe137609a41584bdd3795aae73473d52945c8c0edf525fdfd97173fbd262943e",
+      "qcs/resources/yara/md5/md5_x64.yar": "33a474e26fb718cb6862987808a1a788681fa61c6dd2a279fc66711e55303aa9",
+      "qcs/resources/yara/rc4/rc4_common.yar": "079bafa0e73a38ff5b893d3dd59428609db2160c958ec00daa5367eaa1a3da7b",
+      "qcs/resources/yara/rc4/rc4_x64.yar": "21554a258c4fc3a2a21a0e7509d6f1ed8b9e7019400615fbc1d29e7eb8990d6e",
+      "qcs/resources/yara/sha1/sha1_common.yar": "847d2938ea5ca1936a8c00368bccb0d563698f1a2d0f9bf9cce4e2fdaabec245",
+      "qcs/resources/yara/sha1/sha1_x64.yar": "78b39331e44981fb04ec6eec798d6d631fc7d211805399e0a9a9f0392d7faad0",
+      "qcs/resources/yara/sha2/sha2_common.yar": "3cdf83b28b6f1d0187069dd1ff07c1042ec8a61a827f51e9cf2c5746ac6abc02",
+      "qcs/resources/yara/sha2/sha2_x64.yar": "2e75490dcc429a2de462390bdc5cb81833c8522f2ff50ddf2097bddcf7b90917",
+      "qcs/resources/yara/sha3/sha3_common.yar": "e63f44357ddf6e3539f0343ffbc3c47252be5dfd1f4644548b8f7bccdfda98af",
+      "qcs/resources/yara/sha3/sha3_x64.yar": "e6a0fde4f34128f66ab89db185296c1f9bb27bbfbfdfd40cf027a22d947b03e2",
+      "qcs/rules/function_signature_notices.txt": "6b8fb036efb3532347c7d674a5b73710cebaf55eb4c87d07ca0bf23d192c9bc9",
+      "qcs/rules/function_signatures.json": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "qcs/rules/source_implementations.json": "91a01301abad78d85c2d9c3041800d1adb294bb15b328fc698a3af1e71da94b6",
+      "qcs/rules/static_primitives-LICENSE.txt": "351815f734b0455c086bbf9c2f0674d14a64d5aef5b5f543e4b5425e6ef015c1",
+      "qcs/rules/static_primitives.json": "0e9964bb925e43d594c99799eca5b720fdfe0fcaf9e31a384fe609a95b40b35d",
+      "qcs/rules/terminal_api_mapping.json": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+      "qcs/rules/yara_mapping.json": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+      "qcs_ml/__init__.py": "f1f1d819871bb2dbc4b85ecb43f4515d2e9e9c14af435e7d253996646e0f188d",
+      "qcs_ml/audit_dataset.py": "5c3e11c7c6460384c6886e1a2ecc34143b7ef8e1734e25690a4dfa7525592801",
+      "qcs_ml/curate.py": "cb7cb1a9988a58ba19a92314685005601019c41c95fc34b6ae06df503ab35bad",
+      "qcs_ml/dataset.py": "0e2f3188f2f10cd22e52eef8e2a4683359437b667bfa619ce0d3132f07f6ebb2",
+      "qcs_ml/features.py": "171a5d76bd6badabe57a8af8dc9c1152a5a12cb0d479783e08b148e7e2d4828c",
+      "qcs_ml/learn.py": "d7467a4121f9dcfdf107c88a2ba92e98c303dd7e2633f43a6a13bb5a4f5cac08",
+      "qcs_ml/paths.py": "ec537d9965fe090d20e81558a3f27a8bd7e0e6f116a2910bb7167e23ed7d7c49",
+      "qcs_ml/rf.py": "0efc7dc75b3b2da8fcadab9f16f6529e3bafa9d294fb11bfa5204a6d13fd2753",
+      "qcs_prototype-0.1.0.post1.dist-info/licenses/LICENSE": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7",
+      "qcs_prototype-0.1.0.post1.dist-info/METADATA": "c1974c02ab955ad93c0d859830543a7c1784adf3a362c36ae3cec9ea201ef626",
+      "qcs_prototype-0.1.0.post1.dist-info/WHEEL": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+      "qcs_prototype-0.1.0.post1.dist-info/entry_points.txt": "49bafa1a4eacc10eda4dfc381e3baad561056564e9b9f22e00404f4fad13aab8",
+      "qcs_prototype-0.1.0.post1.dist-info/top_level.txt": "69a48724d55b7c8d07fcfbcf1011e77523f3b450c30e7322ce18316c800577a8",
+      "qcs_prototype-0.1.0.post1.dist-info/RECORD": "93a8f41b229ad1273e0b539d409976acd32c24c9a97e125b495fca4e9162a1c5"
+    }
+  }
+}

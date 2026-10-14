@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-12T07:56:43.030122+00:00",
+  "prior_files_enumerated": 35560,
+  "prior_files_hashed_after_size_filter": 358,
+  "prior_registries_checked": 18,
+  "candidate_hashes": 1290,
+  "file_overlaps": [],
+  "registry_overlaps": [],
+  "exact_hash_independent": true,
+  "limitations": [
+    "Exact hashes establish byte nonidentity, not independent genealogy.",
+    "Upstream YARA historical design samples are not fully documented.",
+    "Six projects share standards and some code ancestry; architecture/optimization variants are correlated.",
+    "No official deployment population is available."
+  ]
+}

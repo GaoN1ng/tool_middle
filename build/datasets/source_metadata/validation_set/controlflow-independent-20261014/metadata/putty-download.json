@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/rhuijben/putty",
+  "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+  "split": "validation",
+  "archive_sha256": "5c8f11a2f86d2e4d60c66e081794496f4ccbadb84d2aab5b3ddeb4f807291580",
+  "policy": "Assigned before first detector scan; no references or tuning from PuTTY"
+}

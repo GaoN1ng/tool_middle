@@ -1,0 +1,347 @@
+[
+  {
+    "id": "libmcrypt-arcfour",
+    "project": "libmcrypt",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/arcfour.c",
+    "truth": [
+      "RC4"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms"
+    ],
+    "flags": [
+      "-DSTDC_HEADERS=1",
+      "-DSIZEOF_UNSIGNED_INT=4",
+      "-DSIZEOF_UNSIGNED_SHORT_INT=2",
+      "-DSIZEOF_UNSIGNED_CHAR=1",
+      "-DHAVE_MEMMOVE=1",
+      "-DHAVE_SYS_TYPES_H=1"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+    "sha256": "80c88914b8d2abe3fd84c63bc8a992caaaea97499ff4bfa65661ac61869ddb8c",
+    "ancestry": "Per-file authors retained; DES/RC4 Nikos Mavroyanopoulos; AES author notices retained",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "libmcrypt-des",
+    "project": "libmcrypt",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/des.c",
+    "truth": [
+      "DES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms"
+    ],
+    "flags": [
+      "-DSTDC_HEADERS=1",
+      "-DSIZEOF_UNSIGNED_INT=4",
+      "-DSIZEOF_UNSIGNED_SHORT_INT=2",
+      "-DSIZEOF_UNSIGNED_CHAR=1",
+      "-DHAVE_MEMMOVE=1",
+      "-DHAVE_SYS_TYPES_H=1"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+    "sha256": "b4cc7bb28a0286584ef6456d03acfd69847390f3bbf88c9a01b7923dd4f0d0a4",
+    "ancestry": "Per-file authors retained; DES/RC4 Nikos Mavroyanopoulos; AES author notices retained",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "libmcrypt-rijndael-128",
+    "project": "libmcrypt",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-128.c",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms"
+    ],
+    "flags": [
+      "-DSTDC_HEADERS=1",
+      "-DSIZEOF_UNSIGNED_INT=4",
+      "-DSIZEOF_UNSIGNED_SHORT_INT=2",
+      "-DSIZEOF_UNSIGNED_CHAR=1",
+      "-DHAVE_MEMMOVE=1",
+      "-DHAVE_SYS_TYPES_H=1"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+    "sha256": "0a006fb52fb31b4ea912d7b79ba478e514c27bf65ff9aa778f4e3132e125c88f",
+    "ancestry": "Per-file authors retained; DES/RC4 Nikos Mavroyanopoulos; AES author notices retained",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "libmcrypt-blowfish",
+    "project": "libmcrypt",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/blowfish.c",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms"
+    ],
+    "flags": [
+      "-DSTDC_HEADERS=1",
+      "-DSIZEOF_UNSIGNED_INT=4",
+      "-DSIZEOF_UNSIGNED_SHORT_INT=2",
+      "-DSIZEOF_UNSIGNED_CHAR=1",
+      "-DHAVE_MEMMOVE=1",
+      "-DHAVE_SYS_TYPES_H=1"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+    "sha256": "c384305eb4f5d7134e60f6deaed92bba94757826da4b8d35de8326422c286736",
+    "ancestry": "Per-file authors retained; DES/RC4 Nikos Mavroyanopoulos; AES author notices retained",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "libmcrypt-twofish",
+    "project": "libmcrypt",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/twofish.c",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms"
+    ],
+    "flags": [
+      "-DSTDC_HEADERS=1",
+      "-DSIZEOF_UNSIGNED_INT=4",
+      "-DSIZEOF_UNSIGNED_SHORT_INT=2",
+      "-DSIZEOF_UNSIGNED_CHAR=1",
+      "-DHAVE_MEMMOVE=1",
+      "-DHAVE_SYS_TYPES_H=1"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+    "sha256": "20e72e38b445868fe71a0274e0b9bd658c6f30cb1ad731eb3364d82e319af598",
+    "ancestry": "Per-file authors retained; DES/RC4 Nikos Mavroyanopoulos; AES author notices retained",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "mhash-md5",
+    "project": "mhash",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib/md5.c",
+    "truth": [
+      "MD5"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/Distrotech/mhash",
+    "commit": "d8cb1ed69b146d5001de1e083a44c12dc50d2e89",
+    "sha256": "e1d00ee33b9ceb5e8ad22b2c2bfa53f6e02755c670db94fa5ee10c8217751272",
+    "ancestry": "MD5 Colin Plumb; per-unit source notices retained; not blindly equated with project ancestry",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "mhash-sha1",
+    "project": "mhash",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib/sha1.c",
+    "truth": [
+      "SHA-1"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/Distrotech/mhash",
+    "commit": "d8cb1ed69b146d5001de1e083a44c12dc50d2e89",
+    "sha256": "648aff8411f5e8744346eb236bed2f2132e2ac27de0219785cfa7d66f07a381f",
+    "ancestry": "MD5 Colin Plumb; per-unit source notices retained; not blindly equated with project ancestry",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "mhash-sha256_sha224",
+    "project": "mhash",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib/sha256_sha224.c",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/Distrotech/mhash",
+    "commit": "d8cb1ed69b146d5001de1e083a44c12dc50d2e89",
+    "sha256": "eed00b0e7970d07ce6e4e77d3723b2b8cb92333ca33a5e396599d850911c8e7a",
+    "ancestry": "MD5 Colin Plumb; per-unit source notices retained; not blindly equated with project ancestry",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "mhash-ripemd",
+    "project": "mhash",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib/ripemd.c",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/lib",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/mhash/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/Distrotech/mhash",
+    "commit": "d8cb1ed69b146d5001de1e083a44c12dc50d2e89",
+    "sha256": "8bff8da9b0826ae61ed26c0193aaaef9ed29e7342c35eab513811cb07233862e",
+    "ancestry": "MD5 Colin Plumb; per-unit source notices retained; not blindly equated with project ancestry",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "tinyssh-crypto_stream_chacha20",
+    "project": "tinyssh",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh/crypto_stream_chacha20.c",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh"
+    ],
+    "flags": [],
+    "repository": "https://github.com/janmojzis/tinyssh",
+    "commit": "f1cf59a7efee73dfd16fe77b10d9439189acdc29",
+    "sha256": "56e739e22f55fc646a56f7e21b6a01ace90ca3c6d8d9932a487c01b99aa3a975",
+    "ancestry": "Jan Mojzis / retained authors; Curve25519 lineage audited separately, not automatically independent of TweetNaCl",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "tinyssh-crypto_hash_sha256",
+    "project": "tinyssh",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh/crypto_hash_sha256.c",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh"
+    ],
+    "flags": [],
+    "repository": "https://github.com/janmojzis/tinyssh",
+    "commit": "f1cf59a7efee73dfd16fe77b10d9439189acdc29",
+    "sha256": "e100ad539c5ae7659ef620e766994afde863981d0d5a80723915d2d51b731577",
+    "ancestry": "Jan Mojzis / retained authors; Curve25519 lineage audited separately, not automatically independent of TweetNaCl",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "tinyssh-crypto_scalarmult_curve25519",
+    "project": "tinyssh",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh/crypto_scalarmult_curve25519.c",
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh"
+    ],
+    "flags": [],
+    "repository": "https://github.com/janmojzis/tinyssh",
+    "commit": "f1cf59a7efee73dfd16fe77b10d9439189acdc29",
+    "sha256": "e5112ee8de67af0f65aa16023785c2f92d4b82734a9208e55bf6322e66f4a345",
+    "ancestry": "Jan Mojzis / retained authors; Curve25519 lineage audited separately, not automatically independent of TweetNaCl",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "tinyssh-crypto_hash_sha512_tinyssh",
+    "project": "tinyssh",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh/crypto_hash_sha512_tinyssh.c",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/tinyssh"
+    ],
+    "flags": [],
+    "repository": "https://github.com/janmojzis/tinyssh",
+    "commit": "f1cf59a7efee73dfd16fe77b10d9439189acdc29",
+    "sha256": "33eebfb7ac1ffd41bf4a367a45a082bd2a9956b6d754dc7df66def3ac0eb72ae",
+    "ancestry": "Jan Mojzis / retained authors; Curve25519 lineage audited separately, not automatically independent of TweetNaCl",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "gmssl-modern-sm3",
+    "project": "gmssl-modern",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/src/sm3.c",
+    "truth": [
+      "SM3"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/guanzhi/GmSSL",
+    "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+    "sha256": "b10d23bf2668b4362fb0fc188d831262300b4b80629926f979ea7b85c88911cc",
+    "ancestry": "Existing GmSSL family: newer 256-bit limb/lookup implementation variant, not independent author",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "gmssl-modern-sm4",
+    "project": "gmssl-modern",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/src/sm4.c",
+    "truth": [
+      "SM4"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/guanzhi/GmSSL",
+    "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+    "sha256": "99c1fff1664ce07fc41bb9fad831cd72ad084c2ced578137d9c04d38e3f595a8",
+    "ancestry": "Existing GmSSL family: newer 256-bit limb/lookup implementation variant, not independent author",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "gmssl-modern-sm2_z256",
+    "project": "gmssl-modern",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/src/sm2_z256.c",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/guanzhi/GmSSL",
+    "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+    "sha256": "ea35275c5187106f988f5cf48f062ad23da2e2f200d96e43e61117a696d2fbe1",
+    "ancestry": "Existing GmSSL family: newer 256-bit limb/lookup implementation variant, not independent author",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "gmssl-modern-sm2_sign",
+    "project": "gmssl-modern",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/src/sm2_sign.c",
+    "truth": [
+      "SM2"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/guanzhi/GmSSL",
+    "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+    "sha256": "2cb03227c8fed440e2586d2cdb352470c26dbef02ac3f56b6069b047504d5da8",
+    "ancestry": "Existing GmSSL family: newer 256-bit limb/lookup implementation variant, not independent author",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  },
+  {
+    "id": "gmssl-modern-sm2_exch",
+    "project": "gmssl-modern",
+    "file": "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/src/sm2_exch.c",
+    "truth": [
+      "SM2"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/sources/gmssl-modern/include"
+    ],
+    "flags": [],
+    "repository": "https://github.com/guanzhi/GmSSL",
+    "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+    "sha256": "91bc47c7049ef73b6fd59b7b6f37efa071611d4c83859d382dde3a2df7d489ac",
+    "ancestry": "Existing GmSSL family: newer 256-bit limb/lookup implementation variant, not independent author",
+    "basis": "Pre-scan upstream implementation annotation; API imports alone are not implementation bodies"
+  }
+]

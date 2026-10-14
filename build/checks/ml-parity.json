@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "development_inputs": 812,
+  "original_development_inputs": 812,
+  "issues": [],
+  "prediction_checks": [
+    {
+      "id": "mbedtls-md5-source",
+      "kind": "source",
+      "architecture": null,
+      "passed": true,
+      "old_exit": 0,
+      "new_exit": 0,
+      "predicted": []
+    },
+    {
+      "id": "mbedtls-md5-x86_64-O0",
+      "kind": "executable",
+      "architecture": "x86_64",
+      "passed": true,
+      "old_exit": 0,
+      "new_exit": 0,
+      "predicted": []
+    },
+    {
+      "id": "mbedtls-md5-aarch64-O0",
+      "kind": "executable",
+      "architecture": "aarch64",
+      "passed": true,
+      "old_exit": 0,
+      "new_exit": 0,
+      "predicted": []
+    }
+  ],
+  "policy": "No retraining or validation-driven tuning; model bytes unchanged",
+  "maximum_vote_difference": 2.220446049250313e-16,
+  "tolerance": 1e-12,
+  "numerical_note": "Parallel tree accumulation can differ in floating-point rounding; classifications and candidate structures must agree."
+}

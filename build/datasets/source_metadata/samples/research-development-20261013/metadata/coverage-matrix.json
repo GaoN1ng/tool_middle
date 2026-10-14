@@ -1,0 +1,368 @@
+{
+  "algorithms": [
+    {
+      "algorithm": "AES",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "bearssl-aes_big_enc",
+        "bearssl-aes_small_enc",
+        "boringssl-aes",
+        "ippcrypto-aes",
+        "mbedtls-aes",
+        "openssl-aes"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "S-box/T-table rounds",
+        "constant-time bitslice and generic key schedule",
+        "constant-time compact S-box and finite-field column mixing"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 26
+    },
+    {
+      "algorithm": "DES",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl",
+        "reference"
+      ],
+      "source_family_ids": [
+        "bearssl-des_tab",
+        "boringssl-des",
+        "ippcrypto-des",
+        "mbedtls-des",
+        "openssl-des",
+        "reference-des_naive"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "SP-table Feistel",
+        "table Feistel macro",
+        "unrolled SP-table Feistel"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 24
+    },
+    {
+      "algorithm": "RC4",
+      "real_development_projects": [
+        "boringssl",
+        "ippcrypto",
+        "openssl",
+        "reference"
+      ],
+      "source_family_ids": [
+        "boringssl-rc4",
+        "ippcrypto-rc4",
+        "openssl-rc4",
+        "reference-rc4"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "byte-state PRGA",
+        "pipelined PRGA and reordered state swap",
+        "unrolled byte permutation PRGA"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 26
+    },
+    {
+      "algorithm": "ChaCha20",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "mbedtls",
+        "openssl",
+        "reference"
+      ],
+      "source_family_ids": [
+        "bearssl-chacha20_ct",
+        "boringssl-chacha",
+        "mbedtls-chacha20",
+        "openssl-chacha",
+        "reference-chacha_reference"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "openssl"
+      ],
+      "new_expressions": [
+        "ARX and macro rotations",
+        "macro ARX quarter rounds"
+      ],
+      "new_unique_source_files": 2,
+      "new_unique_binaries": 18
+    },
+    {
+      "algorithm": "RSA",
+      "real_development_projects": [
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "boringssl-rsa",
+        "ippcrypto-rsa",
+        "mbedtls-rsa",
+        "openssl-rsa"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "CRT and callback modular exponentiation",
+        "constant-time CRT and BN callbacks",
+        "method-pointer dual exponentiation CRT"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 18
+    },
+    {
+      "algorithm": "ECDSA",
+      "real_development_projects": [
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "boringssl-ecdsa",
+        "ippcrypto-ecdsa",
+        "mbedtls-ecdsa",
+        "openssl-ecdsa"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "EC scalar field and signature equation",
+        "Montgomery representation signature",
+        "nonce point and signature equation"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 18
+    },
+    {
+      "algorithm": "ECDH",
+      "real_development_projects": [
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "boringssl-ecdh",
+        "ippcrypto-ecdh",
+        "mbedtls-ecdh",
+        "openssl-ecdh"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "EC peer point and derived coordinate",
+        "peer point scalar multiplication",
+        "peer scalar multiplication and x coordinate"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 18
+    },
+    {
+      "algorithm": "MD5",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "bearssl-md5",
+        "boringssl-md5",
+        "ippcrypto-md5",
+        "mbedtls-md5",
+        "openssl-md5"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "macro compression",
+        "macro rounds and header rotate helper",
+        "unrolled macro rounds"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 26
+    },
+    {
+      "algorithm": "SHA-1",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "bearssl-sha1",
+        "boringssl-sha1",
+        "ippcrypto-sha1",
+        "mbedtls-sha1",
+        "openssl-sha1"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "macro message schedule",
+        "ring schedule",
+        "rotations supplied by helpers"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 18
+    },
+    {
+      "algorithm": "SHA-256",
+      "real_development_projects": [
+        "bearssl",
+        "boringssl",
+        "ippcrypto",
+        "mbedtls",
+        "openssl"
+      ],
+      "source_family_ids": [
+        "bearssl-sha2small",
+        "boringssl-sha256",
+        "ippcrypto-sha256",
+        "mbedtls-sha256",
+        "openssl-sha256"
+      ],
+      "new_project_units": [
+        "boringssl",
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "ring sigma schedule",
+        "schedule and compression",
+        "sigma maps and state init"
+      ],
+      "new_unique_source_files": 3,
+      "new_unique_binaries": 27
+    },
+    {
+      "algorithm": "SM2",
+      "real_development_projects": [
+        "ippcrypto",
+        "openssl",
+        "wolfsm"
+      ],
+      "source_family_ids": [
+        "ippcrypto-sm2",
+        "openssl-sm2",
+        "openssl-sm2-crypt",
+        "openssl-sm2-sign",
+        "wolfsm-sm2"
+      ],
+      "new_project_units": [
+        "ippcrypto",
+        "openssl"
+      ],
+      "new_expressions": [
+        "SM2 Montgomery signing",
+        "SM2 signing and verification equations"
+      ],
+      "new_unique_source_files": 2,
+      "new_unique_binaries": 9
+    },
+    {
+      "algorithm": "SM3",
+      "real_development_projects": [
+        "ippcrypto",
+        "libgcrypt",
+        "openssl",
+        "wolfsm"
+      ],
+      "source_family_ids": [
+        "ippcrypto-sm3",
+        "libgcrypt-sm3",
+        "openssl-sm3",
+        "openssl-sm3-plain",
+        "wolfsm-sm3",
+        "wolfsm-sm3-plain"
+      ],
+      "new_project_units": [
+        "ippcrypto"
+      ],
+      "new_expressions": [
+        "ring permutation maps"
+      ],
+      "new_unique_source_files": 1,
+      "new_unique_binaries": 9
+    },
+    {
+      "algorithm": "SM4",
+      "real_development_projects": [
+        "ippcrypto",
+        "libgcrypt",
+        "openssl",
+        "wolfsm"
+      ],
+      "source_family_ids": [
+        "ippcrypto-sm4",
+        "libgcrypt-sm4",
+        "openssl-sm4",
+        "openssl-sm4-plain",
+        "wolfsm-sm4",
+        "wolfsm-sm4-plain"
+      ],
+      "new_project_units": [
+        "ippcrypto"
+      ],
+      "new_expressions": [
+        "constant-time full S-box sweep and header helpers"
+      ],
+      "new_unique_source_files": 1,
+      "new_unique_binaries": 9
+    }
+  ],
+  "notes": [
+    "Project names are not proof of independent ancestry: BoringSSL inherits OpenSSL and some BearSSL-derived code",
+    "Authored controls are excluded from real implementation source counts",
+    "Build failures excluded from scans are reported separately",
+    "Coverage refers to reviewed source/build inputs, not successful generic operation recognition"
+  ]
+}

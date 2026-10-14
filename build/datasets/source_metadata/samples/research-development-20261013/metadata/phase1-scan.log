@@ -1,0 +1,7 @@
+Scanned 50 / 279 elapsed 16
+Scanned 100 / 279 elapsed 43
+Scanned 150 / 279 elapsed 61
+Scanned 200 / 279 elapsed 68
+Scanned 250 / 279 elapsed 87
+Scanned 279 / 279 elapsed 93
+{"TP": 61, "FP": 0, "FN": 218, "TN": 3348, "precision": 1.0, "recall": 0.21863799283154123, "f1": 0.3588235294117647, "accuracy": 0.9398952302178109}

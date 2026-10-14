@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/igrr/axtls-8266",
+  "commit": "9ebc3ee6ec659a09f08f6e3d8b4d6c19db5ce498",
+  "split": "validation",
+  "policy": "Assigned before scans. No tuning or reference extraction from any axTLS implementation"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "samples/public-benchmark/upstream-archives/openvpn-v2.6.20-github.tar.gz",
+    "url": "https://codeload.github.com/OpenVPN/openvpn/tar.gz/refs/tags/v2.6.20",
+    "sha256": "fd700896f160e3e0b2ce3a6dbe427c9c2602a2e03123de05369ecf7234af653b",
+    "size_bytes": 1236554
+  },
+  {
+    "path": "samples/public-benchmark/firmware/tasmota-official-ota-current.bin",
+    "url": "https://ota.tasmota.com/tasmota/release/tasmota.bin",
+    "sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+    "size_bytes": 666720
+  }
+]

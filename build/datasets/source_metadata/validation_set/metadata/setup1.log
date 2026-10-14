@@ -1,0 +1,9 @@
+FAIL libtomcrypt-ecdh-x86_64-O2 Compilation/link command failed
+FAIL libtomcrypt-rsa-x86_64-O2 Compilation/link command failed
+FAIL libtomcrypt-ecdsa-x86_64-O2 Compilation/link command failed
+Prepared 30/66, success 27, failures 3
+FAIL nettle-des-x86_64-O2 Compilation/link command failed
+Prepared 60/66, success 56, failures 4
+FAIL wolfssl-blake2b-x86_64-O2 No significant retained executable code
+Prepared 66/66, success 61, failures 5
+{"timestamp": "2026-10-12T07:43:37.158668+00:00", "attempt": "setup1", "planned": 66, "completed": 61, "failed": 5, "unique_samples": 150}

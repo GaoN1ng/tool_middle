@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/amosnier/sha-2",
+  "assignment": "new independent holdout; no tuning/references",
+  "timestamp": "2026-10-14T16:03:47.525952+08:00",
+  "commit": "565f65009bdd98267361b17d50cddd7c9beb3e6c",
+  "archive_url": "https://codeload.github.com/amosnier/sha-2/tar.gz/565f65009bdd98267361b17d50cddd7c9beb3e6c",
+  "archive_sha256": "ea938fb64a04891ffd4a46b4c75ddd82d6ea3a22d85eac1cd9f2baf794d09f53",
+  "api_license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "status": "downloaded",
+  "source_files": {
+    ".clang-format": "7fcfb120e31db228170ebeb718e8a5e2c13bafdc0e95c1ac576983527e8858d3",
+    ".gitignore": "e8f15c51d8cc18e755a03b37778102f30eb923b933921b83eb83b1e30a2108bd",
+    ".travis.yml": "949e7c6468917348b24214e30d697da85fb5ea068c207d66cdc925cf19d37d98",
+    "LICENSE.md": "506de94a03e23bbc34e32a8b628b56688ac7c33672982388822816887727f1ac",
+    "Makefile": "7191d09363bb06a4d789ff3dce6457784a966e87ad0d4320869f7cedd287da78",
+    "README.md": "3691c80fbc973ff2417341e13f0540e2b08f6c07a81a800ca8852fb5d15bf2ce",
+    "sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27",
+    "sha-256.h": "c2173d83813a0c29fcc3345ce489766efeadee6a52ca927ecd0f917a120df9fb",
+    "test.c": "b662496742f83adc61493f998a331f764129201718989b9e6b06b15fb09fa7b0",
+    "svg/passing.svg": "4fa3938ec4ebe42a037799cca158c451ca57aca9d701e1fedf8eab55d049b90e"
+  }
+}

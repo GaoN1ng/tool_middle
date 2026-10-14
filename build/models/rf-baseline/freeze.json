@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-14T16:45:41.478146+08:00",
+  "files": {
+    "features.py": "171a5d76bd6badabe57a8af8dc9c1152a5a12cb0d479783e08b148e7e2d4828c",
+    "rf.py": "c4f1e211efec111993ba5ba2ca0b04a1b8d64ef30b3f93c410581b694dd013d2",
+    "learn.py": "df21e3ad8a4c77e36466bcca97ad6a3215090d04d326397af6493b23f7a7e062",
+    "curate.py": "20d811a1bbf33fbd4ed476323ed1c5550207b33fd6e6b304316c65a0ce12179b",
+    "dataset.py": "c3ceb7433bc79f4d70b0626b51a35259036aef3b8f649ffd6468054e3be83335",
+    "audit_dataset.py": "f2be7999775b07081b1f4f30905f8db29ba3df8ffacfa25ae0274e68687bb072",
+    "freeze.py": "97e119a2f2d5b81f9f045533ed99ac0972bb409d9fe9e6271b4bca65e9244c5b",
+    "requirements.txt": "b5107cb9bf240bce804f7420c9a189b95c8b17f3c3035fbc0b7bbb6e696cc6b0",
+    "README.md": "555ad3069e712fec90b2b37b359defbeee1cc2fd623acb585139200efa22c9ea",
+    "test_features.py": "3e397fb21f62ab1b93a77619d9203c84b5628338b562c3e47bd0ee9ea4edf3d5",
+    "test_learning.py": "f24396910cb79d840db4115d97b8b68efecb0485c30d686fd4da11f1dfac8d5a",
+    "model.joblib": "cbe8d124190d9a14bccdd3bd1fc0bc981f6ca180524a9270db4cb9aaff0ac925",
+    "training-summary.json": "38e1ad36787152c5a39152441e29b95738f1cb048043ac15e7aeb7d53c5fd633",
+    "protocol.json": "5c8bcf9e0286de5eaa015b1902afad3a41ce31e3ae04b271baf136851eada431",
+    "annotation-audit.json": "503a4beac37194c2e94498f9254264de0264776abe0220cfb8163de3aa44fea1",
+    "environment.txt": "44a7c67f241a7663f501aa4a53d35355dbba5d7948edb94ce551e29b83d14f6d",
+    "feature-dictionary.json": "69e7344955f9612825170790138f4f249213e5da414d112882ded155482b3908",
+    "thresholds.json": "15e220f75781fcfda8530a7c1f8270429a7d31cfc7e9c3266506fce97c04f453",
+    "feature-importance.json": "a8628c096312105b1c42c8f264b7e9d0e748637449fcb46434a03501a497f091"
+  },
+  "digest": "d1f5d1b293355c1a8bd83f7766c02f9e0dee3a79cdca52c7900d7f212c4e2dab",
+  "development_inputs_sha256": "25d4810aa96efe360485e1c72bebb7a5a2499c05517a32f06e7a7a80492ef003",
+  "development_features_sha256": "e518ee4dd8690bc22f1c7de07c2c4e19d4654c12bdea8da687ac4f70352f4bd9",
+  "holdout_manifest_sha256": "73523a38fa2a46bab2ba4a97ec529c34cb9b4ca5540c17a42f7d05f13970fc6c",
+  "holdout_lock_sha256": "1cc582559e0405596a967bc4f0b08d8f71165da8df8cb1afacaa8dadb9a552b9",
+  "policy": "Code/model/features/thresholds immutable before holdout scoring. No holdout tuning. Raw RF votes not probability calibration."
+}

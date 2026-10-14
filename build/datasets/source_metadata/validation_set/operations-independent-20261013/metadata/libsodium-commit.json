@@ -1,0 +1,101 @@
+{
+  "sha": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+  "node_id": "C_kwDOAHWnt9oAKGE2YTkzZGU2NzJiN2UyYzZjMTNhMDJjYmJlMGU2NDU3ZmU5MzA2ZmQ",
+  "commit": {
+    "author": {
+      "name": "Frank Denis",
+      "email": "github@pureftpd.org",
+      "date": "2026-10-09T10:03:55Z"
+    },
+    "committer": {
+      "name": "Frank Denis",
+      "email": "github@pureftpd.org",
+      "date": "2026-10-09T10:03:55Z"
+    },
+    "message": "Azure Pipelines: continue if MSYS2 updates fail\n\nThey constantly have network errors",
+    "tree": {
+      "sha": "fa2b9d885127800854a9548ade7a67478a39e4bd",
+      "url": "https://api.github.com/repos/jedisct1/libsodium/git/trees/fa2b9d885127800854a9548ade7a67478a39e4bd"
+    },
+    "url": "https://api.github.com/repos/jedisct1/libsodium/git/commits/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/jedisct1/libsodium/commits/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+  "html_url": "https://github.com/jedisct1/libsodium/commit/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+  "comments_url": "https://api.github.com/repos/jedisct1/libsodium/commits/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd/comments",
+  "author": {
+    "login": "jedisct1",
+    "id": 124872,
+    "node_id": "MDQ6VXNlcjEyNDg3Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/124872?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jedisct1",
+    "html_url": "https://github.com/jedisct1",
+    "followers_url": "https://api.github.com/users/jedisct1/followers",
+    "following_url": "https://api.github.com/users/jedisct1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jedisct1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jedisct1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jedisct1/subscriptions",
+    "organizations_url": "https://api.github.com/users/jedisct1/orgs",
+    "repos_url": "https://api.github.com/users/jedisct1/repos",
+    "events_url": "https://api.github.com/users/jedisct1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jedisct1/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jedisct1",
+    "id": 124872,
+    "node_id": "MDQ6VXNlcjEyNDg3Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/124872?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jedisct1",
+    "html_url": "https://github.com/jedisct1",
+    "followers_url": "https://api.github.com/users/jedisct1/followers",
+    "following_url": "https://api.github.com/users/jedisct1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jedisct1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jedisct1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jedisct1/subscriptions",
+    "organizations_url": "https://api.github.com/users/jedisct1/orgs",
+    "repos_url": "https://api.github.com/users/jedisct1/repos",
+    "events_url": "https://api.github.com/users/jedisct1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jedisct1/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f73dbc2c0b0a7b86fd3fb597f8c5b2dc99d22117",
+      "url": "https://api.github.com/repos/jedisct1/libsodium/commits/f73dbc2c0b0a7b86fd3fb597f8c5b2dc99d22117",
+      "html_url": "https://github.com/jedisct1/libsodium/commit/f73dbc2c0b0a7b86fd3fb597f8c5b2dc99d22117"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e26734af9f6a4aa184ad7f7b2c551e97b0733d28",
+      "filename": "azure-pipelines.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/jedisct1/libsodium/blob/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd/azure-pipelines.yml",
+      "raw_url": "https://github.com/jedisct1/libsodium/raw/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd/azure-pipelines.yml",
+      "contents_url": "https://api.github.com/repos/jedisct1/libsodium/contents/azure-pipelines.yml?ref=a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+      "patch": "@@ -78,6 +78,7 @@ jobs:\n           %CD:~0,2%\\msys64\\usr\\bin\\bash -lc 'pacman --noconfirm -Syuu'\n           %CD:~0,2%\\msys64\\usr\\bin\\bash -lc 'pacman --noconfirm -Syuu'\n         displayName: Update MSYS2\n+        continueOnError: true\n       - script: |\n           set PATH=%CD:~0,2%\\msys64\\usr\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem\n           %CD:~0,2%\\msys64\\usr\\bin\\pacman --noconfirm --needed -S base-devel mingw-w64-x86_64-toolchain\n@@ -117,6 +118,7 @@ jobs:\n           %CD:~0,2%\\msys64\\usr\\bin\\bash -lc 'pacman --noconfirm -Syuu'\n           %CD:~0,2%\\msys64\\usr\\bin\\bash -lc 'pacman --noconfirm -Syuu'\n         displayName: Update MSYS2\n+        continueOnError: true\n       - script: |\n           set PATH=%CD:~0,2%\\msys64\\usr\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem\n           %CD:~0,2%\\msys64\\usr\\bin\\pacman --noconfirm --needed -S base-devel mingw-w64-i686-toolchain"
+    }
+  ]
+}

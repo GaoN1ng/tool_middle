@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "verified_sample_files": 10390,
+  "verified_sample_and_runtime_files": 10406,
+  "archive_file_count": 10942,
+  "markdown_files": [
+    "readme.md",
+    "todo.md"
+  ],
+  "issues": [],
+  "policy": "Streaming hashes only; no target input executed and no external source required"
+}

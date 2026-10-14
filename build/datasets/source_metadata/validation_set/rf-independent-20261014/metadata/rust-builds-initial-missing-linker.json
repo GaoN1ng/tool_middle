@@ -1,0 +1,158 @@
+[
+  {
+    "id": "rustcrypto-sm3-x86_64-O0",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=0 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O1",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=1 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O2",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=2 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O3",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=3 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-Os",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=s -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-Oz",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=z -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O0",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=0 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O1",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=1 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O2",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=2 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O3",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=3 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-Os",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=s -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-Oz",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=z -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 101,
+    "status": "failed"
+  }
+]

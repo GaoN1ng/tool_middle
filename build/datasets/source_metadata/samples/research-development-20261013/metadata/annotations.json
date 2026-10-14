@@ -1,0 +1,902 @@
+[
+  {
+    "id": "openssl-aes",
+    "project": "openssl",
+    "algorithm": "AES",
+    "files": [
+      {
+        "path": "modules/openssl/aes/0-aes_core.c",
+        "original": "crypto/aes/aes_core.c",
+        "sha256": "0d703d395429714f070f22f8b5e623184c17653f53a2dad68bad5de9c275296f"
+      }
+    ],
+    "wrapper": "modules/openssl/aes/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "S-box/T-table rounds",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-des",
+    "project": "openssl",
+    "algorithm": "DES",
+    "files": [
+      {
+        "path": "modules/openssl/des/0-des_enc.c",
+        "original": "crypto/des/des_enc.c",
+        "sha256": "8002ba6fafcbfa61d32fd1cf125580b7f83fbc0b83451d5819878a3d079a134c"
+      }
+    ],
+    "wrapper": "modules/openssl/des/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "SP-table Feistel",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-rc4",
+    "project": "openssl",
+    "algorithm": "RC4",
+    "files": [
+      {
+        "path": "modules/openssl/rc4/0-rc4_enc.c",
+        "original": "crypto/rc4/rc4_enc.c",
+        "sha256": "5aa4a9e10a1810c2d99eb581b92524295333363a512a7128d3af9932f8fea0f1"
+      }
+    ],
+    "wrapper": "modules/openssl/rc4/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [
+      "-DRC4_INT=unsigned int"
+    ],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "unrolled byte permutation PRGA",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-chacha",
+    "project": "openssl",
+    "algorithm": "ChaCha20",
+    "files": [
+      {
+        "path": "modules/openssl/chacha/0-chacha_enc.c",
+        "original": "crypto/chacha/chacha_enc.c",
+        "sha256": "b58b863857980c200186082ec601e45cf528005e3cde9af56d212feab98607d6"
+      }
+    ],
+    "wrapper": "modules/openssl/chacha/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "macro ARX quarter rounds",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-md5",
+    "project": "openssl",
+    "algorithm": "MD5",
+    "files": [
+      {
+        "path": "modules/openssl/md5/0-md5_dgst.c",
+        "original": "crypto/md5/md5_dgst.c",
+        "sha256": "01e6f37a3d6fe89b71064400dc580897b00eaa5c8a774f21bad5ef9b51f179f8"
+      }
+    ],
+    "wrapper": "modules/openssl/md5/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "unrolled macro rounds",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-sha1",
+    "project": "openssl",
+    "algorithm": "SHA-1",
+    "files": [
+      {
+        "path": "modules/openssl/sha1/0-sha1dgst.c",
+        "original": "crypto/sha/sha1dgst.c",
+        "sha256": "e700afbd76ea44c7f8b02c2fe181606052c230e8fd7cea30aed44d71d24126b6"
+      }
+    ],
+    "wrapper": "modules/openssl/sha1/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "macro message schedule",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-sha256",
+    "project": "openssl",
+    "algorithm": "SHA-256",
+    "files": [
+      {
+        "path": "modules/openssl/sha256/0-sha256.c",
+        "original": "crypto/sha/sha256.c",
+        "sha256": "3a967cf8a2ac9624c28b1c769074b54cc5ae451b8946c73d9d7b7ab1c9b49f21"
+      }
+    ],
+    "wrapper": "modules/openssl/sha256/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "schedule and compression",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-rsa",
+    "project": "openssl",
+    "algorithm": "RSA",
+    "files": [
+      {
+        "path": "modules/openssl/rsa/0-rsa_ossl.c",
+        "original": "crypto/rsa/rsa_ossl.c",
+        "sha256": "8ccb2c10c02189e17a887385d67210809c3f9f42b1745ad774556e9bc1a6d876"
+      }
+    ],
+    "wrapper": "modules/openssl/rsa/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "CRT and callback modular exponentiation",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-ecdsa",
+    "project": "openssl",
+    "algorithm": "ECDSA",
+    "files": [
+      {
+        "path": "modules/openssl/ecdsa/0-ecdsa_ossl.c",
+        "original": "crypto/ec/ecdsa_ossl.c",
+        "sha256": "ef86ab5290ca90c54170b353115d3c2768886565bdc0d96b6cc8dd224ab0dfd0"
+      }
+    ],
+    "wrapper": "modules/openssl/ecdsa/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "nonce point and signature equation",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-ecdh",
+    "project": "openssl",
+    "algorithm": "ECDH",
+    "files": [
+      {
+        "path": "modules/openssl/ecdh/0-ecdh_ossl.c",
+        "original": "crypto/ec/ecdh_ossl.c",
+        "sha256": "f4831f935e6933ed212cee5a5c58e9557a918e33c8fcd1f7672ec5b8049be599"
+      }
+    ],
+    "wrapper": "modules/openssl/ecdh/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "peer scalar multiplication and x coordinate",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "openssl-sm2",
+    "project": "openssl",
+    "algorithm": "SM2",
+    "files": [
+      {
+        "path": "modules/openssl/sm2/0-sm2_sign.c",
+        "original": "crypto/sm2/sm2_sign.c",
+        "sha256": "af1f27d9ad93a0b342dcabbc68d3bb913e5f0765a091e10bd4b3954f30f87653"
+      }
+    ],
+    "wrapper": "modules/openssl/sm2/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/build-support/openssl",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "flags": [],
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "SM2 signing and verification equations",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-aes",
+    "project": "boringssl",
+    "algorithm": "AES",
+    "files": [
+      {
+        "path": "modules/boringssl/aes/0-aes_nohw.cc",
+        "original": "crypto/fipsmodule/aes/aes_nohw.cc.inc",
+        "sha256": "faf7ec8d8ee8a54c224de0888f8b123a417563e832dfd3533497c3c427242084"
+      },
+      {
+        "path": "modules/boringssl/aes/1-aes.cc",
+        "original": "crypto/fipsmodule/aes/aes.cc.inc",
+        "sha256": "8f87893bd18f2f9d271aad7884fbbf195da473ed5f1df8cac5cf011016b08d74"
+      }
+    ],
+    "wrapper": "modules/boringssl/aes/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "constant-time bitslice and generic key schedule",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-des",
+    "project": "boringssl",
+    "algorithm": "DES",
+    "files": [
+      {
+        "path": "modules/boringssl/des/0-des.cc",
+        "original": "crypto/des/des.cc",
+        "sha256": "fa76a7550ee80fa65a296de5689ae03d393d529428d134b47f6fc3ec8bffdbd3"
+      }
+    ],
+    "wrapper": "modules/boringssl/des/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "unrolled SP-table Feistel",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-rc4",
+    "project": "boringssl",
+    "algorithm": "RC4",
+    "files": [
+      {
+        "path": "modules/boringssl/rc4/0-rc4.cc",
+        "original": "crypto/rc4/rc4.cc",
+        "sha256": "9a1f06723bee2760d884801487410ffcfd965851c6f8f35edd23097a39133f28"
+      }
+    ],
+    "wrapper": "modules/boringssl/rc4/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "byte-state PRGA",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-chacha",
+    "project": "boringssl",
+    "algorithm": "ChaCha20",
+    "files": [
+      {
+        "path": "modules/boringssl/chacha/0-chacha.cc",
+        "original": "crypto/chacha/chacha.cc",
+        "sha256": "2a008aff0684b11546074041c8d6d7ca92abe50b925ba9fb61c247330ba1090b"
+      }
+    ],
+    "wrapper": "modules/boringssl/chacha/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "ARX and macro rotations",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-md5",
+    "project": "boringssl",
+    "algorithm": "MD5",
+    "files": [
+      {
+        "path": "modules/boringssl/md5/0-md5.cc",
+        "original": "crypto/md5/md5.cc",
+        "sha256": "5145083380673c9e54ebc2f5cae7c78480a640d58f8034d67a2651762874f0cc"
+      }
+    ],
+    "wrapper": "modules/boringssl/md5/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "macro rounds and header rotate helper",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-sha1",
+    "project": "boringssl",
+    "algorithm": "SHA-1",
+    "files": [
+      {
+        "path": "modules/boringssl/sha1/0-sha1.cc",
+        "original": "crypto/fipsmodule/sha/sha1.cc.inc",
+        "sha256": "2f569523a7a8b8d32a829f3136b7c8dc93cb011fecc56316ec88edae9c9805e1"
+      }
+    ],
+    "wrapper": "modules/boringssl/sha1/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "rotations supplied by helpers",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-sha256",
+    "project": "boringssl",
+    "algorithm": "SHA-256",
+    "files": [
+      {
+        "path": "modules/boringssl/sha256/0-sha256.cc",
+        "original": "crypto/fipsmodule/sha/sha256.cc.inc",
+        "sha256": "88ecb4b0a681b1e9244f6f86a5ebc8e5c11abb0151f7a07952ce9ec2cb3c9c0b"
+      }
+    ],
+    "wrapper": "modules/boringssl/sha256/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "sigma maps and state init",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-rsa",
+    "project": "boringssl",
+    "algorithm": "RSA",
+    "files": [
+      {
+        "path": "modules/boringssl/rsa/0-rsa_impl.cc",
+        "original": "crypto/fipsmodule/rsa/rsa_impl.cc.inc",
+        "sha256": "41b73cbca743bf84cb3a020092bdf3fa350f4344b7e5c931362178967ccc3c86"
+      }
+    ],
+    "wrapper": "modules/boringssl/rsa/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "constant-time CRT and BN callbacks",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-ecdsa",
+    "project": "boringssl",
+    "algorithm": "ECDSA",
+    "files": [
+      {
+        "path": "modules/boringssl/ecdsa/0-ecdsa.cc",
+        "original": "crypto/fipsmodule/ecdsa/ecdsa.cc.inc",
+        "sha256": "b4ab78b730fa66f498a3972f904083f78c3bb25e4e0f16ec9962bc5263b11944"
+      }
+    ],
+    "wrapper": "modules/boringssl/ecdsa/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "EC scalar field and signature equation",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "boringssl-ecdh",
+    "project": "boringssl",
+    "algorithm": "ECDH",
+    "files": [
+      {
+        "path": "modules/boringssl/ecdh/0-ecdh.cc",
+        "original": "crypto/fipsmodule/ecdh/ecdh.cc.inc",
+        "sha256": "08b284a2137f69622ae216f27c63d96872310cf89383e83ab0e779178356d5fd"
+      }
+    ],
+    "wrapper": "modules/boringssl/ecdh/compile.cc",
+    "cpp": true,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/boringssl"
+    ],
+    "flags": [
+      "-DOPENSSL_NO_ASM",
+      "-DBORINGSSL_IMPLEMENTATION",
+      "-std=c++17"
+    ],
+    "repository": "https://github.com/google/boringssl",
+    "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "EC peer point and derived coordinate",
+    "ancestry": "OpenSSL-derived",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-aes",
+    "project": "ippcrypto",
+    "algorithm": "AES",
+    "files": [
+      {
+        "path": "modules/ippcrypto/aes/0-pcprij128safeenc2pxca.c",
+        "original": "sources/ippcp/pcprij128safeenc2pxca.c",
+        "sha256": "323d844af5bb4528ce19a0163f70b55f627946706d064442146bab10e94d61a4"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/aes/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "constant-time compact S-box and finite-field column mixing",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-des",
+    "project": "ippcrypto",
+    "algorithm": "DES",
+    "files": [
+      {
+        "path": "modules/ippcrypto/des/0-pcpdescipherm.c",
+        "original": "sources/ippcp/pcpdescipherm.c",
+        "sha256": "d6d9f3e034372b5fc31cb2e2ff07f64d7f40cbc29621a456b6b001999811a84c"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/des/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "table Feistel macro",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-rc4",
+    "project": "ippcrypto",
+    "algorithm": "RC4",
+    "files": [
+      {
+        "path": "modules/ippcrypto/rc4/0-pcparcfour_processdata.c",
+        "original": "sources/ippcp/pcparcfour_processdata.c",
+        "sha256": "2b46c2f1fcf912fada0f6dfce71e873d8416637a84af6b26b4bb62d488c6b4d7"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/rc4/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "pipelined PRGA and reordered state swap",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-md5",
+    "project": "ippcrypto",
+    "algorithm": "MD5",
+    "files": [
+      {
+        "path": "modules/ippcrypto/md5/0-pcphashmd5px.c",
+        "original": "sources/ippcp/hash/md5/pcphashmd5px.c",
+        "sha256": "adb664e03b624e74927d253e011c9340c0e547ddce4de761fd51536a9b5b1114"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/md5/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "macro compression",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-sha1",
+    "project": "ippcrypto",
+    "algorithm": "SHA-1",
+    "files": [
+      {
+        "path": "modules/ippcrypto/sha1/0-pcphashsha1px.c",
+        "original": "sources/ippcp/hash/sha1/pcphashsha1px.c",
+        "sha256": "4f60fd778e402244f94c2f6ed41d8400cac323ffe8090aebd353396ed962d030"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/sha1/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "ring schedule",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-sha256",
+    "project": "ippcrypto",
+    "algorithm": "SHA-256",
+    "files": [
+      {
+        "path": "modules/ippcrypto/sha256/0-pcphashsha256px.c",
+        "original": "sources/ippcp/hash/sha256/pcphashsha256px.c",
+        "sha256": "3d898d8be25eb4f93f82c952c60ec11f1ff48b654b4f817d39abe3b8070117e4"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/sha256/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "ring sigma schedule",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-rsa",
+    "project": "ippcrypto",
+    "algorithm": "RSA",
+    "files": [
+      {
+        "path": "modules/ippcrypto/rsa/0-pcprsa_gsprv_cipher_crt.c",
+        "original": "sources/ippcp/pcprsa_gsprv_cipher_crt.c",
+        "sha256": "58322eee07e7f0fb07a9adbda31eefaed42f044fc8b935d99a9f8ed7c7bdd2d5"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/rsa/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "method-pointer dual exponentiation CRT",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-ecdsa",
+    "project": "ippcrypto",
+    "algorithm": "ECDSA",
+    "files": [
+      {
+        "path": "modules/ippcrypto/ecdsa/0-pcpgfpecsigndsa.c",
+        "original": "sources/ippcp/gfpec/pcpgfpecsigndsa.c",
+        "sha256": "f6acf7e5b34840fa7e1fd302f758796ac5beedef363c1bd997d7b7de8063bbbb"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/ecdsa/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "Montgomery representation signature",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-ecdh",
+    "project": "ippcrypto",
+    "algorithm": "ECDH",
+    "files": [
+      {
+        "path": "modules/ippcrypto/ecdh/0-pcpgfpecdh.c",
+        "original": "sources/ippcp/gfpec/pcpgfpecdh.c",
+        "sha256": "4e12d6720c38572bdc25f49a83c2b21fa876018057f9fc9b155f04880f36f3f8"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/ecdh/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "peer point scalar multiplication",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-sm2",
+    "project": "ippcrypto",
+    "algorithm": "SM2",
+    "files": [
+      {
+        "path": "modules/ippcrypto/sm2/0-pcpgfpecsignsm2.c",
+        "original": "sources/ippcp/gfpec/pcpgfpecsignsm2.c",
+        "sha256": "788da4f2ba4cbb2ceae717dd36e7bc2c296e33cd89b61848597272010ff976e5"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/sm2/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "SM2 Montgomery signing",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-sm3",
+    "project": "ippcrypto",
+    "algorithm": "SM3",
+    "files": [
+      {
+        "path": "modules/ippcrypto/sm3/0-pcphashsm3px.c",
+        "original": "sources/ippcp/hash/sm3/pcphashsm3px.c",
+        "sha256": "8ff22b0c1e2228a1e50c3f0cdff6d01fce82e8f0c07d6e38ef7f796bc3f2bc59"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/sm3/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "ring permutation maps",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  },
+  {
+    "id": "ippcrypto-sm4",
+    "project": "ippcrypto",
+    "algorithm": "SM4",
+    "files": [
+      {
+        "path": "modules/ippcrypto/sm4/0-pcpsms4_cipher.c",
+        "original": "sources/ippcp/sms4/pcpsms4_cipher.c",
+        "sha256": "a023787e4a7ff65fd5674617ed1cfd48d25a1174a5335dfce7557e9cebaad9a0"
+      },
+      {
+        "path": "modules/ippcrypto/sm4/1-pcpsms4cnt.c",
+        "original": "sources/ippcp/sms4/pcpsms4cnt.c",
+        "sha256": "3930e2e5f280c678c542661e1ac97ed70d2e0e27fa39ce3426a2549cbc247474"
+      }
+    ],
+    "wrapper": "modules/ippcrypto/sm4/compile.c",
+    "cpp": false,
+    "includes": [
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/include",
+      "/var/home/gzn/ourtask/samples/research-development-20261013/sources/ippcrypto/sources/ippcp"
+    ],
+    "flags": [],
+    "repository": "https://github.com/intel/ipp-crypto",
+    "commit": "aabec7cbba913833bb4a213e08f2447e25008d42",
+    "license": "Apache-2.0; retained upstream notices",
+    "expression": "constant-time full S-box sweep and header helpers",
+    "ancestry": "Intel implementation",
+    "basis": "Reviewed upstream algorithm body/round or signature equations before scans; dependencies may remain imports; source helper headers not automatically expanded by detector"
+  }
+]

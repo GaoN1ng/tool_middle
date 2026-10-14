@@ -1,0 +1,1126 @@
+{
+  "schema_version": "1.0",
+  "algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256"
+  ],
+  "fixture_license": "CC0-1.0 for authored fixtures; upstream sources retain their licenses",
+  "split_policy": "development-basic, AES O0/O2/O3 and mixed-libc-static are development; holdout uses separately authored calls, negatives and compiled variants. Iteration 1 was exploratory and is preserved; paired optimization/architecture variants and firmware components share implementation families and are not independent field samples. Binary SHA224 and 3DES inclusion is metadata outside the ten-core metric universe.",
+  "samples": [
+    {
+      "id": "development-basic",
+      "path": "source/dev.c",
+      "kind": "source",
+      "split": "development",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "AES",
+          "RSA",
+          "ECDH"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "ca2197dc86d75000116ee8c15c0beaa7b120378ea914b6ddec324fe1b4420b1a",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-aes",
+      "path": "source/holdout-0.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "AES"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "55a90d122a254661400a45df0a1182111a56e655e21d0e8941bcfe15a268569d",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-des",
+      "path": "source/holdout-1.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "DES"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "470e5fda2c4be4ae4b1c210828c31c7098c8de709ad3fb799bc73d817dc41f39",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-rc4",
+      "path": "source/holdout-2.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "RC4"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "f3ed7f39f2539d9d37911154e5feec1df0fb307181f59e0b8abb1b9f892ec21e",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-chacha20",
+      "path": "source/holdout-3.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "ChaCha20"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "c0fad26f4a65b61216701a36c4f9a022999bf87e9c7a1cb1a2440b3d9d46b845",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-rsa",
+      "path": "source/holdout-4.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "RSA"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "38127a0a37a34a6963b672a36c25027e2f23edc1751b2cf6e126b256aaeba7f9",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-ecdsa",
+      "path": "source/holdout-5.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "ECDSA"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "5295e11451c1b0ad43887e5cdaa73cfbeeea325228fe1fcb8a9baef0cee77751",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-ecdh",
+      "path": "source/holdout-6.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "ECDH"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "3b3406c28901c07128f3275efe9f28425f26704bb98317f5fa31aada332f1e6c",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-md5",
+      "path": "source/holdout-7.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "MD5"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "79bba2e06df1cb6fe97c1875986bc77e522a2a54c553299382e382efa3c03482",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-sha1",
+      "path": "source/holdout-8.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "SHA-1"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "4b3ed7774f58b1b15407c4d951247f770f3522e994a2ce26218a667d3a497769",
+      "terminal_business_type": null
+    },
+    {
+      "id": "source-sha256",
+      "path": "source/holdout-9.c",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [
+          "SHA-256"
+        ],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "25c4e8a6b646147d6fc22386e30de108edb7a1ad4e1fdf954e3e8421dd23f9ea",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-ordinary",
+      "path": "source/negative-ordinary.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "695a92aa9c87fc9ea4ec01dfec71c68d914a14b9e47112bc54d7a75860bc87bc",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-comments",
+      "path": "source/negative-comments.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "e13c846276c70cbe37006e52a5c59df2f4e6f3f539d7d17859e51063e0de3801",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-literals",
+      "path": "source/negative-literals.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "001a7e773a31d1321d8525b37d1fbffb790243522b027b06adaf9cdf1271b0bf",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-headers",
+      "path": "source/negative-headers.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "89b56155a773c4c5be917edcd9da6779df18b95a984f08e506c6eae30bcb4d4e",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-generic",
+      "path": "source/negative-generic.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "b8b657ea1cb969675e0759eb2ab7a0b988ab8bd5419a210f889f89e03e06c94c",
+      "terminal_business_type": null
+    },
+    {
+      "id": "negative-macro-variable",
+      "path": "source/negative-macro-variable.cpp",
+      "kind": "source",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Literal API calls independently labelled from source; no runtime claim",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "4e8a5683dec2962ca0c78306df62995cf04dd03f2abf2e9d7a1a4ba456d92920",
+      "terminal_business_type": null
+    },
+    {
+      "id": "defined-rsa",
+      "path": "binary/rsa.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "files": [
+          {
+            "path": "third_party/mbedtls/library/rsa.c",
+            "sha256": "24d4328f1fa3faafc2ad1a4c5f9274404381c08718920f2da23c5867f27f74d7"
+          }
+        ]
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual mbedTLS algorithm module compiled, with unresolved support functions allowed in shared test object; does not claim self-contained runnable crypto",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "5e57c6601f93938d709c6320ed6cd452d3d087136938ec2f4017a9d1f5992852",
+      "terminal_business_type": null
+    },
+    {
+      "id": "defined-ecdsa",
+      "path": "binary/ecdsa.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "files": [
+          {
+            "path": "third_party/mbedtls/library/ecdsa.c",
+            "sha256": "fe5ef0be180c189181892903e4eb2c79d79b108c117398cbf968f6f52ca0b858"
+          }
+        ]
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual mbedTLS algorithm module compiled, with unresolved support functions allowed in shared test object; does not claim self-contained runnable crypto",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDSA"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "2309c04b7606326df28244c036ddb5989930a9be2d0860483f58aa6c1b9d27dc",
+      "terminal_business_type": null
+    },
+    {
+      "id": "defined-ecdh",
+      "path": "binary/ecdh.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "files": [
+          {
+            "path": "third_party/mbedtls/library/ecdh.c",
+            "sha256": "85439414902f8421db8921c69a0be771ed69a7c69f0722127298f41a1d330ba8"
+          }
+        ]
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual mbedTLS algorithm module compiled, with unresolved support functions allowed in shared test object; does not claim self-contained runnable crypto",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ECDH"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "f10c047dead7dd46ebfc156eb1342a0de588b30b70bfa8383f35e6622398babd",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mixed-libc-static",
+      "path": "binary/mixed.so",
+      "kind": "executable",
+      "split": "development",
+      "source": "mbedTLS 3.6.4 RSA/ECDSA/ECDH + public-domain Rijndael module + authored libc caller",
+      "license": "Apache-2.0 OR GPL-2.0-or-later; Rijndael public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Four actual implementation modules linked into one shared ELF; puts dynamically imported from libc. API-reference truth omitted because support imports are a separate object-level inventory.",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES",
+          "RSA",
+          "ECDSA",
+          "ECDH"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "ae7ed51fa0877eccda91ca22408c2bc947251de9c70df4c40a1e8c27386289a6",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-O0",
+      "path": "binary/aes-O0.so",
+      "kind": "executable",
+      "split": "development",
+      "source": "kionactf example/aes; Vincent Rijmen, Antoon Bosselaers, Paulo Barreto",
+      "license": "Public domain per retained source header",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual Rijndael encrypt/decrypt implementation compiled from source; algorithm-named library APIs absent",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-O0"
+      ],
+      "symbol_state": "retained",
+      "sha256": "79022747e7a309961c4d93f6e9fad3c1bbc82519a8045414a3f35c6504d05fff",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-O2",
+      "path": "binary/aes-O2.so",
+      "kind": "executable",
+      "split": "development",
+      "source": "kionactf example/aes; Vincent Rijmen, Antoon Bosselaers, Paulo Barreto",
+      "license": "Public domain per retained source header",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual Rijndael encrypt/decrypt implementation compiled from source; algorithm-named library APIs absent",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "e3f809804d094e4211f238d67d46f7190ceca0944c04a0c54d9a0c9b4d08a8f4",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-O3",
+      "path": "binary/aes-O3.so",
+      "kind": "executable",
+      "split": "development",
+      "source": "kionactf example/aes; Vincent Rijmen, Antoon Bosselaers, Paulo Barreto",
+      "license": "Public domain per retained source header",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual Rijndael encrypt/decrypt implementation compiled from source; algorithm-named library APIs absent",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-O3"
+      ],
+      "symbol_state": "retained",
+      "sha256": "e3f809804d094e4211f238d67d46f7190ceca0944c04a0c54d9a0c9b4d08a8f4",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-stripped",
+      "path": "binary/aes-stripped.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Same AES source; paired transformation, not an independent algorithm implementation",
+      "license": "Public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual AES implementation included with section GC disabled, all non-exported function names removed by linker",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-O3",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-s"
+      ],
+      "symbol_state": "stripped",
+      "sha256": "e1ff6925b4198712ad18d0709f207883673341789e13760b0e8d6c5233b88adc",
+      "terminal_business_type": null
+    },
+    {
+      "id": "rsa-stripped",
+      "path": "binary/rsa-stripped.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Actual mbedTLS RSA module; paired transformation",
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual RSA implementation retained with section GC disabled, symbols hidden/deleted; expected capability gap counts as FN",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RSA"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-O2",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections",
+        "-s"
+      ],
+      "symbol_state": "stripped",
+      "sha256": "980e6ba0f0ea58ebb94996bcacd13bc10a6e68533ca60abcf72ff6d76cdc985e",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-arm",
+      "path": "binary/aes-arm.o",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Actual Rijndael source; cross-compiled object, paired architecture transformation",
+      "license": "Public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Source proves AES implementation; architecture/endianness exercised via real compiler output",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "aarch64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-target",
+        "aarch64-linux-musl",
+        "-c",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "1993c6bec63acd0fa406234c45fd6fecf7e350d3cc59d8d0386a07da14d22632",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-ppc-be",
+      "path": "binary/aes-ppc-be.o",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Actual Rijndael source; cross-compiled object, paired architecture transformation",
+      "license": "Public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Source proves AES implementation; architecture/endianness exercised via real compiler output",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "powerpc32_big_endian",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-target",
+        "powerpc-linux-musl",
+        "-c",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "b204e0d89c8273dca9b5a921667fd25fb46fd7a804e699a58b5b60226680dd27",
+      "terminal_business_type": null
+    },
+    {
+      "id": "import-asymmetric",
+      "path": "binary/imports.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "fixture": "authored API references",
+        "linked_library": "/usr/lib64/libcrypto.so.3",
+        "library_sha256": "3d2b5e4e446a4e88047fe0c8993b1134815fe53c4712b693cb40be3edbf43621"
+      },
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Known external API references linked to libcrypto; no crypto implementation compiled into this scanned object",
+      "truth": {
+        "api_reference": [
+          "RSA",
+          "ECDSA",
+          "ECDH"
+        ],
+        "implementation_contains": []
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "/usr/lib64/libcrypto.so.3"
+      ],
+      "symbol_state": "retained",
+      "sha256": "f6d4194e49d809b433c1cd7dadc123bff7edbc34d8f06e06a74e777bff2888de",
+      "terminal_business_type": null
+    },
+    {
+      "id": "library-only",
+      "path": "binary/library-only.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "DT_NEEDED includes libcrypto; no algorithm API reference or implementation source",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": []
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "symbol_state": "retained",
+      "sha256": "fd6570d85de3eecf64f4468f312452c1fbca8e162550a86de713b1259f5841e2",
+      "terminal_business_type": null
+    },
+    {
+      "id": "generic-import",
+      "path": "binary/generic-import.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Generic EC key generation and big-number imports provide no ECDSA/ECDH/RSA distinction",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": []
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "symbol_state": "retained",
+      "sha256": "3747599be00ef2bcf9b75cbf5b35d6d419a9f7eebf365fbc7927fd9a28908d9b",
+      "terminal_business_type": null
+    },
+    {
+      "id": "shared-constants",
+      "path": "binary/shared-data.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Data-only object: shared IVs, Base64 alphabet, Salsa/ChaCha text constants; no cryptographic function implementation",
+      "truth": {
+        "api_reference": [],
+        "implementation_contains": []
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=."
+      ],
+      "symbol_state": "retained",
+      "sha256": "188d68be3a6514c68af00f07b6b9a830e675bbde4591ee6520a6288036062122",
+      "terminal_business_type": null
+    },
+    {
+      "id": "sha1-O2",
+      "path": "binary/sha1-O2.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "RFC3174 reference source, retained upstream headers",
+      "license": "See third_party/crypto-detection/LICENSE and source attribution",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual SHA-1 reference implementation compiled from independently labelled source",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-1"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-O2",
+        "-shared",
+        "-fPIC"
+      ],
+      "symbol_state": "retained",
+      "sha256": "43485febe05bad78c8f113febedfc62ee479f0e3d3aa6c353b8245c8f08a8890",
+      "terminal_business_type": null
+    },
+    {
+      "id": "aes-Os",
+      "path": "binary/aes-Os.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Actual Rijndael source; size optimization holdout, paired build variant",
+      "license": "Public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Independently labelled AES implementation; paired optimization variant, not an independent implementation family",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-Os"
+      ],
+      "symbol_state": "retained",
+      "sha256": "a887488db760b1931411d038ed959a9f607c8eda222e4e6f931b3be686e6a43f",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mixed-holdout",
+      "path": "binary/mixed-holdout.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "Actual mbedTLS asymmetric modules + public-domain AES; holdout compiled variant related to development implementation families",
+      "license": "Apache-2.0 OR GPL-2.0-or-later; AES public domain",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual crypto implementations hidden from dynsym, retained in symtab with GC disabled; libc printf dynamically imported; no target execution",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "AES",
+          "RSA",
+          "ECDSA",
+          "ECDH"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-Os",
+        "-fvisibility=hidden",
+        "-Wl,--no-gc-sections"
+      ],
+      "symbol_state": "retained",
+      "sha256": "0495da4f8d5f788cec0170d37816331128e0edea80282d15c819bc9f8e95c8bc",
+      "terminal_business_type": null
+    },
+    {
+      "id": "rc4-holdout",
+      "path": "binary/rc4-holdout.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": "kionactf RC4 reference source; see retained source notice",
+      "license": "See retained upstream LICENSE/source notices",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "RC4 reference source independently inspected; weak KSA-only signatures remain uncertain and count as FN",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "RC4"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-shared",
+        "-fPIC",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "354aeed5b977b5970598715dc487b96bbf4810d59e82c3ed9448f4f9259f7e23",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mbed-des",
+      "path": "binary/mbed-des.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "file": "third_party/mbedtls/library/des.c",
+        "source_sha256": "b3d91e02055fc05f0d28f820e8731445eeeb73a6708bbafc3c988bf631a243b0"
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual implementation compiled with mbedTLS default config; DES object also contains 3DES, SHA256 module also supports SHA224; metric universe is the declared ten core algorithms",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "DES"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "b929b2844e2075daccaba9f9e6ad714efae3359000c8dc691375cbd675574784",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mbed-chacha20",
+      "path": "binary/mbed-chacha20.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "file": "third_party/mbedtls/library/chacha20.c",
+        "source_sha256": "53300418d833bda5c999a3dce3d174d19ebeb1908c4ee1f94c63afe4439a9abd"
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual implementation compiled with mbedTLS default config; DES object also contains 3DES, SHA256 module also supports SHA224; metric universe is the declared ten core algorithms",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "ChaCha20"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "67d11457c70572790cbe98ed98fa3564d09ffcd866fe17fe8a218aec79cfec0a",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mbed-md5",
+      "path": "binary/mbed-md5.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "file": "third_party/mbedtls/library/md5.c",
+        "source_sha256": "887eca6a51f8dfd8c3fd1a9dab6ff083e1795644e88b39c87640b56fcd33503b"
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual implementation compiled with mbedTLS default config; DES object also contains 3DES, SHA256 module also supports SHA224; metric universe is the declared ten core algorithms",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "MD5"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "09dba7eb929883b33c3ec39602f78c98b321a831105f31baec2dc40e8bf2d901",
+      "terminal_business_type": null
+    },
+    {
+      "id": "mbed-sha256",
+      "path": "binary/mbed-sha256.so",
+      "kind": "executable",
+      "split": "acceptance",
+      "source": {
+        "repository": "https://github.com/Mbed-TLS/mbedtls",
+        "tag": "v3.6.4",
+        "file": "third_party/mbedtls/library/sha256.c",
+        "source_sha256": "4f928e5dcc0a2baf08634fc759309a3dbda52bb69ead14ff6c2dccafd8267453"
+      },
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Actual implementation compiled with mbedTLS default config; DES object also contains 3DES, SHA256 module also supports SHA224; metric universe is the declared ten core algorithms",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": [
+          "SHA-256"
+        ]
+      },
+      "architecture": "x86_64",
+      "compiler_flags": [
+        "-g",
+        "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+        "-fPIC",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/include",
+        "-I/var/home/gzn/ourtask/third_party/mbedtls/library",
+        "-shared",
+        "-O2"
+      ],
+      "symbol_state": "retained",
+      "sha256": "758c6cfa635713a0a17132702d5853c721cd090202e9699d7501ae1d27159e61",
+      "terminal_business_type": null
+    },
+    {
+      "id": "firmware-structure",
+      "path": "firmware.squashfs",
+      "kind": "firmware",
+      "split": "acceptance",
+      "source": "QCS artificial SquashFS structural fixture with known compiled modules and negative objects; NOT a real power-terminal firmware",
+      "license": "Fixture CC0 + retained component licenses",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Union of component source/build truths; libraries copied without adding dependency contents",
+      "truth": {
+        "api_reference": [
+          "RSA",
+          "ECDSA",
+          "ECDH"
+        ],
+        "implementation_contains": [
+          "AES",
+          "RSA",
+          "ECDSA",
+          "ECDH",
+          "SHA-1"
+        ]
+      },
+      "architecture": "mixed_x86_64_and_source",
+      "compiler_flags": [],
+      "symbol_state": "mixed",
+      "sha256": "50e63adb4276a78ffb316108c3746299d1a2607c4d4f3f8df3d50605665b8c81",
+      "terminal_business_type": null
+    },
+    {
+      "id": "firmware-extraction-error",
+      "path": "broken-firmware.img",
+      "kind": "firmware",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Truncated invalid SquashFS header; extraction must not be reported completed",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "3e30c23f01bfd2d2934dbc7e9541dbd0a32441846633947303a5d5beaabda71d",
+      "terminal_business_type": null,
+      "boundary": true,
+      "expected_statuses": [
+        "failed",
+        "unsupported"
+      ]
+    },
+    {
+      "id": "firmware-opaque",
+      "path": "opaque-firmware.img",
+      "kind": "firmware",
+      "split": "acceptance",
+      "source": "QCS-authored artificial fixture",
+      "license": "CC0-1.0",
+      "build": "python tools/build_fixtures.py; see build-log.json",
+      "truth_basis": "Artificial unknown image; no claim that random bytes prove encryption",
+      "truth": {
+        "api_reference": null,
+        "implementation_contains": null
+      },
+      "architecture": "not_applicable",
+      "compiler_flags": [],
+      "symbol_state": "not_applicable",
+      "sha256": "6e44bb362119a74046edf9e2160ea4dc5f293c496f8e52e2350040c8cbebcf6a",
+      "terminal_business_type": null,
+      "boundary": true,
+      "expected_statuses": [
+        "unsupported",
+        "failed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+test_new_architectures_and_compiler_have_real_hidden_witnesses (test_coverage_repairs.CoverageRepairTests.test_new_architectures_and_compiler_have_real_hidden_witnesses) ... ok
+test_pe_o0_pointer_relocations_preserve_hidden_ec_operations (test_coverage_repairs.CoverageRepairTests.test_pe_o0_pointer_relocations_preserve_hidden_ec_operations) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 16.925s
+
+OK

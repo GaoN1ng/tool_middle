@@ -1,0 +1,6 @@
+include LICENSE readme.md todo.md requirements*.lock setup.cfg
+recursive-include src *.py *.yar *.txt LICENSE
+recursive-include licenses *
+recursive-include build/runtime *
+global-exclude *.pyc
+global-exclude __pycache__

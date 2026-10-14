@@ -1,0 +1,101 @@
+{
+  "sha": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+  "node_id": "MDY6Q29tbWl0Mjk2MTA1NTU6Y2ZhNmRmOWNhMDAwN2FiZTNjNzA0MDlkMDJiMzc3OWFjMTc0MjI5Nw==",
+  "commit": {
+    "author": {
+      "name": "Joseph Birr-Pixton",
+      "email": "jpixton@gmail.com",
+      "date": "2019-04-29T18:47:32Z"
+    },
+    "committer": {
+      "name": "Joseph Birr-Pixton",
+      "email": "jpixton@gmail.com",
+      "date": "2019-04-29T18:47:32Z"
+    },
+    "message": "Mention salsa20 bug",
+    "tree": {
+      "sha": "4125cb2bf3c58ba12c8bcd537939bc1632cd284c",
+      "url": "https://api.github.com/repos/ctz/cifra/git/trees/4125cb2bf3c58ba12c8bcd537939bc1632cd284c"
+    },
+    "url": "https://api.github.com/repos/ctz/cifra/git/commits/cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ctz/cifra/commits/cfa6df9ca0007abe3c70409d02b3779ac1742297",
+  "html_url": "https://github.com/ctz/cifra/commit/cfa6df9ca0007abe3c70409d02b3779ac1742297",
+  "comments_url": "https://api.github.com/repos/ctz/cifra/commits/cfa6df9ca0007abe3c70409d02b3779ac1742297/comments",
+  "author": {
+    "login": "ctz",
+    "id": 579363,
+    "node_id": "MDQ6VXNlcjU3OTM2Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/579363?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ctz",
+    "html_url": "https://github.com/ctz",
+    "followers_url": "https://api.github.com/users/ctz/followers",
+    "following_url": "https://api.github.com/users/ctz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ctz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ctz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ctz/subscriptions",
+    "organizations_url": "https://api.github.com/users/ctz/orgs",
+    "repos_url": "https://api.github.com/users/ctz/repos",
+    "events_url": "https://api.github.com/users/ctz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ctz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ctz",
+    "id": 579363,
+    "node_id": "MDQ6VXNlcjU3OTM2Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/579363?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ctz",
+    "html_url": "https://github.com/ctz",
+    "followers_url": "https://api.github.com/users/ctz/followers",
+    "following_url": "https://api.github.com/users/ctz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ctz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ctz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ctz/subscriptions",
+    "organizations_url": "https://api.github.com/users/ctz/orgs",
+    "repos_url": "https://api.github.com/users/ctz/repos",
+    "events_url": "https://api.github.com/users/ctz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ctz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f5336068aa5ceb48aa96fb6cbabda512720f1ae5",
+      "url": "https://api.github.com/repos/ctz/cifra/commits/f5336068aa5ceb48aa96fb6cbabda512720f1ae5",
+      "html_url": "https://github.com/ctz/cifra/commit/f5336068aa5ceb48aa96fb6cbabda512720f1ae5"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "b2574adb1e4d1ac8ce5b7eab38c25c7ab96f8a56",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/ctz/cifra/blob/cfa6df9ca0007abe3c70409d02b3779ac1742297/README.md",
+      "raw_url": "https://github.com/ctz/cifra/raw/cfa6df9ca0007abe3c70409d02b3779ac1742297/README.md",
+      "contents_url": "https://api.github.com/repos/ctz/cifra/contents/README.md?ref=cfa6df9ca0007abe3c70409d02b3779ac1742297",
+      "patch": "@@ -241,6 +241,11 @@ Cifra requires `memcpy`, `memset`, and `abort`.\n   the chacha20poly1305 construction would produce incorrect tags for some message or AAD\n   lengths.  These case weren't covered by the standard test vectors, so extra tests have\n   been added computed with libsodium.\n+* [Issue #11](https://github.com/ctz/cifra/issues/11): in all versions before commit\n+  [df1e4130](https://github.com/ctz/cifra/commit/df1e4130722943b15563e92a0595b31c603aa34d)\n+  our salsa20 used incorrect internal ordering when constructing the nonce.  The correct\n+  ordering is apparently not specified by the specification or covered by test vectors.\n+  Additional tests have been generated from libsodium.\n \n ## License\n [CC0](https://creativecommons.org/publicdomain/zero/1.0/)."
+    }
+  ]
+}

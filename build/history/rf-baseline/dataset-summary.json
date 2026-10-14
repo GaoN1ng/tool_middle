@@ -1,0 +1,121 @@
+{
+  "files": 812,
+  "statistics": {
+    "files": 812,
+    "completed": 745,
+    "functions": 208685,
+    "unlabeled": 165924,
+    "target_crypto": 1425,
+    "partial": 67,
+    "ordinary_runtime": 32906,
+    "other_crypto": 484,
+    "generic_math_or_control": 7946
+  },
+  "labeled_algorithm_functions": {
+    "MD5": 137,
+    "DES": 113,
+    "ChaCha20": 91,
+    "SHA-1": 123,
+    "AES": 200,
+    "ECDH": 99,
+    "SHA-256": 128,
+    "ECDSA": 106,
+    "RSA": 148,
+    "RC4": 32,
+    "SM2": 52,
+    "SM3": 102,
+    "SM4": 94
+  },
+  "per_group": {
+    "mbedtls": {
+      "MD5": 50,
+      "DES": 50,
+      "ChaCha20": 56,
+      "SHA-1": 50,
+      "AES": 130,
+      "ECDH": 66,
+      "SHA-256": 10,
+      "ECDSA": 79,
+      "RSA": 130
+    },
+    "bearssl": {
+      "SHA-1": 42,
+      "MD5": 42,
+      "ChaCha20": 7,
+      "DES": 14,
+      "AES": 13,
+      "SHA-256": 14
+    },
+    "openssl-derived": {
+      "AES": 34,
+      "RC4": 21,
+      "MD5": 35,
+      "SHA-256": 14,
+      "DES": 28,
+      "RSA": 7,
+      "SM2": 4,
+      "SM3": 13,
+      "SM4": 22
+    },
+    "ippcrypto": {
+      "RSA": 6,
+      "ECDSA": 6,
+      "ECDH": 6,
+      "SM2": 6
+    },
+    "wolfssl": {
+      "SM3": 39,
+      "SM4": 44,
+      "SM2": 14
+    },
+    "libgcrypt": {
+      "SM3": 2,
+      "SM4": 2
+    },
+    "bcon": {
+      "AES": 10,
+      "DES": 20,
+      "RC4": 10,
+      "MD5": 10,
+      "SHA-1": 10,
+      "SHA-256": 20
+    },
+    "arduinolibs": {
+      "AES": 12,
+      "SHA-256": 21,
+      "SHA-1": 21,
+      "ChaCha20": 14,
+      "ECDH": 14
+    },
+    "libecc": {
+      "SHA-256": 21,
+      "SM3": 21,
+      "ECDSA": 21,
+      "SM2": 14,
+      "ECDH": 7
+    },
+    "tinyssh": {
+      "ChaCha20": 14,
+      "SHA-256": 14,
+      "ECDH": 6
+    },
+    "gmssl": {
+      "SM3": 27,
+      "SM4": 26,
+      "SM2": 14
+    },
+    "libmcrypt": {
+      "RC4": 1,
+      "DES": 1,
+      "AES": 1
+    },
+    "mhash": {
+      "SHA-256": 14
+    },
+    "nettle": {
+      "RSA": 5
+    }
+  },
+  "groups": 14,
+  "excluded_files": 1532
+}

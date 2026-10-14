@@ -1,0 +1,2077 @@
+{
+  "builds": [
+    {
+      "build": "wolfsm-sm3-x86_64-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "9b6ec7fed791d12eab839656eaba733eb4cb33252297e229bfebc810d0c92af8",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/Os/0.o": "07141b1902e3789ad3b774545134183e146fc95399620921d94126a1b1667884"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-x86_64-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "2c86b8a09e5008ccf61b172819a0234e5eebfd2790cd61309bae061bab6d93a0",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/O0/0.o": "2d64e1a5a36a05a1a08b0a582b7d5aed1c1f93803292814e0a1d30137f813ec1"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-x86_64-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "f6674c775000329d7289a1274f2daf718b248b8b743025df8d8c12f373e1693d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/x86_64/O2/0.o": "7f630309a9df927421f911eb96f59eae3218f0a5bbfc7bfae95b61f1a3a91958"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-aarch64-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "63f000a736d375215a9c7de5beb6bf2b850ea269b976a06ba8a5131220f2f4be",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/O0/0.o": "a161e475ad83b2e4336c7dfba1360f5cfaea3f9e481ddefe58bcfcb37b5714bd"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-aarch64-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "69367b1c06525ed1f24f146f58a75e662f2fb51460bc7ecf4ac56b83574f3298",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/O2/0.o": "8a2ca37d1ed31381ad3246ca611b1231841b5fa6ebd7f4e732d7c2ac36cb9d3d"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-aarch64-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "fc4c5372753e67101f656bc765af850220e446a77130bee0e0569e44b25b18d8",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/aarch64/Os/0.o": "4b58844a20b7812e58694f98111e50e2859245fe0d591bf6c78a77fbb8d8ea65"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-arm-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a87340c519c195dc2717d3a38d9ff55242688d818b7f3912ae0eeb0f0f5d9b26",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/arm/O2/0.o": "468ddc6d74bc08e84ff3ee508be0bf923a0cb8e315eef2c7cf964b351a4140d6"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-arm-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "9aaea3970c345ba15d038f7d2dbf94ed785f04614aa1749b7d91151374c887a9",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/arm/O0/0.o": "8e0346bfaf603cdfa81a608b9cb6e3568ee5f2caa546b74f0d97ea90cab8c39d"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-arm-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a9caf4081d2ee95a7bfeaf16bb84a8cff4f35295c201ea5cfb0bc14499cfedaf",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/arm/Os/0.o": "49df8447b847ca4b759b5cd3b2413d9aa6a69bb13326a553568ddf6abe8fc68b"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-thumb-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "2ac9cda37ed1cfee51c116f098f35c6c0820c7f24929f5a130f088b7ed52ad03",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/thumb/Os/0.o": "97723782df9af7c00e11d5886b918dc317b5d0bb32b87607add27e766ce005cc"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-thumb-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a6dd6a806fe9f7803fd4fb6924b718b36819e3a1d97b950f9a88def03400472d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/thumb/O2/0.o": "a628fcc71381e6feef484932d9a7d47988bf7ef87acfdc263333fb45a6d3322a"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mipsel-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "3dc250198da7cb14a88d4430a0380fafb6b5d5b0c6511917908ab7e81f57f12b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mipsel/O0/0.o": "b672473896152be650f70ced8ffb5435c1a88c457e520593344c2b37656f128b"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mipsel-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "ab52fdf7e651bdd74d58a1588c2089d2c390a88c4caf90d323b93cd7b53914a8",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mipsel/Os/0.o": "b1cababff37dbfb78ee6717d864021f96f08d4c5730ff891fadccdffe9c27659"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mipsel-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "f56bb735f106492fc901496041294781eb283c9dcccf739ae8e2dbce834e4d97",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mipsel/O2/0.o": "32d3d03f582c4cee6c0451e7bad8cf3c210ff0cc731929d69681d5aa5f2f6358"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-thumb-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "7220400aac55be777f226d5dc5c09aaf31fdb66369140c711132ced5a6370f92",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/thumb/O0/0.o": "3bfc2a65802192cead7344c692fad03c1cdd8c995b70f6ff8edbabc077ea20f0"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mips_be-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "bab2e371865f51d500b6217267f8b18b3f4237a5a177e3189ed59ba3a16a4eaa",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mips_be/O0/0.o": "8966fe39485996cde83e57bd423f2a8b676ce4e6864c1bcbeb4406b5b23eebc7"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-x86_64-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "a962d266901e69f613d0335fe9b48716b475e5543e979410109610360fa4d129",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/O0/0.o": "d50159397ddbccd30d733247b9b4f9aecbd8d4950828b4a8261d54691b82b3ad"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mips_be-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "4a834fffdf7d9b738cf7012f0d895743b959a52526203a233652efc87361d9ed",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mips_be/O2/0.o": "82d5a443cdb42d336d1386c69ebc08432dc0a38e855dfe976579c8ea5e1c04e5"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-mips_be-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "691353c9d06591b0077c9d3a2e90ceaa5c8097c2de93935bac14c419963de3ee",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3/mips_be/Os/0.o": "6e6c5bbfbc2c6a16ffa26eafef1cd06359f0532bd427475ef6b8ad0a0160cc24"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-x86_64-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "81743ce5e525ae26ea8265361350a7c37741a5a8775def30c2b2bfd794bc47da",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/O2/0.o": "f6a892ec6617b954b7f6b65959a3adaa39293887cd076da392106bf485df63d0"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-x86_64-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "424905c24783ec14066b2f51fd9fa7ceb76fc8f1ba915c5b03696921fe37eb8b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/x86_64/Os/0.o": "4e6ce90278e368bceb1d4eee66bf14636f681cffa668c692f3b1efb008083a83"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-aarch64-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "62f3a9e08c4a9451cbf7c2b90088b6e5cbcc782d242824cc9b8a77d4fb086bfb",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/O0/0.o": "b51e10a816f6e646f937e6dfab0f7f019be94fc8528b437b19d48366b5d5953d"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-arm-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "6d93c52676daa27868918bede229000dc881fc59db2ce6f2867e8a92add3fc46",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/arm/O0/0.o": "080f122fd0d6405b341f6b1fdb47404cf9e803721d7d3dbe83d6f133a142c19e"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-aarch64-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "5bc3984fe35d2a2bd4ac0e2ee0e84b3336aa93356c19e64142004a5d382c3bde",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/Os/0.o": "666eddf930c9cf1e4274e0e51d641e2ce3ffeefc0e67d2a07d63a5251d3d6f26"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-aarch64-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "e837f8f3c970d6eb55740e202bc40561864276dcca1acbd908c24b64ea49b71d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/aarch64/O2/0.o": "b67e7476a7101e95f58326d28bbe8d65fb0746e7f5cb489aae405833113459ff"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-arm-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "e2d6b84402b4d004fb2d2ed0d2779740808a7667141236f69618eb83ac68da57",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/arm/O2/0.o": "aac5b31e6a364b04969d4b0bef871d10025dea049c9822d30711edc61532aa06"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-arm-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "fd7b5c85879f278272b2df428bc230f507453bb4d45f0438ba6fa5ee8effd135",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/arm/Os/0.o": "00add3767ec2710604e86ea3a4a2b227555a46573da883e63651edbf8a7992ab"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-thumb-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "025552e2b4d3d2339151c64d93948f284102312c416a9a3bb872a857f561ba7f",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/thumb/O0/0.o": "ae40d9a71b4c72b247d5d9bfd71643ad8e4fb139d1616d27504239f6b73ade1d"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-thumb-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "bd3bba1af229a1d6ba4a899ac69c4d5b45ee16aa886668cef940b9b078db1593",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/thumb/O2/0.o": "ebbc0a7ca00a5f08daa7c01aeb1217ac824cc9b592b069bba7c4f02834441b82"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mipsel-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "cdea8caf2bd8148345163f0faad1f4e9a76e1360dd53882ac40d1efeee889388",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mipsel/O0/0.o": "2683f1c091ef1a9941c8089cc6a3823975f9051f0e5a0250c428a91fa28ec2d3"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-thumb-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "7e1d1801bd4efbfdeddb1741221dad579e5aa891ce60834ae44ba1ccabc242c2",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/thumb/Os/0.o": "44c34d2cdc9cd6f33f75861fbda70ccfd923763b5cda0e1a044984512a4912b4"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mipsel-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "7a5b2f64edc16ce4e3b889dfc91d2d36191cb3b6b09f73fd4c5bfde66990aabd",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mipsel/O2/0.o": "988d6a03d6a79dfebac72caee922a921ff96add8095013201c515acdde63d376"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mips_be-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "c3a335b9f0db89c543cdd5bd5c0063323c8c575a10a2fc5b65020afa42484b56",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mips_be/O0/0.o": "5ad1122e9622d89ef4585e7ac21670931d550c056f90eee52f63e10625e64347"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mipsel-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "755960a80dbcdfa88ec2f54955fdea9b9449533a3eb6f5bf73b1dc2704dfdaa8",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mipsel/Os/0.o": "d5e585dee20bb66c366461e737b43742e631a404c3e2880d5297612325831faa"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-x86_64-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "2036b995508c9bd8f0092be4005b14d9d7e1abb4cb202e8d6f9fe2faf7aaff3e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/O0/0.o": "5c6f79ecfb20907ceea6a0313c140038c52afc2f4d5bffcd0d2f38c0705b5f84"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mips_be-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "c84e88e70d7513758971ea7f094425b38f70d0f979ce212d6ee6e8c8f31f4cce",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mips_be/O2/0.o": "99fac9cf94e82cabccf7e97c3b79de2cdc157ffd3981f673880bcb127fdf9cb5"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-x86_64-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "5678293179e54cbd6e41e4d44b7bf332b87197ad6ad75f4362a9be6d90befd36",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/O2/0.o": "bc1ef1c35760e49ad0c4f77f89e9ea1c419a27a1d6f810bd03359853e4792100"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-x86_64-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "8887dbc43d7253be87dcf47176ef0e85690562bb9ac23e354aadb1bbc9835c59",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/x86_64/Os/0.o": "8f12e1b81416423c3823a2ae13ff2e223e5f462037c04774e589abbbdc5838fa"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-mips_be-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "0226bf5a8e691bcc14b8f99fcde5e9700c65f0515327ef2354cab465d050da18",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4/mips_be/Os/0.o": "7dbbbabf9328e86a1f32dfe1fbe705ab682c3a449c59974e5c0632d0f2f58398"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-aarch64-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "53b58c057f7a8a17d04ce9b54ba714b19b0c294f5c38a8e56f4d3758120aee9a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/O0/0.o": "e9baf455fdecc18639ec8f205269841dbf620b0a3e06dd8ccfe2d584950f2ac2"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-aarch64-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "eb1e5636c9a7c08ca8b0c7c3d2d1c02b5e851a029e94de2868568d2467d95f8b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/O2/0.o": "6e5f5af61989b14bea548ee6b518c056f22e38e14f3ca160b7d3e1b5382e8d26"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-arm-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "c1414b0dfa8719a165ba0fab574e38b7109eaa5b1b80e3b7414d58fcd10911d5",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/arm/O0/0.o": "ac6dacefa60b0b100ea3c456d9aae4122146df468d8d4b61c9b3bf0b47997bcf"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-arm-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "5e04eb70f8c7e45950c4aea206b2ce22921872df6343cb962dd87d8e1b9de61d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/arm/O2/0.o": "416c285cb681434c8b8ba29f6f5c2011c285709af437c244d09fd5c17707912e"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-aarch64-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "9437a0d7519469eb039b1088626f35c119211592816bd12ed52abfbcaf62c3e6",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/aarch64/Os/0.o": "39b293938842a216c29b820fdc6af7c7e71ca74bf4576c92ab0e6456adb21257"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-thumb-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "f8b58b65f36964375720128f8bc04df4765eb6739246cbf4d0cbac09b825517e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/thumb/O0/0.o": "cce0e0be86948079a2e98ca5396279a16d49374ef65f73ab67e98748301d5358"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-arm-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "109224d41a2e55ecbf14fef5246396c081e06140d7ad5a9264f1465295687f7b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/arm/Os/0.o": "4924d0e0708081393d3991438a6ab1ac5c526fb8e2f5c861ca70e3bccb79c3d8"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-thumb-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "5b756b3657e5523a330741364175b61beb0c1e8a1701c4abbadbb8ced8319642",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/thumb/O2/0.o": "7b53dc2fc94f0a4a9e7ca2cc5be08841c0384f0be361b356c8d931f97a35efd9"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-thumb-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "e73a1571faa1c0c9ed9f43d0cd7970d29981229bad2f3e81df03bbd7b6c03b0e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/thumb/Os/0.o": "d4173fc556127b9c50577cf4a7331d3640f48e06e78c6d2854087eccef066841"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mipsel-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "4bdcc226ee23a3b2548d29a9b4530aba739434e16a1a804e08502f918188a105",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mipsel/O0/0.o": "52fea95c4a9f5f96c4415057c8ef1b7b336e18c583f3cf707a135e258260ebf0"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mips_be-O0",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "198b0ab2a6a57d2932bda2b3f3320aa9db817112348a7684f3ed12fd92c95c3c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mips_be/O0/0.o": "67f12c704e1d761d185eca0bb1954f30d3125c936ae2691b6590e77ad3d97e1c"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mipsel-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "5867e4dd29f372b460b2665ed63a62c24688bc9ba47dd5c7b22e1e34783486c5",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mipsel/O2/0.o": "f5b1ef89a6ca3e6c335131b70985ee557e44df4ab5ddd11b31a003bc66c76f50"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mipsel-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "381e569554fc022ee12db3eb1fc22342f7be994735c07111dfc9191c5cd3fe4c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mipsel/Os/0.o": "213a3261c41dea3d17274b0cfe83f6141127a9dd387716f313fbb7b56527ffa0"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mips_be-O2",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "4749971638fbcc84407f433ab6d20c210e6327c3bc71fda139be878e9d7aecdd",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mips_be/O2/0.o": "617592c85fdc14e9db455efa845046ed1bfa7e062caa438cfdf0886b79bfa387"
+      }
+    },
+    {
+      "build": "openssl-sm3-x86_64-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "1be4ab2f08197201c3ab1ff46e75d16eb62fd5e678fc485a4bebea36381cfb84",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/x86_64/O0/0.o": "2bddef13c81a93e2133682489114e72ae511da3d853181b4badb6aafae735aad"
+      }
+    },
+    {
+      "build": "openssl-sm3-x86_64-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "731b82fa954ac3d8dfb47e4dd96824a88fcea02e9925874d56b94baf2e23d454",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/x86_64/O2/0.o": "7e6c03268ac554fe6f1bddac40149a7615e67fa9b4eb800c386af7b4c919396f"
+      }
+    },
+    {
+      "build": "openssl-sm3-x86_64-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "88e8ec0ff15119832f9b0deb08d25f2e29f5b19e2b13ec6bcdac7ba8cd75c69d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/x86_64/Os/0.o": "ac33bae861896215a5d43befeea2b0910c7baa13c3465b61bfc36f20531838e4"
+      }
+    },
+    {
+      "build": "openssl-sm3-aarch64-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "3c61726d2c6e177564cc3bc5ac34f9bc5983d279ec5e133803ee7de91dcb386b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/aarch64/O2/0.o": "b2cb27bbda7509348fb77d0f06990725064814371c7c9dd88853271cc0c9be4d"
+      }
+    },
+    {
+      "build": "openssl-sm3-aarch64-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "2acdc0c2e7cad29aa8ce008ae87318832e1fd1c1c1e2f2b1ece626edefdb0451",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/aarch64/O0/0.o": "88d4a0d7a669a3bc4dd3b769aed0d8be6c71b7520cdf52d4c5d88072698814fe"
+      }
+    },
+    {
+      "build": "openssl-sm3-aarch64-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "b93e9dec50fb170503d0576b2a724c5fb85e72087e028449a529cca3691f5a3d",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/aarch64/Os/0.o": "212c00d7d7e1d53fe23d4436d035774d7a4e4c723b0e9f624014a554ff17d611"
+      }
+    },
+    {
+      "build": "openssl-sm3-arm-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "085bd6c248c2fab8cd227e971eaf27cc18a2fb0b6347c8cc73219193debbce2c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/arm/O2/0.o": "adfa004b2deede0d64ad6b55c1c9d6e567cda2caff04dceb5aa507f1d8074d59"
+      }
+    },
+    {
+      "build": "openssl-sm3-arm-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "8098d6521a65ae4ba47fdad11114905a6fbf368d05c78f5bff0a5cd064669648",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/arm/O0/0.o": "d5eaf6baf854c5bacb0ea937b71fdc035c98c67467e87f4d826981151b10788d"
+      }
+    },
+    {
+      "build": "wolfsm-sm2-mips_be-Os",
+      "selected_functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2",
+          "signature"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2",
+          "signature"
+        ]
+      },
+      "reference_sha256": "64a32de3a3ccd7f27aed3ce19880af09eba0e71cfb15f265e3ce729b1a3de6fb",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm2/mips_be/Os/0.o": "987d03de2b8b0aef9953d5a76a591ae822ba6eab51158bcf8adc22050ef70623"
+      }
+    },
+    {
+      "build": "openssl-sm3-arm-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "d6a2434583d27125b9ec6b1eded8efa1287302eb1a32b1f1cd1d7f8fdad451c3",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/arm/Os/0.o": "01f305d39dcbf4a77f1299ddd485448899ca67138f722d30ce7287b77812dc55"
+      }
+    },
+    {
+      "build": "openssl-sm3-thumb-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "2a07d1fad4f7af4903fccf11b77f43cbf45ef4ebaba497963e6478295bee1b0e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/thumb/O0/0.o": "9bd2221e886593c9432db99e9f5bb34f45591e3fcdbb89d623b6cafc4c42841d"
+      }
+    },
+    {
+      "build": "openssl-sm3-thumb-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "0219fb3a1660e760717f059c0cd3ca7d7737d9aef8178a73f322c8e2f0129f22",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/thumb/O2/0.o": "bed23afb486da9b1dc9a022f970f73066d8e57d0066d962e06548aa8dedc547c"
+      }
+    },
+    {
+      "build": "openssl-sm3-thumb-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "2b6c5f431e0921e8c4ad67169827a335cebcf72b40bd2d86592914e292c904c6",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/thumb/Os/0.o": "5a190b6c85491260c352ab049f2887ff14da585ea79c77e76b21304ed5b3088d"
+      }
+    },
+    {
+      "build": "openssl-sm3-mipsel-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "ede2b700ac25028f8cdf97130bfb1761e0b18877fe92ba3e06149f355578b0aa",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mipsel/O0/0.o": "09d0d796daf2ba68ec2988763de886bee13dd0799217247a1ce0af4daa514c76"
+      }
+    },
+    {
+      "build": "openssl-sm3-mipsel-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "8be0474d5f0e328904745217d7c39966bfe46d9f4394c34056e394ba1766b3b1",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mipsel/Os/0.o": "ccebb4ae5b5d36c5bf18d3090bde58aba4b4e4dc7adb4a0f30a56dc87a625691"
+      }
+    },
+    {
+      "build": "openssl-sm3-mips_be-O0",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "bc554b60d7b7c4f625a84ca536d8330418b316807af9ec7ac6c46d73da1330b1",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mips_be/O0/0.o": "769749f0d6fa5fa1a94d4f9c61c60a74a1f0f0f497176f7e16f41c2458d74d19"
+      }
+    },
+    {
+      "build": "openssl-sm3-mipsel-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "57608bbc024c1a106f2443594ee9b5950ab4cd783cc138703297ae7e15c059b0",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mipsel/O2/0.o": "df36405cfa274b7a3903ffb2eb435f34b16c4c6ebdfeab8a283a36ee675e3f40"
+      }
+    },
+    {
+      "build": "openssl-sm4-x86_64-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "638f3eb70c44571976d42b3ba9ee7037a3f8ea19794fc97f578fd1faa515c367",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/x86_64/O0/0.o": "54282c640c65b8c7cca9c68c79ddae935173454ae3ca9b30a0755cfc4d0e9f46"
+      }
+    },
+    {
+      "build": "openssl-sm4-x86_64-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "d0cc0d7000766554ed840c10c50448cc9e141ca81421ef85242a899a1db244ba",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/x86_64/O2/0.o": "decbaa42fe7c71fd3af2d62a677fe7b77547a11e8c27727c7775a7e713c4a0cf"
+      }
+    },
+    {
+      "build": "openssl-sm4-x86_64-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "6ea88b6aa852ed2fa2bf77d84dca8aa3cc952fed85e05d7079a79af4fe3fe3d5",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/x86_64/Os/0.o": "edc6f5e0071fdddef6e68fea654bd8f9f1430b062634fc87c5b9e6643c12f085"
+      }
+    },
+    {
+      "build": "openssl-sm4-aarch64-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "281eb97585eac43ff8a707fd7f5686f899afccc6913e95e75afe9a6fe8ba09cd",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/aarch64/O0/0.o": "90d3fc4bc5a330e7204c13957fecd7f46d05a1951fca44bef0e17d3871cbd678"
+      }
+    },
+    {
+      "build": "openssl-sm4-aarch64-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "0e1f0e9869cbb1eb561ac534f5ed58ea5c603acf17bd5142ff27481f525f637a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/aarch64/O2/0.o": "75fac15a7d794bca3696557daddfe93334e5a82135b26df7045bcad6315c8180"
+      }
+    },
+    {
+      "build": "openssl-sm4-aarch64-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "0e1f0e9869cbb1eb561ac534f5ed58ea5c603acf17bd5142ff27481f525f637a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/aarch64/Os/0.o": "75fac15a7d794bca3696557daddfe93334e5a82135b26df7045bcad6315c8180"
+      }
+    },
+    {
+      "build": "openssl-sm4-arm-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "67f9af85b760990cac1ff2c45cb80f82e81769a64fd045eeb28ee368e566369a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/arm/O0/0.o": "4ea098efddd16fd8e9ce9ea5ab872586dce170ff706e650b0caf04ddc1816a32"
+      }
+    },
+    {
+      "build": "openssl-sm4-arm-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "0e625391ff3ae0b027eb82c469a6fd1ade35ef23968e4d4ac63270181020dc0a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/arm/O2/0.o": "434585552a6725477eb5aab23757a3cd6f90ab23cbc4cd0084794cd56e95c55a"
+      }
+    },
+    {
+      "build": "openssl-sm3-mips_be-O2",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "bf91076f0941b263b7a946af5d42231171e610b79052fd4575a5e3db4b40a017",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mips_be/O2/0.o": "eddbf28ac2644747c36bef4ae9a00f96bb3e866db666f917bee34b637eb8b6d9"
+      }
+    },
+    {
+      "build": "openssl-sm4-thumb-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "d66b92e59e36b393b8e65e690cf38a0fc7b070573247fa947d3360a1cbef0477",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/thumb/O0/0.o": "4e0d7782ec3c740ed03f49bd7b7b6e895178b96900ceb2049adafd5182b6c48f"
+      }
+    },
+    {
+      "build": "openssl-sm4-thumb-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "e1cdba0bed2e29a9e35abc0bb910cd34f8f6ee502dcb4429a0ace61f86b41b92",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/thumb/O2/0.o": "1ebc55006ba67c345dc76a31e17289fbfacd98fe59cf5e43e49e8c33068d0a8b"
+      }
+    },
+    {
+      "build": "openssl-sm3-mips_be-Os",
+      "selected_functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3",
+          "compression"
+        ]
+      },
+      "reference_sha256": "44b2642ff5e598e9b16e1840cdc4e900f09d017d3f400b5bb4e0d5646d807ae7",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm3/mips_be/Os/0.o": "e1ebbb26496ddb465f1348c805b11743e802ad1d14fe633a43fe19a51da5ae02"
+      }
+    },
+    {
+      "build": "openssl-sm4-thumb-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "a6b0f5186c4903fb5d07f78787c92d75d6fdd8b70652bd58cad29318b0d859af",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/thumb/Os/0.o": "2e0c1421c345d5eba278060c6ed24962eec89e13365ec853927d6f2f1d3f4883"
+      }
+    },
+    {
+      "build": "openssl-sm4-mipsel-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "225c8b9706687ca8c5dbc355ee51e5bb82a6d5ffe7ad0fd5a68594e0b3b9c899",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mipsel/O0/0.o": "67bd945d4981f9f96a399c182b61fca7aa170c19e2cfe171b6100c004eb0ba00"
+      }
+    },
+    {
+      "build": "openssl-sm4-arm-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "2acff576248fb04a1ffbe123f344f9db1e3d6413634ed12e4ce7cbcbbf4bb5c9",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/arm/Os/0.o": "990e03898be3c30e8e1dd1310e0d0d10aa3e292263e525c68141ab60445fcc7e"
+      }
+    },
+    {
+      "build": "openssl-sm4-mipsel-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "6c9327f96a4ba9caf0db0afd1812826d11c9fd99fc63408956bead4fe32627cd",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mipsel/Os/0.o": "3c9c8a5fd431dfa7c493ea1f1dc622d954f6595f7a4362bbe308f5ce968c1766"
+      }
+    },
+    {
+      "build": "openssl-sm4-mipsel-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "6c9327f96a4ba9caf0db0afd1812826d11c9fd99fc63408956bead4fe32627cd",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mipsel/O2/0.o": "3c9c8a5fd431dfa7c493ea1f1dc622d954f6595f7a4362bbe308f5ce968c1766"
+      }
+    },
+    {
+      "build": "openssl-sm4-mips_be-O0",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "bc952943ed76d8ba478fbfc03aa90c1405ab1efb2701531f0c51b01e65c7c01e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mips_be/O0/0.o": "bcd8bf8ef57345d29720272750da5cbfdff4931c98e58566730bcd284e970bbd"
+      }
+    },
+    {
+      "build": "openssl-sm4-mips_be-O2",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "05e4ae1a01ad44ed7f38d246d70d5e6b11736af2eae57393c184bb008fbed7c2",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mips_be/O2/0.o": "c89dec29f5007cf34beed1a40c3dbba2e520206e96860be0899dd77cae123be9"
+      }
+    },
+    {
+      "build": "openssl-sm4-mips_be-Os",
+      "selected_functions": {
+        "ossl_sm4_set_key": [
+          "SM4",
+          "key_schedule"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "05e4ae1a01ad44ed7f38d246d70d5e6b11736af2eae57393c184bb008fbed7c2",
+      "objects": {
+        "samples/guomi-development-20261012/builds/openssl/sm4/mips_be/Os/0.o": "c89dec29f5007cf34beed1a40c3dbba2e520206e96860be0899dd77cae123be9"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-x86_64-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "031e801dc303194f5f4c97d0a8d70f8ae5c3ce2e5f3d721cddd841f97c47a1ae",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/O0/0.o": "ba9bd5ab7d1ca86945769672348047780ed6346071d3b43c26d1bcb4590e5680"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-x86_64-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "e44c244a93be4c46d47ed87ac833d24bcde7e4bdad41f9b55b86b088597267de",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/O2/0.o": "c489ea2c5986de53098e654c47b7df78ab6ceb3fb9c6080b22f289884d3fec2e"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-x86_64-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "3b05f95875e1d690afbcbd21ceadde08023d7f7f80f0c4b01a378500901284b0",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/x86_64/Os/0.o": "99c82fd3a30fc46d8b621f345e3ac2aee0d5ca698bd5b56ecd9db4bf640ebdc9"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-aarch64-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "cf6dcf1d867d943e79ff90e1a6454253a5316117213ebb9e0132c96fc36fc78c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/O0/0.o": "5aaf45aa6f9169884b99f557c30b0eabf1ddce85b1bd1fd2912b695d2d8287ac"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-aarch64-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a91a0305343110dbcead16c74b5d00fd0026a28f4dad6716249e3c1fbb4d8492",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/O2/0.o": "6c8bedff25cac8c9a43621fd468a3fd69c7ab1dae9c8c1925dbba54aa0f35db7"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-aarch64-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "0bfb31a523e2c5acf515ef3eab0044324e29efbb0feb4c6676b103102f6331a3",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/aarch64/Os/0.o": "cdc64a4beda541737c777be5e5e232a1af5ab6d816ff7210adea662ab6644176"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-arm-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "d6eff1a903b0b0abc7c04773a147260d092870efefa4e85bb1783b5cec9cf7e4",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/arm/O0/0.o": "e5e7e7b2f339cc1021af8887b0a175ff50b6c62389a7ba379cc67ed42cf8cdb9"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-arm-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "e77dc2b6911ef4c97c3b931a527a461418b0fb27bd8ddd0defd4aa9b3a186048",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/arm/O2/0.o": "1de4a6cfdc41008f3fa741b112815443de8302bb3196acd3e0f99ee548604071"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-arm-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "4bf83a09ba19cf9bfeffeeb4925f1e10f647a363b006cdb6c28451f1b19cd8e6",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/arm/Os/0.o": "7b3409717085bfd2214e8a2fcdb74aa9a9b0a71e1f47f45bdc8df1b7b679b163"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-thumb-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a725082ac00b51edbc78cc34fc84fde528822d168db9bcff0e95b5749b9a77ec",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/thumb/O0/0.o": "8a833d6591a8e77e3c32e3b2d7e8ae04f271198a61d065b3fc7f2ff343290b7b"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-thumb-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "d716b6da6c6618bfcc1f15f5f415e2b74fb1bce022a9547aa16c899955398bba",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/thumb/O2/0.o": "bc269ff3f8947e4d1964683a8dbfe5194bcb77d29aa97aafabbac7b4ced36df1"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-thumb-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "b17b22a8bde9d436fb7cab7d6d9c304cdb477a31e0ffecbb13b0573ad625aaa9",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/thumb/Os/0.o": "efc4de14fde393ff856c5b0aa9b9e6d11f86476200ea0c4ea3a19ece3660d9c4"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mipsel-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "302f60d8fb97e8eae2f6acdd22b2648241cdeb293e8a69c4a67f358f4cc2ae3a",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mipsel/O0/0.o": "5f5efa60c5120b44f95d7da04115d57a43e5ea52569b1ce1db5624edd5fcd3f7"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mipsel-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "bbf0f145b329c6342d9302f7268ecd63b12a083c2d4a82088d9d8c1dac5c1c44",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mipsel/O2/0.o": "650139ecbdd155a0831d22f182e6870ec079210710cbe1127b6e6ccf2bb5e8ef"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mipsel-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "a9a4d845edd71ef8fde26a5c2e9de70e0403ef10848a87fa1f725a4c318593c7",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mipsel/Os/0.o": "ce475a580580c78dc66119918796f6c1b9d35f384c0c4b3eb3e2cc7b4834d51a"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mips_be-O0",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "d858d21549e823c6f9f2bd0a2709c236ccc7b74ecd380c6bd141c802bd4ad918",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mips_be/O0/0.o": "3191ddb1572b1f705671b803f2b65b347758a1154dd25c47cc31534707d9f501"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mips_be-O2",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "e2d7bf9facdd56a796c9d779b46af5e81f1c3ef20ae3691c0ef0d18d450cce0c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mips_be/O2/0.o": "568f03450a39dafad9cc6edea8de5713c7f2145c70b9e9338c0d2bcca0af979d"
+      }
+    },
+    {
+      "build": "wolfsm-sm3-small-mips_be-Os",
+      "selected_functions": {
+        "sm3_compress_c": [
+          "SM3",
+          "compression"
+        ],
+        "wc_Sm3Final": [
+          "SM3",
+          "finalization"
+        ]
+      },
+      "reference_sha256": "9a3094de3dac9756b33a4e0b345f82e8ea22e1e361a30383df4d4b16fa314932",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm3-small/mips_be/Os/0.o": "6d3f215831407984fe1e1b6d2aae3940190d8b2724588120b2f35019713b88b7"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-x86_64-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "1c6c72753999195d9394319c8dae16f019bacb5ba349bcb06449bda5a7d3f012",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/O0/0.o": "d54261521e18fd424c8e30ba398ff1b23b3c6f85ae9ad2029713d772dba8a9a2"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-x86_64-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "e11796bd708eb0e64b322b730d046f7691e642c8ec59c127c7cb81c44cae7db4",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/O2/0.o": "d9eb914a884fd25d002086ccf195b522d3095c7bfad12e1d4fedb8d30c70e091"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-x86_64-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "911d7411f9bb5eba712e5c34854e8d03eba20eac8b6186407f589768ae209a2c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/x86_64/Os/0.o": "89af69e30afd114722b1944b0bdd1c868a0b6c6141ebc76f1dbb99c892f5add2"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-aarch64-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "eb050f35a5d3fddd376d87383605a6bf9c7ad3ca3929a662d53cbd39799eefbc",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/O0/0.o": "ea808c29c4c08db5b50f7c9e49eb6f16ccffe5a4ef38f182288530a1aca9a8a7"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-aarch64-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "4b340bbac2872a91d061686aec1f25d816c10c8b2cf484ebed093680236d981c",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/O2/0.o": "1a10c13478c32c9325b9d2a52d2e894799456dbddca85592cda9ab8c6beec858"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-aarch64-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "b294d789086beef971e7932fc491930332393e5a50139ae81f6d250fd3d547b0",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/aarch64/Os/0.o": "dc24f7b9e65c4668d1bd47b5a48eb7f78a09185f1e8aab0e0650e606825ef083"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-arm-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "53a32c531fd610e946159aa9168aaad74125ca38a66dca336b81616c435cfa6b",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/arm/O0/0.o": "d18f7884d4a40b9fc4f05be991adc073690a7e4374d73fe16c82471b26431a40"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-arm-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "6aee2775b2c0e39c81f0b3053d3c86e0c4a3dc38bb19da598fe1595fd2748575",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/arm/O2/0.o": "e7d32c50d44d51abdc2bd686e4c746cc7babe7bcbf8a1e774e87f1d69129df8e"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-arm-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "d5d0942b9cbf784d77bca5239e1fc171f3891cfbd0d52888d35360a038cb1405",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/arm/Os/0.o": "3406aaf3cbf94338f8c87d10b72d8a98d69d41ca406b7e2c9bb85274cff0b5e9"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-thumb-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "5d307284965479f8eff85da9ecb08f76ed7e71f9e0b91b4b75f9be5e6605f1aa",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/thumb/O0/0.o": "93b4c0014d3958b12bbd66583f2e177b8c748dae4384617458a9a9d77c9ec02f"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-thumb-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "bb043134cc2882fba22e823d8d8714c761db6d06ff21f40025b2894f4989248e",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/thumb/O2/0.o": "fc09308c339db054286ba8f8e15f5c1d1d1f42aafde48e5cc6db37a12555c8e2"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-thumb-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "ee4c91039fbcfd61db118374d441a5e75fc32318b297ae754b9624346acc21b1",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/thumb/Os/0.o": "64b51c70589d3333bac59c77e7270f29d4529ac0fbbfeef266e5037bb71d2234"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mipsel-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "c79a335070a46b12a51397687838e2b33a8955be7eb04c87cfdcc3d2efb968af",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mipsel/O0/0.o": "90e6cd39503f28d984b1e4afbada60ef7cae3e05627647e26fb922a33a5f3454"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mipsel-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "b2f02538e965353b4d92e1bc85fbcee7196d9ed2642f10f1d7e0266999241b78",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mipsel/O2/0.o": "7dc07352c21cf091fe6a3fe2acc1d598fdfc96905d6fdbaefd5aa60874fadb35"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mipsel-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "d7c4122fa12539ed90dc23f4531581996d7e7b631b0e403ea653a3fd20d97d39",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mipsel/Os/0.o": "8487e9ec5f2a19a76a7c8d387524a367d5eefb4c505259ddb804daa40134ef68"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mips_be-O0",
+      "selected_functions": {
+        "sm4_key_schedule": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "34748349b6605e6d1752da71649b104bbb9a8a7a2e758b4830e2ba1c2eed2c71",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mips_be/O0/0.o": "a585e834676e48e39934805406a1770431cc313afc042593f25e25169f3e7c03"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mips_be-O2",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "49aa4ede5e9e0ca1e561a6e9dca82119823ed7d3711c51853d808fbc16ba88d9",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mips_be/O2/0.o": "815e2ff8e41e5abf75a6d72ba26cf4961d0f94d66bd8728cca645eb3c5f5d278"
+      }
+    },
+    {
+      "build": "wolfsm-sm4-small-mips_be-Os",
+      "selected_functions": {
+        "wc_Sm4SetKey": [
+          "SM4",
+          "key_schedule"
+        ],
+        "sm4_encrypt": [
+          "SM4",
+          "block_cipher"
+        ]
+      },
+      "reference_sha256": "e165edd7162708f229c470a2cbbcfc367a26a99a61d30cd9bba7d403d41b88df",
+      "objects": {
+        "samples/guomi-development-20261012/builds/wolfsm/sm4-small/mips_be/Os/0.o": "0b66bc00c63c6b6c424849cddbd150e802dcab7fdbd5628976d5e8bf78efdd7d"
+      }
+    }
+  ],
+  "source_modules": 9,
+  "signatures": 211,
+  "inputs_policy": "Only samples/guomi-development-20261012, never validation_set"
+}

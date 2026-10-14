@@ -1,0 +1,52 @@
+[
+  {
+    "name": "meter",
+    "path": "dataset\\js-guomi\\firmware\\meter-js.squashfs",
+    "sha256": "454a9037f7bb6951ed920487dccd0f4acb5fc22b39d20d3e7b1df59a4e9a4ee5",
+    "entry_sha256": "772afff24ef05dd0f7ffb875d1f849a91ebfe949935ee9c23b6d06f1122ef4a2",
+    "expected_entry": [
+      "SM4"
+    ],
+    "label_scope": "JS entry only; complete firmware algorithm inventory not labelled"
+  },
+  {
+    "name": "concentrator",
+    "path": "dataset\\js-guomi\\firmware\\concentrator-js.squashfs",
+    "sha256": "94707d6b515cbc8926e9c76962a586ea021646984042ce9e1ac12954a5bb5836",
+    "entry_sha256": "883f9d8bc65979598a7b95cfb04e00033bf52a9163ffc427a44cc55f2e741dd5",
+    "expected_entry": [
+      "SM3"
+    ],
+    "label_scope": "JS entry only; complete firmware algorithm inventory not labelled"
+  },
+  {
+    "name": "ftu",
+    "path": "dataset\\js-guomi\\firmware\\ftu-js.squashfs",
+    "sha256": "50b2effa4d19b91a8259b1f56e10fa5ab9dd522edfe88297239926c083ad993e",
+    "entry_sha256": "88aab78ae498d7261468814dab3ee0a88592c0d1c4003f218d04b64576edd174",
+    "expected_entry": [
+      "SM2"
+    ],
+    "label_scope": "JS entry only; complete firmware algorithm inventory not labelled"
+  },
+  {
+    "name": "ied",
+    "path": "dataset\\js-guomi\\firmware\\ied-js.squashfs",
+    "sha256": "b42a312b4e3ec060994a9aa853a85daf1cccb71e371c82c3f55eea9bbacb4136",
+    "entry_sha256": "051d60d49096a132d602b4869b8b6514b7294ab5c01ae9be531654ccf428256b",
+    "expected_entry": [
+      "SM2"
+    ],
+    "label_scope": "JS entry only; complete firmware algorithm inventory not labelled"
+  },
+  {
+    "name": "der",
+    "path": "dataset\\js-guomi\\firmware\\der-js.squashfs",
+    "sha256": "e798822e1e6897066c95995b13162f57c837017e830b78c41818c4a17c0e2bb7",
+    "entry_sha256": "e65738a9b06a483943b3d8e10d7ceef0dccf806e23ee01c364030a987cafa53b",
+    "expected_entry": [
+      "SM4"
+    ],
+    "label_scope": "JS entry only; complete firmware algorithm inventory not labelled"
+  }
+]

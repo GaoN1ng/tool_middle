@@ -1,0 +1,84 @@
+{
+  "modules": [
+    {
+      "id": "wolfsm-sm3-small",
+      "project": "wolfsm",
+      "name": "sm3-small",
+      "units": [
+        "sm3.c"
+      ],
+      "source_units": [
+        "sm3.c"
+      ],
+      "truth": [
+        "SM3"
+      ],
+      "source_truth": {
+        "sm3.c": [
+          "SM3"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "wc_Sm3Final"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [
+        "-DWOLFSSL_USER_SETTINGS",
+        "-DWOLFSSL_SM3_SMALL"
+      ],
+      "architectures": null,
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/wolfSSL/wolfsm",
+      "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+      "source_hashes": {
+        "sm3.c": "29dee800de0851b5bbd9b98592188cb71541961898d7b21c79204b32ac6dd249"
+      },
+      "includes": [
+        "build-support/wolfssl",
+        "sources/wolfssl"
+      ]
+    },
+    {
+      "id": "wolfsm-sm4-small",
+      "project": "wolfsm",
+      "name": "sm4-small",
+      "units": [
+        "sm4.c"
+      ],
+      "source_units": [
+        "sm4.c"
+      ],
+      "truth": [
+        "SM4"
+      ],
+      "source_truth": {
+        "sm4.c": [
+          "SM4"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "wc_Sm4EcbEncrypt"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [
+        "-DWOLFSSL_USER_SETTINGS",
+        "-DWOLFSSL_SM4_SMALL"
+      ],
+      "architectures": null,
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/wolfSSL/wolfsm",
+      "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+      "source_hashes": {
+        "sm4.c": "399b8f9e01e49e099a2c73204618a2f92bb62bd966232e2b5273258efa769c1e"
+      },
+      "includes": [
+        "build-support/wolfssl",
+        "sources/wolfssl"
+      ]
+    }
+  ]
+}

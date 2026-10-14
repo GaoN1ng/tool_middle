@@ -1,0 +1,100 @@
+{
+  "repository": "https://github.com/mjosaarinen/sm4ni",
+  "commit": "ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+  "commit_info": {
+    "sha": "ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+    "node_id": "MDY6Q29tbWl0MTMwNDAzNzkzOmFjNmQ0MmM0YWMwZjg2YzM5YjYyZmEzY2M0MjIzNDBjM2I5YzVhZGQ=",
+    "commit": {
+      "author": {
+        "name": "Markku-Juhani O. Saarinen",
+        "email": "mjos@iki.fi",
+        "date": "2019-02-27T16:43:33Z"
+      },
+      "committer": {
+        "name": "Markku-Juhani O. Saarinen",
+        "email": "mjos@iki.fi",
+        "date": "2019-02-27T16:43:33Z"
+      },
+      "message": "removed unused",
+      "tree": {
+        "sha": "28fade7a79c2c0cb4e32299b95650b68fa7d1d83",
+        "url": "https://api.github.com/repos/mjosaarinen/sm4ni/git/trees/28fade7a79c2c0cb4e32299b95650b68fa7d1d83"
+      },
+      "url": "https://api.github.com/repos/mjosaarinen/sm4ni/git/commits/ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/mjosaarinen/sm4ni/commits/ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+    "html_url": "https://github.com/mjosaarinen/sm4ni/commit/ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+    "comments_url": "https://api.github.com/repos/mjosaarinen/sm4ni/commits/ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add/comments",
+    "author": {
+      "login": "mjosaarinen",
+      "id": 6192929,
+      "node_id": "MDQ6VXNlcjYxOTI5Mjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6192929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjosaarinen",
+      "html_url": "https://github.com/mjosaarinen",
+      "followers_url": "https://api.github.com/users/mjosaarinen/followers",
+      "following_url": "https://api.github.com/users/mjosaarinen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjosaarinen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjosaarinen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjosaarinen/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjosaarinen/orgs",
+      "repos_url": "https://api.github.com/users/mjosaarinen/repos",
+      "events_url": "https://api.github.com/users/mjosaarinen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjosaarinen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mjosaarinen",
+      "id": 6192929,
+      "node_id": "MDQ6VXNlcjYxOTI5Mjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6192929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjosaarinen",
+      "html_url": "https://github.com/mjosaarinen",
+      "followers_url": "https://api.github.com/users/mjosaarinen/followers",
+      "following_url": "https://api.github.com/users/mjosaarinen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjosaarinen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjosaarinen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjosaarinen/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjosaarinen/orgs",
+      "repos_url": "https://api.github.com/users/mjosaarinen/repos",
+      "events_url": "https://api.github.com/users/mjosaarinen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjosaarinen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "260903e8121ff32b208d4fc0a966f3c0bea09eab",
+        "url": "https://api.github.com/repos/mjosaarinen/sm4ni/commits/260903e8121ff32b208d4fc0a966f3c0bea09eab",
+        "html_url": "https://github.com/mjosaarinen/sm4ni/commit/260903e8121ff32b208d4fc0a966f3c0bea09eab"
+      }
+    ]
+  },
+  "url": "https://codeload.github.com/mjosaarinen/sm4ni/tar.gz/ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+  "archive": "downloads/sm4ni.tar.gz",
+  "archive_sha256": "072697b063e2558989402fc0259944095d26ba36504055b91b49b3e250bffb01",
+  "downloaded_at": "2026-10-12T10:10:53.679396+00:00",
+  "files": {
+    ".gitignore": "29a3db423bf9d10e68f8950af557ddb891f407d262a8286511fb22df48ef458f",
+    "LICENSE": "9cea42107a63af15553ebbce7b731de71ada957c228a578b6d76ccdc9d252186",
+    "Makefile": "80d67fa398590a45dec5279953272a8dfe4484e4b55b7ac01a1ddf7de62ae5c9",
+    "README.md": "140d148a42a626cc4378b6d1d155d677c6d2f9d2c2c0323e7e08b736d597f851",
+    "sm4_ref.c": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+    "sm4_ref.h": "f965d162612d47fb00dcc1626d59aa7c8f3852758b61137ddb8c27ed6297b4d7",
+    "sm4ni.c": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+    "testmain.c": "38bcbe0962019cb64d1776d91a7aa8e9ac8fd9f1e3060f87b1f673ff53d2b575"
+  }
+}

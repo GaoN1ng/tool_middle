@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-14T15:59:20.876390+08:00",
+  "purpose": "Lightweight RF shadow baseline on static algorithm recognition; no promotion of ML candidates into proven implementation evidence",
+  "baseline": "quantum-crypto-scanner/artifacts/controlflow-primitives-20261014/frozen",
+  "baseline_digest": "6432b91a73bbcb63b74c96f7ffca6a5b25b88839422b5a1c1243185835c6eae2",
+  "algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256",
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "development_manifests": [
+    "samples/operation-development-20261013/manifest.json",
+    "samples/research-development-20261013/manifest.json",
+    "samples/guomi-development-20261012/all-manifest.json",
+    "samples/guomi-operations-20261012/manifest.json",
+    "samples/semantic-development-20261013/manifest.json",
+    "samples/controlflow-development-20261014/manifest.json"
+  ],
+  "first_experiment_scope": "C/C++ source and x86_64/AArch64 ELF. Other architectures counted as outside scope and never represented as ML coverage.",
+  "truth": "Reviewed named source functions / DWARF-aligned function ranges. Function names and source identities used only in offline truth, not features or inference.",
+  "split": "Grouped by upstream ancestry, project, source implementation and compiler-runtime lineage; OpenSSL/BoringSSL grouped, GmSSL versions grouped; no random build split. Group CV on development chooses hyperparameters/thresholds.",
+  "model_grid": {
+    "n_estimators": [
+      160
+    ],
+    "max_depth": [
+      14,
+      22
+    ],
+    "min_samples_leaf": [
+      2,
+      5
+    ],
+    "class_weight": [
+      "balanced_subsample"
+    ],
+    "seed": [
+      20261014
+    ]
+  },
+  "features": [
+    "normalized operation proportions and bigrams",
+    "function/control-flow shape",
+    "memory/index/state proxies",
+    "standard immediate/rotate values",
+    "bounded local-call neighborhood aggregation"
+  ],
+  "feature_exclusions": [
+    "file paths",
+    "function names",
+    "project identity",
+    "raw source identifiers",
+    "symbol text",
+    "library names",
+    "absolute addresses"
+  ],
+  "primary_threshold_policy": "Per-algorithm out-of-group development threshold maximizes recall with file-algorithm FP rate <=0.5%; if infeasible disabled. Also report a predeclared relaxed <=2% operating point. Candidate threshold uses audited crypto functions, not all target-negatives.",
+  "final_holdout": "New predeclared author projects only; lock truth before scoring; no validation-driven feature/model/threshold edits.",
+  "planned_fresh_sources": [
+    "kokke/tiny-AES-c",
+    "amosnier/sha-2",
+    "chmike/chacha20",
+    "dhuertas/DES",
+    "peterferrie/rc4",
+    "kmackay/micro-ecc",
+    "maandree/libsha1",
+    "RustCrypto/hashes",
+    "RustCrypto/block-ciphers"
+  ],
+  "holdout_note": "Candidates checked for prior presence/ancestry/licenses before inclusion. Failed/unavailable/overlapping projects disclosed and excluded; missing algorithms explicitly reported.",
+  "comparisons": [
+    "frozen rules",
+    "ML only",
+    "rules union ML",
+    "statistics-only vs CFG/memory vs local-call feature ablation"
+  ],
+  "no_target_execution": true,
+  "freeze_before_validation": true,
+  "historical_validation_policy": "Historical evaluated projects are read-only fixed regression, never called fresh holdout; not used as training input this round.",
+  "completion_criteria": "Train and freeze reproducible RF; independent new-family scan; TP/FP/FN and scope/limits recorded. No promise of 90% recall.",
+  "source_preparation_supplement": "Two planned repositories returned404 before any feature extraction/model scan. Unscanned fallbacks: marcizhu/ChaCha20, skeeto/rc4, maandree/libmd5.",
+  "source_preparation_addendum": "Before model training or any holdout scoring: exclude micro-ecc because historical references already contain its family; add hacl-star/hacl-star and RustCrypto/elliptic-curves for broader held-out algorithm coverage, and rurban/smhasher for hard negatives. Same no-scoring-until-freeze protocol."
+}

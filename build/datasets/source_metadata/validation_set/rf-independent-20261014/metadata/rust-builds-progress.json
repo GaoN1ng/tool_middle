@@ -1,0 +1,236 @@
+[
+  {
+    "id": "rustcrypto-sm3-x86_64-O0-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=0 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O1-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=1 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O2-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=2 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-O3-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=3 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-Os-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=s -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm3-x86_64-Oz-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm3/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=z -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O0-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=0 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O1-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=1 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O2-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=2 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-O3-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=3 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-Os-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=s -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm4-x86_64-Oz-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm4/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=z -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-O0-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=0 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-O1-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=1 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-O2-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=2 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-O3-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=3 -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-Os-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=s -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  },
+  {
+    "id": "rustcrypto-sm2-x86_64-Oz-linux-linker",
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--manifest-path",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/rust-probes/sm2/Cargo.toml"
+    ],
+    "rustflags": "-C opt-level=z -C force-unwind-tables=yes -C debuginfo=2",
+    "exit_code": 0,
+    "status": "built"
+  }
+]

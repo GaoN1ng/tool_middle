@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/marcizhu/ChaCha20",
+  "assignment": "new independent holdout; no tuning/references",
+  "timestamp": "2026-10-14T16:04:50.789821+08:00",
+  "commit": "b00c1390bd2c39a2d0da052e4f3ca307bc03646a",
+  "archive_url": "https://codeload.github.com/marcizhu/ChaCha20/tar.gz/b00c1390bd2c39a2d0da052e4f3ca307bc03646a",
+  "archive_sha256": "a01ad7c53b6eac39a7611e80fa7c39d94d45b04b0d350ac932b2ee572411c20b",
+  "api_license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "status": "downloaded",
+  "source_files": {
+    "ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642",
+    "LICENSE": "4894babc8810ebeb5e685af471fc2634709b1785152e7950882185c1d5382aa9",
+    "Makefile": "9e6d3680ac0cdd8a8533a2ca0dade4719a6cd41ec790f2d6720fc0b0b5237d36",
+    "README.md": "63846291716d4ff6343e7ac97b8a2a15b8f4c1ffb3b12765e92cb93a8a25c6e7",
+    "bench.c": "33e13e20d530a6cc6d105a0005121638e64d533e19b733519d0bf9b09681918e",
+    "tests.c": "317f6e4747d7ba8664b3be35d27e55d7326b2b7d9eab1f0644e5e943b5722c9f",
+    "utest.h": "5dcaf954e4555c2e5295bed70a004b9e373340dee8488674974002a93cb5a790",
+    "examples/chunked_cypher.c": "083f3ee91fd5551beaf3ef6fa52434141819c2f8b7ad20f5995b20a405662ed1",
+    "examples/mmap_cypher.c": "3a2bc4084434a78826a04cf8bd7da4401808944fdba0833df88593f62b2ae3ae",
+    "examples/simple_cypher.c": "0d1f349b4ea891d7ce6df1c5f87fd43f9474d4883bee0938ac1da94d8b76a43f",
+    ".github/workflows/build.yml": "8b3d068122411b42db8519a72059559cb0cd5136e4b2b698d1ef28a304c28455",
+    ".github/workflows/codeql-analysis.yml": "b4ee97b48585e718d2e2207f28053c52c7bc60d40e7affd5fac8d2f0377510e2"
+  }
+}

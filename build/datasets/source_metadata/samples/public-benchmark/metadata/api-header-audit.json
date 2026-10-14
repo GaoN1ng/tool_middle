@@ -1,0 +1,1568 @@
+[
+  {
+    "identifier": "br_aes_big_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 795
+  },
+  {
+    "identifier": "br_aes_big_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 806
+  },
+  {
+    "identifier": "br_aes_big_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 817
+  },
+  {
+    "identifier": "br_aes_big_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 828
+  },
+  {
+    "identifier": "br_aes_big_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 839
+  },
+  {
+    "identifier": "br_aes_big_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 850
+  },
+  {
+    "identifier": "br_aes_big_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 863
+  },
+  {
+    "identifier": "br_aes_big_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 875
+  },
+  {
+    "identifier": "br_aes_big_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 887
+  },
+  {
+    "identifier": "br_aes_big_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 898
+  },
+  {
+    "identifier": "br_aes_big_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 909
+  },
+  {
+    "identifier": "br_aes_small_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1015
+  },
+  {
+    "identifier": "br_aes_small_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1026
+  },
+  {
+    "identifier": "br_aes_small_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1037
+  },
+  {
+    "identifier": "br_aes_small_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1048
+  },
+  {
+    "identifier": "br_aes_small_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1059
+  },
+  {
+    "identifier": "br_aes_small_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1070
+  },
+  {
+    "identifier": "br_aes_small_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1083
+  },
+  {
+    "identifier": "br_aes_small_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1095
+  },
+  {
+    "identifier": "br_aes_small_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1107
+  },
+  {
+    "identifier": "br_aes_small_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1118
+  },
+  {
+    "identifier": "br_aes_small_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1129
+  },
+  {
+    "identifier": "br_aes_ct_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1234
+  },
+  {
+    "identifier": "br_aes_ct_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1245
+  },
+  {
+    "identifier": "br_aes_ct_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1256
+  },
+  {
+    "identifier": "br_aes_ct_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1267
+  },
+  {
+    "identifier": "br_aes_ct_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1278
+  },
+  {
+    "identifier": "br_aes_ct_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1289
+  },
+  {
+    "identifier": "br_aes_ct_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1302
+  },
+  {
+    "identifier": "br_aes_ct_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1314
+  },
+  {
+    "identifier": "br_aes_ct_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1326
+  },
+  {
+    "identifier": "br_aes_ct_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1337
+  },
+  {
+    "identifier": "br_aes_ct_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1348
+  },
+  {
+    "identifier": "br_aes_ct64_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1455
+  },
+  {
+    "identifier": "br_aes_ct64_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1466
+  },
+  {
+    "identifier": "br_aes_ct64_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1477
+  },
+  {
+    "identifier": "br_aes_ct64_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1488
+  },
+  {
+    "identifier": "br_aes_ct64_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1499
+  },
+  {
+    "identifier": "br_aes_ct64_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1510
+  },
+  {
+    "identifier": "br_aes_ct64_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1523
+  },
+  {
+    "identifier": "br_aes_ct64_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1535
+  },
+  {
+    "identifier": "br_aes_ct64_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1547
+  },
+  {
+    "identifier": "br_aes_ct64_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1558
+  },
+  {
+    "identifier": "br_aes_ct64_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1569
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcenc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1654
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcdec_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1663
+  },
+  {
+    "identifier": "br_aes_x86ni_ctr_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1673
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1683
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1695
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1706
+  },
+  {
+    "identifier": "br_aes_x86ni_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1717
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1728
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1739
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1750
+  },
+  {
+    "identifier": "br_aes_x86ni_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1763
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1775
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1787
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1798
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1809
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcenc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1823
+  },
+  {
+    "identifier": "br_aes_x86ni_cbcdec_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1836
+  },
+  {
+    "identifier": "br_aes_x86ni_ctr_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1848
+  },
+  {
+    "identifier": "br_aes_x86ni_ctrcbc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1861
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcenc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1945
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcdec_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1954
+  },
+  {
+    "identifier": "br_aes_pwr8_ctr_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1964
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1974
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcenc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1986
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcdec_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 1997
+  },
+  {
+    "identifier": "br_aes_pwr8_ctr_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2008
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_init",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2019
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcenc_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2030
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcdec_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2041
+  },
+  {
+    "identifier": "br_aes_pwr8_ctr_run",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2054
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2066
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2078
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_ctr",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2089
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_mac",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2100
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcenc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2114
+  },
+  {
+    "identifier": "br_aes_pwr8_cbcdec_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2127
+  },
+  {
+    "identifier": "br_aes_pwr8_ctr_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2139
+  },
+  {
+    "identifier": "br_aes_pwr8_ctrcbc_get_vtable",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2152
+  },
+  {
+    "identifier": "br_des_tab_cbcenc_init",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2266
+  },
+  {
+    "identifier": "br_des_tab_cbcdec_init",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2277
+  },
+  {
+    "identifier": "br_des_tab_cbcenc_run",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2288
+  },
+  {
+    "identifier": "br_des_tab_cbcdec_run",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2299
+  },
+  {
+    "identifier": "br_des_ct_cbcenc_init",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2358
+  },
+  {
+    "identifier": "br_des_ct_cbcdec_init",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2369
+  },
+  {
+    "identifier": "br_des_ct_cbcenc_run",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2380
+  },
+  {
+    "identifier": "br_des_ct_cbcdec_run",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2391
+  },
+  {
+    "identifier": "br_chacha20_ct_run",
+    "algorithm": "ChaCha20",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2456
+  },
+  {
+    "identifier": "br_chacha20_sse2_get",
+    "algorithm": "ChaCha20",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2466
+  },
+  {
+    "identifier": "br_chacha20_sse2_run",
+    "algorithm": "ChaCha20",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2477
+  },
+  {
+    "identifier": "br_chacha20_sse2_get",
+    "algorithm": "ChaCha20",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_block.h",
+    "line": 2490
+  },
+  {
+    "identifier": "br_md5_init",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 409
+  },
+  {
+    "identifier": "br_md5_update",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 422
+  },
+  {
+    "identifier": "br_md5_out",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 436
+  },
+  {
+    "identifier": "br_md5_state",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 450
+  },
+  {
+    "identifier": "br_md5_set_state",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 461
+  },
+  {
+    "identifier": "br_sha1_init",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 504
+  },
+  {
+    "identifier": "br_sha1_update",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 517
+  },
+  {
+    "identifier": "br_sha1_out",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 531
+  },
+  {
+    "identifier": "br_sha1_state",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 545
+  },
+  {
+    "identifier": "br_sha1_set_state",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 556
+  },
+  {
+    "identifier": "br_sha256_init",
+    "algorithm": "SHA-256",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 694
+  },
+  {
+    "identifier": "br_sha256_update",
+    "algorithm": "SHA-256",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 708
+  },
+  {
+    "identifier": "br_sha256_out",
+    "algorithm": "SHA-256",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 725
+  },
+  {
+    "identifier": "br_sha256_state",
+    "algorithm": "SHA-256",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 740
+  },
+  {
+    "identifier": "br_sha256_set_state",
+    "algorithm": "SHA-256",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_hash.h",
+    "line": 755
+  },
+  {
+    "identifier": "br_rsa_i32_public",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 572
+  },
+  {
+    "identifier": "br_rsa_i32_pkcs1_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 588
+  },
+  {
+    "identifier": "br_rsa_i32_pss_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 606
+  },
+  {
+    "identifier": "br_rsa_i32_private",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 619
+  },
+  {
+    "identifier": "br_rsa_i32_pkcs1_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 634
+  },
+  {
+    "identifier": "br_rsa_i32_pss_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 652
+  },
+  {
+    "identifier": "br_rsa_i31_public",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 673
+  },
+  {
+    "identifier": "br_rsa_i31_pkcs1_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 689
+  },
+  {
+    "identifier": "br_rsa_i31_pss_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 707
+  },
+  {
+    "identifier": "br_rsa_i31_private",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 720
+  },
+  {
+    "identifier": "br_rsa_i31_pkcs1_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 735
+  },
+  {
+    "identifier": "br_rsa_i31_pss_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 753
+  },
+  {
+    "identifier": "br_rsa_i62_public_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 768
+  },
+  {
+    "identifier": "br_rsa_i62_public",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 778
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_vrfy_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 785
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 798
+  },
+  {
+    "identifier": "br_rsa_i62_pss_vrfy_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 806
+  },
+  {
+    "identifier": "br_rsa_i62_pss_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 820
+  },
+  {
+    "identifier": "br_rsa_i62_private_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 828
+  },
+  {
+    "identifier": "br_rsa_i62_private",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 837
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_sign_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 844
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 856
+  },
+  {
+    "identifier": "br_rsa_i62_pss_sign_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 864
+  },
+  {
+    "identifier": "br_rsa_i62_pss_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 878
+  },
+  {
+    "identifier": "br_rsa_i62_public_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 889
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_vrfy_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 897
+  },
+  {
+    "identifier": "br_rsa_i62_pss_vrfy_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 905
+  },
+  {
+    "identifier": "br_rsa_i62_private_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 913
+  },
+  {
+    "identifier": "br_rsa_i62_pkcs1_sign_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 921
+  },
+  {
+    "identifier": "br_rsa_i62_pss_sign_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 929
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_encrypt_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 937
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_decrypt_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 945
+  },
+  {
+    "identifier": "br_rsa_i15_public",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 963
+  },
+  {
+    "identifier": "br_rsa_i15_pkcs1_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 979
+  },
+  {
+    "identifier": "br_rsa_i15_pss_vrfy",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 997
+  },
+  {
+    "identifier": "br_rsa_i15_private",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1010
+  },
+  {
+    "identifier": "br_rsa_i15_pkcs1_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1025
+  },
+  {
+    "identifier": "br_rsa_i15_pss_sign",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1043
+  },
+  {
+    "identifier": "br_rsa_public_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1056
+  },
+  {
+    "identifier": "br_rsa_private_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1066
+  },
+  {
+    "identifier": "br_rsa_pkcs1_vrfy_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1076
+  },
+  {
+    "identifier": "br_rsa_pss_vrfy_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1086
+  },
+  {
+    "identifier": "br_rsa_pkcs1_sign_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1096
+  },
+  {
+    "identifier": "br_rsa_pss_sign_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1106
+  },
+  {
+    "identifier": "br_rsa_oaep_encrypt_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1116
+  },
+  {
+    "identifier": "br_rsa_oaep_decrypt_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1126
+  },
+  {
+    "identifier": "br_rsa_ssl_decrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1155
+  },
+  {
+    "identifier": "br_rsa_i15_oaep_encrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1174
+  },
+  {
+    "identifier": "br_rsa_i15_oaep_decrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1194
+  },
+  {
+    "identifier": "br_rsa_i31_oaep_encrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1214
+  },
+  {
+    "identifier": "br_rsa_i31_oaep_decrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1234
+  },
+  {
+    "identifier": "br_rsa_i32_oaep_encrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1254
+  },
+  {
+    "identifier": "br_rsa_i32_oaep_decrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1274
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_encrypt_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1282
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_encrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1298
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_decrypt_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1309
+  },
+  {
+    "identifier": "br_rsa_i62_oaep_decrypt",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1322
+  },
+  {
+    "identifier": "br_rsa_i15_keygen",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1410
+  },
+  {
+    "identifier": "br_rsa_i31_keygen",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1430
+  },
+  {
+    "identifier": "br_rsa_i62_keygen_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1440
+  },
+  {
+    "identifier": "br_rsa_i62_keygen",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1454
+  },
+  {
+    "identifier": "br_rsa_i62_keygen_get",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1466
+  },
+  {
+    "identifier": "br_rsa_keygen_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1476
+  },
+  {
+    "identifier": "br_rsa_i15_compute_modulus",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1503
+  },
+  {
+    "identifier": "br_rsa_i31_compute_modulus",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1514
+  },
+  {
+    "identifier": "br_rsa_compute_modulus_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1524
+  },
+  {
+    "identifier": "br_rsa_i15_compute_pubexp",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1556
+  },
+  {
+    "identifier": "br_rsa_i31_compute_pubexp",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1565
+  },
+  {
+    "identifier": "br_rsa_compute_pubexp_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1575
+  },
+  {
+    "identifier": "br_rsa_i15_compute_privexp",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1625
+  },
+  {
+    "identifier": "br_rsa_i31_compute_privexp",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1638
+  },
+  {
+    "identifier": "br_rsa_compute_privexp_get_default",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_rsa.h",
+    "line": 1649
+  },
+  {
+    "identifier": "br_ecdsa_raw_to_asn1",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 638
+  },
+  {
+    "identifier": "br_ecdsa_asn1_to_raw",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 653
+  },
+  {
+    "identifier": "br_ecdsa_sign",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 717
+  },
+  {
+    "identifier": "br_ecdsa_i31_sign_asn1",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 726
+  },
+  {
+    "identifier": "br_ecdsa_sign",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 733
+  },
+  {
+    "identifier": "br_ecdsa_i31_sign_raw",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 742
+  },
+  {
+    "identifier": "br_ecdsa_vrfy",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 749
+  },
+  {
+    "identifier": "br_ecdsa_i31_vrfy_asn1",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 759
+  },
+  {
+    "identifier": "br_ecdsa_vrfy",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 766
+  },
+  {
+    "identifier": "br_ecdsa_i31_vrfy_raw",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 776
+  },
+  {
+    "identifier": "br_ecdsa_sign",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 783
+  },
+  {
+    "identifier": "br_ecdsa_i15_sign_asn1",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 792
+  },
+  {
+    "identifier": "br_ecdsa_sign",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 799
+  },
+  {
+    "identifier": "br_ecdsa_i15_sign_raw",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 808
+  },
+  {
+    "identifier": "br_ecdsa_vrfy",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 815
+  },
+  {
+    "identifier": "br_ecdsa_i15_vrfy_asn1",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 825
+  },
+  {
+    "identifier": "br_ecdsa_vrfy",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 832
+  },
+  {
+    "identifier": "br_ecdsa_i15_vrfy_raw",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 842
+  },
+  {
+    "identifier": "br_ecdsa_sign_asn1_get_default",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 854
+  },
+  {
+    "identifier": "br_ecdsa_sign_raw_get_default",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 864
+  },
+  {
+    "identifier": "br_ecdsa_vrfy_asn1_get_default",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 874
+  },
+  {
+    "identifier": "br_ecdsa_vrfy_raw_get_default",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_bearssl_ec.h",
+    "line": 884
+  },
+  {
+    "identifier": "br_aes_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1729
+  },
+  {
+    "identifier": "br_aes_big_keysched_inv",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1734
+  },
+  {
+    "identifier": "br_aes_big_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1741
+  },
+  {
+    "identifier": "br_aes_big_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1747
+  },
+  {
+    "identifier": "br_aes_small_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1754
+  },
+  {
+    "identifier": "br_aes_small_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1762
+  },
+  {
+    "identifier": "br_aes_ct_ortho",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1791
+  },
+  {
+    "identifier": "br_aes_ct_ortho",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1794
+  },
+  {
+    "identifier": "br_aes_ct_ortho",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1805
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_Sbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1813
+  },
+  {
+    "identifier": "br_aes_bitslice_Sbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1816
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_invSbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1818
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1825
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1833
+  },
+  {
+    "identifier": "br_aes_ct_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1842
+  },
+  {
+    "identifier": "br_aes_ct_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1846
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1847
+  },
+  {
+    "identifier": "br_aes_ct_bitslice_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1848
+  },
+  {
+    "identifier": "br_aes_ct_skey_expand",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1850
+  },
+  {
+    "identifier": "br_aes_ct64_ortho",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1868
+  },
+  {
+    "identifier": "br_aes_ct64_interleave_in",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1878
+  },
+  {
+    "identifier": "br_aes_ct64_interleave_in",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1881
+  },
+  {
+    "identifier": "br_aes_ct64_interleave_out",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1883
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_Sbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1891
+  },
+  {
+    "identifier": "br_aes_bitslice_Sbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1894
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_invSbox",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1896
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1903
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1911
+  },
+  {
+    "identifier": "br_aes_ct64_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1920
+  },
+  {
+    "identifier": "br_aes_ct64_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1924
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_encrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1925
+  },
+  {
+    "identifier": "br_aes_ct64_bitslice_decrypt",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1926
+  },
+  {
+    "identifier": "br_aes_ct64_skey_expand",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1928
+  },
+  {
+    "identifier": "br_aes_x86ni_supported",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1934
+  },
+  {
+    "identifier": "br_aes_x86ni_keysched_enc",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1941
+  },
+  {
+    "identifier": "br_aes_x86ni_keysched_dec",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1949
+  },
+  {
+    "identifier": "br_aes_pwr8_supported",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1955
+  },
+  {
+    "identifier": "br_aes_pwr8_keysched",
+    "algorithm": "AES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1962
+  },
+  {
+    "identifier": "br_des_do_IP",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1662
+  },
+  {
+    "identifier": "br_des_do_invIP",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1667
+  },
+  {
+    "identifier": "br_des_keysched_unit",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1674
+  },
+  {
+    "identifier": "br_des_rev_skey",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1679
+  },
+  {
+    "identifier": "br_des_tab_keysched",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1685
+  },
+  {
+    "identifier": "br_des_ct_keysched",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1691
+  },
+  {
+    "identifier": "br_des_ct_skey_expand",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1696
+  },
+  {
+    "identifier": "br_des_tab_process_block",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1702
+  },
+  {
+    "identifier": "br_des_ct_process_block",
+    "algorithm": "DES",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1708
+  },
+  {
+    "identifier": "br_rsa_pkcs1_sig_pad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1974
+  },
+  {
+    "identifier": "br_rsa_pkcs1_sig_unpad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1984
+  },
+  {
+    "identifier": "br_rsa_pss_sig_pad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 1992
+  },
+  {
+    "identifier": "br_rsa_pss_sig_unpad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2004
+  },
+  {
+    "identifier": "br_rsa_oaep_pad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2013
+  },
+  {
+    "identifier": "br_rsa_oaep_unpad",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2024
+  },
+  {
+    "identifier": "br_rsa_i31_keygen_inner",
+    "algorithm": "RSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2038
+  },
+  {
+    "identifier": "br_ecdsa_i31_bits2int",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2080
+  },
+  {
+    "identifier": "br_ecdsa_i15_bits2int",
+    "algorithm": "ECDSA",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 2090
+  },
+  {
+    "identifier": "br_md5_round",
+    "algorithm": "MD5",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 725
+  },
+  {
+    "identifier": "br_sha1_round",
+    "algorithm": "SHA-1",
+    "header": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/t_inner.h",
+    "line": 726
+  }
+]

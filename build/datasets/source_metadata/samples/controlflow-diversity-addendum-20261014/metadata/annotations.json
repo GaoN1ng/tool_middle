@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sm4ni-reference",
+    "file": "sm4_ref.c",
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "flags": [],
+    "truth": [
+      "SM4"
+    ],
+    "source_sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1"
+  },
+  {
+    "id": "sm4ni-affine-AESNI",
+    "file": "sm4ni.c",
+    "arches": [
+      "x86_64"
+    ],
+    "flags": [
+      "-maes",
+      "-mssse3"
+    ],
+    "truth": [
+      "SM4"
+    ],
+    "source_sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460"
+  }
+]

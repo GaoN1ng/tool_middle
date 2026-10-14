@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14T09:52:24.843418+08:00",
+  "development": "Existing development sets plus new predeclared development families; validation never supplies tuning/reference data",
+  "baseline": "semantic-followup-20261013/frozen",
+  "scope": [
+    "bounded CFG/loop analysis",
+    "static bignum primitive summaries and equations",
+    "interprocedural state evidence",
+    "implementation and family diversity"
+  ],
+  "target_execution": false
+}

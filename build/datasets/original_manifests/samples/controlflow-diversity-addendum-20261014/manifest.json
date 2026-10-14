@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0",
+  "algorithms": [
+    "AES",
+    "DES",
+    "RC4",
+    "ChaCha20",
+    "RSA",
+    "ECDSA",
+    "ECDH",
+    "MD5",
+    "SHA-1",
+    "SHA-256",
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "split_policy": "Development author/form addendum; no validation samples or detector tuning",
+  "samples": [
+    {
+      "id": "sm4ni-reference-x86_64-O0",
+      "path": "builds/sm4ni-reference-x86_64-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "811f68c28a7798da72fae79925425c4913facec9752e48071797565297fffb55",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-x86_64-O2",
+      "path": "builds/sm4ni-reference-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "22f41bdcef33540220839566daa963a9a1cb92520d3e9070c6fa51f0f2e7d3b4",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-x86_64-Os",
+      "path": "builds/sm4ni-reference-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "4330c08c98f00fb0b36340e50d59bc31f11255bdb6643ef82f40d96f6d670efd",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-aarch64-O0",
+      "path": "builds/sm4ni-reference-aarch64-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "aarch64",
+      "sha256": "5b76d21fbe945824927a9da66f5706d39b022c2761bd13ca1213099b408d90ed",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-aarch64-O2",
+      "path": "builds/sm4ni-reference-aarch64-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "aarch64",
+      "sha256": "5601e2e7463bcdc4d2459bf69731184d84398fac3c03cc6f7edc901cf8c7096c",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-aarch64-Os",
+      "path": "builds/sm4ni-reference-aarch64-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "aarch64",
+      "sha256": "7db903145611c5e4ed07afa2423a63b1bfcca61ebe393dced984242f5351add5",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-arm-O0",
+      "path": "builds/sm4ni-reference-arm-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "arm",
+      "sha256": "1a4c21ff18e702cb004312ffc76f91fe6d3e5bc3d78a64325a4e40b4b62469d0",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-arm-O2",
+      "path": "builds/sm4ni-reference-arm-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "arm",
+      "sha256": "c425b62941dd4098a73d929e33ddf46ca84e470589a1feb7ae9372a0bdefd575",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-arm-Os",
+      "path": "builds/sm4ni-reference-arm-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "arm",
+      "sha256": "fe8c468474e07559c314e68ec14e24b26a89228c970c25cad511ac75d3f76d6c",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-thumb-O0",
+      "path": "builds/sm4ni-reference-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "thumb",
+      "sha256": "3caabf003e97cb5e9692b7d147d9a96387e038f9a6be3327384c83aeef4aac3b",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-thumb-O2",
+      "path": "builds/sm4ni-reference-thumb-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "thumb",
+      "sha256": "838a4226354ceeba0ab8da5e945fab036100567fef0eb97865091258233af582",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-thumb-Os",
+      "path": "builds/sm4ni-reference-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "thumb",
+      "sha256": "594e81778003dd96b34b65cb232293901a31cdeff7348776a7d641ef08fee84e",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mipsel-O0",
+      "path": "builds/sm4ni-reference-mipsel-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mipsel",
+      "sha256": "232e9be9c8d85af7b8598a91a49b1ea1d921b90eebe511e62c5ba7e7d71f1a36",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mipsel-O2",
+      "path": "builds/sm4ni-reference-mipsel-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mipsel",
+      "sha256": "1ea65715b64cea49e9bdace9159b67b718b90fb7b541b0dd4d166096bb41dbcb",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mipsel-Os",
+      "path": "builds/sm4ni-reference-mipsel-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mipsel",
+      "sha256": "18c5d8c7197a5f62cdae4536575f450fae04a360e3f8037f4a6a605f0505f8b7",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mips_be-O0",
+      "path": "builds/sm4ni-reference-mips_be-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mips_be",
+      "sha256": "8fc2e3be3940d1e455a7061dff60bc618ce419b8eca1aaf2c836377fe05a5994",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mips_be-O2",
+      "path": "builds/sm4ni-reference-mips_be-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mips_be",
+      "sha256": "d0c47499a82aa2b4c598bcb1e5c30e5555f463e995a49a1691a54919737f66d3",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-mips_be-Os",
+      "path": "builds/sm4ni-reference-mips_be-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "mips_be",
+      "sha256": "c3bd011c4ea32f981c6cf982b4d73fbd04914e3202b93a03820a08b5c3bc5b28",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-affine-AESNI-x86_64-O0",
+      "path": "builds/sm4ni-affine-AESNI-x86_64-O0/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-affine-AESNI",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "ef131c93ce8de93af3de99dc97690ab6fef68f45daab173c62bd4c0b0008ee0f",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-affine-AESNI-x86_64-O2",
+      "path": "builds/sm4ni-affine-AESNI-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-affine-AESNI",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "127f31252ce19648e76de393780bb220be14a5a19898dd54e0b1d9f2bd82ed83",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-affine-AESNI-x86_64-Os",
+      "path": "builds/sm4ni-affine-AESNI-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-affine-AESNI",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "x86_64",
+      "sha256": "75b8aafe9d35e644b681d6ab9cd2873ddb3b947f2e5f4f873278dda657b7e09b",
+      "symbol_state": "stripped"
+    },
+    {
+      "id": "sm4ni-reference-source",
+      "path": "sources/sm4ni/sm4_ref.c",
+      "kind": "source",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-reference",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "not_applicable",
+      "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+      "symbol_state": "not_applicable"
+    },
+    {
+      "id": "sm4ni-affine-AESNI-source",
+      "path": "sources/sm4ni/sm4ni.c",
+      "kind": "source",
+      "split": "development",
+      "project": "sm4ni",
+      "family": "sm4ni-affine-AESNI",
+      "source": "https://github.com/mjosaarinen/sm4ni@ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add",
+      "license": "MIT retained original LICENSE",
+      "truth_basis": "Markku-Juhani Saarinen reference SM4 or AES-NI plus two affine transforms implementing SM4 substitution; API names do not label AES",
+      "truth": {
+        "implementation_contains": [
+          "SM4"
+        ],
+        "api_reference": null
+      },
+      "architecture": "not_applicable",
+      "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+      "symbol_state": "not_applicable"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "sm2_encrypt",
+    "path": "dataset\\js-guomi\\sm2_encrypt.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "9bf4509e5b86c8842af345f3b5ef7e148f204197a6c7ac6cbbbed527e38f07a6",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm2_sign",
+    "path": "dataset\\js-guomi\\sm2_sign.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "14afc0ca6436426bcefe3b58dc3260c63bb7619eb7e7cd773fc1c455c610b899",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm2_verify",
+    "path": "dataset\\js-guomi\\sm2_verify.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "b5933c03bf96469855781c9ab1e1ddf69da90b751968a7df91e02f6b69904083",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm3_normal",
+    "path": "dataset\\js-guomi\\sm3_normal.cjs",
+    "expected": [
+      "SM3"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "15bca2ca1d1c5396a581f9c02984df818b72ace067ba4f79216d08a8ad4b320b",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm3_parentheses",
+    "path": "dataset\\js-guomi\\sm3_parentheses.cjs",
+    "expected": [
+      "SM3"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "c3a356f491d3955a5fee2f2a96235b0dffbd9281de7f0b3c18423a9403b10aca",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm3_hmac",
+    "path": "dataset\\js-guomi\\sm3_hmac.cjs",
+    "expected": [
+      "SM3"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "94f344cea7700c9c9fb27aa706f28d2b1ff600b36f8b6f90448f6d3b8f219a8b",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm4_encrypt",
+    "path": "dataset\\js-guomi\\sm4_encrypt.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "88ffd12ecf05caddec5178f2cc039a73ce7791d74e5c51bc56eff980602ab258",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm4_decrypt",
+    "path": "dataset\\js-guomi\\sm4_decrypt.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "f1fbc409759de91f175bbffb7fa5b72c7680a3294ec6b012134687fdb0a2443c",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm4_cbc",
+    "path": "dataset\\js-guomi\\sm4_cbc.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "6f96ffa92823ece1a2b09019176f5f33ba8ea92c83f3af70e09445aa4e291160",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "mixed",
+    "path": "dataset\\js-guomi\\mixed.cjs",
+    "expected": [
+      "SM2",
+      "SM3",
+      "SM4"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "b35b2ffec556174b31007a82b5533fbf8a6136681f6e20321c19a40bd8137d4e",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm2_alias",
+    "path": "dataset\\js-guomi\\sm2_alias.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "8645a15084a8eb52afc72eaf540899b59131ebd4d31805919d08b2faa0572a85",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "sm4_alias",
+    "path": "dataset\\js-guomi\\sm4_alias.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "c5c427195b488e98948be0e9265c40bd3a42f5b79de966c4e797a94ee38bb137",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "plain",
+    "path": "dataset\\js-guomi\\plain.cjs",
+    "expected": [],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "a404456e49a3f83613fd9e0ae884b3618b78b0b28ba926aeac82ceab2c9868da",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "comments_only",
+    "path": "dataset\\js-guomi\\comments_only.cjs",
+    "expected": [],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "c469e0082393fa8498b6f93fc1110dc88a4483a622f2ebf7622b8431d8d9f5f9",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "strings_only",
+    "path": "dataset\\js-guomi\\strings_only.cjs",
+    "expected": [],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "df9879df458da8ee95d2469df5f61ff9c3bc3f4747bd920ff6a294b830457c01",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "names_only",
+    "path": "dataset\\js-guomi\\names_only.cjs",
+    "expected": [],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "b52e978c507c5fbbcdc5a954f3166f2851d4ffb116cd3332dfe63c3a6994fe34",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "noncrypto_encrypt",
+    "path": "dataset\\js-guomi\\noncrypto_encrypt.cjs",
+    "expected": [],
+    "group": "core",
+    "description": "controlled API fixture",
+    "sha256": "7a902846f6f20a61621d0f267335848fb20beea15a315d601d144089e65ca8f3",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "meter",
+    "path": "dataset\\js-guomi\\meter.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "power-scenario",
+    "description": "电表读数的模拟加密",
+    "sha256": "772afff24ef05dd0f7ffb875d1f849a91ebfe949935ee9c23b6d06f1122ef4a2",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "concentrator",
+    "path": "dataset\\js-guomi\\concentrator.cjs",
+    "expected": [
+      "SM3"
+    ],
+    "group": "power-scenario",
+    "description": "集中器汇总数据的模拟摘要",
+    "sha256": "883f9d8bc65979598a7b95cfb04e00033bf52a9163ffc427a44cc55f2e741dd5",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "ftu",
+    "path": "dataset\\js-guomi\\ftu.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "power-scenario",
+    "description": "FTU遥控消息的模拟签名",
+    "sha256": "88aab78ae498d7261468814dab3ee0a88592c0d1c4003f218d04b64576edd174",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "ied",
+    "path": "dataset\\js-guomi\\ied.cjs",
+    "expected": [
+      "SM2"
+    ],
+    "group": "power-scenario",
+    "description": "IED配置消息的模拟验签",
+    "sha256": "051d60d49096a132d602b4869b8b6514b7294ab5c01ae9be531654ccf428256b",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  },
+  {
+    "name": "der",
+    "path": "dataset\\js-guomi\\der.cjs",
+    "expected": [
+      "SM4"
+    ],
+    "group": "power-scenario",
+    "description": "分布式能源设定值的模拟加密",
+    "sha256": "e65738a9b06a483943b3d8e10d7ceef0dccf806e23ee01c364030a987cafa53b",
+    "basis": "manual API recipe; aliases preserve algorithm; comments and strings are negative; not blind holdout"
+  }
+]

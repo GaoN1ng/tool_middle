@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+qcs_root="$(dirname -- "$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")")"
+qcs_build="${QCS_BUILD_DIR:-$qcs_root/build}"
+mkdir -p "$qcs_build/tmp" "$qcs_build/cache/pycache"
+export QCS_BUILD_DIR="$qcs_build"
+export PYTHONPYCACHEPREFIX="$qcs_build/cache/pycache"
+export TMPDIR="$qcs_build/tmp"
+export PYTHONUTF8=1
+export PYTHONPATH="$qcs_root/src${PYTHONPATH:+:$PYTHONPATH}"
+if [[ -n "${QCS_PYTHON:-}" ]]; then
+    qcs_python="$QCS_PYTHON"
+elif [[ -n "${QCS_VENV:-}" ]]; then
+    qcs_python="$QCS_VENV/bin/python"
+elif [[ -x "$qcs_build/venv/bin/python" ]]; then
+    qcs_python="$qcs_build/venv/bin/python"
+elif command -v python3.12 >/dev/null 2>&1; then
+    qcs_python=python3.12
+else
+    qcs_python=python3
+fi
+if ! "$qcs_python" -c 'import sys; sys.exit(0 if sys.version_info[:2] == (3, 12) else 1)' 2>/dev/null; then
+    printf '%s\n' "QCS requires a working Python 3.12 interpreter: $qcs_python" \
+        "Run $qcs_root/tools/setup-linux.sh --python /path/to/python3.12, or set QCS_PYTHON." >&2
+    exit 2
+fi
+exec "$qcs_python" -m qcs "$@"

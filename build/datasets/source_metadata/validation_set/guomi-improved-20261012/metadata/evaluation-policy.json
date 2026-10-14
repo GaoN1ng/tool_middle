@@ -1,0 +1,12 @@
+{
+  "type": "fixed_validation_set_retest",
+  "baseline": "../guomi-20261012/results/summary.json",
+  "samples": 791,
+  "truth_unchanged": true,
+  "development_projects": [
+    "OpenSSL",
+    "wolfSM",
+    "Libgcrypt"
+  ],
+  "policy": "Freeze before scanning; exactly one run; no detector changes after seeing retest. This is not a new independent blind test. Preserve original data, labels, first results and snapshots."
+}

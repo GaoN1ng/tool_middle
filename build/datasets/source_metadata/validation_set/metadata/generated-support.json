@@ -1,0 +1,30 @@
+{
+  "review": "desdata.c and desinfo.h inspected before execution; arithmetic loops and stdout only. This upstream build helper is not a cryptographic scan target.",
+  "source_sha256": "20b4562a67bf7180f474910d1a81791ad01a97a5556bb3b1d9a1d7a7815b0344",
+  "compile_argv": [
+    "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+    "cc",
+    "-O2",
+    "/var/home/gzn/ourtask/validation_set/sources/nettle/desdata.c",
+    "-o",
+    "/var/home/gzn/ourtask/validation_set/build-support/nettle/desdata-generator"
+  ],
+  "generated": [
+    {
+      "argv": [
+        "/var/home/gzn/ourtask/validation_set/build-support/nettle/desdata-generator",
+        "rotors.h"
+      ],
+      "output": "rotors.h",
+      "sha256": "96a7f8c39442f1d42e3de444c267cc34bcec252448607b1d6836ca5eb3ddc2e5"
+    },
+    {
+      "argv": [
+        "/var/home/gzn/ourtask/validation_set/build-support/nettle/desdata-generator",
+        "keymap.h"
+      ],
+      "output": "keymap.h",
+      "sha256": "498ceb555e4d0f3744dbeb9ad6c43d24726bc447843f0eee0cb70dce7525f08c"
+    }
+  ]
+}

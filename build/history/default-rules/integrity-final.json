@@ -1,0 +1,52 @@
+{
+  "validation_set": {
+    "original_files": 31870,
+    "changes": []
+  },
+  "other_ref": {
+    "original_files": 153,
+    "changes": [],
+    "unexpected_files": []
+  },
+  "quantum-crypto-scanner/artifacts/semantic-followup-20261013/frozen": {
+    "original_files": 94,
+    "changes": [],
+    "unexpected_files": []
+  },
+  "frozen": {
+    "files": 101,
+    "matches_frozen": true,
+    "changes": []
+  },
+  "checkout": {
+    "files": 101,
+    "matches_frozen": true,
+    "changes": []
+  },
+  "installed": {
+    "files": 101,
+    "matches_frozen": true,
+    "changes": []
+  },
+  "new_holdout": {
+    "locked_files": 2177,
+    "changes": [],
+    "manifest_unchanged": true
+  },
+  "validation_manifests": {
+    "conventional": true,
+    "guomi": true,
+    "cifra-sodium": true,
+    "axtls": true,
+    "new-holdout": true
+  },
+  "wheel": {
+    "matches_frozen": true,
+    "runtime_files": 101,
+    "sha256": "1e31a6781c9d5ac82a683643b37dd20332ddc1a3f77483b36d7e856c6f4e9586"
+  },
+  "timestamp": "2026-10-14T12:00:24.553007+08:00",
+  "digest": "6432b91a73bbcb63b74c96f7ffca6a5b25b88839422b5a1c1243185835c6eae2",
+  "passed": true,
+  "problems": []
+}

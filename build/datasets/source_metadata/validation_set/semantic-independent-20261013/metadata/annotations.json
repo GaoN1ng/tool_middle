@@ -1,0 +1,113 @@
+[
+  {
+    "id": "axtls-aes",
+    "files": [
+      "aes.c"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "source_sha256": {
+      "aes.c": "48f7eb9fbe7d7e611b4010316bfb16439a85bb4b90bccf0f4e4a66ed2977ffb3"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-md5",
+    "files": [
+      "md5.c"
+    ],
+    "truth": [
+      "MD5"
+    ],
+    "source_sha256": {
+      "md5.c": "68b4b7ab31434ffe2950326dd4a620f47bd5607068cd2757831499094d54e3dc"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-sha1",
+    "files": [
+      "sha1.c"
+    ],
+    "truth": [
+      "SHA-1"
+    ],
+    "source_sha256": {
+      "sha1.c": "655425c1b6e6d7b3f65c39e5a0f40497ab947f5ae13d0584dad5104c68843a5f"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-sha256",
+    "files": [
+      "sha256.c"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "source_sha256": {
+      "sha256.c": "a1413c35be32ee4f7aac4550f325012d8b98d3aae35b3c59946f0935e59381c1"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-rsa",
+    "files": [
+      "rsa.c",
+      "bigint.c"
+    ],
+    "truth": [
+      "RSA"
+    ],
+    "source_sha256": {
+      "rsa.c": "28a2dfefa398968451abed7699edc1ecfba4ac31be433e7a7f6acf3730b678bb",
+      "bigint.c": "27c3144fa2d7e1fd77e0e800d926408ff63c2d6c7c5f5048c4f5a1386de7864d"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-sha384",
+    "files": [
+      "sha384.c"
+    ],
+    "truth": [],
+    "source_sha256": {
+      "sha384.c": "9c4a504c9abea30e023d2bde4d370ef23ee649950d1f92c42ce7154d46c02918"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-sha512",
+    "files": [
+      "sha512.c"
+    ],
+    "truth": [],
+    "source_sha256": {
+      "sha512.c": "e81a0cf272fca6740bf4460b0bcde9486145c9d8b666500e9a4644dadc2aab62"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-hmac_api",
+    "files": [
+      "hmac.c"
+    ],
+    "truth": [],
+    "source_sha256": {
+      "hmac.c": "4dba7ff0f4b74f14a40ffa04d32e0ed30947ee6ac8c897bc5c2644064a406633"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  },
+  {
+    "id": "axtls-bigint",
+    "files": [
+      "bigint.c"
+    ],
+    "truth": [],
+    "source_sha256": {
+      "bigint.c": "27c3144fa2d7e1fd77e0e800d926408ff63c2d6c7c5f5048c4f5a1386de7864d"
+    },
+    "basis": "Predeclared documented algorithm translation units; RSA includes its bigint body; SHA384/SHA512 and generic bigint are outside target labels; HMAC imports hashes without implementing them"
+  }
+]

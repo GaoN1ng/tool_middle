@@ -1,0 +1,578 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/firmware_samples/1d/1d2ce2dab00c352e/tasmota-official-ota-current.bin",
+  "input_kind": "firmware",
+  "timestamp": "2026-10-14T09:48:30.611353+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "firmware_adapter": {
+      "name": "native-esp-e9",
+      "binwalk_required": false,
+      "arduino_format_reference": "https://github.com/esp8266/Arduino/blob/2.7.4/tools/elf2bin.py"
+    }
+  },
+  "artifact": {
+    "kind": "firmware",
+    "format": "firmware/ESP",
+    "architecture": "Xtensa",
+    "sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+    "firmware_relative_path": null,
+    "size_bytes": 666720,
+    "endianness": "little",
+    "firmware_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+    "arduino_crc": "verified"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "firmware": {
+      "status": "completed",
+      "adapter": "native-esp",
+      "images": 2
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "ESP8266 E9 and selected ESP32 Xtensa headers/segments/checksums are parsed. completed refers to recorded static channels; encrypted flash, RISC-V chips, secure-boot signatures and unknown Xtensa crypto implementations remain outside coverage."
+  ],
+  "extraction_chain": [
+    {
+      "engine": "native-esp",
+      "input_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+      "offset": 0,
+      "end": 3616,
+      "header_size": 8,
+      "checksum": "verified",
+      "depth": 0,
+      "segments": [
+        {
+          "address": 1074851840,
+          "offset": 16,
+          "size": 3584,
+          "executable": true
+        }
+      ]
+    },
+    {
+      "engine": "native-esp",
+      "input_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+      "offset": 4096,
+      "end": 666720,
+      "header_size": 8,
+      "checksum": "verified",
+      "depth": 0,
+      "segments": [
+        {
+          "address": 1075843088,
+          "offset": 4112,
+          "size": 627508,
+          "executable": true
+        },
+        {
+          "address": 1074790400,
+          "offset": 631628,
+          "size": 316,
+          "executable": true
+        },
+        {
+          "address": 1074790716,
+          "offset": 631952,
+          "size": 30212,
+          "executable": true
+        },
+        {
+          "address": 1073643520,
+          "offset": 662172,
+          "size": 1676,
+          "executable": false
+        },
+        {
+          "address": 1073645200,
+          "offset": 663856,
+          "size": 2860,
+          "executable": false
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "algorithm_assets": [],
+  "clues": [],
+  "dependencies": [],
+  "components": [
+    {
+      "schema_version": "1.0",
+      "input_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-0",
+      "input_kind": "executable",
+      "timestamp": "2026-10-14T09:48:30.704970+00:00",
+      "tool": {
+        "name": "qcs",
+        "version": "0.1.0",
+        "python": "3.12.3"
+      },
+      "versions": {
+        "yara": {
+          "python_binding": "4.5.4",
+          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+          "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
+          "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+          "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
+        },
+        "function_signatures": {
+          "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+          "schema_version": "1.0",
+          "signature_count": 1028,
+          "method": "whole_function_relocation_mask_and_literals"
+        },
+        "guomi_constants_sha256": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+        "guomi_function_signature": {
+          "database_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+          "schema_version": "1.0",
+          "signature_count": 152,
+          "method": "whole_function_relocation_mask_literals_and_audited_linker_variants",
+          "environment_reference_policy": "guomi-environment-references-1"
+        },
+        "guomi_development_signature": {
+          "database_sha256": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+          "schema_version": "1.0",
+          "signature_count": 211,
+          "method": "whole_function_relocation_mask_and_literals"
+        }
+      },
+      "artifact": {
+        "kind": "executable",
+        "format": "ESP/Xtensa",
+        "architecture": "Xtensa",
+        "sha256": "ac0236a3776a304326df8d31e7ccd1a43852020af5a7afa445757b73aef9c85c",
+        "firmware_relative_path": "esp-image-0",
+        "machine": "EM_XTENSA",
+        "endianness": "little",
+        "bits": 32,
+        "size_bytes": 3616,
+        "symbol_state": "unavailable",
+        "firmware_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+        "container_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+        "image_offset": 0
+      },
+      "scan_status": "completed",
+      "engine_status": {
+        "symbol": {
+          "status": "disabled",
+          "reason": "ESP image has no ELF/PE symbol tables"
+        },
+        "yara": {
+          "status": "completed",
+          "suppressed_instruction_rules": []
+        },
+        "function_signature": {
+          "status": "completed",
+          "architectures": [
+            "xtensa"
+          ],
+          "matched_families": 0
+        },
+        "guomi_constants": {
+          "status": "completed"
+        },
+        "guomi_function_signature": {
+          "status": "disabled",
+          "reason": "No validated function signatures for this format, architecture or object type"
+        },
+        "guomi_development_signature": {
+          "status": "disabled",
+          "reason": "No validated function signatures for this format, architecture or object type"
+        }
+      },
+      "errors": [],
+      "coverage_notes": [
+        "Static evidence does not prove runtime use or absence of crypto.",
+        "YARA x86-64 instruction mappings suppressed on other/unknown architectures; constants provide limited coverage.",
+        "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+        "ESP executable ranges can contain readonly pools; format parsing and checksum verification do not prove complete Xtensa algorithm recognition."
+      ],
+      "extraction_chain": [
+        {
+          "engine": "native-esp",
+          "input_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+          "offset": 0,
+          "end": 3616,
+          "header_size": 8,
+          "checksum": "verified",
+          "depth": 0,
+          "segments": [
+            {
+              "address": 1074851840,
+              "offset": 16,
+              "size": 3584,
+              "executable": true
+            }
+          ]
+        }
+      ],
+      "findings": [],
+      "algorithm_assets": [],
+      "clues": [],
+      "dependencies": [],
+      "components": []
+    },
+    {
+      "schema_version": "1.0",
+      "input_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-1000",
+      "input_kind": "executable",
+      "timestamp": "2026-10-14T09:48:32.292349+00:00",
+      "tool": {
+        "name": "qcs",
+        "version": "0.1.0",
+        "python": "3.12.3"
+      },
+      "versions": {
+        "yara": {
+          "python_binding": "4.5.4",
+          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+          "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
+          "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+          "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
+        },
+        "function_signatures": {
+          "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+          "schema_version": "1.0",
+          "signature_count": 1028,
+          "method": "whole_function_relocation_mask_and_literals"
+        },
+        "guomi_constants_sha256": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+        "guomi_function_signature": {
+          "database_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+          "schema_version": "1.0",
+          "signature_count": 152,
+          "method": "whole_function_relocation_mask_literals_and_audited_linker_variants",
+          "environment_reference_policy": "guomi-environment-references-1"
+        },
+        "guomi_development_signature": {
+          "database_sha256": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+          "schema_version": "1.0",
+          "signature_count": 211,
+          "method": "whole_function_relocation_mask_and_literals"
+        }
+      },
+      "artifact": {
+        "kind": "executable",
+        "format": "ESP/Xtensa",
+        "architecture": "Xtensa",
+        "sha256": "d36ffbefc49edc4c50b05f1e2985a02db53e6ef116c10c96d2a7e5efb48e04cd",
+        "firmware_relative_path": "esp-image-1000",
+        "machine": "EM_XTENSA",
+        "endianness": "little",
+        "bits": 32,
+        "size_bytes": 662624,
+        "symbol_state": "unavailable",
+        "firmware_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+        "container_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+        "image_offset": 4096
+      },
+      "scan_status": "completed",
+      "engine_status": {
+        "symbol": {
+          "status": "disabled",
+          "reason": "ESP image has no ELF/PE symbol tables"
+        },
+        "yara": {
+          "status": "completed",
+          "suppressed_instruction_rules": [
+            "BASE64_bytecode_decode_x64"
+          ]
+        },
+        "function_signature": {
+          "status": "completed",
+          "architectures": [
+            "xtensa"
+          ],
+          "matched_families": 0
+        },
+        "guomi_constants": {
+          "status": "completed"
+        },
+        "guomi_function_signature": {
+          "status": "disabled",
+          "reason": "No validated function signatures for this format, architecture or object type"
+        },
+        "guomi_development_signature": {
+          "status": "disabled",
+          "reason": "No validated function signatures for this format, architecture or object type"
+        }
+      },
+      "errors": [],
+      "coverage_notes": [
+        "Static evidence does not prove runtime use or absence of crypto.",
+        "YARA x86-64 instruction mappings suppressed on other/unknown architectures; constants provide limited coverage.",
+        "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+        "ESP executable ranges can contain readonly pools; format parsing and checksum verification do not prove complete Xtensa algorithm recognition."
+      ],
+      "extraction_chain": [
+        {
+          "engine": "native-esp",
+          "input_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+          "offset": 0,
+          "end": 3616,
+          "header_size": 8,
+          "checksum": "verified",
+          "depth": 0,
+          "segments": [
+            {
+              "address": 1074851840,
+              "offset": 16,
+              "size": 3584,
+              "executable": true
+            }
+          ]
+        },
+        {
+          "engine": "native-esp",
+          "input_sha256": "1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598",
+          "offset": 4096,
+          "end": 666720,
+          "header_size": 8,
+          "checksum": "verified",
+          "depth": 0,
+          "segments": [
+            {
+              "address": 1075843088,
+              "offset": 4112,
+              "size": 627508,
+              "executable": true
+            },
+            {
+              "address": 1074790400,
+              "offset": 631628,
+              "size": 316,
+              "executable": true
+            },
+            {
+              "address": 1074790716,
+              "offset": 631952,
+              "size": 30212,
+              "executable": true
+            },
+            {
+              "address": 1073643520,
+              "offset": 662172,
+              "size": 1676,
+              "executable": false
+            },
+            {
+              "address": 1073645200,
+              "offset": 663856,
+              "size": 2860,
+              "executable": false
+            }
+          ]
+        }
+      ],
+      "findings": [],
+      "algorithm_assets": [],
+      "clues": [
+        {
+          "algorithm": null,
+          "algorithm_category": "unknown",
+          "candidate_algorithms": [],
+          "engine": "yara",
+          "evidence_type": "binary_instruction",
+          "identifier": "BASE64_bytecode_decode_x64",
+          "line": null,
+          "offset": 111851,
+          "confidence": "low",
+          "confidence_reason": "Instruction-like byte match suppressed: architecture is not established x86-64",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "matches": [
+            {
+              "identifier": "$c0",
+              "offset": 111851,
+              "matched_length": 3,
+              "matched_hex": "c1ee06"
+            },
+            {
+              "identifier": "$c0",
+              "offset": 181435,
+              "matched_length": 3,
+              "matched_hex": "c1e106"
+            },
+            {
+              "identifier": "$c1_2",
+              "offset": 213325,
+              "matched_length": 4,
+              "matched_hex": "834f2204"
+            },
+            {
+              "identifier": "$c1_2",
+              "offset": 360099,
+              "matched_length": 4,
+              "matched_hex": "83473304"
+            },
+            {
+              "identifier": "$c1_2",
+              "offset": 372736,
+              "matched_length": 4,
+              "matched_hex": "83472304"
+            },
+            {
+              "identifier": "$c1_2",
+              "offset": 372780,
+              "matched_length": 4,
+              "matched_hex": "83472304"
+            },
+            {
+              "identifier": "$c1_2",
+              "offset": 372996,
+              "matched_length": 4,
+              "matched_hex": "83472304"
+            }
+          ],
+          "rule_metadata": {
+            "description": "Look for instructions for BASE64 x64",
+            "date": "2022-05"
+          },
+          "rule_architecture": "x86_64",
+          "artifact_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-1000"
+        },
+        {
+          "algorithm": null,
+          "algorithm_category": "unknown",
+          "candidate_algorithms": [
+            "RC4"
+          ],
+          "engine": "yara",
+          "evidence_type": "binary_constant",
+          "identifier": "RC4_optimized",
+          "line": null,
+          "offset": 542012,
+          "confidence": "low",
+          "confidence_reason": "Short ascending byte sequences may occur in ordinary data; insufficient to identify RC4",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "matches": [
+            {
+              "identifier": "$c0",
+              "offset": 659227,
+              "matched_length": 4,
+              "matched_hex": "00010203"
+            },
+            {
+              "identifier": "$c0",
+              "offset": 659788,
+              "matched_length": 4,
+              "matched_hex": "00010203"
+            },
+            {
+              "identifier": "$c0",
+              "offset": 661522,
+              "matched_length": 4,
+              "matched_hex": "00010203"
+            },
+            {
+              "identifier": "$c0",
+              "offset": 661526,
+              "matched_length": 4,
+              "matched_hex": "00010203"
+            },
+            {
+              "identifier": "$c1",
+              "offset": 662291,
+              "matched_length": 4,
+              "matched_hex": "fcfdfeff"
+            },
+            {
+              "identifier": "$c1",
+              "offset": 662308,
+              "matched_length": 4,
+              "matched_hex": "fcfdfeff"
+            },
+            {
+              "identifier": "$c1",
+              "offset": 662331,
+              "matched_length": 4,
+              "matched_hex": "fcfdfeff"
+            },
+            {
+              "identifier": "$c1",
+              "offset": 662348,
+              "matched_length": 4,
+              "matched_hex": "fcfdfeff"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 542012,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 542013,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 542031,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594661,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594662,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594663,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594664,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594665,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594666,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            },
+            {
+              "identifier": "$c2",
+              "offset": 594667,
+              "matched_length": 4,
+              "matched_hex": "04040404"
+            }
+          ],
+          "rule_metadata": {
+            "description": "detect constants for RC4 optimized version",
+            "date": "2022-04"
+          },
+          "rule_architecture": "any",
+          "artifact_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-1000"
+        }
+      ],
+      "dependencies": [],
+      "components": []
+    }
+  ]
+}

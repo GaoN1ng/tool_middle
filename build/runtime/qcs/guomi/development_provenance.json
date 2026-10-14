@@ -1,0 +1,35 @@
+{
+  "openssl": {
+    "repository": "https://github.com/openssl/openssl",
+    "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "url": "https://codeload.github.com/openssl/openssl/tar.gz/122db7eb076bf0625df87b91bcc2dccfaccc4900",
+    "archive_sha256": "fbfc5887842427ff942c9688a9766bbe0a98b62dd39e5a98a377799935fc6395",
+    "downloaded_at": "2026-10-12T11:08:52.231303+00:00"
+  },
+  "wolfssl": {
+    "repository": "https://github.com/wolfSSL/wolfssl",
+    "commit": "e65388ddcfe321fd6a54ab5bc5eb079753780aad",
+    "url": "https://codeload.github.com/wolfSSL/wolfssl/tar.gz/e65388ddcfe321fd6a54ab5bc5eb079753780aad",
+    "archive_sha256": "6b332cd18b001eccecbba90034bb6d6e480ddb3d52183df3bebf36ce3724599e",
+    "downloaded_at": "2026-10-12T11:09:59.641231+00:00"
+  },
+  "libgcrypt": {
+    "repository": "https://github.com/gpg/libgcrypt",
+    "commit": "df7af3571744bc8d0d45b46c5b73f300ee447410",
+    "url": "https://codeload.github.com/gpg/libgcrypt/tar.gz/df7af3571744bc8d0d45b46c5b73f300ee447410",
+    "archive_sha256": "44d03fd33e022a7f03d5f20518127292fc613639b494cf55da1ffefdf7d1879f",
+    "downloaded_at": "2026-10-12T11:07:41.426232+00:00"
+  },
+  "wolfsm": {
+    "repository": "https://github.com/wolfSSL/wolfsm",
+    "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+    "url": "https://codeload.github.com/wolfSSL/wolfsm/tar.gz/a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+    "archive_sha256": "08fabd465573468762530220849b48864dcc436f2901d5cbba143b0477de2766",
+    "downloaded_at": "2026-10-12T11:10:45.974836+00:00"
+  },
+  "policy": {
+    "development_only": true,
+    "validation_inputs_used": false,
+    "genealogy_limits": "OpenSSL SM3/SM4 acknowledge Botan/Ribose ancestry; repository separation does not prove lineage separation."
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c",
+  "input_kind": "source",
+  "timestamp": "2026-10-14T09:48:28.022897+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "source_rules": "qcs-source-2",
+    "source_rules_sha256": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "source_parser_sha256": "4f569e7f3070be4bb8790fe47493d05331cf25cec6fb5747fd474d07de014da7",
+    "source_reference_sha256": "91a01301abad78d85c2d9c3041800d1adb294bb15b328fc698a3af1e71da94b6",
+    "terminal_api_mapping_sha256": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "guomi_source_reference_sha256": "9e4f4321c0f33a583bc7cb0eb1ace0727fcc7acfac23ed300fd6607a1f060522",
+    "guomi_development_source_reference_sha256": "a309b103828f190ddbb9f584acac02bc535a2aad0849e373ff4d8a7917531f69"
+  },
+  "artifact": {
+    "kind": "source",
+    "format": "C/C++ text",
+    "architecture": null,
+    "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+    "firmware_relative_path": null,
+    "size_bytes": 6644,
+    "source_encoding": "utf-8"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "source": {
+      "status": "completed"
+    },
+    "guomi_source": {
+      "status": "completed"
+    },
+    "guomi_source_semantic": {
+      "status": "completed",
+      "matched_algorithms": [],
+      "available_definitions": 3,
+      "node_visits": 356,
+      "function_limits": [],
+      "function_node_visits": {
+        "galois_mul2": 12,
+        "set_key": 75,
+        "encrypt": 269
+      }
+    },
+    "operation_source": {
+      "status": "completed",
+      "matched_algorithms": [],
+      "available_definitions": 3,
+      "shared_analysis": "guomi_source_semantic"
+    },
+    "windriver": {
+      "status": "disabled"
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "Lexical C/C++ analysis; no preprocessing, inactive-branch evaluation, macro expansion, variable-selector or data-flow analysis.",
+    "The general source reference engine requires an exact pinned module SHA-256. Guomi has a separate bounded operation-witness engine for selected C/C++ bodies; unknown names alone remain clues.",
+    "Source operation graphs resolve bounded local header macros/scalar helpers at actual call sites; no full preprocessing. Evidence describes available source operations, not enabled compiled or runtime use."
+  ],
+  "extraction_chain": [],
+  "findings": [
+    {
+      "algorithm": "AES",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_implementation",
+      "identifier": "set_key",
+      "line": 97,
+      "offset": 3974,
+      "confidence": "medium",
+      "confidence_reason": "Complete source bytes match a pinned upstream implementation module, including its function bodies and local constants; compiled/runtime use remains unknown",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "snippet": "set_key(const uint8_t *key)",
+      "source_role": "definition",
+      "implementation_verification": "pinned_source_sha256",
+      "source_sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+      "reference_source": {
+        "path": "samples/public-benchmark/sources/contiki-ng/os/lib/aes-128.c",
+        "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/aes-128.c",
+        "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+        "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+        "license": "BSD-3-Clause (Texas Instruments)"
+      },
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    },
+    {
+      "algorithm": "AES",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_implementation",
+      "identifier": "encrypt",
+      "line": 119,
+      "offset": 4721,
+      "confidence": "medium",
+      "confidence_reason": "Complete source bytes match a pinned upstream implementation module, including its function bodies and local constants; compiled/runtime use remains unknown",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "snippet": "encrypt(uint8_t *state)",
+      "source_role": "definition",
+      "implementation_verification": "pinned_source_sha256",
+      "source_sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+      "reference_source": {
+        "path": "samples/public-benchmark/sources/contiki-ng/os/lib/aes-128.c",
+        "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/aes-128.c",
+        "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+        "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+        "license": "BSD-3-Clause (Texas Instruments)"
+      },
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    }
+  ],
+  "algorithm_assets": [
+    {
+      "algorithm": "AES",
+      "algorithm_category": "symmetric",
+      "confidence": "medium",
+      "confidence_reason": "Strongest rule basis retained; evidence count is not a probability.",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "algorithm": "AES",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "source",
+          "evidence_type": "source_implementation",
+          "identifier": "set_key",
+          "line": 97,
+          "offset": 3974,
+          "confidence": "medium",
+          "confidence_reason": "Complete source bytes match a pinned upstream implementation module, including its function bodies and local constants; compiled/runtime use remains unknown",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "snippet": "set_key(const uint8_t *key)",
+          "source_role": "definition",
+          "implementation_verification": "pinned_source_sha256",
+          "source_sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+          "reference_source": {
+            "path": "samples/public-benchmark/sources/contiki-ng/os/lib/aes-128.c",
+            "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/aes-128.c",
+            "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+            "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+            "license": "BSD-3-Clause (Texas Instruments)"
+          },
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+        },
+        {
+          "algorithm": "AES",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "source",
+          "evidence_type": "source_implementation",
+          "identifier": "encrypt",
+          "line": 119,
+          "offset": 4721,
+          "confidence": "medium",
+          "confidence_reason": "Complete source bytes match a pinned upstream implementation module, including its function bodies and local constants; compiled/runtime use remains unknown",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "snippet": "encrypt(uint8_t *state)",
+          "source_role": "definition",
+          "implementation_verification": "pinned_source_sha256",
+          "source_sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+          "reference_source": {
+            "path": "samples/public-benchmark/sources/contiki-ng/os/lib/aes-128.c",
+            "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/aes-128.c",
+            "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+            "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+            "license": "BSD-3-Clause (Texas Instruments)"
+          },
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+        }
+      ],
+      "runtime_usage": "unknown"
+    }
+  ],
+  "clues": [
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_api",
+      "identifier": "set_key",
+      "line": 97,
+      "offset": 3974,
+      "confidence": "low",
+      "confidence_reason": "Function name alone does not establish an implementation; body and module context need independent verification",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "snippet": "set_key(const uint8_t *key)",
+      "source_role": "definition",
+      "clue_category": null,
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_api",
+      "identifier": "encrypt",
+      "line": 119,
+      "offset": 4721,
+      "confidence": "low",
+      "confidence_reason": "Function name alone does not establish an implementation; body and module context need independent verification",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "snippet": "encrypt(uint8_t *state)",
+      "source_role": "definition",
+      "clue_category": null,
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_keyword",
+      "identifier": "AES",
+      "line": 43,
+      "offset": null,
+      "confidence": "low",
+      "confidence_reason": "Comment or ordinary literal; not an API call",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "source_role": "comment",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [],
+      "engine": "source",
+      "evidence_type": "source_keyword",
+      "identifier": "aes",
+      "line": 48,
+      "offset": null,
+      "confidence": "low",
+      "confidence_reason": "Comment or ordinary literal; not an API call",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "source_role": "string",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c"
+    }
+  ],
+  "dependencies": [],
+  "components": [],
+  "source_operation_context": {
+    "files": [],
+    "bytes": 0,
+    "limited": false,
+    "scope": "Local macros and actual bounded scalar definitions; headers are not scanned as independent algorithm implementations"
+  },
+  "source_controlflow_analysis": {
+    "branches": 1,
+    "loops": 7,
+    "joins": 1
+  },
+  "source_state_components": [],
+  "static_primitive_summaries": [],
+  "static_limb_witnesses": []
+}

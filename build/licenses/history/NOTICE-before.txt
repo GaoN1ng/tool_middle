@@ -1,0 +1,6 @@
+QCS authored scanner: Apache-2.0; see root LICENSE.
+Vendored Wind River detector and crypto-detection YARA: Apache-2.0; licenses retained with runtime resources in src/qcs/resources.
+Guomi integration and reference source notices: src/qcs/guomi/licenses.
+Samples have independent upstream licenses (including GPL/LGPL/BSD/MIT/Apache). They are analysis inputs, not all Apache-2.0. Source notices and available ancestor license files are preserved under licenses/samples.
+Dataset provenance, source URLs, commits and truth scopes: build/datasets/original_manifests and source_metadata.
+Do not replace upstream sample notices with the scanner license.

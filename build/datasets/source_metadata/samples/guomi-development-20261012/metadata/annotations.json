@@ -1,0 +1,435 @@
+{
+  "algorithms": [
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "modules": [
+    {
+      "id": "wolfsm-sm3",
+      "project": "wolfsm",
+      "name": "sm3",
+      "units": [
+        "sm3.c"
+      ],
+      "source_units": [
+        "sm3.c"
+      ],
+      "truth": [
+        "SM3"
+      ],
+      "source_truth": {
+        "sm3.c": [
+          "SM3"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "wc_Sm3Final"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [
+        "-DWOLFSSL_USER_SETTINGS"
+      ],
+      "architectures": null,
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/wolfSSL/wolfsm",
+      "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+      "source_hashes": {
+        "sm3.c": "29dee800de0851b5bbd9b98592188cb71541961898d7b21c79204b32ac6dd249"
+      },
+      "includes": [
+        "build-support/wolfssl",
+        "sources/wolfssl"
+      ]
+    },
+    {
+      "id": "wolfsm-sm4",
+      "project": "wolfsm",
+      "name": "sm4",
+      "units": [
+        "sm4.c"
+      ],
+      "source_units": [
+        "sm4.c"
+      ],
+      "truth": [
+        "SM4"
+      ],
+      "source_truth": {
+        "sm4.c": [
+          "SM4"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "wc_Sm4EcbEncrypt"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [
+        "-DWOLFSSL_USER_SETTINGS"
+      ],
+      "architectures": null,
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/wolfSSL/wolfsm",
+      "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+      "source_hashes": {
+        "sm4.c": "399b8f9e01e49e099a2c73204618a2f92bb62bd966232e2b5273258efa769c1e"
+      },
+      "includes": [
+        "build-support/wolfssl",
+        "sources/wolfssl"
+      ]
+    },
+    {
+      "id": "wolfsm-sm2",
+      "project": "wolfsm",
+      "name": "sm2",
+      "units": [
+        "sm2.c"
+      ],
+      "source_units": [
+        "sm2.c"
+      ],
+      "truth": [
+        "SM2"
+      ],
+      "source_truth": {
+        "sm2.c": [
+          "SM2"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "wc_ecc_sm2_sign_hash"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [
+        "-DWOLFSSL_USER_SETTINGS"
+      ],
+      "architectures": null,
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/wolfSSL/wolfsm",
+      "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+      "source_hashes": {
+        "sm2.c": "f340b7c5c7be4ca5baecba2028ecf3b84a9d9d6bed6b2d91f9d62259894c789e"
+      },
+      "includes": [
+        "build-support/wolfssl",
+        "sources/wolfssl"
+      ]
+    },
+    {
+      "id": "openssl-sm3",
+      "project": "openssl",
+      "name": "sm3",
+      "units": [
+        "crypto/sm3/sm3.c"
+      ],
+      "source_units": [
+        "crypto/sm3/sm3.c"
+      ],
+      "truth": [
+        "SM3"
+      ],
+      "source_truth": {
+        "crypto/sm3/sm3.c": [
+          "SM3"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "ossl_sm3_block_data_order"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/sm3/sm3.c": "f3260d8facb9e6a540a749a5481f7a4392e949077304fb09f12f26d4e2f16ebb"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "openssl-sm4",
+      "project": "openssl",
+      "name": "sm4",
+      "units": [
+        "crypto/sm4/sm4.c"
+      ],
+      "source_units": [
+        "crypto/sm4/sm4.c"
+      ],
+      "truth": [
+        "SM4"
+      ],
+      "source_truth": {
+        "crypto/sm4/sm4.c": [
+          "SM4"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [
+        "ossl_sm4_encrypt"
+      ],
+      "expected_function_patterns": [],
+      "compile": true,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/sm4/sm4.c": "8255c9ca5c48fb2f492730361cc1f78271148ccdfb1a5d1a79796a857c14bdcc"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "openssl-sm2-sign",
+      "project": "openssl",
+      "name": "sm2-sign",
+      "units": [
+        "crypto/sm2/sm2_sign.c"
+      ],
+      "source_units": [
+        "crypto/sm2/sm2_sign.c"
+      ],
+      "truth": [
+        "SM2"
+      ],
+      "source_truth": {
+        "crypto/sm2/sm2_sign.c": [
+          "SM2"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/sm2/sm2_sign.c": "af1f27d9ad93a0b342dcabbc68d3bb913e5f0765a091e10bd4b3954f30f87653"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "openssl-sm2-crypt",
+      "project": "openssl",
+      "name": "sm2-crypt",
+      "units": [
+        "crypto/sm2/sm2_crypt.c"
+      ],
+      "source_units": [
+        "crypto/sm2/sm2_crypt.c"
+      ],
+      "truth": [
+        "SM2"
+      ],
+      "source_truth": {
+        "crypto/sm2/sm2_crypt.c": [
+          "SM2"
+        ]
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/sm2/sm2_crypt.c": "cb2a66d785c5bab9477331d3454fd4abc300bb45710df7d6e5f02d29d38f74d3"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "libgcrypt-sm3",
+      "project": "libgcrypt",
+      "name": "sm3",
+      "units": [
+        "cipher/sm3.c"
+      ],
+      "source_units": [
+        "cipher/sm3.c"
+      ],
+      "truth": [
+        "SM3"
+      ],
+      "source_truth": {
+        "cipher/sm3.c": [
+          "SM3"
+        ]
+      },
+      "truth_basis": "SM3 64-round compression/P0/P1 or SM4 32-round nonlinear key/block routines; source-development only due complex library build dependencies.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "LGPL-2.1-or-later",
+      "repository": "https://github.com/gpg/libgcrypt",
+      "commit": "df7af3571744bc8d0d45b46c5b73f300ee447410",
+      "source_hashes": {
+        "cipher/sm3.c": "30cabd8cb235b6f82e326814c3da9449e0666b5af08f8591ff15759c5f62e3fa"
+      },
+      "includes": []
+    },
+    {
+      "id": "libgcrypt-sm4",
+      "project": "libgcrypt",
+      "name": "sm4",
+      "units": [
+        "cipher/sm4.c"
+      ],
+      "source_units": [
+        "cipher/sm4.c"
+      ],
+      "truth": [
+        "SM4"
+      ],
+      "source_truth": {
+        "cipher/sm4.c": [
+          "SM4"
+        ]
+      },
+      "truth_basis": "SM3 64-round compression/P0/P1 or SM4 32-round nonlinear key/block routines; source-development only due complex library build dependencies.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "LGPL-2.1-or-later",
+      "repository": "https://github.com/gpg/libgcrypt",
+      "commit": "df7af3571744bc8d0d45b46c5b73f300ee447410",
+      "source_hashes": {
+        "cipher/sm4.c": "09ae9c879e30de1226259404b14535ae01d1f721930caddb0b0a0e1121375fbd"
+      },
+      "includes": []
+    },
+    {
+      "id": "openssl-sha256",
+      "project": "openssl",
+      "name": "sha256",
+      "units": [
+        "crypto/sha/sha256.c"
+      ],
+      "source_units": [
+        "crypto/sha/sha256.c"
+      ],
+      "truth": [],
+      "source_truth": {
+        "crypto/sha/sha256.c": []
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/sha/sha256.c": "3a967cf8a2ac9624c28b1c769074b54cc5ae451b8946c73d9d7b7ab1c9b49f21"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "openssl-ec-generic",
+      "project": "openssl",
+      "name": "ec-generic",
+      "units": [
+        "crypto/ec/ecp_smpl.c"
+      ],
+      "source_units": [
+        "crypto/ec/ecp_smpl.c"
+      ],
+      "truth": [],
+      "source_truth": {
+        "crypto/ec/ecp_smpl.c": []
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/ec/ecp_smpl.c": "b23eec7ea06c9e4c64fb9ec749ebdc7f04d3eec84a591457737f256436b55e6c"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    },
+    {
+      "id": "openssl-ecdsa",
+      "project": "openssl",
+      "name": "ecdsa",
+      "units": [
+        "crypto/ec/ecdsa_ossl.c"
+      ],
+      "source_units": [
+        "crypto/ec/ecdsa_ossl.c"
+      ],
+      "truth": [],
+      "source_truth": {
+        "crypto/ec/ecdsa_ossl.c": []
+      },
+      "truth_basis": "Audited actual operation bodies before development scans; external calls are not inherited implementation labels.",
+      "expected_functions": [],
+      "expected_function_patterns": [],
+      "compile": false,
+      "flags": [],
+      "architectures": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/openssl/openssl",
+      "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+      "source_hashes": {
+        "crypto/ec/ecdsa_ossl.c": "ef86ab5290ca90c54170b353115d3c2768886565bdc0d96b6cc8dd224ab0dfd0"
+      },
+      "includes": [
+        "build-support/openssl",
+        "sources/openssl/include",
+        "sources/openssl"
+      ]
+    }
+  ],
+  "split": "development only, separate from held-out projects and no validation input used"
+}

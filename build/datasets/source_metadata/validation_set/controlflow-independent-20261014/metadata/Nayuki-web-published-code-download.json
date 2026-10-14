@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+  "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+  "split": "validation",
+  "archive_sha256": "f580db8d0716a03ee95165a359e698cd3841150859063d204974b1e754923bbf",
+  "archive": "validation_set/controlflow-independent-20261014/downloads/Nayuki-web-published-code.tar.gz",
+  "policy": "Assigned before detector development; no targets executed; primitive-only LibTomMath is not an independent-family claim (existing mp API ancestry)"
+}

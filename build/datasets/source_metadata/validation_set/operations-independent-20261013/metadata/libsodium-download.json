@@ -1,0 +1,8 @@
+{
+  "project": "libsodium",
+  "repository": "https://github.com/jedisct1/libsodium",
+  "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+  "url": "https://codeload.github.com/jedisct1/libsodium/tar.gz/a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+  "archive_sha256": "e2681466de514b534816f1f296e836e3df7d0d0c6410cd179e9770c60061245b",
+  "source_files": 731
+}

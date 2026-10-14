@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-10-12T10:24:11.383388+00:00",
+  "initial_candidates": [
+    "openHiTLS/openHiTLS",
+    "Oryx-Embedded/CycloneCRYPTO",
+    "ww-rm/libgmalg",
+    "randombit/botan",
+    "weidai11/cryptopp"
+  ],
+  "unavailable_before_any_scan": [
+    {
+      "repository": "ww-rm/libgmalg",
+      "reason": "GitHub commits API returned 404; repository search found no libgmalg result. No source collected/scanned."
+    }
+  ],
+  "replacement": "mjosaarinen/sm4ni: portable and AES-NI SM4 with license retained",
+  "build_dependency": "Oryx-Embedded/Common provides Cyclone port/types/endian headers; not a sixth crypto implementation project.",
+  "extraction_adjustment": "Botan archive contains one .github/codecov.yml symlink. No links extracted; omission recorded in downloads.lock.json. Algorithm source files unmodified.",
+  "configuration_adjustments": "Before scanner invocation only: openHiTLS build macros for enabled modules/BN word width/error filename; C++ MIPS -z notext for EH metadata relocation. All failed attempt logs retained.",
+  "development": "No new data added to reference DB; no detector changes. Existing development was considered sufficient for controlled reference regression this round; its single-family limitation is the independent test question."
+}

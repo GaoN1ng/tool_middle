@@ -1,0 +1,8 @@
+{
+  "family": "axTLS Cameron Rich implementation",
+  "repository": "https://github.com/igrr/axtls-8266",
+  "excluded_units": {
+    "rc4.c": "Originally written by Christophe Devine; overlap with historical development ancestry"
+  },
+  "limitations": "Author/library provenance and content checks do not prove absence of every historical fragment copied between libraries. Standard constants alone are not implementation contamination."
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/guanzhi/GmSSL",
+  "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+  "archive_sha256": "bc3ef40fd058b35b5f09534c9cd4500ca4d70dc6abe166e74f9ef22a29e108c6",
+  "split": "development",
+  "policy": "Version/implementation variant of existing GmSSL family, never claimed independent ancestry"
+}

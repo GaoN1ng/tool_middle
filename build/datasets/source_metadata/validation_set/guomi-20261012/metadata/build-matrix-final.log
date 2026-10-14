@@ -1,0 +1,26 @@
+Prepared 30/741, success 30, failures 0
+Prepared 60/741, success 60, failures 0
+Prepared 90/741, success 90, failures 0
+Prepared 120/741, success 120, failures 0
+Prepared 150/741, success 150, failures 0
+Prepared 180/741, success 180, failures 0
+Prepared 210/741, success 210, failures 0
+Prepared 240/741, success 240, failures 0
+Prepared 270/741, success 270, failures 0
+Prepared 300/741, success 300, failures 0
+Prepared 330/741, success 330, failures 0
+Prepared 360/741, success 360, failures 0
+Prepared 390/741, success 390, failures 0
+Prepared 420/741, success 420, failures 0
+Prepared 450/741, success 450, failures 0
+Prepared 480/741, success 480, failures 0
+Prepared 510/741, success 510, failures 0
+Prepared 540/741, success 540, failures 0
+Prepared 570/741, success 570, failures 0
+Prepared 600/741, success 600, failures 0
+Prepared 630/741, success 630, failures 0
+Prepared 660/741, success 660, failures 0
+Prepared 690/741, success 690, failures 0
+Prepared 720/741, success 720, failures 0
+Prepared 741/741, success 741, failures 0
+{"timestamp": "2026-10-12T10:24:13.713264+00:00", "attempt": "matrix-final", "planned": 741, "completed": 741, "failed": 0, "unique_samples": 791}

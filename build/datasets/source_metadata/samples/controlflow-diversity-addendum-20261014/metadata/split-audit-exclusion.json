@@ -1,0 +1,8 @@
+{
+  "status": "excluded_from_development_and_new_holdout_aggregation",
+  "reason": "sm4ni author/implementation already exists in historical validation_set/guomi-20261012; same author cannot be claimed as new independent development or new validation",
+  "original_manifest_retained": true,
+  "actual_detector_tuning_or_reference_use": false,
+  "role": "read_only_existing_family_capability_probe",
+  "before_scan_assignment_audited_later": true
+}

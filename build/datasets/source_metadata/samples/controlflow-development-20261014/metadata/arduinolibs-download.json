@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/rweather/arduinolibs",
+  "commit": "37a76b8f7516568e1c575b6dc9268da1ccaac6b6",
+  "split": "development",
+  "archive_sha256": "66465c80c90ff6d52c6900dd16ce65bfbc72dac3421962ff8dbf8fcef6f82957",
+  "archive": "samples/controlflow-development-20261014/downloads/arduinolibs.tar.gz",
+  "policy": "Assigned before detector development; no targets executed; primitive-only LibTomMath is not an independent-family claim (existing mp API ancestry)"
+}

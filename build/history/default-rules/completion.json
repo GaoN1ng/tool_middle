@@ -1,0 +1,423 @@
+{
+  "completed_at": "2026-10-14T12:00:24.572418+08:00",
+  "status": "This development round and frozen evaluation completed; universal coverage of the four requested directions remains incomplete.",
+  "machine_learning_added": false,
+  "freeze": {
+    "record": "freeze.json",
+    "runtime_files": 101,
+    "digest": "6432b91a73bbcb63b74c96f7ffca6a5b25b88839422b5a1c1243185835c6eae2",
+    "wheel": "dist-final/qcs_prototype-0.1.0-py3-none-any.whl",
+    "wheel_sha256": "1e31a6781c9d5ac82a683643b37dd20332ddc1a3f77483b36d7e856c6f4e9586"
+  },
+  "tests": {
+    "distinct_tests_passed": 151,
+    "full_suite": 143,
+    "additional_bound_state_tests": 5,
+    "additional_yara_boundary_tests": 3,
+    "post_yara_scanner_retests": 41,
+    "logs": {
+      "full-tests-candidate2.log": 143,
+      "bound-state-tests.log": 5,
+      "yara-boundary-tests.log": 3,
+      "scanner-tests-final.log": 41
+    },
+    "cli_steps_passed": 10,
+    "installed_steps_passed": 11
+  },
+  "development_finalization": "Full candidate2 scans retained. Final YARA-only change re-evaluated the 38 AESNI-hit reports; unchanged engines were not rerun. See postprocess_development_yara.py and final-* reports.",
+  "evaluation_unit": "Content-deduplicated file/algorithm labels; recall=TP/(TP+FN); false_negative_rate=FN/(TP+FN). Correlated build variants are not independent authors.",
+  "metrics": {
+    "fixed_development": {
+      "unique_files": 1521,
+      "positive_algorithm_labels": 1095,
+      "before": {
+        "TP": 987,
+        "FP": 0,
+        "FN": 108,
+        "TN": 13848,
+        "recall": 0.9013698630136986,
+        "false_negative_rate": 0.09863013698630137,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 991,
+        "FP": 0,
+        "FN": 104,
+        "TN": 13848,
+        "recall": 0.9050228310502283,
+        "false_negative_rate": 0.09497716894977169,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 404,
+        "FP": 0,
+        "FN": 691,
+        "TN": 13848,
+        "recall": 0.3689497716894977,
+        "false_negative_rate": 0.6310502283105023,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 419,
+        "FP": 0,
+        "FN": 676,
+        "TN": 13848,
+        "recall": 0.382648401826484,
+        "false_negative_rate": 0.617351598173516,
+        "precision": 1.0
+      },
+      "gained_labels": 4,
+      "lost_labels": 0,
+      "incomplete": {
+        "old-development": {
+          "before": [],
+          "after": []
+        },
+        "research-development": {
+          "before": [],
+          "after": []
+        },
+        "guomi-bank": {
+          "before": [],
+          "after": []
+        },
+        "guomi-operations": {
+          "before": [],
+          "after": []
+        },
+        "expanded-development": {
+          "before": [],
+          "after": []
+        }
+      }
+    },
+    "new_development": {
+      "unique_files": 823,
+      "positive_algorithm_labels": 477,
+      "before": {
+        "TP": 170,
+        "FP": 1,
+        "FN": 307,
+        "TN": 10221,
+        "recall": 0.35639412997903563,
+        "false_negative_rate": 0.6436058700209644,
+        "precision": 0.9941520467836257
+      },
+      "after": {
+        "TP": 209,
+        "FP": 0,
+        "FN": 268,
+        "TN": 10222,
+        "recall": 0.4381551362683438,
+        "false_negative_rate": 0.5618448637316562,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 126,
+        "FP": 0,
+        "FN": 351,
+        "TN": 10222,
+        "recall": 0.2641509433962264,
+        "false_negative_rate": 0.7358490566037735,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 166,
+        "FP": 0,
+        "FN": 311,
+        "TN": 10222,
+        "recall": 0.3480083857442348,
+        "false_negative_rate": 0.6519916142557652,
+        "precision": 1.0
+      },
+      "gained_labels": 39,
+      "lost_labels": 0,
+      "incomplete": {
+        "new-development": {
+          "before": [],
+          "after": []
+        }
+      }
+    },
+    "combined_development": {
+      "unique_files": 2344,
+      "positive_algorithm_labels": 1572,
+      "before": {
+        "TP": 1157,
+        "FP": 1,
+        "FN": 415,
+        "TN": 24069,
+        "recall": 0.7360050890585241,
+        "false_negative_rate": 0.2639949109414758,
+        "precision": 0.9991364421416234
+      },
+      "after": {
+        "TP": 1200,
+        "FP": 0,
+        "FN": 372,
+        "TN": 24070,
+        "recall": 0.7633587786259542,
+        "false_negative_rate": 0.2366412213740458,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 530,
+        "FP": 0,
+        "FN": 1042,
+        "TN": 24070,
+        "recall": 0.3371501272264631,
+        "false_negative_rate": 0.6628498727735369,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 585,
+        "FP": 0,
+        "FN": 987,
+        "TN": 24070,
+        "recall": 0.37213740458015265,
+        "false_negative_rate": 0.6278625954198473,
+        "precision": 1.0
+      },
+      "gained_labels": 43,
+      "lost_labels": 0,
+      "incomplete": {
+        "old-development": {
+          "before": [],
+          "after": []
+        },
+        "research-development": {
+          "before": [],
+          "after": []
+        },
+        "guomi-bank": {
+          "before": [],
+          "after": []
+        },
+        "guomi-operations": {
+          "before": [],
+          "after": []
+        },
+        "expanded-development": {
+          "before": [],
+          "after": []
+        },
+        "new-development": {
+          "before": [],
+          "after": []
+        }
+      }
+    },
+    "fixed_validation": {
+      "unique_files": 2571,
+      "positive_algorithm_labels": 1226,
+      "before": {
+        "TP": 412,
+        "FP": 6,
+        "FN": 814,
+        "TN": 20486,
+        "recall": 0.3360522022838499,
+        "false_negative_rate": 0.6639477977161501,
+        "precision": 0.9856459330143541
+      },
+      "after": {
+        "TP": 436,
+        "FP": 6,
+        "FN": 790,
+        "TN": 20486,
+        "recall": 0.3556280587275693,
+        "false_negative_rate": 0.6443719412724307,
+        "precision": 0.9864253393665159
+      },
+      "before_operations": {
+        "TP": 311,
+        "FP": 0,
+        "FN": 915,
+        "TN": 20492,
+        "recall": 0.2536704730831974,
+        "false_negative_rate": 0.7463295269168027,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 345,
+        "FP": 0,
+        "FN": 881,
+        "TN": 20492,
+        "recall": 0.2814029363784666,
+        "false_negative_rate": 0.7185970636215334,
+        "precision": 1.0
+      },
+      "gained_labels": 24,
+      "lost_labels": 0,
+      "incomplete": {
+        "conventional": {
+          "before": [
+            "monocypher-main-source-0"
+          ],
+          "after": [
+            "monocypher-main-source-0"
+          ]
+        },
+        "guomi": {
+          "before": [],
+          "after": []
+        },
+        "cifra-sodium": {
+          "before": [],
+          "after": []
+        },
+        "axtls": {
+          "before": [],
+          "after": []
+        }
+      }
+    },
+    "new_holdout": {
+      "unique_files": 284,
+      "positive_algorithm_labels": 229,
+      "before": {
+        "TP": 66,
+        "FP": 0,
+        "FN": 163,
+        "TN": 3463,
+        "recall": 0.28820960698689957,
+        "false_negative_rate": 0.7117903930131004,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 67,
+        "FP": 0,
+        "FN": 162,
+        "TN": 3463,
+        "recall": 0.2925764192139738,
+        "false_negative_rate": 0.7074235807860262,
+        "precision": 1.0
+      },
+      "before_operations": {
+        "TP": 48,
+        "FP": 0,
+        "FN": 181,
+        "TN": 3463,
+        "recall": 0.2096069868995633,
+        "false_negative_rate": 0.7903930131004366,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 49,
+        "FP": 0,
+        "FN": 180,
+        "TN": 3463,
+        "recall": 0.21397379912663755,
+        "false_negative_rate": 0.7860262008733624,
+        "precision": 1.0
+      },
+      "gained_labels": 1,
+      "lost_labels": 0,
+      "incomplete": {
+        "new-holdout": {
+          "before": [],
+          "after": []
+        }
+      }
+    },
+    "combined_validation": {
+      "unique_files": 2855,
+      "positive_algorithm_labels": 1455,
+      "before": {
+        "TP": 478,
+        "FP": 6,
+        "FN": 977,
+        "TN": 23949,
+        "recall": 0.32852233676975945,
+        "false_negative_rate": 0.6714776632302405,
+        "precision": 0.987603305785124
+      },
+      "after": {
+        "TP": 503,
+        "FP": 6,
+        "FN": 952,
+        "TN": 23949,
+        "recall": 0.3457044673539519,
+        "false_negative_rate": 0.6542955326460481,
+        "precision": 0.9882121807465619
+      },
+      "before_operations": {
+        "TP": 359,
+        "FP": 0,
+        "FN": 1096,
+        "TN": 23955,
+        "recall": 0.24673539518900345,
+        "false_negative_rate": 0.7532646048109966,
+        "precision": 1.0
+      },
+      "after_operations": {
+        "TP": 394,
+        "FP": 0,
+        "FN": 1061,
+        "TN": 23955,
+        "recall": 0.27079037800687283,
+        "false_negative_rate": 0.7292096219931271,
+        "precision": 1.0
+      },
+      "gained_labels": 25,
+      "lost_labels": 0,
+      "incomplete": {
+        "conventional": {
+          "before": [
+            "monocypher-main-source-0"
+          ],
+          "after": [
+            "monocypher-main-source-0"
+          ]
+        },
+        "guomi": {
+          "before": [],
+          "after": []
+        },
+        "cifra-sodium": {
+          "before": [],
+          "after": []
+        },
+        "axtls": {
+          "before": [],
+          "after": []
+        },
+        "new-holdout": {
+          "before": [],
+          "after": []
+        }
+      }
+    }
+  },
+  "integrity": {
+    "passed": true,
+    "record": "integrity-final.json",
+    "timestamp": "2026-10-14T12:00:24.553007+08:00"
+  },
+  "validation_policy": "No frozen validation result used to change runtime, rules, references or truth labels this round. Historical validation retests and new author holdout are reported separately.",
+  "limitations": [
+    "New author holdout contains no SM2/SM3/SM4 positives; national algorithm gains are historical fixed validation retests.",
+    "Unknown static limb/carry/Montgomery/curve semantics and arbitrary binary ring schedule recovery remain incomplete.",
+    "Complete initialization/compression/output-length alias association and SIMD/bitslice/affine lifting remain incomplete.",
+    "MIPS delay slots are excluded from the added CFG channel.",
+    "Implementation diversity expanded, but every algorithm does not yet have all requested independent author and operation styles.",
+    "Historical Monocypher source remains partial before and after; completed functions are scored.",
+    "Six unchanged SHA-1 false positive labels remain in validation.",
+    "New author recall is 29.26%; combined validation false negative rate is 65.43%, above the requested 10% target."
+  ],
+  "artifacts": [
+    "comparison.json",
+    "diagnostics.json",
+    "validation-completion.json",
+    "new-holdout-comparison.json",
+    "guomi-validation-comparison.json",
+    "integrity-final.json",
+    "acceptance-final/result.json",
+    "installed-checks-final.json"
+  ],
+  "documents": [
+    "doc/2026-10-14-controlflow-static-primitives.md",
+    "doc/README.md",
+    "validation_set/controlflow-independent-20261014/README.md",
+    "samples/controlflow-development-20261014/README.md"
+  ]
+}

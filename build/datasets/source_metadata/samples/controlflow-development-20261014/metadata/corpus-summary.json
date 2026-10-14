@@ -1,0 +1,36 @@
+{
+  "files": 823,
+  "positive_labels": 477,
+  "kinds": {
+    "executable": 768,
+    "source": 55
+  },
+  "per_project": {
+    "arduinolibs": 167,
+    "libecc": 223,
+    "libtommath": 4,
+    "static-controls": 30,
+    "libmcrypt": 95,
+    "mhash": 73,
+    "tinyssh": 75,
+    "gmssl-modern": 112,
+    "authored-EC-controls": 8,
+    "libecc-generic": 1,
+    "nettle": 35
+  },
+  "per_algorithm": {
+    "AES": 37,
+    "SHA-256": 76,
+    "SHA-1": 38,
+    "ChaCha20": 38,
+    "ECDH": 58,
+    "SM3": 46,
+    "ECDSA": 19,
+    "SM2": 62,
+    "RSA": 21,
+    "RC4": 19,
+    "DES": 19,
+    "MD5": 16,
+    "SM4": 28
+  }
+}

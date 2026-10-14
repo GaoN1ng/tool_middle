@@ -1,0 +1,1946 @@
+{
+  "method": "Controlled known-source/compiler portability regression, no target execution",
+  "samples": [
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/ordinary.elf",
+      "sha256": "89badff72fdded0e4f2d513fcf43824cfdf2f11b8274868f1dbd92d774ffe949",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/ordinary.elf",
+      "sha256": "20b9dd5c133bac0ba77342b6f6ca429118f72cd100a62a02692f3abb2cc904a9",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-a-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/ordinary.elf",
+      "sha256": "16f4478dab86b80a46e498c5c363d37346fd5ce625f09f754fe7fed99f3f196d",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/ordinary.elf",
+      "sha256": "a49ce15040098ebfc7e0fb8d354c0313aa2359d9568b9fcd84d1e831427380f2",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-posix-b-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/ordinary.elf",
+      "sha256": "d0330187634fbdcaa113961d752783a95b3bda6c7c891e71234224f30b3c9d18",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/ordinary.elf",
+      "sha256": "3bb5a31fb8a1b642af920a4094c38b59ea1d933c3a34ca07c7047ea61150b40e",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-shared-windows-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/ordinary.elf",
+      "sha256": "5a0c998924ce109388dcee9f0ecea6270cd4b53adcc6621f4b19af0f92305417",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/ordinary.elf",
+      "sha256": "67aa93e54a587a46cf98f56435db996c782708e111b1f71f40942e1dfef35f5c",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-a-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/ordinary.elf",
+      "sha256": "3d94743e2852a096a8c3968ba7250c7a64a6ec08783132f842c61a5d8d1441cc",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/ordinary.elf",
+      "sha256": "03e3bb936d7a0256ff3dc2167b3e51fca5ac6b7030627542d4b070b28ba5714b",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-posix-b-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/ordinary.elf",
+      "sha256": "eb669adc0eb8ddc9bbfb3e23ae3358070aefc7b32d0f1d4591e586516ac7af04",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/ordinary.elf",
+      "sha256": "208c6bb2fc18f3f84443e40cb59c8076cc6353970f25c15688604dfba28f608a",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_sign.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_sign-static-windows-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/ordinary.elf",
+      "sha256": "7c1ab8c27886e067fc54f3c7bafc3338a3bc82d56d8d37bb193b7a27cf74d11a",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/ordinary.elf",
+      "sha256": "994d358b8080f55157e3553a98b2a27ff7be88b07783f705d1ed05934e8f5f30",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-a-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/ordinary.elf",
+      "sha256": "8b94d39620d09606ae2ea261044bfcab008eb2564a50451a3167845a6caf9834",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/ordinary.elf",
+      "sha256": "385d3cc2ce4c3d89d41b7b2f9d0bf79885edadea3c78ff890e87d88ac4c5fb8b",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-posix-b-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/ordinary.elf",
+      "sha256": "1bed48fbe9fddcd614db5e2e2ff1c896df2e239699b40e534a87ea9ceaea2e41",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O0",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/ordinary.elf",
+      "sha256": "81789f6cc96529bb45df6af55a43257005a36e64c3e2e2079f2e77391249bfb2",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O2",
+      "link_mode": "shared",
+      "elf_type": "ET_DYN",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/operation.o",
+            "-Wl,--no-gc-sections",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-shared-windows-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/ordinary.elf",
+      "sha256": "5a5a5413db5df3ce73ba1509adbde240f7b63ad7535b33ea038a4231b31cf4d3",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/ordinary.elf",
+      "sha256": "178c1a6f14d249c57f15609c5570fa241f34f4f6da640afca8825daa9f83981d",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/opt/crypto-build-A",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/opt/crypto-build-A",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-a-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/ordinary.elf",
+      "sha256": "550b49abd55193f1b064350c40d833266d1ffd888fff14a8195d119ee3312f27",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/ordinary.elf",
+      "sha256": "2f359a0bcea07e38a5109b39532b6839be8f4c9fad6a0aea7b1371f130b735a6",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "/srv/another/build-B",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=/srv/another/build-B",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-posix-b-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/ordinary.elf",
+      "sha256": "e473b5401b51580fc12571920c244dad80558189dc74ca56ba50b4eb0c036b62",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O0",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O0",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O0/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/ordinary.elf",
+      "sha256": "1fdaf3a691d13a1fbda60e6e9040214441da4286e5504e3f4f063e34f62a4f6f",
+      "expected": [
+        "SM2"
+      ],
+      "unit": "sm2_enc.c",
+      "prefix": "Z:/portable/reference-C",
+      "optimization": "O2",
+      "link_mode": "static",
+      "elf_type": "ET_EXEC",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/operation.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-g",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-fno-stack-protector",
+            "-DENABLE_SMALL_FOOTPRINT=0",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-ffile-prefix-map=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl=Z:/portable/reference-C",
+            "-DDEFINE_STDIO",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/padding.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/padding.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/coverage-fixes-20261012/toolchains/native/usr/bin/ld",
+            "-m",
+            "elf_x86_64",
+            "-static",
+            "--unresolved-symbols=ignore-all",
+            "-e",
+            "diagnostic_padding",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/padding.o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/operation.o",
+            "--no-gc-sections",
+            "--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/sm2_enc-static-windows-O2/ordinary.elf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Unmodified reviewed SM2 operation source plus noncrypto layout/stdio wrapper; auxiliary routines may be unresolved; not executed"
+    },
+    {
+      "path": "quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/generic-sm2-curve-only.so",
+      "sha256": "4a3b03c93f3a259b5a06ebb2b0f625c6595fe3f4675445293d36ba4882d8c0b9",
+      "expected": [],
+      "unit": "sm2_z256.c",
+      "commands": [
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-O2",
+            "-fPIC",
+            "-fvisibility=hidden",
+            "-I/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/include",
+            "-c",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_z256.c",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/generic-sm2-curve-only.o"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+            "cc",
+            "-target",
+            "x86_64-linux-musl",
+            "-shared",
+            "-nostdlib",
+            "-s",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/generic-sm2-curve-only.o",
+            "-Wl,--version-script=/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/localize.map",
+            "-o",
+            "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/guomi-sm2-fix-20261012/portability/generic-sm2-curve-only.so"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ],
+      "basis": "Generic GmSSL SM2-curve arithmetic only; actual signature/encryption units excluded"
+    }
+  ],
+  "distinct_sha256": 25
+}

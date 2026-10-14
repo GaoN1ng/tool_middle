@@ -1,0 +1,139 @@
+[
+  {
+    "id": "nettle-rsa-sign",
+    "project": "nettle",
+    "file": "sources/nettle/rsa-sign.c",
+    "truth": [
+      "RSA"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "flags": [
+      "-DGMP_NUMB_BITS=(__SIZEOF_LONG__*8)"
+    ],
+    "include": [
+      "sources/nettle"
+    ],
+    "basis": "Niels Moeller/GNU Nettle RSA CRT body using mini-GMP API convention; generic mini-GMP alone is negative"
+  },
+  {
+    "id": "nettle-mini-gmp",
+    "project": "nettle",
+    "file": "sources/nettle/mini-gmp.c",
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "flags": [
+      "-DGMP_NUMB_BITS=(__SIZEOF_LONG__*8)"
+    ],
+    "include": [
+      "sources/nettle"
+    ],
+    "basis": "Niels Moeller/GNU Nettle RSA CRT body using mini-GMP API convention; generic mini-GMP alone is negative"
+  },
+  {
+    "id": "gmssl-sm4_ce",
+    "project": "gmssl-modern",
+    "file": "sources/gmssl-modern/src/sm4_ce.c",
+    "truth": [
+      "SM4"
+    ],
+    "arches": [
+      "aarch64"
+    ],
+    "flags": [
+      "-mcpu=generic+sm4"
+    ],
+    "include": [
+      "sources/gmssl-modern/include"
+    ],
+    "basis": "Pre-scan real hardware/vector implementation variant; existing GmSSL lineage, not a new author"
+  },
+  {
+    "id": "gmssl-sm4_avx2",
+    "project": "gmssl-modern",
+    "file": "sources/gmssl-modern/src/sm4_avx2.c",
+    "truth": [
+      "SM4"
+    ],
+    "arches": [
+      "x86_64"
+    ],
+    "flags": [
+      "-mavx2"
+    ],
+    "include": [
+      "sources/gmssl-modern/include"
+    ],
+    "basis": "Pre-scan real hardware/vector implementation variant; existing GmSSL lineage, not a new author"
+  },
+  {
+    "id": "gmssl-sm4_aesni",
+    "project": "gmssl-modern",
+    "file": "sources/gmssl-modern/src/sm4_aesni.c",
+    "truth": [
+      "SM4"
+    ],
+    "arches": [
+      "x86_64"
+    ],
+    "flags": [
+      "-maes",
+      "-mavx2"
+    ],
+    "include": [
+      "sources/gmssl-modern/include"
+    ],
+    "basis": "Pre-scan real hardware/vector implementation variant; existing GmSSL lineage, not a new author"
+  },
+  {
+    "id": "gmssl-sm3_avx2",
+    "project": "gmssl-modern",
+    "file": "sources/gmssl-modern/src/sm3_avx2.c",
+    "truth": [
+      "SM3"
+    ],
+    "arches": [
+      "x86_64"
+    ],
+    "flags": [
+      "-mavx2",
+      "-include",
+      "/var/home/gzn/ourtask/samples/controlflow-development-20261014/compat/sm3_legacy_declaration.h"
+    ],
+    "include": [
+      "sources/gmssl-modern/include"
+    ],
+    "basis": "Pre-scan real hardware/vector implementation variant; existing GmSSL lineage, not a new author"
+  },
+  {
+    "id": "gmssl-sm3_arm64",
+    "project": "gmssl-modern",
+    "file": "sources/gmssl-modern/src/sm3_arm64.c",
+    "truth": [
+      "SM3"
+    ],
+    "arches": [
+      "aarch64"
+    ],
+    "flags": [
+      "-mcpu=generic+sm4"
+    ],
+    "include": [
+      "sources/gmssl-modern/include"
+    ],
+    "basis": "Pre-scan real hardware/vector implementation variant; existing GmSSL lineage, not a new author"
+  }
+]

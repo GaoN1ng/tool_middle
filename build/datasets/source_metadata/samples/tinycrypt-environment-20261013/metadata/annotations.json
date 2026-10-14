@@ -1,0 +1,228 @@
+[
+  {
+    "id": "tinycrypt-aes_encrypt",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/aes_encrypt.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "aes_encrypt.c": "90957c91a22214b18653bae4ef4abeca8bc6674051c48fe0c97c413a6d65e555"
+    }
+  },
+  {
+    "id": "tinycrypt-aes_decrypt",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/aes_decrypt.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "aes_decrypt.c": "edad5e3570012bcc1da57869fdb2bc4e0c6e733fb67f7b362bcc71f88d0af017"
+    }
+  },
+  {
+    "id": "tinycrypt-aes_cbc",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/cbc_mode.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/aes_encrypt.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/aes_decrypt.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "cbc_mode.c": "e09c83712a618ba08a60fef3e5ba2ed5bf712fa6b8c79a074cbf5731665f7ffa",
+      "aes_encrypt.c": "90957c91a22214b18653bae4ef4abeca8bc6674051c48fe0c97c413a6d65e555",
+      "aes_decrypt.c": "edad5e3570012bcc1da57869fdb2bc4e0c6e733fb67f7b362bcc71f88d0af017",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-aes_ctr",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ctr_mode.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/aes_encrypt.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "ctr_mode.c": "30ce4835f928dc331ed74f86de26b9839ae50e703e6086434edaf3ba5a87473a",
+      "aes_encrypt.c": "90957c91a22214b18653bae4ef4abeca8bc6674051c48fe0c97c413a6d65e555",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-sha256",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/sha256.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "sha256.c": "a8ad4bb2c09e31e4ab86c1b4f8fa073937a42e2694afb4dde6cb1b3c7a4b5ffd"
+    }
+  },
+  {
+    "id": "tinycrypt-hmac_sha256",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/hmac.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/sha256.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "hmac.c": "17ecbc71c8e0e5eb4e42409bc45de188ec8b679151aab0bd2b0e19826993606e",
+      "sha256.c": "a8ad4bb2c09e31e4ab86c1b4f8fa073937a42e2694afb4dde6cb1b3c7a4b5ffd",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-ecdh",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc_dh.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc_platform_specific.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "ECDH"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "ecc_dh.c": "ae19b12efe34868823e61204d00d658ec2fdbf04c199088ffa450939b5e60373",
+      "ecc.c": "1c56234ff29708c712d07f864ed498eb6b0ab8475b5b5824079ed0c77070ea1b",
+      "ecc_platform_specific.c": "17f454ecc206f2ac532c517b13beb56ff730e71efb93eb70b20ee71617a8eb7b",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-ecdsa",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc_dsa.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc_platform_specific.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [
+      "ECDSA"
+    ],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "ecc_dsa.c": "93ec2ea2e42e57e225fad47c5d2d88542370675cbf5ab12a7697f49338df2fc3",
+      "ecc.c": "1c56234ff29708c712d07f864ed498eb6b0ab8475b5b5824079ed0c77070ea1b",
+      "ecc_platform_specific.c": "17f454ecc206f2ac532c517b13beb56ff730e71efb93eb70b20ee71617a8eb7b",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-utils",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  },
+  {
+    "id": "tinycrypt-ecc_arithmetic",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/ecc_platform_specific.c",
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/source/utils.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/semantic-independent-20261013/sources/tinycrypt/lib/include"
+    ],
+    "truth": [],
+    "project": "tinycrypt",
+    "repository": "https://github.com/intel/tinycrypt",
+    "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+    "license": "BSD-3-Clause; upstream license and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "ecc.c": "1c56234ff29708c712d07f864ed498eb6b0ab8475b5b5824079ed0c77070ea1b",
+      "ecc_platform_specific.c": "17f454ecc206f2ac532c517b13beb56ff730e71efb93eb70b20ee71617a8eb7b",
+      "utils.c": "5039b34c8e912927d8fea4fbadc65d8d8c7a80707e21494dc79da99f64ebe0da"
+    }
+  }
+]

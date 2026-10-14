@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/Distrotech/mhash",
+  "commit": "d8cb1ed69b146d5001de1e083a44c12dc50d2e89",
+  "archive_sha256": "32752555277aaf5aa45737d133c4b09239d4344e900acc12481c9b44eaec0663",
+  "split": "development",
+  "policy": "Declared development before detector scans; actual per-unit ancestry retained"
+}

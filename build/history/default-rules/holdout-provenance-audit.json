@@ -1,0 +1,6 @@
+{
+  "new_files": 284,
+  "content_overlap_with_historical_scored_validation": [],
+  "provenance_policy": "New author project metadata checked against prior development sources and packaged references before scanning; shared algorithm constants are not implementation overlap",
+  "not_guaranteed": "Independent authorship for all assembly/standard-derived code cannot be proven solely by repository identity"
+}

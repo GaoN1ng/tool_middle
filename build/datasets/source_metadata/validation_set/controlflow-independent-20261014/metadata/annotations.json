@@ -1,0 +1,536 @@
+[
+  {
+    "id": "putty-aes",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/aes-sw.c"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/aes-sw.c": "9d88ef7220d9f1d1e7c988dc9d4b7094283753c3b50076b45bca2c971a7d377a"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-des",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/des.c"
+    ],
+    "truth": [
+      "DES"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/des.c": "a93486fbbab03cf5829db12818f06b1a108f5df2cfdfab5586973e5c36d8fac5"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-rc4",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/arcfour.c"
+    ],
+    "truth": [
+      "RC4"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/arcfour.c": "785e563451f20d69d160ca8fd7f6613472dc09ebd8ce70ae0b5bcde788613d22"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-md5",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/md5.c"
+    ],
+    "truth": [
+      "MD5"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/md5.c": "10b9c0c24d1d987a890a6636211028a1c2094fa030756d5244b562afb8f3e697"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-sha1",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/sha1-sw.c"
+    ],
+    "truth": [
+      "SHA-1"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/sha1-sw.c": "9c29c5231b8332f763831b7102bfdc6b2929d185786449f27ae5ebad6a3da519"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-sha256",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/sha256-sw.c"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/sha256-sw.c": "ded9ecc11cb23aa2d161011abbd0f4b8b2743e7a2860eb93fc3004fea59cc855"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-rsa",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/rsa.c"
+    ],
+    "truth": [
+      "RSA"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/rsa.c": "5fea0c91749735f1442d1093228048ba8a0f0f0bc5e539ffaa1c474975cad8af"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-ecc",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/ecc-ssh.c"
+    ],
+    "truth": [
+      "ECDSA",
+      "ECDH"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/ecc-ssh.c": "6cbaef20a485cb201abc8f13b21b6a0ef6318893b7f064ae3c6445e1af0202dc"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-chacha",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/chacha20-poly1305.c"
+    ],
+    "truth": [
+      "ChaCha20"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/chacha20-poly1305.c": "7c5301d675fecc279a8058ebfa2ca5f9e39bd4795128cb13671407778a6654f3"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-blowfish",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/blowfish.c"
+    ],
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/blowfish.c": "81082b19cbc718b20754c833b62146ef6d2eb686fb841f1f64c516b67a72ff73"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-sha512",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/sha512-sw.c"
+    ],
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/sha512-sw.c": "6a5a276fb2a40c0ac02b8f2cac08129baef049afd6e3c0318cf90ea438575320"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "putty-math",
+    "project": "putty",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto/mpint.c"
+    ],
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/rhuijben/putty",
+    "commit": "503d6139d5e1a7c727343e7c06c39778f18dfb25",
+    "source_sha256": {
+      "crypto/mpint.c": "abe0347b8775dcf1f61eccdd55d6855a713fc5c812ab322705b461c187c41556"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/putty/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "nayuki-sha1-C",
+    "project": "nayuki",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha1-hash-implementation-in-x86-assembly/sha1-naive.c"
+    ],
+    "truth": [
+      "SHA-1"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+    "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+    "source_sha256": {
+      "fast-sha1-hash-implementation-in-x86-assembly/sha1-naive.c": "d84772cfbc43f86fc8e6f2c74dd2584f7cffb5b43cf5c29a4287af251c02538a"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "nayuki-sha256-C",
+    "project": "nayuki",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha2-hashes-in-x86-assembly/sha256.c",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha2-hashes-in-x86-assembly/sha256-test.c"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+    "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+    "source_sha256": {
+      "fast-sha2-hashes-in-x86-assembly/sha256.c": "00e195ad3ca40b1f0cdf870cd6152702efc4a8c74de6b4f4b56e5bc2d12f426d",
+      "fast-sha2-hashes-in-x86-assembly/sha256-test.c": "c2d29c48c2f96479e1f724b749b18a48c6966cb1634fc49f1227f3ecbfbc4375"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "nayuki-sha256-asm",
+    "project": "nayuki",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha2-hashes-in-x86-assembly/sha256-x8664.S",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha2-hashes-in-x86-assembly/sha256-test.c"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "arches": [
+      "x86_64"
+    ],
+    "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+    "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+    "source_sha256": {
+      "fast-sha2-hashes-in-x86-assembly/sha256-x8664.S": "6d6074b736a878125347e4485937f42e31eba45dc4354a54ffd585814a824911",
+      "fast-sha2-hashes-in-x86-assembly/sha256-test.c": "c2d29c48c2f96479e1f724b749b18a48c6966cb1634fc49f1227f3ecbfbc4375"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "nayuki-sha512",
+    "project": "nayuki",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/fast-sha2-hashes-in-x86-assembly/sha512.c"
+    ],
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+    "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+    "source_sha256": {
+      "fast-sha2-hashes-in-x86-assembly/sha512.c": "36860e111cc8a40947b7bdcaabbe79cd5a0aace8e48e6e0c9d8a4587e1b3cf69"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  },
+  {
+    "id": "nayuki-crc",
+    "project": "nayuki",
+    "files": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/forcing-a-files-crc-to-any-value/forcecrc32.c"
+    ],
+    "truth": [],
+    "arches": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "repository": "https://github.com/nayuki/Nayuki-web-published-code",
+    "commit": "9991ad3d402b98b8e377af1a2789b4a4b000ccfa",
+    "source_sha256": {
+      "forcing-a-files-crc-to-any-value/forcecrc32.c": "3cc0eaae121b26833c28990395d78733f22821dbb8e0d0c685340746083b5f0a"
+    },
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/unix",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/charset",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/sources/Nayuki-web-published-code/crypto",
+      "/var/home/gzn/ourtask/validation_set/controlflow-independent-20261014/compat"
+    ],
+    "truth_basis": "Pre-scan upstream implementation body annotation; generic arithmetic/SHA512/Blowfish are negative for declared target universe; no detector-driven labeling",
+    "license": "Unmodified source notices and upstream licenses retained; Project Nayuki MIT and PuTTY MIT"
+  }
+]

@@ -1,0 +1,205 @@
+# QCS 密码算法与量子脆弱性证据扫描工具（中间整理版）
+
+本目录用于提交、交接和继续开发。工具静态分析源码、ELF/PE 可执行文件及部分固件容器，识别密码算法证据，区分 **API 引用、实现包含、常量线索**，输出算法资产和量子风险说明。它不执行待测程序，也不把常量表或库文件名直接等同于算法实现。
+
+整理日期：2026-10-14（Asia/Shanghai）。检测规则沿用本轮已经冻结的版本；本次只调整目录、资源路径、安装和输出管理，没有用验证结果调参或重新训练。随机森林保留为独立实验模块，没有合入默认扫描决策。
+
+## 目录与文件约定
+
+```text
+ustc_tool_middle/
+├── readme.md                 使用、目录、数据口径及历史记录链接
+├── todo.md                   当前情况、困难、不足与后续任务
+├── LICENSE                   工具本身的 Apache-2.0 许可证
+├── pyproject.toml            Python 包及命令入口
+├── setup.py / setup.cfg      打包及 build/ 输出约定
+├── requirements*.lock        默认运行和可选 ML 依赖
+├── bin/                      qcs、qcs-rf 启动入口
+├── src/
+│   ├── qcs/                  扫描、运算/调用分析、国密、固件、评测
+│   └── qcs_ml/               可选特征提取、开发集标注、RF 训练与推断
+├── tests/                    回归检查及测试辅助代码
+├── tools/                    Linux 安装、测试准备、完整性检查、发布打包
+├── licenses/                 按工具、组件、参考数据、样本来源分类的许可
+├── Samples/
+│   ├── test_set/             建库、开发、调参与回归样本及配套输入
+│   └── val_set/              历史验证样本及配套输入
+│       # 两个集合都包含：
+│       # code_samples/、elf_samples/、exe_samples/、firmware_samples/
+└── build/
+    ├── runtime/              运行所需 JSON 规则、指纹及来源记录
+    ├── models/               已冻结 RF 模型、阈值与原冻结信息
+    ├── datasets/             统一目录、可运行清单、原清单及来源元数据
+    ├── history/              选定的历史评测结果、函数真值及迁移依据
+    ├── reports/              日常扫描和评测输出
+    ├── checks/、logs/         本次整理核验结果和日志
+    ├── ml/                   后续开发特征、训练及标注输出
+    ├── testing/              自动生成的内部回归路径兼容目录
+    ├── venv/、cache/、tmp/    本地安装、缓存及临时产物
+    └── dist/                 安装包与提交压缩包
+```
+
+固件目录命名为 `firmware_samples/`。固件是设备可烧录或升级的整体镜像，不是一种固定扩展名；本项目包含 `.bin`、`.img`、`.squashfs` 等输入，压缩 OTA 也可能是 `.bin.gz`。ELF 包括可执行程序、共享库和对象文件；PE 包括 Windows `.exe`/`.dll`，它们可在 Linux 上进行静态分析。
+
+根目录只保留这两个 Markdown 文件。历史过程 Markdown、`essay/`、`other_ref/` 原始压缩包、旧虚拟环境和编译工具链没有搬入。原工作区保留完整历史。
+
+## 安装与使用
+
+目前需要 **Linux + Python 3.12**。默认扫描不需要 scikit-learn；扫描 SquashFS 需要系统安装 `squashfs-tools`，ESP/gzip 原生适配器不依赖 Binwalk。其他固件容器的旧回退路径可使用 Binwalk v2；Binwalk v3 尚未适配。
+
+在本目录运行：
+
+```bash
+bash tools/setup-linux.sh --python /path/to/python3.12
+bin/qcs doctor --output reports/doctor.json
+bin/qcs scan /path/to/input.c --output reports/source.json --csv reports/source.csv
+bin/qcs scan /path/to/program --kind executable --output reports/program.json
+bin/qcs scan /path/to/image.bin --kind firmware --output reports/firmware.json
+```
+
+安装环境位于 `build/venv/`。离线安装可另传 `--wheelhouse /path/to/wheels`；本包在 `build/wheelhouse/` 保留默认扫描所需的 Linux x86-64 轮子和 pip 引导轮子，可直接使用 `--wheelhouse build/wheelhouse`。需要 RF 时在安装命令增加 `--with-ml`，ML 依赖需联网安装或另备相应离线轮子。上传包不包含宿主机器的 Python、旧虚拟环境或系统工具，接收方需要按上述要求安装。
+
+文件输出统一位于 `build/`：`--output reports/x.json` 会写入 `build/reports/x.json`，`--output build/reports/x.json` 也可使用。绝对输出路径必须位于当前 `build/` 中；输入可在任何可读目录。未指定输出时打印 JSON 到终端。启动脚本可以从其他工作目录或通过符号链接调用。安装 wheel 后也可使用 `qcs`；如需指定输出根目录，设置 `QCS_BUILD_DIR=/absolute/path/to/build`。
+
+退出码：`0` 为完成，`2` 为部分完成/就绪失败，`3` 为不支持，`4` 为扫描失败。完成扫描并不保证检出所有算法，应同时查看证据、覆盖说明、错误及预算限制。
+
+可选随机森林示例：
+
+```bash
+bin/qcs-rf /path/to/input.c --kind source --output reports/rf-source.json
+bin/qcs-rf /path/to/program.so --kind executable --output reports/rf-binary.json
+```
+
+默认使用 `build/models/rf-baseline/model.joblib`；可传 `--model` 指定其他已审查模型。RF 首轮范围为 C/C++ 与 x86-64/AArch64 ELF，其树投票数不是校准概率，`ml_inference` 是候选证据。原始模型字节与阈值保持不变。
+
+## 样本口径与评测
+
+本次归档按完整文件 SHA-256 去重，保留每份文件的全部原路径、清单用途、作者/家族及已标注算法范围。样本以哈希子目录保存；可通过 `build/datasets/catalog.json` 查原路径、来源清单和新路径。新增清单的 `path` 可直接访问整理后的样本，原清单字节保存在 `build/datasets/original_manifests/`。
+
+`test_set` 对应讨论中的开发/建库/调参/回归用途，并包含符号标注配套文件和源码头文件。`val_set` 保存已运行过的历史验证输入，**不是新的未接触验证实验**。发现同时有开发用途和历史验证用途的文件时，归入 `test_set` 并记录重叠。多轮国密验证快照不会重复存放相同内容。文件数、编译变体数、函数数与独立作者数应分别统计。
+
+共归档 **10,390 个不同输入文件**，对应 19 份现用清单、7,621 条历史清单记录；其中 6,022 个不同文件出现在这些清单中，另外 4,368 个为建库参考或配套输入。多个历史快照/清单可以引用同一文件，因此清单记录数不会等于不同文件数。
+
+| 物理分类 | `test_set` | `val_set` | 合计 |
+| --- | ---: | ---: | ---: |
+| `code_samples`（含配套头文件） | 1,132 | 854 | 1,986 |
+| `elf_samples`（含建库/符号标注配套文件） | 5,466 | 2,907 | 8,373 |
+| `exe_samples`（PE 程序/库） | 14 | 0 | 14 |
+| `firmware_samples` | 17 | 0 | 17 |
+| 合计 | **6,629** | **3,761** | **10,390** |
+
+`test_set` 中 2,917 个不同文件有清单记录，另有 3,712 个参考/配套输入；`val_set` 中对应为 3,105 和 656。81 个文件存在历史开发/验证用途重叠，其中只有 2 个是现用清单输入，其余主要为配套文件，均有重叠标记。完整分类以 [`migration-report.json`](build/datasets/migration-report.json) 和 [`catalog.json`](build/datasets/catalog.json) 为准；归档总数不能作为准确率分母。
+
+查找某个原始文件或算法样本：
+
+```bash
+python3 tools/find_sample.py aes-128.c --split test_set --algorithm AES
+python3 tools/find_sample.py rustcrypto-sm2 --split val_set
+```
+
+运行一个已归档集合：
+
+```bash
+bin/qcs evaluate build/datasets/manifests/samples__operation-development-20261013__manifest.json \
+  --split development --output-dir reports/development
+bin/qcs evaluate build/datasets/manifests/validation_set__rf-independent-20261014__manifest.json \
+  --split acceptance --output-dir reports/rf-historical-validation
+```
+
+不同清单的已标注算法范围不同，不能简单拼接所有行或将未标注算法当作阴性。归档去重和用途重分类没有重新计算历史准确率。
+
+### TP、FP、FN、TN 和指标含义
+
+以下指标按已标注范围内的 **“文件—算法”标签** 计数。例如同一文件同时包含 AES 和 SHA-256，会产生两个真实正标签。计数不是函数数、扫描次数或独立作者数；`API 引用` 与 `实现包含` 分别评测，不能混算。未标注的算法不能直接视为不存在。
+
+| 缩写 | 英文名称 | 中文含义 | 在本项目中的判断 |
+| --- | --- | --- | --- |
+| **TP** | True Positive | 真阳性，正确检出 | 真值标注存在该算法，工具也检出了该算法 |
+| **FP** | False Positive | 假阳性，误报 | 真值标注不存在该算法，工具却报告存在 |
+| **FN** | False Negative | 假阴性，漏报 | 真值标注存在该算法，工具没有检出 |
+| **TN** | True Negative | 真阴性，正确排除 | 真值标注不存在该算法，工具也没有报告 |
+
+例如，某文件在已标注的 AES、SHA-256、DES、RC4 范围内，实际包含 **AES 和 SHA-256**，工具报告 **AES 和 DES**：AES 记为 TP，DES 记为 FP，SHA-256 记为 FN，RC4 记为 TN，因此 `TP=1、FP=1、FN=1、TN=1`。同一文件可以同时发生正确检出、误报和漏报。
+
+| 指标 | 公式 | 要回答的问题 |
+| --- | --- | --- |
+| 召回率（Recall） | `TP / (TP + FN)` | 实际存在的算法标签中，检出了多少？ |
+| 漏报率（FNR，False Negative Rate） | `FN / (TP + FN)` | 实际存在的算法标签中，漏掉了多少？等于 `1 − 召回率` |
+| 精确率（Precision） | `TP / (TP + FP)` | 工具报告的算法标签中，有多少是正确的？ |
+| 误报率（FPR，False Positive Rate） | `FP / (FP + TN)` | 实际不存在的算法标签中，有多少被误报？ |
+| 总体准确率（Accuracy） | `(TP + TN) / (TP + FP + FN + TN)` | 所有已标注的正、负标签中，判断正确的比例是多少？ |
+
+误报率 FPR 与“报告中错误的比例”`FP / (TP + FP)` 的分母不同，后者等于 `1 − 精确率`。上述例子的五项指标均为 50%。分母为 0 时指标不适用，不能当作 0% 或 100%；缺少 TN 时也不能仅凭 TP/FP/FN 算出 FPR 或总体准确率。
+
+本项目当前主要关注**召回率、漏报率和 FP 数量**，因为大量阴性标签可能使总体准确率看起来很高，却掩盖实际算法的漏检。“漏报不超过 10%”对应召回率至少 90%，不等于总体准确率至少 90%。
+
+最近已完成的历史指标如下；“正标签”数量为 `TP + FN`，表中未列出 TN：
+
+| 实验口径 | 文件数 / 正标签 | TP / FP / FN | 召回率 | 漏报率 |
+| --- | ---: | ---: | ---: | ---: |
+| 默认规则，合并开发集 | 2,344 / 1,572 | 1,200 / 0 / 372 | 76.34% | 23.66% |
+| 默认规则，合并历史验证集 | 2,855 / 1,455 | 503 / 6 / 952 | 34.57% | 65.43% |
+| RF 实验开发子集，规则与 RF 合并 | 812 / 649 | 536 / 18 / 113 | 82.59% | 17.41% |
+| 新家族 RF 留出集，默认规则 | 252 / 233 | 103 / 3 / 130 | 44.21% | 55.79% |
+| 同一 RF 留出集，规则与 RF 合并 | 252 / 233 | 107 / 7 / 126 | 45.92% | 54.08% |
+
+这些是整理前已有结果，本次没有重跑全部准确率实验。不同集合不能直接比较。未知 RSA、ECDSA、ECDH、SM2 和部分 SM4 实现仍有严重漏报；“漏报不超过 10%”的目标尚未达到。默认决策仍使用规则；RF 合并结果只是评测结果。
+
+量子风险也不能只看算法名字：RSA、ECDSA、ECDH、SM2 的数学基础受 Shor 算法威胁；AES/SM4 和哈希主要涉及 Grover 等带来的安全强度降低，需要结合密钥长度、使用方式和迁移策略判断。识别到 API 或静态实现不等于证明程序在运行时使用它。
+
+## 许可证与来源
+
+工具自身使用根目录的 [Apache-2.0 许可证](LICENSE)。第三方组件、函数指纹参考数据和被扫描的样本各有自己的许可；不能将整个提交目录中的内容都视为 Apache-2.0。
+
+`licenses/` 按用途和上游项目归类；同一项目的不同许可证文本、子目录许可及补充声明分别保留。导航见 [INDEX.txt](licenses/INDEX.txt)，适用范围说明见 [NOTICE.txt](licenses/NOTICE.txt)。
+
+```text
+licenses/
+├── INDEX.txt                 分类、项目、许可摘要、原来源和具体文件索引
+├── NOTICE.txt                适用范围、运行包副本及样本来源说明
+├── project/qcs/              本工具许可证
+├── components/               集成组件或审查参考工具，按项目分目录
+├── reference_data/           函数指纹、静态原语、国密建库参考声明
+└── samples/                  被扫描的样本，按上游项目分目录
+    # 如 mbedtls/、openssl/、libgcrypt/、nettle/、tinycrypt/ 等
+```
+
+`components/` 的索引注明具体使用方式；CryptoScan 只作为配置审查参考，其 Binary Ninja 插件没有嵌入。`reference_data/` 保存编译生成的指纹等数据的上游归属声明，参考库也保留在 `samples/` 中供分析。为保证安装包可独立携带许可，`src/qcs/` 资源旁的原始许可证副本保持原路径和字节。
+
+同项目、同路径且字节相同的重复许可证合并保存，原来源全部记录；不同文本及子目录范围分别保存。例如 HACL* 的项目根许可与 `dist/` 许可、TinyCrypt 的独立项目与 ESP-IDF 副本、Libgcrypt 的不同历史文本都有独立路径。PuTTY 的 `licence.pl` 是许可文本生成脚本，归入 `build/licenses/source_support/`；实际许可 `LICENCE` 保留在 `licenses/samples/putty/`。
+
+许可证摘要只用于导航，具体条款及版权归属以保留的原文、样本文件头和固定版本的上游声明为准。许可证原路径、新路径及 SHA-256 对照见 [`build/licenses/catalog.json`](build/licenses/catalog.json)；样本的原路径、下载来源、提交号和真值范围分别见 [`catalog.json`](build/datasets/catalog.json)、`build/datasets/original_manifests/` 和 `build/datasets/source_metadata/`。当前目录整理保留已有声明；尚缺的源文件或固件内部第三方声明应按来源继续补齐，见 `todo.md`。
+
+## 开发、检查与发布
+
+```bash
+python3 tools/prepare_tests.py
+export PYTHONPYCACHEPREFIX="$PWD/build/cache/pycache"
+export TMPDIR="$PWD/build/tmp"
+mkdir -p "$TMPDIR" build/logs
+PYTHONPATH=src build/venv/bin/python -m unittest discover -s tests -v > build/logs/tests.log 2>&1
+python3 tools/check_submission.py
+python3 tools/check_licenses.py
+build/venv/bin/python -m pip wheel --no-deps --no-build-isolation . --wheel-dir build/dist
+python3 tools/build_release.py
+```
+
+含 ML 的测试需可选 ML 依赖。完整性检查核验样本哈希、清单指向、内部链接与输出位置；许可证检查核验原文哈希、来源映射和保留的运行包副本。测试兼容目录自动生成且链接只指向本提交目录；发布包不携带旧工作区链接。发布脚本包含运行规则库、冻结模型、样本及可运行清单，排除虚拟环境、缓存、临时目录和压缩包本身。
+
+本次整理最终覆盖 **158 项不同回归测试**：全量运行后，补齐遗漏的 14 份历史测试输入和 4 个同内容路径别名，针对受影响的 4 项测试复跑通过；其余 154 项在全量运行中通过。这不是一次从头到尾无失败的单次运行，完整记录见 [`regression.json`](build/checks/regression.json)。10,390 个样本哈希和 7,621 条清单指向已核验；独立 wheel 的 6 项运行检查、Linux 安装脚本、输出边界及 RF 迁移核对均通过。检查汇总见 `build/checks/`，本次没有重跑全量准确率评测。
+
+后续需要重新提取开发特征或训练时，使用 `PYTHONPATH=src build/venv/bin/python -m qcs_ml.dataset`、`-m qcs_ml.audit_dataset`、`-m qcs_ml.learn`，产物写入 `build/ml/development/`，不会覆盖原冻结模型。这些入口仅加载预先列出的开发清单，不加载验证清单；本次整理没有运行重训。约 1.5 GiB 的旧特征 JSONL 没有复制，可从已归档的 812 个开发输入和符号标注配套文件重新生成；旧函数真值及摘要保留在 `build/history/rf-baseline/`。
+
+样本归档保留用于扫描的确切字节与已有配套输入，并不承诺所有上游项目都能从这份精简目录直接重新编译。完整上游构建系统/编译工具链仍在原工作区，后续需根据固定提交补充可复现构建入口。
+
+## 历史过程链接
+
+这些链接指向原工作区；上传本目录后，历史 Markdown 不随包分发。关键指标和不足已在本文件及 `todo.md` 汇总，原始来源清单和选定 JSON 结果随包保留。
+
+- [历史修复与进展索引](../doc/README.md)：完整进展，含已知漏检、固件、国密及 Linux 适配。
+- [最近控制流/静态大数/跨函数改进](../doc/2026-10-14-controlflow-static-primitives.md)：实现范围、开发与验证结果、剩余边界。
+- [随机森林基线](../doc/2026-10-14-random-forest-baseline.md)：特征、家族隔离、模型冻结及漏报/误报。
+- [other_ref 的 Linux 使用复查](../doc/2026-10-14-other-ref-linux-audit.md)：组员资料实际使用方式和平台核验。
+- [历史开发数据盘点](../doc/2026-10-13-development-data-inventory.md)：建库/调参用途与历史计数下限。
+- [本次整理记录](../doc/2026-10-14-submission-organization.md)：最终目录、迁移计数、验证和剩余事项。
+- [评测术语与许可证分类补充](../doc/2026-10-14-metrics-and-license-organization.md)：指标定义、许可证来源整理及发布包刷新核验。

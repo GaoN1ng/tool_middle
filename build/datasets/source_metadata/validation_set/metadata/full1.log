@@ -1,0 +1,405 @@
+FAIL libtomcrypt-aes-x86_64-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-aes-aarch64-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-aes-arm-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-aes-thumb-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-aes-mipsel-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-des-x86_64-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+FAIL libtomcrypt-des-aarch64-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+FAIL libtomcrypt-aes-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-des-arm-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+FAIL libtomcrypt-aes-mips_be-Os Expected actual operation definitions absent/trivial: ['rijndael_setup', 'rijndael_ecb_encrypt']
+FAIL libtomcrypt-des-thumb-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+FAIL libtomcrypt-des-mipsel-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+Prepared 30/1188, success 18, failures 12
+FAIL libtomcrypt-aes-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-des-mips_be-Os Expected actual operation definitions absent/trivial: ['des_setup', 'des_ecb_encrypt']
+FAIL libtomcrypt-des-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-des-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-rc4-x86_64-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-aarch64-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-arm-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-thumb-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-mipsel-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-mips_be-Os Expected actual operation definitions absent/trivial: ['rc4_stream_setup', 'rc4_stream_crypt']
+FAIL libtomcrypt-rc4-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-rc4-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-md5-x86_64-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+FAIL libtomcrypt-md5-aarch64-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+Prepared 60/1188, success 34, failures 26
+FAIL libtomcrypt-md5-arm-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+FAIL libtomcrypt-md5-thumb-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+FAIL libtomcrypt-md5-mipsel-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+FAIL libtomcrypt-md5-mips_be-Os Expected actual operation definitions absent/trivial: ['md5_init', 'md5_process', 'md5_done']
+FAIL libtomcrypt-md5-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-md5-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-sha1-x86_64-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-aarch64-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-arm-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-thumb-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-mipsel-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-mips_be-Os Expected actual operation definitions absent/trivial: ['sha1_init', 'sha1_process', 'sha1_done']
+FAIL libtomcrypt-sha1-mips_be-O0 Compilation/link command failed
+Prepared 90/1188, success 51, failures 39
+FAIL libtomcrypt-sha1-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-sha256-x86_64-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-aarch64-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-arm-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-thumb-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-mipsel-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-mips_be-Os Expected actual operation definitions absent/trivial: ['sha256_init', 'sha256_process', 'sha256_done']
+FAIL libtomcrypt-sha256-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-ecdh-x86_64-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+FAIL libtomcrypt-sha256-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-ecdh-aarch64-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+FAIL libtomcrypt-ecdh-arm-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+FAIL libtomcrypt-ecdh-thumb-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+Prepared 120/1188, success 68, failures 52
+FAIL libtomcrypt-ecdh-mipsel-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+FAIL libtomcrypt-ecdh-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-ecdh-mips_be-Os Expected actual operation definitions absent/trivial: ['ecc_shared_secret']
+FAIL libtomcrypt-ecdh-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-rsa-x86_64-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-aarch64-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-arm-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-thumb-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-mipsel-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-mips_be-Os Expected actual operation definitions absent/trivial: ['rsa_exptmod', 'rsa_sign_hash_ex', 'rsa_verify_hash_ex']
+FAIL libtomcrypt-rsa-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-rsa-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-ecdsa-x86_64-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+FAIL libtomcrypt-ecdsa-aarch64-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+Prepared 150/1188, success 84, failures 66
+FAIL libtomcrypt-ecdsa-arm-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+FAIL libtomcrypt-ecdsa-thumb-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+FAIL libtomcrypt-ecdsa-mipsel-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+FAIL libtomcrypt-ecdsa-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-ecdsa-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-ecdsa-mips_be-Os Expected actual operation definitions absent/trivial: ['ecc_sign_hash', 'ecc_verify_hash']
+FAIL libtomcrypt-chacha-x86_64-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-aarch64-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-arm-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-thumb-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-mipsel-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-mips_be-Os Expected actual operation definitions absent/trivial: ['chacha_setup', 'chacha_crypt']
+FAIL libtomcrypt-chacha-mips_be-O0 Compilation/link command failed
+Prepared 180/1188, success 101, failures 79
+FAIL libtomcrypt-chacha-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-md4-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-md4-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-md4-mips_be-O2 Compilation/link command failed
+Prepared 210/1188, success 127, failures 83
+FAIL libtomcrypt-sha512-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-sha512-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-sha512-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-blake2s-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-blake2s-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-blake2s-mips_be-O0 Compilation/link command failed
+Prepared 240/1188, success 151, failures 89
+FAIL libtomcrypt-blake2b-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-blake2b-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-blake2b-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-sha3-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-sha3-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-sha3-mips_be-O2 Compilation/link command failed
+Prepared 270/1188, success 175, failures 95
+FAIL libtomcrypt-ripemd160-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-ripemd160-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-ripemd160-mips_be-O2 Compilation/link command failed
+Prepared 300/1188, success 202, failures 98
+FAIL libtomcrypt-twofish-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-twofish-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-twofish-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-blowfish-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-blowfish-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-blowfish-mips_be-O2 Compilation/link command failed
+Prepared 330/1188, success 226, failures 104
+FAIL libtomcrypt-camellia-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-camellia-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-camellia-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-rc2-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-rc2-mips_be-Os Compilation/link command failed
+Prepared 360/1188, success 251, failures 109
+FAIL libtomcrypt-rc2-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-xtea-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-xtea-mips_be-Os Compilation/link command failed
+FAIL libtomcrypt-xtea-mips_be-O0 Compilation/link command failed
+Prepared 390/1188, success 277, failures 113
+FAIL libtomcrypt-base64-mips_be-O0 Compilation/link command failed
+FAIL libtomcrypt-base64-mips_be-O2 Compilation/link command failed
+FAIL libtomcrypt-base64-mips_be-Os Compilation/link command failed
+FAIL rhash-md5-mips_be-O0 Compilation/link command failed
+FAIL rhash-md5-mips_be-Os Compilation/link command failed
+FAIL rhash-md5-mips_be-O2 Compilation/link command failed
+Prepared 420/1188, success 301, failures 119
+FAIL rhash-sha1-mips_be-O0 Compilation/link command failed
+FAIL rhash-sha1-mips_be-Os Compilation/link command failed
+FAIL rhash-sha1-mips_be-O2 Compilation/link command failed
+FAIL rhash-sha256-mips_be-O0 Compilation/link command failed
+FAIL rhash-sha256-mips_be-Os Compilation/link command failed
+Prepared 450/1188, success 326, failures 124
+FAIL rhash-sha256-mips_be-O2 Compilation/link command failed
+FAIL rhash-md4-mips_be-Os Compilation/link command failed
+FAIL rhash-md4-mips_be-O0 Compilation/link command failed
+FAIL rhash-md4-mips_be-O2 Compilation/link command failed
+Prepared 480/1188, success 352, failures 128
+FAIL rhash-sha512-mips_be-O0 Compilation/link command failed
+FAIL rhash-sha512-mips_be-O2 Compilation/link command failed
+FAIL rhash-sha512-mips_be-Os Compilation/link command failed
+FAIL rhash-blake2s-mips_be-O2 Compilation/link command failed
+FAIL rhash-blake2s-mips_be-Os Compilation/link command failed
+FAIL rhash-blake2s-mips_be-O0 Compilation/link command failed
+Prepared 510/1188, success 376, failures 134
+FAIL rhash-blake2b-mips_be-O2 Compilation/link command failed
+FAIL rhash-blake2b-mips_be-O0 Compilation/link command failed
+FAIL rhash-blake2b-mips_be-Os Compilation/link command failed
+FAIL rhash-ripemd-160-mips_be-O0 Compilation/link command failed
+FAIL rhash-ripemd-160-mips_be-Os Compilation/link command failed
+FAIL rhash-ripemd-160-mips_be-O2 Compilation/link command failed
+Prepared 540/1188, success 400, failures 140
+FAIL rhash-sha3-mips_be-O0 Compilation/link command failed
+FAIL rhash-sha3-mips_be-Os Compilation/link command failed
+FAIL rhash-sha3-mips_be-O2 Compilation/link command failed
+Prepared 570/1188, success 427, failures 143
+FAIL rhash-crc32-mips_be-O0 Compilation/link command failed
+FAIL rhash-crc32-mips_be-Os Compilation/link command failed
+FAIL rhash-crc32-mips_be-O2 Compilation/link command failed
+FAIL rhash-whirlpool-mips_be-Os Compilation/link command failed
+FAIL rhash-whirlpool-mips_be-O0 Compilation/link command failed
+FAIL rhash-whirlpool-mips_be-O2 Compilation/link command failed
+Prepared 600/1188, success 451, failures 149
+FAIL rhash-tiger-mips_be-O0 Compilation/link command failed
+FAIL rhash-tiger-mips_be-O2 Compilation/link command failed
+FAIL rhash-tiger-mips_be-Os Compilation/link command failed
+FAIL rhash-has160-mips_be-Os Compilation/link command failed
+FAIL rhash-has160-mips_be-O0 Compilation/link command failed
+Prepared 630/1188, success 476, failures 154
+FAIL rhash-has160-mips_be-O2 Compilation/link command failed
+FAIL rhash-gost94-mips_be-O0 Compilation/link command failed
+FAIL rhash-gost94-mips_be-Os Compilation/link command failed
+FAIL rhash-gost94-mips_be-O2 Compilation/link command failed
+FAIL nettle-aes-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+FAIL nettle-aes-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+FAIL nettle-aes-arm-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+Prepared 660/1188, success 499, failures 161
+FAIL nettle-aes-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+FAIL nettle-aes-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+FAIL nettle-aes-mips_be-O0 Compilation/link command failed
+FAIL nettle-aes-mips_be-O2 Compilation/link command failed
+FAIL nettle-aes-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_aes_encrypt', 'nettle_aes_set_encrypt_key']
+FAIL nettle-des-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+FAIL nettle-des-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+FAIL nettle-des-arm-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+FAIL nettle-des-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+FAIL nettle-des-mips_be-O0 Compilation/link command failed
+FAIL nettle-des-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+FAIL nettle-rc4-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-des-mips_be-O2 Compilation/link command failed
+FAIL nettle-rc4-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-des-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_des_encrypt']
+Prepared 690/1188, success 514, failures 176
+FAIL nettle-rc4-arm-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-rc4-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-rc4-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-rc4-mips_be-O0 Compilation/link command failed
+FAIL nettle-rc4-mips_be-O2 Compilation/link command failed
+FAIL nettle-rc4-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_arcfour_set_key', 'nettle_arcfour_crypt']
+FAIL nettle-chacha-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+FAIL nettle-chacha-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+FAIL nettle-chacha-arm-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+FAIL nettle-chacha-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+FAIL nettle-chacha-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+FAIL nettle-chacha-mips_be-O2 Compilation/link command failed
+FAIL nettle-chacha-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_chacha_crypt', 'nettle_chacha_set_key']
+Prepared 720/1188, success 531, failures 189
+FAIL nettle-chacha-mips_be-O0 Compilation/link command failed
+FAIL nettle-md5-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-arm-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_md5_init', 'nettle_md5_compress']
+FAIL nettle-md5-mips_be-O0 Compilation/link command failed
+FAIL nettle-md5-mips_be-O2 Compilation/link command failed
+FAIL nettle-sha1-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+FAIL nettle-sha1-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+FAIL nettle-sha1-arm-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+FAIL nettle-sha1-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+Prepared 750/1188, success 548, failures 202
+FAIL nettle-sha1-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+FAIL nettle-sha1-mips_be-O0 Compilation/link command failed
+FAIL nettle-sha1-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_sha1_init', 'nettle_sha1_compress']
+FAIL nettle-sha1-mips_be-O2 Compilation/link command failed
+FAIL nettle-sha256-x86_64-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-aarch64-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-arm-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-thumb-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-mipsel-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-mips_be-O0 Compilation/link command failed
+FAIL nettle-sha256-mips_be-Os Expected actual operation definitions absent/trivial: ['nettle_sha256_init', '_nettle_sha256_compress_n']
+FAIL nettle-sha256-mips_be-O2 Compilation/link command failed
+Prepared 780/1188, success 566, failures 214
+FAIL nettle-sha512-mips_be-O0 Compilation/link command failed
+FAIL nettle-sha512-mips_be-O2 Compilation/link command failed
+FAIL nettle-sha512-mips_be-Os Compilation/link command failed
+FAIL nettle-md4-mips_be-Os Compilation/link command failed
+FAIL nettle-md4-mips_be-O0 Compilation/link command failed
+Prepared 810/1188, success 591, failures 219
+FAIL nettle-md4-mips_be-O2 Compilation/link command failed
+FAIL nettle-twofish-mips_be-Os Compilation/link command failed
+FAIL nettle-twofish-mips_be-O0 Compilation/link command failed
+FAIL nettle-twofish-mips_be-O2 Compilation/link command failed
+Prepared 840/1188, success 617, failures 223
+FAIL nettle-serpent-mips_be-O0 Compilation/link command failed
+FAIL nettle-serpent-mips_be-O2 Compilation/link command failed
+FAIL nettle-serpent-mips_be-Os Compilation/link command failed
+FAIL nettle-salsa20-mips_be-Os Compilation/link command failed
+FAIL nettle-salsa20-mips_be-O2 Compilation/link command failed
+FAIL nettle-salsa20-mips_be-O0 Compilation/link command failed
+Prepared 870/1188, success 641, failures 229
+FAIL nettle-base64-mips_be-O0 Compilation/link command failed
+FAIL nettle-base64-mips_be-Os Compilation/link command failed
+FAIL nettle-base64-mips_be-O2 Compilation/link command failed
+FAIL nettle-memxor-mips_be-O0 Compilation/link command failed
+FAIL nettle-memxor-mips_be-Os Compilation/link command failed
+FAIL nettle-memxor-mips_be-O2 Compilation/link command failed
+Prepared 900/1188, success 665, failures 235
+FAIL wolfssl-aes-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-aes-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-aes-arm-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-aes-thumb-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-aes-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-aes-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-aes-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_AesSetKey', 'wc_AesEncryptDirect']
+FAIL wolfssl-des-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+FAIL wolfssl-aes-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-des-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+FAIL wolfssl-des-arm-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+FAIL wolfssl-des-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+Prepared 930/1188, success 683, failures 247
+FAIL wolfssl-des-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+FAIL wolfssl-des-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Des_SetKey', 'wc_Des_CbcEncrypt']
+FAIL wolfssl-rc4-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-des-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-des-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-rc4-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-rc4-arm-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-rc4-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-rc4-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-rc4-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-rc4-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Arc4SetKey', 'wc_Arc4Process']
+FAIL wolfssl-rc4-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-chacha-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+FAIL wolfssl-chacha-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+Prepared 960/1188, success 699, failures 261
+FAIL wolfssl-chacha-arm-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+FAIL wolfssl-chacha-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+FAIL wolfssl-chacha-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+FAIL wolfssl-chacha-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Chacha_SetKey', 'wc_Chacha_Process']
+FAIL wolfssl-chacha-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-chacha-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-md5-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-arm-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-thumb-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_InitMd5', 'wc_Md5Update', 'wc_Md5Final']
+FAIL wolfssl-md5-mips_be-O0 Compilation/link command failed
+Prepared 990/1188, success 716, failures 274
+FAIL wolfssl-md5-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-sha1-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-arm-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-thumb-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_InitSha', 'wc_ShaUpdate', 'wc_ShaFinal']
+FAIL wolfssl-sha1-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-sha1-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-sha256-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+FAIL wolfssl-sha256-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+FAIL wolfssl-sha256-arm-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+FAIL wolfssl-sha256-thumb-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+Prepared 1020/1188, success 733, failures 287
+FAIL wolfssl-sha256-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+FAIL wolfssl-sha256-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_InitSha256', 'wc_Sha256Update', 'wc_Sha256Final']
+FAIL wolfssl-sha256-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-sha256-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-rsa-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-arm-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-thumb-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-rsa-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_RsaPublicEncrypt', 'wc_RsaPrivateDecrypt']
+FAIL wolfssl-rsa-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-ecc-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+FAIL wolfssl-ecc-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+Prepared 1050/1188, success 749, failures 301
+FAIL wolfssl-ecc-arm-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+FAIL wolfssl-ecc-thumb-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+FAIL wolfssl-ecc-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+FAIL wolfssl-ecc-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-ecc-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-ecc-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_ecc_shared_secret', 'wc_ecc_sign_hash', 'wc_ecc_verify_hash']
+FAIL wolfssl-sha512-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-arm-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Sha512Update']
+FAIL wolfssl-sha512-mips_be-O0 Compilation/link command failed
+Prepared 1080/1188, success 766, failures 314
+FAIL wolfssl-sha512-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-sha3-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-arm-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-thumb-O2 Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-sha3-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-poly1305-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+FAIL wolfssl-poly1305-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+FAIL wolfssl-sha3-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Sha3_256_Update']
+FAIL wolfssl-sha3-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-poly1305-arm-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+FAIL wolfssl-poly1305-thumb-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+Prepared 1110/1188, success 782, failures 328
+FAIL wolfssl-poly1305-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+FAIL wolfssl-poly1305-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_Poly1305Update']
+FAIL wolfssl-poly1305-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-poly1305-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-camellia-x86_64-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-aarch64-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-arm-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-thumb-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-mipsel-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-camellia-mips_be-Os Expected actual operation definitions absent/trivial: ['wc_CamelliaEncryptDirect']
+FAIL wolfssl-camellia-mips_be-O2 Compilation/link command failed
+FAIL wolfssl-blake2b-x86_64-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+FAIL wolfssl-blake2b-aarch64-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+Prepared 1140/1188, success 798, failures 342
+FAIL wolfssl-blake2b-arm-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+FAIL wolfssl-blake2b-thumb-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+FAIL wolfssl-blake2b-mipsel-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+FAIL wolfssl-blake2b-mips_be-O0 Compilation/link command failed
+FAIL wolfssl-blake2b-mips_be-Os Expected actual operation definitions absent/trivial: ['blake2b_update']
+FAIL wolfssl-blake2b-mips_be-O2 Compilation/link command failed
+FAIL monocypher-main-x86_64-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-main-aarch64-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-main-arm-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-main-thumb-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-main-mipsel-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-main-mips_be-O0 Compilation/link command failed
+FAIL monocypher-optional-ed25519-x86_64-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+Prepared 1170/1188, success 815, failures 355
+FAIL monocypher-main-mips_be-Os Expected actual operation definitions absent/trivial: ['crypto_chacha20_ietf', 'crypto_x25519']
+FAIL monocypher-optional-ed25519-aarch64-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+FAIL monocypher-optional-ed25519-arm-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+FAIL monocypher-optional-ed25519-thumb-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+FAIL monocypher-optional-ed25519-mips_be-O0 Compilation/link command failed
+FAIL monocypher-optional-ed25519-mipsel-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+FAIL monocypher-optional-ed25519-mips_be-Os Expected actual operation definitions absent/trivial: ['crypto_sha512']
+FAIL monocypher-main-mips_be-O2 Compilation/link command failed
+FAIL monocypher-optional-ed25519-mips_be-O2 Compilation/link command failed
+Prepared 1188/1188, success 824, failures 364
+{"timestamp": "2026-10-12T07:49:28.358132+00:00", "attempt": "full1", "planned": 1188, "completed": 824, "failed": 364, "unique_samples": 913}

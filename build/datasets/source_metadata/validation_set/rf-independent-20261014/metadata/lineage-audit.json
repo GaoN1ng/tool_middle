@@ -1,0 +1,144 @@
+{
+  "old_source_files_checked": 677,
+  "checks": [
+    {
+      "path": "sources/kokke--tiny-AES-c/aes.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 7
+    },
+    {
+      "path": "sources/amosnier--sha-2/sha-256.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 4
+    },
+    {
+      "path": "sources/dhuertas--DES/des.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 2
+    },
+    {
+      "path": "sources/marcizhu--ChaCha20/ChaCha20.h",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 3
+    },
+    {
+      "path": "sources/maandree--libsha1/init.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 0
+    },
+    {
+      "path": "sources/maandree--libsha1/process.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 5
+    },
+    {
+      "path": "sources/maandree--libsha1/update.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 1
+    },
+    {
+      "path": "sources/maandree--libsha1/digest.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 1
+    },
+    {
+      "path": "sources/maandree--libsha1/behex_lower.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 1
+    },
+    {
+      "path": "sources/maandree--libsha1/behex_upper.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 1
+    },
+    {
+      "path": "sources/maandree--libsha1/unhex.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 1
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 8
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 8
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 20
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 6
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 16
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 28
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 7
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 11
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 11
+    },
+    {
+      "path": "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 7
+    },
+    {
+      "path": "sources/rurban--smhasher/MurmurHash3.cpp",
+      "raw_matches": [],
+      "large_body_matches": {},
+      "large_functions": 3
+    }
+  ],
+  "explicit_ancestry_exclusions": [
+    {
+      "project": "kmackay/micro-ecc",
+      "basis": "Already referenced in tools/build_function_signatures.py and historical micro-ecc/TinyCrypt/Contiki samples; cannot be fresh holdout."
+    }
+  ],
+  "limitations": "Token-body and hash audit plus header/provenance review; not proof of all ancestry independence. RustCrypto repositories grouped as one community, HACL implementations grouped as one project."
+}

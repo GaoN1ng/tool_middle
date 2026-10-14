@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-12T10:09:14.382550+00:00",
+  "scope": [
+    "SM2",
+    "SM3",
+    "SM4"
+  ],
+  "development": "Existing GmSSL-only 108 reference combinations and 24 environment portability regressions; no new held-out source used for development this round.",
+  "split": "Freeze before fetching held-out sources. New implementation families; no former Guomi samples or old validation libraries reused. Shared upstream ancestry disclosed separately.",
+  "target": "At least 5 new upstream projects, at least 30 operation/helper modules, at least 500 distinct source/stripped ELF objects; report actual counts and correlated build variants.",
+  "selection": "SM2 signature/encryption where offered, SM3 hashing, SM4 key schedule/block cipher; predeclared generic arithmetic, AES, SHA, GOST, encoding/control negatives when available. No prediction-based inclusion/exclusion.",
+  "build": "Six ELF architectures x O0/O2/Os, Zig/Clang 18.1.6; source bytes unchanged, config headers separate; hidden/localized/stripped definitions; retained expected operation bodies; unresolved auxiliaries allowed; no execution.",
+  "ground_truth": "Human review of operation bodies before scanning; API-only references and generic elliptic curve arithmetic are not implementations. Source labels per file, binary labels per linked module. API references not scored.",
+  "failures": "All attempts and compile failures retained, report build coverage separately; every locked object scanned; partial/failed scans remain in denominator.",
+  "metrics": "TP FP FN TN, precision recall F1, exact label-set match; by algorithm/project/architecture/optimization and source/binary. Do not headline true-negative-dominated accuracy.",
+  "no_tuning": "No detector code/rules/reference/threshold updates from freeze through results. Only benchmark download/build/label preparation before first scan. No corpus relabel/rebuild/reselection after lock.",
+  "immutability": "Preserve old validation and other_ref; hash scanner/deps/corpus before and after; audit exact byte overlap with prior sources/references/old validation. Exact nonidentity does not prove genealogical independence."
+}

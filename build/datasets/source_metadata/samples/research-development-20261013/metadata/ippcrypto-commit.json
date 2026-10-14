@@ -1,0 +1,93 @@
+{
+  "sha": "aabec7cbba913833bb4a213e08f2447e25008d42",
+  "node_id": "C_kwDOCFjBKdoAKGFhYmVjN2NiYmE5MTM4MzNiYjRhMjEzZTA4ZjI0NDdlMjUwMDhkNDI",
+  "commit": {
+    "author": {
+      "name": "Pavel Dyakov",
+      "email": "pavel.dyakov@intel.com",
+      "date": "2026-10-05T17:25:42Z"
+    },
+    "committer": {
+      "name": "ipl_ci",
+      "email": "ipl_ci@intel.com",
+      "date": "2026-10-05T17:25:42Z"
+    },
+    "message": "[SB][Doc|Example] Adding missed masks",
+    "tree": {
+      "sha": "89b12b455dfca873fa78f900ac710d0807f23d0e",
+      "url": "https://api.github.com/repos/intel/cryptography-primitives/git/trees/89b12b455dfca873fa78f900ac710d0807f23d0e"
+    },
+    "url": "https://api.github.com/repos/intel/cryptography-primitives/git/commits/aabec7cbba913833bb4a213e08f2447e25008d42",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/intel/cryptography-primitives/commits/aabec7cbba913833bb4a213e08f2447e25008d42",
+  "html_url": "https://github.com/intel/cryptography-primitives/commit/aabec7cbba913833bb4a213e08f2447e25008d42",
+  "comments_url": "https://api.github.com/repos/intel/cryptography-primitives/commits/aabec7cbba913833bb4a213e08f2447e25008d42/comments",
+  "author": {
+    "login": "paveldyakov",
+    "id": 70019067,
+    "node_id": "MDQ6VXNlcjcwMDE5MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70019067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paveldyakov",
+    "html_url": "https://github.com/paveldyakov",
+    "followers_url": "https://api.github.com/users/paveldyakov/followers",
+    "following_url": "https://api.github.com/users/paveldyakov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paveldyakov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paveldyakov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paveldyakov/subscriptions",
+    "organizations_url": "https://api.github.com/users/paveldyakov/orgs",
+    "repos_url": "https://api.github.com/users/paveldyakov/repos",
+    "events_url": "https://api.github.com/users/paveldyakov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paveldyakov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "aa729d25edddd9d93c64de3a76b45093a4583caf",
+      "url": "https://api.github.com/repos/intel/cryptography-primitives/commits/aa729d25edddd9d93c64de3a76b45093a4583caf",
+      "html_url": "https://github.com/intel/cryptography-primitives/commit/aa729d25edddd9d93c64de3a76b45093a4583caf"
+    }
+  ],
+  "stats": {
+    "total": 114,
+    "additions": 114,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "acbb2551f7db2044d98e2623f6d4c005800aad10",
+      "filename": "doc/source/service_functions/getcpufeatures.rst",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/intel/cryptography-primitives/blob/aabec7cbba913833bb4a213e08f2447e25008d42/doc%2Fsource%2Fservice_functions%2Fgetcpufeatures.rst",
+      "raw_url": "https://github.com/intel/cryptography-primitives/raw/aabec7cbba913833bb4a213e08f2447e25008d42/doc%2Fsource%2Fservice_functions%2Fgetcpufeatures.rst",
+      "contents_url": "https://api.github.com/repos/intel/cryptography-primitives/contents/doc%2Fsource%2Fservice_functions%2Fgetcpufeatures.rst?ref=aabec7cbba913833bb4a213e08f2447e25008d42",
+      "patch": "@@ -209,6 +209,22 @@ mask.\n      - ippCPUID_AVX2VCLMUL\n      - Intel\u00ae instruction VPCLMULQDQ\n      - 39\n+   * - 0x10000000000\n+     - ippCPUID_AVX2SM3\n+     - Intel\u00ae AVX 256 Bit SM3 instructions\n+     - 40\n+   * - 0x20000000000\n+     - ippCPUID_AVX2SM4\n+     - Intel\u00ae AVX 256 Bit SM4 instructions\n+     - 41\n+   * - 0x40000000000\n+     - ippCPUID_AVX2SHA512\n+     - Intel\u00ae AVX 256 Bit SHA512 instructions\n+     - 42\n+   * - 0x80000000000\n+     - ippCPUID_AVX10_2\n+     - Intel\u00ae Advanced Vector Extensions 10.2 (Intel\u00ae AVX10.2) instruction set is supported\n+     - 43\n    * - 0x8000000000000000\n      - ippCPUID_NOCHECK\n      - Force ippSetCpuFeatures to set CPU features without check"
+    },
+    {
+      "sha": "16c2c6936aa1c17e823e51b6aea6e3c81317e832",
+      "filename": "examples/common/library_get_started.cpp",
+      "status": "modified",
+      "additions": 98,
+      "deletions": 0,
+      "changes": 98,
+      "blob_url": "https://github.com/intel/cryptography-primitives/blob/aabec7cbba913833bb4a213e08f2447e25008d42/examples%2Fcommon%2Flibrary_get_started.cpp",
+      "raw_url": "https://github.com/intel/cryptography-primitives/raw/aabec7cbba913833bb4a213e08f2447e25008d42/examples%2Fcommon%2Flibrary_get_started.cpp",
+      "contents_url": "https://api.github.com/repos/intel/cryptography-primitives/contents/examples%2Fcommon%2Flibrary_get_started.cpp?ref=aabec7cbba913833bb4a213e08f2447e25008d42",
+      "patch": "@@ -121,6 +121,74 @@ int main(int argc, char* argv[])\n                (mask & ippCPUID_AVX512ER) ? 'Y' : 'N',\n                (emask & ippCPUID_AVX512ER) ? 'Y' : 'N');\n         printf(\"Intel(R) Advanced Vector Extensions ER instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512PF   = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512PF) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512PF) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions PF instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512BW   = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512BW) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512BW) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions BW instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512DQ   = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512DQ) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512DQ) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions DQ instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512VL   = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512VL) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512VL) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions VL instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512VBMI = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512VBMI) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512VBMI) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 Bit Manipulation instructions\\n\");\n+        printf(\"  ippCPUID_AVX512VBMI2 = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512VBMI2) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512VBMI2) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 Bit Manipulation instructions 2\\n\");\n+        printf(\"  ippCPUID_AVX512IFMA = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512IFMA) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512IFMA) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 IFMA (PMADD52) instruction set\\n\");\n+        printf(\"  ippCPUID_AVX512GFNI = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512GFNI) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512GFNI) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 Galois Field New Instructions\\n\");\n+        printf(\"  ippCPUID_AVX512VAES = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512VAES) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512VAES) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 Vector AES instructions\\n\");\n+        printf(\"  ippCPUID_AVX512VCLMUL = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512VCLMUL) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512VCLMUL) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 Vector PCLMULQDQ instruction\\n\");\n+        printf(\"  ippCPUID_AVX512_4FMADDPS = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512_4FMADDPS) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512_4FMADDPS) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 DL floating-point single precision\\n\");\n+        printf(\"  ippCPUID_AVX512_4VNNIW = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX512_4VNNIW) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX512_4VNNIW) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 512 DL enhanced word variable precision\\n\");\n+        printf(\"  ippAVX512_ENABLEDBYOS = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippAVX512_ENABLEDBYOS) ? 'Y' : 'N',\n+               (emask & ippAVX512_ENABLEDBYOS) ? 'Y' : 'N');\n+        printf(\"The operating system supports Intel(R) AVX-512\\n\");\n+        printf(\"  ippCPUID_MPX        = \");\n+        printf(\"%c\\t%c\\t\", (mask & ippCPUID_MPX) ? 'Y' : 'N', (emask & ippCPUID_MPX) ? 'Y' : 'N');\n+        printf(\"Intel(R) Memory Protection Extensions (Intel(R) MPX)\\n\");\n         printf(\"  ippCPUID_ADCOX      = \");\n         printf(\"%c\\t%c\\t\",\n                (mask & ippCPUID_ADCOX) ? 'Y' : 'N',\n@@ -139,6 +207,36 @@ int main(int argc, char* argv[])\n         printf(\"  ippCPUID_KNC        = \");\n         printf(\"%c\\t%c\\t\", (mask & ippCPUID_KNC) ? 'Y' : 'N', (emask & ippCPUID_KNC) ? 'Y' : 'N');\n         printf(\"Intel(R) Xeon Phi\u2122 coprocessor instruction set\\n\");\n+        printf(\"  ippCPUID_AVX2VAES   = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX2VAES) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX2VAES) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 256 Vector AES instructions\\n\");\n+        printf(\"  ippCPUID_AVX2VCLMUL = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX2VCLMUL) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX2VCLMUL) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 256 Vector PCLMULQDQ instruction\\n\");\n+        printf(\"  ippCPUID_AVX2SM3    = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX2SM3) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX2SM3) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 256 Vector SM3 instructions\\n\");\n+        printf(\"  ippCPUID_AVX2SM4    = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX2SM4) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX2SM4) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 256 Vector SM4 instructions\\n\");\n+        printf(\"  ippCPUID_AVX2SHA512 = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX2SHA512) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX2SHA512) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 256 Vector SHA512 instructions\\n\");\n+        printf(\"  ippCPUID_AVX10_2    = \");\n+        printf(\"%c\\t%c\\t\",\n+               (mask & ippCPUID_AVX10_2) ? 'Y' : 'N',\n+               (emask & ippCPUID_AVX10_2) ? 'Y' : 'N');\n+        printf(\"Intel(R) Advanced Vector Extensions 10.2 (Intel(R) AVX10.2) instruction set\\n\");\n     }\n \n     PRINT_EXAMPLE_STATUS("
+    }
+  ]
+}

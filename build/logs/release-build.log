@@ -1,0 +1,18 @@
+{
+  "archive": "ustc_tool_middle.tar.gz",
+  "sha256": "4a3e6dfd73008038e50d52b688d70c584236a7da8c63948d316d6d827bfcb54f",
+  "bytes": 933618740,
+  "file_count": 10942,
+  "excluded_generated_directories": [
+    "bdist.linux-x86_64",
+    "cache",
+    "dist",
+    "isolated-install",
+    "lib",
+    "testing",
+    "tmp",
+    "venv",
+    "venv-ml"
+  ],
+  "test_workspace": "Regenerate with tools/prepare_tests.py; all inputs included"
+}

@@ -1,0 +1,19 @@
+GmSSL function-reference derivative notice
+
+Copyright 2014-2024 The GmSSL Project. All Rights Reserved.
+Licensed under the Apache License, Version 2.0.
+http://www.apache.org/licenses/LICENSE-2.0
+Original license: gmssl-LICENSE in this directory.
+
+function_signatures.json contains selected compiler-emitted function bytes
+and relocation/data constraints derived from https://github.com/guanzhi/GmSSL
+commit 24ae482701a7b124826c382fffc55c19f76d475d:
+src/sm3.c, src/sm4.c, src/sm2_sign.c, src/sm2_enc.c.
+
+QCS compiles original operation modules, selects reviewed functions, masks
+relocation bits and records selected actual referenced data constraints.
+The 2026-10-12 reference-policy repair excludes audited diagnostic operands
+and records relocation-backed x86_64 GOTPCRELX MOV/LEA linker alternatives.
+source_references.json records module hashes and reviewed definition positions.
+No target execution or original-source cryptographic modification is implied.
+This derivative data does not replace the original GmSSL project or authorship.

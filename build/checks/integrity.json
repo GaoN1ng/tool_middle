@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "verified_unique_sample_files": 10390,
+  "verified_manifest_cases": 7621,
+  "counts": {
+    "test_set/code_samples": 1132,
+    "test_set/elf_samples": 5466,
+    "val_set/code_samples": 854,
+    "val_set/elf_samples": 2907,
+    "test_set/firmware_samples": 17,
+    "test_set/exe_samples": 14
+  },
+  "issues": []
+}

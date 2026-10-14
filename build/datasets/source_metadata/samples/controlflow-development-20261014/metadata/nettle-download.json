@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/gnutls/nettle",
+  "commit": "685a08f127cb0017385a0fe34ce07e6da7bb45a1",
+  "split": "development",
+  "archive_sha256": "d5b8225e82ca1a5a6c3b0e28a3b1fef0bc05b96bcfa25e4f0a31ccfa50686b18",
+  "policy": "Assigned development before any scan; no algorithm source changes"
+}

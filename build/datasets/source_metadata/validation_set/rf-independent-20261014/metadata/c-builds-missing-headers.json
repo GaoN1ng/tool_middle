@@ -1,0 +1,3922 @@
+[
+  {
+    "id": "tiny-aes-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "tiny-aes-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/kokke--tiny-AES-c/aes.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/tiny-aes-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/kokke--tiny-AES-c/aes.c": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha256-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/amosnier--sha-2/sha-256.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha256-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/amosnier--sha-2/sha-256.c": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "des-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/dhuertas--DES/des.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/des-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/dhuertas--DES/des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "chacha-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-DCHACHA20_IMPLEMENTATION",
+      "-x",
+      "c",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/marcizhu--ChaCha20/ChaCha20.h",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/chacha-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/marcizhu--ChaCha20/ChaCha20.h": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "sha1-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/init.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/process.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/update.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/digest.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/sha1-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/init.c": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "sources/maandree--libsha1/process.c": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "sources/maandree--libsha1/update.c": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "sources/maandree--libsha1/digest.c": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-aarch64-O2/inspection.so"
+    ],
+    "exit_code": -11,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hex-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_lower.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/behex_upper.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/maandree--libsha1/unhex.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hex-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/maandree--libsha1/behex_lower.c": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "sources/maandree--libsha1/behex_upper.c": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "sources/maandree--libsha1/unhex.c": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-md5-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-md5-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_MD5.c": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha1-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha1-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA1.c": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-sha2-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-sha2-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-chacha-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-chacha-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Chacha20.c": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-rsa-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-rsa-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_RSAPSS.c": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-p256-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-p256-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_P256.c": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Hash_SHA2.c": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-curve25519-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-curve25519-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Curve25519_51.c": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum32-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum32-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum32.c": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-bignum64-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-bignum64-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_Bignum64.c": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "hacl-poly1305-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/include",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/karamel/krmllib/dist/minimal",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/hacl-poly1305-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 1,
+    "source_hashes": {
+      "sources/hacl-star--hacl-star/dist/gcc-compatible/Hacl_MAC_Poly1305.c": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395"
+    },
+    "status": "failed"
+  },
+  {
+    "id": "murmur3-x86_64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "x86_64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-x86_64-O0/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-x86_64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "x86_64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-x86_64-O1/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-x86_64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "x86_64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-x86_64-O2/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-x86_64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "x86_64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-x86_64-Os/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-aarch64-O0",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "aarch64-linux-musl",
+      "-O0",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-aarch64-O0/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-aarch64-O1",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "aarch64-linux-musl",
+      "-O1",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-aarch64-O1/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-aarch64-O2",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "aarch64-linux-musl",
+      "-O2",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-aarch64-O2/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  },
+  {
+    "id": "murmur3-aarch64-Os",
+    "command": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "c++",
+      "-target",
+      "aarch64-linux-musl",
+      "-Os",
+      "-nostdlib",
+      "-shared",
+      "-fPIC",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-funwind-tables",
+      "-Wl,--no-gc-sections",
+      "-std=c++11",
+      "-I/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/sources/rurban--smhasher/MurmurHash3.cpp",
+      "-o",
+      "/var/home/gzn/ourtask/validation_set/rf-independent-20261014/builds/murmur3-aarch64-Os/inspection.so"
+    ],
+    "exit_code": 0,
+    "source_hashes": {
+      "sources/rurban--smhasher/MurmurHash3.cpp": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c"
+    },
+    "status": "built"
+  }
+]

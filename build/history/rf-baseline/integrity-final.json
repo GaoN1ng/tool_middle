@@ -1,0 +1,22 @@
+{
+  "validation_set": {
+    "original_files": 31870,
+    "changes": []
+  },
+  "other_ref": {
+    "original_files": 153,
+    "changes": [],
+    "unexpected_files": []
+  },
+  "quantum-crypto-scanner/artifacts/semantic-followup-20261013/frozen": {
+    "original_files": 94,
+    "changes": []
+  },
+  "qcs_checkout_unchanged": true,
+  "qcs_frozen_unchanged": true,
+  "rf_frozen_changes": [],
+  "holdout_changes": [],
+  "timestamp": "2026-10-14T16:53:58.139481+08:00",
+  "passed": true,
+  "problems": []
+}

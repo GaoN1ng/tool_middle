@@ -1,0 +1,128 @@
+Prepared 30/741, success 30, failures 0
+Prepared 60/741, success 60, failures 0
+Prepared 90/741, success 90, failures 0
+Prepared 120/741, success 120, failures 0
+Prepared 150/741, success 150, failures 0
+Prepared 180/741, success 180, failures 0
+Prepared 210/741, success 210, failures 0
+Prepared 240/741, success 240, failures 0
+Prepared 270/741, success 270, failures 0
+Prepared 300/741, success 300, failures 0
+Prepared 330/741, success 330, failures 0
+Prepared 360/741, success 360, failures 0
+Prepared 390/741, success 390, failures 0
+Prepared 420/741, success 420, failures 0
+FAIL cryptopp-sm3-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-sm3-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-sm3-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-sm3-mipsel-Os Compilation/link command failed
+FAIL cryptopp-sm3-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-sm3-mips_be-Os Compilation/link command failed
+FAIL cryptopp-sm4-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-sm4-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-sm4-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-sm4-mipsel-Os Compilation/link command failed
+FAIL cryptopp-sm4-mips_be-Os Compilation/link command failed
+Prepared 450/741, success 439, failures 11
+FAIL cryptopp-sm4-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-aes-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-aes-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-aes-mipsel-Os Compilation/link command failed
+FAIL cryptopp-aes-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-aes-mips_be-Os Compilation/link command failed
+FAIL cryptopp-aes-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-sha-mipsel-Os Compilation/link command failed
+Prepared 480/741, success 461, failures 19
+FAIL cryptopp-sha-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-sha-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-sha-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-sha-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-sha-mips_be-Os Compilation/link command failed
+FAIL cryptopp-ec-generic-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-ec-generic-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-ec-generic-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-ec-generic-mipsel-Os Compilation/link command failed
+FAIL cryptopp-ec-generic-mips_be-Os Compilation/link command failed
+FAIL cryptopp-ec-generic-mips_be-O2 Compilation/link command failed
+Prepared 510/741, success 480, failures 30
+FAIL cryptopp-gost-mipsel-Os Compilation/link command failed
+FAIL cryptopp-gost-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-gost-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-gost-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-gost-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-gost-mips_be-Os Compilation/link command failed
+FAIL cryptopp-base64-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-base64-mipsel-Os Compilation/link command failed
+FAIL cryptopp-base64-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-base64-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-base64-mips_be-O2 Compilation/link command failed
+Prepared 540/741, success 499, failures 41
+FAIL cryptopp-base64-mips_be-Os Compilation/link command failed
+FAIL cryptopp-chacha-mipsel-O0 Compilation/link command failed
+FAIL cryptopp-chacha-mipsel-Os Compilation/link command failed
+FAIL cryptopp-chacha-mipsel-O2 Compilation/link command failed
+FAIL cryptopp-chacha-mips_be-O0 Compilation/link command failed
+FAIL cryptopp-chacha-mips_be-O2 Compilation/link command failed
+FAIL cryptopp-chacha-mips_be-Os Compilation/link command failed
+FAIL botan-sm2-sign-mipsel-O0 Compilation/link command failed
+Prepared 570/741, success 521, failures 49
+FAIL botan-sm2-sign-mips_be-O0 Compilation/link command failed
+FAIL botan-sm2-sign-mipsel-Os Compilation/link command failed
+FAIL botan-sm2-sign-mipsel-O2 Compilation/link command failed
+FAIL botan-sm2-sign-mips_be-O2 Compilation/link command failed
+FAIL botan-sm2-sign-mips_be-Os Compilation/link command failed
+FAIL botan-sm2-encrypt-mipsel-O0 Compilation/link command failed
+FAIL botan-sm2-encrypt-mipsel-O2 Compilation/link command failed
+FAIL botan-sm2-encrypt-mipsel-Os Compilation/link command failed
+FAIL botan-sm2-encrypt-mips_be-O2 Compilation/link command failed
+FAIL botan-sm2-encrypt-mips_be-Os Compilation/link command failed
+FAIL botan-sm2-encrypt-mips_be-O0 Compilation/link command failed
+Prepared 600/741, success 540, failures 60
+FAIL botan-sm3-mipsel-O0 Compilation/link command failed
+FAIL botan-sm3-mipsel-O2 Compilation/link command failed
+FAIL botan-sm3-mipsel-Os Compilation/link command failed
+FAIL botan-sm3-mips_be-O0 Compilation/link command failed
+FAIL botan-sm3-mips_be-Os Compilation/link command failed
+FAIL botan-sm3-mips_be-O2 Compilation/link command failed
+FAIL botan-sm4-mipsel-O0 Compilation/link command failed
+FAIL botan-sm4-mipsel-O2 Compilation/link command failed
+FAIL botan-sm4-mipsel-Os Compilation/link command failed
+FAIL botan-sm4-mips_be-O0 Compilation/link command failed
+FAIL botan-sm4-mips_be-O2 Compilation/link command failed
+Prepared 630/741, success 559, failures 71
+FAIL botan-sm4-mips_be-Os Compilation/link command failed
+FAIL botan-aes-mipsel-O0 Compilation/link command failed
+FAIL botan-aes-mips_be-O0 Compilation/link command failed
+FAIL botan-aes-mipsel-Os Compilation/link command failed
+FAIL botan-aes-mipsel-O2 Compilation/link command failed
+FAIL botan-aes-mips_be-O2 Compilation/link command failed
+FAIL botan-aes-mips_be-Os Compilation/link command failed
+Prepared 660/741, success 582, failures 78
+FAIL botan-sha256-mipsel-O0 Compilation/link command failed
+FAIL botan-sha256-mips_be-O0 Compilation/link command failed
+FAIL botan-sha256-mipsel-Os Compilation/link command failed
+FAIL botan-sha256-mipsel-O2 Compilation/link command failed
+FAIL botan-sha256-mips_be-O2 Compilation/link command failed
+FAIL botan-sha256-mips_be-Os Compilation/link command failed
+FAIL botan-ecdsa-mipsel-O0 Compilation/link command failed
+FAIL botan-ecdsa-mipsel-O2 Compilation/link command failed
+FAIL botan-ecdsa-mipsel-Os Compilation/link command failed
+FAIL botan-ecdsa-mips_be-O0 Compilation/link command failed
+FAIL botan-ecdsa-mips_be-O2 Compilation/link command failed
+FAIL botan-ecdsa-mips_be-Os Compilation/link command failed
+Prepared 690/741, success 600, failures 90
+FAIL botan-ecdh-mipsel-O0 Compilation/link command failed
+FAIL botan-ecdh-mipsel-O2 Compilation/link command failed
+FAIL botan-ecdh-mipsel-Os Compilation/link command failed
+FAIL botan-ecdh-mips_be-O0 Compilation/link command failed
+FAIL botan-ecdh-mips_be-O2 Compilation/link command failed
+FAIL botan-ecdh-mips_be-Os Compilation/link command failed
+FAIL botan-base64-mipsel-O0 Compilation/link command failed
+FAIL botan-base64-mipsel-O2 Compilation/link command failed
+Prepared 720/741, success 622, failures 98
+FAIL botan-base64-mips_be-O0 Compilation/link command failed
+FAIL botan-base64-mips_be-O2 Compilation/link command failed
+FAIL botan-base64-mipsel-Os Compilation/link command failed
+FAIL botan-base64-mips_be-Os Compilation/link command failed
+Prepared 741/741, success 639, failures 102
+{"timestamp": "2026-10-12T10:21:35.483061+00:00", "attempt": "matrix", "planned": 741, "completed": 639, "failed": 102, "unique_samples": 689}

@@ -1,0 +1,891 @@
+[
+  {
+    "path": "dataset\\source\\sm2.c",
+    "kind": "source",
+    "family": "sm2",
+    "expected": [
+      "SM2"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "cc84a7e38ee34302924945f7045fa5370f78cb0938a95ddf40762cb640523df7"
+  },
+  {
+    "path": "dataset\\elf\\sm2_O0.elf",
+    "kind": "elf",
+    "family": "sm2",
+    "expected": [
+      "SM2"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "d3a9e4f758579cdf02949fd5df1530b5cec8b93e4aa8027b59840067fbba6824"
+  },
+  {
+    "path": "dataset\\elf\\sm2_O0_stripped.elf",
+    "kind": "elf",
+    "family": "sm2",
+    "expected": [
+      "SM2"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "3a524cd5fc08e682b17665746285129b3a6cbaef0d38400eff3a25983c9b26da"
+  },
+  {
+    "path": "dataset\\elf\\sm2_O2.elf",
+    "kind": "elf",
+    "family": "sm2",
+    "expected": [
+      "SM2"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "5ecec2fcc17f11522a1a0e8f71bac1941bf98273e259e9170523ac9db0d76121"
+  },
+  {
+    "path": "dataset\\elf\\sm2_O2_stripped.elf",
+    "kind": "elf",
+    "family": "sm2",
+    "expected": [
+      "SM2"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "fe046536fc2444d57584f3074cb2e253e07a97d73c87732bac92114ca6435bea"
+  },
+  {
+    "path": "dataset\\source\\sm3.c",
+    "kind": "source",
+    "family": "sm3",
+    "expected": [
+      "SM3"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "ac3356a39063090c846098adf2103ebbe57239a505781d21cb820afa52bb1a5e"
+  },
+  {
+    "path": "dataset\\elf\\sm3_O0.elf",
+    "kind": "elf",
+    "family": "sm3",
+    "expected": [
+      "SM3"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "f220545e9c2e5a8d92a5d412920a336011bef53646299c8a84272388aa60750b"
+  },
+  {
+    "path": "dataset\\elf\\sm3_O0_stripped.elf",
+    "kind": "elf",
+    "family": "sm3",
+    "expected": [
+      "SM3"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "42f3648948a59a6f96c1737b602a72abb618fa3a97fd9cd39906746a946c0e74"
+  },
+  {
+    "path": "dataset\\elf\\sm3_O2.elf",
+    "kind": "elf",
+    "family": "sm3",
+    "expected": [
+      "SM3"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "875c8b99bca68ea2074e2a5af43a15afb4ab0b340319458b77eeff520b28426b"
+  },
+  {
+    "path": "dataset\\elf\\sm3_O2_stripped.elf",
+    "kind": "elf",
+    "family": "sm3",
+    "expected": [
+      "SM3"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "e8adc763f5ce48cf27d4daea0bad9ca02acb32887c9efb459c0ccd736197ec3a"
+  },
+  {
+    "path": "dataset\\source\\sm4.c",
+    "kind": "source",
+    "family": "sm4",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "456f092a6cf909447296082468ef5c3de83650c0b3dc9a2d0904182cf9d6e492"
+  },
+  {
+    "path": "dataset\\elf\\sm4_O0.elf",
+    "kind": "elf",
+    "family": "sm4",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "d45be1eef34a88fe758360379c861d77cb8137b6cde256c94d3c6f43da8cab38"
+  },
+  {
+    "path": "dataset\\elf\\sm4_O0_stripped.elf",
+    "kind": "elf",
+    "family": "sm4",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "10e974462421cc8447e45a68a595dc92dbdc2b5124137b47fa78ec23f46cc268"
+  },
+  {
+    "path": "dataset\\elf\\sm4_O2.elf",
+    "kind": "elf",
+    "family": "sm4",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "34e690a7089111a5f44b3197cb59d8ffddbf4253c51c222f82a111313ef5101f"
+  },
+  {
+    "path": "dataset\\elf\\sm4_O2_stripped.elf",
+    "kind": "elf",
+    "family": "sm4",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "ae1358613d514e96b5ed119b87fea5fbfc3845ec18181beca8bb6fc5c0fa07df"
+  },
+  {
+    "path": "dataset\\source\\aes.c",
+    "kind": "source",
+    "family": "aes",
+    "expected": [
+      "AES"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "7020dad170c17d24393aea62675446bfa0e5429467c5ba887cf99d54db114722"
+  },
+  {
+    "path": "dataset\\elf\\aes_O0.elf",
+    "kind": "elf",
+    "family": "aes",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "85b9d5eb23b32b6e8b18814f66fcde8e74bf831a52af82e2aed726fe9fb8eef8"
+  },
+  {
+    "path": "dataset\\elf\\aes_O0_stripped.elf",
+    "kind": "elf",
+    "family": "aes",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "7dd7d1a90971d2106e75e97b12c82a9dfad58c3b48ff225202d90f4eec93f42b"
+  },
+  {
+    "path": "dataset\\elf\\aes_O2.elf",
+    "kind": "elf",
+    "family": "aes",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "f7b50444ce35b4f04fcecf5b6ceea27165ef0575cccd49246a12945bc686dded"
+  },
+  {
+    "path": "dataset\\elf\\aes_O2_stripped.elf",
+    "kind": "elf",
+    "family": "aes",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "6e3680b5f7c72c6b22f02c3924469ffa16abf04c51fc5e220fda652fb492b659"
+  },
+  {
+    "path": "dataset\\source\\sha256.c",
+    "kind": "source",
+    "family": "sha256",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "6856373f202f24970a88c6629288e44e39b5c4dabe0ff58312766f49f9b9523e"
+  },
+  {
+    "path": "dataset\\elf\\sha256_O0.elf",
+    "kind": "elf",
+    "family": "sha256",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "7c75a092a9f10c7d436c47e99dbea3ef91ce9dbd56e3ef2228f300ce768e8c27"
+  },
+  {
+    "path": "dataset\\elf\\sha256_O0_stripped.elf",
+    "kind": "elf",
+    "family": "sha256",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "2e6f246d6086ea19a8bf9e8c8f6fba1c145c612c1880dda7ec9539338cf0d4c6"
+  },
+  {
+    "path": "dataset\\elf\\sha256_O2.elf",
+    "kind": "elf",
+    "family": "sha256",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "c7064f66463934569c663224b9b1c72f7cf2f4317bd429b5b9bf424b269d69ff"
+  },
+  {
+    "path": "dataset\\elf\\sha256_O2_stripped.elf",
+    "kind": "elf",
+    "family": "sha256",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "923f379823566efc5e0ad8def9fe7ab5fe39835f8e4f33143d1c0feabe82837b"
+  },
+  {
+    "path": "dataset\\source\\rsa.c",
+    "kind": "source",
+    "family": "rsa",
+    "expected": [
+      "RSA"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "c0c667a7ee063cd5b1d01974853fa161228677ffe49eeb82a9a8b82d18a714b1"
+  },
+  {
+    "path": "dataset\\elf\\rsa_O0.elf",
+    "kind": "elf",
+    "family": "rsa",
+    "expected": [
+      "RSA"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "e02bccba1bf10e50eceae9f4935d70e35ae5828cf6b116bfed06858432950704"
+  },
+  {
+    "path": "dataset\\elf\\rsa_O0_stripped.elf",
+    "kind": "elf",
+    "family": "rsa",
+    "expected": [
+      "RSA"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "8b4ab843a942e0bb6d93d32659278c6217807be089d33e9a993dc99cb55083b3"
+  },
+  {
+    "path": "dataset\\elf\\rsa_O2.elf",
+    "kind": "elf",
+    "family": "rsa",
+    "expected": [
+      "RSA"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "318692246bc08b179891256980034ff766407566a7d2757d3680be6902e6b212"
+  },
+  {
+    "path": "dataset\\elf\\rsa_O2_stripped.elf",
+    "kind": "elf",
+    "family": "rsa",
+    "expected": [
+      "RSA"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "d9e4bdae65b3a339ca42a64d6af6cb8e289e17e0cd85ae8c53535ebcd6f1b497"
+  },
+  {
+    "path": "dataset\\source\\aes_alt.c",
+    "kind": "source",
+    "family": "aes_alt",
+    "expected": [
+      "AES"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "1c0c1c5c1908a12e09b5e69c81d687b13d3da631295864406804d8f60686be77"
+  },
+  {
+    "path": "dataset\\elf\\aes_alt_O0.elf",
+    "kind": "elf",
+    "family": "aes_alt",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "69e246fa41e3591cca0bf145b9ea9f7b526c491fcc951e9c2d5b35571b92996f"
+  },
+  {
+    "path": "dataset\\elf\\aes_alt_O0_stripped.elf",
+    "kind": "elf",
+    "family": "aes_alt",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "1bec38e1a91d02aafe1c9c92efb65aca41d5697af83ed3a4f3ae438ad40d461b"
+  },
+  {
+    "path": "dataset\\elf\\aes_alt_O2.elf",
+    "kind": "elf",
+    "family": "aes_alt",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "b5071ee9775d35987f47ae12bf94ff78d6cf782972b82ac52a0ab88b33668ea9"
+  },
+  {
+    "path": "dataset\\elf\\aes_alt_O2_stripped.elf",
+    "kind": "elf",
+    "family": "aes_alt",
+    "expected": [
+      "AES"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "9c1ace9b3683b6af0be52f1e0cf772e16803dabc65cdba153ed5a900dadbfa49"
+  },
+  {
+    "path": "dataset\\source\\sha256_alt.c",
+    "kind": "source",
+    "family": "sha256_alt",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "eb131fe72dbb48af23fd02f0498fd9535d075d3cf772885b34f8d5eedb0b4fad"
+  },
+  {
+    "path": "dataset\\elf\\sha256_alt_O0.elf",
+    "kind": "elf",
+    "family": "sha256_alt",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "8bfdb70e5ab8cd02505035523222a1e3da16b135b0d40953da1d0b8f427bd07a"
+  },
+  {
+    "path": "dataset\\elf\\sha256_alt_O0_stripped.elf",
+    "kind": "elf",
+    "family": "sha256_alt",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "89f6f3d12619c12fea01a08d6868489ce897772d8d46960f686407b4551bae2a"
+  },
+  {
+    "path": "dataset\\elf\\sha256_alt_O2.elf",
+    "kind": "elf",
+    "family": "sha256_alt",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "426dbe9e482899809b6adc76a8cd7370f62b942c8a7479bce0fd372de84ad07a"
+  },
+  {
+    "path": "dataset\\elf\\sha256_alt_O2_stripped.elf",
+    "kind": "elf",
+    "family": "sha256_alt",
+    "expected": [
+      "SHA-256"
+    ],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "bd5aea15204f62fb8aab622cb75204d4ad4498d7f1bb88921e899437fe6cf215"
+  },
+  {
+    "path": "dataset\\source\\plain.c",
+    "kind": "source",
+    "family": "plain",
+    "expected": [],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "8e56dbdcf07739502944e9690366588f1edf34816939d065d891b5e76c165469"
+  },
+  {
+    "path": "dataset\\elf\\plain_O0.elf",
+    "kind": "elf",
+    "family": "plain",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "53cef52b407d09d4e7a6209a3cc866fa6c98db2501bd8e569209091339bf8531"
+  },
+  {
+    "path": "dataset\\elf\\plain_O0_stripped.elf",
+    "kind": "elf",
+    "family": "plain",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "b154cea91a5121d6a3ef23a80c3cf237b152dcf503da0b5ef9667f18f3fe5340"
+  },
+  {
+    "path": "dataset\\elf\\plain_O2.elf",
+    "kind": "elf",
+    "family": "plain",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "7adbb56b7735f96507de14fe8d8eb9081f32d26516de733f676af7a2174ece40"
+  },
+  {
+    "path": "dataset\\elf\\plain_O2_stripped.elf",
+    "kind": "elf",
+    "family": "plain",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "768ff73db35e96764bef99065207d297cc083f81a90ed9b8ef9d38a76f7a163f"
+  },
+  {
+    "path": "dataset\\source\\names_only.c",
+    "kind": "source",
+    "family": "names_only",
+    "expected": [],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "07e901432464a850a18cbe7cd608d02f514fb63baf2aeacc2036fd5fd4e76bf7"
+  },
+  {
+    "path": "dataset\\elf\\names_only_O0.elf",
+    "kind": "elf",
+    "family": "names_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "807a1bb5ca3e6d048b1cdc251d3aaf1c19f3dd5d0ba22429a7d08d2e09df75da"
+  },
+  {
+    "path": "dataset\\elf\\names_only_O0_stripped.elf",
+    "kind": "elf",
+    "family": "names_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "3091b9ccaacaf536f99c5c42dd6a77ed463b184b8fe87c3217ed3e0c442b9caa"
+  },
+  {
+    "path": "dataset\\elf\\names_only_O2.elf",
+    "kind": "elf",
+    "family": "names_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "d5833aee00839d9ea7e9e97b286c0083b9fe50a3801c85d747f42eecd83ae0a6"
+  },
+  {
+    "path": "dataset\\elf\\names_only_O2_stripped.elf",
+    "kind": "elf",
+    "family": "names_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "f8995f354ff6ab3fd8aa18ba4ccfa7733b2efefeba19de93b9b1c9205cb80fa5"
+  },
+  {
+    "path": "dataset\\source\\comments_only.c",
+    "kind": "source",
+    "family": "comments_only",
+    "expected": [],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "abc8674abd0ae44c57a91e9877f8417885af45b2069246ccfd14467fc110b4bf"
+  },
+  {
+    "path": "dataset\\elf\\comments_only_O0.elf",
+    "kind": "elf",
+    "family": "comments_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "62dc97364f9d9ad8c8e9bd51c17f3a389456ee0d978ddb9c67a807c7880cc130"
+  },
+  {
+    "path": "dataset\\elf\\comments_only_O0_stripped.elf",
+    "kind": "elf",
+    "family": "comments_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "4326238654791ff1a6a19d801132a5758e388e2e4b3bb8c075a425ca627f15ea"
+  },
+  {
+    "path": "dataset\\elf\\comments_only_O2.elf",
+    "kind": "elf",
+    "family": "comments_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "134fb62923b2dc7fbcca9bdacb2e291803c4e72cfb453318bf0fce711e0cb579"
+  },
+  {
+    "path": "dataset\\elf\\comments_only_O2_stripped.elf",
+    "kind": "elf",
+    "family": "comments_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "c68155dd34be06d93ecb595c1db4fb8afd0c6c6b946ff85a1201394e2e64e12c"
+  },
+  {
+    "path": "dataset\\source\\dead_code.c",
+    "kind": "source",
+    "family": "dead_code",
+    "expected": [
+      "SM4"
+    ],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "50f93c55cfc1d9c093aebd1a0f0654497c6debd98619912c9ee291f6078b87fe"
+  },
+  {
+    "path": "dataset\\elf\\dead_code_O0.elf",
+    "kind": "elf",
+    "family": "dead_code",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "2cdae89c84854ee89ee8ae97618b418d4a6154b76b73fa2d3a568d0cfd9461d9"
+  },
+  {
+    "path": "dataset\\elf\\dead_code_O0_stripped.elf",
+    "kind": "elf",
+    "family": "dead_code",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "3a7971d94d6ed734f9154bafe2379547ac2960ca5e00dc5e5c9b342655e8dda9"
+  },
+  {
+    "path": "dataset\\elf\\dead_code_O2.elf",
+    "kind": "elf",
+    "family": "dead_code",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "961d9d72f9869cda9d6366ad71ec86b6ee664b80d4ab49b74082b61e37c571c0"
+  },
+  {
+    "path": "dataset\\elf\\dead_code_O2_stripped.elf",
+    "kind": "elf",
+    "family": "dead_code",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "bb5960961d34ad0b64a65bc5169047d4946d73e65420602c4bacc2a513286a63"
+  },
+  {
+    "path": "dataset\\source\\table_only.c",
+    "kind": "source",
+    "family": "table_only",
+    "expected": [],
+    "basis": "manually specified recipe API calls; source presence, not execution",
+    "sha256": "3bcff682009ef0f1f23db742919a32ff478001389313a39334531996b8e9648b"
+  },
+  {
+    "path": "dataset\\elf\\table_only_O0.elf",
+    "kind": "elf",
+    "family": "table_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "3ced772b7d5a5afc7e841e4e757ce6e67a8c18e9698ea23c690a41ffe8609662"
+  },
+  {
+    "path": "dataset\\elf\\table_only_O0_stripped.elf",
+    "kind": "elf",
+    "family": "table_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "c137987dfe3a22d6fb4809dc0c2103858e81ebc9d929cea1e587d131d12f4202"
+  },
+  {
+    "path": "dataset\\elf\\table_only_O2.elf",
+    "kind": "elf",
+    "family": "table_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "b4715d62547addd5ecd006ad16e4047f6324d2216a4fb17fae2edcb2e265ad47"
+  },
+  {
+    "path": "dataset\\elf\\table_only_O2_stripped.elf",
+    "kind": "elf",
+    "family": "table_only",
+    "expected": [],
+    "basis": "recipe and function/data-section garbage collection; native linker map available, ELF symbols require audit",
+    "executed": false,
+    "sha256": "7891fcfbc9eed4358a9c32f025ac050e3f65759f32efcae790fa1847209a8dd8"
+  },
+  {
+    "path": "dataset\\source\\meter.cpp",
+    "kind": "source",
+    "family": "meter",
+    "terminal_class": "meter",
+    "expected_api_calls": [
+      "AES"
+    ],
+    "expected": [
+      "AES"
+    ],
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "8d05f25bf45f0d34acf458e1374497079ddd1affa01858cfec2685d4e5e25834",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\elf\\meter_O2.elf",
+    "kind": "elf",
+    "family": "meter",
+    "terminal_class": "meter",
+    "expected_api_calls": [
+      "AES"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "dc007549b9025a6cb20c2ce94177a683f276b6a4846aa307f7e5257be19b43c9",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\firmware\\meter.squashfs",
+    "kind": "firmware",
+    "family": "meter",
+    "terminal_class": "meter",
+    "expected_api_calls": [
+      "AES"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "5332e5b07cc966559fd3c2ed0c5effe59bc39346907cae0976ada7e0e79a7e76",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\source\\concentrator.cpp",
+    "kind": "source",
+    "family": "concentrator",
+    "terminal_class": "concentrator",
+    "expected_api_calls": [
+      "SM3"
+    ],
+    "expected": [
+      "SM3"
+    ],
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "159988cea20f02cae6ba00f7de4d46eec9fdeca28913968b7a98cc59750b37ac",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\elf\\concentrator_O2.elf",
+    "kind": "elf",
+    "family": "concentrator",
+    "terminal_class": "concentrator",
+    "expected_api_calls": [
+      "SM3"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "c0c2161748592798545fecb8e3d96885f30f7efb9032affd3d0ea3c27d76af37",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\firmware\\concentrator.squashfs",
+    "kind": "firmware",
+    "family": "concentrator",
+    "terminal_class": "concentrator",
+    "expected_api_calls": [
+      "SM3"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "59fd797e446f83913617c2809b884e96eb5da9cae2c1c0ad6537cc499cdec21a",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\source\\ftu.c",
+    "kind": "source",
+    "family": "ftu",
+    "terminal_class": "ftu",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": [
+      "SM2"
+    ],
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "6c293cfdafde7239c35a1dbffec902aeb8bb3b073be2ecde353f4a8bbb59d4a6",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\elf\\ftu_O2.elf",
+    "kind": "elf",
+    "family": "ftu",
+    "terminal_class": "ftu",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "abb24d3cf3c727e7fbb804411eff4bda1a01ae193c197be4f6b0cfdb002aefee",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\firmware\\ftu.squashfs",
+    "kind": "firmware",
+    "family": "ftu",
+    "terminal_class": "ftu",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "95aea6c4bb6f47ba040689502657bfcc39d1a770f786c07c13ef013568c1ce01",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\source\\ied.c",
+    "kind": "source",
+    "family": "ied",
+    "terminal_class": "ied",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": [
+      "SM2"
+    ],
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "d7140121c98c194e7f4b61da8183463f40cec106fa7286e2d15f3bb647d9f678",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\elf\\ied_O2.elf",
+    "kind": "elf",
+    "family": "ied",
+    "terminal_class": "ied",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "f4a4adac053b10b33c4002e2d06ef832a2b4ac930834db0f98ee4e002d1ed9cf",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\firmware\\ied.squashfs",
+    "kind": "firmware",
+    "family": "ied",
+    "terminal_class": "ied",
+    "expected_api_calls": [
+      "SM2"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "f922ff389e4695740dffa0f3b555ad32c4dd4b0f5a3b1c84e0e44fe2f8c80ab6",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\source\\der.c",
+    "kind": "source",
+    "family": "der",
+    "terminal_class": "der",
+    "expected_api_calls": [
+      "SM4"
+    ],
+    "expected": [
+      "SM4"
+    ],
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "da3d62c62ab52c753f5751b50b68457eff3279dbcc5524af6b244e7274f23fb8",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\elf\\der_O2.elf",
+    "kind": "elf",
+    "family": "der",
+    "terminal_class": "der",
+    "expected_api_calls": [
+      "SM4"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "3e802aeaad05b830a451d5903e5e334b2d860b99f0b0b5169054cca52e233119",
+    "windows_counterpart_selftest": true
+  },
+  {
+    "path": "dataset\\firmware\\der.squashfs",
+    "kind": "firmware",
+    "family": "der",
+    "terminal_class": "der",
+    "expected_api_calls": [
+      "SM4"
+    ],
+    "expected": null,
+    "basis": "scenario API recipe; linked third-party inventory needs independent review",
+    "executed": false,
+    "simulation": true,
+    "sha256": "5dd9df1cb8a1020c402dfb43a2528c5e547c758ad1a626cf29ed1b5d3006d9b5",
+    "windows_counterpart_selftest": true
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-nostdlib",
+      "-shared",
+      "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/isa-sm3.S",
+      "-Wl,--version-script=/var/home/gzn/ourtask/samples/guomi-operations-20261012/metadata/local.map",
+      "-o",
+      "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/isa-sm3-aarch64/inspection.so"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "argv": [
+      "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+      "cc",
+      "-target",
+      "aarch64-linux-musl",
+      "-nostdlib",
+      "-shared",
+      "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/isa-sm4.S",
+      "-Wl,--version-script=/var/home/gzn/ourtask/samples/guomi-operations-20261012/metadata/local.map",
+      "-o",
+      "/var/home/gzn/ourtask/samples/guomi-operations-20261012/builds/isa-sm4-aarch64/inspection.so"
+    ],
+    "returncode": 0,
+    "output": ""
+  }
+]

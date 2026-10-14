@@ -1,0 +1,467 @@
+[
+  {
+    "id": "mbedtls-aes",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/aes.c",
+    "sha256": "f30e6b7139527b41c32f68cc5430ceafa213e7fdf7a39bf4981f6a20cd0e77a1",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-des",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/des.c",
+    "sha256": "b3d91e02055fc05f0d28f820e8731445eeeb73a6708bbafc3c988bf631a243b0",
+    "truth": [
+      "DES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-md5",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/md5.c",
+    "sha256": "887eca6a51f8dfd8c3fd1a9dab6ff083e1795644e88b39c87640b56fcd33503b",
+    "truth": [
+      "MD5"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-sha1",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/sha1.c",
+    "sha256": "277b7499fe8315a46442c39c762e8768056114e3694215e4e2cadbd1ebfbce12",
+    "truth": [
+      "SHA-1"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-sha256",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/sha256.c",
+    "sha256": "4f928e5dcc0a2baf08634fc759309a3dbda52bb69ead14ff6c2dccafd8267453",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-chacha20",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/chacha20.c",
+    "sha256": "53300418d833bda5c999a3dce3d174d19ebeb1908c4ee1f94c63afe4439a9abd",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-rsa",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/rsa.c",
+    "sha256": "24d4328f1fa3faafc2ad1a4c5f9274404381c08718920f2da23c5867f27f74d7",
+    "truth": [
+      "RSA"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-ecdsa",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/ecdsa.c",
+    "sha256": "fe5ef0be180c189181892903e4eb2c79d79b108c117398cbf968f6f52ca0b858",
+    "truth": [
+      "ECDSA"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "mbedtls-ecdh",
+    "project": "mbedtls",
+    "unit": "sources/mbedtls/ecdh.c",
+    "sha256": "85439414902f8421db8921c69a0be771ed69a7c69f0722127298f41a1d330ba8",
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/mbedtls/library",
+      "/var/home/gzn/ourtask/third_party/mbedtls/include"
+    ],
+    "flags": [
+      "-DMBEDTLS_SHA256_USE_A64_CRYPTO_IF_PRESENT=0"
+    ],
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-md5",
+    "project": "bearssl",
+    "unit": "sources/bearssl/md5.c",
+    "sha256": "6712a1c866c2db0731c1687dac21ef7b1dd045b3588407f5cf0d57353f355fca",
+    "truth": [
+      "MD5"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-sha1",
+    "project": "bearssl",
+    "unit": "sources/bearssl/sha1.c",
+    "sha256": "29247b78ff6c1f794a9ce75a5518d8abd232c162b776d93541cc156005e6c79a",
+    "truth": [
+      "SHA-1"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-sha2small",
+    "project": "bearssl",
+    "unit": "sources/bearssl/sha2small.c",
+    "sha256": "bbaa79c8d006373fa21a7b711c1677d127eb967774e06e698dd173ec1cb699d3",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-chacha20_ct",
+    "project": "bearssl",
+    "unit": "sources/bearssl/chacha20_ct.c",
+    "sha256": "cf260259de701678e619cf8883a4053035b890d9c89db42fcf6927197a82b99a",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-des_tab",
+    "project": "bearssl",
+    "unit": "sources/bearssl/des_tab.c",
+    "sha256": "74e8203341cc17a00c2936e924172848d8349406b6f06887b4611a9230df66d9",
+    "truth": [
+      "DES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-aes_big_enc",
+    "project": "bearssl",
+    "unit": "sources/bearssl/aes_big_enc.c",
+    "sha256": "907d01551f29e7272875607e65b16c6ad3549535188b7200a34bec650c23a42c",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "bearssl-aes_small_enc",
+    "project": "bearssl",
+    "unit": "sources/bearssl/aes_small_enc.c",
+    "sha256": "721c6569375e9e478eb5e60a7a835c4386d4f259d83aaf3260a521f858dd98da",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src",
+      "/var/home/gzn/ourtask/samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/inc"
+    ],
+    "flags": [],
+    "repository": "https://github.com/arendst/Tasmota",
+    "commit": "workspace-pinned-tasmota-source",
+    "license": "MIT",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "reference-rc4",
+    "project": "reference",
+    "unit": "sources/reference/rc4.c",
+    "sha256": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0",
+    "truth": [
+      "RC4"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/crypto-detection/example/chacha"
+    ],
+    "flags": [],
+    "repository": "https://github.com/kionactf/crypto-detection",
+    "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+    "license": "See retained upstream license and source notice",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "reference-chacha_reference",
+    "project": "reference",
+    "unit": "sources/reference/chacha_reference.c",
+    "sha256": "cf21909048b0d45c122831fc4b14242b09d45693a2b8ec082a950ad28af7863a",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/crypto-detection/example/chacha"
+    ],
+    "flags": [],
+    "repository": "https://github.com/kionactf/crypto-detection",
+    "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+    "license": "See retained upstream license and source notice",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "reference-des_naive",
+    "project": "reference",
+    "unit": "sources/reference/des_naive.c",
+    "sha256": "3c2eb10ea3aab49ce63a43d1b7fd41718ca3333eba739f1c0209ccd7f89cdda5",
+    "truth": [
+      "DES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/third_party/crypto-detection/example/chacha"
+    ],
+    "flags": [],
+    "repository": "https://github.com/kionactf/crypto-detection",
+    "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+    "license": "See retained upstream license and source notice",
+    "basis": "Manual upstream translation-unit annotation before development scans; all definitions retained; never executed"
+  },
+  {
+    "id": "control-disconnected-arx",
+    "project": "controls",
+    "unit": "sources/controls/disconnected-arx.c",
+    "sha256": "655f08246149abf23e73771aa7b6f90613189824cc589d568f764d7a41d51ece",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-missing-swap",
+    "project": "controls",
+    "unit": "sources/controls/missing-swap.c",
+    "sha256": "260738274e7123092795963f06a396fe81798733219e46e8ae11fdf6638a33e0",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-ordinary",
+    "project": "controls",
+    "unit": "sources/controls/ordinary.c",
+    "sha256": "21e9a583a579a516bf3d4ccf51fba2adebee6122acfd733a46095b6999e291a1",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-quarter",
+    "project": "controls",
+    "unit": "sources/controls/quarter.c",
+    "sha256": "a9b1b242054c9c947e849d6935c7ab0e8907aeefb2b5fc989fc46e1a0088f876",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-stream",
+    "project": "controls",
+    "unit": "sources/controls/stream.c",
+    "sha256": "758a43ee15ea17ddd113e41a96d92a7e813f80e016910d9e887efdb0727c6b2c",
+    "truth": [
+      "RC4"
+    ],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-swap-only",
+    "project": "controls",
+    "unit": "sources/controls/swap-only.c",
+    "sha256": "aee6b9e32708c3e82f884a4d415743fff0dde9e47359443659f21a07bd31245b",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-wrong-index",
+    "project": "controls",
+    "unit": "sources/controls/wrong-index.c",
+    "sha256": "ee6d0739e0a4db655ea84bece4dd287d2cf47be010b23f206c4eadcecb13d19c",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  },
+  {
+    "id": "control-wrong-rotate",
+    "project": "controls",
+    "unit": "sources/controls/wrong-rotate.c",
+    "sha256": "853bcf840c3fc27826aac967c7d36dd770191077c5970894de4a1013a4820b46",
+    "truth": [],
+    "includes": [],
+    "flags": [],
+    "repository": "QCS-authored RFC operation fixtures",
+    "commit": "2026-10-13",
+    "license": "CC0-1.0",
+    "basis": "Explicit operation relation; mutations omit or alter essential algorithm steps"
+  }
+]

@@ -1,0 +1,6 @@
+test_preserved_constant_and_code_payloads_in_nonexecuting_data (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_preserved_constant_and_code_payloads_in_nonexecuting_data) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 2.320s
+
+OK

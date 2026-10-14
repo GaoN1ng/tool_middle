@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so",
+  "input_kind": "executable",
+  "timestamp": "2026-10-14T09:48:28.174406+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "pyelftools": "0.32",
+    "symbol_rules_sha256": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "terminal_api_mapping_sha256": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "yara": {
+      "python_binding": "4.5.4",
+      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+      "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
+      "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+      "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
+    },
+    "function_signatures": {
+      "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "schema_version": "1.0",
+      "signature_count": 1028,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_constants_sha256": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+    "guomi_function_signature": {
+      "database_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+      "schema_version": "1.0",
+      "signature_count": 152,
+      "method": "whole_function_relocation_mask_literals_and_audited_linker_variants",
+      "environment_reference_policy": "guomi-environment-references-1"
+    },
+    "guomi_development_signature": {
+      "database_sha256": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+      "schema_version": "1.0",
+      "signature_count": 211,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_standard_sha256": "914deec5e3c6c09f7e42f768bf0585873663e2766d3dfe2c710011e08343ec15"
+  },
+  "artifact": {
+    "kind": "executable",
+    "format": "ELF",
+    "architecture": "x64",
+    "sha256": "354aeed5b977b5970598715dc487b96bbf4810d59e82c3ed9448f4f9259f7e23",
+    "firmware_relative_path": null,
+    "size_bytes": 11512,
+    "machine": "EM_X86_64",
+    "bits": 64,
+    "endianness": "little",
+    "symbol_tables": [
+      ".dynsym",
+      ".symtab"
+    ],
+    "function_symbol_count": 12,
+    "symbol_state": "retained"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "symbol": {
+      "status": "completed"
+    },
+    "yara": {
+      "status": "completed",
+      "suppressed_instruction_rules": []
+    },
+    "function_signature": {
+      "status": "completed",
+      "architectures": [
+        "x86_64"
+      ],
+      "matched_families": 2
+    },
+    "guomi_constants": {
+      "status": "completed"
+    },
+    "guomi_function_signature": {
+      "status": "completed",
+      "architectures": [
+        "x86_64"
+      ],
+      "matched_families": 0
+    },
+    "guomi_development_signature": {
+      "status": "completed",
+      "architectures": [
+        "x86_64"
+      ],
+      "matched_families": 0
+    },
+    "guomi_semantic": {
+      "status": "completed",
+      "architectures": [
+        "x86_64"
+      ],
+      "instructions": 285,
+      "matched_algorithms": []
+    },
+    "operation_binary": {
+      "status": "completed",
+      "architectures": [
+        "x86_64"
+      ],
+      "matched_algorithms": [],
+      "shared_analysis": "guomi_semantic"
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Guomi binary operation witnesses are bounded local data-flow and code-neighbourhood heuristics, not complete control-flow or semantic proofs; unsupported lifting may miss implementations."
+  ],
+  "extraction_chain": [],
+  "findings": [
+    {
+      "algorithm": "RC4",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "function_signature",
+      "evidence_type": "binary_function_signature",
+      "identifier": "reference-rc4",
+      "line": null,
+      "offset": 1456,
+      "confidence": "medium",
+      "confidence_reason": "Whole known functions match with relocation masks and referenced data; recorded linker alternatives checked where applicable; static evidence within recorded library/compiler settings",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matched_functions": [
+        {
+          "function": "rc4_encrypt",
+          "role": "keystream",
+          "signature_id": "e748523eef5df40824d6809103b2e867b78db72f405d1726ded41b5fb9051921",
+          "offset": 1648,
+          "address": 5744,
+          "length": 106,
+          "significant_bits": 848,
+          "literal_constraints": 0,
+          "audited_linker_variants": 0,
+          "reference": {
+            "artifact": "quantum-crypto-scanner/artifacts/coverage-fixes-20261012/references/x86_64-clang-native/reference-rc4-O3.so",
+            "sha256": "c9343f3b36b303c121b571aec34327454a89c06fa0ca8fd6b45dfd51f5b1791c",
+            "optimization": "O3",
+            "compiler": "Zig 0.13.0 / bundled Clang",
+            "address": 5584,
+            "compiler_banner": "clang version 18.1.6 (https://github.com/ziglang/zig-bootstrap 98bc6bf4fc4009888d33941daf6b600d20a42a56)",
+            "source_hashes": {
+              "third_party/crypto-detection/example/rc4/rc4.c": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0"
+            },
+            "configuration": []
+          }
+        },
+        {
+          "function": "prepare_key",
+          "role": "key_schedule",
+          "signature_id": "b535219b9d9e0fed33c6519627eb5023dbdaa87c7a67298582b878f87ed1446d",
+          "offset": 1456,
+          "address": 5552,
+          "length": 182,
+          "significant_bits": 1200,
+          "literal_constraints": 8,
+          "audited_linker_variants": 0,
+          "reference": {
+            "artifact": "quantum-crypto-scanner/artifacts/coverage-fixes-20261012/references/x86_64-clang-native/reference-rc4-O3.so",
+            "sha256": "c9343f3b36b303c121b571aec34327454a89c06fa0ca8fd6b45dfd51f5b1791c",
+            "optimization": "O3",
+            "compiler": "Zig 0.13.0 / bundled Clang",
+            "address": 5392,
+            "compiler_banner": "clang version 18.1.6 (https://github.com/ziglang/zig-bootstrap 98bc6bf4fc4009888d33941daf6b600d20a42a56)",
+            "source_hashes": {
+              "third_party/crypto-detection/example/rc4/rc4.c": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0"
+            },
+            "configuration": []
+          }
+        }
+      ],
+      "required_roles": [
+        "key_schedule",
+        "keystream"
+      ],
+      "matched_roles": [
+        "key_schedule",
+        "keystream"
+      ],
+      "rule_architecture": "x86_64",
+      "implementation_family": "reference-rc4",
+      "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so"
+    },
+    {
+      "algorithm": "RC4",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "function_signature",
+      "evidence_type": "binary_function_signature",
+      "identifier": "research-reference-rc4",
+      "line": null,
+      "offset": 1648,
+      "confidence": "medium",
+      "confidence_reason": "Whole known functions match with relocation masks and referenced data; recorded linker alternatives checked where applicable; static evidence within recorded library/compiler settings",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matched_functions": [
+        {
+          "function": "rc4_encrypt",
+          "role": "keystream",
+          "signature_id": "9f96b959e6c11e858995a6a6a722c3313741cc4a049f5222b4cf5734657f00bc",
+          "offset": 1648,
+          "address": 5744,
+          "length": 106,
+          "significant_bits": 848,
+          "literal_constraints": 0,
+          "audited_linker_variants": 0,
+          "reference": {
+            "artifact": "samples/operation-development-20261013/builds/reference-rc4-x86_64-O2/inspection.so",
+            "sha256": "e685f9a4e1c1be1af2efa00c677f91d317b0d80d63554d46cb8b6c606fa4ed31",
+            "optimization": "O2",
+            "compiler": "Zig 0.13.0 / bundled Clang",
+            "address": 5520,
+            "development_sample": "reference-rc4-x86_64-O2",
+            "source_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+            "source_repository": "https://github.com/kionactf/crypto-detection",
+            "source_hashes": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0",
+            "interpretation": "Known implementation/build reference, not an operation-generalization result"
+          }
+        }
+      ],
+      "required_roles": [
+        "keystream"
+      ],
+      "matched_roles": [
+        "keystream"
+      ],
+      "rule_architecture": "x86_64",
+      "implementation_family": "research-reference-rc4",
+      "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so"
+    }
+  ],
+  "algorithm_assets": [
+    {
+      "algorithm": "RC4",
+      "algorithm_category": "symmetric",
+      "confidence": "medium",
+      "confidence_reason": "Strongest rule basis retained; evidence count is not a probability.",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "algorithm": "RC4",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "function_signature",
+          "evidence_type": "binary_function_signature",
+          "identifier": "reference-rc4",
+          "line": null,
+          "offset": 1456,
+          "confidence": "medium",
+          "confidence_reason": "Whole known functions match with relocation masks and referenced data; recorded linker alternatives checked where applicable; static evidence within recorded library/compiler settings",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "matched_functions": [
+            {
+              "function": "rc4_encrypt",
+              "role": "keystream",
+              "signature_id": "e748523eef5df40824d6809103b2e867b78db72f405d1726ded41b5fb9051921",
+              "offset": 1648,
+              "address": 5744,
+              "length": 106,
+              "significant_bits": 848,
+              "literal_constraints": 0,
+              "audited_linker_variants": 0,
+              "reference": {
+                "artifact": "quantum-crypto-scanner/artifacts/coverage-fixes-20261012/references/x86_64-clang-native/reference-rc4-O3.so",
+                "sha256": "c9343f3b36b303c121b571aec34327454a89c06fa0ca8fd6b45dfd51f5b1791c",
+                "optimization": "O3",
+                "compiler": "Zig 0.13.0 / bundled Clang",
+                "address": 5584,
+                "compiler_banner": "clang version 18.1.6 (https://github.com/ziglang/zig-bootstrap 98bc6bf4fc4009888d33941daf6b600d20a42a56)",
+                "source_hashes": {
+                  "third_party/crypto-detection/example/rc4/rc4.c": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0"
+                },
+                "configuration": []
+              }
+            },
+            {
+              "function": "prepare_key",
+              "role": "key_schedule",
+              "signature_id": "b535219b9d9e0fed33c6519627eb5023dbdaa87c7a67298582b878f87ed1446d",
+              "offset": 1456,
+              "address": 5552,
+              "length": 182,
+              "significant_bits": 1200,
+              "literal_constraints": 8,
+              "audited_linker_variants": 0,
+              "reference": {
+                "artifact": "quantum-crypto-scanner/artifacts/coverage-fixes-20261012/references/x86_64-clang-native/reference-rc4-O3.so",
+                "sha256": "c9343f3b36b303c121b571aec34327454a89c06fa0ca8fd6b45dfd51f5b1791c",
+                "optimization": "O3",
+                "compiler": "Zig 0.13.0 / bundled Clang",
+                "address": 5392,
+                "compiler_banner": "clang version 18.1.6 (https://github.com/ziglang/zig-bootstrap 98bc6bf4fc4009888d33941daf6b600d20a42a56)",
+                "source_hashes": {
+                  "third_party/crypto-detection/example/rc4/rc4.c": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0"
+                },
+                "configuration": []
+              }
+            }
+          ],
+          "required_roles": [
+            "key_schedule",
+            "keystream"
+          ],
+          "matched_roles": [
+            "key_schedule",
+            "keystream"
+          ],
+          "rule_architecture": "x86_64",
+          "implementation_family": "reference-rc4",
+          "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so"
+        },
+        {
+          "algorithm": "RC4",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "function_signature",
+          "evidence_type": "binary_function_signature",
+          "identifier": "research-reference-rc4",
+          "line": null,
+          "offset": 1648,
+          "confidence": "medium",
+          "confidence_reason": "Whole known functions match with relocation masks and referenced data; recorded linker alternatives checked where applicable; static evidence within recorded library/compiler settings",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "matched_functions": [
+            {
+              "function": "rc4_encrypt",
+              "role": "keystream",
+              "signature_id": "9f96b959e6c11e858995a6a6a722c3313741cc4a049f5222b4cf5734657f00bc",
+              "offset": 1648,
+              "address": 5744,
+              "length": 106,
+              "significant_bits": 848,
+              "literal_constraints": 0,
+              "audited_linker_variants": 0,
+              "reference": {
+                "artifact": "samples/operation-development-20261013/builds/reference-rc4-x86_64-O2/inspection.so",
+                "sha256": "e685f9a4e1c1be1af2efa00c677f91d317b0d80d63554d46cb8b6c606fa4ed31",
+                "optimization": "O2",
+                "compiler": "Zig 0.13.0 / bundled Clang",
+                "address": 5520,
+                "development_sample": "reference-rc4-x86_64-O2",
+                "source_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+                "source_repository": "https://github.com/kionactf/crypto-detection",
+                "source_hashes": "022727b1cf20bca9a3f974c357ed436a336fbce70cfc6eff78ee0e64ab3870d0",
+                "interpretation": "Known implementation/build reference, not an operation-generalization result"
+              }
+            }
+          ],
+          "required_roles": [
+            "keystream"
+          ],
+          "matched_roles": [
+            "keystream"
+          ],
+          "rule_architecture": "x86_64",
+          "implementation_family": "research-reference-rc4",
+          "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so"
+        }
+      ],
+      "runtime_usage": "unknown"
+    }
+  ],
+  "clues": [
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "RC4"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_instruction",
+      "identifier": "rc4_ksa",
+      "line": null,
+      "offset": 1624,
+      "confidence": "low",
+      "confidence_reason": "Only cmp 255/256 or byte increment/branch instructions; generic loops are insufficient to identify RC4",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$s1",
+          "offset": 1624,
+          "matched_length": 6,
+          "matched_hex": "81f800010000"
+        }
+      ],
+      "rule_metadata": {
+        "author": "Thomas Barabosch",
+        "description": "Searches potential setup loops of RC4's KSA"
+      },
+      "rule_architecture": "x86_64",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so"
+    }
+  ],
+  "dependencies": [
+    {
+      "engine": "symbol",
+      "evidence_type": "library_dependency",
+      "name": "libc.so.6",
+      "symbol_table": ".dynamic"
+    }
+  ],
+  "components": [],
+  "controlflow_analysis": [
+    {
+      "architecture": "x86_64",
+      "section_address": 5508,
+      "status": "completed",
+      "steps": 9,
+      "blocks": 3,
+      "loop_edges": 0,
+      "joins": 1,
+      "widened_blocks": 0,
+      "entry_count": 1
+    },
+    {
+      "architecture": "x86_64",
+      "section_address": 5532,
+      "status": "completed",
+      "steps": 3,
+      "blocks": 1,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 1
+    },
+    {
+      "architecture": "x86_64",
+      "section_address": 5552,
+      "status": "completed",
+      "steps": 476,
+      "blocks": 13,
+      "loop_edges": 8,
+      "joins": 15,
+      "widened_blocks": 0,
+      "entry_count": 3
+    },
+    {
+      "architecture": "x86_64",
+      "section_address": 6704,
+      "status": "completed",
+      "steps": 2,
+      "blocks": 5,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 1
+    }
+  ]
+}

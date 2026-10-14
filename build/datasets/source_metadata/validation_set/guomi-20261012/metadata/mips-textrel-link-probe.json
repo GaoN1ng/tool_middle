@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+    "cc",
+    "-target",
+    "mips-linux-musl",
+    "-O2",
+    "-g",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "-fno-ident",
+    "-fno-stack-protector",
+    "-std=c++20",
+    "-DNDEBUG",
+    "-fno-use-cxa-atexit",
+    "-nostdlib",
+    "-shared",
+    "/var/home/gzn/ourtask/validation_set/guomi-20261012/builds/botan/sm2-sign/mips_be/O2/0.o",
+    "-Wl,--no-gc-sections",
+    "-Wl,--version-script=/var/home/gzn/ourtask/validation_set/guomi-20261012/build-support/localize.map",
+    "-Wl,--build-id=none",
+    "-Wl,-z,notext",
+    "-o",
+    "/var/home/gzn/ourtask/validation_set/guomi-20261012/metadata/mips-textrel-link-probe.so"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,788 @@
+[
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/aes.so",
+    "project": "esp-idf",
+    "sha256": "91cad741fd8d8a4cf58dcf5443ad80c9edf4e5035483527ae2cc769cd0e77775",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "retained",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/aes-stripped.so",
+    "project": "esp-idf",
+    "sha256": "b0f123b238be62652c3228cde02797a043e35c3eb961432f291154c77c970ed6",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "stripped",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/sha256.so",
+    "project": "esp-idf",
+    "sha256": "2f8e177b2bc11bcbe5550a9a7ca854eadef11ec4ba6d6ac8bbe2dcf39109aad7",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "retained",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/sha256-stripped.so",
+    "project": "esp-idf",
+    "sha256": "c3a3de731d208b7ea0cbe0015319c0c439f30ea5f6374568ce11fbfd06bf2d81",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "stripped",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/ecdh.so",
+    "project": "esp-idf",
+    "sha256": "f37ca428588bcbd2cbd74585db2d6a9a9c9713d53a34cd0beda8730b4774f4eb",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/ecdh-stripped.so",
+    "project": "esp-idf",
+    "sha256": "0ebe796052438b223bc292fab2db2790d8470103a77e54508d122ed05a779087",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/ecdsa.so",
+    "project": "esp-idf",
+    "sha256": "010574e836da4da3602d3fcdcdab9692d92ccd99efe6b29c2748f33e9e7c33a2",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/x86_64-linux-musl/ecdsa-stripped.so",
+    "project": "esp-idf",
+    "sha256": "e348eba6e0400bb2a48b1a93b0f556ca991addd646d00f312e0b3181967b92a8",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "x86_64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "x86_64",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/aes.so",
+    "project": "esp-idf",
+    "sha256": "c026e192b81e1f2613b4550bf5191f0d984cfc91dc8d722e84bab84a43863142",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "retained",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/aes-stripped.so",
+    "project": "esp-idf",
+    "sha256": "bc0055fd4d710563b1c23769400c377f4e56a4a24c4ed0753d9c90c85ec388a9",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "stripped",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/sha256.so",
+    "project": "esp-idf",
+    "sha256": "fc469b5dd4b867c0efd053fb232ff1fd24716eeffbfb040f3edb833dd8701384",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "retained",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/sha256-stripped.so",
+    "project": "esp-idf",
+    "sha256": "a6139114f9084aec8c1bf7e36711a7e3971be400a866483f438cb2351a39da80",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "stripped",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/ecdh.so",
+    "project": "esp-idf",
+    "sha256": "3bcdba06519d7abc6e7741179a8711e13bc1237f03063784ed92a72b04f45491",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/ecdh-stripped.so",
+    "project": "esp-idf",
+    "sha256": "4adf101bb4c97db0947b3453026db2bfdea7e996047773dde4017631ed85fbb7",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/ecdsa.so",
+    "project": "esp-idf",
+    "sha256": "a1180940ed24da35461184677e15a36d19adee44de121e2335edda1f87d9d1a6",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/aarch64-linux-musl/ecdsa-stripped.so",
+    "project": "esp-idf",
+    "sha256": "2eeb54407af6e74c9f15831816e01abbb3315107fe5cf3f580742488a61ad4ef",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "aarch64-linux-musl",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "aarch64",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/aes.so",
+    "project": "esp-idf",
+    "sha256": "23bb7d98ce8f0a67c15a11099d9216e0eae224a967e89eb82b112f775f639fe5",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "arm",
+    "symbol_state": "retained",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/aes-stripped.so",
+    "project": "esp-idf",
+    "sha256": "d97da12b4dd0835c310ca90d69ccc57a55100c0aa290004e0c16e301edae56d1",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "AES"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "arm",
+    "symbol_state": "stripped",
+    "units": [
+      "aes_encrypt.c",
+      "aes_decrypt.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-aes"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/sha256.so",
+    "project": "esp-idf",
+    "sha256": "3afed1bb51cf6b0f62e01d1134088afbb36397767dbc6724b81808e5ca0f9d60",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "arm",
+    "symbol_state": "retained",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/sha256-stripped.so",
+    "project": "esp-idf",
+    "sha256": "08663d235a2df84e9e6932181a92f81e76e29d70e2290ff7d4dc1e0cffc63695",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "arm",
+    "symbol_state": "stripped",
+    "units": [
+      "sha256.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-sha256"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/ecdh.so",
+    "project": "esp-idf",
+    "sha256": "3516063837b9013341f5a14bec2dd25df811c10c3c1b73f2b624be219e907bbe",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "arm",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/ecdh-stripped.so",
+    "project": "esp-idf",
+    "sha256": "657279f60cdf46da37055dbadffba664bbdc10b4f025940207aece1bd695f216",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDH"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "arm",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dh.c",
+      "ecc_platform_specific.c",
+      "utils.c"
+    ],
+    "family": "tinycrypt-ecdh"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/ecdsa.so",
+    "project": "esp-idf",
+    "sha256": "7a47b9b9ae7e4f5bac427c16aed4091287c8c9417c9088c68e6903ddbe346590",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=."
+    ],
+    "architecture": "arm",
+    "symbol_state": "retained",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  },
+  {
+    "path": "binaries/rebuilt-tinycrypt/arm-linux-musleabihf/ecdsa-stripped.so",
+    "project": "esp-idf",
+    "sha256": "a518a94d057c754d1237cc8407a0e9c021315bb6bb7e37e478b6c4da54e64721",
+    "truth": {
+      "api_reference": null,
+      "implementation_contains": [
+        "ECDSA",
+        "SHA-256"
+      ]
+    },
+    "compiler_flags": [
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-target",
+      "arm-linux-musleabihf",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/include",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/port",
+      "-I/var/home/gzn/ourtask/samples/public-benchmark/metadata/build-compat",
+      "-ffile-prefix-map=/var/home/gzn/ourtask=.",
+      "-s",
+      "-fvisibility=hidden",
+      "-Wl,--no-gc-sections"
+    ],
+    "architecture": "arm",
+    "symbol_state": "stripped",
+    "units": [
+      "ecc.c",
+      "ecc_dsa.c",
+      "ecc_platform_specific.c",
+      "utils.c",
+      "sha256.c",
+      "hmac.c",
+      "hmac_prng.c"
+    ],
+    "family": "tinycrypt-ecdsa"
+  }
+]

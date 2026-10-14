@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "wheel_sha256": "660a88558b6c3adbda8bf267701312852ba4388ae97c362badcfaddcc5f3060a",
+  "wheel_bytes": 4855247,
+  "differences_from_independently_tested_package_payload": [],
+  "note": "Final wheel metadata/README refreshed; installed runtime package bytes unchanged"
+}

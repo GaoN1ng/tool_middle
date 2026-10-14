@@ -1,0 +1,4 @@
+{
+  "status": "downloaded_not_scanned_or_banked",
+  "reason": "No clear repository license; modern GmSSL variants used instead; SMx not counted as independent implementation"
+}

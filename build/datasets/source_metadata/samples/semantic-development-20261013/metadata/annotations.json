@@ -1,0 +1,194 @@
+[
+  {
+    "id": "bcon-aes",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/aes.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "AES"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "aes.c": "f59be01f535478a16264a82f304802a627362ca27328c35efd9af816ea0e0d45"
+    }
+  },
+  {
+    "id": "bcon-des",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/des.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "DES"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "des.c": "a19af365968d4b5f4f99958b05ab50c8127e11b05e1d804a356be5a39dd1a29f"
+    }
+  },
+  {
+    "id": "bcon-arcfour",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/arcfour.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "RC4"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "arcfour.c": "1ff12d57f47ea299ccdb51bec9b23166593866895e74ac3b17db328ff46ddeb8"
+    }
+  },
+  {
+    "id": "bcon-md5",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/md5.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "MD5"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "md5.c": "c97df0fa155b7b421a9ea8815f0e6ff9c64b2a2096a3cfd445b7e288a126aa84"
+    }
+  },
+  {
+    "id": "bcon-sha1",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/sha1.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "SHA-1"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "sha1.c": "7e5965e83bcafc361e31aff99136ba5ebae338448d4d33496e11e071ec437029"
+    }
+  },
+  {
+    "id": "bcon-sha256",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/sha256.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [
+      "SHA-256"
+    ],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "sha256.c": "4cbc93d30c28cee2a056d6f52cbce6e66ff9450f1d712ee4f59761b9b4486fad"
+    }
+  },
+  {
+    "id": "bcon-base64",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/base64.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "base64.c": "2c6c1eb346ec85ec7e21e1eeba1ed1a349e53692408ab6cdf6644c37c4daabd6"
+    }
+  },
+  {
+    "id": "bcon-md2",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/md2.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "md2.c": "b1c31c3fe5d28a65de8e33549956dfeba7dbd74eb265b8e3b25460a1457ca9a8"
+    }
+  },
+  {
+    "id": "bcon-blowfish",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/blowfish.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "blowfish.c": "a096d3338a43b390f801516e1461bcbcdce434188176a3c138136826989c6de6"
+    }
+  },
+  {
+    "id": "bcon-rot-13",
+    "files": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon/rot-13.c"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/samples/semantic-development-20261013/sources/bcon"
+    ],
+    "truth": [],
+    "project": "bcon",
+    "repository": "https://github.com/B-Con/crypto-algorithms",
+    "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+    "license": "Public domain; README and source notices retained",
+    "basis": "Upstream documented implementation units; dependencies retained; generic ECC arithmetic alone is a negative for specific signature/key-exchange labels",
+    "sha256": {
+      "rot-13.c": "5e5846d76e35d6db61d18226253868a13c2855842cc8e576b99790458bb47130"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+build/venv*/
+build/cache/
+build/tmp/
+build/lib/
+build/bdist*/
+build/*.egg-info/
+build/dist/
+build/testing/workspace/
+# Runtime banks, models and dataset manifests under build are release inputs.
+# Do not ignore build wholesale.

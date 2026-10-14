@@ -1,0 +1,10 @@
+FAIL wolfsm-sm4-x86_64-O0 Expected actual operation definitions absent: ['wc_Sm4Encrypt']
+FAIL wolfsm-sm2-x86_64-O0 Compilation/link command failed
+FAIL wolfsm-sm2-x86_64-O2 Compilation/link command failed
+FAIL wolfsm-sm4-x86_64-O2 Expected actual operation definitions absent: ['wc_Sm4Encrypt']
+FAIL openssl-sm3-x86_64-O0 Compilation/link command failed
+FAIL openssl-sm3-x86_64-O2 Compilation/link command failed
+FAIL openssl-sm4-x86_64-O0 Compilation/link command failed
+FAIL openssl-sm4-x86_64-O2 Compilation/link command failed
+Prepared 10/10, success 2, failures 8
+{"timestamp": "2026-10-12T11:19:49.906553+00:00", "attempt": "preflight", "planned": 10, "completed": 2, "failed": 8, "unique_samples": 14}

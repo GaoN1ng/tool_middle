@@ -1,0 +1,12 @@
+Processing ./ustc_tool_middle
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: qcs-prototype
+  Building wheel for qcs-prototype (pyproject.toml): started
+  Building wheel for qcs-prototype (pyproject.toml): finished with status 'done'
+  Created wheel for qcs-prototype: filename=qcs_prototype-0.1.0.post1-py3-none-any.whl size=4855247 sha256=660a88558b6c3adbda8bf267701312852ba4388ae97c362badcfaddcc5f3060a
+  Stored in directory: /var/home/gzn/ourtask/ustc_tool_middle/build/tmp/pip-ephem-wheel-cache-9y_1i73w/wheels/35/46/d0/99009bd63a7debe824bdefc1fbacfc020215dafff9f9b5aae1
+Successfully built qcs-prototype
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: /var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/linux-portability-20261012/新环境 with spaces/bin/python -m pip install --upgrade pip

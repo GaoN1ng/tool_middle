@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/ANSSI-FR/libecc",
+  "commit": "059972c47c0c37b3a2557961210073b18d324ce6",
+  "split": "development",
+  "archive_sha256": "f760b88e3a8778f50426d26585751122f5349340b78200d32263464dce319c61",
+  "archive": "samples/controlflow-development-20261014/downloads/libecc.tar.gz",
+  "policy": "Assigned before detector development; no targets executed; primitive-only LibTomMath is not an independent-family claim (existing mp API ancestry)"
+}

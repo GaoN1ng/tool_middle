@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+qcs_root="$(dirname -- "$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")")"
+export QCS_BUILD_DIR="${QCS_BUILD_DIR:-$qcs_root/build}"
+mkdir -p "$QCS_BUILD_DIR/tmp" "$QCS_BUILD_DIR/cache/pycache"
+export TMPDIR="$QCS_BUILD_DIR/tmp"
+export PYTHONPYCACHEPREFIX="$QCS_BUILD_DIR/cache/pycache"
+export PYTHONPATH="$qcs_root/src${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONUTF8=1
+qcs_python="${QCS_PYTHON:-${QCS_VENV:-$QCS_BUILD_DIR/venv}/bin/python}"
+exec "$qcs_python" -m qcs_ml.rf "$@"

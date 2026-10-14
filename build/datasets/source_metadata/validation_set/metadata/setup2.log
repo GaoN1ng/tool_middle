@@ -1,0 +1,12 @@
+Prepared 30/66, success 30, failures 0
+FAIL wolfssl-md5-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-sha1-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-sha256-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-sha512-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-rsa-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-ecc-x86_64-O2 Compilation/link command failed
+FAIL wolfssl-sha3-x86_64-O2 Compilation/link command failed
+Prepared 60/66, success 53, failures 7
+FAIL wolfssl-blake2b-x86_64-O2 Compilation/link command failed
+Prepared 66/66, success 58, failures 8
+{"timestamp": "2026-10-12T07:45:13.348512+00:00", "attempt": "setup2", "planned": 66, "completed": 58, "failed": 8, "unique_samples": 147}

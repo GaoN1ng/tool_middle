@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/dhuertas/DES",
+  "assignment": "new independent holdout; no tuning/references",
+  "timestamp": "2026-10-14T16:03:50.272014+08:00",
+  "commit": "56637d1fc38731e2cc44b7432db2b2ecbd4808c4",
+  "archive_url": "https://codeload.github.com/dhuertas/DES/tar.gz/56637d1fc38731e2cc44b7432db2b2ecbd4808c4",
+  "archive_sha256": "dbd8edcc60b1f400ed2fc9aec2bf90a60ac21800a7bc132ee22a346e0f589893",
+  "api_license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "status": "downloaded",
+  "source_files": {
+    ".gitignore": "7a14492ee00cc73c1b9253102df335fe6440c8ab1d62bc49974ebee06978c416",
+    "LICENSE": "bb7d50cf8b080c882f33387dcc35ed3b2040b268d3e42586adf0eec0fe170c57",
+    "README.md": "c84ccc40a1ea34945b9956fba87568cbdae6dbe6c7d99a584e777d4c5ed6fa42",
+    "des.c": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068"
+  }
+}

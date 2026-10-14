@@ -1,0 +1,22 @@
+sm4ni ac6d42c4ac0f86c39b62fa3cc422340c3b9c5add 8
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/validation_set/guomi-20261012/tools/download.py", line 42, in <module>
+    with ThreadPoolExecutor(max_workers=5) as pool:records=dict(pool.map(fetch,PROJECTS.items()))
+                                                           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/var/home/gzn/ourtask/validation_set/guomi-20261012/tools/download.py", line 28, in fetch
+    if '..' in rel.parts or rel.is_absolute() or m.issym() or m.islnk():raise ValueError('Unsafe archive member')
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unsafe archive member

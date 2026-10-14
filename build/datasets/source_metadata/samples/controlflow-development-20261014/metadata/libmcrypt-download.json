@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/Distrotech/libmcrypt",
+  "commit": "09d8b1f1ee72569f1e10deb5868cc148b9de1cbf",
+  "archive_sha256": "495cb74f2631d805a9647a062e64d8f82c29c31829d2f32428341bc84537c27e",
+  "split": "development",
+  "policy": "Declared development before detector scans; actual per-unit ancestry retained"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "libtomcrypt-aes-mips_be-Os",
+  "module": "libtomcrypt-aes",
+  "architecture": "mips_be",
+  "optimization": "Os",
+  "attempt": "strip-probe",
+  "commands": [
+    {
+      "argv": [
+        "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+        "cc",
+        "-target",
+        "mips-linux-musl",
+        "-Os",
+        "-g",
+        "-fPIC",
+        "-fvisibility=hidden",
+        "-fno-ident",
+        "-fno-stack-protector",
+        "-DLTC_NO_TEST",
+        "-DLTC_SOURCE",
+        "-DARGTYPE=4",
+        "-I/var/home/gzn/ourtask/validation_set/sources/libtomcrypt/src/headers",
+        "-c",
+        "/var/home/gzn/ourtask/validation_set/sources/libtomcrypt/src/ciphers/aes/aes.c",
+        "-o",
+        "/var/home/gzn/ourtask/validation_set/builds/libtomcrypt/aes/mips_be/Os/0.o"
+      ],
+      "returncode": 0,
+      "seconds": 0.156,
+      "output": ""
+    },
+    {
+      "argv": [
+        "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+        "cc",
+        "-target",
+        "mips-linux-musl",
+        "-Os",
+        "-g",
+        "-fPIC",
+        "-fvisibility=hidden",
+        "-fno-ident",
+        "-fno-stack-protector",
+        "-DLTC_NO_TEST",
+        "-DLTC_SOURCE",
+        "-DARGTYPE=4",
+        "-nostdlib",
+        "-shared",
+        "/var/home/gzn/ourtask/validation_set/builds/libtomcrypt/aes/mips_be/Os/0.o",
+        "-Wl,--no-gc-sections",
+        "-Wl,--version-script=/var/home/gzn/ourtask/validation_set/build-support/localize.map",
+        "-Wl,--build-id=none",
+        "-o",
+        "/var/home/gzn/ourtask/validation_set/builds/libtomcrypt/aes/mips_be/Os/inspection.so"
+      ],
+      "returncode": 0,
+      "seconds": 2.169,
+      "output": ""
+    },
+    {
+      "argv": [
+        "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+        "cc",
+        "-target",
+        "mips-linux-musl",
+        "-Os",
+        "-g",
+        "-fPIC",
+        "-fvisibility=hidden",
+        "-fno-ident",
+        "-fno-stack-protector",
+        "-DLTC_NO_TEST",
+        "-DLTC_SOURCE",
+        "-DARGTYPE=4",
+        "-nostdlib",
+        "-shared",
+        "/var/home/gzn/ourtask/validation_set/builds/libtomcrypt/aes/mips_be/Os/0.o",
+        "-Wl,--no-gc-sections",
+        "-Wl,--version-script=/var/home/gzn/ourtask/validation_set/build-support/localize.map",
+        "-Wl,--build-id=none",
+        "-s",
+        "-o",
+        "/var/home/gzn/ourtask/validation_set/builds/libtomcrypt/aes/mips_be/Os/sample.so"
+      ],
+      "returncode": 0,
+      "seconds": 0.018,
+      "output": ""
+    }
+  ],
+  "status": "completed",
+  "started_at": "2026-10-12T07:49:29.284054+00:00",
+  "flags": [
+    "-target",
+    "mips-linux-musl",
+    "-Os",
+    "-g",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "-fno-ident",
+    "-fno-stack-protector",
+    "-DLTC_NO_TEST",
+    "-DLTC_SOURCE",
+    "-DARGTYPE=4"
+  ],
+  "pre_strip_verification": {
+    "machine": "EM_MIPS",
+    "bits": 32,
+    "little_endian": false,
+    "has_symtab": true,
+    "defined_functions": {
+      "rijndael_setup": 1584,
+      "rijndael_ecb_encrypt": 1332,
+      "rijndael_ecb_decrypt": 1372,
+      "rijndael_test": 8,
+      "rijndael_done": 8,
+      "rijndael_keysize": 76
+    },
+    "undefined_auxiliary_symbols": [],
+    "exported_definition_names": [],
+    "executable_bytes": 4380,
+    "executable_sections_sha256": {
+      ".text": "42cdd32deeac7bef1b11969eaa5f36788e0afc2c2070d47552d2b4bea724c900"
+    }
+  },
+  "sha256": "2841f5621f38c210423c6f77eed2068597f7a6a93778b6f0761a1e20abd9fbc7",
+  "path": "builds/libtomcrypt/aes/mips_be/Os/sample.so",
+  "stripped_verification": {
+    "machine": "EM_MIPS",
+    "bits": 32,
+    "little_endian": false,
+    "has_symtab": false,
+    "defined_functions": {},
+    "undefined_auxiliary_symbols": [],
+    "exported_definition_names": [],
+    "executable_bytes": 4380,
+    "executable_sections_sha256": {
+      ".text": "42cdd32deeac7bef1b11969eaa5f36788e0afc2c2070d47552d2b4bea724c900"
+    }
+  },
+  "finished_at": "2026-10-12T07:49:31.637165+00:00"
+}

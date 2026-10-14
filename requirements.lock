@@ -1,0 +1,12 @@
+# Acceptance runtime: Python 3.12.3. Direct and build dependencies pinned; no system installation.
+yara-python==4.5.4
+pyelftools==0.32
+pefile==2024.8.26
+setuptools==80.9.0
+# Guomi JavaScript AST parser; does not execute target code or require Node/MCP.
+tree-sitter==0.25.2
+tree-sitter-javascript==0.25.0
+# Guomi local instruction and C/C++ operation witnesses.
+capstone==5.0.6
+tree-sitter-c==0.24.1
+tree-sitter-cpp==0.23.4

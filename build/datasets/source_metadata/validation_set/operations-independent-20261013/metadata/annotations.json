@@ -1,0 +1,312 @@
+[
+  {
+    "id": "cifra-aes",
+    "project": "cifra",
+    "unit": "src/aes.c",
+    "source_sha256": "9776a847dfe3b1d865718258590292781d89d4da0ce08e3e2de66f7e7863beda",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-chacha20",
+    "project": "cifra",
+    "unit": "src/chacha20.c",
+    "source_sha256": "454d5a3e61d01d25d6c90dd277ddf26b79f1d935c3c206c261d5317706eaf296",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-sha1",
+    "project": "cifra",
+    "unit": "src/sha1.c",
+    "source_sha256": "d70759476a5e6b59ae7a8c4015d7debeb3746ffb6cbf04c100837f3f5dda736c",
+    "truth": [
+      "SHA-1"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-sha256",
+    "project": "cifra",
+    "unit": "src/sha256.c",
+    "source_sha256": "4cdf8abfb5502a536083907b2897a1fc0f092210a76eaa4e46448a34eed1403d",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-curve25519.tweetnacl",
+    "project": "cifra",
+    "unit": "src/curve25519.tweetnacl.c",
+    "source_sha256": "694e3b54910b35276349a7aa56ef3ec1a0f8a3ffc81ffd79478d67ae3797dc70",
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-salsa20",
+    "project": "cifra",
+    "unit": "src/salsa20.c",
+    "source_sha256": "b147aa4a54090d4b31f54f4017cf0338e74b2785285d784fbdb0f36f70cd8b65",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-sha3",
+    "project": "cifra",
+    "unit": "src/sha3.c",
+    "source_sha256": "beffdecc5dd49446b87b851004c1b855790fc7ac79bbbda020fa2074e53a9e5a",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-poly1305",
+    "project": "cifra",
+    "unit": "src/poly1305.c",
+    "source_sha256": "c5e3475cd91385663de48a2545160de85090da5d52443c67880247e59d4809ce",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-norx",
+    "project": "cifra",
+    "unit": "src/norx.c",
+    "source_sha256": "19789c02dd6d0a5891b21770c5f3333d3b224389031e6a93eb6aa716b27ba343",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "cifra-aes-no-cache-protection",
+    "project": "cifra",
+    "unit": "src/aes.c",
+    "source_sha256": "9776a847dfe3b1d865718258590292781d89d4da0ce08e3e2de66f7e7863beda",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/cifra/src/ext"
+    ],
+    "flags": [
+      "-DCF_CACHE_SIDE_CHANNEL_PROTECTION=0"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/ctz/cifra",
+    "commit": "cfa6df9ca0007abe3c70409d02b3779ac1742297",
+    "license": "CC0-1.0",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-chacha20_ref",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_stream/chacha20/ref/chacha20_ref.c",
+    "source_sha256": "a93ebb4cc15c590798cb095d48ed39eb5d8929fda7904ce148908485e38914c3",
+    "truth": [
+      "ChaCha20"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-hash_sha256",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_hash/sha256/hash_sha256.c",
+    "source_sha256": "27966cb51a4f2ccf00d226bbed169dca16246cbbed82fbfc2ca18f9b99829526",
+    "truth": [
+      "SHA-256"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-salsa20_ref",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_stream/salsa20/ref/salsa20_ref.c",
+    "source_sha256": "e47d9a29430d6ee4d2f7789e309984bf98997b3e5e7665f4efb006b705d50fc2",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-blake2b-compress-ref",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_generichash/blake2b/ref/blake2b-compress-ref.c",
+    "source_sha256": "5b4b29ee9562bd821da2d6d2f65902a8b5b834ecac049a5f1af1e1405646a640",
+    "truth": [],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-x25519_ref10",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.c",
+    "source_sha256": "0200b252ce176f3c09160dfd130d92121a43d995c8d028952c819fe51a3d1112",
+    "truth": [
+      "ECDH"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1"
+    ],
+    "architectures": null,
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  },
+  {
+    "id": "libsodium-aead_aes256gcm_aesni",
+    "project": "libsodium",
+    "unit": "src/libsodium/crypto_aead/aes256gcm/aesni/aead_aes256gcm_aesni.c",
+    "source_sha256": "9bb88570c7d4bef26102b2f963f03fd6da80b4472b14c302a8c0c7fa90a3c51e",
+    "truth": [
+      "AES"
+    ],
+    "includes": [
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include",
+      "/var/home/gzn/ourtask/validation_set/operations-independent-20261013/sources/libsodium/src/libsodium/include/sodium"
+    ],
+    "flags": [
+      "-DCONFIGURED=1",
+      "-DHAVE_TMMINTRIN_H=1",
+      "-DHAVE_WMMINTRIN_H=1"
+    ],
+    "architectures": [
+      "x86_64"
+    ],
+    "repository": "https://github.com/jedisct1/libsodium",
+    "commit": "a6a93de672b7e2c6c13a02cbbe0e6457fe9306fd",
+    "license": "ISC; per-file public-domain notices retained",
+    "truth_basis": "Pre-scan manual upstream source annotation. Complete round/scalar implementation present; unrelated auxiliary imports allowed. Static inclusion only."
+  }
+]

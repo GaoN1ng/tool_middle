@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/janmojzis/tinyssh",
+  "commit": "f1cf59a7efee73dfd16fe77b10d9439189acdc29",
+  "archive_sha256": "d91118528fa39b75b9ebdc583e7214e4f2707f8048cb076aea09124d2ce37e6d",
+  "split": "development",
+  "policy": "Assigned before scans; author provenance retained; not all repos are independent ancestry"
+}

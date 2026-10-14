@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "phase": "final",
+      "group": "axtls",
+      "files": 235,
+      "metrics": {
+        "TP": 58,
+        "FP": 0,
+        "FN": 72,
+        "TN": 2925,
+        "precision": 1.0,
+        "recall": 0.4461538461538462,
+        "f1": 0.6170212765957447,
+        "accuracy": 0.9764320785597381
+      }
+    },
+    {
+      "phase": "final",
+      "group": "cifra-sodium",
+      "files": 280,
+      "metrics": {
+        "TP": 80,
+        "FP": 0,
+        "FN": 89,
+        "TN": 3471,
+        "precision": 1.0,
+        "recall": 0.47337278106508873,
+        "f1": 0.642570281124498,
+        "accuracy": 0.9755494505494505
+      }
+    },
+    {
+      "phase": "baseline",
+      "group": "new-holdout",
+      "files": 284,
+      "metrics": {
+        "TP": 66,
+        "FP": 0,
+        "FN": 163,
+        "TN": 3463,
+        "precision": 1.0,
+        "recall": 0.28820960698689957,
+        "f1": 0.44745762711864406,
+        "accuracy": 0.9558504875406284
+      }
+    },
+    {
+      "phase": "final",
+      "group": "new-holdout",
+      "files": 284,
+      "metrics": {
+        "TP": 67,
+        "FP": 0,
+        "FN": 162,
+        "TN": 3463,
+        "precision": 1.0,
+        "recall": 0.2925764192139738,
+        "f1": 0.4527027027027027,
+        "accuracy": 0.9561213434452871
+      }
+    },
+    {
+      "phase": "final",
+      "group": "guomi",
+      "files": 791,
+      "metrics": {
+        "TP": 86,
+        "FP": 0,
+        "FN": 224,
+        "TN": 2063,
+        "precision": 1.0,
+        "recall": 0.27741935483870966,
+        "f1": 0.43434343434343436,
+        "accuracy": 0.9056047197640118
+      }
+    },
+    {
+      "phase": "final",
+      "group": "conventional",
+      "files": 1265,
+      "metrics": {
+        "TP": 212,
+        "FP": 6,
+        "FN": 405,
+        "TN": 12027,
+        "precision": 0.9724770642201835,
+        "recall": 0.34359805510534847,
+        "f1": 0.5077844311377245,
+        "accuracy": 0.9675098814229249
+      }
+    }
+  ],
+  "frozen_and_labels_unchanged": true
+}

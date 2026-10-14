@@ -1,0 +1,7 @@
+{
+  "project": "tinycrypt",
+  "repository": "https://github.com/intel/tinycrypt",
+  "commit": "cf24c907a61c01bc2c4e1ee0ae24457c27a840a2",
+  "split": "validation",
+  "policy": "Split assigned before first scan; validation project must never supply references or tuning evidence; files never executed"
+}

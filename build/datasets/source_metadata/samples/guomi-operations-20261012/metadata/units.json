@@ -1,0 +1,360 @@
+[
+  {
+    "name": "mp_sign",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/mp_sign.c",
+    "truth": [
+      "SM2"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "e6731b9a9ef47eb3f1e0616ebf5f5451ab343f68d96bf2a3219d071ff14fa88d"
+  },
+  {
+    "name": "wrong-sign",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/wrong-sign.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "c19141c32318eb32b157408edbff6a182ba2b77b6d4c1a063083a0e710d6858e"
+  },
+  {
+    "name": "wrong-order",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/wrong-order.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "027cef3e3dee489f80bc7dce5b7586a7162f66fb9e2c1b9f1397ed7a59e41f91"
+  },
+  {
+    "name": "sp_sign",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/sp_sign.c",
+    "truth": [
+      "SM2"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "6f2c0e6b63a6b8c580233fd48850157f09d0f7deef2476ccea20ebec553e58a6"
+  },
+  {
+    "name": "bn-sign",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/bn-sign.c",
+    "truth": [
+      "SM2"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "49cc1419690df83f1a1e9537ca5d6b883528176a5c5b1eabea0de0790be66ec3"
+  },
+  {
+    "name": "ecdsa",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/ecdsa.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "764efb65551798602970c8686d33cf7a956d9de777cdc1897d464d8004c52a59"
+  },
+  {
+    "name": "bn-verify",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/bn-verify.c",
+    "truth": [
+      "SM2"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "4f9f27297da61e27a2eeb91c6f61b9eecbd480a612bfd40484f108248241e26c"
+  },
+  {
+    "name": "wrong-point",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/wrong-point.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "eebeb27f308d492985320332b42b787b9ff99063d2119616651e19344c19d897"
+  },
+  {
+    "name": "split-word-rounds",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/split-word-rounds.c",
+    "truth": [
+      "SM4"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "c23a03b0e2f08b63cb566b5bc110ba40e7174f84f87568d5231409b30db4633f"
+  },
+  {
+    "name": "wrong-linear",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/wrong-linear.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "3cfb79945cc307706161110598314039e1a6dd112d723bafe4d35817ada78cf1"
+  },
+  {
+    "name": "split-compression",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/split-compression.c",
+    "truth": [
+      "SM3"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "c0b805db5f83227b7327fd7fa3171e9385e7ed9155616bbe18775ef6e8831293"
+  },
+  {
+    "name": "wrong-permutation",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/wrong-permutation.c",
+    "truth": [],
+    "architectures": [
+      "x86_64",
+      "aarch64",
+      "arm",
+      "thumb",
+      "mipsel",
+      "mips_be"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "c",
+    "sha256": "a5933487a62be9d0fcc40c810607333012a6609b3c8e22d33808bfee7a7ad203"
+  },
+  {
+    "name": "isa-sm4",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/isa-sm4.S",
+    "truth": [
+      "SM4"
+    ],
+    "architectures": [
+      "aarch64"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "asm",
+    "sha256": "ffe5e07611e6cab3abffde11dab354a4da77fa47da960b78970e1cbd0be6c858"
+  },
+  {
+    "name": "isa-sm3",
+    "path": "/var/home/gzn/ourtask/samples/guomi-operations-20261012/sources/isa-sm3.S",
+    "truth": [
+      "SM3"
+    ],
+    "architectures": [
+      "aarch64"
+    ],
+    "license": "CC0-1.0",
+    "project": "authored-equation-controls",
+    "flags": [],
+    "includes": [],
+    "language": "asm",
+    "sha256": "0a1c2bd963089dab0377f4ca37c2b888e6d6412f35363cee9827cd842d900453"
+  },
+  {
+    "name": "wolfsm-sm3-plain",
+    "path": "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/wolfsm/sm3.c",
+    "truth": [
+      "SM3"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64"
+    ],
+    "license": "GPL-2.0-or-later",
+    "project": "wolfsm",
+    "flags": [
+      "-DWOLFSSL_USER_SETTINGS"
+    ],
+    "includes": [
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/build-support/wolfssl",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/wolfssl"
+    ],
+    "language": "c",
+    "sha256": "29dee800de0851b5bbd9b98592188cb71541961898d7b21c79204b32ac6dd249"
+  },
+  {
+    "name": "wolfsm-sm4-plain",
+    "path": "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/wolfsm/sm4.c",
+    "truth": [
+      "SM4"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64"
+    ],
+    "license": "GPL-2.0-or-later",
+    "project": "wolfsm",
+    "flags": [
+      "-DWOLFSSL_USER_SETTINGS"
+    ],
+    "includes": [
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/build-support/wolfssl",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/wolfssl"
+    ],
+    "language": "c",
+    "sha256": "399b8f9e01e49e099a2c73204618a2f92bb62bd966232e2b5273258efa769c1e"
+  },
+  {
+    "name": "openssl-sm3-plain",
+    "path": "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/crypto/sm3/sm3.c",
+    "truth": [
+      "SM3"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64"
+    ],
+    "license": "Apache-2.0",
+    "project": "openssl",
+    "flags": [],
+    "includes": [
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/build-support/openssl",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "language": "c",
+    "sha256": "f3260d8facb9e6a540a749a5481f7a4392e949077304fb09f12f26d4e2f16ebb"
+  },
+  {
+    "name": "openssl-sm4-plain",
+    "path": "/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/crypto/sm4/sm4.c",
+    "truth": [
+      "SM4"
+    ],
+    "architectures": [
+      "x86_64",
+      "aarch64"
+    ],
+    "license": "Apache-2.0",
+    "project": "openssl",
+    "flags": [],
+    "includes": [
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/build-support/openssl",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl/include",
+      "-I/var/home/gzn/ourtask/samples/guomi-development-20261012/sources/openssl"
+    ],
+    "language": "c",
+    "sha256": "8255c9ca5c48fb2f492730361cc1f78271148ccdfb1a5d1a79796a857c14bdcc"
+  }
+]
