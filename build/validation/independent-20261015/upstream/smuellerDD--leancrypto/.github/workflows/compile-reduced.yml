@@ -1,0 +1,61 @@
+name: Compile Reduced Leancrypto
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        default-library: ['shared', 'static', 'both']
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install meson
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y meson
+    - name: PQC-only Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/pqc-only.sh -Ddefault_library=${{ matrix.default-library }}
+    - name: PQC-only Meson compile
+      run: meson compile -C build-pqc-only
+    - name: PQC-only Meson test
+      run: meson test -C build-pqc-only --suite=regression
+    - name: SHA256-only Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/sha256_only.sh -Ddefault_library=${{ matrix.default-library }}
+    - name: SHA256-only Meson compile
+      run: meson compile -C build-sha256-only
+    - name: SHA256-only Meson test
+      run: meson test -C build-sha256-only --suite=regression
+    - name: ML-KEM1024-only Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/mlkem1024-only.sh -Ddefault_library=${{ matrix.default-library }}
+    - name: ML-KEM1024-only Meson compile
+      run: meson compile -C build-mlkem1024-only
+    - name: ML-KEM1024-only Meson test
+      run: meson test -C build-mlkem1024-only --suite=regression
+    - name: AES-GCM-only Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/aesgcm-only.sh -Ddefault_library=${{ matrix.default-library }}
+    - name: AES-GCM-only Meson compile
+      run: meson compile -C build-aesgcm-only
+    - name: AES-GCM-only Meson test
+      run: meson test -C build-aesgcm-only --suite=regression
+    - name: Shim Boot Loader Support Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/shim_support.sh test -Ddefault_library=${{ matrix.default-library }}
+    - name: Shim Boot Loader Support Meson compile
+      run: meson compile -C leancrypto-build-shim
+    - name: Shim Boot Loader Support test
+      run: meson test -C leancrypto-build-shim --suite=regression
+    - name: ED/X25519/448 Meson setup ${{ matrix.default-library }}
+      run: bash build-scripts/25519_448_only.sh -Ddefault_library=${{ matrix.default-library }}
+    - name: ED/X25519/448 Meson compile
+      run: meson compile -C build-25519_448-only
+    - name: ED/X25519/448 test
+      run: meson test -C build-25519_448-only --suite=regression
+
+

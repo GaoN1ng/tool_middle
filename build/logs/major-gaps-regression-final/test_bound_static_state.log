@@ -1,0 +1,10 @@
+test_complete_static_ecdh_and_negative_relations (test_bound_static_state.BoundStaticStateTests.test_complete_static_ecdh_and_negative_relations) ... ok
+test_conditional_duplicate_functions_are_retained_but_not_inlined (test_bound_static_state.BoundStaticStateTests.test_conditional_duplicate_functions_are_retained_but_not_inlined) ... ok
+test_extended_euclid_needs_both_recurrences (test_bound_static_state.BoundStaticStateTests.test_extended_euclid_needs_both_recurrences) ... ok
+test_new_author_and_blinded_curve_source_equations (test_bound_static_state.BoundStaticStateTests.test_new_author_and_blinded_curve_source_equations) ... ok
+test_replacing_a_masked_call_target_invalidates_static_primitive (test_bound_static_state.BoundStaticStateTests.test_replacing_a_masked_call_target_invalidates_static_primitive) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 91.934s
+
+OK

@@ -1,0 +1,12 @@
+0x1b0fc lsl w9, w9, #0xd before ('lin', frozenset({((606, ()), 0)}))
+after ('shift', ('lin', frozenset({((606, ()), 0)})), 'left', 13)
+0x1b100 orr w9, w9, w10, lsr #19 before ('shift', ('lin', frozenset({((606, ()), 0)})), 'left', 13)
+after ('lin', frozenset({((607, ()), 0)}))
+0x1b104 eor w8, w8, w9 before ('lin', frozenset({((544, ()), 0)}))
+after ('lin', frozenset({((607, ()), 0), ((544, ()), 0)}))
+0x1b238 eor w8, w8, w9, lsr #10 before ('lin', frozenset({((607, ()), 0), ((544, ()), 0)}))
+after ('bits', (frozenset({((607, ()), 0), ((638, ()), 10), ((544, ()), 0)}), frozenset({((607, ()), 1), ((638, ()), 11), ((544, ()), 1)}), frozenset({((607, ()), 2), ((638, ()), 12), ((544, ()), 2)}), frozenset({((638, ()), 13), ((607, ()), 3), ((544, ()), 3)}), frozenset({((638, ()), 14), ((544, ()), 4), ((607, ()), 4)}), frozenset({((638, ()), 15), ((607, ()), 5), ((544, ()), 5)}), frozenset({((607, ()), 6), ((638, ()), 16), ((544, ()), 6)}), frozen
+0x1b5ac lsl w8, w8, #0x19 before ('lin', frozenset({((732, ()), 0)}))
+after ('shift', ('lin', frozenset({((732, ()), 0)})), 'left', 25)
+0x1b5b0 orr w8, w8, w9, lsr #7 before ('shift', ('lin', frozenset({((732, ()), 0)})), 'left', 25)
+after ('lin', frozenset({((733, ()), 0)}))

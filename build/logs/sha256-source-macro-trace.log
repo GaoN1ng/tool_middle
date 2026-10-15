@@ -1,0 +1,8 @@
+SIGMA_MAJ1_SHA256((e)) [] ('lin', frozenset({((65, ()), 0), ((68, ()), 0), ((71, ()), 0)}))
+SIGMA_MAJ0_SHA256((a)) [] ('lin', frozenset({((87, ()), 0), ((90, ()), 0), ((84, ()), 0)}))
+SHA2CORE(a,b,c,d,e,f,g,h,w,k,u32,SHA256) [] ('lin', frozenset({((105, ()), 0)}))
+SHA2CORE_SHA256(a,b,c,d,e,f,g,h,W[i],K_SHA256[i]) [] ('lin', frozenset({((105, ()), 0)}))
+SIGMA_MAJ1_SHA256((e)) [] ('lin', frozenset({((136, ()), 0), ((130, ()), 0), ((133, ()), 0)}))
+SIGMA_MAJ0_SHA256((a)) [] ('lin', frozenset({((174, ()), 0), ((180, ()), 0), ((177, ()), 0)}))
+SHA2CORE(a,b,c,d,e,f,g,h,w,k,u32,SHA256) [] ('lin', frozenset({((195, ()), 0)}))
+SHA2CORE_SHA256(a,b,c,d,e,f,g,h,UPDATEW_SHA256(W,i),K_SHA256[i]) [] ('lin', frozenset({((195, ()), 0)}))

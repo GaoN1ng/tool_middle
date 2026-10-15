@@ -1,0 +1,20 @@
+test_aborted_backend_is_replaced_before_next_candidate (test_semantic_probes.IsolationTests.test_aborted_backend_is_replaced_before_next_candidate) ... ok
+test_failed_worker_never_emits_a_witness (test_semantic_probes.IsolationTests.test_failed_worker_never_emits_a_witness) ... ok
+test_private_memory_copy_and_permission_fault (test_semantic_probes.IsolationTests.test_private_memory_copy_and_permission_fault) ... ok
+test_real_isolated_worker_runs_with_address_space_limit (test_semantic_probes.IsolationTests.test_real_isolated_worker_runs_with_address_space_limit) ... ok
+test_unknown_import_syscall_instruction_fault_and_budget_fail_closed (test_semantic_probes.IsolationTests.test_unknown_import_syscall_instruction_fault_and_budget_fail_closed) ... ok
+test_all_block_vectors_required_and_expired_budget_declines (test_semantic_probes.VectorTests.test_all_block_vectors_required_and_expired_budget_declines) ... ok
+test_montgomery_reference_matches_rfc7748 (test_semantic_probes.VectorTests.test_montgomery_reference_matches_rfc7748) ... ok
+test_one_matching_curve_vector_does_not_accept (test_semantic_probes.VectorTests.test_one_matching_curve_vector_does_not_accept) ... ok
+test_rc4_reference_matches_rfc6229_first_block (test_semantic_probes.VectorTests.test_rc4_reference_matches_rfc6229_first_block) ... ok
+test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store (test_major_gaps.MajorGapTests.test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store) ... ok
+test_imported_copy_only_invalidates_its_destination (test_major_gaps.MajorGapTests.test_imported_copy_only_invalidates_its_destination) ... ok
+test_macro_array_swap_requires_both_feedback_indices_and_keystream (test_major_gaps.MajorGapTests.test_macro_array_swap_requires_both_feedback_indices_and_keystream) ... ok
+test_macro_expansion_does_not_double_apply_post_increment (test_major_gaps.MajorGapTests.test_macro_expansion_does_not_double_apply_post_increment) ... ok
+test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool (test_major_gaps.MajorGapTests.test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool) ... ok
+test_uncompressed_point_export_is_read_only_except_output (test_major_gaps.MajorGapTests.test_uncompressed_point_export_is_read_only_except_output) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.931s
+
+OK

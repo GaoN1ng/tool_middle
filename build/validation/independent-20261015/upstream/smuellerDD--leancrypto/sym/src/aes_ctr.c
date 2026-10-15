@@ -1,0 +1,114 @@
+/*
+ * Copyright (C) 2022 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "aes_c.h"
+#include "aes_internal.h"
+#include "compare.h"
+#include "ext_headers_internal.h"
+#include "lc_aes.h"
+#include "lc_sym.h"
+#include "mode_ctr.h"
+#include "visibility.h"
+#include "xor.h"
+
+struct lc_sym_state {
+	struct lc_mode_state ctr_state;
+	struct aes_block_ctx block_ctx;
+};
+
+#define LC_AES_CTR_BLOCK_SIZE sizeof(struct lc_sym_state)
+
+/*
+ * Symmetrical operation: same function for encrypting as for decrypting.
+ * Note any IV/nonce should never be reused with the same key.
+ */
+static int aes_ctr_crypt(struct lc_sym_state *ctx, const uint8_t *in,
+			 uint8_t *out, size_t len)
+{
+	return lc_mode_ctr_c->encrypt(&ctx->ctr_state, in, out, len);
+}
+
+static int aes_ctr_crypt_iv(const struct lc_sym_state *ctx, const uint8_t *in,
+			    uint8_t *out, size_t len, uint8_t *iv, size_t ivlen)
+{
+	return lc_mode_ctr_c->encrypt_iv(&ctx->ctr_state, in, out, len, iv,
+					 ivlen);
+}
+
+static int aes_ctr_init_nocheck(struct lc_sym_state *ctx)
+{
+	lc_mode_ctr_c->init(&ctx->ctr_state, lc_aes_c, NULL, &ctx->block_ctx,
+			    NULL);
+	return 0;
+}
+
+static int aes_ctr_init(struct lc_sym_state *ctx)
+{
+	mode_ctr_selftest(lc_aes_ctr_c);
+	LC_SELFTEST_COMPLETED(LC_ALG_STATUS_AES_CTR);
+
+	return aes_ctr_init_nocheck(ctx);
+}
+
+static int aes_ctr_setkey(struct lc_sym_state *ctx, const uint8_t *key,
+			  size_t keylen)
+{
+	if (!ctx)
+		return -EINVAL;
+	return lc_mode_ctr_c->setkey(&ctx->ctr_state, key, keylen);
+}
+
+static int aes_ctr_init_iv(const struct lc_sym_state *ctx, uint8_t *iv,
+			   size_t ivlen)
+{
+	return lc_mode_ctr_c->init_iv(&ctx->ctr_state, iv, ivlen);
+}
+
+static int aes_ctr_setiv(struct lc_sym_state *ctx, const uint8_t *iv,
+			 size_t ivlen)
+{
+	return lc_mode_ctr_c->setiv(&ctx->ctr_state, iv, ivlen);
+}
+
+static int aes_ctr_getiv(const struct lc_sym_state *ctx, uint8_t *iv,
+			 size_t ivlen)
+{
+	return lc_mode_ctr_c->getiv(&ctx->ctr_state, iv, ivlen);
+}
+
+static const struct lc_sym _lc_aes_ctr_c = { .init = aes_ctr_init,
+					     .init_nocheck =
+						     aes_ctr_init_nocheck,
+					     .setkey = aes_ctr_setkey,
+					     .setiv = aes_ctr_setiv,
+					     .getiv = aes_ctr_getiv,
+					     .encrypt = aes_ctr_crypt,
+					     .decrypt = aes_ctr_crypt,
+
+					     .init_iv = aes_ctr_init_iv,
+					     .encrypt_iv = aes_ctr_crypt_iv,
+					     .decrypt_iv = aes_ctr_crypt_iv,
+
+					     .statesize = LC_AES_CTR_BLOCK_SIZE,
+					     .blocksize = 1,
+					     .algorithm_type =
+						     LC_ALG_STATUS_AES_CTR };
+LC_INTERFACE_SYMBOL(const struct lc_sym *, lc_aes_ctr_c) = &_lc_aes_ctr_c;
+
+LC_INTERFACE_SYMBOL(const struct lc_sym *, lc_aes_ctr) = &_lc_aes_ctr_c;

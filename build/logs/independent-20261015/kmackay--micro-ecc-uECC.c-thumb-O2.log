@@ -1,0 +1,5 @@
+In file included from /var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kmackay--micro-ecc/uECC.c:89:
+/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kmackay--micro-ecc/platform-specific.inc:35:10: fatal error: 'sys/types.h' file not found
+   35 | #include <sys/types.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.

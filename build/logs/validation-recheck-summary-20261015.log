@@ -1,0 +1,127 @@
+{
+  "recent": {
+    "historical": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "raw_current": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "isolated_baseline": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "isolated_current": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "scan_status": {
+      "completed": 227,
+      "partial": 5
+    }
+  },
+  "history": {
+    "historical": {
+      "TP": 503,
+      "FP": 6,
+      "FN": 952,
+      "TN": 23949,
+      "recall": 0.3457044673539519,
+      "false_negative_rate": 0.6542955326460481,
+      "precision": 0.9882121807465619
+    },
+    "raw_current": {
+      "TP": 690,
+      "FP": 6,
+      "FN": 765,
+      "TN": 23949,
+      "recall": 0.4742268041237113,
+      "false_negative_rate": 0.5257731958762887,
+      "precision": 0.9913793103448276
+    },
+    "isolated_baseline": {
+      "TP": 493,
+      "FP": 6,
+      "FN": 962,
+      "TN": 23949,
+      "recall": 0.33883161512027493,
+      "false_negative_rate": 0.6611683848797251,
+      "precision": 0.9879759519038076
+    },
+    "isolated_current": {
+      "TP": 684,
+      "FP": 6,
+      "FN": 771,
+      "TN": 23949,
+      "recall": 0.47010309278350515,
+      "false_negative_rate": 0.5298969072164949,
+      "precision": 0.991304347826087
+    },
+    "scan_status": {
+      "completed": 2822,
+      "partial": 33
+    }
+  },
+  "rf": {
+    "historical": {
+      "TP": 103,
+      "FP": 3,
+      "FN": 130,
+      "TN": 3040,
+      "recall": 0.44206008583690987,
+      "false_negative_rate": 0.5579399141630901,
+      "precision": 0.9716981132075472
+    },
+    "raw_current": {
+      "TP": 142,
+      "FP": 3,
+      "FN": 91,
+      "TN": 3040,
+      "recall": 0.6094420600858369,
+      "false_negative_rate": 0.3905579399141631,
+      "precision": 0.9793103448275862
+    },
+    "isolated_baseline": {
+      "TP": 103,
+      "FP": 3,
+      "FN": 130,
+      "TN": 3040,
+      "recall": 0.44206008583690987,
+      "false_negative_rate": 0.5579399141630901,
+      "precision": 0.9716981132075472
+    },
+    "isolated_current": {
+      "TP": 142,
+      "FP": 3,
+      "FN": 91,
+      "TN": 3040,
+      "recall": 0.6094420600858369,
+      "false_negative_rate": 0.3905579399141631,
+      "precision": 0.9793103448275862
+    },
+    "scan_status": {
+      "completed": 252
+    }
+  }
+}

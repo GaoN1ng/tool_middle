@@ -17,7 +17,7 @@ for prefix in ('mpz_','__gmpz_'):
 
 
 class ConventionalEquations(Equations):
-    def __init__(self,shadowed=()):
+    def __init__(self,shadowed=(), *, pointer_size=None):
         super().__init__(shadowed)
         self.general_matches=[]
         self.powers=[];self.crt_remainders=[]
@@ -25,6 +25,11 @@ class ConventionalEquations(Equations):
         self.affine_points=set()
         self.imported_points=set()
         self.reduced_coordinates=[]
+        self.pointer_size=pointer_size
+        from .curve_ladder import Ladder
+        self.ladder=Ladder()
+        from .curve_exchange import Exchange
+        self.exchange=Exchange()
 
     def match(self,algorithm,equation,site,kind,modulus=None):
         self.general_matches.append({'algorithm':algorithm,'equation':equation,'offset':site,
@@ -37,14 +42,36 @@ class ConventionalEquations(Equations):
             return s
         args=[pointer(a) for a in args]
         record={'operation':name,'arguments':args,'offset':site}
+        if name not in self.shadowed and self.exchange.feed(name,args,site):
+            self.general_matches.extend(self.exchange.matches);self.exchange.matches=[]
+            return
+        if name not in self.shadowed and self.ladder.feed(name,args,site):
+            self.general_matches.extend(self.ladder.matches);self.ladder.matches=[]
+            return
+        self.ladder.clobber(args)
+        self.exchange.clobber(args)
         if name not in self.shadowed and name=='ec_pub_key_import_from_aff_buf' and len(args)>=5:
-            self.imported_points.add(args[0]+'.y');self.history.append(record);return
+            self.imported_points.add(args[0]+'.y')
+            if self.pointer_size in {4,8}:
+                # libecc's documented ec_pub_key is enum, aligned pointer,
+                # then prj_pt y. Bind that field only after the actual import;
+                # arbitrary same-object offsets never introduce a peer point.
+                import re
+                obj=args[0];match=re.fullmatch(r'(.*)\[(-?\d+)\]',obj)
+                if match:obj=match[1]+'['+str(int(match[2])+2*self.pointer_size)+']'
+                else:obj+='['+str(2*self.pointer_size)+']'
+                self.imported_points.add(obj)
+            self.history.append(record);return
         if name not in self.shadowed and name in {'prj_pt_import_from_buf','prj_pt_import_from_aff_buf'} and len(args)>=4:
             self.imported_points.add(args[0]);self.history.append(record);return
         if name not in self.shadowed and name=='prj_pt_unique' and len(args)>=2:
             if args[1] in self.peer_points:
                 self.peer_points[args[0]]=self.peer_points[args[1]]
                 self.affine_points.add(args[0])
+            if args[1] in self.points:
+                relation=self.points[args[1]];self.points[args[0]]=relation
+                for field in ('.X.fp_val','->X.fp_val'):self.coordinates[args[0]+field]=relation
+                if args[0].startswith(('stack:','input:','load:')):self.coordinates[args[0]]=relation
             self.history.append(record);return
         if name not in self.shadowed and name in {'prj_pt_mul','prj_pt_mul_blind'} and len(args)>=3:
             out,scalar,base=args[:3];self.history.append(record)
@@ -59,6 +86,11 @@ class ConventionalEquations(Equations):
                 self.coordinates[out+'->X.fp_val']=relation
             elif base in self.imported_points:
                 self.peer_points[out]=('projective-group',self.get(scalar),base,site)
+            else:
+                # P is the actual base point operand, not a spelling guessed
+                # to mean G. Signing classification still needs the bound
+                # x(kP), reduced r, k inverse and s*k=e+r*d equation.
+                self.points[out]=('projective-base:'+base,self.get(scalar),'NULL',Value.constant(0),site)
             return
         if name not in self.shadowed and name=='_prj_pt_unprotected_mult' and len(args)>=3:
             if args[2] in self.imported_points:self.imported_points.add(args[0])
@@ -140,6 +172,6 @@ class ConventionalEquations(Equations):
                     rest=numerator.op(r.op(Value.symbol(d),'mul'),'sub')
                     candidates=rest.symbols()-r.symbols()-k.symbols()-{d}
                     if not any(rest.equal(Value.symbol(e)) for e in candidates):continue
-                    self.general_matches.append({'algorithm':'ECDSA','equation':'R=k*G; r=x(R) mod n; s*k=e+r*d mod n',
+                    self.general_matches.append({'algorithm':'ECDSA','equation':'R=k*P for the bound base point; r=x(R) mod n; s*k=e+r*d mod n',
                         'modulus':n,'offset':psite,'kind':'signature_curve_equation',
                         'operation_witnesses':self.history[-64:]});return

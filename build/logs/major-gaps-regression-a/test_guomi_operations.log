@@ -1,0 +1,13 @@
+test_aarch64_local_calls_and_dynamic_rotate (test_guomi_operations.GuomiOperationTests.test_aarch64_local_calls_and_dynamic_rotate) ... ok
+test_actual_upstream_signer_without_algorithm_names_or_hashes (test_guomi_operations.GuomiOperationTests.test_actual_upstream_signer_without_algorithm_names_or_hashes) ... ok
+test_blinding_and_api_argument_conventions (test_guomi_operations.GuomiOperationTests.test_blinding_and_api_argument_conventions) ... ok
+test_crypto_instructions_require_operation_families (test_guomi_operations.GuomiOperationTests.test_crypto_instructions_require_operation_families) ... ok
+test_montgomery_scale_and_group_order_are_bound (test_guomi_operations.GuomiOperationTests.test_montgomery_scale_and_group_order_are_bound) ... ok
+test_mpi_separate_reduction_and_coordinate_binding (test_guomi_operations.GuomiOperationTests.test_mpi_separate_reduction_and_coordinate_binding) ... ok
+test_name_independent_local_rotate_helper (test_guomi_operations.GuomiOperationTests.test_name_independent_local_rotate_helper) ... ok
+test_ud1_operand_bytes_do_not_become_instructions (test_guomi_operations.GuomiOperationTests.test_ud1_operand_bytes_do_not_become_instructions) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.076s
+
+OK

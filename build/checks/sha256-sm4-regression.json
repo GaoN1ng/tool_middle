@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "single_clean_full_pass": true,
+  "distinct_tests": 176,
+  "modules": 20,
+  "summary": "build/logs/sha256-sm4-release-regression/summary.json",
+  "logs": "build/logs/sha256-sm4-release-regression/",
+  "includes_optional_ml_learning": true,
+  "freeze": "build/experiments/sha256-sm4-20261014/release-package"
+}

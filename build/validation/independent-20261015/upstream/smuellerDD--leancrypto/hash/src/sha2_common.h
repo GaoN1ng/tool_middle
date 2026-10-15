@@ -1,0 +1,85 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#ifndef SHA2_COMMON_H
+#define SHA2_COMMON_H
+
+#include "ext_headers.h"
+#include "lc_sha256.h"
+#include "lc_sha512.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ * The assembler implementations of the transformation follow the SysV ABI on
+ * all systems - see SYSV_ABI. The calling convention is part of the function
+ * type, i.e. it must be carried by the function pointers the implementations
+ * are handed over with as well. Without it, the indirect calls in
+ * lc_sha*_update and lc_sha*_final are issued with the ABI of the host on
+ * systems where both differ - notably Windows, where the arguments would be
+ * passed in the wrong registers and the assembler code would clobber the
+ * registers the caller expects to be preserved.
+ *
+ * The implementations written in C are therefore given the same ABI.
+ */
+typedef void(SYSV_ABI *sha256_transform_block_f)(struct lc_sha256_state *ctx,
+						 const uint8_t *in,
+						 size_t blocks);
+typedef void(SYSV_ABI *sha512_transform_block_f)(struct lc_sha512_state *ctx,
+						 const uint8_t *in,
+						 size_t blocks);
+
+int lc_sha256_init(void *_state);
+int lc_sha256_init_nocheck(void *_state);
+
+void lc_sha256_update(struct lc_sha256_state *ctx, const uint8_t *in,
+		      size_t inlen,
+		      sha256_transform_block_f sha256_transform_block);
+
+void lc_sha256_final(struct lc_sha256_state *ctx, uint8_t *digest,
+		     sha256_transform_block_f sha256_transform_block);
+
+size_t lc_sha256_get_digestsize(const void *_state);
+
+/******************************************************************************/
+
+int lc_sha384_init(void *_state);
+int lc_sha384_init_nocheck(void *_state);
+int lc_sha512_init(void *_state);
+int lc_sha512_init_nocheck(void *_state);
+
+void lc_sha512_update(struct lc_sha512_state *ctx, const uint8_t *in,
+		      size_t inlen,
+		      sha512_transform_block_f sha512_transform_block);
+void lc_sha384_final(struct lc_sha512_state *ctx, uint8_t *digest,
+		     sha512_transform_block_f sha512_transform_block);
+void lc_sha512_final(struct lc_sha512_state *ctx, uint8_t *digest,
+		     sha512_transform_block_f sha512_transform_block);
+void lc_sha512_extract_bytes(const void *state, uint8_t *data, size_t offset,
+			     size_t length);
+size_t lc_sha384_get_digestsize(const void *_state);
+size_t lc_sha512_get_digestsize(const void *_state);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* SHA2_COMMON_H */

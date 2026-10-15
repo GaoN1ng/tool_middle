@@ -1,0 +1,32 @@
+test_aliases_and_offsets_read_actual_verified_array (test_source_pointers.SourcePointerTests.test_aliases_and_offsets_read_actual_verified_array) ... ok
+test_invalidated_or_out_of_bounds_alias_is_not_a_table (test_source_pointers.SourcePointerTests.test_invalidated_or_out_of_bounds_alias_is_not_a_table) ... ok
+test_proved_loop_pointer_range_survives_induction_widening (test_source_pointers.SourcePointerTests.test_proved_loop_pointer_range_survives_induction_widening) ... ok
+test_aarch64_halfword_constant_initialization (test_sha256_rounds.SHA256RoundTests.test_aarch64_halfword_constant_initialization) ... ok
+test_algorithm_like_macro_names_do_not_supply_missing_operations (test_sha256_rounds.SHA256RoundTests.test_algorithm_like_macro_names_do_not_supply_missing_operations) ... ok
+test_all_ones_xor_is_boolean_complement_in_source_and_binary (test_sha256_rounds.SHA256RoundTests.test_all_ones_xor_is_boolean_complement_in_source_and_binary) ... FAIL
+test_complete_round_without_local_message_expansion (test_sha256_rounds.SHA256RoundTests.test_complete_round_without_local_message_expansion) ... ok
+test_identity_masks_do_not_replace_boolean_producers (test_sha256_rounds.SHA256RoundTests.test_identity_masks_do_not_replace_boolean_producers) ... ok
+test_macro_arguments_do_not_cascade_and_typedef_casts_are_real (test_sha256_rounds.SHA256RoundTests.test_macro_arguments_do_not_cascade_and_typedef_casts_are_real) ... ok
+test_wrong_input_maps_and_variant_stay_negative (test_sha256_rounds.SHA256RoundTests.test_wrong_input_maps_and_variant_stay_negative) ... ok
+test_aarch64_flag_setting_subtract_recovers_complementary_shift (test_mips_controlflow.MIPSControlflowTests.test_aarch64_flag_setting_subtract_recovers_complementary_shift) ... ok
+test_branch_slot_reads_real_table_in_both_endians (test_mips_controlflow.MIPSControlflowTests.test_branch_slot_reads_real_table_in_both_endians) ... ok
+test_call_slot_precedes_callee_clobber (test_mips_controlflow.MIPSControlflowTests.test_call_slot_precedes_callee_clobber) ... ok
+test_conflicting_join_does_not_keep_provisional_table_reads (test_mips_controlflow.MIPSControlflowTests.test_conflicting_join_does_not_keep_provisional_table_reads) ... ok
+test_imported_copy_binds_got_slot_and_actual_delay_slot_length (test_mips_controlflow.MIPSControlflowTests.test_imported_copy_binds_got_slot_and_actual_delay_slot_length) ... ok
+test_mips_dynamic_tags_resolve_real_development_import (test_mips_controlflow.MIPSControlflowTests.test_mips_dynamic_tags_resolve_real_development_import) ... ok
+test_pic_address_survives_a_loop_edge (test_mips_controlflow.MIPSControlflowTests.test_pic_address_survives_a_loop_edge) ... ok
+test_scalar_helper_uses_variable_shifts_and_return_delay_slot (test_mips_controlflow.MIPSControlflowTests.test_scalar_helper_uses_variable_shifts_and_return_delay_slot) ... ok
+test_unstable_runtime_loop_does_not_erase_an_independent_function (test_mips_controlflow.MIPSControlflowTests.test_unstable_runtime_loop_does_not_erase_an_independent_function) ... ok
+
+======================================================================
+FAIL: test_all_ones_xor_is_boolean_complement_in_source_and_binary (test_sha256_rounds.SHA256RoundTests.test_all_ones_xor_is_boolean_complement_in_source_and_binary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_sha256_rounds.py", line 70, in test_all_ones_xor_is_boolean_complement_in_source_and_binary
+    self.assertEqual(poly==frozenset({frozenset(),frozenset({(1,())})}),want)
+AssertionError: False != True
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.533s
+
+FAILED (failures=1)

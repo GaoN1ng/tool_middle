@@ -1,0 +1,42 @@
+{
+  "files": 2855,
+  "positive_labels": 1455,
+  "kinds": {
+    "executable": 2677,
+    "source": 178
+  },
+  "locked_files": 2860,
+  "content_duplicate_records": 0,
+  "original_manifests": [
+    {
+      "manifest": "build/datasets/manifests/validation_set__manifest.json",
+      "sha256": "fb6e9e2d348dbfa56edf2af05c33fa67fc8acfa7e7d4ae6f6bff77bc45d687a6",
+      "records": 1265
+    },
+    {
+      "manifest": "build/datasets/manifests/validation_set__guomi-operations-20261012__manifest.json",
+      "sha256": "5a0bd2866d230e516a2ff5ccdf3bc11f78793e4100ccd73a2ddd3ab1864e483a",
+      "records": 791
+    },
+    {
+      "manifest": "build/datasets/manifests/validation_set__operations-independent-20261013__manifest.json",
+      "sha256": "ed14d998fb2cdd89b91fb2e79991b69e14df53e97d679a3bb97c056c86f2bcca",
+      "records": 280
+    },
+    {
+      "manifest": "build/datasets/manifests/validation_set__semantic-independent-20261013__manifest.json",
+      "sha256": "f47223a8b917700dab0a6218c10d7344dfa548ece95cfd2f5354176967907dee",
+      "records": 235
+    },
+    {
+      "manifest": "build/datasets/manifests/validation_set__controlflow-independent-20261014__manifest.json",
+      "sha256": "02d3233634e311a7e65cdef49bbcce65857016a9b50c4434087c156cf30c505e",
+      "records": 284
+    }
+  ],
+  "package_sha256": "ec83619ac1310c59211bc944fa0c48690c605ff9d2ae8ab7b50e17a61faa568d",
+  "checkout_code_and_runtime_match_freeze": true,
+  "truth_and_known_scope_match_historical_baseline": true,
+  "historical_development_overlap": [],
+  "note": "Historical overlap remains visible and in original denominator; no claims of fresh independence."
+}

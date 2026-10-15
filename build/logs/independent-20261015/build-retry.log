@@ -1,0 +1,15 @@
+30 / 300 builds; samples 54
+60 / 300 builds; samples 76
+90 / 300 builds; samples 90
+120 / 300 builds; samples 110
+150 / 300 builds; samples 138
+180 / 300 builds; samples 168
+210 / 300 builds; samples 168
+240 / 300 builds; samples 168
+270 / 300 builds; samples 198
+300 / 300 builds; samples 228
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/build/tmp/build_independent_retry.py", line 94, in <module>
+    old=dedup[r['sha256']];assert old['truth']==r['truth'];old.setdefault('equivalent_builds',[]).append(r['id']);continue
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

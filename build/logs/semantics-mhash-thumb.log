@@ -1,0 +1,892 @@
+mhash-sha256_sha224-thumb-O2 /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/3c/3c61da59a160e5ce/ordinary.so /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/59/592979f8dc2bc387/inspection.so
+FUNCTION sha256_sha224_transform 0x13348 2714
+0x13348 push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x1334c sub sp, #0x74
+0x1334e str r1, [sp, #0x24]
+0x13350 movs r4, #0
+0x13352 ldr r1, [r0]
+0x13354 str r1, [sp, #0x70]
+0x13356 ldrd r6, r1, [r0, #4]
+0x1335a ldrd lr, ip, [r0, #0xc]
+0x1335e str r1, [sp, #0x6c]
+0x13360 ldrd r8, r1, [r0, #0x14]
+0x13364 str r0, [sp]
+0x13366 ldr r0, [r0, #0x1c]
+0x13368 str r1, [sp, #0x5c]
+0x1336a movs r1, #1
+0x1336c str r0, [sp, #0x58]
+0x1336e ldr r0, [pc, #8]
+0x13370 add r0, pc
+0x13372 str r0, [sp, #0x40]
+0x13374 b #0x1337c
+0x13376 nop 
+0x13378 bvc #0x13374
+0x1337a vcvt.u32.f32 d25, d12, #2
+0x1337e ldr r0, [sp, #0x6c]
+0x13380 eor.w r2, r7, r6
+0x13384 str r1, [sp, #0x60]
+0x13386 ands r2, r0
+0x13388 and.w r1, r7, r6
+0x1338c eors r1, r2
+0x1338e ror.w r2, r7, #2
+0x13392 ldr r5, [sp, #0x5c]
+0x13394 eor.w r2, r2, r7, ror #13
+0x13398 eor.w r2, r2, r7, ror #22
+0x1339c ldr r0, [sp, #0x58]
+0x1339e eor.w r3, r8, r5
+0x133a2 add r1, r2
+0x133a4 ror.w r2, ip, #6
+0x133a8 and.w r3, r3, ip
+0x133ac ldr.w sb, [sp, #0x40]
+0x133b0 eor.w r2, r2, ip, ror #11
+0x133b4 eors r3, r5
+0x133b6 eor.w r2, r2, ip, ror #25
+0x133ba add r3, r0
+0x133bc ldr.w sl, [sp, #0x24]
+0x133c0 add r2, r3
+0x133c2 ldr.w r3, [sb, r4]
+0x133c6 str r4, [sp, #0x68]
+0x133c8 add r2, r3
+0x133ca ldr.w r3, [sl, r4]
+0x133ce add r2, r3
+0x133d0 add.w fp, r1, r2
+0x133d4 add.w r0, r2, lr
+0x133d8 eor.w r3, fp, r7
+0x133dc and.w r4, fp, r7
+0x133e0 ror.w r1, fp, #2
+0x133e4 ands r3, r6
+0x133e6 eor.w r1, r1, fp, ror #13
+0x133ea eors r3, r4
+0x133ec eor.w r1, r1, fp, ror #22
+0x133f0 add r3, r1
+0x133f2 ror.w r1, r0, #6
+0x133f6 eor.w r1, r1, r0, ror #11
+0x133fa eor.w r4, r1, r0, ror #25
+0x133fe ldr r1, [sp, #0x68]
+0x13400 add r1, sb
+0x13402 str r1, [sp, #0x54]
+0x13404 ldrd r2, r7, [r1, #4]
+0x13408 ldr.w sb, [sp, #0x70]
+0x1340c str r7, [sp, #0x48]
+0x1340e ldr r7, [r1, #0xc]
+0x13410 str r7, [sp, #0x50]
+0x13412 ldr r7, [r1, #0x10]
+0x13414 mov r1, r8
+0x13416 add.w r8, r2, r5
+0x1341a ldr r2, [sp, #0x68]
+0x1341c str r7, [sp, #0x58]
+0x1341e add r2, sl
+0x13420 mov sl, r6
+0x13422 ldrd lr, r5, [r2, #4]
+0x13426 ldr r6, [r2, #0xc]
+0x13428 str r5, [sp, #0x44]
+0x1342a eor.w r5, ip, r1
+0x1342e ands r5, r0
+0x13430 add lr, r8
+0x13432 eors r5, r1
+0x13434 str r6, [sp, #0x4c]
+0x13436 add r5, lr
+0x13438 ldr r6, [r2, #0x10]
+0x1343a adds r7, r5, r4
+0x1343c str r6, [sp, #0x5c]
+0x1343e add r3, r7
+0x13440 str r2, [sp, #0x64]
+0x13442 eor.w r6, r3, fp
+0x13446 and.w r4, r3, fp
+0x1344a ror.w r5, r3, #2
+0x1344e and.w r6, r6, sb
+0x13452 eor.w r5, r5, r3, ror #13
+0x13456 eors r6, r4
+0x13458 eor.w r5, r5, r3, ror #22
+0x1345c ldr r2, [sp, #0x48]
+0x1345e add r6, r5
+0x13460 ldr r5, [sp, #0x6c]
+0x13462 add r1, r2
+0x13464 ldr r2, [sp, #0x44]
+0x13466 add r7, r5
+0x13468 eor.w r4, r0, ip
+0x1346c ands r4, r7
+0x1346e add r1, r2
+0x13470 ror.w r5, r7, #6
+0x13474 eor.w r4, r4, ip
+0x13478 eor.w r5, r5, r7, ror #11
+0x1347c add r1, r4
+0x1347e eor.w r5, r5, r7, ror #25
+0x13482 ldr r2, [sp, #0x50]
+0x13484 add r1, r5
+0x13486 add.w r8, r6, r1
+0x1348a add r2, ip
+0x1348c eor.w r5, r8, r3
+0x13490 and.w r4, r8, r3
+0x13494 ror.w r6, r8, #2
+0x13498 and.w r5, r5, fp
+0x1349c eor.w r6, r6, r8, ror #13
+0x134a0 eors r5, r4
+0x134a2 eor.w r6, r6, r8, ror #22
+0x134a6 eor.w r4, r7, r0
+0x134aa add.w lr, r5, r6
+0x134ae add.w r6, r1, sl
+0x134b2 ldr r5, [sp, #0x4c]
+0x134b4 ands r4, r6
+0x134b6 ror.w r1, r6, #6
+0x134ba eors r4, r0
+0x134bc eor.w r1, r1, r6, ror #11
+0x134c0 add r2, r5
+0x134c2 eor.w r1, r1, r6, ror #25
+0x134c6 add r2, r4
+0x134c8 add r1, r2
+0x134ca add.w r5, lr, r1
+0x134ce eor.w r4, r5, r8
+0x134d2 ror.w r2, r5, #2
+0x134d6 ands r4, r3
+0x134d8 eor.w r2, r2, r5, ror #13
+0x134dc eor.w lr, r2, r5, ror #22
+0x134e0 and.w r2, r5, r8
+0x134e4 eors r2, r4
+0x134e6 add.w r4, r1, sb
+0x134ea add lr, r2
+0x134ec eor.w r2, r6, r7
+0x134f0 ror.w r1, r4, #6
+0x134f4 ands r2, r4
+0x134f6 eor.w r1, r1, r4, ror #11
+0x134fa eors r2, r7
+0x134fc eor.w ip, r1, r4, ror #25
+0x13500 ldr r1, [sp, #0x58]
+0x13502 ldr.w sb, [sp, #0x54]
+0x13506 add r0, r1
+0x13508 ldr r1, [sp, #0x5c]
+0x1350a add r0, r1
+0x1350c add r0, r2
+0x1350e add.w r1, r0, ip
+0x13512 add lr, r1
+0x13514 add fp, r1
+0x13516 eor.w r0, lr, r5
+0x1351a str.w fp, [sp, #0x58]
+0x1351e ror.w r2, lr, #2
+0x13522 and.w r0, r0, r8
+0x13526 eor.w r2, r2, lr, ror #13
+0x1352a ror.w r1, fp, #6
+0x1352e eor.w ip, r2, lr, ror #22
+0x13532 and.w r2, lr, r5
+0x13536 eors r0, r2
+0x13538 eor.w r2, r4, r6
+0x1353c add ip, r0
+0x1353e ldr.w r0, [sb, #0x14]
+0x13542 and.w r2, r2, fp
+0x13546 eor.w r1, r1, fp, ror #11
+0x1354a add r0, r7
+0x1354c ldr r7, [sp, #0x64]
+0x1354e eors r2, r6
+0x13550 eor.w r1, r1, fp, ror #25
+0x13554 ldr r7, [r7, #0x14]
+0x13556 add r0, r7
+0x13558 add r0, r2
+0x1355a add r0, r1
+0x1355c add.w sl, ip, r0
+0x13560 add.w ip, r0, r3
+0x13564 ldr r3, [sp, #0x64]
+0x13566 eor.w r2, sl, lr
+0x1356a ror.w r1, sl, #2
+0x1356e ands r2, r5
+0x13570 eor.w r1, r1, sl, ror #13
+0x13574 and.w r7, sl, lr
+0x13578 eors r2, r7
+0x1357a eor.w r1, r1, sl, ror #22
+0x1357e ldr r3, [r3, #0x18]
+0x13580 add r1, r2
+0x13582 ldr.w r7, [sb, #0x18]
+0x13586 eor.w r2, fp, r4
+0x1358a ror.w r0, ip, #6
+0x1358e and.w r2, r2, ip
+0x13592 add r3, r7
+0x13594 eor.w r0, r0, ip, ror #11
+0x13598 eors r2, r4
+0x1359a add r3, r6
+0x1359c eor.w r0, r0, ip, ror #25
+0x135a0 add r2, r3
+0x135a2 add r0, r2
+0x135a4 ldr.w r7, [sb, #0x1c]
+0x135a8 adds r6, r1, r0
+0x135aa add r8, r0
+0x135ac eor.w r2, r6, sl
+0x135b0 and.w r3, r6, sl
+0x135b4 and.w r2, r2, lr
+0x135b8 ror.w r1, r6, #2
+0x135bc eors r2, r3
+0x135be ldr r3, [sp, #0x64]
+0x135c0 eor.w r1, r1, r6, ror #13
+0x135c4 ror.w r0, r8, #6
+0x135c8 eor.w r1, r1, r6, ror #22
+0x135cc eor.w r0, r0, r8, ror #11
+0x135d0 ldr r3, [r3, #0x1c]
+0x135d2 add r1, r2
+0x135d4 eor.w r2, ip, fp
+0x135d8 eor.w r0, r0, r8, ror #25
+0x135dc and.w r2, r2, r8
+0x135e0 add r3, r7
+0x135e2 add r3, r4
+0x135e4 eor.w r2, r2, fp
+0x135e8 add r2, r3
+0x135ea ldr r4, [sp, #0x68]
+0x135ec add r0, r2
+0x135ee str.w ip, [sp, #0x5c]
+0x135f2 add r1, r0
+0x135f4 add.w ip, r0, r5
+0x135f8 ldr r0, [sp, #0x60]
+0x135fa adds r4, #0x20
+0x135fc str r1, [sp, #0x70]
+0x135fe movs r1, #0
+0x13600 str.w sl, [sp, #0x6c]
+0x13604 lsls r0, r0, #0x1f
+0x13606 bne.w #0x1337c
+0x1360a ldr r0, [sp, #0x24]
+0x1360c movs r5, #0x10
+0x1360e strd r6, lr, [sp, #0x1c]
+0x13612 str.w ip, [sp, #0x14]
+0x13616 ldr r3, [r0, #0x14]
+0x13618 ldr r1, [r0]
+0x1361a str r3, [sp, #0x54]
+0x1361c ldrd lr, r3, [r0, #0x18]
+0x13620 str r1, [sp, #0x28]
+0x13622 ldr r1, [r0, #4]
+0x13624 str r1, [sp, #0x4c]
+0x13626 ldrd r2, r1, [r0, #8]
+0x1362a str r3, [sp, #0x2c]
+0x1362c ldrd r7, r3, [r0, #0x20]
+0x13630 str r1, [sp, #0x50]
+0x13632 str r3, [sp, #0x68]
+0x13634 ldrd r4, r3, [r0, #0x28]
+0x13638 ldr r1, [r0, #0x10]
+0x1363a ldr r6, [r0, #0x30]
+0x1363c ldrd fp, ip, [r0, #0x38]
+0x13640 str r3, [sp, #0x64]
+0x13642 ldr r3, [r0, #0x34]
+0x13644 ldr r0, [sp, #0x40]
+0x13646 str r3, [sp, #0x48]
+0x13648 mov r3, r1
+0x1364a adds r0, #0x40
+0x1364c str.w r8, [sp, #0x18]
+0x13650 str r0, [sp, #0x60]
+0x13652 ldr.w sl, [sp, #0x4c]
+0x13656 strd r7, r5, [sp, #0xc]
+0x1365a ror.w r5, fp, #0x11
+0x1365e eor.w r5, r5, fp, ror #19
+0x13662 ldr r1, [sp, #0x68]
+0x13664 ror.w r0, sl, #7
+0x13668 eor.w r5, r5, fp, lsr #10
+0x1366c str r4, [sp, #4]
+0x1366e eor.w r0, r0, sl, ror #18
+0x13672 ldr r4, [sp, #0x28]
+0x13674 add r5, r1
+0x13676 eor.w r0, r0, sl, lsr #3
+0x1367a ldr.w sb, [sp, #0x50]
+0x1367e add r5, r4
+0x13680 ldr.w r8, [sp, #0x54]
+0x13684 adds r4, r5, r0
+0x13686 ldr r5, [sp, #0x64]
+0x13688 str r4, [sp, #0x28]
+0x1368a mov r7, lr
+0x1368c ror.w r0, r4, #0x11
+0x13690 str.w lr, [sp, #0x34]
+0x13694 eor.w r0, r0, r4, ror #19
+0x13698 mov lr, r6
+0x1369a eor.w r0, r0, r4, lsr #10
+0x1369e ldr r6, [sp, #4]
+0x136a0 add r0, r2
+0x136a2 str r1, [sp, #0x68]
+0x136a4 add r0, r5
+0x136a6 ror.w r5, sb, #7
+0x136aa eor.w r5, r5, sb, ror #18
+0x136ae eor.w r5, r5, sb, lsr #3
+0x136b2 adds r4, r0, r5
+0x136b4 str r4, [sp, #0x30]
+0x136b6 ror.w r0, r4, #0x11
+0x136ba eor.w r0, r0, r4, ror #19
+0x136be eor.w r0, r0, r4, lsr #10
+0x136c2 ldr r4, [sp, #0x48]
+0x136c4 adds r5, r4, r3
+0x136c6 add r0, r5
+0x136c8 ror.w r5, r8, #7
+0x136cc eor.w r5, r5, r8, ror #18
+0x136d0 eor.w r5, r5, r8, lsr #3
+0x136d4 adds r4, r0, r5
+0x136d6 add.w r5, r7, ip
+0x136da ldr r7, [sp, #0x2c]
+0x136dc ror.w r0, r4, #0x11
+0x136e0 str r4, [sp, #0x44]
+0x136e2 eor.w r0, r0, r4, ror #19
+0x136e6 eor.w r0, r0, r4, lsr #10
+0x136ea add r0, r5
+0x136ec ror.w r5, r7, #7
+0x136f0 eor.w r5, r5, r7, ror #18
+0x136f4 eor.w r5, r5, r7, lsr #3
+0x136f8 adds r4, r0, r5
+0x136fa str r4, [sp, #0x40]
+0x136fc add.w r5, r6, sl
+0x13700 ldr.w sl, [sp, #0xc]
+0x13704 ror.w r0, r4, #0x11
+0x13708 eor.w r0, r0, r4, ror #19
+0x1370c eor.w r0, r0, r4, lsr #10
+0x13710 ror.w r4, ip, #0x11
+0x13714 eor.w r4, r4, ip, ror #19
+0x13718 eor.w r4, r4, ip, lsr #10
+0x1371c add r4, r5
+0x1371e ror.w r5, r2, #7
+0x13722 eor.w r5, r5, r2, ror #18
+0x13726 eor.w r2, r5, r2, lsr #3
+0x1372a ldr r5, [sp, #0x28]
+0x1372c add r4, r2
+0x1372e ror.w r2, r1, #7
+0x13732 eor.w r2, r2, r1, ror #18
+0x13736 str r4, [sp, #0x4c]
+0x13738 eor.w r2, r2, r1, lsr #3
+0x1373c add r2, r4
+0x1373e add r2, sl
+0x13740 add r2, r0
+0x13742 str r2, [sp, #0x38]
+0x13744 ror.w r0, r2, #0x11
+0x13748 eor.w r0, r0, r2, ror #19
+0x1374c eor.w r0, r0, r2, lsr #10
+0x13750 ror.w r2, r4, #0x11
+0x13754 eor.w r2, r2, r4, ror #19
+0x13758 eor.w r2, r2, r4, lsr #10
+0x1375c add.w r4, lr, sb
+0x13760 add r2, r4
+0x13762 ror.w r4, r3, #7
+0x13766 eor.w r4, r4, r3, ror #18
+0x1376a eor.w r1, r4, r3, lsr #3
+0x1376e ldr r3, [sp, #0x64]
+0x13770 add r2, r1
+0x13772 str r2, [sp, #0x50]
+0x13774 mov r4, r6
+0x13776 ror.w r1, r3, #7
+0x1377a eor.w r1, r1, r3, ror #18
+0x1377e eor.w r1, r1, r3, lsr #3
+0x13782 ldr r3, [sp, #0x34]
+0x13784 add r1, r6
+0x13786 add r1, r2
+0x13788 add r1, r0
+0x1378a str r1, [sp, #0x3c]
+0x1378c ror.w r0, r1, #0x11
+0x13790 eor.w r0, r0, r1, ror #19
+0x13794 eor.w r0, r0, r1, lsr #10
+0x13798 ror.w r1, r2, #0x11
+0x1379c eor.w r1, r1, r2, ror #19
+0x137a0 eor.w r1, r1, r2, lsr #10
+0x137a4 add.w r2, r8, fp
+0x137a8 add r1, r2
+0x137aa ror.w r2, r3, #7
+0x137ae eor.w r2, r2, r3, ror #18
+0x137b2 eor.w r2, r2, r3, lsr #3
+0x137b6 ldr r3, [sp, #0x48]
+0x137b8 add r2, r1
+0x137ba str r2, [sp, #0x54]
+0x137bc ror.w r1, r3, #7
+0x137c0 mov r6, r3
+0x137c2 eor.w r1, r1, r3, ror #18
+0x137c6 eor.w r1, r1, r3, lsr #3
+0x137ca ldr r3, [sp, #0x64]
+0x137cc add r1, lr
+0x137ce add r1, r2
+0x137d0 add r1, r0
+0x137d2 str r1, [sp, #0x34]
+0x137d4 ror.w r0, r1, #0x11
+0x137d8 eor.w r0, r0, r1, ror #19
+0x137dc eor.w r0, r0, r1, lsr #10
+0x137e0 ror.w r1, r2, #0x11
+0x137e4 eor.w r1, r1, r2, ror #19
+0x137e8 eor.w r1, r1, r2, lsr #10
+0x137ec adds r2, r7, r5
+0x137ee add r1, r2
+0x137f0 ror.w r2, sl, #7
+0x137f4 eor.w r2, r2, sl, ror #18
+0x137f8 ldr r7, [sp, #0x40]
+0x137fa eor.w r2, r2, sl, lsr #3
+0x137fe ldr.w sl, [sp, #0x14]
+0x13802 add.w r8, r1, r2
+0x13806 ror.w r1, ip, #7
+0x1380a eor.w r1, r1, ip, ror #18
+0x1380e mov r2, r4
+0x13810 eor.w r1, r1, ip, lsr #3
+0x13814 ldr r2, [sp, #0x68]
+0x13816 add r1, fp
+0x13818 str.w r8, [sp, #0x2c]
+0x1381c add r1, r8
+0x1381e add.w sb, r1, r0
+0x13822 ror.w r1, r4, #7
+0x13826 eor.w r1, r1, r4, ror #18
+0x1382a ror.w r0, r8, #0x11
+0x1382e eor.w r1, r1, r4, lsr #3
+0x13832 eor.w r0, r0, r8, ror #19
+0x13836 add r1, r2
+0x13838 ldr r2, [sp, #0x30]
+0x1383a eor.w r0, r0, r8, lsr #10
+0x1383e str.w sb, [sp, #8]
+0x13842 add r1, r2
+0x13844 adds r4, r1, r0
+0x13846 ror.w r1, lr, #7
+0x1384a eor.w r1, r1, lr, ror #18
+0x1384e str r4, [sp, #0x68]
+0x13850 eor.w r1, r1, lr, lsr #3
+0x13854 ror.w r0, r4, #0x11
+0x13858 add r1, r3
+0x1385a ldr r3, [sp, #0x44]
+0x1385c eor.w r0, r0, r4, ror #19
+0x13860 eor.w r0, r0, r4, lsr #10
+0x13864 add r1, r3
+0x13866 add.w lr, r1, r0
+0x1386a ror.w r1, fp, #7
+0x1386e eor.w r1, r1, fp, ror #18
+0x13872 str.w lr, [sp, #0x64]
+0x13876 ror.w r0, lr, #0x11
+0x1387a eor.w r1, r1, fp, lsr #3
+0x1387e add r1, r6
+0x13880 eor.w r0, r0, lr, ror #19
+0x13884 eor.w r0, r0, lr, lsr #10
+0x13888 add r1, r7
+0x1388a add.w fp, r1, r0
+0x1388e ror.w r1, r5, #7
+0x13892 eor.w r1, r1, r5, ror #18
+0x13896 mov r6, r5
+0x13898 eor.w r1, r1, r5, lsr #3
+0x1389c ror.w r0, fp, #0x11
+0x138a0 ldr r5, [sp, #0x38]
+0x138a2 add r1, ip
+0x138a4 eor.w r0, r0, fp, ror #19
+0x138a8 mov ip, r6
+0x138aa eor.w r0, r0, fp, lsr #10
+0x138ae add r1, r5
+0x138b0 add r1, r0
+0x138b2 ldr r0, [sp, #0x24]
+0x138b4 str r1, [sp, #0xc]
+0x138b6 str.w fp, [sp, #0x48]
+0x138ba str r6, [r0]
+0x138bc ldr r6, [sp, #0x4c]
+0x138be strd r6, r2, [r0, #4]
+0x138c2 ldr r2, [sp, #0x50]
+0x138c4 strd r2, r3, [r0, #0xc]
+0x138c8 add.w r3, r0, #0x14
+0x138cc ldr r2, [sp, #0x54]
+0x138ce strd r5, r4, [r0, #0x20]
+0x138d2 ldr r6, [sp, #0x5c]
+0x138d4 ldr r4, [sp, #0x18]
+0x138d6 stm.w r3, {r2, r7, r8}
+0x138da ldr r2, [sp, #0x3c]
+0x138dc strd r2, lr, [r0, #0x28]
+0x138e0 ldr r2, [sp, #0x34]
+0x138e2 strd sb, r1, [r0, #0x38]
+0x138e6 eor.w r1, r4, r6
+0x138ea strd r2, fp, [r0, #0x30]
+0x138ee and.w r1, r1, sl
+0x138f2 ldr r2, [sp, #0x58]
+0x138f4 eors r1, r6
+0x138f6 ror.w r0, sl, #6
+0x138fa ldr.w r8, [sp, #0x1c]
+0x138fe add r1, r2
+0x13900 ldr r2, [sp, #0x60]
+0x13902 eor.w r0, r0, sl, ror #11
+0x13906 ldr.w fp, [sp, #0x6c]
+0x1390a eor.w r0, r0, sl, ror #25
+0x1390e add r0, r1
+0x13910 ldm.w r2, {r1, sb, lr}
+0x13914 add.w r3, sb, r6
+0x13918 add r0, r1
+0x1391a ldr r2, [r2, #0xc]
+0x1391c add r0, ip
+0x1391e ldr.w ip, [sp, #0x70]
+0x13922 str r2, [sp, #0x58]
+0x13924 eor.w r1, ip, r8
+0x13928 and.w r2, ip, r8
+0x1392c and.w r1, r1, fp
+0x13930 str.w ip, [sp, #0x70]
+0x13934 eors r1, r2
+0x13936 ror.w r2, ip, #2
+0x1393a eor.w r2, r2, ip, ror #13
+0x1393e eor.w r2, r2, ip, ror #22
+0x13942 add r1, r2
+0x13944 adds r2, r1, r0
+0x13946 eor.w r5, r2, ip
+0x1394a and.w r7, r2, ip
+0x1394e ror.w r1, r2, #2
+0x13952 and.w r5, r5, r8
+0x13956 eor.w r1, r1, r2, ror #13
+0x1395a eors r5, r7
+0x1395c eor.w r1, r1, r2, ror #22
+0x13960 eor.w r7, sl, r4
+0x13964 add r5, r1
+0x13966 ldr r1, [sp, #0x20]
+0x13968 add r1, r0
+0x1396a ands r7, r1
+0x1396c ror.w r0, r1, #6
+0x13970 eors r7, r4
+0x13972 eor.w r0, r0, r1, ror #11
+0x13976 add r3, r7
+0x13978 eor.w r0, r0, r1, ror #25
+0x1397c add r4, lr
+0x1397e add r0, r3
+0x13980 ldr r3, [sp, #0x4c]
+0x13982 add r0, r3
+0x13984 adds r3, r5, r0
+0x13986 eor.w r5, r3, r2
+0x1398a and.w r6, r3, r2
+0x1398e ror.w r7, r3, #2
+0x13992 and.w r5, r5, ip
+0x13996 eor.w r7, r7, r3, ror #13
+0x1399a eors r6, r5
+0x1399c add.w r5, r0, fp
+0x139a0 eor.w r7, r7, r3, ror #22
+0x139a4 add.w sb, r6, r7
+0x139a8 eor.w r6, r1, sl
+0x139ac ldr r7, [sp, #0x30]
+0x139ae ror.w r0, r5, #6
+0x139b2 ands r6, r5
+0x139b4 eor.w r0, r0, r5, ror #11
+0x139b8 eor.w r6, r6, sl
+0x139bc add r4, r7
+0x139be eor.w r0, r0, r5, ror #25
+0x139c2 add r6, r4
+0x139c4 add r0, r6
+0x139c6 ldr.w fp, [sp, #0x60]
+0x139ca add.w r4, sb, r0
+0x139ce add r0, r8
+0x139d0 eor.w r6, r4, r3
+0x139d4 ror.w r7, r4, #2
+0x139d8 ands r6, r2
+0x139da eor.w r7, r7, r4, ror #13
+0x139de eor.w lr, r7, r4, ror #22
+0x139e2 and.w r7, r4, r3
+0x139e6 eors r6, r7
+0x139e8 eor.w r7, r5, r1
+0x139ec add lr, r6
+0x139ee ror.w r6, r0, #6
+0x139f2 eor.w r6, r6, r0, ror #11
+0x139f6 ands r7, r0
+0x139f8 eor.w sb, r6, r0, ror #25
+0x139fc ldr r6, [sp, #0x58]
+0x139fe eor.w ip, r7, r1
+0x13a02 ldr r7, [sp, #0x50]
+0x13a04 add r6, sl
+0x13a06 add r6, r7
+0x13a08 add r6, ip
+0x13a0a add r6, sb
+0x13a0c add lr, r6
+0x13a0e ror.w r7, lr, #2
+0x13a12 eor.w r7, r7, lr, ror #13
+0x13a16 eor.w r8, r7, lr, ror #22
+0x13a1a eor.w r7, lr, r4
+0x13a1e and.w sb, r7, r3
+0x13a22 and.w r7, lr, r4
+0x13a26 eor.w r7, r7, sb
+0x13a2a add r8, r7
+0x13a2c ldr r7, [sp, #0x70]
+0x13a2e add r7, r6
+0x13a30 ror.w r6, r7, #6
+0x13a34 eor.w r6, r6, r7, ror #11
+0x13a38 eor.w ip, r6, r7, ror #25
+0x13a3c eor.w r6, r0, r5
+0x13a40 ands r6, r7
+0x13a42 eor.w sb, r6, r5
+0x13a46 ldr.w r6, [fp, #0x10]
+0x13a4a add r1, r6
+0x13a4c ldr r6, [sp, #0x44]
+0x13a4e add r1, r6
+0x13a50 add r1, sb
+0x13a52 add.w r6, r1, ip
+0x13a56 add.w ip, r8, r6
+0x13a5a add r6, r2
+0x13a5c ror.w r1, ip, #2
+0x13a60 ror.w r2, r6, #6
+0x13a64 eor.w r1, r1, ip, ror #13
+0x13a68 eor.w r2, r2, r6, ror #11
+0x13a6c eor.w r8, r1, ip, ror #22
+0x13a70 eor.w r1, ip, lr
+0x13a74 and.w sb, r1, r4
+0x13a78 and.w r1, ip, lr
+0x13a7c eor.w r1, r1, sb
+0x13a80 eor.w sb, r2, r6, ror #25
+0x13a84 ldr.w r2, [fp, #0x14]
+0x13a88 add r8, r1
+0x13a8a eor.w r1, r7, r0
+0x13a8e add r2, r5
+0x13a90 ldr r5, [sp, #0x54]
+0x13a92 ands r1, r6
+0x13a94 eors r1, r0
+0x13a96 add r2, r5
+0x13a98 add r1, r2
+0x13a9a mov r2, fp
+0x13a9c add r1, sb
+0x13a9e add.w sl, r8, r1
+0x13aa2 ror.w r5, sl, #2
+0x13aa6 eor.w r5, r5, sl, ror #13
+0x13aaa eor.w r8, r5, sl, ror #22
+0x13aae eor.w r5, sl, ip
+0x13ab2 and.w sb, r5, lr
+0x13ab6 and.w r5, sl, ip
+0x13aba eor.w r5, r5, sb
+0x13abe add r8, r5
+0x13ac0 adds r5, r1, r3
+0x13ac2 eor.w r3, r6, r7
+0x13ac6 ror.w r1, r5, #6
+0x13aca ands r3, r5
+0x13acc eor.w r1, r1, r5, ror #11
+0x13ad0 eors r3, r7
+0x13ad2 eor.w sb, r1, r5, ror #25
+0x13ad6 ldr.w r1, [fp, #0x18]
+0x13ada add r0, r1
+0x13adc ldr r1, [sp, #0x40]
+0x13ade add r0, r1
+0x13ae0 add r0, r3
+0x13ae2 mov r3, r2
+0x13ae4 add r0, sb
+0x13ae6 add.w fp, r8, r0
+0x13aea add r4, r0
+0x13aec ror.w r1, fp, #2
+0x13af0 ror.w r0, r4, #6
+0x13af4 eor.w r1, r1, fp, ror #13
+0x13af8 eor.w r0, r0, r4, ror #11
+0x13afc eor.w r8, r1, fp, ror #22
+0x13b00 eor.w r1, fp, sl
+0x13b04 and.w sb, r1, ip
+0x13b08 and.w r1, fp, sl
+0x13b0c eor.w r1, r1, sb
+0x13b10 eor.w sb, r0, r4, ror #25
+0x13b14 ldr r0, [r2, #0x1c]
+0x13b16 add r8, r1
+0x13b18 eor.w r1, r5, r6
+0x13b1c ldr r2, [sp, #0x2c]
+0x13b1e ands r1, r4
+0x13b20 add r0, r7
+0x13b22 add r0, r2
+0x13b24 eors r1, r6
+0x13b26 add r0, r1
+0x13b28 ldr r2, [sp, #0x38]
+0x13b2a add r0, sb
+0x13b2c add.w r7, r8, r0
+0x13b30 add r0, lr
+0x13b32 ror.w r1, r7, #2
+0x13b36 eor.w r1, r1, r7, ror #13
+0x13b3a eor.w r8, r1, r7, ror #22
+0x13b3e eor.w r1, r7, fp
+0x13b42 and.w sb, r1, sl
+0x13b46 and.w r1, r7, fp
+0x13b4a eor.w r1, r1, sb
+0x13b4e add r8, r1
+0x13b50 ror.w r1, r0, #6
+0x13b54 eor.w r1, r1, r0, ror #11
+0x13b58 eor.w lr, r1, r0, ror #25
+0x13b5c eor.w r1, r4, r5
+0x13b60 ands r1, r0
+0x13b62 eor.w sb, r1, r5
+0x13b66 ldr r1, [r3, #0x20]
+0x13b68 add r1, r2
+0x13b6a add r1, r6
+0x13b6c add r1, sb
+0x13b6e add r1, lr
+0x13b70 add.w r6, r8, r1
+0x13b74 add r1, ip
+0x13b76 ror.w r2, r6, #2
+0x13b7a eor.w r2, r2, r6, ror #13
+0x13b7e eor.w lr, r2, r6, ror #22
+0x13b82 eor.w r2, r6, r7
+0x13b86 and.w r8, r2, fp
+0x13b8a and.w r2, r6, r7
+0x13b8e eor.w r2, r2, r8
+0x13b92 add lr, r2
+0x13b94 ror.w r2, r1, #6
+0x13b98 eor.w r2, r2, r1, ror #11
+0x13b9c eor.w ip, r2, r1, ror #25
+0x13ba0 eor.w r2, r0, r4
+0x13ba4 ands r2, r1
+0x13ba6 eor.w r8, r2, r4
+0x13baa ldr r2, [r3, #0x24]
+0x13bac ldr r3, [sp, #0x68]
+0x13bae add r2, r3
+0x13bb0 add r2, r5
+0x13bb2 ldr r5, [sp, #0x3c]
+0x13bb4 add r2, r8
+0x13bb6 add r2, ip
+0x13bb8 add.w sb, lr, r2
+0x13bbc add r2, sl
+0x13bbe ldr.w sl, [sp, #0x60]
+0x13bc2 ror.w r3, sb, #2
+0x13bc6 eor.w r3, r3, sb, ror #13
+0x13bca eor.w ip, r3, sb, ror #22
+0x13bce eor.w r3, sb, r6
+0x13bd2 and.w lr, r3, r7
+0x13bd6 and.w r3, sb, r6
+0x13bda eor.w r3, r3, lr
+0x13bde add ip, r3
+0x13be0 ror.w r3, r2, #6
+0x13be4 eor.w r3, r3, r2, ror #11
+0x13be8 eor.w lr, r3, r2, ror #25
+0x13bec eor.w r3, r1, r0
+0x13bf0 ands r3, r2
+0x13bf2 eor.w r8, r3, r0
+0x13bf6 ldr.w r3, [sl, #0x28]
+0x13bfa add r3, r5
+0x13bfc ldr r5, [sp, #0x64]
+0x13bfe add r3, r4
+0x13c00 add r3, r8
+0x13c02 add r3, lr
+0x13c04 add ip, r3
+0x13c06 ror.w r4, ip, #2
+0x13c0a eor.w r4, r4, ip, ror #13
+0x13c0e eor.w lr, r4, ip, ror #22
+0x13c12 eor.w r4, ip, sb
+0x13c16 and.w r8, r4, r6
+0x13c1a and.w r4, ip, sb
+0x13c1e eor.w r4, r4, r8
+0x13c22 add lr, r4
+0x13c24 add.w r4, r3, fp
+0x13c28 ror.w r3, r4, #6
+0x13c2c eor.w r3, r3, r4, ror #11
+0x13c30 eor.w r8, r3, r4, ror #25
+0x13c34 eor.w r3, r2, r1
+0x13c38 ands r3, r4
+0x13c3a eor.w fp, r3, r1
+0x13c3e ldr.w r3, [sl, #0x2c]
+0x13c42 add r3, r5
+0x13c44 add r0, r3
+0x13c46 add r0, fp
+0x13c48 add r0, r8
+0x13c4a add.w r3, lr, r0
+0x13c4e add r7, r0
+0x13c50 ror.w r5, r3, #2
+0x13c54 ror.w r0, r7, #6
+0x13c58 eor.w r5, r5, r3, ror #13
+0x13c5c eor.w r0, r0, r7, ror #11
+0x13c60 eor.w lr, r5, r3, ror #22
+0x13c64 eor.w r5, r3, ip
+0x13c68 and.w r8, r5, sb
+0x13c6c and.w r5, r3, ip
+0x13c70 eor.w r5, r5, r8
+0x13c74 eor.w r8, r0, r7, ror #25
+0x13c78 add lr, r5
+0x13c7a eor.w r5, r4, r2
+0x13c7e ands r5, r7
+0x13c80 ldr.w r0, [sl, #0x30]
+0x13c84 eor.w fp, r5, r2
+0x13c88 ldr r5, [sp, #0x34]
+0x13c8a add r0, r5
+0x13c8c add r0, r1
+0x13c8e add r0, fp
+0x13c90 add r0, r8
+0x13c92 add lr, r0
+0x13c94 add.w fp, r0, r6
+0x13c98 eor.w r5, lr, r3
+0x13c9c ldr.w r6, [sl, #0x34]
+0x13ca0 ror.w r1, lr, #2
+0x13ca4 and.w r5, r5, ip
+0x13ca8 eor.w r1, r1, lr, ror #13
+0x13cac ror.w r0, fp, #6
+0x13cb0 eor.w r8, r1, lr, ror #22
+0x13cb4 and.w r1, lr, r3
+0x13cb8 eors r1, r5
+0x13cba eor.w r5, r7, r4
+0x13cbe add r8, r1
+0x13cc0 ldr r1, [sp, #0x48]
+0x13cc2 and.w r5, r5, fp
+0x13cc6 eor.w r0, r0, fp, ror #11
+0x13cca add r6, r1
+0x13ccc eors r5, r4
+0x13cce add r2, r6
+0x13cd0 eor.w r0, r0, fp, ror #25
+0x13cd4 add r2, r5
+0x13cd6 str.w lr, [sp, #0x20]
+0x13cda add r0, r2
+0x13cdc str.w fp, [sp, #0x58]
+0x13ce0 add r8, r0
+0x13ce2 add.w r6, r0, sb
+0x13ce6 eor.w r2, r8, lr
+0x13cea and.w r5, r8, lr
+0x13cee ror.w r1, r8, #2
+0x13cf2 ands r2, r3
+0x13cf4 eor.w r1, r1, r8, ror #13
+0x13cf8 eors r2, r5
+0x13cfa eor.w r1, r1, r8, ror #22
+0x13cfe ldr.w r5, [sl, #0x38]
+0x13d02 ldr.w sb, [sp, #8]
+0x13d06 add r1, r2
+0x13d08 eor.w r2, fp, r7
+0x13d0c ror.w r0, r6, #6
+0x13d10 ands r2, r6
+0x13d12 add r5, sb
+0x13d14 eor.w r0, r0, r6, ror #11
+0x13d18 eors r2, r7
+0x13d1a add r4, r5
+0x13d1c eor.w r0, r0, r6, ror #25
+0x13d20 add r2, r4
+0x13d22 str r6, [sp, #0x5c]
+0x13d24 add r0, r2
+0x13d26 str.w r8, [sp, #0x6c]
+0x13d2a adds r4, r1, r0
+0x13d2c str r4, [sp, #0x1c]
+0x13d2e eor.w r2, r4, r8
+0x13d32 add.w r5, r0, ip
+0x13d36 ror.w r1, r4, #2
+0x13d3a and.w r2, r2, lr
+0x13d3e eor.w r1, r1, r4, ror #13
+0x13d42 ror.w r0, r5, #6
+0x13d46 eor.w r1, r1, r4, ror #22
+0x13d4a and.w r4, r4, r8
+0x13d4e eors r2, r4
+0x13d50 ldr r4, [sp, #0xc]
+0x13d52 add r1, r2
+0x13d54 eor.w r2, r6, fp
+0x13d58 ldr.w r6, [sl, #0x3c]
+0x13d5c ands r2, r5
+0x13d5e eor.w r0, r0, r5, ror #11
+0x13d62 eor.w r2, r2, fp
+0x13d66 add r6, r4
+0x13d68 eor.w r0, r0, r5, ror #25
+0x13d6c add r7, r6
+0x13d6e mov ip, r4
+0x13d70 add r2, r7
+0x13d72 add r7, sp, #0x30
+0x13d74 add r0, r2
+0x13d76 ldrd r4, lr, [sp, #0x3c]
+0x13d7a add r1, r0
+0x13d7c add r0, r3
+0x13d7e str r0, [sp, #0x14]
+0x13d80 mov fp, sb
+0x13d82 ldr r0, [sp, #0x10]
+0x13d84 add.w sl, sl, #0x40
+0x13d88 ldr r3, [sp, #0x44]
+0x13d8a str r5, [sp, #0x18]
+0x13d8c add.w r5, r0, #0x10
+0x13d90 cmp r0, #0x30
+0x13d92 ldm r7, {r2, r6, r7}
+0x13d94 str r1, [sp, #0x70]
+0x13d96 str.w sl, [sp, #0x60]
+0x13d9a blo.w #0x13652
+0x13d9e ldr r6, [sp]
+0x13da0 ldr r7, [sp, #0x70]
+0x13da2 ldrd r5, r4, [r6, #0x18]
+0x13da6 ldm.w r6, {r0, r1, r2, r3}
+0x13daa add r0, r7
+0x13dac ldr r7, [sp, #0x1c]
+0x13dae str r0, [r6]
+0x13db0 add r1, r7
+0x13db2 ldr r7, [sp, #0x6c]
+0x13db4 str r1, [r6, #4]
+0x13db6 add r2, r7
+0x13db8 str r2, [r6, #8]
+0x13dba ldr r2, [sp, #0x20]
+0x13dbc ldr r1, [r6, #0x10]
+0x13dbe add r2, r3
+0x13dc0 str r2, [r6, #0xc]
+0x13dc2 ldr r2, [sp, #0x14]
+0x13dc4 ldr r0, [r6, #0x14]
+0x13dc6 add r1, r2
+0x13dc8 str r1, [r6, #0x10]
+0x13dca ldr r1, [sp, #0x18]
+0x13dcc add r0, r1
+0x13dce str r0, [r6, #0x14]
+0x13dd0 ldr r0, [sp, #0x5c]
+0x13dd2 add r0, r5
+0x13dd4 str r0, [r6, #0x18]
+0x13dd6 ldr r0, [sp, #0x58]
+0x13dd8 add r0, r4
+0x13dda str r0, [r6, #0x1c]
+0x13ddc add sp, #0x74
+0x13dde pop.w {r4, r5, r6, r7, r8, sb, sl, fp, pc}

@@ -1,0 +1,14 @@
+{
+  "wheel": "build/dist/qcs_prototype-0.1.0.post1-py3-none-any.whl",
+  "sha256": "7f2fe4567aa288cc8a3b35f1339aa2d1df80aada6263a087266d4184d81fdc75",
+  "verified_changed_modules": [
+    "qcs/controlflow.py",
+    "qcs/guomi/binary_semantics.py",
+    "qcs/guomi/source_semantics.py",
+    "qcs/guomi/source_context.py",
+    "qcs/operations.py",
+    "qcs/sha256_rounds.py",
+    "qcs/sm4_tables.py"
+  ],
+  "passed": true
+}

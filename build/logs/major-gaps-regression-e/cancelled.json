@@ -1,0 +1,4 @@
+{
+  "reason": "Separate configured optional search abstention from abnormal backend crash; freeze f preserves explicit budget diagnostics and restarts full evaluation",
+  "completed_reports_preserved": true
+}

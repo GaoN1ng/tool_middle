@@ -22,11 +22,12 @@ def main():
     entries = catalog["files"]
     digests = {}
     for entry in entries:
-        path = ROOT / entry["path"]
-        digest = sha(path)
-        digests[path.resolve()] = digest
-        if digest != entry["sha256"]:
-            issues.append("Sample digest mismatch: " + entry["path"])
+        for relative in [entry["path"], *entry.get("additional_paths", [])]:
+            path = ROOT / relative
+            digest = sha(path)
+            digests[path.resolve()] = digest
+            if digest != entry["sha256"]:
+                issues.append("Sample digest mismatch: " + relative)
     manifest_cases = 0
     for manifest in (ROOT / "build/datasets/manifests").glob("*.json"):
         m = json.loads(manifest.read_text(encoding="utf-8"))
@@ -35,8 +36,23 @@ def main():
             path = (manifest.parent / row["path"]).resolve()
             if digests.get(path) != row["sha256"]:
                 issues.append(f"Manifest target/hash mismatch: {manifest.name}:{row['id']}")
+    independent_cases = 0
+    for collection in catalog.get("collections", []):
+        manifest = json.loads((ROOT / collection["manifest"]).read_text())
+        lock = json.loads((ROOT / collection["lock"]).read_text())
+        if sha(ROOT / collection["manifest"]) != lock["manifest_sha256"]:
+            issues.append("Independent manifest lock changed: " + collection["id"])
+        for row in manifest["samples"]:
+            independent_cases += 1
+            if digests.get((ROOT / row["path"]).resolve()) != row["sha256"]:
+                issues.append("Independent manifest target/hash mismatch: " + row["id"])
+        for relative, want in lock["files"].items():
+            if digests.get((ROOT / relative).resolve()) != want:
+                issues.append("Independent support input lock changed: " + relative)
     for path in ROOT.rglob("*"):
         rel = path.relative_to(ROOT)
+        if rel.parts[0]=='.git':
+            continue
         # Local venvs point to their installed system Python and are excluded
         # from the portable archive. Fixture aliases must still be internal.
         if rel.parts[0] == 'build' and len(rel.parts) > 1 and (
@@ -57,7 +73,9 @@ def main():
         if path.suffix in {".bin", ".img", ".squashfs", ".so", ".elf", ".exe", ".dll", ".o"} and rel.parts[0] != "Samples":
             issues.append("Unexpected binary outside Samples/build: " + str(rel))
     report = {"passed": not issues, "verified_unique_sample_files": len(entries),
+        "verified_physical_sample_files": len(digests),
         "verified_manifest_cases": manifest_cases,
+        "verified_independent_cases": independent_cases,
         "counts": dict(Counter(e["assigned_split"] + "/" + e["category"] for e in entries)),
         "issues": issues}
     output = ROOT / "build/checks/integrity.json"

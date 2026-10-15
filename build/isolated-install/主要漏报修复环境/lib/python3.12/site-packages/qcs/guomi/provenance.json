@@ -1,0 +1,32 @@
+{
+  "upstream": {
+    "crypto-reverse-mcp": {
+      "repository": "https://github.com/zyj999-abc/crypto-reverse-mcp",
+      "commit": "ba2fd09fb5c13edf277f7c861c3c56da41e8ba0c",
+      "url": "https://codeload.github.com/zyj999-abc/crypto-reverse-mcp/zip/ba2fd09fb5c13edf277f7c861c3c56da41e8ba0c",
+      "archive_sha256": "86c5c3ee49f04e0f1f9664a2c34ef438eacb3c44f36c09e5ee3dfe484aec4c33"
+    },
+    "cryptoscan": {
+      "repository": "https://github.com/Rami114/cryptoscan",
+      "commit": "403f9762c368ef19d25252d16fe3eb5696228aa3",
+      "url": "https://codeload.github.com/Rami114/cryptoscan/zip/403f9762c368ef19d25252d16fe3eb5696228aa3",
+      "archive_sha256": "f3bcc8208f1b6590a9293d9c5dbd1d3d86c5efba4bd49a080c8667b35e7416dc"
+    },
+    "gmssl": {
+      "repository": "https://github.com/guanzhi/GmSSL",
+      "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+      "url": "https://codeload.github.com/guanzhi/GmSSL/zip/24ae482701a7b124826c382fffc55c19f76d475d",
+      "archive_sha256": "3ae48ba2881c9ca19c9dc5030ebd2ed044eefe43911cf3cbec5bc2b74551042c"
+    }
+  },
+  "team_inputs": "other_ref/cipher1 and other_ref/cipher2 read-only; API semantics and standard constants audited. Original regex engine and Binary Ninja plugin not embedded.",
+  "changes": "Native Python AST binding analysis, clue-only constant rules and separate known-source/function implementation databases.",
+  "license_notes": "MIT CryptoScan and crypto-reverse-mcp licenses retained; Apache-2.0 GmSSL references and source archive retain original notices.",
+  "reference_postprocessing": {
+    "date": "2026-10-12",
+    "policy": "guomi-environment-references-1",
+    "tool": "tools/guomi_reference_policy.py",
+    "inputs": "Pinned original GmSSL compiler ET_REL objects, linked reference builds and original-source lock; no evaluated binaries provide signature bytes.",
+    "scope": "x86_64 diagnostics excluded and relocation-backed 64-bit stdio RIP MOV/LEA alternatives checked; all other operation bits and crypto-data constraints retained."
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "probe_statuses": {
+    "completed": 87,
+    "budget_exhausted": 43,
+    "not_applicable": 72,
+    "not_run": 22,
+    "backend_declined": 4,
+    "budget_unavailable": 4
+  },
+  "engine_statuses": {
+    "symbol": {
+      "completed": 210
+    },
+    "yara": {
+      "completed": 210
+    },
+    "function_signature": {
+      "completed": 210
+    },
+    "guomi_constants": {
+      "completed": 210
+    },
+    "guomi_function_signature": {
+      "completed": 210
+    },
+    "guomi_development_signature": {
+      "completed": 210
+    },
+    "guomi_semantic": {
+      "completed": 209,
+      "partial": 1
+    },
+    "operation_binary": {
+      "completed": 209
+    },
+    "semantic_probes": {
+      "completed": 87,
+      "budget_exhausted": 43,
+      "not_applicable": 72,
+      "backend_declined": 4,
+      "budget_unavailable": 4
+    },
+    "source": {
+      "completed": 18
+    },
+    "guomi_source": {
+      "completed": 18
+    },
+    "guomi_source_semantic": {
+      "completed": 18
+    },
+    "operation_source": {
+      "completed": 18
+    },
+    "windriver": {
+      "completed": 18,
+      "disabled": 4
+    },
+    "guomi_javascript": {
+      "completed": 4
+    },
+    "dispatch": {
+      "partial": 1
+    }
+  },
+  "errors": [
+    {
+      "engine": "guomi_semantic",
+      "code": "analysis_limit",
+      "count": 1
+    },
+    {
+      "engine": "dispatch",
+      "code": "timeout",
+      "count": 1
+    }
+  ],
+  "failed_workers": [
+    {
+      "architecture": "thumb",
+      "returncode": "1",
+      "limit": "None",
+      "count": 1
+    },
+    {
+      "architecture": "arm",
+      "returncode": "1",
+      "limit": "None",
+      "count": 3
+    }
+  ],
+  "budget_abstentions": [
+    {
+      "architecture": "thumb",
+      "algorithm": "AES",
+      "count": 1
+    },
+    {
+      "architecture": "thumb",
+      "algorithm": "ECDH",
+      "count": 1
+    }
+  ],
+  "behavioral_matches": {},
+  "raw_source_contexts": [
+    {
+      "input_id": "stbrumme--hash-library-crc32.cpp-source-raw",
+      "input_sha256": "0aa16a1570e4613afdcef9a8e0ad2df7c6b992fdbe46564ae96cf751a9169b7a",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/crc32.h",
+      "sha256": "946f70d37314a6675e47e6ebbb87bdc89c1bbea5cb5aa611e3cb444702f6b573",
+      "bytes": 1736
+    },
+    {
+      "input_id": "miracl--core-c_ecdh.c-source-raw",
+      "input_sha256": "0a51a448ea64ae6a81a6a257f5b137e9d720d1d21d6ee5b3e1b12f81bf858847",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_hash.c-source-raw",
+      "input_sha256": "10a16673211a84b1e75fa1156c7e1bf83abdb2725225205f7b4c6a6d784deafc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/miracl--core/c/arch.h",
+      "sha256": "5767c824cfdb7514b55d64a11a721867a6bb0e0ee7e104a4bb4bcb50d8813981",
+      "bytes": 4700
+    },
+    {
+      "input_id": "miracl--core-c_hash.c-source-raw",
+      "input_sha256": "10a16673211a84b1e75fa1156c7e1bf83abdb2725225205f7b4c6a6d784deafc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/miracl--core/c/core.h",
+      "sha256": "7ba47d684cd35274246af942d95906a35516a72e08ede17f5866c84365502183",
+      "bytes": 26287
+    },
+    {
+      "input_id": "miracl--core-c_hash.c-source-raw",
+      "input_sha256": "10a16673211a84b1e75fa1156c7e1bf83abdb2725225205f7b4c6a6d784deafc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "stbrumme--hash-library-sha256.cpp-source-raw",
+      "input_sha256": "26cfc68c9e63c900e42d95fcbf79ef7942c626a6dd42bc4a4116f28dce4a46e4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/sha256.h",
+      "sha256": "345e7b8091b7ffe34cf760ee591ab254c30f74749b522f1c2b2b56c8f804652d",
+      "bytes": 1968
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sm3_provider.hpp-source-raw",
+      "input_sha256": "312f2888bd238981b5f4f6aa0bd8ba991abbe432a2b221f4751fbde83990504b",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/functions.hpp",
+      "sha256": "2c1540b4eab4b2a4ed8e00308d241ea8855c9d3d41e54f034c602f0445c3f476",
+      "bytes": 2464
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sm3_provider.hpp-source-raw",
+      "input_sha256": "312f2888bd238981b5f4f6aa0bd8ba991abbe432a2b221f4751fbde83990504b",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/absorb_data.hpp",
+      "sha256": "2548451435b888976fa454d00b4ad61080c833fc1304e71e916656b4556c3ac5",
+      "bytes": 928
+    },
+    {
+      "input_id": "stbrumme--hash-library-keccak.cpp-source-raw",
+      "input_sha256": "3cf49615eeec3fc8f39b79540203adcd5891a712b4e586526021c94371c09d66",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/keccak.h",
+      "sha256": "b4fff116c6984f4428391fc3f25e5e37c6f1fbbbf2f2f648cc68e9e1d60b68f5",
+      "bytes": 2103
+    },
+    {
+      "input_id": "983--SHA-256-sha256.c-source-raw",
+      "input_sha256": "68ba7e1e80f8c81e1549bfd6869f42d8de05a6db6d1c9c8b523609597f208eda",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/983--SHA-256/sha256.h",
+      "sha256": "5b39c80c25df83828a6cc276e62416ce96d47bee10ea0d2df382892f31f56f38",
+      "bytes": 935
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-source-raw",
+      "input_sha256": "7808bab9cfc1a1e83d4dc997aeaaa5f8a3590752fc8da0e8731065b184f84ef4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/functions.hpp",
+      "sha256": "2c1540b4eab4b2a4ed8e00308d241ea8855c9d3d41e54f034c602f0445c3f476",
+      "bytes": 2464
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-source-raw",
+      "input_sha256": "7808bab9cfc1a1e83d4dc997aeaaa5f8a3590752fc8da0e8731065b184f84ef4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/absorb_data.hpp",
+      "sha256": "2548451435b888976fa454d00b4ad61080c833fc1304e71e916656b4556c3ac5",
+      "bytes": 928
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-source-raw",
+      "input_sha256": "7808bab9cfc1a1e83d4dc997aeaaa5f8a3590752fc8da0e8731065b184f84ef4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/validate_hash_size.hpp",
+      "sha256": "834b4163c68c1fede1ffc39247a23b284de357cbe2369db1c1be4a5d5eafd971",
+      "bytes": 940
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-source-raw",
+      "input_sha256": "7808bab9cfc1a1e83d4dc997aeaaa5f8a3590752fc8da0e8731065b184f84ef4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/algorithm/detail/constants/sha2_constants.hpp",
+      "sha256": "99a3b05c91e1030d4b3b04b2f3bffe11abfa61721ccc6c3b3835c30c3ac5446b",
+      "bytes": 3228
+    },
+    {
+      "input_id": "ogay--sha2-sha2.c-source-raw",
+      "input_sha256": "7c3d891116381f5119e823463772ea5994cbf18ab78843af52c507647f516b14",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/ogay--sha2/sha2.h",
+      "sha256": "f2e36e5ca90e46ea22ce47e957d338bb2af637730890c9a9e3d8286af8f70f0d",
+      "bytes": 3409
+    },
+    {
+      "input_id": "ogay--sha2-sha2.c-source-raw",
+      "input_sha256": "7c3d891116381f5119e823463772ea5994cbf18ab78843af52c507647f516b14",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_rsa.c-source-raw",
+      "input_sha256": "88954d152eab048f1e9b145a9cad07302015b7a4f9eb7063b7a161ed388f911c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_blake2_provider.hpp-source-raw",
+      "input_sha256": "a4fea7244de49828b36b70f596f0f23ff2ec5cf18de0a4bed1183b15081db457",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/functions.hpp",
+      "sha256": "2c1540b4eab4b2a4ed8e00308d241ea8855c9d3d41e54f034c602f0445c3f476",
+      "bytes": 2464
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_blake2_provider.hpp-source-raw",
+      "input_sha256": "a4fea7244de49828b36b70f596f0f23ff2ec5cf18de0a4bed1183b15081db457",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/absorb_data.hpp",
+      "sha256": "2548451435b888976fa454d00b4ad61080c833fc1304e71e916656b4556c3ac5",
+      "bytes": 928
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_blake2_provider.hpp-source-raw",
+      "input_sha256": "a4fea7244de49828b36b70f596f0f23ff2ec5cf18de0a4bed1183b15081db457",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/validate_hash_size.hpp",
+      "sha256": "834b4163c68c1fede1ffc39247a23b284de357cbe2369db1c1be4a5d5eafd971",
+      "bytes": 940
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_blake2_provider.hpp-source-raw",
+      "input_sha256": "a4fea7244de49828b36b70f596f0f23ff2ec5cf18de0a4bed1183b15081db457",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/algorithm/detail/constants/blake2_constants.hpp",
+      "sha256": "7859a242eec34090db51b580af44b392cf8a7d3ae98925e2bbb0e109634015ba",
+      "bytes": 1773
+    },
+    {
+      "input_id": "rxi--ini-src_ini.c-source-raw",
+      "input_sha256": "a6ea2981ee05476937f53aa9ead534efd26f4765811562e0f0df541468a306dd",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/rxi--ini/src/ini.h",
+      "sha256": "def7a74d48fabf7931a7689714417e451ea1a410eddd0730574666c91a7e9ef3",
+      "bytes": 525
+    },
+    {
+      "input_id": "stbrumme--hash-library-sha1.cpp-source-raw",
+      "input_sha256": "add07da136c6f263e4fa2fc1e9d42ca76101294e6979c414a79c18bb7a851160",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/sha1.h",
+      "sha256": "9d51b396f5f092226e15da3ab365bbfd0bad173c9d280015cb37711d1b1a8d21",
+      "bytes": 1940
+    },
+    {
+      "input_id": "miracl--core-c_aes.c-source-raw",
+      "input_sha256": "b8ca942ba9240ba12e3c9f16b526e67af41872341585cf652429c58b775483a5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/miracl--core/c/arch.h",
+      "sha256": "5767c824cfdb7514b55d64a11a721867a6bb0e0ee7e104a4bb4bcb50d8813981",
+      "bytes": 4700
+    },
+    {
+      "input_id": "miracl--core-c_aes.c-source-raw",
+      "input_sha256": "b8ca942ba9240ba12e3c9f16b526e67af41872341585cf652429c58b775483a5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/miracl--core/c/core.h",
+      "sha256": "7ba47d684cd35274246af942d95906a35516a72e08ede17f5866c84365502183",
+      "bytes": 26287
+    },
+    {
+      "input_id": "miracl--core-c_aes.c-source-raw",
+      "input_sha256": "b8ca942ba9240ba12e3c9f16b526e67af41872341585cf652429c58b775483a5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "stbrumme--hash-library-md5.cpp-source-raw",
+      "input_sha256": "bdba913d98c17a00d7b88deb2cd9a22367fc4d04407587c8588b13b6b230bf70",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/md5.h",
+      "sha256": "a55b2b70b183dbf5f94562d841576797a7fb2a285f78bbd81012bdb5127fcffa",
+      "bytes": 1921
+    },
+    {
+      "input_id": "stbrumme--hash-library-sha3.cpp-source-raw",
+      "input_sha256": "d4cb22dbda387e7898f518b43fe5b89dc49e3ea8a6df930b8b4b3d07f3c154f0",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/sha3.h",
+      "sha256": "de40298ae85fd90386b797b736c5ba5435f01dca2193228c4e1af995c944d42d",
+      "bytes": 2051
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-source-raw",
+      "input_sha256": "d8dff283c913cce20595031bdea13587f379f9b08c28af6ec8e1e1b45fa83046",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/functions.hpp",
+      "sha256": "2c1540b4eab4b2a4ed8e00308d241ea8855c9d3d41e54f034c602f0445c3f476",
+      "bytes": 2464
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-source-raw",
+      "input_sha256": "d8dff283c913cce20595031bdea13587f379f9b08c28af6ec8e1e1b45fa83046",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/detail/absorb_data.hpp",
+      "sha256": "2548451435b888976fa454d00b4ad61080c833fc1304e71e916656b4556c3ac5",
+      "bytes": 928
+    },
+    {
+      "input_id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-source-raw",
+      "input_sha256": "d8dff283c913cce20595031bdea13587f379f9b08c28af6ec8e1e1b45fa83046",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/algorithm/detail/constants/md5_constants.hpp",
+      "sha256": "d14a0a571cf7981abe37dfc5fcaa0df3faad6c07bce79145cfa2a82e7462dc77",
+      "bytes": 1526
+    }
+  ],
+  "raw_context_references_to_development": [
+    {
+      "input_id": "miracl--core-c_ecdh.c-source-raw",
+      "input_sha256": "0a51a448ea64ae6a81a6a257f5b137e9d720d1d21d6ee5b3e1b12f81bf858847",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_hash.c-source-raw",
+      "input_sha256": "10a16673211a84b1e75fa1156c7e1bf83abdb2725225205f7b4c6a6d784deafc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "ogay--sha2-sha2.c-source-raw",
+      "input_sha256": "7c3d891116381f5119e823463772ea5994cbf18ab78843af52c507647f516b14",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_rsa.c-source-raw",
+      "input_sha256": "88954d152eab048f1e9b145a9cad07302015b7a4f9eb7063b7a161ed388f911c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_aes.c-source-raw",
+      "input_sha256": "b8ca942ba9240ba12e3c9f16b526e67af41872341585cf652429c58b775483a5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    }
+  ],
+  "raw_context_references_not_in_original_input_lock": [
+    {
+      "input_id": "miracl--core-c_ecdh.c-source-raw",
+      "input_sha256": "0a51a448ea64ae6a81a6a257f5b137e9d720d1d21d6ee5b3e1b12f81bf858847",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_hash.c-source-raw",
+      "input_sha256": "10a16673211a84b1e75fa1156c7e1bf83abdb2725225205f7b4c6a6d784deafc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "ogay--sha2-sha2.c-source-raw",
+      "input_sha256": "7c3d891116381f5119e823463772ea5994cbf18ab78843af52c507647f516b14",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_rsa.c-source-raw",
+      "input_sha256": "88954d152eab048f1e9b145a9cad07302015b7a4f9eb7063b7a161ed388f911c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    },
+    {
+      "input_id": "miracl--core-c_aes.c-source-raw",
+      "input_sha256": "b8ca942ba9240ba12e3c9f16b526e67af41872341585cf652429c58b775483a5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/3a/3a900fae14c338e3/stdio.h",
+      "sha256": "3a900fae14c338e30ecac7a8fd62f920d580b18e1381de349adb3dd7576aea7d",
+      "bytes": 59
+    }
+  ],
+  "isolated_source_contexts_all_locked_and_inside_input_boundary": true,
+  "scope": "Raw source-context lookup can traverse workspace. Isolated source rows replace every raw source row; binary rows are reused unmodified."
+}

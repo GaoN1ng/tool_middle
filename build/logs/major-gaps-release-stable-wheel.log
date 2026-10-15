@@ -1,0 +1,9 @@
+Processing /var/home/gzn/ourtask/ustc_tool_middle
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: qcs-prototype
+  Building wheel for qcs-prototype (pyproject.toml): started
+  Building wheel for qcs-prototype (pyproject.toml): finished with status 'done'
+  Created wheel for qcs-prototype: filename=qcs_prototype-0.1.0.post1-py3-none-any.whl size=4983765 sha256=71725656a1d657f518be5ec1c1b363505978046e1aaeddc6e5b5fc9ade273b9a
+  Stored in directory: /var/home/gzn/ourtask/ustc_tool_middle/build/tmp/pip-ephem-wheel-cache-5a1hwnhh/wheels/35/46/d0/99009bd63a7debe824bdefc1fbacfc020215dafff9f9b5aae1
+Successfully built qcs-prototype

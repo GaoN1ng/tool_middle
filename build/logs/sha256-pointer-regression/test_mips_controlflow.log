@@ -1,0 +1,14 @@
+test_aarch64_flag_setting_subtract_recovers_complementary_shift (test_mips_controlflow.MIPSControlflowTests.test_aarch64_flag_setting_subtract_recovers_complementary_shift) ... ok
+test_branch_slot_reads_real_table_in_both_endians (test_mips_controlflow.MIPSControlflowTests.test_branch_slot_reads_real_table_in_both_endians) ... ok
+test_call_slot_precedes_callee_clobber (test_mips_controlflow.MIPSControlflowTests.test_call_slot_precedes_callee_clobber) ... ok
+test_conflicting_join_does_not_keep_provisional_table_reads (test_mips_controlflow.MIPSControlflowTests.test_conflicting_join_does_not_keep_provisional_table_reads) ... ok
+test_imported_copy_binds_got_slot_and_actual_delay_slot_length (test_mips_controlflow.MIPSControlflowTests.test_imported_copy_binds_got_slot_and_actual_delay_slot_length) ... ok
+test_mips_dynamic_tags_resolve_real_development_import (test_mips_controlflow.MIPSControlflowTests.test_mips_dynamic_tags_resolve_real_development_import) ... ok
+test_pic_address_survives_a_loop_edge (test_mips_controlflow.MIPSControlflowTests.test_pic_address_survives_a_loop_edge) ... ok
+test_scalar_helper_uses_variable_shifts_and_return_delay_slot (test_mips_controlflow.MIPSControlflowTests.test_scalar_helper_uses_variable_shifts_and_return_delay_slot) ... ok
+test_unstable_runtime_loop_does_not_erase_an_independent_function (test_mips_controlflow.MIPSControlflowTests.test_unstable_runtime_loop_does_not_erase_an_independent_function) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.081s
+
+OK

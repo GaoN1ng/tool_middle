@@ -1,0 +1,88 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+use leancrypto_sys::lcr_kyber_x448::lcr_kyber_x448;
+use leancrypto_sys::lcr_kyber_x448::lcr_kyber_x448_type;
+
+fn lc_rust_kyber_x448_one(kyber_x448_type: lcr_kyber_x448_type) {
+    let mut kyber_x448 = lcr_kyber_x448::new();
+
+    let result = kyber_x448.keypair(kyber_x448_type);
+    assert_eq!(result, Ok(()));
+
+    let result = kyber_x448.encapsulate();
+    assert_eq!(result, Ok(()));
+
+    let (ct_kyber_slice, ct_x448_slice) = kyber_x448.get_ct().expect("get_ct");
+    let ct_kyber = ct_kyber_slice.to_vec();
+    let ct_x448 = ct_x448_slice.to_vec();
+    let (sk_kyber_slice, sk_x448_slice) = kyber_x448.get_sk().expect("get_sk");
+    let sk_kyber = sk_kyber_slice.get_ref().to_vec();
+    let sk_x448 = sk_x448_slice.get_ref().to_vec();
+
+    let mut kyber_x4482 = lcr_kyber_x448::new();
+    let result = kyber_x4482.sk_load(&sk_kyber, &sk_x448);
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber_x448.get_sk().expect("get_sk").0.get_ref(),
+        kyber_x4482.get_sk().expect("get_sk").0.get_ref()
+    );
+    assert_eq!(
+        kyber_x448.get_sk().expect("get_sk").1.get_ref(),
+        kyber_x4482.get_sk().expect("get_sk").1.get_ref()
+    );
+
+    let result = kyber_x4482.ct_load(&ct_kyber, &ct_x448);
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber_x448.get_ct().expect("get_ct").0,
+        kyber_x4482.get_ct().expect("get_ct").0
+    );
+    assert_eq!(
+        kyber_x448.get_ct().expect("get_ct").1,
+        kyber_x4482.get_ct().expect("get_ct").1
+    );
+
+    let result = kyber_x4482.decapsulate();
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber_x448.get_ss().expect("get_ss").0.get_ref(),
+        kyber_x4482.get_ss().expect("get_ss").0.get_ref()
+    );
+    assert_eq!(
+        kyber_x448.get_ss().expect("get_ss").1.get_ref(),
+        kyber_x4482.get_ss().expect("get_ss").1.get_ref()
+    );
+    //println!("ct {:x?}",  kyber_x4482.ct().to_vec().chunks(10).next());
+}
+
+#[test]
+fn lc_rust_kyber_x448_512() {
+    lc_rust_kyber_x448_one(lcr_kyber_x448_type::lcr_kyber_512);
+}
+
+#[test]
+fn lc_rust_kyber_x448_768() {
+    lc_rust_kyber_x448_one(lcr_kyber_x448_type::lcr_kyber_768);
+}
+
+#[test]
+fn lc_rust_kyber_x448_1024() {
+    lc_rust_kyber_x448_one(lcr_kyber_x448_type::lcr_kyber_1024);
+}

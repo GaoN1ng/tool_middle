@@ -1,0 +1,22 @@
+test_function_signatures 0 7
+test_bound_static_state 0 5
+test_controlflow_primitives 0 6
+test_coverage_repairs 0 15
+test_guomi_sm2_fixes 0 10
+test_guomi_operations 0 8
+test_linux_runtime 0 5
+test_message_schedules 0 4
+test_mips_controlflow 0 9
+test_ml_features 0 4
+test_ml_learning 0 3
+test_operations 0 9
+test_semantic_followup 0 6
+test_guomi_generalization 0 9
+test_sha256_rounds 0 7
+test_sm4_table_rounds 0 5
+test_source_pointers 0 3
+test_scanner 0 41
+test_yara_instructions 0 3
+test_research_operations 0 9
+test_guomi 0 14
+{"all_passed": true, "tests": 182, "modules": [{"module": "test_function_signatures", "exit_code": 0, "tests": 7, "seconds": 240.57620227802545, "log": "build/logs/sha256-pointer-regression/test_function_signatures.log"}, {"module": "test_bound_static_state", "exit_code": 0, "tests": 5, "seconds": 13.55248576309532, "log": "build/logs/sha256-pointer-regression/test_bound_static_state.log"}, {"module": "test_controlflow_primitives", "exit_code": 0, "tests": 6, "seconds": 12.455456380732358, "log": "build/logs/sha256-pointer-regression/test_controlflow_primitives.log"}, {"module": "test_coverage_repairs", "exit_code": 0, "tests": 15, "seconds": 44.93362524127588, "log": "build/logs/sha256-pointer-regression/test_coverage_repairs.log"}, {"module": "test_guomi_sm2_fixes", "exit_code": 0, "tests": 10, "seconds": 313.5612325910479, "log": "build/logs/sha256-pointer-regression/test_guomi_sm2_fixes.log"}, {"module": "test_guomi_operations", "exit_code": 0, "tests": 8, "seconds": 0.16271091485396028, "log": "build/logs/sha256-pointer-regression/test_guomi_operations.log"}, {"module": "test_linux_runtime", "exit_code": 0, "tests": 5, "seconds": 2.5749807627871633, "log": "build/logs/sha256-pointer-regression/test_linux_runtime.log"}, {"module": "test_message_schedules", "exit_code": 0, "tests": 4, "seconds": 0.14850662276148796, "log": "build/logs/sha256-pointer-regression/test_message_schedules.log"}, {"module": "test_mips_controlflow", "exit_code": 0, "tests": 9, "seconds": 0.15449821297079325, "log": "build/logs/sha256-pointer-regression/test_mips_controlflow.log"}, {"module": "test_ml_features", "exit_code": 0, "tests": 4, "seconds": 0.13939271727576852, "log": "build/logs/sha256-pointer-regression/test_ml_features.log"}, {"module": "test_ml_learning", "exit_code": 0, "tests": 3, "seconds": 1.1058139922097325, "log": "build/logs/sha256-pointer-regression/test_ml_learning.log"}, {"module": "test_operations", "exit_code": 0, "tests": 9, "seconds": 1.0749741359613836, "log": "build/logs/sha256-pointer-regression/test_operations.log"}, {"module": "test_semantic_followup", "exit_code": 0, "tests": 6, "seconds": 355.82561260228977, "log": "build/logs/sha256-pointer-regression/test_semantic_followup.log"}, {"module": "test_guomi_generalization", "exit_code": 0, "tests": 9, "seconds": 46.3523615882732, "log": "build/logs/sha256-pointer-regression/test_guomi_generalization.log"}, {"module": "test_sha256_rounds", "exit_code": 0, "tests": 7, "seconds": 0.4865844319574535, "log": "build/logs/sha256-pointer-regression/test_sha256_rounds.log"}, {"module": "test_sm4_table_rounds", "exit_code": 0, "tests": 5, "seconds": 0.4495577411726117, "log": "build/logs/sha256-pointer-regression/test_sm4_table_rounds.log"}, {"module": "test_source_pointers", "exit_code": 0, "tests": 3, "seconds": 0.2522178175859153, "log": "build/logs/sha256-pointer-regression/test_source_pointers.log"}, {"module": "test_scanner", "exit_code": 0, "tests": 41, "seconds": 17.217809502966702, "log": "build/logs/sha256-pointer-regression/test_scanner.log"}, {"module": "test_yara_instructions", "exit_code": 0, "tests": 3, "seconds": 20.0803786450997, "log": "build/logs/sha256-pointer-regression/test_yara_instructions.log"}, {"module": "test_research_operations", "exit_code": 0, "tests": 9, "seconds": 61.939078798983246, "log": "build/logs/sha256-pointer-regression/test_research_operations.log"}, {"module": "test_guomi", "exit_code": 0, "tests": 14, "seconds": 903.5555764357559, "log": "build/logs/sha256-pointer-regression/test_guomi.log"}], "excluded": null}

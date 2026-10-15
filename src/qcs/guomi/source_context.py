@@ -4,12 +4,25 @@ Headers supply definitions, not stand-alone algorithm findings. No compiler,
 network, system include path, include-name signature or target execution is used.
 """
 import hashlib
+import os
 import re
 from pathlib import Path
 
 MAX_FILES=48
 MAX_BYTES=1024*1024
 MAX_DEPTH=6
+
+def project_files(root, *, limit=20000):
+    """Bounded, deterministic local checkout index; never follow symlinks."""
+    result=[]
+    for directory,folders,names in os.walk(root,followlinks=False):
+        folders[:]=sorted(n for n in folders if n not in {'.git','build','node_modules','.venv','venv','__pycache__'}
+                          and not (Path(directory)/n).is_symlink())
+        for name in sorted(names):
+            p=Path(directory)/name
+            if p.suffix.lower() in {'.h','.hpp','.hxx','.inc','.c','.cc','.cpp','.cxx'} and not p.is_symlink():result.append(p)
+            if len(result)>=limit:return result,True
+    return result,False
 
 def available_code(text):
     from ..source import lex_cpp
@@ -35,11 +48,11 @@ def load_context(path, text):
     # still resolve siblings without crawling the rest of the workspace.
     root=path.parent
     for parent in [path.parent,*path.parents]:
-        if any((parent/n).is_file() for n in ('LICENSE','LICENSE.txt','LICENSE.md','COPYING','LICENCE')):
+        if any((parent/n).is_file() for n in ('LICENSE','LICENSE.txt','LICENSE.md','COPYING','COPYING.LIB','COPYING.LESSER','LICENCE')):
             root=parent;break
         if (parent/'.git').exists():break
     search=[path.parent,*[p for p in path.parents if p.is_relative_to(root)],root/'include',root]
-    seen={path};queue=[(path,text,0)];contexts=[];records=[];size=0;limited=False
+    seen={path};queue=[(path,text,0)];contents=[];records=[];size=0;limited=False;index=None
     while queue:
         current,content,depth=queue.pop(0)
         if depth>=MAX_DEPTH:continue
@@ -58,6 +71,13 @@ def load_context(path, text):
                 candidate=(base/name).resolve()
                 if candidate.is_relative_to(root) and candidate.is_file():
                     found=candidate;break
+            if found is None:
+                if index is None:index,index_limited=project_files(root)
+                # Nonstandard build include directories are common. Only an
+                # unambiguous actual suffix match may resolve one; an include
+                # basename collision is not settled by filename preference.
+                matches=[p for p in index if p.as_posix().endswith('/'+name.as_posix())]
+                if len(matches)==1 and not index_limited:found=matches[0]
             if found is None or found in seen:continue
             if found.suffix.lower() not in {'.h','.hpp','.hxx','.inc'}:continue
             if len(records)>=MAX_FILES or found.stat().st_size+size>MAX_BYTES:
@@ -65,16 +85,17 @@ def load_context(path, text):
             raw=found.read_bytes();size+=len(raw);seen.add(found)
             header,_=decode_source(raw)
             cpp=path.suffix.lower() in {'.cpp','.cc','.cxx','.hpp','.hxx'} or path.name.endswith('.cc.inc')
-            contexts.append(Analysis(available_code(header).encode(),cpp))
+            contents.append(available_code(header).encode())
             records.append({'path':str(found),'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)})
             queue.append((found,header,depth+1))
+    contexts=[Analysis(content,cpp,declaration_contexts=contents) for content in contents]
     return contexts,{'files':records,'bytes':size,'limited':limited,
         'scope':'Local macros and actual bounded scalar definitions; headers are not scanned as independent algorithm implementations'}
 
 def attach_context(analysis, contexts):
     # Conflicting include variants cannot be resolved without preprocessing.
     # Decline them; local definitions/macros retain their lexical precedence.
-    for attribute in ('functions','macros','tables','constants'):
+    for attribute in ('functions','macros','tables','table_sizes','constants','scalar_types'):
         candidates={};ambiguous=set()
         for context in contexts:
             for name,value in getattr(context,attribute).items():

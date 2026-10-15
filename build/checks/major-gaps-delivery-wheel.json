@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "frozen_payload_files": 121,
+  "wheel_mismatches": [],
+  "installed_mismatches": [],
+  "latest_development_and_failed_regression_in_metadata": true,
+  "package_sha256": "ec83619ac1310c59211bc944fa0c48690c605ff9d2ae8ab7b50e17a61faa568d",
+  "wheel_sha256": "bf2d71c94ba764d6bffb646d98f76d99cf0c3f5d263626c5630661bfd9064362",
+  "note": "Packaging metadata updated after complete results; all 121 frozen runtime files unchanged from the 6 general and 8 feature installation scans"
+}

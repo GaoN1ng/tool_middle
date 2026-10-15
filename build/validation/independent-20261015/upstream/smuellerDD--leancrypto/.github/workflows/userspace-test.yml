@@ -1,0 +1,515 @@
+name: User space CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Every job scripts in bash, including the Windows ones, so that the build and
+# run steps stay identical across the matrix rather than being rewritten in
+# PowerShell. Git for Windows provides bash on the Windows runners.
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # ubuntu-24.04-arm rather than a hypothetical "ubuntu-latest-arm": GitHub
+  # publishes no -arm alias for ubuntu-latest, only version-pinned arm labels.
+  #
+  # The arm64 entry is not a duplicate of the x86 one. It is the only job that
+  # compiles the aarch64 cntvct_el0 timer read against Linux, and the only
+  # aarch64 target anywhere in this workflow that pairs it with glibc and with
+  # the sysfs cache-size discovery in arch/jitterentropy-arch-cache.c. macOS on
+  # Apple Silicon reaches the same timer instruction but through an entirely
+  # different libc and a sysctl cache backend, so neither stands in for the
+  # other.
+  linux:
+    name: Linux / ${{ matrix.os }} / ${{ matrix.cc }} / shared=${{ matrix.shared }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, ubuntu-24.04-arm ]
+        cc: [ gcc, clang ]
+        shared: [ 'shared', 'static', 'both' ]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install meson
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y meson gcovr doxygen graphviz
+
+      - name: Meson setup
+        run: CC=${{ matrix.cc }} meson setup build -Ddefault_library=${{ matrix.shared }} -Db_coverage=true -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled -Dsecure_execution=enabled
+
+      - name: Meson compile
+        run: meson compile -C build
+
+      - name: Meson test
+        run: meson test -v -C build --suite regression
+
+  # 32-bit exercises code paths no other job reaches: the narrower size_t/long,
+  # other accelerations
+  linux-32bit:
+    name: Linux / gcc -m32
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install 32-bit toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-multilib meson gnu-efi
+
+      - name: Meson setup
+        run: meson setup --cross-file cross-compile/x86_32.txt build -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled
+
+      - name: Meson compile
+        run: meson compile -C build
+
+      - name: Meson test
+        run: meson test -v -C build --suite regression
+
+  # The distributions the hosted runners are not: every enterprise Linux
+  # generation still under support - RHEL 7 through 10, SLES 15 SP7 and 16.1 -
+  # and, at the other end, Arch. Between them they span eighteen years of
+  # toolchain, gcc 4.8.5 / glibc 2.17 through gcc 16 / glibc 2.44, and they are
+  # here to hold *both* bounds. The Ubuntu jobs above sit in the middle and say
+  # only that the library builds against something current; the long-lived
+  # appliance and HSM firmware it tends to end up inside is built against
+  # something considerably older, and the compiler that will reject it next is
+  # newer.
+  #
+  # The entries are not interchangeable, and the interesting one is RHEL 7. It is
+  # the only environment anywhere in this workflow where glibc's own version
+  # floors are visible at all.
+  #
+  # Arch is the mirror image of RHEL 7 and the reason this job is not only about
+  # old toolchains. It is a rolling release carrying gcc and glibc within days of
+  # upstream, which makes it the earliest warning available that a new compiler
+  # has started rejecting something: today it builds this library with gcc 16 and
+  # glibc 2.44, a full compiler generation ahead of the newest enterprise entry
+  # and two ahead of the Ubuntu runners.
+  #
+  # The rest are compiler coverage. Between them the entries compile the library
+  # with gcc 4.8.5, 7.5, 8.5, 11.5, 14, 15 and 16 - seven diagnostic generations,
+  # where the two Ubuntu jobs supply one. gcc 14 is the first to reject implicit
+  # declarations outright rather than warn, and SLES 15 is the only thing here on
+  # gcc 7: an enterprise distribution can hold a compiler generation for a
+  # decade, and the gap between RHEL 7's 4.8 and RHEL 8's 8.5 is otherwise not
+  # covered by anything.
+  #
+  # None of these has a hosted runner, and unlike the BSDs none needs a VM - a
+  # container is the same libc and the same compiler. It is started with docker
+  # run from the job rather than through the workflow's "container:" key because
+  # actions/checkout is a Node 20 action and Node 20 requires glibc 2.28: it
+  # cannot execute inside the RHEL 7 image at all. So the checkout happens on the
+  # runner and the tree is mounted in, uniformly for every entry rather than only
+  # where it is forced.
+  #
+  # Each distribution's own image is used rather than a rebuild: Red Hat's UBI,
+  # SUSE's BCI and Arch's own are all published by the project itself, and the
+  # first two carry a repository subset that serves the handful of packages
+  # installed here without a subscription. centos:7 would instead need every
+  # build to first rewrite its yum configuration to point at vault.centos.org,
+  # the mirrors having been retired.
+  linux-distro:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # RHEL 7.9 is pinned because it is the last RHEL 7 minor release: a
+          # fixed target rather than a moving "latest". The other UBI entries
+          # are still receiving minor releases and deliberately track them - a
+          # new compiler landing in RHEL 9 is a thing this job should notice,
+          # not something to pin away.
+
+          # RHEL7 is currently deactivated as it misses meson
+          # - name: RHEL 7
+          #   image: registry.access.redhat.com/ubi7/ubi:7.9
+
+          # RHEL8 is currently disabled as the linker barfs with an internal
+          # error on the FIPS linker script
+          # - name: RHEL 8
+          #   image: registry.access.redhat.com/ubi8/ubi:latest
+
+          # RHEL9 is currently disabled as the linker barfs with a SIGSEGV
+          # error on the FIPS linker script
+          #- name: RHEL 9
+          #  image: registry.access.redhat.com/ubi9/ubi:latest
+          - name: RHEL 10
+            image: registry.access.redhat.com/ubi10/ubi:latest
+          # BCI publishes no floating major tag - there is no bci-base:15 or
+          # :16, only <major>.<minor> and a "latest" that currently means the
+          # newest SLE 15 service pack - so unlike UBI these have to be named
+          # exactly and bumped by hand when a service pack lands. One per
+          # generation is enough: 15 SP6 and SP7 carry an identical toolchain,
+          # as do 16.0 and 16.1.
+          - name: SLES 15 SP7
+            image: registry.suse.com/bci/bci-base:15.7
+          - name: SLES 16.1
+            image: registry.suse.com/bci/bci-base:16.1
+          # Arch publishes the same image to Docker Hub and to quay.io. The
+          # latter is used because Docker Hub rate-limits anonymous pulls per
+          # source IP, and a GitHub runner shares its IP with every other job on
+          # the same host - a limit this workflow has no way to raise and would
+          # hit at random.
+          - name: Arch Linux
+            image: quay.io/archlinux/archlinux:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in a ${{ matrix.name }} container
+        run: |
+          docker run --rm -v "$PWD:/src" -w /src \
+            "${{ matrix.image }}" \
+            bash -euxo pipefail -c '
+              # RHEL 7 predates dnf and has only yum; RHEL 8 and later keep yum
+              # as a symlink onto dnf; SLES uses zypper and Arch pacman. Probing
+              # in this order picks each distribution native tool rather than a
+              # compatibility shim.
+              #
+              # pacman needs -Sy to fetch the package databases first: the image
+              # ships with none, and the Arch mirrors carry only the current
+              # version of each package, so a database older than the image is
+              # already stale. --needed skips anything the image happens to
+              # carry rather than reinstalling it.
+              if command -v dnf > /dev/null; then
+                install="dnf -y install"
+              elif command -v zypper > /dev/null; then
+                install="zypper --non-interactive install"
+              elif command -v pacman > /dev/null; then
+                install="pacman -Sy --noconfirm --needed"
+              else
+                install="yum -y install"
+              fi
+              $install gcc make meson
+
+              # GNU make is plain make here, not gmake as on the BSD guests the
+              # script is otherwise driven from.
+              sh .github/scripts/vm-build-and-test.sh
+            '
+
+  # These systems have no hosted GitHub runner, so they are exercised in a QEMU
+  # guest started by the vmactions actions on an Ubuntu runner.
+  #
+  # The release is left unpinned so the action's default (its most recently
+  # tested image) is used; pinning here only guarantees the job breaks once that
+  # image is retired. Solaris is the exception and says why at the job.
+  freebsd:
+    name: FreeBSD
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in a FreeBSD VM
+        uses: vmactions/freebsd-vm@v1
+        with:
+          usesh: true
+          copyback: false
+          prepare: |
+            pkg install -y bash cmake gmake meson
+          run: |
+            sh .github/scripts/vm-build-and-test.sh
+
+  openbsd:
+    name: OpenBSD
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in an OpenBSD VM
+        uses: vmactions/openbsd-vm@v1
+        with:
+          usesh: true
+          copyback: false
+          prepare: |
+            pkg_add -I bash cmake gmake meson
+          run: |
+            sh .github/scripts/vm-build-and-test.sh
+
+  netbsd:
+    name: NetBSD
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in a NetBSD VM
+        uses: vmactions/netbsd-vm@v1
+        with:
+          usesh: true
+          copyback: false
+          prepare: |
+            /usr/sbin/pkg_add bash cmake gmake meson
+          run: |
+            sh .github/scripts/vm-build-and-test.sh
+
+  dragonflybsd:
+    name: DragonFly BSD
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in a DragonFly BSD VM
+        uses: vmactions/dragonflybsd-vm@v1
+        with:
+          usesh: true
+          copyback: false
+          prepare: |
+            pkg install -y bash cmake gmake meson
+          run: |
+            sh .github/scripts/vm-build-and-test.sh
+
+  # Solaris is the SunOS half of the list above. Two things differ from the BSD
+  # jobs and both are deliberate.
+  #
+  # The release is pinned, against the rule stated above, because the stock
+  # 11.4 image carries no C compiler and the action publishes ready-made
+  # variants rather than leaving one to be installed: 11.4-gcc is 11.4 with the
+  # default gcc/g++ already in it. Installing a compiler through pkg(1) instead
+  # would cost a large download on every run to arrive at the same place.
+  #
+  # Packages come from Oracle's IPS repository rather than the OpenCSW pkgutil
+  # the action's own example uses. CMakeLists.txt asks for CMake 3.20 and the
+  # 11.4 IPS repository carries 3.2x, whereas OpenCSW targets Solaris 10 and
+  # makes no such promise. developer/build/gnu-make is what puts gmake on PATH,
+  # which the shared script needs because the Makefile is GNU make syntax and
+  # /usr/bin/make here is the SunOS one.
+  #
+  # CC is set rather than left to the script's cc/gcc/clang search: on Solaris
+  # /usr/bin/cc can be the Oracle Studio compiler, and while CMakeLists.txt has
+  # a SUNPRO branch, the Makefile is GCC-specific - it parses `cc -dumpversion`
+  # and passes GCC warning flags - so the Makefile half of the script would fail
+  # on a guest where cc resolved to Studio.
+  solaris:
+    name: Solaris
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and test in a Solaris VM
+        uses: vmactions/solaris-vm@v1
+        with:
+          release: "11.4-gcc"
+          usesh: true
+          copyback: false
+          prepare: |
+            # pkg(1) exits 4 for "nothing to do", which is what an image that
+            # already carries one of these reports; only a real failure should
+            # stop the job, so 4 is accepted and everything else is not.
+            pkg install bash developer/build/cmake developer/build/gnu-make developer/build/meson || [ $? -eq 4 ]
+          run: |
+            CC=gcc sh .github/scripts/vm-build-and-test.sh
+
+  # Haiku and Cygwin are the last two platforms arch/ names but nothing here
+  # compiles. Both appear by name in the same preprocessor conditions -
+  # jitterentropy-arch-sched.c, -ncpu.c and -uuid.c all test
+  # defined(__HAIKU__) || defined(__CYGWIN__) - so both were added to those
+  # branches on the strength of the documentation alone, exactly the situation
+  # the Solaris job was added for and immediately found a real break in.
+  # Haiku disabled as meson cannot be installed
+  # haiku:
+  #   name: Haiku
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #
+  #     - name: Build and test in a Haiku VM
+  #       uses: vmactions/haiku-vm@v1
+  #       with:
+  #         usesh: true
+  #         copyback: false
+  #         prepare: |
+  #           pkgman install -y bash cmake make meson
+  #         run: |
+  #           sh .github/scripts/vm-build-and-test.sh
+
+  # Cygwin is the one entry here that is not a VM: it runs on the hosted Windows
+  # runner, so it needs no guest, but it is not a variation of the MSVC or MinGW
+  # jobs either. Those two are Windows targets; Cygwin is a POSIX target that
+  # happens to sit on Windows.
+  cygwin:
+    name: Cygwin
+    runs-on: windows-latest
+    steps:
+      # Before the checkout, so the shell scripts arrive with LF endings.
+      # Cygwin's sh reads a CRLF script as having a stray \r on every line and
+      # fails on the first one.
+      - name: Keep line endings as committed
+        run: git config --global core.autocrlf input
+
+      - uses: actions/checkout@v4
+
+      - uses: cygwin/cygwin-install-action@v6
+        with:
+          # gcc-core rather than gcc: the C compiler alone, no C++ or the rest
+          # of the collection this build never invokes.
+          packages: |
+            bash
+            cmake
+            gcc-core
+            make
+            binutils
+            meson
+
+      # Disable tests as Cygwin runner causes the error "Invalid relocation."
+      # for half of the test cases.
+      - name: Build and test
+        run: sh .github/scripts/vm-build-and-test.sh -Dtests=disabled
+
+  # Windows x86 MSVC is the reference Windows toolchain.
+  windows-msvc:
+    name: Windows / MSVC / ${{ matrix.os }} / shared=${{ matrix.shared }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ windows-latest ]
+        shared: [ 'shared', 'static', 'both' ]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+
+      - name: Install meson
+        run: |
+          python -m pip install --upgrade pip
+          pip install meson ninja
+
+      - name: Set up MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Meson setup
+        shell: pwsh
+        run: |
+          $env:CC = "clang-cl"
+          $env:CXX = "clang-cl"
+          meson setup build -Ddefault_library=${{ matrix.shared }} -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled
+
+      - name: Meson compile
+        run: meson compile -C build
+
+      - name: Meson test
+        run: meson test -v -C build --suite regression
+
+  # Windows ARM MSVC is the reference Windows toolchain.
+  # MS with its github runner system is unable to provide a working compile time
+  # environment. Thus, the test is disabled for now.
+  #
+  # During the Setup phase (mind the ARM64 references):
+  # [vcvarsall.bat] Environment initialized for: 'arm64'
+  # VSCMD_ARG_TGT_ARCH=arm64
+  # VCToolsInstallDir=C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\
+  # LIB=C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\ATLMFC\lib\ARM64;C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\lib\ARM64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\lib\um\arm64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\arm64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\arm64;C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\lib\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\lib\um\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64
+  # C:\Program Files\LLVM\bin\clang-cl.exe
+  # C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\Llvm\ARM64\bin\clang-cl.exe
+  # C:\Program Files\LLVM\bin\lld-link.exe
+  # C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\Llvm\ARM64\bin\lld-link.exe
+  # C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\bin\HostARM64\arm64\link.exe
+  # C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64\link.exe
+  # C:\Program Files\Git\usr\bin\link.exe
+  #
+  # But during link time, the provided libraries are X86
+  # FAILED: [code=1] leancrypto-1.9.dll leancrypto-1.9.pdb
+  # "lld-link"  /MACHINE:arm64 /OUT:leancrypto-1.9.dll leancrypto-1.9.dll.p/internal_src_fips_integrity_checker_none.c.obj "/nologo" "/OPT:REF" "/DEBUG" "/PDB:leancrypto-1.9.pdb" "/DLL" "/DEF:..\leancrypto_armv8.def" "/IMPLIB:leancrypto.lib" "/WHOLEARCHIVE:libleancrypto-raw.a" "libleancrypto-raw.a" "bcrypt.lib" "bcrypt.lib" "/SUBSYSTEM:CONSOLE" "kernel32.lib" "user32.lib" "gdi32.lib" "winspool.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "comdlg32.lib" "advapi32.lib"
+  # lld-link: error: bcrypt.lib(bcrypt.dll): machine type x64 conflicts with arm64
+
+  # windows-msvc-arm:
+  #   name: Windows / MSVC / ${{ matrix.os }} / shared=${{ matrix.shared }}
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       os: [ windows-11-vs2026-arm ]
+  #       shared: [ 'shared', 'static', 'both' ]
+  #   steps:
+  #     - uses: actions/checkout@v7
+  #     - uses: actions/setup-python@v7
+  #       with:
+  #         python-version: '3.x'
+  #
+  #     - name: Install meson
+  #       run: |
+  #         python -m pip install --upgrade pip
+  #         pip install meson ninja
+  #
+  #     - name: Set up MSVC
+  #       uses: ilammy/msvc-dev-cmd@v1
+  #
+  #     - name: Meson setup
+  #       shell: cmd
+  #       run: |
+  #         call "C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" arm64
+  #         echo VSCMD_ARG_TGT_ARCH=%VSCMD_ARG_TGT_ARCH%
+  #         echo VCToolsInstallDir=%VCToolsInstallDir%
+  #         echo LIB=%LIB%
+  #         where clang-cl
+  #         where lld-link
+  #         where link
+  #         set CC=clang-cl
+  #         set CXX=clang-cl
+  #         meson setup build -Ddefault_library=${{ matrix.shared }} -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled
+  #
+  #     - name: Meson compile
+  #       run: meson compile -C build
+  #
+  #     - name: Meson test
+  #       run: meson test -v -C build --suite regression
+
+  # Windows MSYS2
+  windows-msys2:
+    name: Windows / MSYS2
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          #- { sys: mingw64, env: x86_64 }
+          - { sys: ucrt64,  env: ucrt-x86_64 }
+          #- { sys: clang64, env: clang-x86_64 }
+    steps:
+    - uses: actions/checkout@v6
+    - uses: msys2/setup-msys2@v2
+      with:
+        msystem: ${{matrix.sys}}
+        update: true
+        install: git meson mingw-w64-${{matrix.env}}-meson mingw-w64-${{matrix.env}}-gcc
+    - name: Meson setup
+      shell: msys2 {0}
+      run: meson setup build -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled -Dsbsigntools=disabled
+    - name: Meson compile
+      shell: msys2 {0}
+      run: meson compile -C build
+    - name: Meson test
+      shell: msys2 {0}
+      run: meson test -v -C build --suite regression
+    # - name: Archive test logs
+    #   if: always()
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: meson-logs
+    #     path: build/meson-logs/
+
+  # macOS
+  macos:
+    name: macOS
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install meson
+      run: brew install meson
+    - name: Meson setup
+      run: meson setup build -Dslh_dsa_ascon_128s=enabled -Dslh_dsa_ascon_128f=enabled -Dsbsigntools=disabled
+    - name: Meson compile
+      run: meson compile -C build
+    - name: Meson test
+      run: meson test -v -C build --suite regression

@@ -1,0 +1,7108 @@
+{
+  "input_counts": {
+    "files": 232,
+    "labels": 176,
+    "by_kind": {
+      "executable": 210,
+      "source": 22
+    },
+    "author_families": 8,
+    "positive_labels_by_algorithm": {
+      "MD5": 20,
+      "SHA-256": 68,
+      "ECDH": 16,
+      "ECDSA": 16,
+      "SHA-1": 10,
+      "RSA": 16,
+      "AES": 16,
+      "SM3": 12,
+      "SM2": 1,
+      "SM4": 1
+    }
+  },
+  "limitations": "8 repository author families and 22 primary source units, compilation variants correlated; no new DES/RC4/ChaCha20 implementations; SM4 only one JS source unit, insufficient for a broad SM4 accuracy claim. Headers are support, not independent labels. No target code is executed.",
+  "build_attempts": 270,
+  "build_failures": 60,
+  "first_unseen_family_test": {
+    "before": {
+      "TP": 87,
+      "FP": 6,
+      "FN": 89,
+      "TN": 2834,
+      "recall": 0.4943181818181818,
+      "false_negative_rate": 0.5056818181818182,
+      "precision": 0.9354838709677419
+    },
+    "after": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "gained_true_labels": [
+      {
+        "id": "ogay--sha2-sha2.c-thumb-O0",
+        "sha256": "0e68dc2601da19603097f274fa9afc559dde675bfce3cf2c6b35854453cd38aa",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "stbrumme--hash-library-sha256.cpp-thumb-O2",
+        "sha256": "1b319e80135db27ad140f988f4f48b4dc0f1374b6149664597b761128d814dd9",
+        "kind": "executable",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-mips_be-O0",
+        "sha256": "29a8de602b9f95a4b8845cb41407d32780ae89e844c20c83d14124544f439743",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-thumb-Os",
+        "sha256": "918853dec3fe6f5841d6189af7f939b3e6ee6e55cfb22dcacdaaf959acc50b1a",
+        "kind": "executable",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-thumb-O2",
+        "sha256": "94b6516a0cfdbdbae88522acf63688b64fc178b7843c902c84c31af3501d0cec",
+        "kind": "executable",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "ogay--sha2-sha2.c-mips_be-O2",
+        "sha256": "a2214790fbd31bb6f8d751e8b03e4ae04aaad7761f6a4a486e51c18ebaf8e8cb",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "ogay--sha2-sha2.c-x86_64-O0",
+        "sha256": "c532a2ed143f5852a90b988d4c70631e022583474e8f652f19ffa233a6e68e65",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-thumb-O0",
+        "sha256": "c5acf7d08d7ea71706d0fe548e8908c1c574dc37b4c677626f18ed84791e3b89",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "stbrumme--hash-library-sha256.cpp-thumb-Os",
+        "sha256": "c847156127fdae0694d036d3adf164b775f503d440c3305e561a6c3c6ce6cd2a",
+        "kind": "executable",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-mipsel-O0",
+        "sha256": "fdd362efbdd7b5ad88b40fe945e06f63692704c4bae59e59fb28be95c90d6e6c",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      }
+    ],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {
+      "SHA-256": 10
+    },
+    "denominator_unchanged": true,
+    "files": 232,
+    "positive_labels": 176
+  },
+  "address_revision_recheck": {
+    "before": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "after": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "gained_true_labels": [],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {},
+    "denominator_unchanged": true,
+    "files": 232,
+    "positive_labels": 176
+  },
+  "revised_vs_baseline": {
+    "before": {
+      "TP": 87,
+      "FP": 6,
+      "FN": 89,
+      "TN": 2834,
+      "recall": 0.4943181818181818,
+      "false_negative_rate": 0.5056818181818182,
+      "precision": 0.9354838709677419
+    },
+    "after": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "gained_true_labels": [
+      {
+        "id": "ogay--sha2-sha2.c-thumb-O0",
+        "sha256": "0e68dc2601da19603097f274fa9afc559dde675bfce3cf2c6b35854453cd38aa",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "stbrumme--hash-library-sha256.cpp-thumb-O2",
+        "sha256": "1b319e80135db27ad140f988f4f48b4dc0f1374b6149664597b761128d814dd9",
+        "kind": "executable",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-mips_be-O0",
+        "sha256": "29a8de602b9f95a4b8845cb41407d32780ae89e844c20c83d14124544f439743",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-thumb-Os",
+        "sha256": "918853dec3fe6f5841d6189af7f939b3e6ee6e55cfb22dcacdaaf959acc50b1a",
+        "kind": "executable",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-thumb-O2",
+        "sha256": "94b6516a0cfdbdbae88522acf63688b64fc178b7843c902c84c31af3501d0cec",
+        "kind": "executable",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "ogay--sha2-sha2.c-mips_be-O2",
+        "sha256": "a2214790fbd31bb6f8d751e8b03e4ae04aaad7761f6a4a486e51c18ebaf8e8cb",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "ogay--sha2-sha2.c-x86_64-O0",
+        "sha256": "c532a2ed143f5852a90b988d4c70631e022583474e8f652f19ffa233a6e68e65",
+        "kind": "executable",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-thumb-O0",
+        "sha256": "c5acf7d08d7ea71706d0fe548e8908c1c574dc37b4c677626f18ed84791e3b89",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "stbrumme--hash-library-sha256.cpp-thumb-Os",
+        "sha256": "c847156127fdae0694d036d3adf164b775f503d440c3305e561a6c3c6ce6cd2a",
+        "kind": "executable",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "miracl--core-c_hash.c-mipsel-O0",
+        "sha256": "fdd362efbdd7b5ad88b40fe945e06f63692704c4bae59e59fb28be95c90d6e6c",
+        "kind": "executable",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "algorithm": "SHA-256"
+      }
+    ],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {
+      "SHA-256": 10
+    },
+    "denominator_unchanged": true,
+    "files": 232,
+    "positive_labels": 176
+  },
+  "policy": "The first frozen run is the independent author-family test. The address revision is a recheck of already observed inputs; no second independent-test claim. Historical 65.43% result is unchanged.",
+  "baseline": {
+    "files": 232,
+    "positive_labels": 176,
+    "scan_status": {
+      "completed": 232
+    },
+    "micro": {
+      "TP": 87,
+      "FP": 6,
+      "FN": 89,
+      "TN": 2834,
+      "recall": 0.4943181818181818,
+      "false_negative_rate": 0.5056818181818182,
+      "precision": 0.9354838709677419
+    },
+    "per_algorithm": {
+      "AES": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 216,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      "ChaCha20": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "DES": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "ECDH": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "ECDSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "MD5": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 212,
+        "recall": 0.8,
+        "false_negative_rate": 0.2,
+        "precision": 1.0
+      },
+      "RC4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "RSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SHA-1": {
+        "TP": 9,
+        "FP": 6,
+        "FN": 1,
+        "TN": 216,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 0.6
+      },
+      "SHA-256": {
+        "TP": 37,
+        "FP": 0,
+        "FN": 31,
+        "TN": 164,
+        "recall": 0.5441176470588235,
+        "false_negative_rate": 0.45588235294117646,
+        "precision": 1.0
+      },
+      "SM2": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SM3": {
+        "TP": 9,
+        "FP": 0,
+        "FN": 3,
+        "TN": 220,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      "SM4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    },
+    "implementation_groups": [
+      {
+        "algorithm": "AES",
+        "project": "miracl--core",
+        "family": "miracl--core:c/aes.c",
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+        "TP": 7,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.7,
+        "false_negative_rate": 0.3,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:md5.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/rsa.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha1.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "983--SHA-256",
+        "family": "983--SHA-256:sha256.c",
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 0,
+        "recall": 0.25,
+        "false_negative_rate": 0.75,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "TP": 7,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.7,
+        "false_negative_rate": 0.3,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "TP": 9,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.5625,
+        "false_negative_rate": 0.4375,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "TP": 10,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.625,
+        "false_negative_rate": 0.375,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "TP": 7,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.7,
+        "false_negative_rate": 0.3,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM2",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    ],
+    "seconds": 258.9219454820268,
+    "by_kind": {
+      "executable": {
+        "files": 210,
+        "positive_labels": 159,
+        "scan_status": {
+          "completed": 210
+        },
+        "micro": {
+          "TP": 81,
+          "FP": 6,
+          "FN": 78,
+          "TN": 2565,
+          "recall": 0.5094339622641509,
+          "false_negative_rate": 0.49056603773584906,
+          "precision": 0.9310344827586207
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 195,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 3,
+            "TN": 192,
+            "recall": 0.8333333333333334,
+            "false_negative_rate": 0.16666666666666666,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 8,
+            "FP": 6,
+            "FN": 1,
+            "TN": 195,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 0.5714285714285714
+          },
+          "SHA-256": {
+            "TP": 34,
+            "FP": 0,
+            "FN": 29,
+            "TN": 147,
+            "recall": 0.5396825396825397,
+            "false_negative_rate": 0.4603174603174603,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 201,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.7777777777777778,
+            "false_negative_rate": 0.2222222222222222,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 3,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.2,
+            "false_negative_rate": 0.8,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.7777777777777778,
+            "false_negative_rate": 0.2222222222222222,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 8,
+            "FP": 0,
+            "FN": 7,
+            "TN": 0,
+            "recall": 0.5333333333333333,
+            "false_negative_rate": 0.4666666666666667,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 10,
+            "FP": 0,
+            "FN": 5,
+            "TN": 0,
+            "recall": 0.6666666666666666,
+            "false_negative_rate": 0.3333333333333333,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 6,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.6666666666666666,
+            "false_negative_rate": 0.3333333333333333,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          }
+        ]
+      },
+      "source": {
+        "files": 22,
+        "positive_labels": 17,
+        "scan_status": {
+          "completed": 22
+        },
+        "micro": {
+          "TP": 6,
+          "FP": 0,
+          "FN": 11,
+          "TN": 269,
+          "recall": 0.35294117647058826,
+          "false_negative_rate": 0.6470588235294118,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 1,
+            "TN": 20,
+            "recall": 0.5,
+            "false_negative_rate": 0.5,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SHA-256": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 2,
+            "TN": 17,
+            "recall": 0.6,
+            "false_negative_rate": 0.4,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 3,
+            "TN": 19,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      }
+    },
+    "by_author_family": {
+      "983 (upstream author identifier)": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 4,
+          "FP": 0,
+          "FN": 12,
+          "TN": 192,
+          "recall": 0.25,
+          "false_negative_rate": 0.75,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Johannes Kuhlmann / cgltf team": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      },
+      "JuneAndGreen / sm-crypto contributors": {
+        "files": 4,
+        "positive_labels": 4,
+        "scan_status": {
+          "completed": 4
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 4,
+          "TN": 48,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 2,
+            "TN": 2,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      },
+      "Mike Scott / MIRACL UK": {
+        "files": 64,
+        "positive_labels": 80,
+        "scan_status": {
+          "completed": 64
+        },
+        "micro": {
+          "TP": 25,
+          "FP": 2,
+          "FN": 55,
+          "TN": 750,
+          "recall": 0.3125,
+          "false_negative_rate": 0.6875,
+          "precision": 0.9259259259259259
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 48,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "TN": 62,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": 0.0
+          },
+          "SHA-256": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 7,
+            "TN": 48,
+            "recall": 0.5625,
+            "false_negative_rate": 0.4375,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 9,
+            "FP": 0,
+            "FN": 7,
+            "TN": 0,
+            "recall": 0.5625,
+            "false_negative_rate": 0.4375,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Olivier Gay": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 10,
+          "FP": 0,
+          "FN": 6,
+          "TN": 192,
+          "recall": 0.625,
+          "false_negative_rate": 0.375,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 10,
+            "FP": 0,
+            "FN": 6,
+            "TN": 0,
+            "recall": 0.625,
+            "false_negative_rate": 0.375,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 10,
+            "FP": 0,
+            "FN": 6,
+            "TN": 0,
+            "recall": 0.625,
+            "false_negative_rate": 0.375,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Stephan Brumme": {
+        "files": 60,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 60
+        },
+        "micro": {
+          "TP": 25,
+          "FP": 4,
+          "FN": 5,
+          "TN": 746,
+          "recall": 0.8333333333333334,
+          "false_negative_rate": 0.16666666666666666,
+          "precision": 0.8620689655172413
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 50,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 9,
+            "FP": 4,
+            "FN": 1,
+            "TN": 46,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 0.6923076923076923
+          },
+          "SHA-256": {
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 50,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          }
+        ]
+      },
+      "kerukuro": {
+        "files": 40,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 40
+        },
+        "micro": {
+          "TP": 23,
+          "FP": 0,
+          "FN": 7,
+          "TN": 490,
+          "recall": 0.7666666666666667,
+          "false_negative_rate": 0.23333333333333334,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 30,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 30,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 30,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          }
+        ]
+      },
+      "rxi": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      }
+    }
+  },
+  "current": {
+    "files": 232,
+    "positive_labels": 176,
+    "scan_status": {
+      "completed": 232
+    },
+    "micro": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "per_algorithm": {
+      "AES": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 216,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      "ChaCha20": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "DES": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "ECDH": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "ECDSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "MD5": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 212,
+        "recall": 0.8,
+        "false_negative_rate": 0.2,
+        "precision": 1.0
+      },
+      "RC4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "RSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SHA-1": {
+        "TP": 9,
+        "FP": 6,
+        "FN": 1,
+        "TN": 216,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 0.6
+      },
+      "SHA-256": {
+        "TP": 47,
+        "FP": 0,
+        "FN": 21,
+        "TN": 164,
+        "recall": 0.6911764705882353,
+        "false_negative_rate": 0.3088235294117647,
+        "precision": 1.0
+      },
+      "SM2": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SM3": {
+        "TP": 9,
+        "FP": 0,
+        "FN": 3,
+        "TN": 220,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      "SM4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    },
+    "implementation_groups": [
+      {
+        "algorithm": "AES",
+        "project": "miracl--core",
+        "family": "miracl--core:c/aes.c",
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+        "TP": 7,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.7,
+        "false_negative_rate": 0.3,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:md5.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/rsa.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha1.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "983--SHA-256",
+        "family": "983--SHA-256:sha256.c",
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 0,
+        "recall": 0.25,
+        "false_negative_rate": 0.75,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "TP": 12,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "TP": 13,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8125,
+        "false_negative_rate": 0.1875,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM2",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    ],
+    "seconds": 349.6882934626192,
+    "by_kind": {
+      "executable": {
+        "files": 210,
+        "positive_labels": 159,
+        "scan_status": {
+          "completed": 210
+        },
+        "micro": {
+          "TP": 91,
+          "FP": 6,
+          "FN": 68,
+          "TN": 2565,
+          "recall": 0.5723270440251572,
+          "false_negative_rate": 0.4276729559748428,
+          "precision": 0.9381443298969072
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 195,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 3,
+            "TN": 192,
+            "recall": 0.8333333333333334,
+            "false_negative_rate": 0.16666666666666666,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 8,
+            "FP": 6,
+            "FN": 1,
+            "TN": 195,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 0.5714285714285714
+          },
+          "SHA-256": {
+            "TP": 44,
+            "FP": 0,
+            "FN": 19,
+            "TN": 147,
+            "recall": 0.6984126984126984,
+            "false_negative_rate": 0.30158730158730157,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 201,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.7777777777777778,
+            "false_negative_rate": 0.2222222222222222,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 3,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.2,
+            "false_negative_rate": 0.8,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 11,
+            "FP": 0,
+            "FN": 4,
+            "TN": 0,
+            "recall": 0.7333333333333333,
+            "false_negative_rate": 0.26666666666666666,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 13,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.8666666666666667,
+            "false_negative_rate": 0.13333333333333333,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          }
+        ]
+      },
+      "source": {
+        "files": 22,
+        "positive_labels": 17,
+        "scan_status": {
+          "completed": 22
+        },
+        "micro": {
+          "TP": 6,
+          "FP": 0,
+          "FN": 11,
+          "TN": 269,
+          "recall": 0.35294117647058826,
+          "false_negative_rate": 0.6470588235294118,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 1,
+            "TN": 20,
+            "recall": 0.5,
+            "false_negative_rate": 0.5,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SHA-256": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 2,
+            "TN": 17,
+            "recall": 0.6,
+            "false_negative_rate": 0.4,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 3,
+            "TN": 19,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      }
+    },
+    "by_author_family": {
+      "983 (upstream author identifier)": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 4,
+          "FP": 0,
+          "FN": 12,
+          "TN": 192,
+          "recall": 0.25,
+          "false_negative_rate": 0.75,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Johannes Kuhlmann / cgltf team": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      },
+      "JuneAndGreen / sm-crypto contributors": {
+        "files": 4,
+        "positive_labels": 4,
+        "scan_status": {
+          "completed": 4
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 4,
+          "TN": 48,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 2,
+            "TN": 2,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      },
+      "Mike Scott / MIRACL UK": {
+        "files": 64,
+        "positive_labels": 80,
+        "scan_status": {
+          "completed": 64
+        },
+        "micro": {
+          "TP": 28,
+          "FP": 2,
+          "FN": 52,
+          "TN": 750,
+          "recall": 0.35,
+          "false_negative_rate": 0.65,
+          "precision": 0.9333333333333333
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 48,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "TN": 62,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": 0.0
+          },
+          "SHA-256": {
+            "TP": 12,
+            "FP": 0,
+            "FN": 4,
+            "TN": 48,
+            "recall": 0.75,
+            "false_negative_rate": 0.25,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 12,
+            "FP": 0,
+            "FN": 4,
+            "TN": 0,
+            "recall": 0.75,
+            "false_negative_rate": 0.25,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Olivier Gay": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 13,
+          "FP": 0,
+          "FN": 3,
+          "TN": 192,
+          "recall": 0.8125,
+          "false_negative_rate": 0.1875,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 13,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.8125,
+            "false_negative_rate": 0.1875,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 13,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.8125,
+            "false_negative_rate": 0.1875,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Stephan Brumme": {
+        "files": 60,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 60
+        },
+        "micro": {
+          "TP": 27,
+          "FP": 4,
+          "FN": 3,
+          "TN": 746,
+          "recall": 0.9,
+          "false_negative_rate": 0.1,
+          "precision": 0.8709677419354839
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 50,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 9,
+            "FP": 4,
+            "FN": 1,
+            "TN": 46,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 0.6923076923076923
+          },
+          "SHA-256": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 50,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          }
+        ]
+      },
+      "kerukuro": {
+        "files": 40,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 40
+        },
+        "micro": {
+          "TP": 25,
+          "FP": 0,
+          "FN": 5,
+          "TN": 490,
+          "recall": 0.8333333333333334,
+          "false_negative_rate": 0.16666666666666666,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 30,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 30,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 30,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          }
+        ]
+      },
+      "rxi": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      }
+    }
+  },
+  "revision": {
+    "files": 232,
+    "positive_labels": 176,
+    "scan_status": {
+      "completed": 231,
+      "partial": 1
+    },
+    "micro": {
+      "TP": 97,
+      "FP": 6,
+      "FN": 79,
+      "TN": 2834,
+      "recall": 0.5511363636363636,
+      "false_negative_rate": 0.44886363636363635,
+      "precision": 0.941747572815534
+    },
+    "per_algorithm": {
+      "AES": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 216,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      "ChaCha20": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "DES": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "ECDH": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "ECDSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "MD5": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 212,
+        "recall": 0.8,
+        "false_negative_rate": 0.2,
+        "precision": 1.0
+      },
+      "RC4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 232,
+        "recall": null,
+        "false_negative_rate": null,
+        "precision": null
+      },
+      "RSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 216,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SHA-1": {
+        "TP": 9,
+        "FP": 6,
+        "FN": 1,
+        "TN": 216,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 0.6
+      },
+      "SHA-256": {
+        "TP": 47,
+        "FP": 0,
+        "FN": 21,
+        "TN": 164,
+        "recall": 0.6911764705882353,
+        "false_negative_rate": 0.3088235294117647,
+        "precision": 1.0
+      },
+      "SM2": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SM3": {
+        "TP": 9,
+        "FP": 0,
+        "FN": 3,
+        "TN": 220,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      "SM4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 231,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    },
+    "implementation_groups": [
+      {
+        "algorithm": "AES",
+        "project": "miracl--core",
+        "family": "miracl--core:c/aes.c",
+        "TP": 16,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/ecdh.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+        "TP": 7,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.7,
+        "false_negative_rate": 0.3,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:md5.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RSA",
+        "project": "miracl--core",
+        "family": "miracl--core:c/rsa.c",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha1.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "983--SHA-256",
+        "family": "983--SHA-256:sha256.c",
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 0,
+        "recall": 0.25,
+        "false_negative_rate": 0.75,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "miracl--core",
+        "family": "miracl--core:c/hash.c",
+        "TP": 12,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "ogay--sha2",
+        "family": "ogay--sha2:sha2.c",
+        "TP": 13,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8125,
+        "false_negative_rate": 0.1875,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "stbrumme--hash-library",
+        "family": "stbrumme--hash-library:sha256.cpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM2",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "kerukuro--digestpp",
+        "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+        "TP": 9,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "JuneAndGreen--sm-crypto",
+        "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      }
+    ],
+    "seconds": 473.1264119972475,
+    "by_kind": {
+      "executable": {
+        "files": 210,
+        "positive_labels": 159,
+        "scan_status": {
+          "completed": 209,
+          "partial": 1
+        },
+        "micro": {
+          "TP": 91,
+          "FP": 6,
+          "FN": 68,
+          "TN": 2565,
+          "recall": 0.5723270440251572,
+          "false_negative_rate": 0.4276729559748428,
+          "precision": 0.9381443298969072
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 195,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 15,
+            "FP": 0,
+            "FN": 3,
+            "TN": 192,
+            "recall": 0.8333333333333334,
+            "false_negative_rate": 0.16666666666666666,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 195,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 8,
+            "FP": 6,
+            "FN": 1,
+            "TN": 195,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 0.5714285714285714
+          },
+          "SHA-256": {
+            "TP": 44,
+            "FP": 0,
+            "FN": 19,
+            "TN": 147,
+            "recall": 0.6984126984126984,
+            "false_negative_rate": 0.30158730158730157,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 201,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 210,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 15,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.7777777777777778,
+            "false_negative_rate": 0.2222222222222222,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 15,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 3,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.2,
+            "false_negative_rate": 0.8,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 11,
+            "FP": 0,
+            "FN": 4,
+            "TN": 0,
+            "recall": 0.7333333333333333,
+            "false_negative_rate": 0.26666666666666666,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 13,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "recall": 0.8666666666666667,
+            "false_negative_rate": 0.13333333333333333,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 8,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.8888888888888888,
+            "false_negative_rate": 0.1111111111111111,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          }
+        ]
+      },
+      "source": {
+        "files": 22,
+        "positive_labels": 17,
+        "scan_status": {
+          "completed": 22
+        },
+        "micro": {
+          "TP": 6,
+          "FP": 0,
+          "FN": 11,
+          "TN": 269,
+          "recall": 0.35294117647058826,
+          "false_negative_rate": 0.6470588235294118,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 1,
+            "TN": 20,
+            "recall": 0.5,
+            "false_negative_rate": 0.5,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 22,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 21,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "SHA-256": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 2,
+            "TN": 17,
+            "recall": 0.6,
+            "false_negative_rate": 0.4,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 3,
+            "TN": 19,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 21,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      }
+    },
+    "by_author_family": {
+      "983 (upstream author identifier)": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 4,
+          "FP": 0,
+          "FN": 12,
+          "TN": 192,
+          "recall": 0.25,
+          "false_negative_rate": 0.75,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "983--SHA-256",
+            "family": "983--SHA-256:sha256.c",
+            "TP": 4,
+            "FP": 0,
+            "FN": 12,
+            "TN": 0,
+            "recall": 0.25,
+            "false_negative_rate": 0.75,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Johannes Kuhlmann / cgltf team": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 15,
+          "partial": 1
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      },
+      "JuneAndGreen / sm-crypto contributors": {
+        "files": 4,
+        "positive_labels": 4,
+        "scan_status": {
+          "completed": 4
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 4,
+          "TN": 48,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 4,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 2,
+            "TN": 2,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 3,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SM2",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM3",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SM4",
+            "project": "JuneAndGreen--sm-crypto",
+            "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+            "TP": 0,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          }
+        ]
+      },
+      "Mike Scott / MIRACL UK": {
+        "files": 64,
+        "positive_labels": 80,
+        "scan_status": {
+          "completed": 64
+        },
+        "micro": {
+          "TP": 28,
+          "FP": 2,
+          "FN": 52,
+          "TN": 750,
+          "recall": 0.35,
+          "false_negative_rate": 0.65,
+          "precision": 0.9333333333333333
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 48,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 48,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "TN": 62,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": 0.0
+          },
+          "SHA-256": {
+            "TP": 12,
+            "FP": 0,
+            "FN": 4,
+            "TN": 48,
+            "recall": 0.75,
+            "false_negative_rate": 0.25,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 64,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "AES",
+            "project": "miracl--core",
+            "family": "miracl--core:c/aes.c",
+            "TP": 16,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "recall": 1.0,
+            "false_negative_rate": 0.0,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "ECDH",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "ECDSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/ecdh.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "RSA",
+            "project": "miracl--core",
+            "family": "miracl--core:c/rsa.c",
+            "TP": 0,
+            "FP": 0,
+            "FN": 16,
+            "TN": 0,
+            "recall": 0.0,
+            "false_negative_rate": 1.0,
+            "precision": null
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "miracl--core",
+            "family": "miracl--core:c/hash.c",
+            "TP": 12,
+            "FP": 0,
+            "FN": 4,
+            "TN": 0,
+            "recall": 0.75,
+            "false_negative_rate": 0.25,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Olivier Gay": {
+        "files": 16,
+        "positive_labels": 16,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 13,
+          "FP": 0,
+          "FN": 3,
+          "TN": 192,
+          "recall": 0.8125,
+          "false_negative_rate": 0.1875,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 13,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.8125,
+            "false_negative_rate": 0.1875,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "SHA-256",
+            "project": "ogay--sha2",
+            "family": "ogay--sha2:sha2.c",
+            "TP": 13,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.8125,
+            "false_negative_rate": 0.1875,
+            "precision": 1.0
+          }
+        ]
+      },
+      "Stephan Brumme": {
+        "files": 60,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 60
+        },
+        "micro": {
+          "TP": 27,
+          "FP": 4,
+          "FN": 3,
+          "TN": 746,
+          "recall": 0.9,
+          "false_negative_rate": 0.1,
+          "precision": 0.8709677419354839
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 50,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 9,
+            "FP": 4,
+            "FN": 1,
+            "TN": 46,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 0.6923076923076923
+          },
+          "SHA-256": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 50,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:md5.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-1",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha1.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "stbrumme--hash-library",
+            "family": "stbrumme--hash-library:sha256.cpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          }
+        ]
+      },
+      "kerukuro": {
+        "files": 40,
+        "positive_labels": 30,
+        "scan_status": {
+          "completed": 40
+        },
+        "micro": {
+          "TP": 25,
+          "FP": 0,
+          "FN": 5,
+          "TN": 490,
+          "recall": 0.8333333333333334,
+          "false_negative_rate": 0.16666666666666666,
+          "precision": 1.0
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 30,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 30,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 30,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 40,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": [
+          {
+            "algorithm": "MD5",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+            "TP": 7,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "recall": 0.7,
+            "false_negative_rate": 0.3,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SHA-256",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          },
+          {
+            "algorithm": "SM3",
+            "project": "kerukuro--digestpp",
+            "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+            "TP": 9,
+            "FP": 0,
+            "FN": 1,
+            "TN": 0,
+            "recall": 0.9,
+            "false_negative_rate": 0.1,
+            "precision": 1.0
+          }
+        ]
+      },
+      "rxi": {
+        "files": 16,
+        "positive_labels": 0,
+        "scan_status": {
+          "completed": 16
+        },
+        "micro": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 208,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "per_algorithm": {
+          "AES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ChaCha20": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "DES": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDH": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "ECDSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "MD5": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RC4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "RSA": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-1": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SHA-256": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM2": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM3": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          },
+          "SM4": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 16,
+            "recall": null,
+            "false_negative_rate": null,
+            "precision": null
+          }
+        },
+        "implementation_groups": []
+      }
+    }
+  }
+}

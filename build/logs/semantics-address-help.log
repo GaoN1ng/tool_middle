@@ -1,0 +1,14 @@
+usage: evaluate_address_revision.py [-h] --parent PARENT --package PACKAGE
+                                    --output OUTPUT [--workers WORKERS]
+
+Recheck an AArch64-only address-parser correction with explicit result reuse.
+All AArch64 ELF inputs are rescanned. Other results are reused only after AST
+verification that all changed detector code is inside the AArch64 stub branch.
+The parent full evaluation must finish; its denominator is never shortened.
+
+options:
+  -h, --help         show this help message and exit
+  --parent PARENT
+  --package PACKAGE
+  --output OUTPUT
+  --workers WORKERS

@@ -1,0 +1,13 @@
+...F......................................
+======================================================================
+FAIL: test_real_reverse_call_and_same_descriptor_bind_initializer (test_source_linkage.SourceLinkageTests.test_real_reverse_call_and_same_descriptor_bind_initializer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_source_linkage.py", line 49, in test_real_reverse_call_and_same_descriptor_bind_initializer
+    self.assertIn('SHA-256', found)
+AssertionError: 'SHA-256' not found in set()
+
+----------------------------------------------------------------------
+Ran 42 tests in 6.460s
+
+FAILED (failures=1)

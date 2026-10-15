@@ -49,10 +49,14 @@ def locate_tables(regions):
     for base, offset, data, flags in regions:
         if flags & 1 or not isinstance(data, bytes):
             continue
-        for kind, raw in table_patterns():
+        patterns = list(table_patterns())
+        for pattern_index, (kind, raw) in enumerate(patterns):
             start = 0
             while (at := data.find(raw, start)) >= 0:
-                result.append({'kind': kind, 'address': base + at, 'offset': offset + at, 'length': len(raw)})
+                table = {'kind': kind, 'address': base + at, 'offset': offset + at, 'length': len(raw)}
+                if kind in {'block_table', 'key_table'}:
+                    table['byte_position'] = (pattern_index - 2) % 9 % 4 * 8
+                result.append(table)
                 start = at + len(raw)
     return result
 
@@ -114,7 +118,7 @@ def decode(dis, data, base):
 
 
 class Lift:
-    def __init__(self, domain, tables, regions, *, helper_depth=0, helper_budget=None, helper_cache=None):
+    def __init__(self, domain, tables, regions, *, helper_depth=0, helper_budget=None, helper_cache=None, mips_gp=None, import_slots=None):
         self.domain, self.tables, self.regions = domain, tables, regions
         self.regs, self.memory, self.addresses = {}, {}, {}
         self.address_memory={}
@@ -126,15 +130,23 @@ class Lift:
         self.helper_cache={} if helper_cache is None else helper_cache
         from ..operations import Arithmetic
         self.arithmetic=Arithmetic()
+        from ..sm4_tables import TableRounds
+        self.table_rounds = TableRounds()
         from ..operation_arrays import Arrays
         self.arrays=Arrays(self.arithmetic)
         self.array_addresses={}
         self.array_memory={}
         self.guard_cache={}
         self.stack_offsets={'rsp':0} if 'x86' in domain else {'sp':0}
+        self.frame_memory={}
         self.cfg_mode=False
         self.stable_site=None
         self.stable_counter=0
+        self.mips_gp=mips_gp
+        self.mips_lui_sites={}
+        self.import_slots=import_slots or {}
+        self.import_registers={}
+        self.copy_targets={}
 
     def guard_successor(self, ins):
         """Prove a conditional edge terminates in a side-effect-free trap.
@@ -203,14 +215,19 @@ class Lift:
         mem=op.mem
         if not mem.base or ins.reg_name(mem.base)=='rip':return None
         base=self.key(ins,mem.base)
-        if base in {'rsp','rbp','sp','fp','r11'}:return None
+        if base in {'rsp','rbp','sp','fp','r11'} and not mem.index:return None
         if mem.index:
             if self.domain in {'x86_64','pe_x86_64'}:scale=mem.scale
             elif self.domain in {'arm','thumb','aarch64'}:
                 sh=getattr(op,'shift',None);scale=1<<(sh.value if sh else 0)
                 if sh and sh.value and sh.type not in {1,2}:return None
             else:return None
-            if scale in {1,4}:return ((self.reg(ins,mem.base),mem.disp,scale),self.reg(ins,mem.index))
+            if scale in {1,4}:
+                origin = ('frame-base', self.stack_offsets[base]) if base in self.stack_offsets else self.reg(ins,mem.base)
+                index=self.reg(ins,mem.index)
+                form=self.arithmetic.index(index) if scale==4 else None
+                if form is not None:index=('word_index',form)
+                return ((origin,mem.disp,scale),index)
         if base in self.array_addresses and not mem.index and mem.disp==0:
             return self.array_addresses[base]
         return None
@@ -231,7 +248,11 @@ class Lift:
         sh=getattr(ops[2],'shift',None);scale=1<<(sh.value if sh else 0)
         if sh and sh.value and sh.type not in {1,2}:return None
         if scale not in {1,4}:return None
-        return ((self.reg(ins,ops[1].reg),0,scale),self.reg(ins,ops[2].reg))
+        origin=('frame-base',self.stack_offsets[base]) if base in self.stack_offsets else self.reg(ins,ops[1].reg)
+        index=self.reg(ins,ops[2].reg)
+        form=self.arithmetic.index(index) if scale==4 else None
+        if form is not None:index=('word_index',form)
+        return ((origin,0,scale),index)
 
     def new(self, source_tags=()):
         if self.stable_site is not None:
@@ -257,6 +278,8 @@ class Lift:
 
     def reg(self, ins, reg):
         k = self.key(ins, reg)
+        if k in {'zero', 'wzr', 'xzr'}:
+            return ('constant', 0)
         if k not in self.regs:
             self.regs[k] = self.new()
         return self.regs[k]
@@ -282,10 +305,13 @@ class Lift:
     def mem_address(self, ins, op):
         m = op.mem
         base = self.key(ins, m.base) if m.base else ''
+        # In ARM VLD/VST structure operands Capstone stores the alignment
+        # annotation (:64/:128) in mem.disp. It is not an address offset.
+        disp=0 if self.domain in {'arm','thumb'} and ins.mnemonic.split('.')[0] in {'vld1','vld2','vld3','vld4','vst1','vst2','vst3','vst4'} else m.disp
         if base == 'rip':
             return ins.address + ins.size + m.disp
         if base in self.addresses:
-            return self.addresses[base] + m.disp
+            return self.addresses[base] + disp
         index = getattr(m, 'index', 0)
         if index and self.key(ins, index) in self.addresses and getattr(m, 'scale', 1) == 1:
             return self.addresses[self.key(ins, index)] + m.disp
@@ -335,11 +361,17 @@ class Lift:
                 if table['kind'].startswith('lane_rotate_'):
                     return ('shuffle',int(table['kind'].rsplit('_',1)[1]))
                 value=self.new([table['kind']])
+                if getattr(op.mem, 'index', 0):
+                    self.table_rounds.remember(value, self.reg(ins, op.mem.index), table)
                 return truncate(value,8) if table['kind']=='sbox' else value
             address=self.array_address(ins,op)
             if address:
                 value=self.new()
-                if getattr(op,'size',0)==1:value=truncate(value,8)
+                # Register-load operands on ARM/AArch64 do not expose a byte
+                # size through Capstone. Apply the decoded load width before
+                # caching the cell, so a later swap refers to that same value.
+                if getattr(op,'size',0)==1 or ins.mnemonic in {'ldrb','ldurb','lbu'}:value=truncate(value,8)
+                elif ins.mnemonic in {'ldrh','ldurh','lhu'}:value=truncate(value,16)
                 return self.arrays.load(*address,value,ins.address)
             if key and key in self.memory:return self.memory[key]
             if key:
@@ -362,6 +394,8 @@ class Lift:
             key = self.mem_key(ins, op)
             if not address and (not key or key[0]=='data'):self.arrays.reset()
             if key:
+                self.array_memory.pop(key,None)
+                self.frame_memory.pop(key,None)
                 if key[0]=='data':
                     self.memory={k:v for k,v in self.memory.items() if k[0]!='data' or k[1]==key[1]}
                 self.memory[key] = value
@@ -373,8 +407,16 @@ class Lift:
                 else:
                     self.memory.clear()
                     self.address_memory.clear()
+                    self.array_memory.clear();self.frame_memory.clear()
         for role in roles(value):
             self.events.append((ins.address, role, role_tags(value,role)))
+        round_witness = self.table_rounds.witness(value)
+        if round_witness:
+            self.events.append((ins.address, 'sm4_table_round', round_witness['input_word']))
+            if round_witness['feedback']:
+                self.events.append((ins.address, 'sm4_table_feedback', round_witness['input_word']))
+        if self.arithmetic.rounds.witness(value):
+            self.events.append((ins.address, 'sha256_round', 'bound_sigma_choice_majority_T1_T2'))
         if value[0]=='constant':self.events.append((ins.address,'constant',value[1]))
         if value[0]=='lin' and any(r==7 for _,r in value[1]) and self.arithmetic.quarter(value):
             self.events.append((ins.address,'chacha_quarter',None))
@@ -384,24 +426,51 @@ class Lift:
 
     def step(self, ins):
         if not ins.id:
-            self.regs.clear(); self.memory.clear(); self.addresses.clear(); self.array_addresses.clear(); self.array_memory.clear(); self.arrays.reset();return
+            self.regs.clear(); self.memory.clear(); self.addresses.clear(); self.import_registers.clear(); self.array_addresses.clear(); self.array_memory.clear(); self.frame_memory.clear(); self.arrays.reset();return
         import capstone as cs
         ops = ins.operands
         m = ins.mnemonic.split('.')[0]
         if self.domain in {'arm', 'thumb'} and m in {'eors','orrs','lsls','lsrs','adds','subs','movs','rors','ands'}:
             m = m[:-1]
+        if self.domain in {'arm','thumb'} and m in {'addw','subw'}:m=m[:-1]
+        if self.domain=='aarch64' and m in {'adds','subs','ands','bics'}:
+            m=m[:-1]
         x86 = self.domain in {'x86_64', 'pe_x86_64'}
+        is_call=ins.group(cs.CS_GRP_CALL) or (self.domain in {'mipsel','mips_be'} and m in {'jal','jalr','bal'})
+        copy_tail=(self.domain in {'mipsel','mips_be'} and m=='jr' and
+                   len(ops)==1 and ops[0].type==1 and
+                   self.key(ins,ops[0].reg) in self.import_registers)
+        # Paired/vector loads consume real table bytes too. They may be
+        # unsupported in the scalar arithmetic domain without being invisible
+        # to initialization/constant-use analysis. LEA/ADR never count as reads.
+        if m in {'ldp','ldnp','ld1','ld2','ld3','ld4','vld1','vldmia','ldm','ldmia'}:
+            for operand in ops:
+                if operand.type==3:
+                    table=self.table_at(self.mem_address(ins,operand))
+                    if table:self.events.append((ins.address,'table_read',table['kind']))
         if m in {'sm4e','sm4ekey','vsm4rnds4','vsm4key4','sm3ss1','sm3tt1a','sm3tt1b',
                  'sm3tt2a','sm3tt2b','sm3partw1','sm3partw2',
                  'aesenc','aesenclast','aesdec','aesdeclast','aese','aesmc','aesd','aesimc',
                  'sha256rnds2','sha256msg1','sha256msg2','sha256h','sha256h2','sha256su0','sha256su1',
                  'sha1c','sha1p','sha1m','sha1h','sha1su0','sha1su1'}:
             self.events.append((ins.address,'crypto_instruction',m))
-        if ins.group(cs.CS_GRP_CALL):
-            if self.local_call(ins): return
+        if is_call or copy_tail:
+            self.observe_copy_call(ins)
+        if is_call:
+            # Classic MIPS calls execute their delay slot first. Only the CFG
+            # pass supplies that ordering; the streaming pass cannot summarize
+            # the callee using stale argument registers.
+            if (self.domain not in {'mipsel','mips_be'} or self.cfg_mode) and self.local_call(ins): return
         regkey = self.key(ins, ops[0].reg) if ops and ops[0].type == 1 else None
         old_addresses = dict(self.addresses)
+        old_imports = dict(self.import_registers)
+        loaded_import=(self.import_slots.get(self.mem_address(ins,ops[1]))
+                       if m in {'lw','ld','ldr','ldur','mov'} and len(ops)==2 and ops[1].type==3 else None)
+        old_lui_sites = dict(self.mips_lui_sites)
         old_stack=dict(self.stack_offsets)
+        frame_offset=None;frame_spill=None
+        if m in {'mov','ldr','ldur','lw'} and len(ops)==2 and ops[1].type==3:
+            frame_offset=self.frame_memory.get(self.mem_key(ins,ops[1]))
         array_address=self.computed_array_address(ins,m,ops)
         try:
             _, writes = ins.regs_access()
@@ -412,7 +481,10 @@ class Lift:
         # Recover direct data addresses (including resolved GOT pointers).
         address = None
         if m in {'adr', 'adrp'} and len(ops) == 2 and ops[1].type == 2:
-            address = ops[1].imm
+            # Capstone ARM ADR exposes a PC-relative displacement; AArch64
+            # exposes the resolved address. Thumb uses an aligned PC.
+            address = (ins.address+(4 if self.domain=='thumb' else 8))&~3 if self.domain in {'arm','thumb'} else 0
+            address += ops[1].imm
         elif x86 and m == 'lea' and len(ops) == 2 and ops[1].type == 3:
             address = self.mem_address(ins, ops[1])
         elif m in {'mov', 'movabs', 'movw', 'li'} and len(ops) >= 2 and ops[1].type == 2:
@@ -428,16 +500,37 @@ class Lift:
                     if other in old_addresses:address=ins.address+(4 if self.domain=='thumb' else 8)+old_addresses[other]
         if m == 'lui' and len(ops) == 2:
             address = ops[1].imm << 16
+        elif self.domain=='aarch64' and m=='movk' and len(ops)==2 and regkey in old_addresses:
+            amount=getattr(ops[1], 'shift', None)
+            amount=amount.value if amount else 0
+            address=(old_addresses[regkey] & ~(0xffff << amount)) | ((ops[1].imm & 0xffff) << amount)
         elif m == 'movt' and len(ops) == 2 and regkey in old_addresses:
             address = (old_addresses[regkey] & 0xffff) | (ops[1].imm << 16)
         elif m in {'add', 'addi', 'addiu', 'ori'}:
             source = ops[0] if x86 else ops[1] if len(ops) > 1 else None
             imm = ops[-1].imm if ops and ops[-1].type == 2 else None
-            if source and source.type == 1 and imm is not None and self.key(ins, source.reg) in old_addresses:
-                base = old_addresses[self.key(ins, source.reg)]
+            source_key=self.key(ins,source.reg) if source and source.type==1 else None
+            if source_key is not None and imm is not None and (source_key in old_addresses or source_key in {'zero','wzr','xzr'}):
+                base = old_addresses.get(source_key,0)
                 address = base | imm if m == 'ori' else base + imm
+            elif self.domain in {'arm','thumb'} and source_key=='pc' and imm is not None and m=='add':
+                address=((ins.address+(4 if self.domain=='thumb' else 8))&~3)+imm
             elif source and source.type==1 and self.key(ins,source.reg) in old_addresses and self.table_at(old_addresses[self.key(ins,source.reg)]):
                 address=old_addresses[self.key(ins,source.reg)]
+        elif self.domain in {'mipsel','mips_be'} and m=='addu' and len(ops)==3:
+            keys=[self.key(ins,o.reg) for o in ops[1:]]
+            if all(k in old_addresses for k in keys):
+                address=sum(old_addresses[k] for k in keys)
+            elif 't9' in keys and self.mips_gp is not None:
+                other=next((k for k in keys if k!='t9'),None)
+                # o32 PIC establishes gp = entry address in t9 + the
+                # LUI/ADDIU offset. Require the exact preceding LUI entry;
+                # never infer a table address merely from a register name.
+                site=old_lui_sites.get(other)
+                if site is not None and 0 <= ins.address-site <= 128 and (old_addresses.get(other, 0)+site)&0xffffffff==self.mips_gp:
+                    address=self.mips_gp
+            elif any(k in old_addresses and self.table_at(old_addresses[k]) for k in keys):
+                address=next(old_addresses[k] for k in keys if k in old_addresses and self.table_at(old_addresses[k]))
         elif m in {'mov', 'ldr', 'ldur', 'lw', 'ld'} and len(ops) == 2 and ops[1].type == 3:
             at = self.mem_address(ins, ops[1])
             spill=self.mem_key(ins,ops[1])
@@ -447,15 +540,27 @@ class Lift:
                 raw = self.read_virtual(at, width)
                 if raw:
                     address = int.from_bytes(raw, 'big' if self.domain == 'mips_be' else 'little')
+        if address is not None:
+            # ARM/MIPS PIC literal pools contain two's-complement PC offsets.
+            # Address arithmetic wraps at the architecture's pointer width;
+            # retaining Python's unbounded sum loses valid table references.
+            address &= (1 << (32 if self.domain in {'arm', 'thumb', 'mipsel', 'mips_be'} else 64)) - 1
         # Memory operands use the pre-instruction base even when the load writes
         # that same register (e.g. movzx eax, byte ptr [rax]). Commit addresses
         # only after all source operands have been evaluated.
-        if x86 and m=='mov' and len(ops)==2 and ops[0].type==3:
-            spill=self.mem_key(ins,ops[0])
+        if len(ops)==2 and ((x86 and m=='mov' and ops[0].type==3) or
+                           (not x86 and m in {'str','stur','sw'} and ops[1].type==3)):
+            memory, source = (ops[0], ops[1]) if x86 else (ops[1], ops[0])
+            spill=self.mem_key(ins,memory)
             if spill:
                 self.address_memory.pop(spill,None)
-                if ops[1].type==1 and self.key(ins,ops[1].reg) in old_addresses:
-                    self.address_memory[spill]=old_addresses[self.key(ins,ops[1].reg)]
+                pointer_width = (getattr(source, 'size', 0) == 8 if x86 else
+                                 ins.reg_name(source.reg).startswith('x') if self.domain == 'aarch64' and source.type == 1 else
+                                 self.domain in {'arm','thumb','mipsel','mips_be'})
+                if pointer_width and source.type==1 and self.key(ins,source.reg) in old_addresses:
+                    self.address_memory[spill]=old_addresses[self.key(ins,source.reg)]
+                if pointer_width and source.type==1 and self.key(ins,source.reg) in old_stack:
+                    frame_spill=(spill,old_stack[self.key(ins,source.reg)])
         # Pointer-expression spills are private frame cells. A stale descriptor
         # must be removed whenever that cell is overwritten by any value.
         pointer_spill=None
@@ -481,8 +586,12 @@ class Lift:
             args = ops if destructive and len(ops) == 2 else ops[1:]
             if m in {'mov', 'movzx', 'movsxd', 'movd', 'movdqa', 'movdqu', 'vmovdqa', 'vmovdqu',
                      'movaps','movups','vmovaps','vmovups',
-                     'ldr', 'ldur', 'ldrb', 'ldrh', 'lw', 'lbu', 'lhu', 'move'}:
-                self.put(ins, dest, self.operand(ins, ops[1])); handled = True
+                     'ldr', 'ldur', 'ldrb', 'ldrh', 'ldurb', 'ldurh', 'lw', 'lbu', 'lhu', 'move'}:
+                value=self.operand(ins,ops[1])
+                narrow=8 if m in {'ldrb','ldurb','lbu'} else 16 if m in {'ldrh','ldurh','lhu'} else None
+                if narrow:
+                    value=('constant',value[1]&((1<<narrow)-1)) if value[0]=='constant' else truncate(value,narrow)
+                self.put(ins, dest, value); handled = True
             elif self.domain in {'arm','thumb'} and m in {'ror','lsl','lsr'} and len(ops)==2 and getattr(ops[1],'shift',None) and ops[1].shift.value:
                 # Capstone represents ARM immediate shift aliases on the
                 # source register instead of as a third immediate operand.
@@ -503,19 +612,28 @@ class Lift:
             elif (word32 or lane32) and m in {'xor', 'eor', 'pxor', 'vpxor', 'vpxord'} and len(args) == 2:
                 a, b = [self.operand(ins, o) for o in args]
                 if self.arrays.xor(a,b):self.events.append((ins.address,'rc4_prga',None))
-                self.put(ins, dest, xor(a, b)); self.events.append((ins.address, 'xor', None)); handled = True
+                value=a if b==('constant',0) else b if a==('constant',0) else xor(a,b)
+                if a[0]==b[0]=='constant':value=('constant',(a[1]^b[1])&0xffffffff)
+                else:
+                    for constant,other in ((a,b),(b,a)):
+                        if constant[0]=='constant' and constant[1]&0xffffffff==0xffffffff:
+                            value=self.new(tags(other))
+                            self.arithmetic.rounds.remember('not',[other],value)
+                            break
+                self.put(ins, dest, value); self.events.append((ins.address, 'xor', None)); handled = True
             elif (word32 or lane32) and m in {'or', 'orr', 'por', 'vpor'} and len(args) == 2:
                 a, b = [self.operand(ins, o) for o in args]
-                value = merge_shifts(a, b)
+                value = a if b==('constant',0) else b if a==('constant',0) else merge_shifts(a, b)
                 if value[0] == 'unknown':
                     value = self.new(tags(a) | tags(b))
+                    self.arithmetic.rounds.remember('or', [a, b], value)
                 self.put(ins, dest, value); handled = True
             elif m in {'pshufb','vpshufb'} and len(args)==2:
                 a,mask=[self.operand(ins,o) for o in args]
                 if mask[0]=='shuffle':
                     self.put(ins,dest,rotate(a,mask[1]));handled=True
                     self.events.append((ins.address,'rotate',mask[1]))
-            elif word32 and m in {'rol', 'ror', 'rorx', 'rotr'} and self.operand(ins,args[-1])[0]=='constant':
+            elif word32 and m in {'rol', 'ror', 'rorx', 'rotr','rotrv'} and self.operand(ins,args[-1])[0]=='constant':
                 value = self.operand(ins, args[0]); count = self.operand(ins,args[-1])[1]
                 if m != 'rol': count = -count
                 self.put(ins, dest, rotate(value, count)); self.events.append((ins.address, 'rotate', count % 32)); handled = True
@@ -530,8 +648,8 @@ class Lift:
                     av,bv=('bits',aa),('bits',bb)
                     value=merge_shifts(shift(av,'left' if m=='shld' else 'right',n),shift(bv,'right' if m=='shld' else 'left',32-n))
                     self.put(ins,dest,value);handled=True
-            elif (word32 or lane32) and m in {'shl', 'sal', 'shr', 'lsl', 'lsr', 'sll', 'srl', 'pslld', 'psrld', 'vpslld', 'vpsrld'} and self.operand(ins,args[-1])[0]=='constant':
-                direction = 'left' if m in {'shl', 'sal', 'lsl', 'sll', 'pslld', 'vpslld'} else 'right'
+            elif (word32 or lane32) and m in {'shl', 'sal', 'shr', 'lsl', 'lsr', 'sll', 'srl','sllv','srlv', 'pslld', 'psrld', 'vpslld', 'vpsrld'} and self.operand(ins,args[-1])[0]=='constant':
+                direction = 'left' if m in {'shl', 'sal', 'lsl', 'sll','sllv', 'pslld', 'vpslld'} else 'right'
                 count=self.operand(ins,args[-1])[1]&31
                 value=self.operand(ins,args[0])
                 self.put(ins, dest, shift(value,direction,count) if count else value); handled = True
@@ -548,10 +666,18 @@ class Lift:
                     a,b=[v[1] for v in vals]
                     result={'add':a+b,'addu':a+b,'addiu':a+b,'sub':a-b,'subu':a-b,'and':a&b,'andi':a&b}.get(m)
                     if result is not None:value=('constant',result&0xffffffff)
+                if len(vals)==2 and m in {'sub','subu'}:self.arithmetic.index_operation('sub',vals[0],vals[1],value)
                 if (word32 or lane32 or (m=='and' and len(args)==2 and args[-1].type==2 and args[-1].imm==255)) and m in {'and','andi'} and len(args)==2 and args[-1].type==2:
                     b=bits(self.operand(ins,args[0]));mask=args[-1].imm&0xffffffff
                     if b is not None:value=('bits',tuple(v if mask&(1<<i) else frozenset() for i,v in enumerate(b)))
                     if mask==255:self.arrays.mask(value,vals[0],8)
+                if m in {'and', 'andi', 'pand'} and len(vals) == 2:
+                    self.arithmetic.rounds.remember('and', vals, value)
+                elif m in {'bic', 'andn'} and len(vals) == 2:
+                    negated = self.new()
+                    source, other = (vals[1], vals[0]) if m == 'bic' else (vals[0], vals[1])
+                    self.arithmetic.rounds.remember('not', [source], negated)
+                    self.arithmetic.rounds.remember('and', [other, negated], value)
                 self.put(ins, dest, value); handled = True
                 self.events.append((ins.address, 'add' if m in {'add', 'addu', 'addiu', 'paddd', 'vpaddd'} else m, None))
             for o in ops:
@@ -560,12 +686,17 @@ class Lift:
         if m=='neg' and ops and ops[0].type==1:
             value=self.operand(ins,ops[-1])
             if value[0]=='constant':self.put(ins,ops[0],('constant',(-value[1])&0xffffffff));handled=True
+        if m in {'not', 'mvn'} and ops and ops[0].type == 1:
+            old = self.operand(ins, ops[0] if m == 'not' else ops[-1])
+            value = self.new()
+            self.arithmetic.rounds.remember('not', [old], value)
+            self.put(ins, ops[0], value); handled = True
         if x86 and m=='inc' and ops and getattr(ops[0],'size',0) in {1,4}:
             a=self.operand(ins,ops[0]);value=self.new(tags(a)|{'add'})
             self.arithmetic.add(a,('constant',1),value)
             if ops[0].size==1:value=truncate(value,8)
             self.put(ins,ops[0],value);self.events.append((ins.address,'add',None));handled=True
-        if m in {'movw','movt','lui','li','ori'} and address is not None and ops and ops[0].type==1:
+        if m in {'movw','movt','movk','lui','li','ori'} and address is not None and ops and ops[0].type==1:
             self.put(ins,ops[0],('constant',address&0xffffffff));handled=True
         if x86 and m=='xor' and ops and getattr(ops[0],'size',0)==1 and len(ops)==2:
             a,b=[self.operand(ins,o) for o in ops]
@@ -589,23 +720,115 @@ class Lift:
             for r in writes:
                 self.regs[self.key(ins, r)] = self.new()
         for r in writes:self.stack_offsets.pop(self.key(ins,r),None)
-        if m=='mov' and len(ops)==2 and ops[1].type==1 and self.key(ins,ops[1].reg) in old_stack:
+        if m in {'mov','move'} and len(ops)==2 and ops[1].type==1 and self.key(ins,ops[1].reg) in old_stack:
             self.stack_offsets[regkey]=old_stack[self.key(ins,ops[1].reg)]
-        if m in {'add','sub'} and len(ops)>=2 and ops[-1].type==2:
+        if frame_offset is not None and regkey:self.stack_offsets[regkey]=frame_offset
+        if x86 and m=='lea' and len(ops)==2 and ops[1].type==3 and not ops[1].mem.index:
+            source=self.key(ins,ops[1].mem.base)
+            if source in old_stack:self.stack_offsets[regkey]=old_stack[source]+ops[1].mem.disp
+        if m in {'add','sub','addi','addiu'} and len(ops)>=2 and ops[-1].type==2:
             src=ops[0] if x86 or len(ops)==2 else ops[1]
             if src.type==1 and self.key(ins,src.reg) in old_stack:
-                self.stack_offsets[regkey]=old_stack[self.key(ins,src.reg)]+ops[-1].imm*(1 if m=='add' else -1)
+                self.stack_offsets[regkey]=old_stack[self.key(ins,src.reg)]+ops[-1].imm*(-1 if m=='sub' else 1)
         if x86 and m in {'push','pop'}:
             self.stack_offsets['rsp']=old_stack.get('rsp',0)+(8 if m=='pop' else -8)
+        if self.domain in {'arm','thumb'} and m in {'push','pop'} and 'sp' in old_stack:
+            # PUSH/POP write SP even though their operands are a register list.
+            # Losing this offset made every later frame-derived W pointer an
+            # unrelated add result in unoptimised ARM/Thumb code.
+            count=sum(o.type==1 for o in ops)
+            self.stack_offsets['sp']=old_stack['sp']+(4*count if m=='pop' else -4*count)
         for r in writes:self.array_addresses.pop(self.key(ins,r),None)
         if regkey and array_address:self.array_addresses[regkey]=array_address
         if pointer_spill:self.array_memory[pointer_spill[0]]=pointer_spill[1]
+        if frame_spill:self.frame_memory[frame_spill[0]]=frame_spill[1]
         for r in writes:self.addresses.pop(self.key(ins,r),None)
         if regkey and address is not None:self.addresses[regkey]=address
-        if ins.group(cs.CS_GRP_CALL) or ins.group(cs.CS_GRP_RET) or (ins.group(cs.CS_GRP_JUMP) and not self.cfg_mode):
-            self.regs.clear(); self.memory.clear(); self.addresses.clear();self.address_memory.clear()
+        for r in writes:self.import_registers.pop(self.key(ins,r),None)
+        if regkey and len(ops)==2:
+            if m in {'mov','move'} and ops[1].type==1:
+                name=old_imports.get(self.key(ins,ops[1].reg))
+                if name:self.import_registers[regkey]=name
+            elif m in {'lw','ld','ldr','ldur','mov'} and ops[1].type==3:
+                # Only an actual load through an undefined-import relocation
+                # binds an API. A matching symbol name or a GOT-looking value
+                # alone cannot establish a copy operation.
+                if loaded_import:self.import_registers[regkey]=loaded_import
+        for r in writes:self.mips_lui_sites.pop(self.key(ins,r),None)
+        if m=='lui' and regkey:self.mips_lui_sites[regkey]=ins.address
+        elif m in {'addiu','ori'} and len(ops)==3 and self.key(ins,ops[1].reg) in old_lui_sites:
+            self.mips_lui_sites[regkey]=old_lui_sites[self.key(ins,ops[1].reg)]
+        # A 64-bit literal store initializes two 32-bit state words. The
+        # arithmetic domain itself remains 32-bit; retain the full immediate
+        # only for this explicitly decoded initialization operation.
+        if x86 and m=='mov' and len(ops)==2 and ops[0].type==3 and ops[0].size==8 and ops[1].type==1:
+            literal=old_addresses.get(self.key(ins,ops[1].reg))
+            if literal is not None:
+                from ..operation_tables import SHA256_IV
+                for word in (literal&0xffffffff,(literal>>32)&0xffffffff):
+                    if word in SHA256_IV:self.events.append((ins.address,'iv_store',word))
+        if is_call or ins.group(cs.CS_GRP_RET) or (ins.group(cs.CS_GRP_JUMP) and not self.cfg_mode):
+            preserved=self.preserved_registers() if is_call else set()
+            self.regs={k:v for k,v in self.regs.items() if k in preserved}
+            self.addresses={k:v for k,v in self.addresses.items() if k in preserved}
+            self.import_registers={k:v for k,v in self.import_registers.items() if k in preserved}
+            self.memory.clear();self.address_memory.clear()
             self.array_addresses.clear();self.arrays.reset()
             self.array_memory.clear()
+            self.frame_memory.clear()
+            self.mips_lui_sites.clear()
+
+    def preserved_registers(self):
+        return {'x86_64':{'rbx','rbp','r12','r13','r14','r15','rsp'},
+                'pe_x86_64':{'rbx','rbp','rdi','rsi','r12','r13','r14','r15','rsp'},
+                'aarch64':{'sp','fp',*('x'+str(i) for i in range(19,30))},
+                'arm':{'sp','fp',*('r'+str(i) for i in range(4,12))},
+                'thumb':{'sp','fp',*('r'+str(i) for i in range(4,12))},
+                'mipsel':{'sp','fp',*('s'+str(i) for i in range(8))},
+                'mips_be':{'sp','fp',*('s'+str(i) for i in range(8))}}.get(self.domain,set())
+
+    def observe_copy_call(self, ins):
+        """Bind a relocation-backed copy API's actual source and length.
+
+        A mere pointer to an unused IV is insufficient. The destination copy
+        must consume all 32 bytes. Defined/static functions are not trusted by
+        their names, and API shadowing lacks an undefined import relocation.
+        """
+        if self.domain not in {'x86_64','aarch64','arm','thumb','mipsel','mips_be'}:return
+        mips=self.domain in {'mipsel','mips_be'}
+        # Argument setup in a classic MIPS delay slot has to execute before
+        # the call. The CFG interpreter supplies that ordering.
+        if mips and not self.cfg_mode:return
+        args={'x86_64':('rsi','rdx'),'aarch64':('x1','x2'),'arm':('r1','r2'),'thumb':('r1','r2'),
+              'mipsel':('a1','a2'),'mips_be':('a1','a2')}[self.domain]
+        source=self.addresses.get(args[0]);length=self.regs.get(args[1])
+        if source is None or not length or length[0]!='constant' or not 32<=length[1]<=1024*1024:return
+        table=next((t for t in self.tables if t['kind']=='sha256_iv' and t['length']==32 and
+                    source<=t['address'] and source+length[1]>=t['address']+32),None)
+        if table is None:return
+        from .binary_bignum import PointerLift
+        if mips:
+            target=ins.operands[-1] if ins.operands else None
+            name=self.import_registers.get(self.key(ins,target.reg)) if target and target.type==1 else None
+        else:
+            resolver=PointerLift(self.domain,self.regions,self.import_slots)
+            key=(ins.address,ins.op_str)
+            if key not in self.copy_targets:self.copy_targets[key]=resolver.target(ins)
+            name=self.copy_targets[key]
+        proven = name in {'memcpy','memmove','mutils_memcpy'}
+        if not proven and mips and length[1]<=256:
+            target=ins.operands[-1] if ins.operands else None
+            address=self.addresses.get(self.key(ins,target.reg)) if target and target.type==1 else None
+            if address is not None:
+                key=('byte-copy-proof',address,length[1])
+                if key not in self.copy_targets:
+                    from ..copy_semantics import mips_copy
+                    raw=next((data[address-base:address-base+512] for base,_,data,flags in self.regions
+                              if flags&1 and base<=address<base+len(data)),b'')
+                    self.copy_targets[key]=mips_copy(list(decode(disassembler(self.domain),raw,address)),length[1])
+                proven=self.copy_targets[key]
+        if proven:
+            self.events.append((ins.address,'table_read','sha256_iv'))
 
     def local_call(self, ins):
         """Summarize bounded scalar/state helpers using their real bytes.
@@ -620,17 +843,25 @@ class Lift:
              'pe_x86_64':(['rcx','rdx','r8','r9'],'rax',{'rbx','rbp','rdi','rsi','r12','r13','r14','r15','rsp'}),
              'aarch64':(['x'+str(i) for i in range(8)],'x0',{'sp','fp',*('x'+str(i) for i in range(19,30))}),
              'arm':(['r0','r1','r2','r3'],'r0',{'sp','fp',*('r'+str(i) for i in range(4,12))}),
-             'thumb':(['r0','r1','r2','r3'],'r0',{'sp','fp',*('r'+str(i) for i in range(4,12))})}.get(self.domain)
+             'thumb':(['r0','r1','r2','r3'],'r0',{'sp','fp',*('r'+str(i) for i in range(4,12))}),
+             'mipsel':(['a0','a1','a2','a3'],'v0',{'sp','fp',*('s'+str(i) for i in range(8))}),
+             'mips_be':(['a0','a1','a2','a3'],'v0',{'sp','fp',*('s'+str(i) for i in range(8))})}.get(self.domain)
         if not abi or self.helper_depth>=4 or self.helper_budget[0]>=12000:return False
-        if len(ins.operands)!=1 or ins.operands[0].type!=2:return False
-        target=ins.operands[0].imm
+        mips=self.domain in {'mipsel','mips_be'}
+        if mips and ins.mnemonic=='jalr' and ins.operands and ins.operands[-1].type==1:
+            target=self.addresses.get(self.key(ins,ins.operands[-1].reg))
+            if target is None:return False
+        elif len(ins.operands)==1 and ins.operands[0].type==2:target=ins.operands[0].imm
+        else:return False
         if self.domain=='thumb':target&=~1
         raw=next((data[target-base:target-base+1024] for base,_,data,flags in self.regions
                   if flags&1 and base<=target<base+len(data)),None)
         if not raw:return False
         child=Lift(self.domain,self.tables,self.regions,helper_depth=self.helper_depth+1,
-                   helper_budget=self.helper_budget,helper_cache=self.helper_cache)
+                   helper_budget=self.helper_budget,helper_cache=self.helper_cache,import_slots=self.import_slots,mips_gp=self.mips_gp)
         child.arithmetic=self.arithmetic
+        child.table_rounds=self.table_rounds
+        child.cfg_mode=self.cfg_mode
         args,ret,preserved=abi
         child.serial=self.serial
         # Initialise actual argument values before proving state writes.
@@ -651,6 +882,16 @@ class Lift:
             op=instructions[index];index+=1;n+=1
             self.helper_budget[0]+=1
             if n>=192 or not op.id:break
+            delayed=None
+            if mips:
+                from ..controlflow import mips_transfer
+                transfer=mips_transfer(op)
+                if transfer in {'return','call'}:
+                    if index>=len(instructions):break
+                    slot=instructions[index]
+                    if not slot.id or slot.address!=op.address+4 or mips_transfer(slot):break
+                    delayed=(op,transfer);op=slot;index+=1;n+=1
+                    self.helper_budget[0]+=1
             if op.group(cs.CS_GRP_RET):complete=True;break
             if self.domain in {'arm','thumb'} and op.mnemonic=='bx' and op.op_str=='lr':complete=True;break
             if self.domain in {'arm','thumb'} and op.mnemonic.split('.')[0] in {'pop','ldm','ldmib'}:
@@ -671,21 +912,35 @@ class Lift:
                     elif key[0]=='data':
                         if key[1] not in argument_values:bad_store=True
                         else:state_writes.add(key)
-            if op.mnemonic in {'str','stur','strb','strh','stp'} and op.operands[-1].type==3:
+            if op.mnemonic in {'str','stur','strb','strh','stp','sw','sb','sh'} and op.operands[-1].type==3:
                 key=child.mem_key(op,op.operands[-1])
                 if key is None:bad_store=True
                 elif key[0]=='data':
                     if key[1] not in argument_values:bad_store=True
                     else:state_writes.add(key)
             if bad_store:break
+            if self.stable_site is not None:
+                # A helper's unknown leaves belong to the real invocation and
+                # instruction. Stable identities let CFG joins retain unchanged
+                # summaries instead of discarding them on every revisit.
+                child.stable_site=(self.stable_site,op.address)
+                child.stable_counter=0
             if op.group(cs.CS_GRP_CALL) and not child.local_call(op):break
             if not op.group(cs.CS_GRP_CALL):child.step(op)
+            if delayed:
+                delayed_op,transfer=delayed
+                if transfer=='return':complete=True;break
+                if self.stable_site is not None:
+                    child.stable_site=(self.stable_site,delayed_op.address)
+                    child.stable_counter=0
+                if not child.local_call(delayed_op):break
         self.serial=max(self.serial,child.serial)
         value=child.regs.get(ret)
         if not complete or (value is None and not state_writes):return False
         if value is None:value=self.new()
         self.regs={k:v for k,v in self.regs.items() if k in preserved}
         self.addresses={k:v for k,v in self.addresses.items() if k in preserved}
+        self.import_registers={k:v for k,v in self.import_registers.items() if k in preserved}
         self.regs[ret]=value
         if state_writes:
             self.memory={k:v for k,v in self.memory.items() if k[0]!='data'}
@@ -710,6 +965,12 @@ def witnesses(events, tables, *, window=WINDOW):
     positions = [e[0] for e in events]
     def neighbourhood(start, size):
         return events[bisect_left(positions,start):bisect_right(positions,start+size)]
+    for anchor in [e for e in events if e[1] == 'sm4_table_round']:
+        local = neighbourhood(max(0, anchor[0] - 1024), 4096)
+        if any(r == 'sm4_table_feedback' for _, r, v in local):
+            result.append(('SM4', anchor[0], local,
+                           'Exact four-byte SM4 tau+L transformations with dependent feedback into a subsequent round; pre-expanded round keys are sufficient'))
+            break
     for anchor in [e for e in events if e[1]=='crypto_instruction']:
         nearby=neighbourhood(max(0,anchor[0]-window//2),window)
         ops={e[2] for e in nearby if e[1]=='crypto_instruction'}
@@ -767,6 +1028,8 @@ def scan_binary_semantics(path, report, timeout, *, regions=None, architectures=
     from ..operation_tables import locate
     from ..operations import binary_findings,emit
     generic_tables=locate(regions)
+    from .binary_bignum import import_slots
+    slots=import_slots(Path(path))
     tables+=generic_tables
     total_bytes = sum(len(data) for _, _, data, flags in regions if flags & 1)
     if total_bytes > MAX_CODE:
@@ -797,12 +1060,21 @@ def scan_binary_semantics(path, report, timeout, *, regions=None, architectures=
                 implementation_verification='bounded_standard_operation_graph',
                 operation_witnesses=match['operation_witnesses'],
                 equation_kind=match['kind'],modulus=match['modulus']))
-        lift = Lift(domain, tables, regions)
+        gp=None
+        if domain in {'mipsel','mips_be'}:
+            from elftools.elf.elffile import ELFFile
+            with Path(path).open('rb') as stream:
+                elf=ELFFile(stream)
+                for segment in elf.iter_segments():
+                    if segment['p_type']=='PT_DYNAMIC':
+                        got=next((tag['d_ptr'] for tag in segment.iter_tags() if tag['d_tag']=='DT_PLTGOT'),None)
+                        if got is not None:gp=(got+0x7ff0)&0xffffffff
+        lift = Lift(domain, tables, regions, mips_gp=gp, import_slots=slots)
         clusters=[]
         for base, offset, data, flags in regions:
             if not flags & 1:
                 continue
-            lift.regs.clear(); lift.memory.clear(); lift.addresses.clear()
+            lift.regs.clear(); lift.memory.clear(); lift.addresses.clear();lift.import_registers.clear()
             function_start=base;event_start=len(lift.events)
             for ins in lift.successful_instructions(dis, data, base):
                 decoded += 1
@@ -819,14 +1091,32 @@ def scan_binary_semantics(path, report, timeout, *, regions=None, architectures=
             # A separate conservative CFG pass restores facts across real
             # direct edges. The streaming pass remains for unsupported domains
             # and very large sections; loops do not concatenate alternatives.
-            if len(data)<=256*1024 and domain not in {'mipsel','mips_be'} and time.monotonic()<deadline:
+            if len(data)<=512*1024 and time.monotonic()<deadline:
                 from ..controlflow import analyze
-                cfg_lift=Lift(domain,tables,regions)
-                cfg=analyze(cfg_lift,list(decode(dis,data,base)),deadline)
+                from ..binary_decode import control_instructions
+                instructions=control_instructions(dis,data,base,domain=domain)
+                cfg_lift=Lift(domain,tables,regions,import_slots=slots,mips_gp=gp)
+                entry_states={}
+                cfg=analyze(cfg_lift,instructions,deadline,block_outputs=entry_states)
                 cfg_records.append({'architecture':domain,'section_address':base,**cfg})
                 lift.events.extend(cfg_lift.events)
                 lift.helper_calls.extend(cfg_lift.helper_calls)
+                if cfg['loop_edges'] and time.monotonic()<deadline:
+                    prefix=Lift(domain,tables,regions,import_slots=slots,mips_gp=gp)
+                    info=analyze(prefix,instructions,deadline,
+                                 initial_iteration=True,entry_outputs=entry_states)
+                    cfg_records.append({'architecture':domain,'section_address':base,
+                                        'phase':'natural_loop_entry_prefix',**info})
+                    lift.events.extend(prefix.events)
+                    lift.helper_calls.extend(prefix.helper_calls)
         recognized=witnesses(lift.events,tables)
+        report.setdefault('operation_diagnostics', {}).setdefault('binary', []).append({
+            'architecture': domain, 'event_counts': dict(Counter(r for _, r, _ in lift.events)),
+            'table_reads': dict(Counter(v for _, r, v in lift.events if r == 'table_read')),
+            'located_tables': dict(Counter(t['kind'] for t in tables)),
+            'helper_calls': len(lift.helper_calls),
+            'stage': 'bounded_lifting_finished',
+        })
         general_matches.update(emit(report,binary_findings(lift.events,generic_tables),
             'operation_binary',domain=domain,regions=regions))
         if not any(x[0]=='SM3' for x in recognized):
@@ -845,7 +1135,7 @@ def scan_binary_semantics(path, report, timeout, *, regions=None, architectures=
                 confidence='medium', confidence_reason=reason,
                 implementation_verification='bounded_standard_operation_graph',
                 operation_witnesses=[{'address':a, 'role':r, 'detail':v} for a,r,v in events
-                                     if r in {'sm3_p0','sm3_p1','sm4_l','sm4_key_l','table_read','crypto_instruction'}][:64],
+                                     if r in {'sm3_p0','sm3_p1','sm4_l','sm4_key_l','sm4_table_round','sm4_table_feedback','table_read','crypto_instruction'}][:64],
                 verified_tables=tables if algorithm == 'SM4' else []))
         if lift.helper_calls:
             relevant=[h for h in lift.helper_calls if h['return_roles']]

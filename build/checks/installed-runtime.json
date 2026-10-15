@@ -57,8 +57,8 @@
     {
       "name": "installed-package-location",
       "passed": true,
-      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/__init__.py"
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/__init__.py"
     }
   ],
-  "policy": "No PYTHONPATH; installed wheel used from a directory with spaces; target programs never executed"
+  "policy": "No PYTHONPATH; installed wheel used from a directory with spaces; no native target execution; bounded private-memory instruction emulation may run"
 }

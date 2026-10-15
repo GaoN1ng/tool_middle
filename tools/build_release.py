@@ -6,7 +6,8 @@ from pathlib import Path
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {"cache", "tmp", "dist", "lib", "bdist.linux-x86_64", "testing", "venv", "venv-ml", "isolated-install"}
+EXCLUDED = {"cache", "tmp", "dist", "lib", "bdist.linux-x86_64", "testing", "venv", "venv-ml", "isolated-install", "experiments"}
+VALIDATION_TEMPORARY = {"downloads", "upstream", "compile"}
 
 
 def main():
@@ -16,7 +17,11 @@ def main():
     with tarfile.open(output, "w:gz", compresslevel=6) as archive:
         for path in sorted(ROOT.rglob("*")):
             rel = path.relative_to(ROOT)
+            if rel.parts[0]=='.git':
+                continue
             if "__pycache__" in rel.parts or path.suffix == ".pyc":
+                continue
+            if rel.parts[:2] == ("build", "validation") and len(rel.parts) > 3 and rel.parts[3] in VALIDATION_TEMPORARY:
                 continue
             if rel.parts[0] == "build" and len(rel.parts) > 1 and (
                 rel.parts[1] in EXCLUDED or rel.parts[1].endswith(".egg-info")):
@@ -32,6 +37,7 @@ def main():
             h.update(block)
     report = {"archive": output.name, "sha256": h.hexdigest(), "bytes": output.stat().st_size, "file_count": count,
         "excluded_generated_directories": sorted(EXCLUDED),
+        "excluded_validation_subdirectories": sorted(VALIDATION_TEMPORARY),
         "test_workspace": "Regenerate with tools/prepare_tests.py; all inputs included"}
     (output.parent / "release.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

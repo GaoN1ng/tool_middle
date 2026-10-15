@@ -1,0 +1,12 @@
+test_missing_database_marks_partial_instead_of_empty_success (test_function_signatures.FunctionSignatureTests.test_missing_database_marks_partial_instead_of_empty_success) ... ok
+test_name_and_path_do_not_drive_matching (test_function_signatures.FunctionSignatureTests.test_name_and_path_do_not_drive_matching) ... ok
+test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) ... ok
+test_real_pe_and_unsupported_architectures_keep_existing_channels (test_function_signatures.FunctionSignatureTests.test_real_pe_and_unsupported_architectures_keep_existing_channels) ... ok
+test_referenced_iv_change_does_not_become_sha256 (test_function_signatures.FunctionSignatureTests.test_referenced_iv_change_does_not_become_sha256) ... ok
+test_sha224_blake2_inert_tables_and_generic_math_negatives (test_function_signatures.FunctionSignatureTests.test_sha224_blake2_inert_tables_and_generic_math_negatives) ... ok
+test_whole_function_computation_change_breaks_witness (test_function_signatures.FunctionSignatureTests.test_whole_function_computation_change_breaks_witness) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 667.988s
+
+OK

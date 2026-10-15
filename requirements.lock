@@ -10,3 +10,5 @@ tree-sitter-javascript==0.25.0
 capstone==5.0.6
 tree-sitter-c==0.24.1
 tree-sitter-cpp==0.23.4
+# Private-memory instruction interpretation, isolated in a bounded subprocess.
+unicorn==2.1.4

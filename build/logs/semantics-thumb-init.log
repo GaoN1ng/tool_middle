@@ -1,0 +1,40 @@
+libecc-sha256-thumb-O2 /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/aa/aa923f7e5d6ec8c6/ordinary.so /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/c8/c8f46077bfce1341/inspection.so
+FUNCTION sha256_init 0x10300 96
+0x10300 cmp r0, #0
+0x10302 itt eq
+0x10304 moveq.w r0, #-1
+0x10308 bxeq lr
+0x1030a adr r2, #0x34
+0x1030c add.w r1, r0, #8
+0x10310 vld1.64 {d16, d17}, [r2:0x80]
+0x10314 adr r2, #0x38
+0x10316 movw r3, #0x8412
+0x1031a vld1.64 {d18, d19}, [r2:0x80]
+0x1031e mov r2, r0
+0x10320 movs r0, #0
+0x10322 movt r3, #0x3209
+0x10326 vst1.32 {d16, d17}, [r1]!
+0x1032a strd r0, r0, [r2]
+0x1032e str r3, [r2, #0x68]
+0x10330 vst1.64 {d18, d19}, [r1]
+0x10334 bx lr
+0x10336 nop 
+0x10338 nop 
+0x1033a nop 
+0x1033c nop 
+0x1033e nop 
+0x10340 b #0x10012
+0x10342 ldr r1, [r1, #0x20]
+0x10344 add r6, sp, #0x214
+0x10346 cbnz r7, #0x103a2
+0x10348 .byte 0x72, 0xf3
+0x1034a subs r4, #0x6e
+0x1034c bmi.w #0xfff8adee
+0x10350 strh r7, [r7, r1]
+0x10352 str r6, [r1, r4]
+0x10354 ldr r4, [r1, #8]
+0x10356 ldr r3, [sp, #0x14]
+0x10358 bls #0x102b2
+0x1035a subs r3, r0, #6
+0x1035c ldm r5!, {r0, r3, r4}
+0x1035e ldrh r0, [r4, r7]

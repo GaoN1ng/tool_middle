@@ -1,0 +1,932 @@
+{
+  "purpose": "Observed RF holdout, default detector only; no RF retraining/inference",
+  "samples": [
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "kokke--tiny-AES-c-aes-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e/aes.c",
+      "sha256": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e",
+      "kind": "source",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "group": "kokke--tiny-AES-c",
+      "truth": [
+        "AES"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/f7/f7f78b44654efd35/aes.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "kokke--tiny-AES-c-aes-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "amosnier--sha-2-sha-256-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27/sha-256.c",
+      "sha256": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27",
+      "kind": "source",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "group": "amosnier--sha-2",
+      "truth": [
+        "SHA-256"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/7a/7a74437adc78576b/sha-256.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "amosnier--sha-2-sha-256-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "dhuertas--DES-des-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068/des.c",
+      "sha256": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068",
+      "kind": "source",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "group": "dhuertas--DES",
+      "truth": [
+        "DES"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/6d/6d39481101bd82bf/des.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "dhuertas--DES-des-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "marcizhu--ChaCha20-ChaCha20-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642/ChaCha20.h",
+      "sha256": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642",
+      "kind": "source",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "group": "marcizhu--ChaCha20",
+      "truth": [
+        "ChaCha20"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/0b/0b6688d812c3dcca/ChaCha20.h",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "marcizhu--ChaCha20-ChaCha20-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-init-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e/init.c",
+      "sha256": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/4b/4ba36f5bc53770ab/init.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-init-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-process-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c/process.c",
+      "sha256": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": [
+        "SHA-1"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/03/03bd0e2e3e5e2faf/process.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-process-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-update-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b/update.c",
+      "sha256": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/f3/f37c892f444a81ad/update.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-update-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-digest-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f/digest.c",
+      "sha256": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/35/352be73e7bfe4a43/digest.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-digest-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-behex_lower-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227/behex_lower.c",
+      "sha256": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/27/270b7e2df0da85f1/behex_lower.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-behex_lower-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-behex_upper-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48/behex_upper.c",
+      "sha256": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/64/64a3a23083f02d28/behex_upper.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-behex_upper-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "maandree--libsha1-unhex-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4/unhex.c",
+      "sha256": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "group": "maandree--libsha1",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/5b/5b690233f4f7fe34/unhex.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-unhex-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Hash_MD5-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d/Hacl_Hash_MD5.c",
+      "sha256": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "MD5"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/5b/5b91ed0339074e2e/Hacl_Hash_MD5.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_MD5-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA1-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29/Hacl_Hash_SHA1.c",
+      "sha256": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "SHA-1"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/ce/ce08721d491f3b8a/Hacl_Hash_SHA1.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_SHA1-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA2-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e/Hacl_Hash_SHA2.c",
+      "sha256": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "SHA-256"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/6c/6cd390cc86d9054e/Hacl_Hash_SHA2.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_SHA2-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Chacha20-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e/Hacl_Chacha20.c",
+      "sha256": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "ChaCha20"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/c9/c9ecf4df61774571/Hacl_Chacha20.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Chacha20-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_RSAPSS-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7/Hacl_RSAPSS.c",
+      "sha256": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "RSA"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/32/32f3a05a817b18b2/Hacl_RSAPSS.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_RSAPSS-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_P256-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810/Hacl_P256.c",
+      "sha256": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/2b/2ba89a470a450f92/Hacl_P256.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_P256-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Curve25519_51-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8/Hacl_Curve25519_51.c",
+      "sha256": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "group": "hacl-star--hacl-star",
+      "truth": [
+        "ECDH"
+      ],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/96/964a32cf81f0347d/Hacl_Curve25519_51.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Curve25519_51-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Bignum32-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7/Hacl_Bignum32.c",
+      "sha256": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "group": "hacl-star--hacl-star",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/83/8349cf22b61308ac/Hacl_Bignum32.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Bignum32-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_Bignum64-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691/Hacl_Bignum64.c",
+      "sha256": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "group": "hacl-star--hacl-star",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/a8/a8c053aa30401f33/Hacl_Bignum64.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Bignum64-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "hacl-star--hacl-star-Hacl_MAC_Poly1305-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395/Hacl_MAC_Poly1305.c",
+      "sha256": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "group": "hacl-star--hacl-star",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/97/9715b65208d10fdf/Hacl_MAC_Poly1305.c",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_MAC_Poly1305-source"
+        }
+      ]
+    },
+    {
+      "build": "Historical manifest; original build metadata retained",
+      "terminal_business_type": null,
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "architecture": "source",
+      "id": "rurban--smhasher-MurmurHash3-source",
+      "path": "build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c/MurmurHash3.cpp",
+      "sha256": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c",
+      "kind": "source",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "group": "rurban--smhasher",
+      "truth": [],
+      "historical_split": null,
+      "split": "acceptance",
+      "annotation_path": null,
+      "organization_overlap": false,
+      "archived_path": "Samples/val_set/code_samples/62/62921379d3af1c09/MurmurHash3.cpp",
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "rurban--smhasher-MurmurHash3-source"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+STORE ('buffer_ptr', ('lin', frozenset({((10, ()), 0)})), ('lin', frozenset({((27, ()), 0), ((23, ()), 0)})), 2891) SWAPS [] PREV []
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/build/tmp/major-gaps/rc4_source.py", line 11, in <module>
+    a.run();print('GENERAL',a.general_findings());print('EVENTS',a.events);print('MACROS',[(k,v[0]) for k,v in a.macros.items()])
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/gzn/ourtask/ustc_tool_middle/src/qcs/guomi/source_semantics.py", line 781, in general_findings
+    connected,self.state_components=components(self)
+                                    ^^^^^^^^^^^^^^^^
+  File "/var/home/gzn/ourtask/ustc_tool_middle/src/qcs/source_state.py", line 22, in components
+    for root,role,value,site in analysis.operation_events:events[root].append((site,role,value))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Analysis' object has no attribute 'operation_events'

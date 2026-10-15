@@ -1,0 +1,48 @@
+test_missing_database_marks_partial_instead_of_empty_success (test_function_signatures.FunctionSignatureTests.test_missing_database_marks_partial_instead_of_empty_success) ... ok
+test_name_and_path_do_not_drive_matching (test_function_signatures.FunctionSignatureTests.test_name_and_path_do_not_drive_matching) ... ok
+test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) ... 
+  test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) (arch='arm', name='rsa') ... FAIL
+  test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) (arch='arm', name='ecdsa') ... FAIL
+test_real_pe_and_unsupported_architectures_keep_existing_channels (test_function_signatures.FunctionSignatureTests.test_real_pe_and_unsupported_architectures_keep_existing_channels) ... ok
+test_referenced_iv_change_does_not_become_sha256 (test_function_signatures.FunctionSignatureTests.test_referenced_iv_change_does_not_become_sha256) ... ok
+test_sha224_blake2_inert_tables_and_generic_math_negatives (test_function_signatures.FunctionSignatureTests.test_sha224_blake2_inert_tables_and_generic_math_negatives) ... 
+  test_sha224_blake2_inert_tables_and_generic_math_negatives (test_function_signatures.FunctionSignatureTests.test_sha224_blake2_inert_tables_and_generic_math_negatives) (arch='arm', name='sha224-only') ... FAIL
+test_whole_function_computation_change_breaks_witness (test_function_signatures.FunctionSignatureTests.test_whole_function_computation_change_breaks_witness) ... ok
+
+======================================================================
+FAIL: test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) (arch='arm', name='rsa')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_function_signatures.py", line 22, in test_real_hidden_asymmetric_and_sha_across_architectures
+    self.assertEqual(r['scan_status'], 'completed')
+AssertionError: 'partial' != 'completed'
+- partial
++ completed
+
+
+======================================================================
+FAIL: test_real_hidden_asymmetric_and_sha_across_architectures (test_function_signatures.FunctionSignatureTests.test_real_hidden_asymmetric_and_sha_across_architectures) (arch='arm', name='ecdsa')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_function_signatures.py", line 22, in test_real_hidden_asymmetric_and_sha_across_architectures
+    self.assertEqual(r['scan_status'], 'completed')
+AssertionError: 'partial' != 'completed'
+- partial
++ completed
+
+
+======================================================================
+FAIL: test_sha224_blake2_inert_tables_and_generic_math_negatives (test_function_signatures.FunctionSignatureTests.test_sha224_blake2_inert_tables_and_generic_math_negatives) (arch='arm', name='sha224-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_function_signatures.py", line 35, in test_sha224_blake2_inert_tables_and_generic_math_negatives
+    self.assertEqual(r['scan_status'],'completed')
+AssertionError: 'partial' != 'completed'
+- partial
++ completed
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 652.467s
+
+FAILED (failures=3)

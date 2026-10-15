@@ -1,0 +1,182 @@
+/*
+ * Copyright (C) 2022 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "build_bug_on.h"
+#include "ext_headers_internal.h"
+#include "lc_memory_support.h"
+#include "lc_memset_secure.h"
+#include "math_helper.h"
+#include "visibility.h"
+
+#define LC_MEMORY_MAGIC 0x538DA353
+
+struct lc_mem_def {
+	unsigned int magic;
+	size_t size;
+	unsigned int secure : 1;
+};
+
+#ifdef _WIN32
+static int check_align(size_t align)
+{
+	for (size_t i = sizeof(void *); i != 0; i *= 2)
+		if (align == i)
+			return 0;
+	return -EINVAL;
+}
+
+int posix_memalign(void **ptr, size_t align, size_t size);
+int posix_memalign(void **ptr, size_t align, size_t size)
+{
+	if (check_align(align))
+		return EINVAL;
+
+	int saved_errno = errno;
+	void *p = _aligned_malloc(size, align);
+	if (p == NULL) {
+		errno = saved_errno;
+		return ENOMEM;
+	}
+
+	*ptr = p;
+
+	return 0;
+}
+#endif
+
+static int alloc_aligned_secure_internal(void **memptr, size_t alignment,
+					 size_t size, unsigned int secure)
+{
+	size_t full_size;
+	struct lc_mem_def *mem;
+	void *ptr;
+	int ret;
+
+	BUILD_BUG_ON(LC_MEM_COMMON_ALIGNMENT > LC_MEM_DEF_ALIGNED_OFFSET);
+	BUILD_BUG_ON(LC_MEM_DEF_ALIGNED_OFFSET < sizeof(struct lc_mem_def));
+
+#ifdef __sun
+	static size_t pagesize = 0;
+
+	if (pagesize == 0) {
+		long sysconf_res = sysconf(_SC_PAGESIZE);
+
+		if (sysconf_res < 0)
+			return -EFAULT;
+		pagesize = (size_t)sysconf_res;
+	}
+	alignment = max_size(alignment, pagesize);
+#endif /* __sun */
+
+	full_size = LC_MEM_DEF_ALIGNED_OFFSET + size;
+
+	/* Guard against wraps */
+	if (full_size < size)
+		return -EOVERFLOW;
+
+	ret = posix_memalign(&ptr, alignment, full_size);
+	if (ret)
+		return -ret;
+
+	/* prevent paging out of the memory state to swap space */
+	if (secure) {
+		ret = mlock(ptr, full_size);
+		if (ret && errno != EPERM && errno != EAGAIN) {
+			int errsv = errno;
+
+			free(ptr);
+			return -errsv;
+		}
+	}
+
+	mem = ptr;
+	mem->magic = LC_MEMORY_MAGIC;
+	mem->size = full_size;
+	mem->secure = !!secure;
+	*memptr = ((uint8_t *)mem) + LC_MEM_DEF_ALIGNED_OFFSET;
+
+	lc_memset_secure(*memptr, 0, size);
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_alloc_aligned, void **memptr, size_t alignment,
+		      size_t size)
+{
+	return alloc_aligned_secure_internal(memptr, alignment, size, 0);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_alloc_aligned_secure, void **memptr,
+		      size_t alignment, size_t size)
+{
+	return alloc_aligned_secure_internal(memptr, alignment, size, 1);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_alloc_high_aligned, void **memptr,
+		      size_t alignment, size_t size)
+{
+	return lc_alloc_aligned(memptr, alignment, size);
+}
+
+static void lc_free_internal(void *ptr)
+{
+	struct lc_mem_def *mem;
+	size_t size;
+	unsigned int secure;
+
+	if (!ptr)
+		return;
+
+	/* Alignment is guaranteed due to mmap */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
+	mem = (struct lc_mem_def *)(((uint8_t *)ptr) -
+				    LC_MEM_DEF_ALIGNED_OFFSET);
+#pragma GCC diagnostic pop
+
+	if (mem->magic != LC_MEMORY_MAGIC) {
+		printf("Memory management error: attempt to free buffer not allocated by leancrypto! Memory deallocation request ignored to prevent memory corruption, but possibility of memory leak!\n");
+		return;
+	}
+
+	size = mem->size;
+	secure = mem->secure;
+
+	if (secure) {
+		lc_memset_secure(mem, 0, size);
+		munlock(mem, size);
+	}
+
+#ifdef _WIN32
+	_aligned_free(mem);
+#else
+	free(mem);
+#endif
+}
+
+LC_INTERFACE_FUNCTION(void, lc_free, void *ptr)
+{
+	lc_free_internal(ptr);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_free_high_aligned, void *ptr, size_t size)
+{
+	(void)size;
+	lc_free_internal(ptr);
+}

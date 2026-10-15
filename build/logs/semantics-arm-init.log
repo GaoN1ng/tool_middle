@@ -1,0 +1,45 @@
+arduinolibs-sha256-arm-O2 /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/31/31849584529c10d1/ordinary.so /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/8a/8a66087a776824dd/inspection.so
+FUNCTION _ZN6SHA2565resetEv 0x131a0 96
+0x131a0 add r1, pc, #0x38
+0x131a4 mov r2, #0x50
+0x131a8 vld1.64 {d16, d17}, [r1:0x80]
+0x131ac add r1, pc, #0x3c
+0x131b0 vld1.64 {d18, d19}, [r1:0x80]
+0x131b4 mov r1, #0
+0x131b8 strb r1, [r0, #0x70]
+0x131bc add r0, r0, #8
+0x131c0 vst1.32 {d16, d17}, [r0]!
+0x131c4 vst1.32 {d18, d19}, [r0], r2
+0x131c8 str r1, [r0]
+0x131cc str r1, [r0, #4]
+0x131d0 bx lr
+0x131d4 nop 
+0x131d8 nop 
+0x131dc nop 
+0x131e0 bvs #0x28cb84
+0x131e4 bllt #0x19fec00
+0x131e8 stcllo p3, c15, [lr], #-0x1c8
+0x131ec strbge pc, [pc, #-0x53a]
+0x131f0 .byte 0x7f, 0x52, 0x0e, 0x51
+0x131f4 blls #0x16d42c
+0x131f8 svcne #0x83d9ab
+0x131fc blpl #0xff846668
+FUNCTION _ZN6SHA2569resetHMACEPKvj 0x136e8 72
+0x136e8 push {r4, lr}
+0x136ec sub sp, sp, #8
+0x136f0 mov r3, r2
+0x136f4 mov r4, r0
+0x136f8 mov r2, r1
+0x136fc mov r0, #0x36
+0x13700 add r1, r4, #0x28
+0x13704 str r0, [sp]
+0x13708 mov r0, r4
+0x1370c bl #0x345d0
+0x13710 ldrd r0, r1, [r4, #0x68]
+0x13714 adds r0, r0, #0x200
+0x13718 adc r1, r1, #0
+0x1371c strd r0, r1, [r4, #0x68]
+0x13720 mov r0, r4
+0x13724 add sp, sp, #8
+0x13728 pop {r4, lr}
+0x1372c b #0x13294

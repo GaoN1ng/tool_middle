@@ -1,0 +1,191 @@
+[
+  {
+    "module": "test_compression_probes",
+    "exit_code": 0,
+    "tests": 2,
+    "seconds": 0.15792543161660433,
+    "log": "build/logs/major-gaps-regression-release-stable/test_compression_probes.log"
+  },
+  {
+    "module": "test_controlflow_primitives",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 63.13448999589309,
+    "log": "build/logs/major-gaps-regression-release-stable/test_controlflow_primitives.log"
+  },
+  {
+    "module": "test_guomi_operations",
+    "exit_code": 0,
+    "tests": 8,
+    "seconds": 0.29862283170223236,
+    "log": "build/logs/major-gaps-regression-release-stable/test_guomi_operations.log"
+  },
+  {
+    "module": "test_bound_static_state",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 83.45412159524858,
+    "log": "build/logs/major-gaps-regression-release-stable/test_bound_static_state.log"
+  },
+  {
+    "module": "test_linux_runtime",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 5.755320960190147,
+    "log": "build/logs/major-gaps-regression-release-stable/test_linux_runtime.log"
+  },
+  {
+    "module": "test_major_gaps",
+    "exit_code": 0,
+    "tests": 7,
+    "seconds": 0.41726614302024245,
+    "log": "build/logs/major-gaps-regression-release-stable/test_major_gaps.log"
+  },
+  {
+    "module": "test_message_schedules",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.4049022179096937,
+    "log": "build/logs/major-gaps-regression-release-stable/test_message_schedules.log"
+  },
+  {
+    "module": "test_mips_controlflow",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 0.4624097920022905,
+    "log": "build/logs/major-gaps-regression-release-stable/test_mips_controlflow.log"
+  },
+  {
+    "module": "test_ml_features",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.2010280736722052,
+    "log": "build/logs/major-gaps-regression-release-stable/test_ml_features.log"
+  },
+  {
+    "module": "test_ml_learning",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 1.5174209619872272,
+    "log": "build/logs/major-gaps-regression-release-stable/test_ml_learning.log"
+  },
+  {
+    "module": "test_operations",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 1.8940758062526584,
+    "log": "build/logs/major-gaps-regression-release-stable/test_operations.log"
+  },
+  {
+    "module": "test_coverage_repairs",
+    "exit_code": 0,
+    "tests": 15,
+    "seconds": 105.83894412079826,
+    "log": "build/logs/major-gaps-regression-release-stable/test_coverage_repairs.log"
+  },
+  {
+    "module": "test_guomi_generalization",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 108.64066780498251,
+    "log": "build/logs/major-gaps-regression-release-stable/test_guomi_generalization.log"
+  },
+  {
+    "module": "test_scanner",
+    "exit_code": 0,
+    "tests": 41,
+    "seconds": 50.39093330409378,
+    "log": "build/logs/major-gaps-regression-release-stable/test_scanner.log"
+  },
+  {
+    "module": "test_semantic_paths",
+    "exit_code": 0,
+    "tests": 11,
+    "seconds": 0.7749146441929042,
+    "log": "build/logs/major-gaps-regression-release-stable/test_semantic_paths.log"
+  },
+  {
+    "module": "test_semantic_probes",
+    "exit_code": 0,
+    "tests": 15,
+    "seconds": 1.0342784808017313,
+    "log": "build/logs/major-gaps-regression-release-stable/test_semantic_probes.log"
+  },
+  {
+    "module": "test_sha256_rounds",
+    "exit_code": 0,
+    "tests": 7,
+    "seconds": 11.730044935364276,
+    "log": "build/logs/major-gaps-regression-release-stable/test_sha256_rounds.log"
+  },
+  {
+    "module": "test_sm4_table_rounds",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 0.7237798920832574,
+    "log": "build/logs/major-gaps-regression-release-stable/test_sm4_table_rounds.log"
+  },
+  {
+    "module": "test_source_linkage",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 0.6211207788437605,
+    "log": "build/logs/major-gaps-regression-release-stable/test_source_linkage.log"
+  },
+  {
+    "module": "test_source_pointers",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 0.3910920168273151,
+    "log": "build/logs/major-gaps-regression-release-stable/test_source_pointers.log"
+  },
+  {
+    "module": "test_table_initializers",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.5321245091035962,
+    "log": "build/logs/major-gaps-regression-release-stable/test_table_initializers.log"
+  },
+  {
+    "module": "test_yara_instructions",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 49.972559006884694,
+    "log": "build/logs/major-gaps-regression-release-stable/test_yara_instructions.log"
+  },
+  {
+    "module": "test_research_operations",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 133.86991738621145,
+    "log": "build/logs/major-gaps-regression-release-stable/test_research_operations.log"
+  },
+  {
+    "module": "test_guomi",
+    "exit_code": 1,
+    "tests": 14,
+    "seconds": 534.022652334068,
+    "log": "build/logs/major-gaps-regression-release-stable/test_guomi.log"
+  },
+  {
+    "module": "test_function_signatures",
+    "exit_code": 0,
+    "tests": 7,
+    "seconds": 668.3612656677142,
+    "log": "build/logs/major-gaps-regression-release-stable/test_function_signatures.log"
+  },
+  {
+    "module": "test_semantic_followup",
+    "exit_code": 1,
+    "tests": 6,
+    "seconds": 733.66563635692,
+    "log": "build/logs/major-gaps-regression-release-stable/test_semantic_followup.log"
+  },
+  {
+    "module": "test_guomi_sm2_fixes",
+    "exit_code": 0,
+    "tests": 10,
+    "seconds": 842.0395097690634,
+    "log": "build/logs/major-gaps-regression-release-stable/test_guomi_sm2_fixes.log"
+  }
+]

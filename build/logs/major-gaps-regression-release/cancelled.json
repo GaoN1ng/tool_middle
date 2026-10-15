@@ -1,0 +1,4 @@
+{
+  "reason": "Added aggregate storage bound to the new source initializer interpreter; all evaluation restarts with final candidate e",
+  "completed_reports_preserved": true
+}

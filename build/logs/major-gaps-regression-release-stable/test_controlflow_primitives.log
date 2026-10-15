@@ -1,0 +1,11 @@
+test_cfg_o0_rc4_positive_and_mutations (test_controlflow_primitives.ControlflowPrimitivesTests.test_cfg_o0_rc4_positive_and_mutations) ... ok
+test_function_budget_retains_later_functions (test_controlflow_primitives.ControlflowPrimitivesTests.test_function_budget_retains_later_functions) ... ok
+test_join_discards_conflicting_values_and_loops_terminate (test_controlflow_primitives.ControlflowPrimitivesTests.test_join_discards_conflicting_values_and_loops_terminate) ... ok
+test_real_static_math_and_mutated_equations (test_controlflow_primitives.ControlflowPrimitivesTests.test_real_static_math_and_mutated_equations) ... ok
+test_sm4_intrinsics_require_both_families_and_no_shadowing (test_controlflow_primitives.ControlflowPrimitivesTests.test_sm4_intrinsics_require_both_families_and_no_shadowing) ... ok
+test_static_power_and_crt_require_every_recurrence (test_controlflow_primitives.ControlflowPrimitivesTests.test_static_power_and_crt_require_every_recurrence) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 62.830s
+
+OK

@@ -1,0 +1,46 @@
+test_actual_stripped_aes_and_known_rsa_signature (test_scanner.BuiltArtifactTests.test_actual_stripped_aes_and_known_rsa_signature) ... ok
+test_arm_and_big_endian_only_constant_evidence (test_scanner.BuiltArtifactTests.test_arm_and_big_endian_only_constant_evidence) ... ok
+test_dynamic_asymmetric_and_library_only_negative (test_scanner.BuiltArtifactTests.test_dynamic_asymmetric_and_library_only_negative) ... ok
+test_extraction_error_and_limits (test_scanner.BuiltArtifactTests.test_extraction_error_and_limits) ... ok
+test_firmware_trace_and_asymmetric_symmetric_channels (test_scanner.BuiltArtifactTests.test_firmware_trace_and_asymmetric_symmetric_channels) ... ok
+test_mixed_libc_and_defined_asymmetric_symbols (test_scanner.BuiltArtifactTests.test_mixed_libc_and_defined_asymmetric_symbols) ... ok
+test_recursive_firmware_depth_limit (test_scanner.BuiltArtifactTests.test_recursive_firmware_depth_limit) ... ok
+test_aes_rules_deduplicate_and_keep_offsets (test_scanner.EngineTests.test_aes_rules_deduplicate_and_keep_offsets) ... ok
+test_existing_yara_sha1_end_to_end (test_scanner.EngineTests.test_existing_yara_sha1_end_to_end) ... ok
+test_file_limit (test_scanner.EngineTests.test_file_limit) ... ok
+test_missing_dependency_is_distinct (test_scanner.EngineTests.test_missing_dependency_is_distinct) ... ok
+test_missing_input_and_malformed_elf (test_scanner.EngineTests.test_missing_input_and_malformed_elf) ... ok
+test_pe_combined_digest_selector (test_scanner.EngineTests.test_pe_combined_digest_selector) ... ok
+test_pe_named_imports_and_generic_negative (test_scanner.EngineTests.test_pe_named_imports_and_generic_negative) ... ok
+test_plain_text_names_remain_weak (test_scanner.EngineTests.test_plain_text_names_remain_weak) ... ok
+test_rule_compile_error_is_json_error (test_scanner.EngineTests.test_rule_compile_error_is_json_error) ... ok
+test_shared_iv_base64_and_chacha_are_not_definite (test_scanner.EngineTests.test_shared_iv_base64_and_chacha_are_not_definite) ... ok
+test_unknown_bin_not_firmware_or_success (test_scanner.EngineTests.test_unknown_bin_not_firmware_or_success) ... ok
+test_multilabel_counts_and_failure_not_exact_match (test_scanner.EvaluationTests.test_multilabel_counts_and_failure_not_exact_match) ... ok
+test_project_architecture_groups_keep_failed_objects (test_scanner.EvaluationTests.test_project_architecture_groups_keep_failed_objects) ... ok
+test_timeout_stops_extractor_process (test_scanner.ProcessTests.test_timeout_stops_extractor_process) ... ok
+test_all_core_apis (test_scanner.SourceTests.test_all_core_apis) ... ok
+test_combined_digest_is_two_explicit_algorithms (test_scanner.SourceTests.test_combined_digest_is_two_explicit_algorithms) ... ok
+test_comments_literals_raw_strings_urls_and_escaped_quotes (test_scanner.SourceTests.test_comments_literals_raw_strings_urls_and_escaped_quotes) ... ok
+test_cp1252_source_both_engines_preserve_line_numbers (test_scanner.SourceTests.test_cp1252_source_both_engines_preserve_line_numbers) ... ok
+test_declarations_definitions_macros_and_names (test_scanner.SourceTests.test_declarations_definitions_macros_and_names) ... ok
+test_empty_and_fake_named_definitions_are_not_implementations (test_scanner.SourceTests.test_empty_and_fake_named_definitions_are_not_implementations) ... ok
+test_explicit_selectors_and_sha224_ambiguity (test_scanner.SourceTests.test_explicit_selectors_and_sha224_ambiguity) ... ok
+test_generic_ec_evp_bn_and_variable_selector (test_scanner.SourceTests.test_generic_ec_evp_bn_and_variable_selector) ... ok
+test_legacy_definition_evidence_is_not_implementation_prediction (test_scanner.SourceTests.test_legacy_definition_evidence_is_not_implementation_prediction) ... ok
+test_literal_delimiters_and_comments_do_not_split_arguments (test_scanner.SourceTests.test_literal_delimiters_and_comments_do_not_split_arguments) ... ok
+test_mbedtls_explicit_modes_and_generic_ec_type (test_scanner.SourceTests.test_mbedtls_explicit_modes_and_generic_ec_type) ... ok
+test_missing_source_reference_database_is_an_explicit_failure (test_scanner.SourceTests.test_missing_source_reference_database_is_an_explicit_failure) ... ok
+test_modified_reference_and_same_path_stub_require_new_verification (test_scanner.SourceTests.test_modified_reference_and_same_path_stub_require_new_verification) ... ok
+test_multiline_call_and_line_numbers (test_scanner.SourceTests.test_multiline_call_and_line_numbers) ... ok
+test_nested_selector_arguments_keep_positions_and_lines (test_scanner.SourceTests.test_nested_selector_arguments_keep_positions_and_lines) ... ok
+test_pinned_real_source_matches_without_using_path (test_scanner.SourceTests.test_pinned_real_source_matches_without_using_path) ... ok
+test_pinned_source_with_conditional_initializer_braces (test_scanner.SourceTests.test_pinned_source_with_conditional_initializer_braces) ... ok
+test_terminal_apis_keep_generic_ec_and_names_unresolved (test_scanner.SourceTests.test_terminal_apis_keep_generic_ec_and_names_unresolved) ... ok
+test_unresolved_selectors_and_malformed_arguments_stay_clues (test_scanner.SourceTests.test_unresolved_selectors_and_malformed_arguments_stay_clues) ... ok
+test_wrapper_only_proves_api_reference (test_scanner.SourceTests.test_wrapper_only_proves_api_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 16.981s
+
+OK

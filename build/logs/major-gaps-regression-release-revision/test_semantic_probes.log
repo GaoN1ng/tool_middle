@@ -1,0 +1,19 @@
+test_aborted_backend_is_replaced_before_next_candidate (test_semantic_probes.IsolationTests.test_aborted_backend_is_replaced_before_next_candidate) ... ok
+test_failed_worker_never_emits_a_witness (test_semantic_probes.IsolationTests.test_failed_worker_never_emits_a_witness) ... ok
+test_large_unrolled_function_keeps_its_real_entry (test_semantic_probes.IsolationTests.test_large_unrolled_function_keeps_its_real_entry) ... ok
+test_no_optional_time_skips_all_elf_preparation (test_semantic_probes.IsolationTests.test_no_optional_time_skips_all_elf_preparation) ... ok
+test_optional_budget_abstention_is_distinct_from_backend_crash (test_semantic_probes.IsolationTests.test_optional_budget_abstention_is_distinct_from_backend_crash) ... ok
+test_private_memory_copy_and_permission_fault (test_semantic_probes.IsolationTests.test_private_memory_copy_and_permission_fault) ... ok
+test_real_isolated_worker_runs_with_address_space_limit (test_semantic_probes.IsolationTests.test_real_isolated_worker_runs_with_address_space_limit) ... ok
+test_sm3_split_immediates_only_select_a_worker (test_semantic_probes.IsolationTests.test_sm3_split_immediates_only_select_a_worker) ... ok
+test_unknown_import_syscall_instruction_fault_and_budget_fail_closed (test_semantic_probes.IsolationTests.test_unknown_import_syscall_instruction_fault_and_budget_fail_closed) ... ok
+test_all_block_vectors_required_and_expired_budget_declines (test_semantic_probes.VectorTests.test_all_block_vectors_required_and_expired_budget_declines) ... ok
+test_des_boundary_is_an_explicit_involutive_encoding (test_semantic_probes.VectorTests.test_des_boundary_is_an_explicit_involutive_encoding) ... ok
+test_montgomery_reference_matches_rfc7748 (test_semantic_probes.VectorTests.test_montgomery_reference_matches_rfc7748) ... ok
+test_one_matching_curve_vector_does_not_accept (test_semantic_probes.VectorTests.test_one_matching_curve_vector_does_not_accept) ... ok
+test_rc4_reference_matches_rfc6229_first_block (test_semantic_probes.VectorTests.test_rc4_reference_matches_rfc6229_first_block) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.935s
+
+OK

@@ -1,0 +1,148 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-sm4-20261014/candidate2-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+50/289 files, 20.1s
+100/289 files, 37.6s
+150/289 files, 53.1s
+200/289 files, 71.8s
+250/289 files, 89.5s
+289/289 files, 106.5s
+{
+  "files": 289,
+  "positive_labels": 289,
+  "scan_status": {
+    "completed": 289
+  },
+  "micro": {
+    "TP": 198,
+    "FP": 0,
+    "FN": 91,
+    "TN": 2648,
+    "recall": 0.6851211072664359,
+    "false_negative_rate": 0.314878892733564,
+    "precision": 1.0
+  },
+  "per_algorithm": {
+    "AES": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "ChaCha20": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "DES": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "ECDH": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "ECDSA": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "MD5": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "RC4": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "RSA": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SHA-1": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 207,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SHA-256": {
+      "TP": 84,
+      "FP": 0,
+      "FN": 85,
+      "TN": 38,
+      "recall": 0.4970414201183432,
+      "false_negative_rate": 0.5029585798816568,
+      "precision": 1.0
+    },
+    "SM2": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 289,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SM3": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 289,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SM4": {
+      "TP": 114,
+      "FP": 0,
+      "FN": 6,
+      "TN": 169,
+      "recall": 0.95,
+      "false_negative_rate": 0.05,
+      "precision": 1.0
+    }
+  },
+  "seconds": 106.74481814308092,
+  "focus": [
+    "SHA-256",
+    "SM4"
+  ]
+}

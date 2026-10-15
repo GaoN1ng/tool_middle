@@ -1,0 +1,51 @@
+/*
+ * Copyright (C) 2024 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#ifndef XDRBG_INTERNAL_H
+#define XDRBG_INTERNAL_H
+
+/* Select the type of DRNG */
+
+#ifdef LINUX_KERNEL
+#ifdef CONFIG_LEANCRYPTO_SHA3
+#define LC_DRNG_XDRBG256
+#define LC_DRNG_XDRBG512
+#endif
+#ifdef CONFIG_LEANCRYPTO_ASCON_HASH
+#define LC_DRNG_XDRBG128
+#endif
+#endif /* LINUX_KERNEL */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int lc_xdrbg_drng_seed_nocheck(void *_state, const uint8_t *seed,
+			       size_t seedlen, const uint8_t *alpha,
+			       size_t alphalen);
+
+void lc_xdrbg_drng_zero(void *_state);
+int lc_xdrbg_drng_generate(void *_state, const uint8_t *alpha, size_t alphalen,
+			   uint8_t *out, size_t outlen);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* XDRBG_INTERNAL_H */

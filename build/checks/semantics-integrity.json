@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "verified_unique_sample_files": 12870,
+  "verified_physical_sample_files": 12900,
+  "verified_manifest_cases": 7621,
+  "verified_independent_cases": 232,
+  "counts": {
+    "test_set/code_samples": 1132,
+    "test_set/elf_samples": 5466,
+    "val_set/code_samples": 3102,
+    "val_set/elf_samples": 3139,
+    "test_set/firmware_samples": 17,
+    "test_set/exe_samples": 14
+  },
+  "issues": []
+}

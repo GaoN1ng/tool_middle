@@ -1,0 +1,9 @@
+test_projective_ecdh_requires_peer_normalization_and_x_output (test_message_schedules.MessageScheduleTests.test_projective_ecdh_requires_peer_normalization_and_x_output) ... ok
+test_sha1_and_sm3_exact_ring_equations (test_message_schedules.MessageScheduleTests.test_sha1_and_sm3_exact_ring_equations) ... ok
+test_sha256_ring_read_write_recurrence_and_mutations (test_message_schedules.MessageScheduleTests.test_sha256_ring_read_write_recurrence_and_mutations) ... ok
+test_unsigned_power_summary_declines_preloop_mutation (test_message_schedules.MessageScheduleTests.test_unsigned_power_summary_declines_preloop_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.084s
+
+OK

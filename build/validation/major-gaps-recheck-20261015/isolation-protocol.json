@@ -1,0 +1,22 @@
+{
+  "reason": "Observed automatic header lookup traversing workspace and reading other projects/development headers",
+  "policy": "Input-boundary control only. No detector rules, thresholds, target bytes, labels or denominators changed.",
+  "prepared_at": "2026-10-15T15:56:38.096756+08:00",
+  "sets": [
+    {
+      "set": "history",
+      "source_files": 178,
+      "locked_files": 356
+    },
+    {
+      "set": "recent",
+      "source_files": 22,
+      "locked_files": 671
+    }
+  ],
+  "historical_baseline_package_sha256": "2e6ad85328fb86cf8e6df349b12737c3e2df90adbd47f0e029cc986bc8e20f05",
+  "historical_baseline_origin": "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/controlflow-primitives-20261014/frozen",
+  "historical_baseline_freeze_sha256": "e9b038b57f786bf721b2d1f4262d161543674636363b268c4607d7eb3ebb9bf5",
+  "recent_baseline_package_sha256": "b12808998c257afa749aa7ad6e58097728c6c2ddcee0d2731e272c38fd8eb45a",
+  "comparison_policy": "Compare both frozen versions under identical isolated source inputs; original binary rows remain separately identified."
+}

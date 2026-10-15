@@ -1,0 +1,18 @@
+ .kdev4
+*.kdev4
+build
+Cargo.lock
+target
+
+*.cmd
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+modules.order
+Module.symvers
+
+linux_kernel/lc_*.h
+
+wycheproof-rs

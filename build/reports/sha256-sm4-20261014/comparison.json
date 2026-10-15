@@ -1,0 +1,630 @@
+{
+  "development_only": true,
+  "file_count": 2344,
+  "positive_labels": 1572,
+  "same_input_bytes_and_truth": true,
+  "same_source_include_context": true,
+  "metric_unit": "content-deduplicated file/algorithm, declared known scope",
+  "before": {
+    "TP": 1200,
+    "FP": 0,
+    "FN": 372,
+    "TN": 24070,
+    "recall": 0.7633587786259542,
+    "false_negative_rate": 0.2366412213740458,
+    "precision": 1.0
+  },
+  "after": {
+    "TP": 1267,
+    "FP": 0,
+    "FN": 305,
+    "TN": 24070,
+    "recall": 0.8059796437659033,
+    "false_negative_rate": 0.1940203562340967,
+    "precision": 1.0
+  },
+  "per_algorithm": {
+    "AES": {
+      "before": {
+        "TP": 123,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1716,
+        "recall": 0.8482758620689655,
+        "false_negative_rate": 0.15172413793103448,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 123,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1716,
+        "recall": 0.8482758620689655,
+        "false_negative_rate": 0.15172413793103448,
+        "precision": 1.0
+      }
+    },
+    "ChaCha20": {
+      "before": {
+        "TP": 129,
+        "FP": 0,
+        "FN": 11,
+        "TN": 1721,
+        "recall": 0.9214285714285714,
+        "false_negative_rate": 0.07857142857142857,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 134,
+        "FP": 0,
+        "FN": 6,
+        "TN": 1721,
+        "recall": 0.9571428571428572,
+        "false_negative_rate": 0.04285714285714286,
+        "precision": 1.0
+      }
+    },
+    "DES": {
+      "before": {
+        "TP": 109,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1730,
+        "recall": 0.8320610687022901,
+        "false_negative_rate": 0.16793893129770993,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 109,
+        "FP": 0,
+        "FN": 22,
+        "TN": 1730,
+        "recall": 0.8320610687022901,
+        "false_negative_rate": 0.16793893129770993,
+        "precision": 1.0
+      }
+    },
+    "ECDH": {
+      "before": {
+        "TP": 42,
+        "FP": 0,
+        "FN": 59,
+        "TN": 1760,
+        "recall": 0.4158415841584158,
+        "false_negative_rate": 0.5841584158415841,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 42,
+        "FP": 0,
+        "FN": 59,
+        "TN": 1760,
+        "recall": 0.4158415841584158,
+        "false_negative_rate": 0.5841584158415841,
+        "precision": 1.0
+      }
+    },
+    "ECDSA": {
+      "before": {
+        "TP": 41,
+        "FP": 0,
+        "FN": 21,
+        "TN": 1799,
+        "recall": 0.6612903225806451,
+        "false_negative_rate": 0.3387096774193548,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 41,
+        "FP": 0,
+        "FN": 21,
+        "TN": 1799,
+        "recall": 0.6612903225806451,
+        "false_negative_rate": 0.3387096774193548,
+        "precision": 1.0
+      }
+    },
+    "MD5": {
+      "before": {
+        "TP": 103,
+        "FP": 0,
+        "FN": 5,
+        "TN": 1753,
+        "recall": 0.9537037037037037,
+        "false_negative_rate": 0.046296296296296294,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 107,
+        "FP": 0,
+        "FN": 1,
+        "TN": 1753,
+        "recall": 0.9907407407407407,
+        "false_negative_rate": 0.009259259259259259,
+        "precision": 1.0
+      }
+    },
+    "RC4": {
+      "before": {
+        "TP": 89,
+        "FP": 0,
+        "FN": 19,
+        "TN": 1753,
+        "recall": 0.8240740740740741,
+        "false_negative_rate": 0.17592592592592593,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 89,
+        "FP": 0,
+        "FN": 19,
+        "TN": 1753,
+        "recall": 0.8240740740740741,
+        "false_negative_rate": 0.17592592592592593,
+        "precision": 1.0
+      }
+    },
+    "RSA": {
+      "before": {
+        "TP": 57,
+        "FP": 0,
+        "FN": 7,
+        "TN": 1797,
+        "recall": 0.890625,
+        "false_negative_rate": 0.109375,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 57,
+        "FP": 0,
+        "FN": 7,
+        "TN": 1797,
+        "recall": 0.890625,
+        "false_negative_rate": 0.109375,
+        "precision": 1.0
+      }
+    },
+    "SHA-1": {
+      "before": {
+        "TP": 102,
+        "FP": 0,
+        "FN": 20,
+        "TN": 1739,
+        "recall": 0.8360655737704918,
+        "false_negative_rate": 0.16393442622950818,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 107,
+        "FP": 0,
+        "FN": 15,
+        "TN": 1739,
+        "recall": 0.8770491803278688,
+        "false_negative_rate": 0.12295081967213115,
+        "precision": 1.0
+      }
+    },
+    "SHA-256": {
+      "before": {
+        "TP": 79,
+        "FP": 0,
+        "FN": 90,
+        "TN": 1692,
+        "recall": 0.46745562130177515,
+        "false_negative_rate": 0.5325443786982249,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 117,
+        "FP": 0,
+        "FN": 52,
+        "TN": 1692,
+        "recall": 0.6923076923076923,
+        "false_negative_rate": 0.3076923076923077,
+        "precision": 1.0
+      }
+    },
+    "SM2": {
+      "before": {
+        "TP": 107,
+        "FP": 0,
+        "FN": 50,
+        "TN": 2187,
+        "recall": 0.6815286624203821,
+        "false_negative_rate": 0.3184713375796178,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 107,
+        "FP": 0,
+        "FN": 50,
+        "TN": 2187,
+        "recall": 0.6815286624203821,
+        "false_negative_rate": 0.3184713375796178,
+        "precision": 1.0
+      }
+    },
+    "SM3": {
+      "before": {
+        "TP": 113,
+        "FP": 0,
+        "FN": 32,
+        "TN": 2199,
+        "recall": 0.7793103448275862,
+        "false_negative_rate": 0.2206896551724138,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 115,
+        "FP": 0,
+        "FN": 30,
+        "TN": 2199,
+        "recall": 0.7931034482758621,
+        "false_negative_rate": 0.20689655172413793,
+        "precision": 1.0
+      }
+    },
+    "SM4": {
+      "before": {
+        "TP": 106,
+        "FP": 0,
+        "FN": 14,
+        "TN": 2224,
+        "recall": 0.8833333333333333,
+        "false_negative_rate": 0.11666666666666667,
+        "precision": 1.0
+      },
+      "after": {
+        "TP": 119,
+        "FP": 0,
+        "FN": 1,
+        "TN": 2224,
+        "recall": 0.9916666666666667,
+        "false_negative_rate": 0.008333333333333333,
+        "precision": 1.0
+      }
+    }
+  },
+  "newly_detected_labels": [
+    {
+      "id": "tinyssh-crypto_hash_sha256-mips_be-O2",
+      "sha256": "063a39ed3fc3fac03a1ffb5cf9a22b9afe1d2aa864875e4c133ae7d0233dab6d",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "wolfsm-sm4-plain-aarch64-O0",
+      "sha256": "094bef5b898897c5e72cece519dc9124906c21275410fb93fb1069b9798887e8",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "split-word-rounds-arm-O0",
+      "sha256": "095b87faa4d832071b8691abb9575c8568ec03d08529e5542e9718ac79881a8e",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-O0",
+      "sha256": "0a2b87bc24c1f86e99038de38616ddf5627b93b2ea124da774c10bef0c148290",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-word-rounds-aarch64-O0",
+      "sha256": "0b23d7c82cdd135ca936cc6939cc5452694689f37777c0c182ea923ed6c701f6",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "split-word-rounds-mips_be-O0",
+      "sha256": "0c94ff1793d3998a832a19ad34c7577969bb81441e51790fa990bc669c39441d",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "bcon-sha256-mipsel-Os",
+      "sha256": "11967e7e9086021767e0e80625126cb677d85497a8959ed5cf8196c098966c31",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-word-rounds-arm-Os",
+      "sha256": "21d72df852d6f8e60dc81be563c104b01cb2cad8c8d39ca1dea8bc509289619b",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-O0",
+      "sha256": "255db2c653d70b3dc47d7d25e6ff2aae2e86b7ce8056f9b7731ab20611ae0370",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-arm-Os",
+      "sha256": "2bd682e28ae4209057809db1ccfa518441b23c7b9e648a37b490785a5701f7e7",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-mipsel-Os",
+      "sha256": "2f6ef014f846afd03d12238c2d30172ba704c52672eb8edc4f2aa085bd4cba0c",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-aarch64-O0",
+      "sha256": "3134ce680caf222f1a8b9f892b0cb66eca83739f83b390f8d6249a189734c970",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-word-rounds-thumb-Os",
+      "sha256": "351962d43fd5ec1886e3ed51ba589fb9c17d64af692b5db2d8accacd5d084e89",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "bearssl-sha2small-mips_be-Os",
+      "sha256": "3a767edde4e6ef1d3a2ca22923cb4a3c5f8e66efa85d3b2c42bf049664562805",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-O2",
+      "sha256": "3ae730e14cdfb77c4180e72cd2945228f9305e7e7fe943543be0eace1b32c85f",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "control-quarter-mips_be-O0",
+      "sha256": "3b01285eaeefb2e136ce8101bd75f2eeb07f4379d03e517c538f44dd0b868ded",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "bcon-sha256-mipsel-O2",
+      "sha256": "455838908e609f14875f658bcb69941474d9f3844fd488dcc5c3809b9e315454",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bearssl-sha2small-mips_be-O2",
+      "sha256": "4b1c1ff2d76290b5ab00141fb3acb492dc91b858dfa63c122ca66dcf21968bcd",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bcon-sha256-mips_be-Os",
+      "sha256": "4c043cd20aabb01456a6ae56012413c6710d09ca4cc78997a5f3f918dffa9156",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha256_sha224-arm-Os",
+      "sha256": "52cff8608e7d1b9c8a431a2421d59d8c77e2e49db584dde53fe87e7f1f2461aa",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-word-rounds-thumb-O0",
+      "sha256": "56d5dbf104ef5270147b33cd2f5c2b663ef0f54a3e83258f92dd01c2f50abaa0",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-Os",
+      "sha256": "5be2dcbf3e4e111a29466a86fd9e629ebdd0bfe150af2456d6e6da72e5880385",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bcon-sha256-aarch64-O0",
+      "sha256": "5f20e1f486188dfa2a8f3666591939592cdff7daabbca39a149bc96ccc3ca744",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha256_sha224-arm-O2",
+      "sha256": "60d074c4035377e12458538d60ddd198c415617eed23712b01638e37f7f23718",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-word-rounds-mips_be-Os",
+      "sha256": "61d5d66997e719b73b330c7a8587b26b3330d465a084610199afd486a293c2cc",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "libecc-sha256-source",
+      "sha256": "6307b02dbd6e15f93e6d346b7ca8869a32c2c014f10866c53d463d0bb475c007",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-O2",
+      "sha256": "63130f4460bf0f36f7a6df7f486095f786994a0a372d498394df7210feffb8ed",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-Os",
+      "sha256": "688d4b2e86f890b4a759c58596d2cd4322df653023fa21b169aea400bd286d5a",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "bearssl-sha2small-x86_64-O0",
+      "sha256": "6ea79636ecda168a84401284dde79502723c55b45cf2f0e1d3c368d606ae9fd2",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-md5-mips_be-O0",
+      "sha256": "6f96923baf038d1eb0d51878bbe589e08ad1bd5cffe4350f87c0748e3d6f2951",
+      "algorithm": "MD5"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-thumb-O2",
+      "sha256": "744e62c184d387569f7e8c4391f321eb10ebc992720a5c8c3f0d0be0326c10da",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-aarch64-O0",
+      "sha256": "74827b0445536a7940b830206d2736950c5f931e0e4438f7894f09119b96a01a",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-mipsel-O2",
+      "sha256": "769e6f14a7e91bef124c24cd4d03d32af8da1892e2cf8c947ee22f166a700dd0",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "wolfsm-sm3-plain-aarch64-O0",
+      "sha256": "792a6b58288d7ad1825c7a6c625d0517e0c208fde0eed95963d17d3710338316",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "openssl-sm4-plain-aarch64-O0",
+      "sha256": "7d65e87e644d16fae1ff1b194eef3362299d22a91999a1d6f4530d6f7ef5609f",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-thumb-Os",
+      "sha256": "825e616714744fbb78f563d752d03cf4ea5d74ac55c0544b0166ebc523f62c60",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-md5-aarch64-O0",
+      "sha256": "8750963ef89a9189ba2640415743631c40fef9912d96e30c5f9f5b7bea6dca08",
+      "algorithm": "MD5"
+    },
+    {
+      "id": "bearssl-sha2small-mipsel-Os",
+      "sha256": "889c59b9429926fbea748685a218f5da94e55a7f1a1d991564503ff24441b4d4",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-arm-O2",
+      "sha256": "895038796baaf43b75ff57941e08904d98db879dfda7fc3690f20e71f3a492fe",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-thumb-O0",
+      "sha256": "8e8c3de312b8eeb100115a371b4877c57b51f45c1830d2c4edd00d72db8ff2f3",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-chacha-source",
+      "sha256": "8e8c8d0874c8ce2874a95f4f27d4f32eab820b1b06b6588cd2488682a8fcb379",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "bcon-sha256-mips_be-O2",
+      "sha256": "9b5a4065cf91fec936d468ca2c4b2422a86f53d888b882307636cccbcab2657d",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-O2",
+      "sha256": "9e25994a2a392219ca0f5b7f575c5244c34e2870886f4a4ccaaf88b9b031765a",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-mips_be-O2",
+      "sha256": "9f4b41faa1085714ec5b82a7f1addab30dda5d25d8d53e4faf680fac5b221435",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha1-aarch64-O2",
+      "sha256": "a0989ffb2474a5d39317226cdac44abdd227027a494f540b1c0a87b5676c1622",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "arduinolibs-sha256-source",
+      "sha256": "a53c030e47c60e4638aa22b667907b5f3eefd0c283ad3d8c083ce56cba4c7be3",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-mips_be-Os",
+      "sha256": "aa40971246cc6d74d1673fb197e1ccd9446b85c3227a535ccfbf00a38416489d",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-md5-aarch64-O2",
+      "sha256": "abb407c3a9bef3539cc80a6fab8d9d5a2dc7a970feae91f79a9145ba84376f36",
+      "algorithm": "MD5"
+    },
+    {
+      "id": "split-word-rounds-arm-O2",
+      "sha256": "c4b5052737ce5f57416bd7041bfce333f8a83a32421bdcec89bb555e92057b1c",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "split-word-rounds-mipsel-O0",
+      "sha256": "c6bce8154b298e4c2642db02b1b7694137ab484cf299f33692001a5321ca0ff9",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "split-word-rounds-mipsel-Os",
+      "sha256": "cb84c2dea25e1649726dd852f42703090557d7484fc304df44093842d815e1a5",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "libecc-sha256-mips_be-O2",
+      "sha256": "ccab650bd977f05280333f39d82510a0ac3dfd91651c3cc994b03ef6a8513427",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-md5-mipsel-O0",
+      "sha256": "d03a33a70b0125d4933bddecc96807ad1627490a6ee79438d6a4da77ed35d21a",
+      "algorithm": "MD5"
+    },
+    {
+      "id": "control-quarter-mipsel-O0",
+      "sha256": "d45099c49b1b450860e4978be7b840da63deaa39a571557cffd5858b4550de43",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "bearssl-sha2small-mipsel-O2",
+      "sha256": "d7c24a9127a717188867e669c0328debc13f17b8ce081f8f94dcb0b92bea13e3",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-compression-aarch64-O0",
+      "sha256": "d9842fa1612001d7e4561813d8fc8a76e6d8a92e57c0ec6c13c170910cf4e05c",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "arduinolibs-sha1-aarch64-O2",
+      "sha256": "dc085ffb8083564370624fd4a1eea590947f46d6911a461a021757379b7edc2e",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "split-word-rounds-thumb-O2",
+      "sha256": "dc6c60bc17ececd888e9e9e170424928f9dba2889390208d0197f7e0dfc55d55",
+      "algorithm": "SM4"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-aarch64-Os",
+      "sha256": "de68cf1bb364559e23b3a799bd5daf2675ffb065670b041c7a35b3a95354f92f",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-mipsel-Os",
+      "sha256": "deb524008f11194f391a56352ff5cd74ff9f35bb1ab0c3f98f2548778e90eee5",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-chacha-mipsel-O0",
+      "sha256": "e2ef069e82467990a2dbfb7b808b9000668d2a416b678d364a6b4fefb715a652",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "mhash-sha1-aarch64-Os",
+      "sha256": "ea946cba72116595c9718d6d7e537b438cea3842b243b73f4f302b74409ce30a",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "arduinolibs-sha256-mipsel-O2",
+      "sha256": "ecf0375d44a919c10dfcc0c3f501c761681b99018eb9eb4a98f5ac101328ce33",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-mips_be-Os",
+      "sha256": "f0eba32568a2286c32b33275c5b34c65a72d791a7f0845e3de503824389be189",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-chacha-mips_be-O0",
+      "sha256": "f61f718a546de4cbc3a2c79bab15c65bfe99195586ca662c5de056f5053fd88f",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-Os",
+      "sha256": "f78dda5085a28751323c21b2611206b44a2cd0eb998a3205b2e6c19840a27908",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-mipsel-O2",
+      "sha256": "fd1808ed2bbd7148a8f2d73558c440e834962f215c7a2fbb2e1bd7b5f058e952",
+      "algorithm": "SHA-256"
+    }
+  ],
+  "lost_correct_labels": [],
+  "validation_rerun": false,
+  "models_changed": false,
+  "target_programs_executed": false,
+  "new_independent_authors_added": false
+}

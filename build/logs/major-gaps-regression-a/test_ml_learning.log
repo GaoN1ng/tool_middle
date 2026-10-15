@@ -1,0 +1,8 @@
+test_file_fp_constraint_disables_unseparable_class (test_ml_learning.LearningContract.test_file_fp_constraint_disables_unseparable_class) ... ok
+test_fold_with_no_positive_class_returns_zero (test_ml_learning.LearningContract.test_fold_with_no_positive_class_returns_zero) ... ok
+test_unknown_truth_is_excluded_and_equal_scores_have_one_decision (test_ml_learning.LearningContract.test_unknown_truth_is_excluded_and_equal_scores_have_one_decision) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.016s
+
+OK

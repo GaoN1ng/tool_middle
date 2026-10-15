@@ -1,0 +1,17 @@
+{
+  "micro": {
+    "TP": 1476,
+    "FP": 0,
+    "FN": 96,
+    "TN": 24070,
+    "recall": 0.9389312977099237,
+    "false_negative_rate": 0.061068702290076333,
+    "precision": 1.0
+  },
+  "new_labels": 101,
+  "lost_labels": 0,
+  "status": {
+    "completed": 2022,
+    "partial": 322
+  }
+}

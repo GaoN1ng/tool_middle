@@ -1,0 +1,17 @@
+{"id": "arduinolibs-curve25519-arm-O2", "found": [], "seconds": 0.55}
+{"id": "libmcrypt-rijndael-128-thumb-O2", "found": [], "seconds": 0.7}
+{"id": "libmcrypt-rijndael-128-aarch64-Os", "found": [{"algorithm": "AES", "address": 107480, "setup_address": 105872, "vectors": 3, "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors", "modeled_imports": []}], "seconds": 0.37}
+{"id": "libmcrypt-rijndael-128-mips_be-Os", "found": [{"algorithm": "AES", "address": 94204, "setup_address": 91952, "vectors": 3, "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors", "modeled_imports": []}], "seconds": 1.49}
+{"id": "arduinolibs-curve25519-mips_be-O0", "found": [], "seconds": 1.6}
+{"id": "arduinolibs-curve25519-mipsel-O2", "found": [], "seconds": 1.56}
+{"id": "arduinolibs-curve25519-aarch64-Os", "found": [{"algorithm": "ECDH", "address": 67396, "vectors": 3, "relation": "Three distinct clamped scalar/input-coordinate evaluations match the complete RFC 7748 Montgomery ladder and serialized affine result", "modeled_imports": ["_Z5cleanPvm", "_ZN13BigNumberUtil6packLEEPhmPKjm", "_ZN13BigNumberUtil8unpackLEEPjmPKhm"]}], "seconds": 0.11}
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/build/tmp/major-gaps/probe_components.py", line 20, in <module>
+    result=f.result();out.append(result);print(json.dumps(result),flush=True)
+           ^^^^^^^^^^
+  File "/var/home/gzn/ourtask/.qcs-python312/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/var/home/gzn/ourtask/.qcs-python312/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.

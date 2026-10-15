@@ -1,0 +1,6 @@
+usage: summarize_semantic_release.py [-h]
+
+Publish complete, matched-denominator semantic-release comparisons.
+
+options:
+  -h, --help  show this help message and exit

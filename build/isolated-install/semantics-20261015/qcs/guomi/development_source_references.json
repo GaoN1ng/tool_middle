@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "references": [
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/wolfsm/sm3.c",
+        "url": "https://github.com/wolfSSL/wolfsm/blob/a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b/sm3.c",
+        "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+        "sha256": "29dee800de0851b5bbd9b98592188cb71541961898d7b21c79204b32ac6dd249",
+        "license": "GPL-2.0-or-later"
+      },
+      "functions": {
+        "sm3_compress_c": [
+          "SM3"
+        ],
+        "wc_Sm3Update": [
+          "SM3"
+        ],
+        "wc_Sm3Final": [
+          "SM3"
+        ]
+      },
+      "definition_offsets": {
+        "sm3_compress_c": [
+          14759
+        ],
+        "wc_Sm3Update": [
+          30949
+        ],
+        "wc_Sm3Final": [
+          34564
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/wolfsm/sm4.c",
+        "url": "https://github.com/wolfSSL/wolfsm/blob/a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b/sm4.c",
+        "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+        "sha256": "399b8f9e01e49e099a2c73204618a2f92bb62bd966232e2b5273258efa769c1e",
+        "license": "GPL-2.0-or-later"
+      },
+      "functions": {
+        "sm4_key_schedule": [
+          "SM4"
+        ],
+        "wc_Sm4SetKey": [
+          "SM4"
+        ],
+        "sm4_encrypt": [
+          "SM4"
+        ],
+        "wc_Sm4EcbEncrypt": [
+          "SM4"
+        ]
+      },
+      "definition_offsets": {
+        "sm4_key_schedule": [
+          20112
+        ],
+        "wc_Sm4SetKey": [
+          30978
+        ],
+        "sm4_encrypt": [
+          24458
+        ],
+        "wc_Sm4EcbEncrypt": [
+          33735
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/wolfsm/sm2.c",
+        "url": "https://github.com/wolfSSL/wolfsm/blob/a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b/sm2.c",
+        "commit": "a7650b11d30eb0e69e218ffc6fc8767cee3e6d1b",
+        "sha256": "f340b7c5c7be4ca5baecba2028ecf3b84a9d9d6bed6b2d91f9d62259894c789e",
+        "license": "GPL-2.0-or-later"
+      },
+      "functions": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          "SM2"
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          "SM2"
+        ]
+      },
+      "definition_offsets": {
+        "wc_ecc_sm2_sign_hash_ex": [
+          14302
+        ],
+        "wc_ecc_sm2_verify_hash_ex": [
+          25004
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/sm3/sm3.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/sm3/sm3.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "f3260d8facb9e6a540a749a5481f7a4392e949077304fb09f12f26d4e2f16ebb",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "ossl_sm3_block_data_order": [
+          "SM3"
+        ]
+      },
+      "definition_offsets": {
+        "ossl_sm3_block_data_order": [
+          715
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/sm4/sm4.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/sm4/sm4.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "8255c9ca5c48fb2f492730361cc1f78271148ccdfb1a5d1a79796a857c14bdcc",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "ossl_sm4_set_key": [
+          "SM4"
+        ],
+        "ossl_sm4_encrypt": [
+          "SM4"
+        ]
+      },
+      "definition_offsets": {
+        "ossl_sm4_set_key": [
+          16667
+        ],
+        "ossl_sm4_encrypt": [
+          18299
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/sm2/sm2_sign.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/sm2/sm2_sign.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "af1f27d9ad93a0b342dcabbc68d3bb913e5f0765a091e10bd4b3954f30f87653",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "sm2_sig_gen": [
+          "SM2"
+        ],
+        "sm2_sig_verify": [
+          "SM2"
+        ]
+      },
+      "definition_offsets": {
+        "sm2_sig_gen": [
+          6327
+        ],
+        "sm2_sig_verify": [
+          11844
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/sm2/sm2_crypt.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/sm2/sm2_crypt.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "cb2a66d785c5bab9477331d3454fd4abc300bb45710df7d6e5f02d29d38f74d3",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "ossl_sm2_encrypt": [
+          "SM2"
+        ],
+        "ossl_sm2_decrypt": [
+          "SM2"
+        ]
+      },
+      "definition_offsets": {
+        "ossl_sm2_encrypt": [
+          2957
+        ],
+        "ossl_sm2_decrypt": [
+          8249
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/libgcrypt/cipher/sm3.c",
+        "url": "https://github.com/gpg/libgcrypt/blob/df7af3571744bc8d0d45b46c5b73f300ee447410/cipher/sm3.c",
+        "commit": "df7af3571744bc8d0d45b46c5b73f300ee447410",
+        "sha256": "30cabd8cb235b6f82e326814c3da9449e0666b5af08f8591ff15759c5f62e3fa",
+        "license": "LGPL-2.1-or-later"
+      },
+      "functions": {
+        "transform_blk": [
+          "SM3"
+        ],
+        "sm3_final": [
+          "SM3"
+        ]
+      },
+      "definition_offsets": {
+        "transform_blk": [
+          7959
+        ],
+        "sm3_final": [
+          13160
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/libgcrypt/cipher/sm4.c",
+        "url": "https://github.com/gpg/libgcrypt/blob/df7af3571744bc8d0d45b46c5b73f300ee447410/cipher/sm4.c",
+        "commit": "df7af3571744bc8d0d45b46c5b73f300ee447410",
+        "sha256": "09ae9c879e30de1226259404b14535ae01d1f721930caddb0b0a0e1121375fbd",
+        "license": "LGPL-2.1-or-later"
+      },
+      "functions": {
+        "sm4_expand_key": [
+          "SM4"
+        ],
+        "sm4_encrypt": [
+          "SM4"
+        ]
+      },
+      "definition_offsets": {
+        "sm4_expand_key": [
+          27074
+        ],
+        "sm4_encrypt": [
+          32654
+        ]
+      }
+    }
+  ]
+}

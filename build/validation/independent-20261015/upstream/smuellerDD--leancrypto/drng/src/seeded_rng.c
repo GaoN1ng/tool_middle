@@ -1,0 +1,751 @@
+/*
+ * Copyright (C) 2022 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "build_bug_on.h"
+#include "ext_headers_internal.h"
+#include "initialization.h"
+#include "lc_chacha20_drng.h"
+#include "lc_ctr_drbg.h"
+#include "lc_cshake256_drng.h"
+#include "lc_kmac256_drng.h"
+#include "lc_hash_drbg.h"
+#include "lc_hmac_drbg_sha512.h"
+#include "lc_memcpy_secure.h"
+#include "lc_rng.h"
+#include "lc_xdrbg.h"
+#include "math_helper.h"
+#include "mutex_w.h"
+#include "ret_checkers.h"
+#include "seeded_rng.h"
+#include "status_algorithms.h"
+#include "visibility.h"
+
+/*
+ * The chosen value is derived from AIS 20/31 3.0 for DRG.4 compliance
+ * as well as the requirement for RBG2 in SP800-90C.
+ */
+#define LC_SEEDED_RNG_MAX_BYTES (1 << 14) /* Max bytes without reseed */
+
+/* Select the type of DRNG */
+
+#ifdef LINUX_KERNEL
+
+#if (defined(CONFIG_LEANCRYPTO_SHA3) && defined(CONFIG_LEANCRYPTO_XDRBG_DRNG))
+#define LC_DRNG_XDRBG256
+#define LC_DRNG_XDRBG512
+#elif (defined(CONFIG_LEANCRYPTO_ASCON_HASH) &&                                \
+       defined(CONFIG_LEANCRYPTO_XDRBG_DRNG))
+#define LC_DRNG_XDRBG128
+#endif
+
+#endif /* LINUX_KERNEL */
+
+#ifdef LC_DRNG_XDRBG256
+#define LC_SEEDED_RNG_CTX_SIZE LC_XDRBG256_DRNG_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_XDRBG256_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_XDRBG256
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+#elif defined(LC_DRNG_XDRBG128)
+#define LC_SEEDED_RNG_CTX_SIZE LC_XDRBG128_DRNG_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_XDRBG128_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (128)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_XDRBG128
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#elif defined(LC_DRNG_CSHAKE)
+/* Use cSHAKE 256 */
+#define LC_SEEDED_RNG_CTX_SIZE LC_CSHAKE256_DRNG_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_CSHAKE256_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_CSHAKE_DRBG
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#elif defined(LC_DRNG_KMAC)
+/* Use KMAC 256 */
+#define LC_SEEDED_RNG_CTX_SIZE LC_KMAC256_DRNG_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_KMAC256_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_KMAC_DRBG
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#elif defined(LC_DRNG_HASH_DRBG)
+/* Use Hash DRBG SHA512 */
+#define LC_SEEDED_RNG_CTX_SIZE LC_DRBG_HASH_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_DRBG_HASH_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_HASH_DRBG
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#elif defined(LC_DRNG_HMAC_DRBG)
+/* Use HMAC DRBG SHA512 */
+#define LC_SEEDED_RNG_CTX_SIZE LC_DRBG_HMAC_CTX_SIZE(LC_DRBG_HMAC_CORE)
+#define LC_SEEDED_RNG_CTX(name) LC_DRBG_HMAC_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_HMAC_DRBG
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#elif defined(LC_DRNG_XDRBG512)
+#define LC_SEEDED_RNG_CTX_SIZE LC_XDRBG512_DRNG_CTX_SIZE
+#define LC_SEEDED_RNG_CTX(name) LC_XDRBG512_RNG_CTX(name)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (512)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_XDRBG512
+#define LC_SEEDED_RNG_MAX_CHUNK (48 * (LC_XDRBG512_DRNG_MAX_CHUNK >> 3))
+
+#elif defined(LC_DRNG_CTR_DRBG)
+#define LC_SEEDED_RNG_CTX_SIZE LC_DRBG_CTR_CTX_SIZE_USE_DF
+#define LC_SEEDED_RNG_CTX(name)                                                \
+	LC_DRBG_CTR_RNG_CTX(name, 1, LC_DRBG_CTR_SCRATCHPAD_USE_DF)
+#define LC_SEEDED_RNG_SECURITY_STRENGTH (256)
+#define LC_SEEDED_RNG_TYPE LC_ALG_STATUS_CTR_DRBG
+#define LC_SEEDED_RNG_MAX_CHUNK LC_SEEDED_RNG_MAX_BYTES
+
+#else
+#error "Undefined DRNG"
+#endif
+
+#define LC_SEEDED_RNG_PERS1 "Seeded RNG 1"
+#define LC_SEEDED_RNG_PERS2 "Seeded RNG 2"
+
+/*
+ * Number of seeded DRNG instances supported by leancrypto. The instance to
+ * be used is selected based on the current CPU ANDed with the instance mask.
+ *
+ * This value must be 1 or a power of 2 to use a mask to be ANDed.
+ */
+#ifndef LC_SEEDED_RNG_INSTANCES
+#define LC_SEEDED_RNG_INSTANCES 8
+#endif
+#define LC_SEEDED_RNG_INSTANCES_MASK (LC_SEEDED_RNG_INSTANCES - 1)
+
+struct lc_seeded_rng_ctx {
+	struct lc_rng_ctx *rng_ctx;
+	size_t bytes;
+#define LC_SEEDED_RNG_MAX_TIME 60 /* Max seconds without reseed */
+	time64_t last_seeded;
+	pid_t pid; /* Detect a fork */
+	mutex_w_t lock; /* Lock */
+};
+
+/* DRNG state buffer for all instances */
+static LC_ALIGNED_BUFFER(rng_ctx_buf,
+			 LC_SEEDED_RNG_CTX_SIZE * LC_SEEDED_RNG_INSTANCES,
+			 sizeof(uint64_t));
+
+/*
+ * Initialize the state such that a seed is forced - this initializes also the
+ * lock.
+ */
+static struct lc_seeded_rng_ctx seeded_rngs[LC_SEEDED_RNG_INSTANCES] = { 0 };
+
+/******************************************************************************
+ * Debugging support
+ ******************************************************************************/
+
+/*
+ * When enabling the debug mode, the following log should be provided
+$ build/drng/tests/seeded_rng_tester
+Select DRNG 1                                    <- Select secondary instance
+Initialize DRNG 1                                <- Initialize DRNG
+Seed DRNG due to reaching bytes threshold        <- Seeding of the DRNG required
+Pulling 64 bytes from entropy source             <- Attempt to pull from ES
+DRNG successfully seeded with 64 bytes from entropy source <- DRNG is seeded
+Generate 64 output date for caller from DRNG     <- Generate random bits
+Force the DRNG to appear insufficiently seeded - MANUALLY VERIFY that the next call indicates the DRNG to be reseeded
+Seed DRNG due to reaching time threshold         <- DRNG must reseed
+Pulling 32 bytes from entropy source             <- Attempt to pull seed from ES
+DRNG successfully seeded with 32 bytes from entropy source <- DRNG is seeded
+*/
+
+#undef LC_SEEDED_DRNG_DEBUG
+
+#ifdef LC_SEEDED_DRNG_DEBUG
+#define SEEDED_RNG_LOG(...)                                                    \
+	do {                                                                   \
+		printf(__VA_ARGS__);                                           \
+	} while (0)
+#else
+#define SEEDED_RNG_LOG(...)                                                    \
+	do { } while(0)
+#endif
+
+/******************************************************************************
+ * Helper
+ ******************************************************************************/
+
+#ifdef LINUX_KERNEL
+
+static int time64_after(time64_t curr, time64_t base)
+{
+	if (curr < 0)
+		return 0;
+	if (base < 0)
+		return 1;
+	return (curr > base) ? 1 : 0;
+}
+
+static time64_t get_time(void)
+{
+	time64_t t = (time64_t)(jiffies / HZ);
+
+	/*
+	 * Safety measure: return 1 to ensure the DRNG is considered initialized
+	 */
+	if (!t)
+		return 1;
+	return t;
+}
+
+#elif defined(LC_EFI_ENVIRONMENT)
+
+/*
+ * Time-based reseeding is disabled in EFI environment, it only relies on
+ * the number of generated bytes to determine the reseed trigger.
+ */
+static int time64_after(time64_t curr, time64_t base)
+{
+	(void)curr;
+	(void)base;
+	return 0;
+}
+
+static time64_t get_time(void)
+{
+	/* Return 1 to ensure the DRNG is considered initialized */
+	return 1;
+}
+
+#else /* LINUX_KERNEL */
+
+static int time64_after(time64_t curr, time64_t base)
+{
+	if (curr < 0)
+		return 0;
+	if (base < 0)
+		return 1;
+	return (curr > base) ? 1 : 0;
+}
+
+static time64_t get_time(void)
+{
+	time64_t t;
+
+	/*
+	 * Safety measure: return 1 to ensure the DRNG is considered initialized
+	 */
+	if (lc_get_time(&t, NULL))
+		return 1;
+
+	return t;
+}
+
+#endif /* LINUX_KERNEL */
+
+/******************************************************************************
+ * Reseeding strategy
+ ******************************************************************************/
+
+static int lc_seed_seeded_rng(struct lc_seeded_rng_ctx *rng,
+			      const uint8_t *pers, size_t pers_len, int init,
+			      pid_t newpid)
+{
+	/*
+	 * Provide a buffer that can hold twice of the security strength.
+	 * This is compliant to SP800-90C as it mandates 3/2 of the security
+	 * strength. The reason why this code uses double is the Jitter RNG
+	 * which has a block size of 256 bits. If requests for a truncated block
+	 * are made, the cut off parts are simply thrown away, which is a waste.
+	 * Thus, this code always seeds with multiples of 256 bits.
+	 *
+	 * We provide twice the buffer size for the kernel seed sources.
+	 */
+	uint8_t seed[(LC_SEEDED_RNG_SECURITY_STRENGTH / 8) * 2 * 2];
+	/* Seed it with security strength bits of entropy */
+	size_t seedsize = LC_SEEDED_RNG_SECURITY_STRENGTH / 8;
+	ssize_t datasize;
+	int ret = 0;
+
+	CKNULL(rng, -EINVAL);
+
+	/*
+	 * For initialization of the DRNG, seed with double the security
+	 * strength compliant to SP800-90C.
+	 */
+	if (init)
+		seedsize = sizeof(seed) / 2;
+
+	SEEDED_RNG_LOG("Pulling %zu bytes from entropy source\n", seedsize);
+
+	/* Get requested amount of entropy */
+	datasize = get_full_entropy(seed, seedsize);
+	CKRET(((datasize < (ssize_t)seedsize) ||
+	       (size_t)datasize > sizeof(seed)), -EFAULT);
+
+	/*
+	 * If the caller does not provide a personalization string, let us
+	 * use the internal one.
+	 */
+	if (!pers) {
+		/*
+		 * During initialization, insert our 2nd personalization string.
+		 */
+		if (init) {
+			pers = (const uint8_t *)LC_SEEDED_RNG_PERS2;
+			pers_len = sizeof(LC_SEEDED_RNG_PERS2) - 1;
+		} else {
+			pers = (const uint8_t *)LC_SEEDED_RNG_PERS1;
+			pers_len = sizeof(LC_SEEDED_RNG_PERS1) - 1;
+		}
+	}
+
+	/* Perform seeding of DRNG */
+	CKINT(lc_rng_seed(rng->rng_ctx, seed, (size_t)datasize, pers,
+			  pers_len));
+
+	rng->bytes = 0;
+	rng->last_seeded = get_time();
+
+	/* If we are given a new PID, apply it after a successful reseed */
+	if (newpid)
+		rng->pid = newpid;
+
+	SEEDED_RNG_LOG("DRNG successfully seeded with %zd bytes from entropy source\n",
+		       datasize);
+
+out:
+	lc_memset_secure(seed, 0, sizeof(seed));
+	return ret;
+}
+
+static time64_t time_after_now(time64_t base, time64_t *curr_time)
+{
+	time64_t curr = get_time();
+
+	*curr_time = curr;
+	return time64_after(curr, base) ? (curr - base) : 0;
+}
+
+static int lc_seeded_rng_must_reseed(struct lc_seeded_rng_ctx *rng,
+				     pid_t *newpid, time64_t *curr_time)
+{
+	pid_t pid;
+
+	/* Reseed if ... */
+
+	/* ... we generated too much data ... */
+	if (rng->bytes > LC_SEEDED_RNG_MAX_CHUNK) {
+		SEEDED_RNG_LOG("Seed DRNG due to reaching bytes threshold\n");
+		return 1;
+	}
+
+	/* ... or the DRNG had an (accidental?) wrap of the time ...*/
+	if (rng->last_seeded < 0) {
+		SEEDED_RNG_LOG("Seed DRNG as its time wrapped\n");
+		return 1;
+	}
+
+	/* ... or our seeding was too long ago ... */
+	if (time_after_now(rng->last_seeded + LC_SEEDED_RNG_MAX_TIME,
+			   curr_time)) {
+		SEEDED_RNG_LOG("Seed DRNG due to reaching time threshold\n");
+		return 1;
+	}
+
+	/*
+	 * ... or we detected a fork (do not set the pid here. It is only set if
+	 * the reseed was successful).
+	 */
+	pid = getpid();
+	if (rng->pid != pid) {
+		SEEDED_RNG_LOG("Seed DRNG due to reaching time threshold\n");
+		*newpid = pid;
+		return 1;
+	}
+
+	SEEDED_RNG_LOG("DRNG does not need to be seeded\n");
+	return 0;
+}
+
+/* Caller must have the rng ctx locked */
+static int lc_check_reseed(struct lc_seeded_rng_ctx *rng, time64_t *curr_time,
+			   int init)
+{
+	pid_t newpid = 0;
+
+	/* Force reseed if needed using the time stamp as additional data. */
+	if (lc_seeded_rng_must_reseed(rng, &newpid, curr_time)) {
+		return lc_seed_seeded_rng(rng, (uint8_t *)curr_time,
+					  sizeof(*curr_time), init, newpid);
+	}
+
+	return 0;
+}
+
+/******************************************************************************
+ * Impelementations dependet on number of instances
+ ******************************************************************************/
+
+#if (LC_SEEDED_RNG_INSTANCES > 1)
+/* Initialize the noise source guaranteeing they are only called once */
+static inline int lc_seeded_rng_init_noise_source(void)
+{
+	static int noise_source_init = 0;
+
+	if (!noise_source_init) {
+		noise_source_init = 1;
+		return seeded_rng_noise_init();
+	}
+	return 0;
+}
+
+#else /* (LC_SEEDED_RNG_INSTANCES > 1) */
+
+/* Here we have only one DRNG instance */
+
+/*
+ * Get the seed data from the entropy source - use a define to ensure the
+ * debug logging in lc_seed_seeded_rng refers to the correct seed source.
+ */
+#define lc_get_seeddata get_full_entropy
+
+/* Initialize the noise source guaranteeing they are only called once */
+static inline int lc_seeded_rng_init_noise_source(void)
+{
+	/* This function is guaranteed to be called only once */
+	return seeded_rng_noise_init();
+}
+
+#endif /* (LC_SEEDED_RNG_INSTANCES > 1) */
+
+/* Initialize the seeded_rng_context. */
+static int lc_seeded_rng_init_state(struct lc_seeded_rng_ctx *rng)
+{
+	LC_SEEDED_RNG_CTX(rng->rng_ctx);
+	rng->bytes = LC_SEEDED_RNG_MAX_CHUNK + 1;
+	rng->pid = getpid();
+	return lc_seeded_rng_init_noise_source();
+}
+
+/******************************************************************************
+ * Zeroization of DRNGs
+ ******************************************************************************/
+
+static void lc_seeded_rng_zero_state_internal(
+	struct lc_seeded_rng_ctx *seeded_rng)
+{
+	struct lc_rng_ctx *rng;
+
+	rng = seeded_rng->rng_ctx;
+	if (!rng)
+		return;
+
+	mutex_w_lock(&seeded_rng->lock);
+
+	if (seeded_rng->last_seeded)
+		lc_rng_zero(rng);
+
+	/*
+	 * Set the state such that in case the seeded_rng is used after this
+	 * function, it is automatically newly instantiated. Surely any use
+	 * after this call of the seeded_rng is a programming bug, but
+	 * leancrypto tries to be as gracefully as possible especially in the
+	 * realm of random numbers - the pillar of all cryptography.
+	 *
+	 * seeded.rng does not need to be reinitialized as lc_rng_zero only
+	 * clears the state, but leaves the RNG handle fully in tact.
+	 */
+	seeded_rng->pid = 0;
+	seeded_rng->last_seeded = 0;
+	seeded_rng->bytes = LC_SEEDED_RNG_MAX_CHUNK + 1,
+
+	mutex_w_unlock(&seeded_rng->lock);
+}
+
+LC_DEFINE_DESTRUCTOR(lc_seeded_rng_zero_state);
+void lc_seeded_rng_zero_state(void)
+{
+	unsigned int i;
+
+	for (i = 0; i < LC_SEEDED_RNG_INSTANCES; i++)
+		lc_seeded_rng_zero_state_internal(&seeded_rngs[i]);
+
+	seeded_rng_noise_fini();
+}
+
+/******************************************************************************
+ * Select the appropriate DRNG instance
+ ******************************************************************************/
+
+static inline unsigned int lc_get_drng_instance(void)
+{
+	/* LC_SEEDED_RNG_INSTANCES must be larger than 0 */
+	BUILD_BUG_ON(LC_SEEDED_RNG_INSTANCES < 1);
+	/* LC_SEEDED_RNG_INSTANCES must be a power of 2 */
+	BUILD_BUG_ON(LC_SEEDED_RNG_INSTANCES & (LC_SEEDED_RNG_INSTANCES - 1));
+
+#if (LC_SEEDED_RNG_INSTANCES > 1)
+	static atomic_t ctr = ATOMIC_INIT(0);
+	unsigned int instance;
+
+#ifdef LINUX_KERNEL
+	/*
+	 * The Linux kernel atomic_inc implementation does not support returning
+	 * the value after increment. Thus, this code performs the read / inc
+	 * dual step.
+	 */
+	atomic_inc(&ctr);
+	instance = (unsigned int)atomic_read(&ctr);
+#else /* LINUX_KERNEL */
+	instance = (unsigned int)atomic_inc(&ctr);
+#endif /* LINUX_KERNEL */
+
+	instance &= LC_SEEDED_RNG_INSTANCES_MASK;
+
+	/*
+	 * Round-robin mechanism returning the DRNG instance to be used
+	 */
+	return instance;
+#else
+	/* If there is only one instance, there is nothing to select */
+	return 0;
+#endif
+}
+
+static int lc_get_seeded_rng(struct lc_seeded_rng_ctx **rng_ret,
+			     time64_t *curr_time)
+{
+	struct lc_seeded_rng_ctx *seeded_rng;
+	unsigned int instance = lc_get_drng_instance();
+	int ret = 0, init = 0;
+
+	SEEDED_RNG_LOG("Select DRNG %u\n", instance);
+
+	seeded_rng = &seeded_rngs[instance];
+
+	mutex_w_lock(&seeded_rng->lock);
+
+	/* Initialize the DRNG state at the beginning */
+	if (!seeded_rng->last_seeded) {
+		uint8_t *rng_ctx_tmp = (uint8_t *)rng_ctx_buf;
+
+		SEEDED_RNG_LOG("Initialize DRNG %u\n", instance);
+
+		rng_ctx_tmp += instance * LC_SEEDED_RNG_CTX_SIZE;
+		BUILD_BUG_ON(LC_SEEDED_RNG_CTX_SIZE % sizeof(uint64_t));
+
+		/*
+		 * Due to rng_ctx_buf being aligned to 64 bits and
+		 * LC_SEEDED_RNG_CTX_SIZE being  multiple of 64 bits, this
+		 * cast is appropriate.
+		 */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
+		seeded_rng->rng_ctx = (struct lc_rng_ctx *)rng_ctx_tmp;
+#pragma GCC diagnostic pop
+		CKINT(lc_seeded_rng_init_state(seeded_rng));
+		init = 1;
+	}
+
+	CKINT(lc_check_reseed(seeded_rng, curr_time, init));
+
+	*rng_ret = seeded_rng;
+
+out:
+	mutex_w_unlock(&seeded_rng->lock);
+	return ret;
+}
+
+/******************************************************************************
+ * lc_rng Interface
+ ******************************************************************************/
+
+void lc_seeded_rng_status(char *buf, size_t len)
+{
+	if (len < 20 || !buf)
+		return;
+
+	/* Add the \0 as a safety-measure */
+	lc_memcpy_secure(buf, len, "  \"entropySource\": \"\0", 21);
+	seeded_rng_status(buf + 20, len - 20);
+
+	size_t len2 = strlen(buf);
+	if (len2 > len - 4)
+		return;
+	lc_memcpy_secure(buf + len2 - 1, len - len2, "\",\n\0", 4);
+}
+
+static int lc_seeded_rng_generate(void *_state, const uint8_t *addtl_input,
+				  size_t addtl_input_len, uint8_t *out,
+				  size_t outlen)
+{
+	struct lc_seeded_rng_ctx *rng = NULL;
+	size_t updated_len;
+	time64_t curr_time;
+	int ret;
+
+	if (_state)
+		return -EINVAL;
+
+	/* Get the DRNG state that is fully seeded */
+	CKINT(lc_get_seeded_rng(&rng, &curr_time));
+
+	SEEDED_RNG_LOG("Generate %zu output date for caller from DRNG\n",
+		       outlen);
+
+	mutex_w_lock(&rng->lock);
+
+	/*
+	 * Generate random numbers
+	 *
+	 * Always insert the gathered time as additional input into the DRBG.
+	 * This is intended to ensure different DRBG states in case there
+	 * was any address space duplication that the getpid() operation did
+	 * not detect (which we hope does not occur).
+	 *
+	 * This call allows generating more data than LC_SEEDED_RNG_MAX_CHUNK
+	 * since the last reseed. This is explicitly permissible in SP800-90C
+	 * which mandates that the next generate call would surpass the given
+	 * limit causes a forced reseeding.
+	 *
+	 * We use LC_SEEDED_RNG_MAX_CHUNK which is guaranteed to be not larger
+	 * than LC_SEEDED_RNG_MAX_BYTES, but which is set to a value that is
+	 * always a multiple of the block size of the used DRBG for efficiency
+	 * reason.
+	 */
+	BUILD_BUG_ON(LC_SEEDED_RNG_MAX_CHUNK > LC_SEEDED_RNG_MAX_BYTES);
+	while (outlen) {
+		size_t todo = min_size(LC_SEEDED_RNG_MAX_CHUNK, outlen);
+
+		if (addtl_input) {
+			/*
+			* Insert the current time as a reseed operation - this
+			* operation is not considered to add entropy, but shall
+			* just mix the state and act as a form of domain
+			* separation.
+			*/
+			CKINT(lc_rng_seed(rng->rng_ctx, (uint8_t *)&curr_time,
+					  sizeof(curr_time), NULL, 0));
+			CKINT(lc_rng_generate(rng->rng_ctx, addtl_input,
+					      addtl_input_len, out, todo));
+		} else {
+			CKINT(lc_rng_generate(rng->rng_ctx,
+					      (uint8_t *)&curr_time,
+					      sizeof(curr_time), out, todo));
+		}
+
+		/*
+		 * Check wrap around and avoid a wrap for the rng->bytes state
+		 */
+		updated_len = rng->bytes + todo;
+		if (updated_len < rng->bytes)
+			rng->bytes = (size_t)~0;
+		else
+			rng->bytes = updated_len;
+
+		out += todo;
+		outlen -= todo;
+
+		/*
+		 * Check and enforce reseed unconditionally.
+		 */
+#ifdef LC_SEEDED_DRNG_DEBUG
+		SEEDED_RNG_LOG("Force the DRNG to appear insufficiently seeded - MANUALLY VERIFY that the next call indicates the DRNG to be reseeded\n");
+		rng->last_seeded -= LC_SEEDED_RNG_MAX_TIME + 1;
+#endif
+		CKINT(lc_check_reseed(rng, &curr_time, 0));
+	}
+
+out:
+	if (rng)
+		mutex_w_unlock(&rng->lock);
+
+	/* In error case, zeroize buffer not written to */
+	if (ret)
+		lc_memset_secure(out, 0, outlen);
+
+	return ret;
+}
+
+static int lc_seeded_rng_seed(void *_state, const uint8_t *seed, size_t seedlen,
+			      const uint8_t *persbuf, size_t perslen)
+{
+	struct lc_seeded_rng_ctx *rng = NULL;
+	time64_t curr_time;
+	int ret;
+
+	if (_state)
+		return -EINVAL;
+
+	CKINT(lc_get_seeded_rng(&rng, &curr_time));
+
+	mutex_w_lock(&rng->lock);
+
+	/*
+	 * Use the time stamp as additional data to seed the DRBG with the
+	 * internal entropy sources to ensure proper seeding with all required
+	 * entropy. The use of internal entropy sources is unconditional to
+	 * not rely on the caller-provided data.
+	 */
+	CKINT(lc_seed_seeded_rng(rng, (uint8_t *)&curr_time, sizeof(curr_time),
+				 0, 0));
+
+	/* Now insert the caller-provided data. */
+	CKINT(lc_rng_seed(rng->rng_ctx, seed, seedlen, persbuf, perslen));
+
+out:
+	if (rng)
+		mutex_w_unlock(&rng->lock);
+	return ret;
+}
+
+static void lc_seeded_rng_zero(void *_state)
+{
+	struct lc_seeded_rng_ctx *rng = NULL;
+	time64_t curr_time;
+
+	(void)_state;
+
+	/*
+	 * Instead of zeroizing the state, we simply reseed the state to
+	 * obliterate any potential information an adversay may have about
+	 * the current state. This implies that the seeded_rng is always ready
+	 * for action in case there is a programming error in the caller and
+	 * he calls zeroize by immediately following a generate operation.
+	 */
+
+	if (lc_get_seeded_rng(&rng, &curr_time))
+		return;
+
+	mutex_w_lock(&rng->lock);
+	lc_seed_seeded_rng(rng, (uint8_t *)&curr_time, sizeof(curr_time), 0, 0);
+	mutex_w_unlock(&rng->lock);
+}
+
+static const struct lc_rng _lc_seeded_rng = {
+	.generate = lc_seeded_rng_generate,
+	.seed = lc_seeded_rng_seed,
+	.zero = lc_seeded_rng_zero,
+	.algorithm_type = LC_SEEDED_RNG_TYPE | LC_ALG_STATUS_TYPE_SEEDED_RNG,
+};
+
+static struct lc_rng_ctx _lc_seeded_rng_ctx = { &_lc_seeded_rng, NULL };
+
+struct lc_rng_ctx *lc_seeded_rng_internal = &_lc_seeded_rng_ctx;
+
+LC_INTERFACE_SYMBOL(struct lc_rng_ctx *, lc_seeded_rng) = &_lc_seeded_rng_ctx;

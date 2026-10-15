@@ -1,0 +1,14 @@
+qcs.function_signatures function_regions elapsed 0.004 total 2.587
+qcs.function_signatures function_regions elapsed 0.003 total 3.288
+qcs.function_signatures function_regions elapsed 0.003 total 3.865
+qcs.function_signatures function_regions elapsed 0.003 total 3.871
+qcs.guomi.binary_bignum binary_equations elapsed 0.566 total 4.609
+qcs.controlflow analyze elapsed 20.489 total 42.256
+qcs.controlflow analyze elapsed 3.821 total 46.078
+qcs.guomi.binary_semantics witnesses elapsed 0.188 total 46.267
+qcs.operations binary_findings elapsed 0.197 total 46.495
+qcs.guomi.binary_bignum binary_equations elapsed 0.01 total 46.505
+qcs.guomi.binary_semantics scan_binary_semantics elapsed 54.42 total 58.289
+qcs.function_signatures function_regions elapsed 0.002 total 58.291
+qcs.semantic_probes scan_probes elapsed 6.394 total 64.683
+partial [{'engine': 'guomi_semantic', 'code': 'analysis_limit', 'message': 'Local operation analysis budget exhausted'}, {'engine': 'dispatch', 'code': 'timeout', 'message': 'Overall scan deadline exceeded'}]

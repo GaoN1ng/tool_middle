@@ -1,0 +1,16 @@
+test_aarch64_stub_never_uses_import_name_as_address (test_semantic_paths.SemanticPathTests.test_aarch64_stub_never_uses_import_name_as_address) ... ok
+test_actual_definition_macro_preserves_body_offsets (test_semantic_paths.SemanticPathTests.test_actual_definition_macro_preserves_body_offsets) ... ok
+test_arm_pc_and_neon_alignment_are_addresses_not_displacements (test_semantic_paths.SemanticPathTests.test_arm_pc_and_neon_alignment_are_addresses_not_displacements) ... ok
+test_binary_xhat_requires_both_high_zero_limbs (test_semantic_paths.SemanticPathTests.test_binary_xhat_requires_both_high_zero_limbs) ... ok
+test_curve_signing_needs_scalar_inverse_and_same_coordinate (test_semantic_paths.SemanticPathTests.test_curve_signing_needs_scalar_inverse_and_same_coordinate) ... ok
+test_include_suffix_is_unambiguous_and_stays_local (test_semantic_paths.SemanticPathTests.test_include_suffix_is_unambiguous_and_stays_local) ... ok
+test_key_agreement_needs_real_xhat_and_correct_peer_scalar (test_semantic_paths.SemanticPathTests.test_key_agreement_needs_real_xhat_and_correct_peer_scalar) ... ok
+test_ladder_needs_all_bound_equations_inverse_and_output (test_semantic_paths.SemanticPathTests.test_ladder_needs_all_bound_equations_inverse_and_output) ... ok
+test_missing_or_conflicting_declaration_definitions_are_declined (test_semantic_paths.SemanticPathTests.test_missing_or_conflicting_declaration_definitions_are_declined) ... ok
+test_natural_loop_entry_keeps_pointer_without_exporting_exit_state (test_semantic_paths.SemanticPathTests.test_natural_loop_entry_keeps_pointer_without_exporting_exit_state) ... ok
+test_source_xhat_requires_untouched_affine_coordinate_and_all_stores (test_semantic_paths.SemanticPathTests.test_source_xhat_requires_untouched_affine_coordinate_and_all_stores) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.274s
+
+OK

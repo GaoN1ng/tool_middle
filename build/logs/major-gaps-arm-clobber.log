@@ -1,0 +1,46 @@
+CLOBBER ['stack:0[-112]', '96', 'unknown-argument@78956:r2', 'unknown-argument@78956:r3', 'load:stack:0[-184]', 'load:stack:0[-180]', 'load:stack:0[-176]', 'input:0:r0[96]']
+CLOBBER ['stack:0[-112]', '96', 'unknown-argument@79432:r2', 'unknown-argument@79432:r3', 'load:stack:0[-176]', 'load:stack:0[-172]', 'load:stack:0[-168]', 'input:0:r0']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81000:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81088:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81180:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81000:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81088:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81180:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+XHAT ('input:0:r1[0]', 'input:0:r0', 82856, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('input:0:r1[0]', 'input:0:r0', 82876, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('input:0:r1[0]', 'input:0:r0', 82884, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+CLOBBER ['stack:0[-112]', '96', 'unknown-argument@78956:r2', 'unknown-argument@78956:r3', 'load:stack:0[-184]', 'load:stack:0[-180]', 'load:stack:0[-176]', 'input:0:r0[96]']
+CLOBBER ['stack:0[-112]', '96', 'unknown-argument@79432:r2', 'unknown-argument@79432:r3', 'load:stack:0[-176]', 'load:stack:0[-172]', 'load:stack:0[-168]', 'input:0:r0']
+XHAT ('stack:0[-248]', 'load:stack:0[12]', 80584, 'Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores')
+XHAT ('stack:0[-280]', 'stack:0[-120]', 80604, 'Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores')
+CLOBBER ['stack:0[-248]', '32', 'unknown-argument@81624:r2', 'unknown-argument@81624:r3', 'unknown@80656:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81000:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81088:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81180:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-248]', '32', 'unknown-argument@81624:r2', 'unknown-argument@81624:r3', 'unknown@80656:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+XHAT ('stack:0[-248]', 'load:stack:0[12]', 80584, 'Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores')
+XHAT ('stack:0[-280]', 'stack:0[-120]', 80604, 'Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores')
+CLOBBER ['stack:0[-248]', '32', 'unknown-argument@81624:r2', 'unknown-argument@81624:r3', 'unknown@80656:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81000:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81088:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-216]', '96', 'unknown-argument@81612:r2', 'unknown-argument@81612:r3', 'unknown@81180:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-440]', 'stack:0[-344]', '32', 'stack:0[-504]', 'load:stack:0[-616]', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+CLOBBER ['stack:0[-248]', '32', 'unknown-argument@81624:r2', 'unknown-argument@81624:r3', 'unknown@80656:ip', 'load:stack:0[-612]', 'load:stack:0[-608]', 'load:stack:0[-604]']
+XHAT ('input:0:r1[0]', 'input:0:r0', 82856, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('input:0:r1[0]', 'input:0:r0', 82876, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('input:0:r1[0]', 'input:0:r0', 82884, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+CLOBBER ['stack:0[-112]', '96', 'unknown-argument@78956:r2', 'unknown-argument@78956:r3', 'unknown@78756:ip', 'load:stack:0[-180]', 'load:stack:0[-176]', 'input:0:r0[96]']
+CLOBBER ['stack:1[-112]', '96', 'unknown-argument@79432:r2', 'unknown-argument@79432:r3', 'unknown@79296:ip', 'load:stack:1[-172]', 'load:stack:1[-168]', 'result@79028']
+CLOBBER ['stack:2[-440]', 'stack:2[-344]', '32', 'stack:2[-504]', 'unknown@81180:ip', 'load:stack:2[-612]', 'load:stack:2[-608]', 'load:stack:2[-604]']
+XHAT ('unknown@81808:r1[0]', 'result@81744', 82856, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('unknown@81808:r1[0]', 'result@81744', 82876, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+XHAT ('unknown@81808:r1[0]', 'result@81744', 82884, 'Actual low 128 affine-x bits, bit 127 set, complete upper 128 zero stores')
+MATCH []
+HELPERS [{'address': 81936, 'method': 'inferred affine x-hat helper', 'point_argument': 0, 'destination_argument': 1}]

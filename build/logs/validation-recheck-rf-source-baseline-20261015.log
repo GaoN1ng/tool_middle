@@ -1,0 +1,15 @@
+{
+  "files": 22,
+  "micro": {
+    "TP": 3,
+    "FP": 0,
+    "FN": 10,
+    "TN": 273,
+    "recall": 0.23076923076923078,
+    "false_negative_rate": 0.7692307692307693,
+    "precision": 1.0
+  },
+  "scan_status": {
+    "completed": 22
+  }
+}

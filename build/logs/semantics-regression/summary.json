@@ -1,0 +1,168 @@
+{
+  "all_passed": false,
+  "tests": 197,
+  "modules": [
+    {
+      "module": "test_function_signatures",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 255.41249409597367,
+      "log": "build/logs/semantics-regression/test_function_signatures.log"
+    },
+    {
+      "module": "test_bound_static_state",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 40.60801040427759,
+      "log": "build/logs/semantics-regression/test_bound_static_state.log"
+    },
+    {
+      "module": "test_controlflow_primitives",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 32.61016663489863,
+      "log": "build/logs/semantics-regression/test_controlflow_primitives.log"
+    },
+    {
+      "module": "test_coverage_repairs",
+      "exit_code": 0,
+      "tests": 15,
+      "seconds": 53.0720926951617,
+      "log": "build/logs/semantics-regression/test_coverage_repairs.log"
+    },
+    {
+      "module": "test_semantic_followup",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 396.4096201029606,
+      "log": "build/logs/semantics-regression/test_semantic_followup.log"
+    },
+    {
+      "module": "test_guomi_operations",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.20771658699959517,
+      "log": "build/logs/semantics-regression/test_guomi_operations.log"
+    },
+    {
+      "module": "test_guomi_sm2_fixes",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 396.64818626781926,
+      "log": "build/logs/semantics-regression/test_guomi_sm2_fixes.log"
+    },
+    {
+      "module": "test_message_schedules",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.17812106804922223,
+      "log": "build/logs/semantics-regression/test_message_schedules.log"
+    },
+    {
+      "module": "test_mips_controlflow",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.2121976842172444,
+      "log": "build/logs/semantics-regression/test_mips_controlflow.log"
+    },
+    {
+      "module": "test_ml_features",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.16546841012313962,
+      "log": "build/logs/semantics-regression/test_ml_features.log"
+    },
+    {
+      "module": "test_linux_runtime",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 3.423514659050852,
+      "log": "build/logs/semantics-regression/test_linux_runtime.log"
+    },
+    {
+      "module": "test_operations",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.9279972277581692,
+      "log": "build/logs/semantics-regression/test_operations.log"
+    },
+    {
+      "module": "test_ml_learning",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 5.648585160728544,
+      "log": "build/logs/semantics-regression/test_ml_learning.log"
+    },
+    {
+      "module": "test_scanner",
+      "exit_code": 0,
+      "tests": 41,
+      "seconds": 22.165575710125268,
+      "log": "build/logs/semantics-regression/test_scanner.log"
+    },
+    {
+      "module": "test_semantic_paths",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 0.3881226219236851,
+      "log": "build/logs/semantics-regression/test_semantic_paths.log"
+    },
+    {
+      "module": "test_sha256_rounds",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 5.6393456109799445,
+      "log": "build/logs/semantics-regression/test_sha256_rounds.log"
+    },
+    {
+      "module": "test_sm4_table_rounds",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.4793683779425919,
+      "log": "build/logs/semantics-regression/test_sm4_table_rounds.log"
+    },
+    {
+      "module": "test_source_linkage",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.4418664309196174,
+      "log": "build/logs/semantics-regression/test_source_linkage.log"
+    },
+    {
+      "module": "test_source_pointers",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.25039742421358824,
+      "log": "build/logs/semantics-regression/test_source_pointers.log"
+    },
+    {
+      "module": "test_guomi_generalization",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 55.66405891580507,
+      "log": "build/logs/semantics-regression/test_guomi_generalization.log"
+    },
+    {
+      "module": "test_yara_instructions",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 23.91148621402681,
+      "log": "build/logs/semantics-regression/test_yara_instructions.log"
+    },
+    {
+      "module": "test_research_operations",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 76.78094797581434,
+      "log": "build/logs/semantics-regression/test_research_operations.log"
+    },
+    {
+      "module": "test_guomi",
+      "exit_code": 1,
+      "tests": 14,
+      "seconds": 1418.5562431178987,
+      "log": "build/logs/semantics-regression/test_guomi.log"
+    }
+  ],
+  "excluded": null
+}

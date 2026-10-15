@@ -1,0 +1,2468 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/b8/b85a3c166801127e/ordinary.so",
+  "input_kind": "executable",
+  "timestamp": "2026-10-15T05:17:19.728992+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "pyelftools": "0.32",
+    "symbol_rules_sha256": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "terminal_api_mapping_sha256": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "yara": {
+      "python_binding": "4.5.4",
+      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+      "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
+      "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+      "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
+    },
+    "function_signatures": {
+      "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "schema_version": "1.0",
+      "signature_count": 1028,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_constants_sha256": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+    "guomi_function_signature": {
+      "database_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+      "schema_version": "1.0",
+      "signature_count": 152,
+      "method": "whole_function_relocation_mask_literals_and_audited_linker_variants",
+      "environment_reference_policy": "guomi-environment-references-1"
+    },
+    "guomi_development_signature": {
+      "database_sha256": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+      "schema_version": "1.0",
+      "signature_count": 211,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_standard_sha256": "914deec5e3c6c09f7e42f768bf0585873663e2766d3dfe2c710011e08343ec15"
+  },
+  "artifact": {
+    "kind": "executable",
+    "format": "ELF",
+    "architecture": "ARM",
+    "sha256": "b85a3c166801127ecc0cbf34cec9d710f61c1b2af83eea94da92050363e725e9",
+    "firmware_relative_path": null,
+    "size_bytes": 789016,
+    "machine": "EM_ARM",
+    "bits": 32,
+    "endianness": "little",
+    "symbol_tables": [
+      ".dynsym"
+    ],
+    "function_symbol_count": 0,
+    "symbol_state": "stripped_or_dynamic_only"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "symbol": {
+      "status": "completed"
+    },
+    "yara": {
+      "status": "completed",
+      "suppressed_instruction_rules": []
+    },
+    "function_signature": {
+      "status": "completed",
+      "architectures": [
+        "arm",
+        "thumb"
+      ],
+      "matched_families": 0
+    },
+    "guomi_constants": {
+      "status": "completed"
+    },
+    "guomi_function_signature": {
+      "status": "completed",
+      "architectures": [
+        "arm",
+        "thumb"
+      ],
+      "matched_families": 0
+    },
+    "guomi_development_signature": {
+      "status": "completed",
+      "architectures": [
+        "arm",
+        "thumb"
+      ],
+      "matched_families": 0
+    },
+    "guomi_semantic": {
+      "status": "completed",
+      "architectures": [
+        "arm",
+        "thumb"
+      ],
+      "instructions": 65248,
+      "matched_algorithms": [
+        "SM2"
+      ]
+    },
+    "operation_binary": {
+      "status": "completed",
+      "architectures": [
+        "arm",
+        "thumb"
+      ],
+      "matched_algorithms": [],
+      "shared_analysis": "guomi_semantic"
+    },
+    "semantic_probes": {
+      "method": "bounded private-memory concrete semantics",
+      "target_native_execution": false,
+      "target_system_calls": false,
+      "candidate_algorithms": [
+        "AES",
+        "RC4"
+      ],
+      "matches": [],
+      "limitations": [
+        "Finite probes do not prove equivalence for all inputs",
+        "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+        "Candidate and time budgets; unmodeled imports decline the probe"
+      ],
+      "status": "budget_exhausted"
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "ELF static symbol table absent: known-function recognition can supply selected asymmetric implementation evidence; unmatched unnamed operations remain a coverage gap.",
+    "YARA x86-64 instruction mappings suppressed on other/unknown architectures; constants provide limited coverage.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Guomi binary operation witnesses are bounded local data-flow and code-neighbourhood heuristics, not complete control-flow or semantic proofs; unsupported lifting may miss implementations."
+  ],
+  "extraction_chain": [],
+  "findings": [
+    {
+      "algorithm": "SM2",
+      "algorithm_category": "asymmetric",
+      "candidate_algorithms": [],
+      "engine": "guomi_semantic",
+      "evidence_type": "binary_instruction",
+      "identifier": "bignum_curve_equation",
+      "line": null,
+      "offset": null,
+      "confidence": "medium",
+      "confidence_reason": "xhat=2^127+(x mod 2^127); t=d+xhat(Rlocal)*rlocal; U=t*(Ppeer+xhat(Rpeer)*Rpeer); serialize U for KDF",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "virtual_address": 79760,
+      "architecture": "thumb",
+      "implementation_verification": "bounded_standard_operation_graph",
+      "operation_witnesses": [
+        {
+          "operation": "sm2_z256_point_from_octets",
+          "arguments": [
+            "stack:0[-136]",
+            "unknown@79476:r1",
+            "65",
+            "input:0:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79552
+        },
+        {
+          "operation": "xhat=2^127+(affine_x mod 2^127)",
+          "arguments": [
+            "stack:0[-264]",
+            "load:stack:0[12]"
+          ],
+          "offset": 79640,
+          "proof": "Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores"
+        },
+        {
+          "operation": "xhat=2^127+(affine_x mod 2^127)",
+          "arguments": [
+            "stack:0[-296]",
+            "stack:0[-136]"
+          ],
+          "offset": 79652,
+          "proof": "Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores"
+        },
+        {
+          "operation": "sm2_z256_modn_mul",
+          "arguments": [
+            "stack:0[-328]",
+            "stack:0[-264]",
+            "load:stack:0[108]",
+            "unknown-argument@79670:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79670
+        },
+        {
+          "operation": "sm2_z256_modn_add",
+          "arguments": [
+            "stack:0[-328]",
+            "stack:0[-328]",
+            "unknown@79474:r7[96]",
+            "unknown-argument@79682:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79682
+        },
+        {
+          "operation": "sm2_z256_point_mul",
+          "arguments": [
+            "stack:0[-232]",
+            "stack:0[-296]",
+            "stack:0[-136]",
+            "unknown-argument@79694:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79694
+        },
+        {
+          "operation": "sm2_z256_point_add",
+          "arguments": [
+            "stack:0[-232]",
+            "load:stack:0[0]",
+            "stack:0[-232]",
+            "unknown-argument@79704:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79704
+        },
+        {
+          "operation": "sm2_z256_point_is_at_infinity",
+          "arguments": [
+            "stack:0[-232]",
+            "unknown-argument@79710:r1",
+            "unknown-argument@79710:r2",
+            "unknown-argument@79710:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79710
+        },
+        {
+          "operation": "sm2_z256_point_mul",
+          "arguments": [
+            "stack:0[-232]",
+            "stack:0[-328]",
+            "stack:0[-232]",
+            "unknown-argument@79726:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79726
+        },
+        {
+          "operation": "sm2_z256_point_is_at_infinity",
+          "arguments": [
+            "stack:0[-232]",
+            "unknown-argument@79732:r1",
+            "unknown-argument@79732:r2",
+            "unknown-argument@79732:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79732
+        },
+        {
+          "operation": "sm2_z256_point_to_uncompressed_octets",
+          "arguments": [
+            "stack:0[-232]",
+            "load:stack:0[20]",
+            "unknown-argument@79746:r2",
+            "unknown-argument@79746:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79746
+        },
+        {
+          "operation": "sm2_z256_point_to_bytes",
+          "arguments": [
+            "stack:0[-232]",
+            "stack:0[-520]",
+            "unknown-argument@79760:r2",
+            "unknown-argument@79760:r3",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79760
+        },
+        {
+          "operation": "sm2_kdf",
+          "arguments": [
+            "stack:0[-520]",
+            "128",
+            "load:stack:0[24]",
+            "load:stack:0[28]",
+            "load:stack:0[-528]",
+            "load:stack:0[-524]",
+            "load:stack:0[-520]",
+            "load:stack:0[-516]"
+          ],
+          "offset": 79816
+        }
+      ],
+      "equation_kind": "key_agreement_curve_equation",
+      "modulus": "SM2-order",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/b8/b85a3c166801127e/ordinary.so"
+    }
+  ],
+  "algorithm_assets": [
+    {
+      "algorithm": "SM2",
+      "algorithm_category": "asymmetric",
+      "confidence": "medium",
+      "confidence_reason": "Strongest rule basis retained; evidence count is not a probability.",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "algorithm": "SM2",
+          "algorithm_category": "asymmetric",
+          "candidate_algorithms": [],
+          "engine": "guomi_semantic",
+          "evidence_type": "binary_instruction",
+          "identifier": "bignum_curve_equation",
+          "line": null,
+          "offset": null,
+          "confidence": "medium",
+          "confidence_reason": "xhat=2^127+(x mod 2^127); t=d+xhat(Rlocal)*rlocal; U=t*(Ppeer+xhat(Rpeer)*Rpeer); serialize U for KDF",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "virtual_address": 79760,
+          "architecture": "thumb",
+          "implementation_verification": "bounded_standard_operation_graph",
+          "operation_witnesses": [
+            {
+              "operation": "sm2_z256_point_from_octets",
+              "arguments": [
+                "stack:0[-136]",
+                "unknown@79476:r1",
+                "65",
+                "input:0:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79552
+            },
+            {
+              "operation": "xhat=2^127+(affine_x mod 2^127)",
+              "arguments": [
+                "stack:0[-264]",
+                "load:stack:0[12]"
+              ],
+              "offset": 79640,
+              "proof": "Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores"
+            },
+            {
+              "operation": "xhat=2^127+(affine_x mod 2^127)",
+              "arguments": [
+                "stack:0[-296]",
+                "stack:0[-136]"
+              ],
+              "offset": 79652,
+              "proof": "Bound local callee: affine-coordinate read and complete 128-bit truncate/set/zero stores"
+            },
+            {
+              "operation": "sm2_z256_modn_mul",
+              "arguments": [
+                "stack:0[-328]",
+                "stack:0[-264]",
+                "load:stack:0[108]",
+                "unknown-argument@79670:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79670
+            },
+            {
+              "operation": "sm2_z256_modn_add",
+              "arguments": [
+                "stack:0[-328]",
+                "stack:0[-328]",
+                "unknown@79474:r7[96]",
+                "unknown-argument@79682:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79682
+            },
+            {
+              "operation": "sm2_z256_point_mul",
+              "arguments": [
+                "stack:0[-232]",
+                "stack:0[-296]",
+                "stack:0[-136]",
+                "unknown-argument@79694:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79694
+            },
+            {
+              "operation": "sm2_z256_point_add",
+              "arguments": [
+                "stack:0[-232]",
+                "load:stack:0[0]",
+                "stack:0[-232]",
+                "unknown-argument@79704:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79704
+            },
+            {
+              "operation": "sm2_z256_point_is_at_infinity",
+              "arguments": [
+                "stack:0[-232]",
+                "unknown-argument@79710:r1",
+                "unknown-argument@79710:r2",
+                "unknown-argument@79710:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79710
+            },
+            {
+              "operation": "sm2_z256_point_mul",
+              "arguments": [
+                "stack:0[-232]",
+                "stack:0[-328]",
+                "stack:0[-232]",
+                "unknown-argument@79726:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79726
+            },
+            {
+              "operation": "sm2_z256_point_is_at_infinity",
+              "arguments": [
+                "stack:0[-232]",
+                "unknown-argument@79732:r1",
+                "unknown-argument@79732:r2",
+                "unknown-argument@79732:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79732
+            },
+            {
+              "operation": "sm2_z256_point_to_uncompressed_octets",
+              "arguments": [
+                "stack:0[-232]",
+                "load:stack:0[20]",
+                "unknown-argument@79746:r2",
+                "unknown-argument@79746:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79746
+            },
+            {
+              "operation": "sm2_z256_point_to_bytes",
+              "arguments": [
+                "stack:0[-232]",
+                "stack:0[-520]",
+                "unknown-argument@79760:r2",
+                "unknown-argument@79760:r3",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79760
+            },
+            {
+              "operation": "sm2_kdf",
+              "arguments": [
+                "stack:0[-520]",
+                "128",
+                "load:stack:0[24]",
+                "load:stack:0[28]",
+                "load:stack:0[-528]",
+                "load:stack:0[-524]",
+                "load:stack:0[-520]",
+                "load:stack:0[-516]"
+              ],
+              "offset": 79816
+            }
+          ],
+          "equation_kind": "key_agreement_curve_equation",
+          "modulus": "SM2-order",
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/b8/b85a3c166801127e/ordinary.so"
+        }
+      ],
+      "runtime_usage": "unknown"
+    }
+  ],
+  "clues": [],
+  "dependencies": [],
+  "components": [],
+  "static_primitive_summaries": [
+    {
+      "method": "path-specific unwind range",
+      "address": 79264,
+      "bytes": 172,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 79436,
+      "bytes": 608,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80044,
+      "bytes": 108,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80152,
+      "bytes": 108,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80260,
+      "bytes": 696,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80956,
+      "bytes": 188,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 81200,
+      "bytes": 232,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 81432,
+      "bytes": 462,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 82444,
+      "bytes": 166,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 82856,
+      "bytes": 236,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 83092,
+      "bytes": 138,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 83440,
+      "bytes": 68,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 83508,
+      "bytes": 182,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 84064,
+      "bytes": 186,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 84820,
+      "bytes": 512,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85332,
+      "bytes": 112,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85444,
+      "bytes": 74,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85680,
+      "bytes": 40,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 86188,
+      "bytes": 96,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 86284,
+      "bytes": 1284,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87612,
+      "bytes": 148,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87760,
+      "bytes": 48,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87808,
+      "bytes": 138,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 88052,
+      "bytes": 56,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 88108,
+      "bytes": 52,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 88160,
+      "bytes": 134,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 88812,
+      "bytes": 118,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 89944,
+      "bytes": 164,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 90108,
+      "bytes": 248,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 90356,
+      "bytes": 240,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 90596,
+      "bytes": 244,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 91016,
+      "bytes": 298,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 92252,
+      "bytes": 326,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 93512,
+      "bytes": 462,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 94604,
+      "bytes": 210,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 95052,
+      "bytes": 88,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 95140,
+      "bytes": 180,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 95320,
+      "bytes": 286,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 95744,
+      "bytes": 176,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 95920,
+      "bytes": 354,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 96584,
+      "bytes": 364,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 96948,
+      "bytes": 194,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 97352,
+      "bytes": 174,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 97732,
+      "bytes": 230,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 98340,
+      "bytes": 166,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 99116,
+      "bytes": 320,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 99436,
+      "bytes": 148,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 99584,
+      "bytes": 232,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 100000,
+      "bytes": 100,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 100100,
+      "bytes": 224,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 100324,
+      "bytes": 188,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 100512,
+      "bytes": 248,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 100760,
+      "bytes": 198,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 101132,
+      "bytes": 340,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 101472,
+      "bytes": 328,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 101800,
+      "bytes": 388,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 102188,
+      "bytes": 504,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 102692,
+      "bytes": 460,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 103152,
+      "bytes": 180,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 103332,
+      "bytes": 164,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 103496,
+      "bytes": 218,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 104020,
+      "bytes": 310,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 104564,
+      "bytes": 284,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 104848,
+      "bytes": 284,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 105132,
+      "bytes": 332,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 105464,
+      "bytes": 436,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 105900,
+      "bytes": 390,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 106760,
+      "bytes": 104,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 106864,
+      "bytes": 116,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 106980,
+      "bytes": 218,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 107416,
+      "bytes": 182,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 107852,
+      "bytes": 54,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 107984,
+      "bytes": 84,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 108364,
+      "bytes": 114,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 109152,
+      "bytes": 204,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 109356,
+      "bytes": 544,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 109900,
+      "bytes": 468,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 110368,
+      "bytes": 864,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 111232,
+      "bytes": 1642,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 114304,
+      "bytes": 560,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 114864,
+      "bytes": 520,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 115384,
+      "bytes": 856,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 116240,
+      "bytes": 1624,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 117900,
+      "bytes": 400,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 118300,
+      "bytes": 372,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 118672,
+      "bytes": 776,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 119448,
+      "bytes": 1866,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 122220,
+      "bytes": 448,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 122668,
+      "bytes": 508,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 123176,
+      "bytes": 792,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 123968,
+      "bytes": 1920,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 125888,
+      "bytes": 2580,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 128796,
+      "bytes": 184,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 129140,
+      "bytes": 756,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 129896,
+      "bytes": 496,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 130392,
+      "bytes": 632,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 131024,
+      "bytes": 1850,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 134520,
+      "bytes": 728,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 135248,
+      "bytes": 244,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 135492,
+      "bytes": 556,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 136048,
+      "bytes": 216,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 136264,
+      "bytes": 632,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 136896,
+      "bytes": 418,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 139584,
+      "bytes": 628,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 140212,
+      "bytes": 1760,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 141972,
+      "bytes": 704,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 142676,
+      "bytes": 460,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 143136,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 143936,
+      "bytes": 160,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 144096,
+      "bytes": 680,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 144776,
+      "bytes": 352,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 145128,
+      "bytes": 848,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 145976,
+      "bytes": 1144,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 147120,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 148220,
+      "bytes": 872,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 149092,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 150192,
+      "bytes": 680,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 150872,
+      "bytes": 436,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 151308,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 152640,
+      "bytes": 312,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 152952,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 153784,
+      "bytes": 152,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 153936,
+      "bytes": 104,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 154040,
+      "bytes": 1032,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 155072,
+      "bytes": 106,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 158576,
+      "bytes": 290,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160020,
+      "bytes": 216,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160236,
+      "bytes": 160,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160396,
+      "bytes": 54,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160500,
+      "bytes": 336,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160836,
+      "bytes": 548,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 161384,
+      "bytes": 1066,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 163304,
+      "bytes": 608,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 163912,
+      "bytes": 408,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 164320,
+      "bytes": 408,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 164728,
+      "bytes": 1104,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 165832,
+      "bytes": 408,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 166240,
+      "bytes": 728,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 166968,
+      "bytes": 512,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 167480,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 168576,
+      "bytes": 672,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 169248,
+      "bytes": 472,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 169720,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 170820,
+      "bytes": 340,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 171160,
+      "bytes": 176,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 171336,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 172136,
+      "bytes": 176,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 172312,
+      "bytes": 1608,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 173920,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 175088,
+      "bytes": 1480,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 176568,
+      "bytes": 792,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 177360,
+      "bytes": 606,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 178940,
+      "bytes": 396,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 179336,
+      "bytes": 376,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 179712,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 180812,
+      "bytes": 1700,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 182512,
+      "bytes": 402,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 183612,
+      "bytes": 164,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 183776,
+      "bytes": 120,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 183896,
+      "bytes": 646,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 184832,
+      "bytes": 120,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 184952,
+      "bytes": 952,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 185904,
+      "bytes": 1170,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 187528,
+      "bytes": 104,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 187632,
+      "bytes": 66,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 188040,
+      "bytes": 70,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 188400,
+      "bytes": 1804,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 190204,
+      "bytes": 36,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "address": 80044,
+      "method": "inferred affine x-hat helper",
+      "point_argument": 0,
+      "destination_argument": 1
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 79144,
+      "bytes": 120,
+      "explored_paths": 4,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 79264,
+      "bytes": 172,
+      "explored_paths": 5,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 79436,
+      "bytes": 608,
+      "explored_paths": 34,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80044,
+      "bytes": 108,
+      "explored_paths": 2,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80152,
+      "bytes": 108,
+      "explored_paths": 2,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80260,
+      "bytes": 696,
+      "explored_paths": 15,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 80956,
+      "bytes": 188,
+      "explored_paths": 3,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 84418,
+      "bytes": 264,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 84682,
+      "bytes": 138,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85332,
+      "bytes": 112,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85444,
+      "bytes": 74,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85548,
+      "bytes": 132,
+      "explored_paths": 3,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85720,
+      "bytes": 72,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 85912,
+      "bytes": 74,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 86284,
+      "bytes": 1284,
+      "explored_paths": 70,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87568,
+      "bytes": 44,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87612,
+      "bytes": 148,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 87760,
+      "bytes": 48,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 117864,
+      "bytes": 36,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 128796,
+      "bytes": 184,
+      "explored_paths": 7,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 128980,
+      "bytes": 160,
+      "explored_paths": 7,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 131024,
+      "bytes": 1850,
+      "explored_paths": 17,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 132874,
+      "bytes": 1646,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 134520,
+      "bytes": 728,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 135492,
+      "bytes": 556,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 136264,
+      "bytes": 632,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 137314,
+      "bytes": 2270,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 140212,
+      "bytes": 1760,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 143136,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 143538,
+      "bytes": 398,
+      "explored_paths": 19,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 144096,
+      "bytes": 680,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 144776,
+      "bytes": 352,
+      "explored_paths": 6,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 145128,
+      "bytes": 848,
+      "explored_paths": 7,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 145976,
+      "bytes": 1144,
+      "explored_paths": 47,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 147120,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 147522,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 148220,
+      "bytes": 872,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 149092,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 149494,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 150872,
+      "bytes": 436,
+      "explored_paths": 20,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 151308,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 151710,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 152952,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 153354,
+      "bytes": 430,
+      "explored_paths": 23,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 154040,
+      "bytes": 1032,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 155178,
+      "bytes": 996,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 156174,
+      "bytes": 2402,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 158576,
+      "bytes": 290,
+      "explored_paths": 5,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 158866,
+      "bytes": 320,
+      "explored_paths": 5,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 160450,
+      "bytes": 50,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 161384,
+      "bytes": 1066,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 162450,
+      "bytes": 854,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 164320,
+      "bytes": 408,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 167480,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 167882,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 169720,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 170122,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 171336,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 171738,
+      "bytes": 398,
+      "explored_paths": 8,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 172312,
+      "bytes": 1608,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 173920,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 174322,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 175020,
+      "bytes": 68,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 175088,
+      "bytes": 1480,
+      "explored_paths": 13,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 176568,
+      "bytes": 792,
+      "explored_paths": 7,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 177360,
+      "bytes": 606,
+      "explored_paths": 64,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 177966,
+      "bytes": 968,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 179712,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 180114,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 180812,
+      "bytes": 1700,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 182512,
+      "bytes": 402,
+      "explored_paths": 16,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 182914,
+      "bytes": 694,
+      "explored_paths": 36,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 183896,
+      "bytes": 646,
+      "explored_paths": 48,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 184542,
+      "bytes": 290,
+      "explored_paths": 3,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 184952,
+      "bytes": 952,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 185904,
+      "bytes": 1170,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 187116,
+      "bytes": 78,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 187698,
+      "bytes": 24,
+      "explored_paths": 1,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 187982,
+      "bytes": 58,
+      "explored_paths": 3,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 188206,
+      "bytes": 40,
+      "explored_paths": 2,
+      "limited": false
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 188400,
+      "bytes": 1804,
+      "explored_paths": 128,
+      "limited": true
+    },
+    {
+      "method": "path-specific unwind range",
+      "address": 190328,
+      "bytes": 78,
+      "explored_paths": 1,
+      "limited": false
+    }
+  ],
+  "operation_diagnostics": {
+    "binary": [
+      {
+        "architecture": "arm",
+        "event_counts": {
+          "immediate": 6170,
+          "rotate": 10,
+          "add": 98,
+          "and": 115,
+          "sub": 14,
+          "xor": 40
+        },
+        "table_reads": {},
+        "located_tables": {},
+        "helper_calls": 1,
+        "stage": "bounded_lifting_finished"
+      },
+      {
+        "architecture": "thumb",
+        "event_counts": {
+          "sub": 2319,
+          "immediate": 22987,
+          "add": 4318,
+          "constant": 6693,
+          "xor": 1402,
+          "and": 1861,
+          "bic": 644
+        },
+        "table_reads": {},
+        "located_tables": {},
+        "helper_calls": 2,
+        "stage": "bounded_lifting_finished"
+      }
+    ]
+  },
+  "semantic_helper_calls": [
+    {
+      "callsite": 83144,
+      "target": 87568,
+      "return_roles": [],
+      "state_offsets": [],
+      "proof": "bounded actual callee bytes, argument-bound state writes"
+    },
+    {
+      "callsite": 187168,
+      "target": 85938,
+      "return_roles": [],
+      "state_offsets": [
+        0
+      ],
+      "proof": "bounded actual callee bytes, argument-bound state writes"
+    },
+    {
+      "callsite": 187168,
+      "target": 85938,
+      "return_roles": [],
+      "state_offsets": [
+        0
+      ],
+      "proof": "bounded actual callee bytes, argument-bound state writes"
+    }
+  ],
+  "controlflow_analysis": [
+    {
+      "architecture": "arm",
+      "section_address": 79144,
+      "status": "completed",
+      "steps": 978,
+      "blocks": 2047,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 104,
+      "declined_transfers": 0,
+      "replayed_blocks": 134,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 489,
+      "component_count": 1465,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "arm",
+      "section_address": 190432,
+      "status": "completed",
+      "steps": 168,
+      "blocks": 1,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 1,
+      "declined_transfers": 0,
+      "replayed_blocks": 1,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 84,
+      "component_count": 1,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "thumb",
+      "section_address": 79144,
+      "status": "completed",
+      "steps": 77637,
+      "blocks": 4231,
+      "loop_edges": 726,
+      "joins": 3462,
+      "widened_blocks": 0,
+      "entry_count": 364,
+      "declined_transfers": 0,
+      "replayed_blocks": 3404,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 46912,
+      "component_count": 410,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "thumb",
+      "section_address": 79144,
+      "phase": "natural_loop_entry_prefix",
+      "status": "completed",
+      "steps": 1000,
+      "blocks": 4231,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 364,
+      "declined_transfers": 0,
+      "replayed_blocks": 80,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 500,
+      "component_count": 4144,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "thumb",
+      "section_address": 190432,
+      "status": "completed",
+      "steps": 20,
+      "blocks": 99,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 1,
+      "declined_transfers": 0,
+      "replayed_blocks": 9,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 10,
+      "component_count": 26,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    }
+  ]
+}

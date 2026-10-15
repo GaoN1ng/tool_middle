@@ -1,0 +1,20 @@
+test_failed_worker_never_emits_a_witness (test_semantic_probes.IsolationTests.test_failed_worker_never_emits_a_witness) ... skipped 'gcc is required only to build the emulator regression fixture'
+test_private_memory_copy_and_permission_fault (test_semantic_probes.IsolationTests.test_private_memory_copy_and_permission_fault) ... skipped 'gcc is required only to build the emulator regression fixture'
+test_unknown_import_syscall_instruction_fault_and_budget_fail_closed (test_semantic_probes.IsolationTests.test_unknown_import_syscall_instruction_fault_and_budget_fail_closed) ... skipped 'gcc is required only to build the emulator regression fixture'
+test_all_block_vectors_required_and_expired_budget_declines (test_semantic_probes.VectorTests.test_all_block_vectors_required_and_expired_budget_declines) ... FAIL
+test_montgomery_reference_matches_rfc7748 (test_semantic_probes.VectorTests.test_montgomery_reference_matches_rfc7748) ... ok
+test_one_matching_curve_vector_does_not_accept (test_semantic_probes.VectorTests.test_one_matching_curve_vector_does_not_accept) ... ok
+test_rc4_reference_matches_rfc6229_first_block (test_semantic_probes.VectorTests.test_rc4_reference_matches_rfc6229_first_block) ... ok
+
+======================================================================
+FAIL: test_all_block_vectors_required_and_expired_budget_declines (test_semantic_probes.VectorTests.test_all_block_vectors_required_and_expired_budget_declines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_semantic_probes.py", line 60, in test_all_block_vectors_required_and_expired_budget_declines
+    self.assertEqual(len(probe_block(FakeMachine(algorithm),[1,2],algorithm,time.monotonic()+2)),1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.104s
+
+FAILED (failures=1, skipped=3)

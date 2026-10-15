@@ -1,0 +1,12 @@
+Processing /var/home/gzn/ourtask/ustc_tool_middle
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: qcs-prototype
+  Building wheel for qcs-prototype (pyproject.toml): started
+  Building wheel for qcs-prototype (pyproject.toml): finished with status 'done'
+  Created wheel for qcs-prototype: filename=qcs_prototype-0.1.0.post1-py3-none-any.whl size=4981994 sha256=4281f81d825731a0fdf4e14e86c387f4ca522b06ae9976665dec5901d13cc16e
+  Stored in directory: /var/home/gzn/ourtask/ustc_tool_middle/build/tmp/pip-ephem-wheel-cache-z7pagg_1/wheels/35/46/d0/99009bd63a7debe824bdefc1fbacfc020215dafff9f9b5aae1
+Successfully built qcs-prototype
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: /var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python -m pip install --upgrade pip

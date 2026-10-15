@@ -1,0 +1,529 @@
+/*
+ * Copyright (C) 2024 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING ANY WAY OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "asym_key_dilithium_ed25519.h"
+#include "ed25519_ctx.h"
+#include "ext_headers_internal.h"
+#include "lc_hash.h"
+#include "pkcs7_internal.h"
+#include "ret_checkers.h"
+#include "small_stack_support.h"
+#include "x509_algorithm_mapper.h"
+
+int private_key_encode_dilithium_ed25519(
+	uint8_t *data, size_t *avail_datalen,
+	struct x509_generate_privkey_context *ctx)
+{
+#ifdef LC_X509_GENERATOR
+	const struct lc_x509_key_data *keys = ctx->keys;
+	size_t ml_dsa_sklen, ed25519_sklen;
+	uint8_t *ml_dsa_ptr, *ed25519_ptr;
+	int ret;
+
+	CKINT(lc_dilithium_ed25519_sk_ptr(&ml_dsa_ptr, &ml_dsa_sklen,
+					  &ed25519_ptr, &ed25519_sklen,
+					  keys->sk.dilithium_ed25519_sk));
+
+	/* Pointers are not used */
+	(void)ml_dsa_ptr;
+	(void)ml_dsa_sklen;
+	(void)ed25519_sklen;
+
+	/*
+	 * See draft version 5:
+	 * Composite-ML-DSA.SerializePrivateKey(mldsaSeed, tradSK) -> bytes
+	 *
+	 * First the ML-DSA seed, then the traditional SK.
+	 */
+	CKINT(lc_x509_concatenate_bit_string(
+		&data, avail_datalen, keys->sk_seed, LC_X509_PQC_SK_SEED_SIZE));
+	/* Only export the secret part of the ED25519 secret key */
+	CKINT(lc_x509_concatenate_bit_string(&data, avail_datalen, ed25519_ptr,
+					     LC_ED25519_RAW_SECRETKEYBYTES));
+
+	printf_debug("Set composite secret key of size %u\n",
+		     LC_X509_PQC_SK_SEED_SIZE + LC_ED25519_RAW_SECRETKEYBYTES);
+
+out:
+	return ret;
+#else
+	(void)data;
+	(void)avail_datalen;
+	(void)ctx;
+	return -EOPNOTSUPP;
+#endif
+}
+
+int private_key_decode_dilithium_ed25519(struct lc_x509_key_data *keys,
+					 const uint8_t *data, size_t datalen)
+{
+	struct workspace {
+		struct lc_dilithium_pk pk;
+		struct lc_dilithium_sk sk;
+	};
+	struct lc_dilithium_ed25519_sk *dilithium_sk =
+		keys->sk.dilithium_ed25519_sk;
+	const uint8_t *ed25519_src_key;
+	uint8_t *dilithium_src_key;
+	size_t dilithium_src_key_len, ed25519_src_key_len;
+	enum lc_dilithium_type dilithium_type = LC_DILITHIUM_UNKNOWN;
+	int ret = 0;
+	LC_DECLARE_MEM(ws, struct workspace, sizeof(uint64_t));
+
+	CKRET((datalen !=
+	       LC_ED25519_RAW_SECRETKEYBYTES + LC_X509_PQC_SK_SEED_SIZE),
+	      -EINVAL);
+
+	switch (keys->sig_type) {
+	case LC_SIG_DILITHIUM_44_ED25519:
+		dilithium_type = LC_DILITHIUM_44;
+		break;
+	case LC_SIG_DILITHIUM_65_ED25519:
+		dilithium_type = LC_DILITHIUM_65;
+		break;
+	case LC_SIG_DILITHIUM_87_ED25519:
+		dilithium_type = LC_DILITHIUM_87;
+		break;
+
+	case LC_SIG_DILITHIUM_44:
+	case LC_SIG_DILITHIUM_65:
+	case LC_SIG_DILITHIUM_87:
+	case LC_SIG_DILITHIUM_44_ED448:
+	case LC_SIG_DILITHIUM_65_ED448:
+	case LC_SIG_DILITHIUM_87_ED448:
+	case LC_SIG_SPHINCS_SHAKE_256S:
+	case LC_SIG_SPHINCS_SHAKE_192S:
+	case LC_SIG_SPHINCS_SHAKE_128S:
+	case LC_SIG_SPHINCS_SHAKE_256F:
+	case LC_SIG_SPHINCS_SHAKE_192F:
+	case LC_SIG_SPHINCS_SHAKE_128F:
+	case LC_SIG_ED25519:
+	case LC_SIG_ED448:
+	case LC_SIG_RSA_PKCS1:
+	case LC_SIG_RSA_PKCS1_SHA2_256:
+	case LC_SIG_RSA_PKCS1_SHA2_384:
+	case LC_SIG_RSA_PKCS1_SHA2_512:
+	case LC_SIG_RSA_PKCS1_SHA3_256:
+	case LC_SIG_RSA_PKCS1_SHA3_384:
+	case LC_SIG_RSA_PKCS1_SHA3_512:
+	case LC_SIG_ECDSA_X963:
+	case LC_SIG_ECDSA_X963_SHA2_256:
+	case LC_SIG_ECDSA_X963_SHA2_384:
+	case LC_SIG_ECDSA_X963_SHA2_512:
+	case LC_SIG_ECDSA_X963_SHA3_256:
+	case LC_SIG_ECDSA_X963_SHA3_384:
+	case LC_SIG_ECDSA_X963_SHA3_512:
+	case LC_SIG_SM2:
+	case LC_SIG_ECRDSA_PKCS1:
+	case LC_SIG_UNKNOWN:
+	default:
+		ret = -ENOPKG;
+		goto out;
+	}
+
+	/*
+	 * Store the seed
+	 */
+	memcpy(keys->sk_seed, data, LC_X509_PQC_SK_SEED_SIZE);
+	keys->sk_seed_set = 1;
+
+	/*
+	 * See draft version 5:
+	 * Composite-ML-DSA.DeserializePrivateKey(bytes) -> (mldsaSeed, tradSK)
+	 *
+	 * First the ML-DSA seed, then the traditional SK.
+	 */
+
+	CKINT(lc_dilithium_keypair_from_seed(&ws->pk, &ws->sk, keys->sk_seed,
+					     LC_X509_PQC_SK_SEED_SIZE,
+					     dilithium_type));
+	CKINT(lc_dilithium_sk_ptr(&dilithium_src_key, &dilithium_src_key_len,
+				  &ws->sk));
+
+	ed25519_src_key = data + LC_X509_PQC_SK_SEED_SIZE;
+	ed25519_src_key_len = LC_ED25519_RAW_SECRETKEYBYTES;
+
+	CKINT(lc_dilithium_ed25519_sk_load(
+		dilithium_sk, dilithium_src_key, dilithium_src_key_len,
+		ed25519_src_key, ed25519_src_key_len));
+
+	printf_debug("Loaded composite public key of size %zu\n", datalen);
+
+out:
+	LC_RELEASE_MEM(ws);
+	return ret;
+}
+
+int public_key_encode_dilithium_ed25519(uint8_t *data, size_t *avail_datalen,
+					const struct lc_x509_key_data *key)
+{
+#ifdef LC_X509_GENERATOR
+	size_t ml_dsa_pklen, ed25519_pklen;
+	uint8_t *ml_dsa_ptr, *ed25519_ptr;
+	int ret;
+
+	CKINT(lc_dilithium_ed25519_pk_ptr(&ml_dsa_ptr, &ml_dsa_pklen,
+					  &ed25519_ptr, &ed25519_pklen,
+					  key->pk.dilithium_ed25519_pk));
+
+	/*
+	 * Concatenate the signature data into the buffer according to
+	 * draft version 5.
+	 */
+	CKINT(lc_x509_concatenate_bit_string(&data, avail_datalen, ml_dsa_ptr,
+					     ml_dsa_pklen));
+	CKINT(lc_x509_concatenate_bit_string(&data, avail_datalen, ed25519_ptr,
+					     ed25519_pklen));
+
+	printf_debug("Set composite public key of size %zu\n",
+		     ml_dsa_pklen + ed25519_pklen);
+
+out:
+	return ret;
+#else
+	(void)data;
+	(void)avail_datalen;
+	(void)key;
+	return -EOPNOTSUPP;
+#endif
+}
+
+int public_key_decode_dilithium_ed25519(
+	struct lc_dilithium_ed25519_pk *dilithium_ed25519_pk,
+	const uint8_t *data, size_t datalen)
+{
+	const uint8_t *dilithium_src, *ed25519_src;
+	size_t dilithium_src_len, ed25519_src_len;
+	int ret = 0;
+
+	CKRET(datalen < LC_ED25519_PUBLICKEYBYTES, -EINVAL);
+
+	/*
+	 * See draft version 5:
+	 * Composite-ML-DSA.DeserializePublicKey(bytes) -> (mldsaKey, tradKey)
+	 *
+	 * First the ML-DSA PK, then the traditional PK. As we have ED25519,
+	 * the code takes the ED25519 PK size and the remainder is the
+	 * ML-DSA PK.
+	 */
+	dilithium_src = data;
+	dilithium_src_len = datalen - LC_ED25519_PUBLICKEYBYTES;
+	ed25519_src = dilithium_src + dilithium_src_len;
+	ed25519_src_len = LC_ED25519_PUBLICKEYBYTES;
+	CKINT(lc_dilithium_ed25519_pk_load(dilithium_ed25519_pk, dilithium_src,
+					   dilithium_src_len, ed25519_src,
+					   ed25519_src_len));
+
+	printf_debug("Loaded composite public key of size %zu\n", datalen);
+
+out:
+	return ret;
+}
+
+static int
+public_key_dilithium_ed25519_get_data(const uint8_t **data_ptr,
+				      size_t *data_len, int *authattrs_tag,
+				      const struct lc_public_key_signature *sig)
+{
+	/*
+	 * Select the data to be signed
+	 *
+	 * We do not support pre-hashed messages! I.e. sig->digest is not
+	 * considered.
+	 */
+	if (sig->authattrs) {
+		*data_ptr = sig->authattrs;
+		*data_len = sig->authattrs_size;
+		if (authattrs_tag)
+			*authattrs_tag = 1;
+		return 0;
+	} else if (sig->raw_data) {
+		*data_ptr = sig->raw_data;
+		*data_len = sig->raw_data_len;
+		if (authattrs_tag)
+			*authattrs_tag = 0;
+		return 0;
+	} else {
+		return -EOPNOTSUPP;
+	}
+}
+
+int public_key_verify_signature_dilithium_ed25519(
+	const struct lc_public_key *pkey,
+	const struct lc_public_key_signature *sig)
+{
+	struct workspace {
+		struct lc_dilithium_ed25519_pk dilithium_pk;
+		struct lc_dilithium_ed25519_sig dilithium_sig;
+		struct lc_dilithium_ed25519_ctx sign_ctx;
+	};
+	const uint8_t *dilithium_src, *ed25519_src, *data_ptr;
+	size_t dilithium_src_len, ed25519_src_len, data_len;
+	int ret = 0, authattrs_tag;
+	LC_DECLARE_MEM(ws, struct workspace, 64);
+
+	/* A signature verification does not work with a private key */
+	CKRET(pkey->key_is_private, -EKEYREJECTED);
+
+	CKINT(public_key_dilithium_ed25519_get_data(&data_ptr, &data_len,
+						    &authattrs_tag, sig));
+
+	CKRET(sig->s_size < LC_ED25519_SIGBYTES, -EINVAL);
+
+	CKINT(public_key_decode_dilithium_ed25519(&ws->dilithium_pk, pkey->key,
+						  pkey->keylen));
+
+	/*
+	 * See draft version 5:
+	 * Composite-ML-DSA<OID>.DeserializeSignatureValue(bytes)
+	 *	-> (mldsaSig, tradSig)
+	 *
+	 * First the ML-DSA PK, then the traditional PK. As we have ED25519,
+	 * the code takes the ED25519 PK size and the remainder is the
+	 * ML-DSA PK.
+	 */
+	dilithium_src = sig->s;
+	dilithium_src_len = sig->s_size - LC_ED25519_SIGBYTES;
+	ed25519_src = dilithium_src + dilithium_src_len;
+	ed25519_src_len = LC_ED25519_SIGBYTES;
+
+	CKINT(lc_dilithium_ed25519_sig_load(&ws->dilithium_sig, dilithium_src,
+					    dilithium_src_len, ed25519_src,
+					    ed25519_src_len));
+
+	printf_debug("Loaded composite signature of size %zu\n", sig->s_size);
+
+	/*
+	 * Verify the signature using Composite-ML-DSA
+	 */
+	LC_DILITHIUM_ED25519_SET_CTX(&ws->sign_ctx);
+	CKINT(lc_dilithium_ed25519_verify_init(&ws->sign_ctx,
+					       &ws->dilithium_pk));
+	if (authattrs_tag) {
+		/* Add the authattr tag */
+		CKINT(lc_dilithium_ed25519_verify_update(
+			&ws->sign_ctx, &lc_pkcs7_authattr_tag,
+			sizeof(lc_pkcs7_authattr_tag)));
+	}
+	CKINT(lc_dilithium_ed25519_verify_update(&ws->sign_ctx, data_ptr,
+						 data_len));
+	CKINT_HARDENED(lc_dilithium_ed25519_verify_final(
+		&ws->dilithium_sig, &ws->sign_ctx, &ws->dilithium_pk));
+
+out:
+	LC_RELEASE_MEM(ws);
+	return ret;
+}
+
+int public_key_generate_signature_dilithium_ed25519(
+	const struct lc_x509_key_data *keys,
+	const struct lc_public_key_signature *sig, uint8_t *sig_data,
+	size_t *available_len)
+{
+#ifdef LC_X509_GENERATOR
+	struct workspace {
+		struct lc_dilithium_ed25519_sig dilithium_ed25519_sig;
+	};
+	struct lc_dilithium_ed25519_sk *dilithium_ed25519_sk =
+		keys->sk.dilithium_ed25519_sk;
+	size_t ml_dsa_siglen, ed25519_siglen, data_len;
+	const uint8_t *data_ptr;
+	uint8_t *ml_dsa_ptr, *ed25519_ptr;
+	int ret;
+	LC_DECLARE_MEM(ws, struct workspace, sizeof(uint64_t));
+
+	CKINT(public_key_dilithium_ed25519_get_data(&data_ptr, &data_len, NULL,
+						    sig));
+
+	/* Sign the signature using Composite-ML-DSA */
+	CKINT(lc_dilithium_ed25519_sign(&ws->dilithium_ed25519_sig, data_ptr,
+					data_len, dilithium_ed25519_sk,
+					lc_seeded_rng));
+
+	CKINT(lc_dilithium_ed25519_sig_ptr(&ml_dsa_ptr, &ml_dsa_siglen,
+					   &ed25519_ptr, &ed25519_siglen,
+					   &ws->dilithium_ed25519_sig));
+	/*
+	 * Concatenate the signature data into the buffer according to
+	 * draft version 5.
+	 */
+	CKINT(lc_x509_concatenate_bit_string(&sig_data, available_len,
+					     ml_dsa_ptr, ml_dsa_siglen));
+	CKINT(lc_x509_concatenate_bit_string(&sig_data, available_len,
+					     ed25519_ptr, ed25519_siglen));
+
+	printf_debug("Set composite signature of size %zu\n",
+		     ml_dsa_siglen + ed25519_siglen);
+
+out:
+	LC_RELEASE_MEM(ws);
+	return ret;
+#else
+	(void)keys;
+	(void)sig;
+	(void)sig_data;
+	(void)available_len;
+	return -EOPNOTSUPP;
+#endif
+}
+
+int public_key_signature_size_dilithium_ed25519(
+	enum lc_dilithium_type dilithium_type, size_t *size)
+{
+	/* sig sizes of all components */
+	*size = lc_dilithium_sig_size(dilithium_type) + LC_ED25519_SIGBYTES;
+	return 0;
+}
+
+int public_key_size_dilithium_ed25519(enum lc_dilithium_type dilithium_type,
+				      size_t *size)
+{
+	/* sig sizes of all components */
+	*size = lc_dilithium_pk_size(dilithium_type) +
+		LC_ED25519_PUBLICKEYBYTES;
+	return 0;
+}
+
+int private_key_size_dilithium_ed25519(enum lc_dilithium_type dilithium_type,
+				       size_t *size)
+{
+	/* sig sizes of all components */
+	*size = lc_dilithium_sk_size(dilithium_type) +
+		LC_ED25519_SECRETKEYBYTES;
+	return 0;
+}
+
+int asym_set_dilithium_ed25519_keypair(struct lc_x509_key_data *gen_data,
+				       struct lc_dilithium_ed25519_pk *pk,
+				       struct lc_dilithium_ed25519_sk *sk)
+{
+	uint8_t *dilithium_pk_ptr, *ed25519_pk_ptr;
+	size_t dilithium_pk_len, ed25519_pk_len;
+	enum lc_dilithium_type dilithium_ed25519_type = LC_DILITHIUM_UNKNOWN;
+	int ret = 0;
+	LC_HASH_CTX_ON_STACK(hash_ctx, LC_X509_SKID_DEFAULT_HASH);
+
+	CKNULL(gen_data, -EINVAL);
+
+	CKRET((!pk && !sk), -EINVAL);
+
+	if (pk) {
+		dilithium_ed25519_type = lc_dilithium_ed25519_pk_type(pk);
+
+		gen_data->pk.dilithium_ed25519_pk = pk;
+
+		CKINT(lc_dilithium_ed25519_pk_ptr(
+			&dilithium_pk_ptr, &dilithium_pk_len, &ed25519_pk_ptr,
+			&ed25519_pk_len, pk));
+		CKINT(lc_hash_init(hash_ctx));
+		lc_hash_update(hash_ctx, dilithium_pk_ptr, dilithium_pk_len);
+		lc_hash_update(hash_ctx, ed25519_pk_ptr, ed25519_pk_len);
+		lc_hash_final(hash_ctx, gen_data->pk_digest);
+		lc_hash_zero(hash_ctx);
+	}
+
+	if (sk) {
+		if (dilithium_ed25519_type != LC_DILITHIUM_UNKNOWN) {
+			enum lc_dilithium_type tmp =
+				lc_dilithium_ed25519_sk_type(sk);
+			if (tmp != dilithium_ed25519_type) {
+				printf_debug(
+					"Public and private key types mismatch\n");
+				ret = -EINVAL;
+				goto out;
+			}
+		} else {
+			dilithium_ed25519_type =
+				lc_dilithium_ed25519_sk_type(sk);
+		}
+
+		gen_data->sk.dilithium_ed25519_sk = sk;
+	}
+
+	switch (dilithium_ed25519_type) {
+	case LC_DILITHIUM_44:
+		gen_data->sig_type = LC_SIG_DILITHIUM_44_ED25519;
+		break;
+	case LC_DILITHIUM_65:
+		gen_data->sig_type = LC_SIG_DILITHIUM_65_ED25519;
+		break;
+	case LC_DILITHIUM_87:
+		gen_data->sig_type = LC_SIG_DILITHIUM_87_ED25519;
+		break;
+	case LC_DILITHIUM_UNKNOWN:
+	default:
+		printf_debug("Unknown Dilithium ED25519 type\n");
+		return -ENOPKG;
+	}
+
+out:
+	return ret;
+}
+
+int asym_keypair_gen_dilithium_ed25519(struct lc_x509_certificate *cert,
+				       struct lc_x509_key_data *keys,
+				       enum lc_dilithium_type dilithium_key_type)
+{
+	struct workspace {
+		struct lc_dilithium_pk pk;
+		struct lc_dilithium_sk sk;
+		struct lc_ed25519_pk pk_ed25519;
+		struct lc_ed25519_sk sk_ed25519;
+	};
+	uint8_t *dilithium_pk_ptr, *dilithium_sk_ptr;
+	size_t dilithium_pk_len, dilithium_sk_len;
+	int ret;
+	LC_DECLARE_MEM(ws, struct workspace, sizeof(uint64_t));
+
+	/* Generate key par with ML-DSA from seed */
+	CKINT(lc_asym_keypair_gen_seed(keys, "ML-DSA-ED25519", 14));
+
+	CKINT(lc_dilithium_keypair_from_seed(&ws->pk, &ws->sk, keys->sk_seed,
+					     LC_X509_PQC_SK_SEED_SIZE,
+					     dilithium_key_type));
+	CKINT(lc_dilithium_pk_ptr(&dilithium_pk_ptr, &dilithium_pk_len,
+				  &ws->pk));
+	CKINT(lc_dilithium_sk_ptr(&dilithium_sk_ptr, &dilithium_sk_len,
+				  &ws->sk));
+
+	CKINT(lc_ed25519_keypair_internal(&ws->pk_ed25519, &ws->sk_ed25519,
+					  lc_seeded_rng));
+
+	CKINT(lc_dilithium_ed25519_sk_load(keys->sk.dilithium_ed25519_sk,
+					   dilithium_sk_ptr, dilithium_sk_len,
+					   ws->sk_ed25519.sk,
+					   LC_ED25519_SECRETKEYBYTES));
+	CKINT(lc_dilithium_ed25519_pk_load(keys->pk.dilithium_ed25519_pk,
+					   dilithium_pk_ptr, dilithium_pk_len,
+					   ws->pk_ed25519.pk,
+					   LC_ED25519_PUBLICKEYBYTES));
+
+	if (cert) {
+		CKINT(asym_set_dilithium_ed25519_keypair(
+			&cert->sig_gen_data, keys->pk.dilithium_ed25519_pk,
+			keys->sk.dilithium_ed25519_sk));
+		CKINT(asym_set_dilithium_ed25519_keypair(
+			&cert->pub_gen_data, keys->pk.dilithium_ed25519_pk,
+			NULL));
+	}
+
+out:
+	LC_RELEASE_MEM(ws);
+	return ret;
+}

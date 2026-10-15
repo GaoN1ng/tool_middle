@@ -1,0 +1,141 @@
+50/154 files, 2.9s
+100/154 files, 5.0s
+150/154 files, 7.1s
+154/154 files, 8.1s
+{
+  "files": 154,
+  "positive_labels": 105,
+  "scan_status": {
+    "completed": 154
+  },
+  "micro": {
+    "TP": 68,
+    "FP": 0,
+    "FN": 37,
+    "TN": 1607,
+    "recall": 0.6476190476190476,
+    "false_negative_rate": 0.3523809523809524,
+    "precision": 1.0
+  },
+  "per_algorithm": {
+    "AES": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 4,
+      "TN": 117,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "ChaCha20": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 4,
+      "TN": 117,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "DES": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 4,
+      "TN": 117,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "ECDH": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 4,
+      "TN": 117,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "ECDSA": {
+      "TP": 2,
+      "FP": 0,
+      "FN": 3,
+      "TN": 120,
+      "recall": 0.4,
+      "false_negative_rate": 0.6,
+      "precision": 1.0
+    },
+    "MD5": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 1,
+      "TN": 118,
+      "recall": 0.8571428571428571,
+      "false_negative_rate": 0.14285714285714285,
+      "precision": 1.0
+    },
+    "RC4": {
+      "TP": 5,
+      "FP": 0,
+      "FN": 2,
+      "TN": 118,
+      "recall": 0.7142857142857143,
+      "false_negative_rate": 0.2857142857142857,
+      "precision": 1.0
+    },
+    "RSA": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 2,
+      "TN": 119,
+      "recall": 0.6666666666666666,
+      "false_negative_rate": 0.3333333333333333,
+      "precision": 1.0
+    },
+    "SHA-1": {
+      "TP": 3,
+      "FP": 0,
+      "FN": 5,
+      "TN": 117,
+      "recall": 0.375,
+      "false_negative_rate": 0.625,
+      "precision": 1.0
+    },
+    "SHA-256": {
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 115,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    "SM2": {
+      "TP": 10,
+      "FP": 0,
+      "FN": 2,
+      "TN": 142,
+      "recall": 0.8333333333333334,
+      "false_negative_rate": 0.16666666666666666,
+      "precision": 1.0
+    },
+    "SM3": {
+      "TP": 5,
+      "FP": 0,
+      "FN": 4,
+      "TN": 145,
+      "recall": 0.5555555555555556,
+      "false_negative_rate": 0.4444444444444444,
+      "precision": 1.0
+    },
+    "SM4": {
+      "TP": 8,
+      "FP": 0,
+      "FN": 1,
+      "TN": 145,
+      "recall": 0.8888888888888888,
+      "false_negative_rate": 0.1111111111111111,
+      "precision": 1.0
+    }
+  },
+  "seconds": 8.106081048958004,
+  "focus": null
+}

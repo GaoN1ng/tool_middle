@@ -1,0 +1,119 @@
+bearssl-sha2small-mipsel-O0 /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/36/3622fb038470ac1f/ordinary.so /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/e5/e55c9ece55264d8b/inspection.so
+FUNCTION br_sha256_init 0x1c0a0 468
+0x1c0a0 lui $v0, 6
+0x1c0a4 addiu $v0, $v0, -0x7790
+0x1c0a8 addiu $sp, $sp, -0x38
+0x1c0ac sw $ra, 0x34($sp)
+0x1c0b0 sw $fp, 0x30($sp)
+0x1c0b4 move $fp, $sp
+0x1c0b8 addu $at, $v0, $t9
+0x1c0bc sw $at, 0x24($fp)
+0x1c0c0 sw $a0, 0x2c($fp)
+0x1c0c4 lw $v0, 0x2c($fp)
+0x1c0c8 sw $v0, 0x28($fp)
+0x1c0cc addiu $at, $zero, 0
+0x1c0d0 xor $at, $v0, $zero
+0x1c0d4 sltu $at, $zero, $at
+0x1c0d8 addiu $v1, $zero, 7
+0x1c0dc and $v0, $v0, $v1
+0x1c0e0 addiu $v1, $zero, 0
+0x1c0e4 xor $v0, $v0, $zero
+0x1c0e8 sltiu $v0, $v0, 1
+0x1c0ec and $at, $at, $v0
+0x1c0f0 andi $at, $at, 1
+0x1c0f4 bgtz $at, 0x1c100
+0x1c0f8 nop 
+0x1c0fc break 
+0x1c100 lw $v0, 0x28($fp)
+0x1c104 addiu $at, $zero, 0
+0x1c108 xor $at, $v0, $zero
+0x1c10c sltu $at, $zero, $at
+0x1c110 addiu $v1, $zero, 7
+0x1c114 and $v0, $v0, $v1
+0x1c118 addiu $v1, $zero, 0
+0x1c11c xor $v0, $v0, $zero
+0x1c120 sltiu $v0, $v0, 1
+0x1c124 and $at, $at, $v0
+0x1c128 andi $at, $at, 1
+0x1c12c bgtz $at, 0x1c138
+0x1c130 nop 
+0x1c134 break 
+0x1c138 lw $v0, 0x28($fp)
+0x1c13c lw $at, 0x24($fp)
+0x1c140 lw $at, -0x7fb0($at)
+0x1c144 sw $at, ($v0)
+0x1c148 lw $v0, 0x2c($fp)
+0x1c14c sw $v0, 0x20($fp)
+0x1c150 addiu $at, $zero, 0
+0x1c154 xor $at, $v0, $zero
+0x1c158 sltu $at, $zero, $at
+0x1c15c addiu $v1, $zero, 7
+0x1c160 and $v0, $v0, $v1
+0x1c164 addiu $v1, $zero, 0
+0x1c168 xor $v0, $v0, $zero
+0x1c16c sltiu $v0, $v0, 1
+0x1c170 and $at, $at, $v0
+0x1c174 andi $at, $at, 1
+0x1c178 bgtz $at, 0x1c184
+0x1c17c nop 
+0x1c180 break 
+0x1c184 lw $at, 0x20($fp)
+0x1c188 addiu $v0, $zero, 0x50
+0x1c18c addu $at, $at, $v0
+0x1c190 sw $at, 0x1c($fp)
+0x1c194 addiu $v0, $zero, 7
+0x1c198 and $at, $at, $v0
+0x1c19c addiu $v0, $zero, 0
+0x1c1a0 xor $at, $at, $zero
+0x1c1a4 sltiu $at, $at, 1
+0x1c1a8 bgtz $at, 0x1c1b4
+0x1c1ac nop 
+0x1c1b0 break 
+0x1c1b4 lw $at, 0x24($fp)
+0x1c1b8 lw $a0, 0x1c($fp)
+0x1c1bc lw $a1, -0x7fac($at)
+0x1c1c0 addiu $a2, $zero, 0x20
+0x1c1c4 lw $t9, -0x7fbc($at)
+0x1c1c8 jalr $t9
+0x1c1cc nop 
+0x1c1d0 lw $v0, 0x2c($fp)
+0x1c1d4 sw $v0, 0x18($fp)
+0x1c1d8 addiu $at, $zero, 0
+0x1c1dc xor $at, $v0, $zero
+0x1c1e0 sltu $at, $zero, $at
+0x1c1e4 addiu $v1, $zero, 7
+0x1c1e8 and $v0, $v0, $v1
+0x1c1ec addiu $v1, $zero, 0
+0x1c1f0 xor $v0, $v0, $zero
+0x1c1f4 sltiu $v0, $v0, 1
+0x1c1f8 and $at, $at, $v0
+0x1c1fc andi $at, $at, 1
+0x1c200 bgtz $at, 0x1c20c
+0x1c204 nop 
+0x1c208 break 
+0x1c20c lw $at, 0x18($fp)
+0x1c210 addiu $v0, $zero, 0x48
+0x1c214 addu $v0, $at, $v0
+0x1c218 sw $v0, 0x14($fp)
+0x1c21c addiu $at, $zero, 0
+0x1c220 xor $at, $v0, $zero
+0x1c224 sltu $at, $zero, $at
+0x1c228 addiu $v1, $zero, 7
+0x1c22c and $v0, $v0, $v1
+0x1c230 addiu $v1, $zero, 0
+0x1c234 xor $v0, $v0, $zero
+0x1c238 sltiu $v0, $v0, 1
+0x1c23c and $at, $at, $v0
+0x1c240 andi $at, $at, 1
+0x1c244 bgtz $at, 0x1c250
+0x1c248 nop 
+0x1c24c break 
+0x1c250 lw $at, 0x14($fp)
+0x1c254 sw $zero, 4($at)
+0x1c258 sw $zero, ($at)
+0x1c25c move $sp, $fp
+0x1c260 lw $fp, 0x30($sp)
+0x1c264 lw $ra, 0x34($sp)
+0x1c268 addiu $sp, $sp, 0x38
+0x1c26c jr $ra
+0x1c270 nop 

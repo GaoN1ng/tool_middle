@@ -1,0 +1,66 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include <linux/prctl.h>
+#include <sys/prctl.h>
+
+#include "ext_headers_internal.h"
+#include "initialization.h"
+#include "visibility.h"
+
+/*
+ * Disable CPU speculation-related options: see the kernel
+ * documentation: Documentation/userspace-api/spec_ctrl.rst
+ *
+ * - Speculative Store Bypass
+ * - Indirect Branch Speculation
+ * - Flush L1D Cache on context switch out of the task
+ */
+
+LC_CONSTRUCTOR(secure_execution_linux_store_bypass, LC_INIT_PRIO_ALGO)
+{
+#ifdef PR_SPEC_STORE_BYPASS
+	prctl(PR_SET_SPECULATION_CTRL, PR_SPEC_STORE_BYPASS,
+	      PR_SPEC_FORCE_DISABLE, 0, 0);
+#endif
+}
+
+LC_CONSTRUCTOR(secure_execution_linux_indirect_branch, LC_INIT_PRIO_ALGO)
+{
+#ifdef PR_SPEC_INDIRECT_BRANCH
+	prctl(PR_SET_SPECULATION_CTRL, PR_SPEC_INDIRECT_BRANCH,
+	      PR_SPEC_FORCE_DISABLE, 0, 0);
+#endif
+
+#ifdef PR_SPEC_L1D_FLUSH
+	prctl(PR_SET_SPECULATION_CTRL, PR_SPEC_L1D_FLUSH, PR_SPEC_FORCE_DISABLE,
+	      0, 0);
+#endif
+}
+
+/* Do not enable it by default, as this is very expensive */
+int secure_execution_linux_l1d_flush(void)
+{
+#ifdef PR_SPEC_L1D_FLUSH
+	if (prctl(PR_SET_SPECULATION_CTRL, PR_SPEC_L1D_FLUSH,
+		  PR_SPEC_FORCE_DISABLE, 0, 0) == -1)
+		return -errno;
+#endif
+	return 0;
+}

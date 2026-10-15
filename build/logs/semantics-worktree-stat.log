@@ -1,0 +1,13 @@
+ licenses/INDEX.txt                |  84 ++++++++-
+ readme.md                         | 101 +++++++++-
+ src/qcs/controlflow.py            | 237 +++++++++++++++++++++---
+ src/qcs/guomi/binary_bignum.py    | 172 +++++++++++++++---
+ src/qcs/guomi/binary_semantics.py | 374 +++++++++++++++++++++++++++++++++-----
+ src/qcs/guomi/source_context.py   |  27 ++-
+ src/qcs/guomi/source_semantics.py | 259 +++++++++++++++++++++++---
+ src/qcs/operation_bignum.py       |  38 +++-
+ src/qcs/operations.py             |  35 +++-
+ todo.md                           |  75 ++++----
+ tools/build_release.py            |   8 +-
+ tools/check_submission.py         |  28 ++-
+ 12 files changed, 1268 insertions(+), 170 deletions(-)

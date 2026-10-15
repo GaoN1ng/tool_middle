@@ -1,0 +1,9 @@
+test_binary_relocation_excludes_absolute_addresses (test_ml_features.FeatureContract.test_binary_relocation_excludes_absolute_addresses) ... ok
+test_context_is_order_independent_and_cycle_bounded (test_ml_features.FeatureContract.test_context_is_order_independent_and_cycle_bounded) ... ok
+test_positive_file_does_not_label_every_helper (test_ml_features.FeatureContract.test_positive_file_does_not_label_every_helper) ... ok
+test_renamed_source_keeps_operations_and_local_calls (test_ml_features.FeatureContract.test_renamed_source_keeps_operations_and_local_calls) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.058s
+
+OK

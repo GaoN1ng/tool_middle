@@ -18,13 +18,42 @@ class Arithmetic:
     The bounded DAG lets us check the complete ChaCha quarter round rather
     than merely looking for four frequently used rotation counts.
     """
-    def __init__(self):self.sums={}
+    def __init__(self):
+        self.sums={}
+        self.index_forms={}
+        from .sha256_rounds import RoundEquations
+        self.rounds=RoundEquations(self)
     def add(self,a,b,out):
+        self.index_operation('add',a,b,out)
         if out[0]=='lin' and len(out[1])==1:
             identity,r=next(iter(out[1]))
             if not r:
                 if len(self.sums)>=16000:self.sums.clear()
                 self.sums[identity]=(a,b)
+    def index(self,value,depth=0):
+        if depth>8:return None
+        if value[0]=='constant':return ((),value[1])
+        if value[0]!='lin' or len(value[1])!=1:return None
+        identity,r=next(iter(value[1]))
+        if r:return None
+        return self.index_forms.get(identity,(((identity,1),),0))
+    def index_operation(self,op,a,b,out):
+        if out in (a,b) or out[0]!='lin' or len(out[1])!=1:return
+        identity,r=next(iter(out[1]))
+        if r:return
+        x,y=self.index(a),self.index(b)
+        if x is None or y is None:return
+        if op in {'add','sub'}:
+            terms=dict(x[0]);sign=-1 if op=='sub' else 1
+            for key,n in y[0]:terms[key]=terms.get(key,0)+sign*n
+            terms={k:n for k,n in terms.items() if n}
+            constant=x[1]+sign*y[1]
+        elif op=='mul' and not y[0] and abs(y[1])<=16:
+            terms={k:n*y[1] for k,n in x[0]};constant=x[1]*y[1]
+        else:return
+        if len(terms)>4 or any(abs(n)>64 for n in terms.values()) or abs(constant)>65536:return
+        if len(self.index_forms)>=16000:self.index_forms.clear()
+        self.index_forms[identity]=(tuple(sorted(terms.items(),key=lambda kv:repr(kv[0]))),constant)
     def split_rotation(self,value,n):
         unrot=rotate(value,-n)
         if unrot[0]!='lin':return []
@@ -67,11 +96,11 @@ def recognize(events,*,sha256_variant=False):
     if count['rc4_prga']:
         matched('RC4','Byte-bounded index recurrence, dependent state swap and state-sum lookup used as keystream or XORed with input',{'rc4_prga'})
     sha_sigma={'sha256_big0','sha256_big1','sha256_small0','sha256_small1'}
-    sha_schedule=(sha_sigma<=set(count) or
+    sha_schedule=(sha_sigma<=set(count) or count['sha256_round'] or
                   ({'sha256_big0','sha256_big1'}<=set(count) and count['sha256_schedule']))
     if (sha256_variant and sha_schedule and count['add']>=8 and count['and']>=2
             and (reads['sha256_k'] or len(constants&set(SHA256_K))>=8)):
-        matched('SHA-256','SHA-256 sigma maps or exact message recurrence, round arithmetic, used K values and SHA-256 IV',sha_sigma|{'sha256_schedule','table_read','constant','immediate'})
+        matched('SHA-256','SHA-256 sigma/schedule or bound T1+T2 Ch/Maj equation, used K values and SHA-256 IV',sha_sigma|{'sha256_round','sha256_schedule','table_read','constant','immediate'})
     if (count['add']>=16 and count['and']>=2 and len(rotations&{7,12,17,22,5,9,14,20,4,11,16,23,6,10,15,21})>=8
             and (reads['md5_k'] or len(constants&set(MD5_K))>=16)):
         matched('MD5','MD5 sine-derived round constants used with addition, Boolean operations and rotation schedule',{'rotate','table_read','constant','immediate'})

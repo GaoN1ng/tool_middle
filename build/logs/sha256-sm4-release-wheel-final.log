@@ -1,0 +1,390 @@
+running bdist_wheel
+running build
+running build_py
+copying src/qcs/__init__.py -> build/lib/qcs
+copying src/qcs/__main__.py -> build/lib/qcs
+copying src/qcs/api_rules.py -> build/lib/qcs
+copying src/qcs/source.py -> build/lib/qcs
+copying src/qcs/symbols.py -> build/lib/qcs
+copying src/qcs/windriver.py -> build/lib/qcs
+copying src/qcs/yara_engine.py -> build/lib/qcs
+copying src/qcs/process.py -> build/lib/qcs
+copying src/qcs/firmware.py -> build/lib/qcs
+copying src/qcs/evaluate.py -> build/lib/qcs
+copying src/qcs/text.py -> build/lib/qcs
+copying src/qcs/scanner.py -> build/lib/qcs
+copying src/qcs/model.py -> build/lib/qcs
+copying src/qcs/cli.py -> build/lib/qcs
+copying src/qcs/function_signatures.py -> build/lib/qcs
+copying src/qcs/source_reference.py -> build/lib/qcs
+copying src/qcs/firmware_native.py -> build/lib/qcs
+copying src/qcs/paths.py -> build/lib/qcs
+copying src/qcs/operation_tables.py -> build/lib/qcs
+copying src/qcs/operations.py -> build/lib/qcs
+copying src/qcs/operation_arrays.py -> build/lib/qcs
+copying src/qcs/operation_bignum.py -> build/lib/qcs
+copying src/qcs/controlflow.py -> build/lib/qcs
+copying src/qcs/static_primitives.py -> build/lib/qcs
+copying src/qcs/static_binary.py -> build/lib/qcs
+copying src/qcs/message_schedule.py -> build/lib/qcs
+copying src/qcs/source_state.py -> build/lib/qcs
+copying src/qcs/sm4_tables.py -> build/lib/qcs
+copying src/qcs/sha256_rounds.py -> build/lib/qcs
+copying src/qcs_ml/features.py -> build/lib/qcs_ml
+copying src/qcs_ml/rf.py -> build/lib/qcs_ml
+copying src/qcs_ml/curate.py -> build/lib/qcs_ml
+copying src/qcs_ml/dataset.py -> build/lib/qcs_ml
+copying src/qcs_ml/audit_dataset.py -> build/lib/qcs_ml
+copying src/qcs_ml/learn.py -> build/lib/qcs_ml
+copying src/qcs_ml/__init__.py -> build/lib/qcs_ml
+copying src/qcs_ml/paths.py -> build/lib/qcs_ml
+copying src/qcs/guomi/__init__.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/javascript.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/linear.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/binary_semantics.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/source_semantics.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/bignum.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/binary_bignum.py -> build/lib/qcs/guomi
+copying src/qcs/guomi/source_context.py -> build/lib/qcs/guomi
+copying src/qcs/rules/function_signature_notices.txt -> build/lib/qcs/rules
+copying src/qcs/rules/static_primitives-LICENSE.txt -> build/lib/qcs/rules
+copying src/qcs/resources/yara/rules.yar -> build/lib/qcs/resources/yara
+copying src/qcs/resources/yara/aes/aes_common.yar -> build/lib/qcs/resources/yara/aes
+copying src/qcs/resources/yara/aes/aes_x64.yar -> build/lib/qcs/resources/yara/aes
+copying src/qcs/resources/yara/base64/base64_common.yar -> build/lib/qcs/resources/yara/base64
+copying src/qcs/resources/yara/base64/base64_x64.yar -> build/lib/qcs/resources/yara/base64
+copying src/qcs/resources/yara/chacha/chacha_common.yar -> build/lib/qcs/resources/yara/chacha
+copying src/qcs/resources/yara/chacha/chacha_x64.yar -> build/lib/qcs/resources/yara/chacha
+copying src/qcs/resources/yara/des/des_common.yar -> build/lib/qcs/resources/yara/des
+copying src/qcs/resources/yara/des/des_x64.yar -> build/lib/qcs/resources/yara/des
+copying src/qcs/resources/yara/md5/md5_common.yar -> build/lib/qcs/resources/yara/md5
+copying src/qcs/resources/yara/md5/md5_x64.yar -> build/lib/qcs/resources/yara/md5
+copying src/qcs/resources/yara/rc4/rc4_common.yar -> build/lib/qcs/resources/yara/rc4
+copying src/qcs/resources/yara/rc4/rc4_x64.yar -> build/lib/qcs/resources/yara/rc4
+copying src/qcs/resources/yara/sha1/sha1_common.yar -> build/lib/qcs/resources/yara/sha1
+copying src/qcs/resources/yara/sha1/sha1_x64.yar -> build/lib/qcs/resources/yara/sha1
+copying src/qcs/resources/yara/sha2/sha2_common.yar -> build/lib/qcs/resources/yara/sha2
+copying src/qcs/resources/yara/sha2/sha2_x64.yar -> build/lib/qcs/resources/yara/sha2
+copying src/qcs/resources/yara/sha3/sha3_common.yar -> build/lib/qcs/resources/yara/sha3
+copying src/qcs/resources/yara/sha3/sha3_x64.yar -> build/lib/qcs/resources/yara/sha3
+copying src/qcs/resources/yara/LICENSE -> build/lib/qcs/resources/yara
+copying src/qcs/resources/windriver/LICENSE -> build/lib/qcs/resources/windriver
+copying src/qcs/resources/windriver/cryptodetector/__init__.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/crypto_output.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/cryptodetector.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/exceptions.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/filelister.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/language.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/logger.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/method.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/options.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/output.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/regex.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/rpm.py -> build/lib/qcs/resources/windriver/cryptodetector
+copying src/qcs/resources/windriver/cryptodetector/methods/api/api_finder.py -> build/lib/qcs/resources/windriver/cryptodetector/methods/api
+copying src/qcs/resources/windriver/cryptodetector/methods/hello_world/hello_world_method.py -> build/lib/qcs/resources/windriver/cryptodetector/methods/hello_world
+copying src/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_search.py -> build/lib/qcs/resources/windriver/cryptodetector/methods/keyword
+copying src/qcs/resources/windriver/cryptodetector/methods/api/api_definitions.txt -> build/lib/qcs/resources/windriver/cryptodetector/methods/api
+copying src/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_list.txt -> build/lib/qcs/resources/windriver/cryptodetector/methods/keyword
+copying src/qcs/guomi/licenses/cryptoscan-LICENSE -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/crypto-reverse-mcp-LICENSE -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/gmssl-LICENSE -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/gmssl-NOTICE.txt -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/openssl-development-Apache-2.0.txt -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/development-source-notices.txt -> build/lib/qcs/guomi/licenses
+copying src/qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt -> build/lib/qcs/guomi/licenses
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/qcs
+creating build/bdist.linux-x86_64/wheel/qcs/guomi
+copying build/lib/qcs/guomi/constants.yar -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+creating build/bdist.linux-x86_64/wheel/qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/cryptoscan-LICENSE -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/crypto-reverse-mcp-LICENSE -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/gmssl-LICENSE -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/gmssl-NOTICE.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/openssl-development-Apache-2.0.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/development-source-notices.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt -> build/bdist.linux-x86_64/wheel/./qcs/guomi/licenses
+copying build/lib/qcs/guomi/api_mapping.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/provenance.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/function_signatures.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/source_references.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/standard.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/development_function_signatures.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/development_source_references.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/development_provenance.json -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/__init__.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/javascript.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/linear.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/binary_semantics.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/source_semantics.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/bignum.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/binary_bignum.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+copying build/lib/qcs/guomi/source_context.py -> build/bdist.linux-x86_64/wheel/./qcs/guomi
+creating build/bdist.linux-x86_64/wheel/qcs/rules
+copying build/lib/qcs/rules/yara_mapping.json -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/terminal_api_mapping.json -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/function_signatures.json -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/source_implementations.json -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/static_primitives.json -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/function_signature_notices.txt -> build/bdist.linux-x86_64/wheel/./qcs/rules
+copying build/lib/qcs/rules/static_primitives-LICENSE.txt -> build/bdist.linux-x86_64/wheel/./qcs/rules
+creating build/bdist.linux-x86_64/wheel/qcs/resources
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/aes
+copying build/lib/qcs/resources/yara/aes/aes_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/aes
+copying build/lib/qcs/resources/yara/aes/aes_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/aes
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/base64
+copying build/lib/qcs/resources/yara/base64/base64_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/base64
+copying build/lib/qcs/resources/yara/base64/base64_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/base64
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/chacha
+copying build/lib/qcs/resources/yara/chacha/chacha_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/chacha
+copying build/lib/qcs/resources/yara/chacha/chacha_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/chacha
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/des
+copying build/lib/qcs/resources/yara/des/des_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/des
+copying build/lib/qcs/resources/yara/des/des_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/des
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/md5
+copying build/lib/qcs/resources/yara/md5/md5_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/md5
+copying build/lib/qcs/resources/yara/md5/md5_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/md5
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/rc4
+copying build/lib/qcs/resources/yara/rc4/rc4_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/rc4
+copying build/lib/qcs/resources/yara/rc4/rc4_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/rc4
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/sha1
+copying build/lib/qcs/resources/yara/sha1/sha1_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha1
+copying build/lib/qcs/resources/yara/sha1/sha1_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha1
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/sha2
+copying build/lib/qcs/resources/yara/sha2/sha2_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha2
+copying build/lib/qcs/resources/yara/sha2/sha2_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha2
+creating build/bdist.linux-x86_64/wheel/qcs/resources/yara/sha3
+copying build/lib/qcs/resources/yara/sha3/sha3_common.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha3
+copying build/lib/qcs/resources/yara/sha3/sha3_x64.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara/sha3
+copying build/lib/qcs/resources/yara/rules.yar -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara
+copying build/lib/qcs/resources/yara/LICENSE -> build/bdist.linux-x86_64/wheel/./qcs/resources/yara
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver/cryptodetector
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver/cryptodetector/methods
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver/cryptodetector/methods/api
+copying build/lib/qcs/resources/windriver/cryptodetector/methods/api/api_finder.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector/methods/api
+copying build/lib/qcs/resources/windriver/cryptodetector/methods/api/api_definitions.txt -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector/methods/api
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver/cryptodetector/methods/hello_world
+copying build/lib/qcs/resources/windriver/cryptodetector/methods/hello_world/hello_world_method.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector/methods/hello_world
+creating build/bdist.linux-x86_64/wheel/qcs/resources/windriver/cryptodetector/methods/keyword
+copying build/lib/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_search.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector/methods/keyword
+copying build/lib/qcs/resources/windriver/cryptodetector/methods/keyword/keyword_list.txt -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector/methods/keyword
+copying build/lib/qcs/resources/windriver/cryptodetector/__init__.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/crypto_output.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/cryptodetector.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/exceptions.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/filelister.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/language.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/logger.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/method.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/options.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/output.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/regex.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/cryptodetector/rpm.py -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver/cryptodetector
+copying build/lib/qcs/resources/windriver/LICENSE -> build/bdist.linux-x86_64/wheel/./qcs/resources/windriver
+copying build/lib/qcs/resources/provenance.json -> build/bdist.linux-x86_64/wheel/./qcs/resources
+copying build/lib/qcs/__init__.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/__main__.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/api_rules.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/source.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/symbols.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/windriver.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/yara_engine.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/process.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/firmware.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/evaluate.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/text.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/scanner.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/model.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/cli.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/function_signatures.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/source_reference.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/firmware_native.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/paths.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/operation_tables.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/operations.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/operation_arrays.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/operation_bignum.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/controlflow.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/static_primitives.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/static_binary.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/message_schedule.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/source_state.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/sm4_tables.py -> build/bdist.linux-x86_64/wheel/./qcs
+copying build/lib/qcs/sha256_rounds.py -> build/bdist.linux-x86_64/wheel/./qcs
+creating build/bdist.linux-x86_64/wheel/qcs_ml
+copying build/lib/qcs_ml/features.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/rf.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/curate.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/dataset.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/audit_dataset.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/learn.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/__init__.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+copying build/lib/qcs_ml/paths.py -> build/bdist.linux-x86_64/wheel/./qcs_ml
+running install_egg_info
+running egg_info
+writing build/qcs_prototype.egg-info/PKG-INFO
+writing dependency_links to build/qcs_prototype.egg-info/dependency_links.txt
+writing entry points to build/qcs_prototype.egg-info/entry_points.txt
+writing requirements to build/qcs_prototype.egg-info/requires.txt
+writing top-level names to build/qcs_prototype.egg-info/top_level.txt
+reading manifest file 'build/qcs_prototype.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+adding license file 'LICENSE'
+adding license file 'licenses/NOTICE.txt'
+adding license file 'licenses/INDEX.txt'
+adding license file 'licenses/project/qcs/LICENSE'
+adding license file 'licenses/components/crypto-detection/LICENSE'
+adding license file 'licenses/components/crypto-reverse-mcp/LICENSE'
+adding license file 'licenses/components/cryptoscan/LICENSE'
+adding license file 'licenses/components/windriver/LICENSE'
+adding license file 'licenses/reference_data/function-signatures/function_signature_notices.txt'
+adding license file 'licenses/reference_data/gmssl/gmssl-LICENSE'
+adding license file 'licenses/reference_data/gmssl/gmssl-NOTICE.txt'
+adding license file 'licenses/reference_data/guomi-development/development-source-notices.txt'
+adding license file 'licenses/reference_data/static-primitives/static_primitives-LICENSE.txt'
+writing manifest file 'build/qcs_prototype.egg-info/SOURCES.txt'
+Copying build/qcs_prototype.egg-info to build/bdist.linux-x86_64/wheel/./qcs_prototype-0.1.0.post1-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/qcs_prototype-0.1.0.post1.dist-info/WHEEL
+creating '/var/home/gzn/ourtask/ustc_tool_middle/build/dist/.tmp-uf1s_874/qcs_prototype-0.1.0.post1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'qcs/__init__.py'
+adding 'qcs/__main__.py'
+adding 'qcs/api_rules.py'
+adding 'qcs/cli.py'
+adding 'qcs/controlflow.py'
+adding 'qcs/evaluate.py'
+adding 'qcs/firmware.py'
+adding 'qcs/firmware_native.py'
+adding 'qcs/function_signatures.py'
+adding 'qcs/message_schedule.py'
+adding 'qcs/model.py'
+adding 'qcs/operation_arrays.py'
+adding 'qcs/operation_bignum.py'
+adding 'qcs/operation_tables.py'
+adding 'qcs/operations.py'
+adding 'qcs/paths.py'
+adding 'qcs/process.py'
+adding 'qcs/scanner.py'
+adding 'qcs/sha256_rounds.py'
+adding 'qcs/sm4_tables.py'
+adding 'qcs/source.py'
+adding 'qcs/source_reference.py'
+adding 'qcs/source_state.py'
+adding 'qcs/static_binary.py'
+adding 'qcs/static_primitives.py'
+adding 'qcs/symbols.py'
+adding 'qcs/text.py'
+adding 'qcs/windriver.py'
+adding 'qcs/yara_engine.py'
+adding 'qcs/guomi/__init__.py'
+adding 'qcs/guomi/api_mapping.json'
+adding 'qcs/guomi/bignum.py'
+adding 'qcs/guomi/binary_bignum.py'
+adding 'qcs/guomi/binary_semantics.py'
+adding 'qcs/guomi/constants.yar'
+adding 'qcs/guomi/development_function_signatures.json'
+adding 'qcs/guomi/development_provenance.json'
+adding 'qcs/guomi/development_source_references.json'
+adding 'qcs/guomi/function_signatures.json'
+adding 'qcs/guomi/javascript.py'
+adding 'qcs/guomi/linear.py'
+adding 'qcs/guomi/provenance.json'
+adding 'qcs/guomi/source_context.py'
+adding 'qcs/guomi/source_references.json'
+adding 'qcs/guomi/source_semantics.py'
+adding 'qcs/guomi/standard.json'
+adding 'qcs/guomi/licenses/crypto-reverse-mcp-LICENSE'
+adding 'qcs/guomi/licenses/cryptoscan-LICENSE'
+adding 'qcs/guomi/licenses/development-source-notices.txt'
+adding 'qcs/guomi/licenses/gmssl-LICENSE'
+adding 'qcs/guomi/licenses/gmssl-NOTICE.txt'
+adding 'qcs/guomi/licenses/libgcrypt-development-LGPL-2.1.txt'
+adding 'qcs/guomi/licenses/openssl-development-Apache-2.0.txt'
+adding 'qcs/guomi/licenses/wolfSM-development-GPL-2.0.txt'
+adding 'qcs/guomi/licenses/wolfSSL-development-GPL-3.0.txt'
+adding 'qcs/resources/provenance.json'
+adding 'qcs/resources/windriver/LICENSE'
+adding 'qcs/resources/windriver/cryptodetector/__init__.py'
+adding 'qcs/resources/windriver/cryptodetector/crypto_output.py'
+adding 'qcs/resources/windriver/cryptodetector/cryptodetector.py'
+adding 'qcs/resources/windriver/cryptodetector/exceptions.py'
+adding 'qcs/resources/windriver/cryptodetector/filelister.py'
+adding 'qcs/resources/windriver/cryptodetector/language.py'
+adding 'qcs/resources/windriver/cryptodetector/logger.py'
+adding 'qcs/resources/windriver/cryptodetector/method.py'
+adding 'qcs/resources/windriver/cryptodetector/options.py'
+adding 'qcs/resources/windriver/cryptodetector/output.py'
+adding 'qcs/resources/windriver/cryptodetector/regex.py'
+adding 'qcs/resources/windriver/cryptodetector/rpm.py'
+adding 'qcs/resources/windriver/cryptodetector/methods/api/api_definitions.txt'
+adding 'qcs/resources/windriver/cryptodetector/methods/api/api_finder.py'
+adding 'qcs/resources/windriver/cryptodetector/methods/hello_world/hello_world_method.py'
+adding 'qcs/resources/windriver/cryptodetector/methods/keyword/keyword_list.txt'
+adding 'qcs/resources/windriver/cryptodetector/methods/keyword/keyword_search.py'
+adding 'qcs/resources/yara/LICENSE'
+adding 'qcs/resources/yara/rules.yar'
+adding 'qcs/resources/yara/aes/aes_common.yar'
+adding 'qcs/resources/yara/aes/aes_x64.yar'
+adding 'qcs/resources/yara/base64/base64_common.yar'
+adding 'qcs/resources/yara/base64/base64_x64.yar'
+adding 'qcs/resources/yara/chacha/chacha_common.yar'
+adding 'qcs/resources/yara/chacha/chacha_x64.yar'
+adding 'qcs/resources/yara/des/des_common.yar'
+adding 'qcs/resources/yara/des/des_x64.yar'
+adding 'qcs/resources/yara/md5/md5_common.yar'
+adding 'qcs/resources/yara/md5/md5_x64.yar'
+adding 'qcs/resources/yara/rc4/rc4_common.yar'
+adding 'qcs/resources/yara/rc4/rc4_x64.yar'
+adding 'qcs/resources/yara/sha1/sha1_common.yar'
+adding 'qcs/resources/yara/sha1/sha1_x64.yar'
+adding 'qcs/resources/yara/sha2/sha2_common.yar'
+adding 'qcs/resources/yara/sha2/sha2_x64.yar'
+adding 'qcs/resources/yara/sha3/sha3_common.yar'
+adding 'qcs/resources/yara/sha3/sha3_x64.yar'
+adding 'qcs/rules/function_signature_notices.txt'
+adding 'qcs/rules/function_signatures.json'
+adding 'qcs/rules/source_implementations.json'
+adding 'qcs/rules/static_primitives-LICENSE.txt'
+adding 'qcs/rules/static_primitives.json'
+adding 'qcs/rules/terminal_api_mapping.json'
+adding 'qcs/rules/yara_mapping.json'
+adding 'qcs_ml/__init__.py'
+adding 'qcs_ml/audit_dataset.py'
+adding 'qcs_ml/curate.py'
+adding 'qcs_ml/dataset.py'
+adding 'qcs_ml/features.py'
+adding 'qcs_ml/learn.py'
+adding 'qcs_ml/paths.py'
+adding 'qcs_ml/rf.py'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/INDEX.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/NOTICE.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/components/crypto-detection/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/components/crypto-reverse-mcp/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/components/cryptoscan/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/components/windriver/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/project/qcs/LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/reference_data/function-signatures/function_signature_notices.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/reference_data/gmssl/gmssl-LICENSE'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/reference_data/gmssl/gmssl-NOTICE.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/reference_data/guomi-development/development-source-notices.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/licenses/licenses/reference_data/static-primitives/static_primitives-LICENSE.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/METADATA'
+adding 'qcs_prototype-0.1.0.post1.dist-info/WHEEL'
+adding 'qcs_prototype-0.1.0.post1.dist-info/entry_points.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/top_level.txt'
+adding 'qcs_prototype-0.1.0.post1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+qcs_prototype-0.1.0.post1-py3-none-any.whl

@@ -1,0 +1,7 @@
+Processing ./build/dist/qcs_prototype-0.1.0.post1-py3-none-any.whl
+Installing collected packages: qcs-prototype
+  Attempting uninstall: qcs-prototype
+    Found existing installation: qcs-prototype 0.1.0.post1
+    Uninstalling qcs-prototype-0.1.0.post1:
+      Successfully uninstalled qcs-prototype-0.1.0.post1
+Successfully installed qcs-prototype-0.1.0.post1

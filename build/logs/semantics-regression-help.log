@@ -1,0 +1,12 @@
+usage: run_regression.py [-h] --output OUTPUT [--workers WORKERS]
+                         [--package PACKAGE] [--modules MODULES [MODULES ...]]
+
+Run regression modules in separate processes; retain module logs under build.
+
+options:
+  -h, --help            show this help message and exit
+  --output OUTPUT
+  --workers WORKERS
+  --package PACKAGE
+  --modules MODULES [MODULES ...]
+                        Optional explicit modules; report is then a subset

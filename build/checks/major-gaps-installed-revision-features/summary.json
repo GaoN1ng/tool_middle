@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "arduinolibs-curve25519-mipsel-O0",
+      "passed": true,
+      "expected": "ECDH",
+      "predicted": [
+        "ECDH"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libmcrypt-rijndael-128-source",
+      "passed": true,
+      "expected": "AES",
+      "predicted": [
+        "AES"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mips_be-O2",
+      "passed": true,
+      "expected": "AES",
+      "predicted": [
+        "AES"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libmcrypt-des-mips_be-O2",
+      "passed": true,
+      "expected": "DES",
+      "predicted": [
+        "DES"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libmcrypt-arcfour-mipsel-O2",
+      "passed": true,
+      "expected": "RC4",
+      "predicted": [
+        "RC4"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-thumb-Os",
+      "passed": true,
+      "expected": "SM2",
+      "predicted": [
+        "SM2"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libecc-ecdh-arm-O0",
+      "passed": true,
+      "expected": "ECDH",
+      "predicted": [
+        "ECDH"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "libecc-sm3-aarch64-O0",
+      "passed": true,
+      "expected": "SM3",
+      "predicted": [
+        "SM3"
+      ],
+      "scan_status": "completed",
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "installed_package": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs",
+  "code_hash_mismatches": [],
+  "freeze_sha256": "cc403e0b23baadacd1f0f348ce4c491096238fe1191fedcfa49dd53e346b9a8c",
+  "verified_frozen_payload_files": 120,
+  "policy": "Installed wheel; no PYTHONPATH; external working directory; development inputs only"
+}

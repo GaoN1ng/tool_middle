@@ -1,0 +1,8 @@
+test_aliases_and_offsets_read_actual_verified_array (test_source_pointers.SourcePointerTests.test_aliases_and_offsets_read_actual_verified_array) ... ok
+test_invalidated_or_out_of_bounds_alias_is_not_a_table (test_source_pointers.SourcePointerTests.test_invalidated_or_out_of_bounds_alias_is_not_a_table) ... ok
+test_proved_loop_pointer_range_survives_induction_widening (test_source_pointers.SourcePointerTests.test_proved_loop_pointer_range_survives_induction_widening) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.214s
+
+OK

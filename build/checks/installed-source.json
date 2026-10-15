@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/code_samples/c1/c147f04f585b492e/aes-128.c",
   "input_kind": "source",
-  "timestamp": "2026-10-14T09:48:28.022897+00:00",
+  "timestamp": "2026-10-15T05:28:18.208994+00:00",
   "tool": {
     "name": "qcs",
     "version": "0.1.0",
@@ -255,16 +255,73 @@
   ],
   "dependencies": [],
   "components": [],
+  "source_parameter_linkage": {
+    "files": [],
+    "limited": false,
+    "bytes": 0,
+    "bindings": []
+  },
   "source_operation_context": {
     "files": [],
     "bytes": 0,
     "limited": false,
     "scope": "Local macros and actual bounded scalar definitions; headers are not scanned as independent algorithm implementations"
   },
+  "source_declaration_expansions": [],
+  "source_generated_tables": [],
   "source_controlflow_analysis": {
     "branches": 1,
     "loops": 7,
     "joins": 1
+  },
+  "operation_diagnostics": {
+    "source": {
+      "event_counts": {
+        "constant": 75,
+        "xor": 29,
+        "table_read": 5,
+        "add": 15
+      },
+      "table_reads": {
+        "aes_sbox": 5
+      },
+      "definitions": [
+        {
+          "name": "galois_mul2",
+          "offset": 3762,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 3,
+            "xor": 1
+          }
+        },
+        {
+          "name": "set_key",
+          "offset": 3962,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 21,
+            "table_read": 4,
+            "xor": 7
+          }
+        },
+        {
+          "name": "encrypt",
+          "offset": 4709,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 51,
+            "xor": 21,
+            "table_read": 1,
+            "add": 15
+          }
+        }
+      ],
+      "stage": "bounded_lifting_finished"
+    }
   },
   "source_state_components": [],
   "static_primitive_summaries": [],

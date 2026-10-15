@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "a174cec22817585c9a76fac7aa371b004e8a7e09263e9af6a2f87a6335b9802c",
+  "lock_sha256": "d91b834de91466256e294b6378d7dc6ea8d5155982105a636171e1f345328d07",
+  "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/historical-baseline-package",
+  "package_sha256": "2e6ad85328fb86cf8e6df349b12737c3e2df90adbd47f0e029cc986bc8e20f05",
+  "metric_unit": "content-deduplicated file/algorithm; declared known scope",
+  "policy": "All locked labelled files including failed/partial scans. No holdout-driven detector changes."
+}

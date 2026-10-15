@@ -1,0 +1,273 @@
+ROUND? 0xa5bf add eax, dword ptr [rbp - 0x150] 7 False
+[] None ('lin', frozenset({((362, ()), 0)}))
+['sha256_big1'] None ('lin', frozenset({((363, ()), 26), ((363, ()), 21), ((363, ()), 7)}))
+[] None ('lin', frozenset({((372, ()), 0), ((375, ()), 0)}))
+[] None ('lin', frozenset({((408, ('sha256_k',)), 0)}))
+[] None ('lin', frozenset({((442, ()), 0)}))
+['sha256_big0'] None ('lin', frozenset({((445, ()), 19), ((445, ()), 10), ((445, ()), 30)}))
+[] ('majority', frozenset({(452, ()), (445, ()), (454, ())})) ('lin', frozenset({((453, ()), 0), ((456, ()), 0), ((455, ()), 0)}))
+ROUND? 0xa5c5 mov dword ptr [rbp - 0x124], eax 7 False
+[] None ('lin', frozenset({((362, ()), 0)}))
+['sha256_big1'] None ('lin', frozenset({((363, ()), 26), ((363, ()), 21), ((363, ()), 7)}))
+[] None ('lin', frozenset({((372, ()), 0), ((375, ()), 0)}))
+[] None ('lin', frozenset({((408, ('sha256_k',)), 0)}))
+[] None ('lin', frozenset({((442, ()), 0)}))
+['sha256_big0'] None ('lin', frozenset({((445, ()), 19), ((445, ()), 10), ((445, ()), 30)}))
+[] ('majority', frozenset({(452, ()), (445, ()), (454, ())})) ('lin', frozenset({((453, ()), 0), ((456, ()), 0), ((455, ()), 0)}))
+ROUND? 0xb55b add eax, dword ptr [rbp - 0x158] 10 False
+[] None ('lin', frozenset({((463, ()), 0)}))
+['sha256_big1'] None ('lin', frozenset({((464, ()), 7), ((464, ()), 26), ((464, ()), 21)}))
+[] None ('lin', frozenset({((476, ()), 0), ((473, ()), 0)}))
+[] None ('lin', frozenset({((510, ('sha256_k',)), 0)}))
+[] None ('bits', (frozenset({((687, ()), 10), ((582, ()), 0), ((653, ()), 0)}), frozenset({((687, ()), 11), ((653, ()), 1), ((582, ()), 1)}), frozenset({((582, ()), 2), ((687, ()), 12), ((653, ()), 2)}), frozenset({((687, ()), 13), ((582, ()), 3), ((653, ()), 3)}), frozenset({((582, ()), 4), ((653, ()), 4),
+[] None ('lin', frozenset({((722, ()), 0)}))
+[] None ('bits', (frozenset({((900, ()), 3), ((795, ()), 0), ((866, ()), 0)}), frozenset({((900, ()), 4), ((866, ()), 1), ((795, ()), 1)}), frozenset({((900, ()), 5), ((866, ()), 2), ((795, ()), 2)}), frozenset({((795, ()), 3), ((900, ()), 6), ((866, ()), 3)}), frozenset({((795, ()), 4), ((900, ()), 7), ((8
+[] None ('lin', frozenset({((936, ()), 0)}))
+['sha256_big0'] None ('lin', frozenset({((972, ()), 10), ((972, ()), 19), ((972, ()), 30)}))
+[] ('majority', frozenset({(979, ()), (972, ()), (981, ())})) ('lin', frozenset({((983, ()), 0), ((982, ()), 0), ((980, ()), 0)}))
+ROUND? 0xb561 mov dword ptr [rbp - 0x124], eax 10 False
+[] None ('lin', frozenset({((463, ()), 0)}))
+['sha256_big1'] None ('lin', frozenset({((464, ()), 7), ((464, ()), 26), ((464, ()), 21)}))
+[] None ('lin', frozenset({((476, ()), 0), ((473, ()), 0)}))
+[] None ('lin', frozenset({((510, ('sha256_k',)), 0)}))
+[] None ('bits', (frozenset({((687, ()), 10), ((582, ()), 0), ((653, ()), 0)}), frozenset({((687, ()), 11), ((653, ()), 1), ((582, ()), 1)}), frozenset({((582, ()), 2), ((687, ()), 12), ((653, ()), 2)}), frozenset({((687, ()), 13), ((582, ()), 3), ((653, ()), 3)}), frozenset({((582, ()), 4), ((653, ()), 4),
+[] None ('lin', frozenset({((722, ()), 0)}))
+[] None ('bits', (frozenset({((900, ()), 3), ((795, ()), 0), ((866, ()), 0)}), frozenset({((900, ()), 4), ((866, ()), 1), ((795, ()), 1)}), frozenset({((900, ()), 5), ((866, ()), 2), ((795, ()), 2)}), frozenset({((795, ()), 3), ((900, ()), 6), ((866, ()), 3)}), frozenset({((795, ()), 4), ((900, ()), 7), ((8
+[] None ('lin', frozenset({((936, ()), 0)}))
+['sha256_big0'] None ('lin', frozenset({((972, ()), 10), ((972, ()), 19), ((972, ()), 30)}))
+[] ('majority', frozenset({(979, ()), (972, ()), (981, ())})) ('lin', frozenset({((983, ()), 0), ((982, ()), 0), ((980, ()), 0)}))
+ROLES [('0xa262', 'sha256_big1'), ('0xa52d', 'sha256_big0'), ('0xa72e', 'sha256_big1'), ('0xb4c9', 'sha256_big0')]
+SHIFT CONTEXT
+0xa140 mov eax, dword ptr [rbp - 0x134]
+0xa146 mov dword ptr [rbp - 0x27c], eax
+0xa14c mov al, 1
+0xa14e test al, 1
+0xa15b mov eax, dword ptr [rbp - 0x27c]
+0xa161 shr eax, 6
+0xa164 mov dword ptr [rbp - 0x288], eax
+0xa16a mov eax, dword ptr [rbp - 0x134]
+0xa170 mov dword ptr [rbp - 0x284], eax
+0xa176 mov al, 1
+0xa178 test al, 1
+0xa185 mov eax, dword ptr [rbp - 0x288]
+SHIFT CONTEXT
+0xa19c mov eax, dword ptr [rbp - 0x134]
+0xa1a2 mov dword ptr [rbp - 0x28c], eax
+0xa1a8 mov al, 1
+0xa1aa test al, 1
+0xa1b7 mov eax, dword ptr [rbp - 0x28c]
+0xa1bd shr eax, 0xb
+0xa1c0 mov dword ptr [rbp - 0x298], eax
+0xa1c6 mov eax, dword ptr [rbp - 0x134]
+0xa1cc mov dword ptr [rbp - 0x294], eax
+0xa1d2 mov al, 1
+0xa1d4 test al, 1
+0xa1e1 mov eax, dword ptr [rbp - 0x290]
+SHIFT CONTEXT
+0xa200 mov eax, dword ptr [rbp - 0x134]
+0xa206 mov dword ptr [rbp - 0x29c], eax
+0xa20c mov al, 1
+0xa20e test al, 1
+0xa21b mov eax, dword ptr [rbp - 0x29c]
+0xa221 shr eax, 0x19
+0xa224 mov dword ptr [rbp - 0x2a8], eax
+0xa22a mov eax, dword ptr [rbp - 0x134]
+0xa230 mov dword ptr [rbp - 0x2a4], eax
+0xa236 mov al, 1
+0xa238 test al, 1
+0xa245 mov eax, dword ptr [rbp - 0x280]
+SHIFT CONTEXT
+0xa411 mov eax, dword ptr [rbp - 0x124]
+0xa417 mov dword ptr [rbp - 0x2cc], eax
+0xa41d mov al, 1
+0xa41f test al, 1
+0xa42c mov eax, dword ptr [rbp - 0x2cc]
+0xa432 shr eax, 2
+0xa435 mov dword ptr [rbp - 0x2d4], eax
+0xa43b mov eax, dword ptr [rbp - 0x124]
+0xa441 mov dword ptr [rbp - 0x2d0], eax
+0xa447 mov al, 1
+0xa449 test al, 1
+0xa456 mov eax, dword ptr [rbp - 0x2d4]
+SHIFT CONTEXT
+0xa46d mov eax, dword ptr [rbp - 0x124]
+0xa473 mov dword ptr [rbp - 0x2d8], eax
+0xa479 mov al, 1
+0xa47b test al, 1
+0xa488 mov eax, dword ptr [rbp - 0x2d8]
+0xa48e shr eax, 0xd
+0xa491 mov dword ptr [rbp - 0x2e4], eax
+0xa497 mov eax, dword ptr [rbp - 0x124]
+0xa49d mov dword ptr [rbp - 0x2e0], eax
+0xa4a3 mov al, 1
+0xa4a5 test al, 1
+0xa4b2 mov eax, dword ptr [rbp - 0x2dc]
+SHIFT CONTEXT
+0xa4d1 mov eax, dword ptr [rbp - 0x124]
+0xa4d7 mov dword ptr [rbp - 0x2e8], eax
+0xa4dd mov al, 1
+0xa4df test al, 1
+0xa4ec mov eax, dword ptr [rbp - 0x2e8]
+0xa4f2 shr eax, 0x16
+0xa4f5 mov dword ptr [rbp - 0x2f4], eax
+0xa4fb mov eax, dword ptr [rbp - 0x124]
+0xa501 mov dword ptr [rbp - 0x2f0], eax
+0xa507 mov al, 1
+0xa509 test al, 1
+0xa516 mov eax, dword ptr [rbp - 0x2ec]
+SHIFT CONTEXT
+0xa60c mov eax, dword ptr [rbp - 0x134]
+0xa612 mov dword ptr [rbp - 0x2f8], eax
+0xa618 mov al, 1
+0xa61a test al, 1
+0xa627 mov eax, dword ptr [rbp - 0x2f8]
+0xa62d shr eax, 6
+0xa630 mov dword ptr [rbp - 0x304], eax
+0xa636 mov eax, dword ptr [rbp - 0x134]
+0xa63c mov dword ptr [rbp - 0x300], eax
+0xa642 mov al, 1
+0xa644 test al, 1
+0xa651 mov eax, dword ptr [rbp - 0x304]
+SHIFT CONTEXT
+0xa668 mov eax, dword ptr [rbp - 0x134]
+0xa66e mov dword ptr [rbp - 0x308], eax
+0xa674 mov al, 1
+0xa676 test al, 1
+0xa683 mov eax, dword ptr [rbp - 0x308]
+0xa689 shr eax, 0xb
+0xa68c mov dword ptr [rbp - 0x314], eax
+0xa692 mov eax, dword ptr [rbp - 0x134]
+0xa698 mov dword ptr [rbp - 0x310], eax
+0xa69e mov al, 1
+0xa6a0 test al, 1
+0xa6ad mov eax, dword ptr [rbp - 0x30c]
+SHIFT CONTEXT
+0xa6cc mov eax, dword ptr [rbp - 0x134]
+0xa6d2 mov dword ptr [rbp - 0x318], eax
+0xa6d8 mov al, 1
+0xa6da test al, 1
+0xa6e7 mov eax, dword ptr [rbp - 0x318]
+0xa6ed shr eax, 0x19
+0xa6f0 mov dword ptr [rbp - 0x324], eax
+0xa6f6 mov eax, dword ptr [rbp - 0x134]
+0xa6fc mov dword ptr [rbp - 0x320], eax
+0xa702 mov al, 1
+0xa704 test al, 1
+0xa711 mov eax, dword ptr [rbp - 0x2fc]
+SHIFT CONTEXT
+0xa8d2 mov eax, dword ptr [rax]
+0xa8d4 mov dword ptr [rbp - 0x34c], eax
+0xa8da mov al, 1
+0xa8dc test al, 1
+0xa8e9 mov eax, dword ptr [rbp - 0x34c]
+0xa8ef shr eax, 0x11
+0xa8f2 mov dword ptr [rbp - 0x354], eax
+0xa8f8 mov eax, dword ptr [rbp - 0x144]
+0xa8fe sub eax, 2
+0xa901 mov dword ptr [rbp - 0x350], eax
+0xa907 mov eax, eax
+0xa909 cmp rax, 0x40
+SHIFT CONTEXT
+0xaaa2 mov eax, dword ptr [rax]
+0xaaa4 mov dword ptr [rbp - 0x37c], eax
+0xaaaa mov al, 1
+0xaaac test al, 1
+0xaab9 mov eax, dword ptr [rbp - 0x37c]
+0xaabf shr eax, 0x13
+0xaac2 mov dword ptr [rbp - 0x384], eax
+0xaac8 mov eax, dword ptr [rbp - 0x144]
+0xaace sub eax, 2
+0xaad1 mov dword ptr [rbp - 0x380], eax
+0xaad7 mov eax, eax
+0xaad9 cmp rax, 0x40
+SHIFT CONTEXT
+0xac7c mov dword ptr [rbp - 0x3ac], eax
+0xac82 mov al, 1
+0xac84 test al, 1
+0xac91 mov eax, dword ptr [rbp - 0x39c]
+0xac97 mov ecx, dword ptr [rbp - 0x3ac]
+0xac9d shr ecx, 0xa
+0xaca0 xor eax, ecx
+0xaca2 mov dword ptr [rbp - 0x3b4], eax
+0xaca8 mov eax, dword ptr [rbp - 0x144]
+0xacae sub eax, 7
+0xacb1 mov dword ptr [rbp - 0x3b0], eax
+0xacb7 mov eax, eax
+SHIFT CONTEXT
+0xae32 mov eax, dword ptr [rax]
+0xae34 mov dword ptr [rbp - 0x3d4], eax
+0xae3a mov al, 1
+0xae3c test al, 1
+0xae49 mov eax, dword ptr [rbp - 0x3d4]
+0xae4f shr eax, 7
+0xae52 mov dword ptr [rbp - 0x3dc], eax
+0xae58 mov eax, dword ptr [rbp - 0x144]
+0xae5e sub eax, 0xf
+0xae61 mov dword ptr [rbp - 0x3d8], eax
+0xae67 mov eax, eax
+0xae69 cmp rax, 0x40
+SHIFT CONTEXT
+0xb002 mov eax, dword ptr [rax]
+0xb004 mov dword ptr [rbp - 0x404], eax
+0xb00a mov al, 1
+0xb00c test al, 1
+0xb019 mov eax, dword ptr [rbp - 0x404]
+0xb01f shr eax, 0x12
+0xb022 mov dword ptr [rbp - 0x40c], eax
+0xb028 mov eax, dword ptr [rbp - 0x144]
+0xb02e sub eax, 0xf
+0xb031 mov dword ptr [rbp - 0x408], eax
+0xb037 mov eax, eax
+0xb039 cmp rax, 0x40
+SHIFT CONTEXT
+0xb1e2 mov al, 1
+0xb1e4 test al, 1
+0xb1f1 mov eax, dword ptr [rbp - 0x3c8]
+0xb1f7 mov ecx, dword ptr [rbp - 0x424]
+0xb1fd mov edx, dword ptr [rbp - 0x434]
+0xb203 shr edx, 3
+0xb206 xor ecx, edx
+0xb208 add eax, ecx
+0xb20a mov dword ptr [rbp - 0x43c], eax
+0xb210 mov eax, dword ptr [rbp - 0x144]
+0xb216 sub eax, 0x10
+0xb219 mov dword ptr [rbp - 0x438], eax
+SHIFT CONTEXT
+0xb3ad mov eax, dword ptr [rbp - 0x124]
+0xb3b3 mov dword ptr [rbp - 0x45c], eax
+0xb3b9 mov al, 1
+0xb3bb test al, 1
+0xb3c8 mov eax, dword ptr [rbp - 0x45c]
+0xb3ce shr eax, 2
+0xb3d1 mov dword ptr [rbp - 0x464], eax
+0xb3d7 mov eax, dword ptr [rbp - 0x124]
+0xb3dd mov dword ptr [rbp - 0x460], eax
+0xb3e3 mov al, 1
+0xb3e5 test al, 1
+0xb3f2 mov eax, dword ptr [rbp - 0x464]
+SHIFT CONTEXT
+0xb409 mov eax, dword ptr [rbp - 0x124]
+0xb40f mov dword ptr [rbp - 0x468], eax
+0xb415 mov al, 1
+0xb417 test al, 1
+0xb424 mov eax, dword ptr [rbp - 0x468]
+0xb42a shr eax, 0xd
+0xb42d mov dword ptr [rbp - 0x474], eax
+0xb433 mov eax, dword ptr [rbp - 0x124]
+0xb439 mov dword ptr [rbp - 0x470], eax
+0xb43f mov al, 1
+0xb441 test al, 1
+0xb44e mov eax, dword ptr [rbp - 0x46c]
+SHIFT CONTEXT
+0xb46d mov eax, dword ptr [rbp - 0x124]
+0xb473 mov dword ptr [rbp - 0x478], eax
+0xb479 mov al, 1
+0xb47b test al, 1
+0xb488 mov eax, dword ptr [rbp - 0x478]
+0xb48e shr eax, 0x16
+0xb491 mov dword ptr [rbp - 0x484], eax
+0xb497 mov eax, dword ptr [rbp - 0x124]
+0xb49d mov dword ptr [rbp - 0x480], eax
+0xb4a3 mov al, 1
+0xb4a5 test al, 1
+0xb4b2 mov eax, dword ptr [rbp - 0x47c]

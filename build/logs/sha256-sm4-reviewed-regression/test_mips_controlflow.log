@@ -1,0 +1,11 @@
+test_aarch64_flag_setting_subtract_recovers_complementary_shift (test_mips_controlflow.MIPSControlflowTests.test_aarch64_flag_setting_subtract_recovers_complementary_shift) ... ok
+test_branch_slot_reads_real_table_in_both_endians (test_mips_controlflow.MIPSControlflowTests.test_branch_slot_reads_real_table_in_both_endians) ... ok
+test_call_slot_precedes_callee_clobber (test_mips_controlflow.MIPSControlflowTests.test_call_slot_precedes_callee_clobber) ... ok
+test_conflicting_join_does_not_keep_provisional_table_reads (test_mips_controlflow.MIPSControlflowTests.test_conflicting_join_does_not_keep_provisional_table_reads) ... ok
+test_pic_address_survives_a_loop_edge (test_mips_controlflow.MIPSControlflowTests.test_pic_address_survives_a_loop_edge) ... ok
+test_scalar_helper_uses_variable_shifts_and_return_delay_slot (test_mips_controlflow.MIPSControlflowTests.test_scalar_helper_uses_variable_shifts_and_return_delay_slot) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.041s
+
+OK

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "archive": "build/dist/ustc_tool_middle.tar.gz",
+  "bytes": 936197531,
+  "sha256": "cf382285baf473c5e77b14fbc85ef28195b1cf9da3736334f0d3be3d57e48766",
+  "file_count": 11668,
+  "selected_payload_files": 16,
+  "payload_digests": {
+    "ustc_tool_middle/build/checks/sha256-pointer-freeze.json": "e55e54ec179bf9158b99d754cb884c560a50d2bd562df6b7609f4d5065511fb7",
+    "ustc_tool_middle/build/checks/sha256-pointer-regression.json": "51c42118ad5503a2b9268bb45ab996cb7b1e239096c0c4154073afba9626ac23",
+    "ustc_tool_middle/build/reports/sha256-pointer-20261015/comparison.json": "755a121103d1a6c264f1c0e12ce05e2bfc3fdca0cdbfb5af26107b73bd8898b0",
+    "ustc_tool_middle/build/reports/sha256-pointer-20261015/development-summary.json": "4fff2350bdba11027777d73c6bf837cbefac9fed9a84978f80a5819819c6910a",
+    "ustc_tool_middle/build/reports/sha256-pointer-20261015/provenance.json": "452f714b60c79c6172da6242d0c4ba7c908ae004165cf1a17ba877ad50d6cae4",
+    "ustc_tool_middle/readme.md": "f309bdba43e7e2c8c73eb622fa0f202a416c4bc719ab64e0243f2ffe954f56ec",
+    "ustc_tool_middle/src/qcs/controlflow.py": "b94eac729f497d6bf62af48d6bfe36434870a04aaa3ac5e14702ae229e251ce0",
+    "ustc_tool_middle/src/qcs/guomi/binary_bignum.py": "51e5b76182ca9a2b00889d0426363e2d164463f1e03b90216d8dfc11d6ca1d98",
+    "ustc_tool_middle/src/qcs/guomi/binary_semantics.py": "47753f2c96287f03bcee1d238e254f9d41e0ad02b029bcdc64d2bd1b33e0c714",
+    "ustc_tool_middle/src/qcs/guomi/source_context.py": "6ceaa24dba0f3efdff43ce253992a8b93173984c7a53778edd4be6e4af24831f",
+    "ustc_tool_middle/src/qcs/guomi/source_semantics.py": "b8c5ede0a8e0f9ff239815f3b994ab2191808f6122dc7b1ae7f4c8e920a2531a",
+    "ustc_tool_middle/src/qcs/source_pointers.py": "d4e7a8373cc12203816161d2f8583f89cd1600ce4d7104885090493ed0bb6e3c",
+    "ustc_tool_middle/tests/test_mips_controlflow.py": "113af7763a55a8d06d662e04c331535e880f8ef5c5436024282462d31080a299",
+    "ustc_tool_middle/tests/test_sha256_rounds.py": "012bea69ce1c1dca3e9470322a37204737aa61767b0a2dff95e2031d299c325b",
+    "ustc_tool_middle/tests/test_source_pointers.py": "44fa392c9a59841a1152add39fb4f2b7011490f24eae62b73d60546ca59b1b15",
+    "ustc_tool_middle/todo.md": "483ddcf07163ac4e424ba5d130376375817fc89d225042569183aaa554d6e0f7"
+  },
+  "forbidden_paths": []
+}

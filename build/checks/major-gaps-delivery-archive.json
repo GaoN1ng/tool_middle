@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "archive": "/var/home/gzn/ourtask/ustc_tool_middle/build/dist/ustc_tool_middle.tar.gz",
+  "archive_bytes": 1044573580,
+  "archive_sha256": "7b6f7cabea386cb4a29d3a6cedc48ec1a2275ee053595e06267b0416acb1dbaa",
+  "files": 18193,
+  "verified_critical_payload_files": 13186,
+  "issues": []
+}

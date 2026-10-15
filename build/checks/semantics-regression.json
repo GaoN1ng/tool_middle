@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "distinct_tests": 198,
+  "test_modules": 23,
+  "single_clean_full_run": false,
+  "initial_full_run": {
+    "tests": 197,
+    "passed": false,
+    "failing_module": "test_guomi",
+    "failing_subcases": 2,
+    "reason": "AArch64 stub address/name TypeError",
+    "summary": "build/logs/semantics-regression/summary.json"
+  },
+  "revision_reruns": {
+    "test_guomi": {
+      "tests": 14,
+      "process_parallel_fixtures": 108,
+      "transient_timeouts": 1,
+      "isolated_timeout_recheck": "build/checks/semantics-thumb-regression-report.json",
+      "exact_assertions_passed": true,
+      "log": "build/logs/semantics-guomi-revision.log"
+    },
+    "test_guomi_sm2_fixes": {
+      "tests": 10,
+      "passed": true,
+      "log": "build/logs/semantics-revision-sm2-tests.log"
+    },
+    "bound_modules": {
+      "tests": 27,
+      "passed": true,
+      "modules": [
+        "test_semantic_followup",
+        "test_semantic_paths",
+        "test_source_linkage",
+        "test_bound_static_state"
+      ],
+      "log": "build/logs/semantics-revision-bound-tests.log"
+    }
+  },
+  "method": "All 23 modules covered in initial full run; affected modules rerun with frozen revision; original unaffected results retained. Added one distinct address-type regression. Failed runs preserved, no duplicate test counting.",
+  "thread_acceleration_attempt": "Abandoned; results retained in build/logs/semantics-guomi-thread-attempt.log, never used as passing evidence.",
+  "performance_limitation": "Parallel regression hit one default overall timeout; isolated same-budget scan completed and all exact assertions were checked. Partial outcomes in development/validation remain in original denominators."
+}

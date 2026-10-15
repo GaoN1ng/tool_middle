@@ -1,0 +1,1477 @@
+{
+  "files": 22,
+  "positive_labels": 13,
+  "scan_status": {
+    "completed": 22
+  },
+  "micro": {
+    "TP": 3,
+    "FP": 0,
+    "FN": 10,
+    "TN": 273,
+    "recall": 0.23076923076923078,
+    "false_negative_rate": 0.7692307692307693,
+    "precision": 1.0
+  },
+  "per_algorithm": {
+    "AES": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 21,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "ChaCha20": {
+      "TP": 1,
+      "FP": 0,
+      "FN": 1,
+      "TN": 20,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "DES": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 21,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "ECDH": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 2,
+      "TN": 20,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "ECDSA": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 21,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "MD5": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 21,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "RC4": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 22,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "RSA": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 21,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    "SHA-1": {
+      "TP": 1,
+      "FP": 0,
+      "FN": 1,
+      "TN": 20,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "SHA-256": {
+      "TP": 1,
+      "FP": 0,
+      "FN": 1,
+      "TN": 20,
+      "recall": 0.5,
+      "false_negative_rate": 0.5,
+      "precision": 1.0
+    },
+    "SM2": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 22,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SM3": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 22,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    },
+    "SM4": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 22,
+      "recall": null,
+      "false_negative_rate": null,
+      "precision": null
+    }
+  },
+  "implementation_groups": [
+    {
+      "algorithm": "AES",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "ChaCha20",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "TP": 1,
+      "FP": 0,
+      "FN": 0,
+      "TN": 0,
+      "recall": 1.0,
+      "false_negative_rate": 0.0,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "ChaCha20",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "DES",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "ECDH",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "ECDH",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "ECDSA",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "MD5",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "RSA",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SHA-1",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "TP": 1,
+      "FP": 0,
+      "FN": 0,
+      "TN": 0,
+      "recall": 1.0,
+      "false_negative_rate": 0.0,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-1",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "TP": 1,
+      "FP": 0,
+      "FN": 0,
+      "TN": 0,
+      "recall": 1.0,
+      "false_negative_rate": 0.0,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    }
+  ],
+  "rows": [
+    {
+      "id": "kokke--tiny-AES-c-aes-source",
+      "sha256": "f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/f7f78b44654efd3542b6886923dd05194286807ebcfeb078ea05d21fe901ee9e/aes.c",
+      "kind": "source",
+      "project": "kokke--tiny-AES-c",
+      "family": "tiny-aes",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "AES"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "kokke--tiny-AES-c-aes-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "AES"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.5272544729523361
+    },
+    {
+      "id": "amosnier--sha-2-sha-256-source",
+      "sha256": "7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/7a74437adc78576b8faff060f9573ba88a6da798914f45d263c75b149add3d27/sha-256.c",
+      "kind": "source",
+      "project": "amosnier--sha-2",
+      "family": "sha256",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "amosnier--sha-2-sha-256-source"
+        }
+      ],
+      "predicted": [
+        "SHA-256"
+      ],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.06604955578222871
+    },
+    {
+      "id": "dhuertas--DES-des-source",
+      "sha256": "6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/6d39481101bd82bf99a89db0bfe7452f44bd6220545258bde753b2bc0c217068/des.c",
+      "kind": "source",
+      "project": "dhuertas--DES",
+      "family": "des",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "DES"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "dhuertas--DES-des-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "DES"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.06710349535569549
+    },
+    {
+      "id": "marcizhu--ChaCha20-ChaCha20-source",
+      "sha256": "0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/0b6688d812c3dccaec82362a14f8a080aac104f284b688944c2f803964d2a642/ChaCha20.h",
+      "kind": "source",
+      "project": "marcizhu--ChaCha20",
+      "family": "chacha",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "ChaCha20"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "marcizhu--ChaCha20-ChaCha20-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "ChaCha20"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.18645727634429932
+    },
+    {
+      "id": "maandree--libsha1-init-source",
+      "sha256": "4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/4ba36f5bc53770ab865b2745818c519a5e282b59925afe7178f5e5a99a5dc16e/init.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-init-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.009884946048259735
+    },
+    {
+      "id": "maandree--libsha1-process-source",
+      "sha256": "03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/03bd0e2e3e5e2faffcf097a6a3087d308c21eb04cb8fccd04c9c72be448dc94c/process.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "SHA-1"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-process-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "SHA-1"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.15595829486846924
+    },
+    {
+      "id": "maandree--libsha1-update-source",
+      "sha256": "f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/f37c892f444a81ad10fb15e1e5d6272bc00656b1984432c2443b5cbd76a1943b/update.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-update-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.010982450097799301
+    },
+    {
+      "id": "maandree--libsha1-digest-source",
+      "sha256": "352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/352be73e7bfe4a43ae089824e41150ddd0e9cc127ce60745fd5f4e0421e21e9f/digest.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "sha1",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-digest-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.023280535358935595
+    },
+    {
+      "id": "maandree--libsha1-behex_lower-source",
+      "sha256": "270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/270b7e2df0da85f147337ea284e881c3f83bdcf141035f555e0593390e797227/behex_lower.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-behex_lower-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.01232347683981061
+    },
+    {
+      "id": "maandree--libsha1-behex_upper-source",
+      "sha256": "64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/64a3a23083f02d28fc4c5a4a2d8d9cd88da9b98bb27247571211fbee78a0ac48/behex_upper.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-behex_upper-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.01316525973379612
+    },
+    {
+      "id": "maandree--libsha1-unhex-source",
+      "sha256": "5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/5b690233f4f7fe34e582f70148851895babf98c5e1d4e486472d78b4b7dac3c4/unhex.c",
+      "kind": "source",
+      "project": "maandree--libsha1",
+      "family": "hex",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "maandree--libsha1-unhex-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.0098404036834836
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_MD5-source",
+      "sha256": "5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/5b91ed0339074e2e546119833398e2cdb7190c33a59c405bf43b2417c789547d/Hacl_Hash_MD5.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-md5",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "MD5"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_MD5-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "MD5"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.37918592477217317
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA1-source",
+      "sha256": "ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/ce08721d491f3b8a9bd4cde6c27bfcc8fc01471512ccca4bd3c0b764cb551d29/Hacl_Hash_SHA1.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha1",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "SHA-1"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_SHA1-source"
+        }
+      ],
+      "predicted": [
+        "SHA-1"
+      ],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.13366261310875416
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Hash_SHA2-source",
+      "sha256": "6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/6cd390cc86d9054e3d577f75e1e4d1559a545ec22e4643179aa087c8bd612e4e/Hacl_Hash_SHA2.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-sha2",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Hash_SHA2-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.3761863517574966
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Chacha20-source",
+      "sha256": "c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/c9ecf4df617745715eb0dce89c9b92c8e24e35368a01fa25225d9b8736b6cd1e/Hacl_Chacha20.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-chacha",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "ChaCha20"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Chacha20-source"
+        }
+      ],
+      "predicted": [
+        "ChaCha20"
+      ],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.818187661934644
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_RSAPSS-source",
+      "sha256": "32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/32f3a05a817b18b240e45a830075cc7bdd453661578bd52b1d083fbbfe5222d7/Hacl_RSAPSS.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-rsa",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_RSAPSS-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.2123427470214665
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_P256-source",
+      "sha256": "2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/2ba89a470a450f920043af84fdf8f4ddc708b6569f1b3d6d646e3f7d03f8d810/Hacl_P256.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-p256",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_P256-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 3.898782807867974
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Curve25519_51-source",
+      "sha256": "964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/964a32cf81f0347d4ca72d120a912812e799c18cf23b9f51008ab6d19d3a1cc8/Hacl_Curve25519_51.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-curve25519",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [
+        "ECDH"
+      ],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Curve25519_51-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [
+        "ECDH"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.060062346048653126
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Bignum32-source",
+      "sha256": "8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/8349cf22b61308acc1a541487ece5d6e0889a2ff6f9ae21372cb0b47a3f0bab7/Hacl_Bignum32.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum32",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Bignum32-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.13721628673374653
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_Bignum64-source",
+      "sha256": "a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/a8c053aa30401f33612e274fb6c6eaca1545c074f316a982ddee37b42d4d2691/Hacl_Bignum64.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-bignum64",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_Bignum64-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.13084801007062197
+    },
+    {
+      "id": "hacl-star--hacl-star-Hacl_MAC_Poly1305-source",
+      "sha256": "9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/9715b65208d10fdf9a9f5f3fe67dfc18226455ca2d34949795e8f75504129395/Hacl_MAC_Poly1305.c",
+      "kind": "source",
+      "project": "hacl-star--hacl-star",
+      "family": "hacl-poly1305",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "hacl-star--hacl-star-Hacl_MAC_Poly1305-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.1262919520959258
+    },
+    {
+      "id": "rurban--smhasher-MurmurHash3-source",
+      "sha256": "62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/rf/62921379d3af1c09354c89eaabfffd1b3bdac20deb9a5e873fc666ff9bf1a19c/MurmurHash3.cpp",
+      "kind": "source",
+      "project": "rurban--smhasher",
+      "family": "murmur3",
+      "architecture": "source",
+      "compiler_flags": [],
+      "symbol_state": "unknown",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "DES",
+        "RC4",
+        "ChaCha20",
+        "RSA",
+        "ECDSA",
+        "ECDH",
+        "MD5",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": [
+        {
+          "manifest": "validation_set__rf-independent-20261014__manifest.json",
+          "id": "rurban--smhasher-MurmurHash3-source"
+        }
+      ],
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.06548990402370691
+    }
+  ],
+  "seconds": 8.973948545288295,
+  "by_kind": {
+    "source": {
+      "files": 22,
+      "positive_labels": 13,
+      "scan_status": {
+        "completed": 22
+      },
+      "micro": {
+        "TP": 3,
+        "FP": 0,
+        "FN": 10,
+        "TN": 273,
+        "recall": 0.23076923076923078,
+        "false_negative_rate": 0.7692307692307693,
+        "precision": 1.0
+      },
+      "per_algorithm": {
+        "AES": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 21,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "ChaCha20": {
+          "TP": 1,
+          "FP": 0,
+          "FN": 1,
+          "TN": 20,
+          "recall": 0.5,
+          "false_negative_rate": 0.5,
+          "precision": 1.0
+        },
+        "DES": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 21,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "ECDH": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 2,
+          "TN": 20,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "ECDSA": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 21,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "MD5": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 21,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "RC4": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 22,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "RSA": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 21,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        "SHA-1": {
+          "TP": 1,
+          "FP": 0,
+          "FN": 1,
+          "TN": 20,
+          "recall": 0.5,
+          "false_negative_rate": 0.5,
+          "precision": 1.0
+        },
+        "SHA-256": {
+          "TP": 1,
+          "FP": 0,
+          "FN": 1,
+          "TN": 20,
+          "recall": 0.5,
+          "false_negative_rate": 0.5,
+          "precision": 1.0
+        },
+        "SM2": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 22,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "SM3": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 22,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        },
+        "SM4": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "TN": 22,
+          "recall": null,
+          "false_negative_rate": null,
+          "precision": null
+        }
+      },
+      "implementation_groups": [
+        {
+          "algorithm": "AES",
+          "project": "kokke--tiny-AES-c",
+          "family": "tiny-aes",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "ChaCha20",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-chacha",
+          "TP": 1,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "recall": 1.0,
+          "false_negative_rate": 0.0,
+          "precision": 1.0
+        },
+        {
+          "algorithm": "ChaCha20",
+          "project": "marcizhu--ChaCha20",
+          "family": "chacha",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "DES",
+          "project": "dhuertas--DES",
+          "family": "des",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "ECDH",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-curve25519",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "ECDH",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-p256",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "ECDSA",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-p256",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "MD5",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-md5",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "RSA",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-rsa",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "SHA-1",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-sha1",
+          "TP": 1,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "recall": 1.0,
+          "false_negative_rate": 0.0,
+          "precision": 1.0
+        },
+        {
+          "algorithm": "SHA-1",
+          "project": "maandree--libsha1",
+          "family": "sha1",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        },
+        {
+          "algorithm": "SHA-256",
+          "project": "amosnier--sha-2",
+          "family": "sha256",
+          "TP": 1,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "recall": 1.0,
+          "false_negative_rate": 0.0,
+          "precision": 1.0
+        },
+        {
+          "algorithm": "SHA-256",
+          "project": "hacl-star--hacl-star",
+          "family": "hacl-sha2",
+          "TP": 0,
+          "FP": 0,
+          "FN": 1,
+          "TN": 0,
+          "recall": 0.0,
+          "false_negative_rate": 1.0,
+          "precision": null
+        }
+      ]
+    }
+  }
+}

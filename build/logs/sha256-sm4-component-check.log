@@ -1,0 +1,4 @@
+arduinolibs-chacha-arm-O0 {'ChaCha20'} []
+control-quarter-arm-O0 {'ChaCha20'} []
+tinyssh-crypto_stream_chacha20-arm-O0 {'ChaCha20'} []
+tinyssh-crypto_hash_sha256-x86_64-Os {'SHA-256'} []

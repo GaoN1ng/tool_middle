@@ -1,0 +1,120 @@
+{
+  "development_only": true,
+  "truth_or_denominator_changed": false,
+  "validation_used_for_tuning": false,
+  "baseline": "build/reports/semantics-20261015/development-summary.json",
+  "current_evaluation": "build/experiments/major-gaps-20261015/release-stable-full",
+  "protocol": {
+    "development_only": true,
+    "manifests": [
+      "samples__operation-development-20261013__manifest.json",
+      "samples__guomi-development-20261012__all-manifest.json",
+      "samples__guomi-operations-20261012__manifest.json",
+      "samples__research-development-20261013__manifest.json",
+      "samples__semantic-development-20261013__manifest.json",
+      "samples__controlflow-development-20261014__manifest.json"
+    ],
+    "manifest_digests": {
+      "samples__operation-development-20261013__manifest.json": "79c6d4253bb0cbbdacaf526482b48da3890a2937b046d1df7eb2ec647ac0dd8f",
+      "samples__guomi-development-20261012__all-manifest.json": "916f30b5058233d472550ba5981d211f454d052056bf3f42342d87515c00a8b8",
+      "samples__guomi-operations-20261012__manifest.json": "37bf8b155975c8d1e54a3cc67c990870ce19770f3c06df877dcc6cfada78137c",
+      "samples__research-development-20261013__manifest.json": "72bfb77f3f474986e8f1d3e30cbba0ecdc02b33d8c5929bd4bab4342b7df0d75",
+      "samples__semantic-development-20261013__manifest.json": "ae66419bf9372ca69b08bf15e1f3412784448378e2429c9a24666c2e54919fd9",
+      "samples__controlflow-development-20261014__manifest.json": "d7bc4083c088f0c52b29ad2e633d8d4e42063357bdff96842c0a39bcf2bfcda3"
+    },
+    "package_sha256": "ec83619ac1310c59211bc944fa0c48690c605ff9d2ae8ab7b50e17a61faa568d",
+    "runner_sha256": "9c1791ad20abe96bc22b6a8a8e08b902c27ee247587a0303b510daaf22283042",
+    "context_files_sha256": "9368a9245e8c559d1dcc3aef801b4ef62ec83614e489c4ac5e6b42e4bcd2f17b",
+    "files": 2344,
+    "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/major-gaps-20261015/release-stable-package",
+    "focus": null,
+    "kind_filter": null,
+    "source_contexts": "build/datasets/development-source-context/major-gaps-20261015/index.json",
+    "metric_unit": "content-deduplicated file/algorithm; declared known scope only; incomplete scans remain in denominators",
+    "target_execution": false
+  },
+  "source_context_control": "build/experiments/major-gaps-20261015/baseline-new-context-source/summary.json",
+  "target_native_execution": false,
+  "target_instruction_emulation": "Finite private-memory input/output probes in a separate resource-limited Unicorn process",
+  "metric_note": "Content-deduplicated file/algorithm labels. Partial/failed scans remain in denominators. Development recall is not new-author generalization accuracy.",
+  "probe_limitation": "Three finite vectors are not a proof of equivalence for all inputs. Unsupported ABIs/imports, invalid target instructions and budgets can decline.",
+  "witnesses_by_algorithm": {
+    "ECDH": 18,
+    "SM3": 9,
+    "AES": 18,
+    "DES": 9,
+    "RC4": 9
+  },
+  "errors": [
+    {
+      "engine": "guomi_semantic",
+      "code": "analysis_limit",
+      "count": 1
+    },
+    {
+      "engine": "dispatch",
+      "code": "timeout",
+      "count": 3
+    }
+  ],
+  "probe_statuses": {
+    "not_run": 154,
+    "not_applicable": 858,
+    "completed": 904,
+    "budget_exhausted": 402,
+    "budget_unavailable": 21,
+    "backend_declined": 5
+  },
+  "budget_abstentions": [
+    {
+      "architecture": "thumb",
+      "algorithm": "RC4",
+      "count": 19
+    },
+    {
+      "architecture": "arm",
+      "algorithm": "AES",
+      "count": 9
+    },
+    {
+      "architecture": "thumb",
+      "algorithm": "ECDH",
+      "count": 3
+    },
+    {
+      "architecture": "arm",
+      "algorithm": "RC4",
+      "count": 9
+    },
+    {
+      "architecture": "mipsel",
+      "algorithm": "RC4",
+      "count": 1
+    },
+    {
+      "architecture": "thumb",
+      "algorithm": "AES",
+      "count": 9
+    },
+    {
+      "architecture": "arm",
+      "algorithm": "ECDH",
+      "count": 1
+    }
+  ],
+  "status_policy": "Configured optional probe search timeouts abstain explicitly without accepting worker output; native backend crashes remain partial. Overall scanner timeouts remain partial. Neither abstention nor completed implies cryptographic absence.",
+  "failed_workers": [
+    {
+      "architecture": "arm",
+      "returncode": 1,
+      "limit": null,
+      "count": 2
+    },
+    {
+      "architecture": "thumb",
+      "returncode": 1,
+      "limit": null,
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{'TP': 73, 'FP': 0, 'FN': 32, 'TN': 1607, 'recall': 0.6952380952380952, 'false_negative_rate': 0.3047619047619048, 'precision': 1.0}

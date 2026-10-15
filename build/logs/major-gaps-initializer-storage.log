@@ -1,0 +1,9 @@
+test_complete_map_needs_actual_operation_consumers (test_table_initializers.GeneratedTableTests.test_complete_map_needs_actual_operation_consumers) ... ok
+test_multidimensional_storage_is_bounded_before_allocation (test_table_initializers.GeneratedTableTests.test_multidimensional_storage_is_bounded_before_allocation) ... ok
+test_mutated_unknown_and_out_of_bounds_constructors_decline (test_table_initializers.GeneratedTableTests.test_mutated_unknown_and_out_of_bounds_constructors_decline) ... ok
+test_renamed_functions_and_arrays_preserve_behavior (test_table_initializers.GeneratedTableTests.test_renamed_functions_and_arrays_preserve_behavior) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.425s
+
+OK

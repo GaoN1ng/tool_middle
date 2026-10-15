@@ -1,0 +1,160 @@
+{
+  "before": {
+    "TP": 1476,
+    "FP": 0,
+    "FN": 96,
+    "TN": 24070,
+    "recall": 0.9389312977099237,
+    "false_negative_rate": 0.061068702290076333,
+    "precision": 1.0
+  },
+  "after": {
+    "TP": 1484,
+    "FP": 0,
+    "FN": 88,
+    "TN": 24070,
+    "recall": 0.9440203562340967,
+    "false_negative_rate": 0.05597964376590331,
+    "precision": 1.0
+  },
+  "gained_true_labels": [
+    {
+      "id": "libmcrypt-rijndael-128-source",
+      "sha256": "0a006fb52fb31b4ea912d7b79ba478e514c27bf65ff9aa778f4e3132e125c88f",
+      "kind": "source",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-Os",
+      "sha256": "0a183d495be3339b0d532ee20d263c53a5c31a19403989ecebe175475bf0acb6",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-sm3_arm64",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-O2",
+      "sha256": "445b5b8f5e902b423efb3cf8cbe5b173b9eb3ddd24d7db1fd13e481fd1143e58",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-sm3_arm64",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-mipsel-O0",
+      "sha256": "4b187d30f43320bda7962db1570a645b6e18981ead298445afb0e451dabf3fbf",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "split-compression-mips_be-Os",
+      "sha256": "4c00cfd1ed508b8213ab0982e3861c4580b36e6873f9785a6db507affa7df38e",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "split-compression-mips_be-O2",
+      "sha256": "4c096b39de8c4f390377eae1301fd56f3e8b09f6863d6ac3c5c4759363484d93",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-aarch64-O0",
+      "sha256": "4c6d34b43bd1a54726bd5179a2ba962e2a26f6885d9cc29e75f20cebb685f145",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-arm-O0",
+      "sha256": "869c2d41cdd037de8b4e553a1e90965ddc8e0379b7f58d21b348519d9656e7e8",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-mips_be-O0",
+      "sha256": "93062c1d2dcce2f5a1839f0268a06aec1ad928cae7a716e468afabe996b5320f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libmcrypt-des-mips_be-Os",
+      "sha256": "b3eb92c5c745aff1f0e6e451ae8a3d6efe2d45ab8154cbe7d3cd20bb4243fee0",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libecc-sm3-x86_64-O0",
+      "sha256": "d508a2aaa4e03442ff9de803986d20300bf7e04a6c8a7207bef36f771d831d84",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libmcrypt-des-mips_be-O2",
+      "sha256": "ecc04ed9cac17d4e1ab5fec380be44e4fe26486cda2b130f8e62db98710992ac",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    }
+  ],
+  "lost_true_labels": [
+    {
+      "id": "libmcrypt-des-thumb-Os",
+      "sha256": "5443f38c6480f70488c6ab730f37756406e1bf80966c2ff0465455445304e9c7",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libmcrypt-arcfour-thumb-O0",
+      "sha256": "8e860b09a35a5478b03face63358d7194f2deebf915075b794b321320a2b613b",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libmcrypt-des-thumb-O2",
+      "sha256": "8f3d82a5bcb49416602cfb0e1f0192aeaaafa376ab6a3887c98a6d78f8d472f5",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libmcrypt-des-arm-Os",
+      "sha256": "e91790e82f01f5d49d7b47423f1d31f0c45cb29247dc68a74a775617e3b9a9f9",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    }
+  ],
+  "gained_by_algorithm": {
+    "AES": 1,
+    "SM3": 9,
+    "DES": 2
+  },
+  "denominator_unchanged": true,
+  "files": 2344,
+  "positive_labels": 1572
+}

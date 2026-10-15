@@ -1,0 +1,29 @@
+{"id": "split-compression-thumb-O2", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "gmssl-sm3_arm64-aarch64-Os", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 105120, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "gmssl-sm3_arm64-aarch64-O2", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 105104, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "openssl-sm3-plain-aarch64-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 134500, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "split-compression-mips_be-O2", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 66064, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "split-compression-thumb-Os", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "libecc-sm3-aarch64-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 109884, \"vectors\": 3, \"state_offset\": 8, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "split-compression-mips_be-Os", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 105184, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "mhash-sha1-thumb-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "libecc-sm3-mipsel-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 97096, \"vectors\": 3, \"state_offset\": 8, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "split-compression-mipsel-O2", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "mhash-sha1-arm-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "libecc-sm3-arm-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 81400, \"vectors\": 3, \"state_offset\": 8, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "mhash-sha1-x86_64-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "mhash-sha1-aarch64-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "split-compression-thumb-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "gmssl-modern-sm3-arm-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "arduinolibs-sha1-arm-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "libecc-sm3-x86_64-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 38304, \"vectors\": 3, \"state_offset\": 8, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libecc-sm3-mips_be-O0", "returncode": 0, "out": "[{\"algorithm\": \"SM3\", \"address\": 97096, \"vectors\": 3, \"state_offset\": 8, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "gmssl-sm3_avx2-x86_64-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "gmssl-sm3_arm64-aarch64-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "split-compression-mipsel-Os", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "gmssl-modern-sm3-mipsel-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "boringssl-sha1-thumb-O0", "returncode": 0, "out": "[{\"algorithm\": \"SHA-1\", \"address\": 84134, \"vectors\": 3, \"state_offset\": 0, \"relation\": \"Complete compression mapping on three distinct arbitrary chaining states and 64-byte messages, including state feedback and unchanged input\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "gmssl-modern-sm3-aarch64-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "mhash-sha1-mips_be-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "mhash-sha1-mipsel-O0", "returncode": 0, "out": "[]\n", "err": ""}
+{"id": "gmssl-modern-sm3-mips_be-O0", "returncode": 0, "out": "[]\n", "err": ""}

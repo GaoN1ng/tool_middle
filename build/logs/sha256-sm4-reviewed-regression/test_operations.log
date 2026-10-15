@@ -1,0 +1,14 @@
+test_ecdh_requires_peer_point_and_related_coordinate_output (test_operations.OperationsTests.test_ecdh_requires_peer_point_and_related_coordinate_output) ... ok
+test_ecdsa_equation_requires_nonce_point_coordinate_and_order (test_operations.OperationsTests.test_ecdsa_equation_requires_nonce_point_coordinate_and_order) ... ok
+test_macro_round_definitions_are_lexical (test_operations.OperationsTests.test_macro_round_definitions_are_lexical) ... ok
+test_neutral_binary_and_mutations (test_operations.OperationsTests.test_neutral_binary_and_mutations) ... ok
+test_quarter_round_requires_all_dependencies (test_operations.OperationsTests.test_quarter_round_requires_all_dependencies) ... ok
+test_rc4_requires_recurrence_swap_and_output (test_operations.OperationsTests.test_rc4_requires_recurrence_swap_and_output) ... ok
+test_rsa_crt_requires_shared_base_reduction_and_recombination (test_operations.OperationsTests.test_rsa_crt_requires_shared_base_reduction_and_recombination) ... ok
+test_shared_sha1_constants_remain_clues_without_operations (test_operations.OperationsTests.test_shared_sha1_constants_remain_clues_without_operations) ... ok
+test_sigma_has_exact_logical_shift (test_operations.OperationsTests.test_sigma_has_exact_logical_shift) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.610s
+
+OK

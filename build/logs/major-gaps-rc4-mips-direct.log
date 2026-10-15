@@ -1,0 +1,7 @@
+CANDIDATES 399 ['0x168e4', '0x16cd0', '0x16d60', '0x16e70', '0x1707c', '0x1711c', '0x1720c', '0x1733c', '0x173e4', '0x174d8', '0x1760c', '0x17658']
+ENTRIES 0x16720 0x16798 False False
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/build/tmp/major-gaps/one_probe.py", line 23, in <module>
+    key,plain,expected=[bytes.fromhex(x) for x in BLOCK_VECTORS[r['truth'][0]][0]];m.reset();m.machine.mem_write(ARENA+0x1000,key);m.machine.mem_write(ARENA+0x2000,plain)
+                                                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'RC4'

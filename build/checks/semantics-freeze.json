@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "files": 109,
+  "package_sha256": "b12808998c257afa749aa7ad6e58097728c6c2ddcee0d2731e272c38fd8eb45a",
+  "source_runtime_frozen_wheel_installed_equal": true,
+  "wheel_sha256": "068e503e1f0dfdb185877c0d1ee70ff23b2b36d784f06da9e33638223980fdb6",
+  "revision_file": "qcs/guomi/binary_bignum.py",
+  "initial_freeze_unchanged": true,
+  "wheel_documentation_refreshed": true
+}

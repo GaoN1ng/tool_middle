@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "tests": 14,
+  "failures": 1,
+  "errors": 0,
+  "method": "Same 108 binary fixtures and exact assertions, dispatched to 8 processes; other unittest methods unchanged. Frozen revision package used."
+}

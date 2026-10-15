@@ -1,0 +1,28 @@
+25 / 390 rescans 42.7
+50 / 390 rescans 71.4
+75 / 390 rescans 98.7
+100 / 390 rescans 123.9
+125 / 390 rescans 147.6
+150 / 390 rescans 181.5
+175 / 390 rescans 219.1
+200 / 390 rescans 245.1
+225 / 390 rescans 271.9
+250 / 390 rescans 302.2
+275 / 390 rescans 325.0
+300 / 390 rescans 350.9
+325 / 390 rescans 379.8
+350 / 390 rescans 404.9
+375 / 390 rescans 437.1
+Waiting for complete parent denominator
+Waiting for complete parent denominator
+Waiting for complete parent denominator
+Waiting for complete parent denominator
+{
+  "TP": 1375,
+  "FP": 0,
+  "FN": 197,
+  "TN": 24070,
+  "recall": 0.8746819338422391,
+  "false_negative_rate": 0.1253180661577608,
+  "precision": 1.0
+}

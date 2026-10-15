@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "wheel": "build/dist/qcs_prototype-0.1.0.post1-py3-none-any.whl",
+  "sha256": "166d1d1237815ffb962485fe57d24e713e8ba4bc6302de8043b870d7c89ffc6a",
+  "compared_source_modules": 53,
+  "changes": []
+}

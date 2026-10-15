@@ -1,0 +1,26 @@
+0x14a6e ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14a6e ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14a6e ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14aee ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14aee ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14aee ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14b72 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14b72 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14b72 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14bf2 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14bf2 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14bf2 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14a6e ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14aee ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14b72 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14bf2 ldr r0, [r0] array ((('frame-base', -268), 0, 4), ('word_index', ((), 1))) value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 3
+0x14a6e ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 0
+0x14aee ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84718, 1), ()), 0)})) cells 0
+0x14b72 ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84850, 1), ()), 0)})) cells 0
+0x14bf2 ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84978, 1), ()), 0)})) cells 0
+0x14a6e ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84590, 1), ()), 0)})) cells 0
+0x14aee ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84718, 1), ()), 0)})) cells 0
+0x14b72 ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84850, 1), ()), 0)})) cells 0
+0x14bf2 ldr r0, [r0] array None value ('lin', frozenset({((('cfg', 84978, 1), ()), 0)})) cells 0
+{'status': 'limited', 'steps': 10139, 'blocks': 886, 'loop_edges': 7, 'joins': 2930, 'widened_blocks': 104, 'entry_count': 1, 'declined_transfers': 0, 'replayed_blocks': 886, 'unstable_reachable_blocks': 0, 'fixed_point_steps': 7732, 'component_count': 1, 'limited_components': 0, 'step_budget_per_component_per_phase': 80000, 'total_step_budget': 1000000}
+sigmas []

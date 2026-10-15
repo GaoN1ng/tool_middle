@@ -1,0 +1,18 @@
+{"id": "libmcrypt-arcfour-mipsel-Os", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 92056, \"setup_address\": 91936, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libmcrypt-arcfour-mips_be-O0", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 94076, \"setup_address\": 92208, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libmcrypt-des-mipsel-O2", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-arcfour-mips_be-O2", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 92056, \"setup_address\": 91936, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libmcrypt-rijndael-128-mips_be-Os", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-des-mipsel-O0", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-rijndael-128-mipsel-Os", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-arcfour-mipsel-O2", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 92056, \"setup_address\": 91936, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libmcrypt-rijndael-128-mips_be-O2", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-rijndael-128-mipsel-O2", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-des-mips_be-Os", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-rijndael-128-mipsel-O0", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-des-mipsel-Os", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-des-mips_be-O0", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-arcfour-mips_be-Os", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 92056, \"setup_address\": 91936, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}
+{"id": "libmcrypt-des-mips_be-O2", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-rijndael-128-mips_be-O0", "returncode": -11, "out": "", "err": ""}
+{"id": "libmcrypt-arcfour-mipsel-O0", "returncode": 0, "out": "[{\"algorithm\": \"RC4\", \"address\": 94076, \"setup_address\": 92208, \"vectors\": 3, \"relation\": \"Key scheduling and byte stream match three independent RC4 keys/plaintexts, including consecutive stateful calls\", \"modeled_imports\": []}]\n", "err": ""}

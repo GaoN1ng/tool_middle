@@ -1,0 +1,304 @@
+// SPDX-License-Identifier: GPL-2.0 OR BSD-2-Clause
+/*
+ * Hash heap memory management
+ *
+ * Copyright (C) 2022 - 2026, Stephan Mueller <smueller@chronox.de>
+ */
+
+#include "build_bug_on.h"
+#include "ext_headers_internal.h"
+#include "hash_common.h"
+#include "lc_hash.h"
+#include "lc_memory_support.h"
+#include "lc_status.h"
+#include "ret_checkers.h"
+#include "visibility.h"
+
+LC_INTERFACE_FUNCTION(int, lc_hash_init, struct lc_hash_ctx *hash_ctx)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return -EINVAL;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return -EINVAL;
+
+	return hash->init(hash_ctx->hash_state);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hash_update, struct lc_hash_ctx *hash_ctx,
+		      const uint8_t *in, size_t inlen)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx || !in || !inlen)
+		return;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return;
+
+	hash->update(hash_ctx->hash_state, in, inlen);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hash_final, struct lc_hash_ctx *hash_ctx,
+		      uint8_t *digest)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx || !digest)
+		return;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return;
+
+	hash->final(hash_ctx->hash_state, digest);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hash_set_digestsize, struct lc_hash_ctx *hash_ctx,
+		      size_t digestsize)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return -EINVAL;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return -EINVAL;
+
+	if (hash->set_digestsize)
+		hash->set_digestsize(hash_ctx->hash_state, digestsize);
+
+	if (hash->get_digestsize(hash_ctx->hash_state) != digestsize) {
+		/* Safety check in case function is called with hash */
+		return -EFAULT;
+	}
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(size_t, lc_hash_digestsize,
+		      const struct lc_hash_ctx *hash_ctx)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return 0;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return 0;
+
+	return hash->get_digestsize(hash_ctx->hash_state);
+}
+
+LC_INTERFACE_FUNCTION(unsigned int, lc_hash_blocksize,
+		      const struct lc_hash_ctx *hash_ctx)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return 0;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return 0;
+
+	return hash->sponge_rate;
+}
+
+LC_INTERFACE_FUNCTION(unsigned int, lc_hash_ctxsize,
+		      struct lc_hash_ctx *hash_ctx)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return 0;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return 0;
+
+	return hash->statesize;
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hash_zero, struct lc_hash_ctx *hash_ctx)
+{
+	const struct lc_hash *hash;
+
+	if (!hash_ctx)
+		return;
+
+	hash = hash_ctx->hash;
+	if (!hash)
+		return;
+
+	lc_memset_secure(hash_ctx->hash_state, 0, hash->statesize);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hash_set_ctx, const struct lc_hash *hash,
+		      struct lc_hash_ctx *hash_ctx)
+{
+	int ret = 0;
+
+	CKNULL(hash, -EINVAL);
+	CKNULL(hash_ctx, -EINVAL);
+
+	/*
+	 * We allow updating an already set context (i.e. where the
+	 * hash_ctx->hash_state pointer is already set), because the memory
+	 * could be duplicated from an existing state and we just need to adjust
+	 * the pointer anew.
+	 */
+	LC_HASH_SET_CTX(hash_ctx, hash);
+
+out:
+	return ret;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hash_alloc, const struct lc_hash *hash,
+		      struct lc_hash_ctx **hash_ctx)
+{
+	struct lc_hash_ctx *out_ctx = NULL;
+	int ret;
+
+	if (!hash_ctx)
+		return -EINVAL;
+
+	BUILD_BUG_ON(LC_MEM_DEF_ALIGNED_OFFSET < LC_HASH_COMMON_ALIGNMENT);
+	ret = lc_alloc_aligned((void **)&out_ctx, LC_HASH_COMMON_ALIGNMENT,
+			       LC_HASH_CTX_SIZE);
+	if (ret)
+		return ret;
+
+	LC_HASH_SET_CTX(out_ctx, hash);
+
+	*hash_ctx = out_ctx;
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hash_zero_free, struct lc_hash_ctx *hash_ctx)
+{
+	if (!hash_ctx)
+		return;
+
+	lc_hash_zero(hash_ctx);
+	lc_free(hash_ctx);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hash, const struct lc_hash *hash,
+		      const uint8_t *in, size_t inlen, uint8_t *digest)
+{
+	LC_HASH_CTX_ON_STACK(hash_ctx, hash);
+	int ret;
+
+	CKNULL(digest, -EINVAL);
+
+	CKINT(lc_hash_init(hash_ctx));
+	lc_hash_update(hash_ctx, in, inlen);
+	lc_hash_final(hash_ctx, digest);
+
+out:
+	lc_hash_zero(hash_ctx);
+	return ret;
+}
+
+int lc_hash_nocheck(const struct lc_hash *hash, const uint8_t *in, size_t inlen,
+		    uint8_t *digest)
+{
+	LC_HASH_CTX_ON_STACK(hash_ctx, hash);
+	int ret;
+
+	CKINT(hash->init_nocheck(hash_ctx->hash_state));
+	lc_hash_update(hash_ctx, in, inlen);
+	lc_hash_final(hash_ctx, digest);
+
+out:
+	lc_hash_zero(hash_ctx);
+	return ret;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_xof, const struct lc_hash *xof, const uint8_t *in,
+		      size_t inlen, uint8_t *digest, size_t digestlen)
+{
+	LC_HASH_CTX_ON_STACK(hash_ctx, xof);
+	int ret;
+
+	CKNULL(digest, -EINVAL);
+
+	CKINT(lc_hash_init(hash_ctx));
+	lc_hash_update(hash_ctx, in, inlen);
+	CKINT(lc_hash_set_digestsize(hash_ctx, digestlen));
+	lc_hash_final(hash_ctx, digest);
+
+out:
+	lc_hash_zero(hash_ctx);
+	return ret;
+}
+
+int lc_xof_nocheck(const struct lc_hash *xof, const uint8_t *in, size_t inlen,
+		   uint8_t *digest, size_t digestlen)
+{
+	LC_HASH_CTX_ON_STACK(hash_ctx, xof);
+	int ret;
+
+	CKINT(xof->init_nocheck(hash_ctx->hash_state));
+	lc_hash_update(hash_ctx, in, inlen);
+	CKINT(lc_hash_set_digestsize(hash_ctx, digestlen));
+	lc_hash_final(hash_ctx, digest);
+
+out:
+	lc_hash_zero(hash_ctx);
+	return ret;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_sponge, const struct lc_hash *hash, void *state,
+		      unsigned int rounds)
+{
+	if (!state || !hash || !hash->sponge_permutation)
+		return -EOPNOTSUPP;
+
+	hash->sponge_permutation(state, rounds);
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_sponge_add_bytes, const struct lc_hash *hash,
+		      void *state, const uint8_t *data, size_t offset,
+		      size_t length)
+{
+	if (!state || !hash || !hash->sponge_add_bytes)
+		return -EOPNOTSUPP;
+
+	hash->sponge_add_bytes(state, data, offset, length);
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_sponge_extract_bytes, const struct lc_hash *hash,
+		      const void *state, uint8_t *data, size_t offset,
+		      size_t length)
+{
+	if (!state || !hash || !hash->sponge_extract_bytes)
+		return -EOPNOTSUPP;
+
+	hash->sponge_extract_bytes(state, data, offset, length);
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_sponge_newstate, const struct lc_hash *hash,
+		      void *state, const uint8_t *data, size_t offset,
+		      size_t length)
+{
+	if (!state || !hash || !hash->sponge_newstate)
+		return -EOPNOTSUPP;
+
+	hash->sponge_newstate(state, data, offset, length);
+
+	return 0;
+}

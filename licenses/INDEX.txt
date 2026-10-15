@@ -1,5 +1,5 @@
 QCS 许可证分类索引
-更新：2026-10-14（Asia/Shanghai）
+更新：2026-10-15（Asia/Shanghai）
 
 本索引按用途/上游项目导航，许可摘要不替代原文或逐文件声明。
 路径相对于 ustc_tool_middle/。同项目的相同文本可以共享副本，但原来源分别列出；
@@ -340,3 +340,93 @@ QCS 许可证分类索引
   wheel 携带集成组件/参考数据的中央声明和原运行副本。样本许可随完整归档分发。
   requirements*.lock 中的 Python 依赖由 pip 安装；各 wheel 的 dist-info 许可
   仍在依赖发行包中。build/wheelhouse/ 保留的离线轮子携带各自声明。
+
+
+五、2026-10-15 独立验证采集来源补充
+============================================================
+保留在 Samples 中但已在扫描前排除的来源也保留法律声明；不代表其进入232文件评测分母。
+
+[983--sha-256] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：983/SHA-256 @ 72f3da007ea1fdbf43b2752adb36242d61e679ca
+  文件：licenses/samples/983--sha-256/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/983--SHA-256/LICENSE
+
+[blake3-team--blake3] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：BLAKE3-team/BLAKE3 @ f55849f89cd85083c1c9daa2c5de20766f309c00
+  文件：licenses/samples/blake3-team--blake3/independent-20261015/LICENSE_A2
+    原路径：build/validation/independent-20261015/upstream/BLAKE3-team--BLAKE3/LICENSE_A2
+  文件：licenses/samples/blake3-team--blake3/independent-20261015/LICENSE_A2LLVM
+    原路径：build/validation/independent-20261015/upstream/BLAKE3-team--BLAKE3/LICENSE_A2LLVM
+  文件：licenses/samples/blake3-team--blake3/independent-20261015/LICENSE_CC0
+    原路径：build/validation/independent-20261015/upstream/BLAKE3-team--BLAKE3/LICENSE_CC0
+
+[cyan4973--xxhash] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：Cyan4973/xxHash @ 680bf463fa1ca0461b9a7c2dab7556e1f54cf4cf
+  文件：licenses/samples/cyan4973--xxhash/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/LICENSE
+  文件：licenses/samples/cyan4973--xxhash/independent-20261015/cli/COPYING
+    原路径：Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/cli/COPYING
+  文件：licenses/samples/cyan4973--xxhash/independent-20261015/tests/bench/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/tests/bench/LICENSE
+  文件：licenses/samples/cyan4973--xxhash/independent-20261015/tests/collisions/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/tests/collisions/LICENSE
+
+[juneandgreen--sm-crypto] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：JuneAndGreen/sm-crypto @ 295e1b16f6e8dc9e788cc74fd655f5d38a65bc39
+  文件：licenses/samples/juneandgreen--sm-crypto/independent-20261015/LICENCE_MIT
+    原路径：build/validation/independent-20261015/upstream/JuneAndGreen--sm-crypto/LICENCE_MIT
+
+[jkuhlmann--cgltf] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：jkuhlmann/cgltf @ 85cd62382dfea638278962690cf515023f33ed00
+  文件：licenses/samples/jkuhlmann--cgltf/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/jkuhlmann--cgltf/LICENSE
+
+[kerukuro--digestpp] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：kerukuro/digestpp @ 4beae7541f5c280389898ae6e6111028852f466a
+  文件：licenses/samples/kerukuro--digestpp/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/kerukuro--digestpp/LICENSE
+
+[kmackay--micro-ecc] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：kmackay/micro-ecc @ 541b3a78026420a3e369c4c9281c396b5e531113
+  文件：licenses/samples/kmackay--micro-ecc/independent-20261015/LICENSE.txt
+    原路径：build/validation/independent-20261015/upstream/kmackay--micro-ecc/LICENSE.txt
+
+[miracl--core] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：miracl/core @ a6df6733c1ad1ad0918306abd0c3983b4cd4a58c
+  文件：licenses/samples/miracl--core/independent-20261015/LICENSE.txt
+    原路径：build/validation/independent-20261015/upstream/miracl--core/LICENSE.txt
+  文件：licenses/samples/miracl--core/independent-20261015/NOTICE.txt
+    原路径：build/validation/independent-20261015/upstream/miracl--core/NOTICE.txt
+
+[ogay--sha2] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：ogay/sha2 @ b90991f90967a46d0955dc981e9e3cd53c13b061
+  文件：licenses/samples/ogay--sha2/independent-20261015/sha2-header-notice.txt
+    原路径：Samples/val_set/code_samples/independent-20261015/ogay--sha2/sha2.c
+    摘录：源文件开头完整版权/许可注释，字节范围 [0, 1632]
+
+[rxi--ini] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：rxi/ini @ 13a254c9e38def8924a83badfea5eda5a01b9295
+  文件：licenses/samples/rxi--ini/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/rxi--ini/LICENSE
+
+[smuellerdd--leancrypto] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：smuellerDD/leancrypto @ e491f454baadd17b310ef5b2ced5b61d429e458c
+  文件：licenses/samples/smuellerdd--leancrypto/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/smuellerDD--leancrypto/LICENSE
+  文件：licenses/samples/smuellerdd--leancrypto/independent-20261015/LICENSE.bsd
+    原路径：build/validation/independent-20261015/upstream/smuellerDD--leancrypto/LICENSE.bsd
+  文件：licenses/samples/smuellerdd--leancrypto/independent-20261015/LICENSE.gplv2
+    原路径：build/validation/independent-20261015/upstream/smuellerDD--leancrypto/LICENSE.gplv2
+
+[stbrumme--hash-library] 本轮下载源码/编译样本；许可逐文件适用
+  固定来源：stbrumme/hash-library @ d389d18112bcf7e4786ec5e8723f3658a7f433d7
+  文件：licenses/samples/stbrumme--hash-library/independent-20261015/LICENSE
+    原路径：Samples/val_set/code_samples/independent-20261015/stbrumme--hash-library/LICENSE
+
+Unicorn 2.1.4（外部指令仿真依赖，2026-10-15）
+  来源：https://github.com/unicorn-engine/unicorn/tree/2.1.4
+  文件：licenses/components/unicorn/COPYING（GPL-2.0）
+  文件：licenses/components/unicorn/COPYING.LGPL2（上游附带 LGPL-2.0 文本）
+  文件：licenses/components/unicorn/README.upstream（明确核心引擎采用 GPLv2）
+  PyPI 元数据的 BSD 字段不能概括其所携带的核心；以各上游文件为准。
+  QCS 自有代码许可不覆盖此依赖；分发该依赖时须保留上游声明及对应源码来源。

@@ -1,0 +1,50 @@
+{
+  "development": {
+    "files": 2344,
+    "positive_labels": 1572,
+    "truth_changed": false,
+    "source_context": "build/datasets/development-source-context/linked-20261015/index.json",
+    "baseline": "Old full binary rows plus old-code rerun of all 154 source rows in identical linked context",
+    "revision_reuse": {
+      "development_only": true,
+      "manifests": [
+        "samples__operation-development-20261013__manifest.json",
+        "samples__guomi-development-20261012__all-manifest.json",
+        "samples__guomi-operations-20261012__manifest.json",
+        "samples__research-development-20261013__manifest.json",
+        "samples__semantic-development-20261013__manifest.json",
+        "samples__controlflow-development-20261014__manifest.json"
+      ],
+      "manifest_digests": {
+        "samples__operation-development-20261013__manifest.json": "79c6d4253bb0cbbdacaf526482b48da3890a2937b046d1df7eb2ec647ac0dd8f",
+        "samples__guomi-development-20261012__all-manifest.json": "916f30b5058233d472550ba5981d211f454d052056bf3f42342d87515c00a8b8",
+        "samples__guomi-operations-20261012__manifest.json": "37bf8b155975c8d1e54a3cc67c990870ce19770f3c06df877dcc6cfada78137c",
+        "samples__research-development-20261013__manifest.json": "72bfb77f3f474986e8f1d3e30cbba0ecdc02b33d8c5929bd4bab4342b7df0d75",
+        "samples__semantic-development-20261013__manifest.json": "ae66419bf9372ca69b08bf15e1f3412784448378e2429c9a24666c2e54919fd9",
+        "samples__controlflow-development-20261014__manifest.json": "d7bc4083c088f0c52b29ad2e633d8d4e42063357bdff96842c0a39bcf2bfcda3"
+      },
+      "package_sha256": "b12808998c257afa749aa7ad6e58097728c6c2ddcee0d2731e272c38fd8eb45a",
+      "runner_sha256": "9c1791ad20abe96bc22b6a8a8e08b902c27ee247587a0303b510daaf22283042",
+      "context_files_sha256": "a28555fee2b544f93e7653fcd541a87223ea1360b764c110b71b7a9e50f41171",
+      "files": 2344,
+      "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/semantics-20261015/release-revision-package",
+      "focus": null,
+      "kind_filter": null,
+      "source_contexts": "build/datasets/development-source-context/linked-20261015/index.json",
+      "metric_unit": "content-deduplicated file/algorithm; declared known scope only; incomplete scans remain in denominators",
+      "target_execution": false,
+      "parent": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/semantics-20261015/release-full",
+      "rescan_files": 390,
+      "reuse_files": 1954,
+      "reuse_proof": "Only AArch64 stub branch changed; AST outside that branch identical; all AArch64 ELF and unknown formats rescanned."
+    }
+  },
+  "independent_validation": {
+    "manifest": "build/validation/independent-20261015/manifest.json",
+    "pre_scan_lock": "build/validation/independent-20261015/pre-scan-lock.json",
+    "acquisition": "build/validation/independent-20261015/acquisition.json",
+    "initial_freeze": "build/reports/semantics-20261015/freeze.json",
+    "revision_origin": "Existing development regression AArch64 SM2 O0 fixtures, unresolved address/name TypeError; no holdout-based detection change"
+  },
+  "remaining_scope": "Bounded loop/path, API/recognized primitive equations; not general recovery of all unknown static bignum implementations."
+}

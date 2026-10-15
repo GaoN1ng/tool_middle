@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "distinct_tests": 182,
+  "test_modules": 21,
+  "excluded": null,
+  "method": "Each module ran once in an isolated unittest subprocess against the frozen-equivalent source; no earlier results reused.",
+  "summary": "build/logs/sha256-pointer-regression/summary.json",
+  "component_tests": 24,
+  "component_log": "build/logs/sha256-next-components-reviewed.log",
+  "validation_rerun": false
+}

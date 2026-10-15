@@ -1,0 +1,8 @@
+wolfsm-sm4-plain /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/09/094bef5b898897c5/sample.so
+annotation /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/a6/a615dfa02cd19289/inspection.so
+sm4_set_key 0x22034 64
+sm4_ecb_encrypt_blocks 0x221e8 116
+sm4_encrypt 0x22d68 1764
+tinyssh-crypto_hash_sha256 /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/0a/0a2b87bc24c1f86e/ordinary.so
+annotation /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/68/68fdf65f0270f398/inspection.so
+blocks 0x1a7ac 12512

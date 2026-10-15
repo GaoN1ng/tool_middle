@@ -1,0 +1,10 @@
+test_declaration_export_variants_preserve_identifier_binding (test_source_linkage.SourceLinkageTests.test_declaration_export_variants_preserve_identifier_binding) ... ok
+test_frame_pointer_spill_and_overwrite_use_actual_stack_offset (test_source_linkage.SourceLinkageTests.test_frame_pointer_spill_and_overwrite_use_actual_stack_offset) ... ok
+test_missing_or_wrong_parameter_initializer_and_descriptor_decline (test_source_linkage.SourceLinkageTests.test_missing_or_wrong_parameter_initializer_and_descriptor_decline) ... ok
+test_real_reverse_call_and_same_descriptor_bind_initializer (test_source_linkage.SourceLinkageTests.test_real_reverse_call_and_same_descriptor_bind_initializer) ... ok
+test_static_copy_requires_every_matching_source_byte (test_source_linkage.SourceLinkageTests.test_static_copy_requires_every_matching_source_byte) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.468s
+
+OK

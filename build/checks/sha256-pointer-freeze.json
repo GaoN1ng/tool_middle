@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_files": 88,
+  "runtime_files": 15,
+  "package_sha256": "d4a4808856f2b0821ff664f783210a8e9c3c2d101dcc9f254267e18e3a03123e",
+  "changed_files": [],
+  "development_only": true,
+  "protocol": "build/experiments/sha256-pointer-20261015/release-full/protocol.json"
+}

@@ -1,0 +1,8 @@
+test_invalid_vex_constants_and_immediate_payloads_are_not_instructions (test_yara_instructions.YaraInstructionTests.test_invalid_vex_constants_and_immediate_payloads_are_not_instructions) ... ok
+test_real_aes_round_instruction_boundary_survives (test_yara_instructions.YaraInstructionTests.test_real_aes_round_instruction_boundary_survives) ... ok
+test_real_generic_math_false_hit_is_retained_only_as_clue (test_yara_instructions.YaraInstructionTests.test_real_generic_math_false_hit_is_retained_only_as_clue) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 51.639s
+
+OK

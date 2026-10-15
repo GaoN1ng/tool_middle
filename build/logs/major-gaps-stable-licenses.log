@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "verified_origin_mappings": 96,
+  "unique_central_legal_files": 89,
+  "verified_retained_originals": 27,
+  "sample_projects": 53,
+  "origin_mappings_by_category": {
+    "project": 2,
+    "samples": 79,
+    "components": 8,
+    "source_support": 1,
+    "reference_data": 5,
+    "history": 1
+  },
+  "issues": []
+}

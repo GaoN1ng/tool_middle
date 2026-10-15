@@ -1,0 +1,3358 @@
+{
+  "schema_version": "1.0",
+  "method": "pinned_source_sha256_and_definition_position",
+  "limitations": [
+    "Exact module bytes only, including local constants and helper context.",
+    "Known library references overlap existing regression families; not an independent blind test.",
+    "Changed source, unrecorded libraries and compilation/runtime behavior are outside this recognition method."
+  ],
+  "references": [
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/contiki-ng/os/lib/aes-128.c",
+        "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/aes-128.c",
+        "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+        "sha256": "c147f04f585b492e04e8e11a7e98f0d3b1c96af25bb9df64740eac931f27e935",
+        "license": "BSD-3-Clause (Texas Instruments)"
+      },
+      "functions": {
+        "set_key": [
+          "AES"
+        ],
+        "encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "set_key": [
+          3974
+        ],
+        "encrypt": [
+          4721
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/contiki-ng/os/lib/sha-256.c",
+        "url": "https://raw.githubusercontent.com/contiki-ng/contiki-ng/4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5/os/lib/sha-256.c",
+        "commit": "4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5",
+        "sha256": "da801f6b0b3366eb316334b67b61704fbc15c2ac76b331b873966ccc55d7c806",
+        "license": "BSD-3-Clause / per-file BSD-2-Clause"
+      },
+      "functions": {
+        "sha_256_hash": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "sha_256_hash": [
+          10152
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/aes_decrypt.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/aes_decrypt.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "677873e3c4db46c51428670a5a40f64f2956ab6eb4bf62bf1e746f340079cddd",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_aes128_set_decrypt_key": [
+          "AES"
+        ],
+        "tc_aes_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_aes128_set_decrypt_key": [
+          3495
+        ],
+        "tc_aes_decrypt": [
+          5664
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/aes_encrypt.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/aes_encrypt.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "01bdfd57c868d2c8a37412f55595886a02276c38c495a4c3b588c7fe0115b1dc",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_aes128_set_encrypt_key": [
+          "AES"
+        ],
+        "tc_aes_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_aes128_set_encrypt_key": [
+          3714
+        ],
+        "tc_aes_encrypt": [
+          6225
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/cbc_mode.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/cbc_mode.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "6af1e9608576778683c5c99d35e3e66f2ad9e0b60970a8ddac2254918c7b868a",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_cbc_mode_encrypt": [
+          "AES"
+        ],
+        "tc_cbc_mode_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_cbc_mode_encrypt": [
+          1824
+        ],
+        "tc_cbc_mode_decrypt": [
+          2875
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/ccm_mode.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/ccm_mode.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "e2122c6296b3cbb227dfe0a607e7f364c3b5200b24cc3aab0d97d3c731b17d36",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_ccm_config": [
+          "AES"
+        ],
+        "tc_ccm_generation_encryption": [
+          "AES"
+        ],
+        "tc_ccm_decryption_verification": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_ccm_config": [
+          1901
+        ],
+        "tc_ccm_generation_encryption": [
+          4397
+        ],
+        "tc_ccm_decryption_verification": [
+          6117
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/cmac_mode.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/cmac_mode.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "39169e9d7cdc623efe2f49085eab853ab65ec53a584eb6258a34d31e7f36a3de",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_cmac_setup": [
+          "AES"
+        ],
+        "tc_cmac_erase": [
+          "AES"
+        ],
+        "tc_cmac_init": [
+          "AES"
+        ],
+        "tc_cmac_update": [
+          "AES"
+        ],
+        "tc_cmac_final": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_cmac_setup": [
+          4052
+        ],
+        "tc_cmac_erase": [
+          4747
+        ],
+        "tc_cmac_init": [
+          4933
+        ],
+        "tc_cmac_update": [
+          5387
+        ],
+        "tc_cmac_final": [
+          7036
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/ctr_mode.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/ctr_mode.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "3f1f1d6e38fd31dc2a2cb274f967cc4b827ed02c3cfb3c93841bbe1be7743ae6",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_ctr_mode": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_ctr_mode": [
+          1878
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/ctr_prng.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/ctr_prng.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "f4844cb57d9d2e645da102a099e89e59f24081da1a54c7b1b10a51ce03fcbf98",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_ctr_prng_init": [
+          "AES"
+        ],
+        "tc_ctr_prng_reseed": [
+          "AES"
+        ],
+        "tc_ctr_prng_generate": [
+          "AES"
+        ],
+        "tc_ctr_prng_uninstantiate": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "tc_ctr_prng_init": [
+          3673
+        ],
+        "tc_ctr_prng_reseed": [
+          4921
+        ],
+        "tc_ctr_prng_generate": [
+          6045
+        ],
+        "tc_ctr_prng_uninstantiate": [
+          7797
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/ecc_dh.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/ecc_dh.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "5c99c3d20a677b7058990c7a4fe52402bdaa9e7e1708c0bc1e44da8b5a47e49c",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "uECC_shared_secret": [
+          "ECDH"
+        ]
+      },
+      "definition_offsets": {
+        "uECC_shared_secret": [
+          5638
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/ecc_dsa.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/ecc_dsa.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "2df0522874d930d96c7f09d18f847223a2e34675142cff21074da2abb95d795c",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "uECC_sign_with_k": [
+          "ECDSA"
+        ],
+        "uECC_sign": [
+          "ECDSA"
+        ],
+        "uECC_verify": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "uECC_sign_with_k": [
+          4196
+        ],
+        "uECC_sign": [
+          6246
+        ],
+        "uECC_verify": [
+          7117
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/hmac.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/hmac.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "a759f1692006fe24dfb027c88a92743b39ec0f120f09f36c0c12b46675882df8",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_hmac_set_key": [
+          "HMAC"
+        ],
+        "tc_hmac_init": [
+          "HMAC"
+        ],
+        "tc_hmac_update": [
+          "HMAC"
+        ],
+        "tc_hmac_final": [
+          "HMAC"
+        ]
+      },
+      "definition_offsets": {
+        "tc_hmac_set_key": [
+          2247
+        ],
+        "tc_hmac_init": [
+          3556
+        ],
+        "tc_hmac_update": [
+          3835
+        ],
+        "tc_hmac_final": [
+          4112
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/esp-idf/components/bt/common/tinycrypt/src/sha256.c",
+        "url": "https://raw.githubusercontent.com/espressif/esp-idf/fcae32885b0296b32044cb99ecbdc50d98dddb83/components/bt/common/tinycrypt/src/sha256.c",
+        "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83",
+        "sha256": "b63a8a0c67a9bbb5a317d9beb10261832aceed0080d009db009ca72b9af41765",
+        "license": "Apache-2.0 / BSD-3-Clause / BSD-2-Clause (per-file notices)"
+      },
+      "functions": {
+        "tc_sha256_init": [
+          "SHA-256"
+        ],
+        "tc_sha256_update": [
+          "SHA-256"
+        ],
+        "tc_sha256_final": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "tc_sha256_init": [
+          1884
+        ],
+        "tc_sha256_update": [
+          2478
+        ],
+        "tc_sha256_final": [
+          3003
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/gurux/development/src/gxaes.c",
+        "url": "https://raw.githubusercontent.com/Gurux/GuruxDLMS.c/11a4fefe69b70452e00a8812a05ac97d99237c87/development/src/gxaes.c",
+        "commit": "11a4fefe69b70452e00a8812a05ac97d99237c87",
+        "sha256": "e17b96d709dbcc5360f17edbbda99d12b8afeea7fadde70b250fa5cc7e8bc817",
+        "license": "GPL-2.0-only"
+      },
+      "functions": {
+        "gxaes_keyExpansion": [
+          "AES"
+        ],
+        "gxaes_cipher": [
+          "AES"
+        ],
+        "gxaes_encrypt": [
+          "AES"
+        ],
+        "gxaes_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "gxaes_keyExpansion": [
+          10985
+        ],
+        "gxaes_cipher": [
+          12128
+        ],
+        "gxaes_encrypt": [
+          13456
+        ],
+        "gxaes_decrypt": [
+          14924
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/gurux/development/src/gxecdsa.c",
+        "url": "https://raw.githubusercontent.com/Gurux/GuruxDLMS.c/11a4fefe69b70452e00a8812a05ac97d99237c87/development/src/gxecdsa.c",
+        "commit": "11a4fefe69b70452e00a8812a05ac97d99237c87",
+        "sha256": "812b617a2bbd6b9dfe4cfcd9c580d4bab3b29e61d6fbd20dec5b1725e5751a80",
+        "license": "GPL-2.0-only"
+      },
+      "functions": {
+        "gxecdsa_verify": [
+          "ECDSA"
+        ],
+        "gxecdsa_sign": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "gxecdsa_verify": [
+          2206
+        ],
+        "gxecdsa_sign": [
+          4357
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/gurux/development/src/gxmd5.c",
+        "url": "https://raw.githubusercontent.com/Gurux/GuruxDLMS.c/11a4fefe69b70452e00a8812a05ac97d99237c87/development/src/gxmd5.c",
+        "commit": "11a4fefe69b70452e00a8812a05ac97d99237c87",
+        "sha256": "46967ab614491d449b5c227f11706a7b9797d6e4908049831f2840cfed0b82dd",
+        "license": "GPL-2.0-only"
+      },
+      "functions": {
+        "gxmd5_encrypt": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "gxmd5_encrypt": [
+          7519
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/gurux/development/src/gxsha1.c",
+        "url": "https://raw.githubusercontent.com/Gurux/GuruxDLMS.c/11a4fefe69b70452e00a8812a05ac97d99237c87/development/src/gxsha1.c",
+        "commit": "11a4fefe69b70452e00a8812a05ac97d99237c87",
+        "sha256": "d13e4d1ac4ba39096630a9feb407f3843c9d0dd88608e67648a81da4abf50b27",
+        "license": "GPL-2.0-only"
+      },
+      "functions": {
+        "gxsha1_encrypt": [
+          "SHA-1"
+        ]
+      },
+      "definition_offsets": {
+        "gxsha1_encrypt": [
+          6797
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/gurux/development/src/gxsha256.c",
+        "url": "https://raw.githubusercontent.com/Gurux/GuruxDLMS.c/11a4fefe69b70452e00a8812a05ac97d99237c87/development/src/gxsha256.c",
+        "commit": "11a4fefe69b70452e00a8812a05ac97d99237c87",
+        "sha256": "213d50c53aed8a04c29527946dcf25a2cbb260010535daf29b81e25443521d79",
+        "license": "GPL-2.0-only"
+      },
+      "functions": {
+        "gxsha256_hash": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "gxsha256_hash": [
+          4429
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/openevse/src/crypto/sha256.c",
+        "url": "https://raw.githubusercontent.com/OpenEVSE/ESP32_WiFi_V4.x/7eac3bab7e037648780162ca230ba4d2ab4e34d9/src/crypto/sha256.c",
+        "commit": "7eac3bab7e037648780162ca230ba4d2ab4e34d9",
+        "sha256": "ec083fd143f9ce1379c55f3a4c155a43546d3c1f33e6be5eaf937f19a675dd1f",
+        "license": "Public domain (Brad Conte; per-file notice)"
+      },
+      "functions": {
+        "sha256": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "sha256": [
+          5246
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_atr.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_atr.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "70134e9d9d0f2011265c31e2559e44313d2f3590abffd2d9b42c8ff920cf769e",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_asn1_to_raw": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_asn1_to_raw": [
+          1200
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_sign_asn1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_sign_asn1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a1275ed61d6b3f47b898f988fab2e330d3be575b56aed1a914b523b0a320edd5",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_sign_asn1_get_default": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_sign_asn1_get_default": [
+          1207
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_sign_raw.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_sign_raw.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "16736f015e21e6b12876029c0a9999fd75d7b0ade2dec550761e8914a75bc68a",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_sign_raw_get_default": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_sign_raw_get_default": [
+          1207
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_vrfy_asn1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_vrfy_asn1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "280815e20cd4ef417177ed371b07c9e992ae615b3955daf71f524af0674d092e",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_vrfy_asn1_get_default": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_vrfy_asn1_get_default": [
+          1207
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_vrfy_raw.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_default_vrfy_raw.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "ba1cd558e653961ea244db0b1691bf2685afe781635afb7587bb7ed62ad3727e",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_vrfy_raw_get_default": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_vrfy_raw_get_default": [
+          1207
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_bits.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_bits.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "1203e09062e218ce17e4e9a677fdb5c9f2fda1aae6981bfaf5ef945797f584f9",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_i15_bits2int": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_i15_bits2int": [
+          1193
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_sign_asn1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_sign_asn1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "f59f8c44e9d5b87065c1a1309ce4461452eb0b523345d0f60acf8e1652b93da9",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_i15_sign_asn1": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_i15_sign_asn1": [
+          1249
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_sign_raw.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_sign_raw.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "f3d6bcb4f0d6cbacd778d850eaacb06d83488b1c1f62b97519a8e7af1c1ef3ab",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_i15_sign_raw": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_i15_sign_raw": [
+          1359
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_vrfy_asn1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_vrfy_asn1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "b968bf4913c3dfaeedfbe8f2efa059a850f167be4bff76a20f68804bc7b6f545",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_i15_vrfy_asn1": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_i15_vrfy_asn1": [
+          1251
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_vrfy_raw.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_i15_vrfy_raw.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "2d30b996467c814a9acccd8bacd5b7f078276d7ff1b2658e31b30898f199ab12",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_i15_vrfy_raw": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_i15_vrfy_raw": [
+          1313
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_rta.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/ec/ecdsa_rta.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "8ceca62fc34ec6b5bd7a701233d79dd37436474aaa86dc256bc009049a2ce758",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_ecdsa_raw_to_asn1": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_ecdsa_raw_to_asn1": [
+          1672
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/hash/_sha_hal_idf5x.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/hash/_sha_hal_idf5x.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "ccb4e3400e935c813c89618370e7bb9b6a6617182208c98ff0d9b0427e7e311d",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_sha1_init": [
+          "SHA-1"
+        ],
+        "br_sha1_update": [
+          "SHA-1"
+        ],
+        "br_sha1_out": [
+          "SHA-1"
+        ],
+        "br_sha1_state": [
+          "SHA-1"
+        ],
+        "br_sha1_set_state": [
+          "SHA-1"
+        ],
+        "br_sha256_init": [
+          "SHA-256"
+        ],
+        "br_sha256_out": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "br_sha1_init": [
+          3106
+        ],
+        "br_sha1_update": [
+          3363
+        ],
+        "br_sha1_out": [
+          4145
+        ],
+        "br_sha1_state": [
+          4757
+        ],
+        "br_sha1_set_state": [
+          4936
+        ],
+        "br_sha256_init": [
+          9262
+        ],
+        "br_sha256_out": [
+          13389
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/hash/md5.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/hash/md5.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "6712a1c866c2db0731c1687dac21ef7b1dd045b3588407f5cf0d57353f355fca",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_md5_round": [
+          "MD5"
+        ],
+        "br_md5_init": [
+          "MD5"
+        ],
+        "br_md5_update": [
+          "MD5"
+        ],
+        "br_md5_out": [
+          "MD5"
+        ],
+        "br_md5_state": [
+          "MD5"
+        ],
+        "br_md5_set_state": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "br_md5_round": [
+          2597
+        ],
+        "br_md5_init": [
+          4129
+        ],
+        "br_md5_update": [
+          4282
+        ],
+        "br_md5_out": [
+          4739
+        ],
+        "br_md5_state": [
+          5234
+        ],
+        "br_md5_set_state": [
+          5369
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/hash/md5sha1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/hash/md5sha1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "4ba843027507f0b85e631d248e4776b308f793fd81ff83f3e6e93a34a3f1c715",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_md5sha1_init": [
+          "MD5",
+          "SHA-1"
+        ],
+        "br_md5sha1_update": [
+          "MD5",
+          "SHA-1"
+        ],
+        "br_md5sha1_out": [
+          "MD5",
+          "SHA-1"
+        ],
+        "br_md5sha1_state": [
+          "MD5",
+          "SHA-1"
+        ],
+        "br_md5sha1_set_state": [
+          "MD5",
+          "SHA-1"
+        ]
+      },
+      "definition_offsets": {
+        "br_md5sha1_init": [
+          1195
+        ],
+        "br_md5sha1_update": [
+          1424
+        ],
+        "br_md5sha1_out": [
+          1934
+        ],
+        "br_md5sha1_state": [
+          2744
+        ],
+        "br_md5sha1_set_state": [
+          2971
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/hash/sha1.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/hash/sha1.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "29247b78ff6c1f794a9ce75a5518d8abd232c162b776d93541cc156005e6c79a",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_sha1_round": [
+          "SHA-1"
+        ],
+        "br_sha1_init": [
+          "SHA-1"
+        ],
+        "br_sha1_update": [
+          "SHA-1"
+        ],
+        "br_sha1_out": [
+          "SHA-1"
+        ],
+        "br_sha1_state": [
+          "SHA-1"
+        ],
+        "br_sha1_set_state": [
+          "SHA-1"
+        ]
+      },
+      "definition_offsets": {
+        "br_sha1_round": [
+          1715
+        ],
+        "br_sha1_init": [
+          3572
+        ],
+        "br_sha1_update": [
+          3729
+        ],
+        "br_sha1_out": [
+          4189
+        ],
+        "br_sha1_state": [
+          4688
+        ],
+        "br_sha1_set_state": [
+          4825
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/hash/sha2small.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/hash/sha2small.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "bbaa79c8d006373fa21a7b711c1677d127eb967774e06e698dd173ec1cb699d3",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_sha256_init": [
+          "SHA-256"
+        ],
+        "br_sha256_out": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "br_sha256_init": [
+          8007
+        ],
+        "br_sha256_out": [
+          8172
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_keygen.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_keygen.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "7da9e9e03d2bd6a23ae45f31ddcb3e02ea229b96860f5ae3ea57e701af921b22",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_keygen_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_keygen_get_default": [
+          1208
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_modulus.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_modulus.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "78d5916caccf5462823d7ca61f494101690a499b6fabe54ad9fd12e306ff7926",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_compute_modulus_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_compute_modulus_get_default": [
+          1217
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_oaep_decrypt.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_oaep_decrypt.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "3801f4f425656f9b6affcfd7c9d9b00c438e1ed1e39014b17be50d0307316973",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_oaep_decrypt_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_oaep_decrypt_get_default": [
+          1214
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_oaep_encrypt.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_oaep_encrypt.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "0055d240df94bc636701734aa8ae6816af575cae9bda02b1f784fbb87348eebc",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_oaep_encrypt_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_oaep_encrypt_get_default": [
+          1214
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pkcs1_sign.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pkcs1_sign.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "ce8390fe41de45ddee8198117e904bc58953f6ce891c431fe44a0888ec613471",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pkcs1_sign_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pkcs1_sign_get_default": [
+          1212
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pkcs1_vrfy.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pkcs1_vrfy.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "26dc436d2329d88668f97a6e7041c32c82f6dc44ac979b27eb79e9ce09ec6231",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pkcs1_vrfy_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pkcs1_vrfy_get_default": [
+          1212
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_priv.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_priv.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "32b5d16473626ddc4dd65996bdec4434e7641b3906a6ac58232775d6303367ea",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_private_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_private_get_default": [
+          1209
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_privexp.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_privexp.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "b48f62f68618a23e172e82b891d47f4b497705311c4cea229b7abbc44c047e5d",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_compute_privexp_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_compute_privexp_get_default": [
+          1217
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pss_sign.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pss_sign.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "101dba40e0bcf269e8a67269fe30fda1c1c74b24b6ba7b385beb07c3842ca6e2",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pss_sign_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pss_sign_get_default": [
+          1210
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pss_vrfy.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pss_vrfy.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "e770e7b1d5c0a29e806821454f0ac7c5b459eae834760baf38c6c290fea1da18",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pss_vrfy_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pss_vrfy_get_default": [
+          1210
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pub.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pub.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "294fbda7f3e803341d3a3c7ba0812a8b5f8eaec89bf643a119c1f2d26fdca5d3",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_public_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_public_get_default": [
+          1208
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pubexp.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_default_pubexp.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "ce914fca3f41da9d503176c4d160643a1d9110f3d5f8bfbfec1a87e5df1c8ce3",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_compute_pubexp_get_default": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_compute_pubexp_get_default": [
+          1216
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_keygen.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_keygen.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "887162d74a7ed90c6657f4207e52eb0943ca6eb3a075ecfca41747ba21470264",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_keygen": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_keygen": [
+          12633
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_modulus.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_modulus.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "1279a5e8155cd9cef803e5e959025fe8459dff8d99a7edcaaab7f9b71df75c9d",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_compute_modulus": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_compute_modulus": [
+          1201
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_oaep_decrypt.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_oaep_decrypt.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "61337162d233f9222a7c4f41ad32a6e8f045de80245b8eae5a37d246290d2a6e",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_oaep_decrypt": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_oaep_decrypt": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_oaep_encrypt.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_oaep_encrypt.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "cf3ee9fbcd642dadd62c016b1e5d209e43c00aa20ab02793e7d3784437f193d2",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_oaep_encrypt": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_oaep_encrypt": [
+          1201
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pkcs1_sign.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pkcs1_sign.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "7b64ff18212472a6b2887f0ea9a88265672a106a9de2c2604e7b4ed5712736af",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_pkcs1_sign": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_pkcs1_sign": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pkcs1_vrfy.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pkcs1_vrfy.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "63bb6b61dfd8797876a402ea89243269c47ee06240e5eea546ca9063d920c332",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_pkcs1_vrfy": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_pkcs1_vrfy": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_priv.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_priv.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "0f9f7c522b102b4fc412d811372af4d9ac8e0b6eda8d4e1e26153b9f6707596b",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_private": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_private": [
+          1280
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_privexp.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_privexp.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "5def6655aa24c091334c947aee42740a4eb41964e7c96402c34e92fc5a408c52",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_compute_privexp": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_compute_privexp": [
+          1201
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pss_sign.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pss_sign.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "86d841038b6b9cc65c928445288a8e8507aad6a980184d36334f12a90752fc06",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_pss_sign": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_pss_sign": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pss_vrfy.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pss_vrfy.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "48ffca0cfe830d051beac9dd7785cc81cb7e31cb17f81821010565c8a45ee420",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_pss_vrfy": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_pss_vrfy": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pub.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pub.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "b5f8df690c2c9f9fe5fde1d7fd8a9ae30cf81d178cd6ad4ddbfb03dfc8005e49",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_public": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_public": [
+          1345
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pubexp.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_i15_pubexp.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a705a06a03b56bca21e939b344e98d19f006b750198d8eb6783396cc02d03670",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_i15_compute_pubexp": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_i15_compute_pubexp": [
+          3902
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_oaep_pad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_oaep_pad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "fcfcd6cd60a7454425a039ad464d765f0170510f65a26b06bd06706b836687fb",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_oaep_pad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_oaep_pad": [
+          1587
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_oaep_unpad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_oaep_unpad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "6ab8a21be87fc29a98a678ec4fb6c900fa7d27940dfc2cbe97d08aeef64cc406",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_oaep_unpad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_oaep_unpad": [
+          1794
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pkcs1_sig_pad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pkcs1_sig_pad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "bd73987b2bcbac268e69c0998e42bc8af75a82e96a7afb6ecf151726e1051d89",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pkcs1_sig_pad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pkcs1_sig_pad": [
+          1197
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pkcs1_sig_unpad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pkcs1_sig_unpad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "0d22450dcc5e0ca78be46bb379872c5b3a7b16ba5323b1393bde13a38b104c28",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pkcs1_sig_unpad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pkcs1_sig_unpad": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pss_sig_pad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pss_sig_pad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "9e7cc6eed1e3a39dcad464b52d24a4315a8a29cfd4c644829439e786073fadf7",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pss_sig_pad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pss_sig_pad": [
+          1197
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pss_sig_unpad.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_pss_sig_unpad.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "245d36abb21015dce98bfe18af9cb742f53e2237b045a5e0b0371a67dfc27f5c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_pss_sig_unpad": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_pss_sig_unpad": [
+          1197
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_ssl_decrypt.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/rsa/rsa_ssl_decrypt.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "d6db3712b4e05caad88b80014bcff988cdb47884cc6907fa3f26dcd4ab74d0e8",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_rsa_ssl_decrypt": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "br_rsa_ssl_decrypt": [
+          1203
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "68bf16fdcf150d3f669f3c364d9513be874d9adf9c2660ac426262f5c248aa15",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_cbcdec_init": [
+          "AES"
+        ],
+        "br_aes_big_cbcdec_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_cbcdec_init": [
+          1201
+        ],
+        "br_aes_big_cbcdec_run": [
+          1426
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "54f98cfc3c841279aea448d2af7455f691724ec175efe96356acdc9990f21dd9",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_cbcenc_init": [
+          "AES"
+        ],
+        "br_aes_big_cbcenc_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_cbcenc_init": [
+          1201
+        ],
+        "br_aes_big_cbcenc_run": [
+          1418
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_ctr.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_ctr.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "022514851490bce2a03e1f3966594a04e6960a00be6a15a99129425c9a2a1e3b",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_ctr_init": [
+          "AES"
+        ],
+        "br_aes_big_ctr_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_ctr_init": [
+          1201
+        ],
+        "br_aes_big_ctr_run": [
+          1585
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_ctrcbc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_ctrcbc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "dfbc471100483415fc8379bf52f91b5bd8ad019a0f0a2fb89dabc927b6611f72",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_ctrcbc_init": [
+          "AES"
+        ],
+        "br_aes_big_ctrcbc_ctr": [
+          "AES"
+        ],
+        "br_aes_big_ctrcbc_mac": [
+          "AES"
+        ],
+        "br_aes_big_ctrcbc_encrypt": [
+          "AES"
+        ],
+        "br_aes_big_ctrcbc_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_ctrcbc_init": [
+          1201
+        ],
+        "br_aes_big_ctrcbc_ctr": [
+          1590
+        ],
+        "br_aes_big_ctrcbc_mac": [
+          2486
+        ],
+        "br_aes_big_ctrcbc_encrypt": [
+          2798
+        ],
+        "br_aes_big_ctrcbc_decrypt": [
+          3038
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_dec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_dec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "0cc5df7a0d7c7de8fcb944cc6f35e802163b08e54223027a94f581862f0ba45d",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_keysched_inv": [
+          "AES"
+        ],
+        "br_aes_big_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_keysched_inv": [
+          6497
+        ],
+        "br_aes_big_decrypt": [
+          7587
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_enc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_big_enc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "907d01551f29e7272875607e65b16c6ad3549535188b7200a34bec650c23a42c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_big_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_big_encrypt": [
+          4615
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_common.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_common.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "2f18739824fba6c48ac2a90d9bdbad5ea26c134301cd856166400370da7fc0dd",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_keysched": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_keysched": [
+          3186
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "5c714127251fe497c85b80b38802b82ea2e03248bc15d592af553a13738f81b1",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_bitslice_Sbox": [
+          "AES"
+        ],
+        "br_aes_ct_ortho": [
+          "AES"
+        ],
+        "br_aes_ct_keysched": [
+          "AES"
+        ],
+        "br_aes_ct_skey_expand": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_bitslice_Sbox": [
+          1193
+        ],
+        "br_aes_ct_ortho": [
+          4631
+        ],
+        "br_aes_ct_keysched": [
+          5634
+        ],
+        "br_aes_ct_skey_expand": [
+          6753
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "e43125832dc3d1e53bd49c16bc3f3d5b2307d0f070be17a5c586853be037d708",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_bitslice_Sbox": [
+          "AES"
+        ],
+        "br_aes_ct64_ortho": [
+          "AES"
+        ],
+        "br_aes_ct64_interleave_in": [
+          "AES"
+        ],
+        "br_aes_ct64_interleave_out": [
+          "AES"
+        ],
+        "br_aes_ct64_keysched": [
+          "AES"
+        ],
+        "br_aes_ct64_skey_expand": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_bitslice_Sbox": [
+          1193
+        ],
+        "br_aes_ct64_ortho": [
+          4633
+        ],
+        "br_aes_ct64_interleave_in": [
+          5391
+        ],
+        "br_aes_ct64_interleave_out": [
+          6057
+        ],
+        "br_aes_ct64_keysched": [
+          7058
+        ],
+        "br_aes_ct64_skey_expand": [
+          8482
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "e0bf648e530cb86695d07cb4ec3ff96aa1a1d71e9613a4f677f08c7ba16daeb7",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_cbcdec_init": [
+          "AES"
+        ],
+        "br_aes_ct64_cbcdec_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_cbcdec_init": [
+          1201
+        ],
+        "br_aes_ct64_cbcdec_run": [
+          1426
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "daa159b73819f04282979e866ad82a97e466af77fc3b15fab0100dda7e713b88",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_cbcenc_init": [
+          "AES"
+        ],
+        "br_aes_ct64_cbcenc_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_cbcenc_init": [
+          1201
+        ],
+        "br_aes_ct64_cbcenc_run": [
+          1426
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_ctr.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_ctr.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "f0b82117201544b6da08ea175d588d5a37ebc22d7eb7a2c17b3371b70c9f1334",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_ctr_init": [
+          "AES"
+        ],
+        "br_aes_ct64_ctr_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_ctr_init": [
+          1201
+        ],
+        "br_aes_ct64_ctr_run": [
+          1593
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_ctrcbc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_ctrcbc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "eacfd484c887ff68601c1249c93474a2da043d80379941f685045d0dd1f9b88c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_ctrcbc_init": [
+          "AES"
+        ],
+        "br_aes_ct64_ctrcbc_ctr": [
+          "AES"
+        ],
+        "br_aes_ct64_ctrcbc_mac": [
+          "AES"
+        ],
+        "br_aes_ct64_ctrcbc_encrypt": [
+          "AES"
+        ],
+        "br_aes_ct64_ctrcbc_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_ctrcbc_init": [
+          1201
+        ],
+        "br_aes_ct64_ctrcbc_ctr": [
+          1598
+        ],
+        "br_aes_ct64_ctrcbc_mac": [
+          3433
+        ],
+        "br_aes_ct64_ctrcbc_encrypt": [
+          4632
+        ],
+        "br_aes_ct64_ctrcbc_decrypt": [
+          8157
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_dec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_dec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "c16043aa5a2a9f689690de29d4e87ee3b72fc5915195242437616d77e7eeb236",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_bitslice_invSbox": [
+          "AES"
+        ],
+        "br_aes_ct64_bitslice_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_bitslice_invSbox": [
+          1193
+        ],
+        "br_aes_ct64_bitslice_decrypt": [
+          3819
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_enc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct64_enc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a66c5f5b55c2f496739712740773faa1eba14751b52012d743db060ac1f7ce82",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct64_bitslice_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct64_bitslice_encrypt": [
+          2743
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "5ee1bdbaa8bc838e6b730a65d58f6a36432d02a5e58b8f3b1671fd6a28bca131",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_cbcdec_init": [
+          "AES"
+        ],
+        "br_aes_ct_cbcdec_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_cbcdec_init": [
+          1201
+        ],
+        "br_aes_ct_cbcdec_run": [
+          1418
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "b8835e88749d032472bd4e69f59764c3d03fc022562dca6e8d0541c2fb2f57f4",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_cbcenc_init": [
+          "AES"
+        ],
+        "br_aes_ct_cbcenc_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_cbcenc_init": [
+          1201
+        ],
+        "br_aes_ct_cbcenc_run": [
+          1418
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_ctr.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_ctr.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "be0a342b807151a51672ff704941405593b4327406a2c5a5e1331d303da53509",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_ctr_init": [
+          "AES"
+        ],
+        "br_aes_ct_ctr_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_ctr_init": [
+          1201
+        ],
+        "br_aes_ct_ctr_run": [
+          1585
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_ctrcbc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_ctrcbc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a0c58acbcf3cfeccb4269ad7e86c8377642c59c739700e7af3c3a116c155e08c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_ctrcbc_init": [
+          "AES"
+        ],
+        "br_aes_ct_ctrcbc_ctr": [
+          "AES"
+        ],
+        "br_aes_ct_ctrcbc_mac": [
+          "AES"
+        ],
+        "br_aes_ct_ctrcbc_encrypt": [
+          "AES"
+        ],
+        "br_aes_ct_ctrcbc_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_ctrcbc_init": [
+          1201
+        ],
+        "br_aes_ct_ctrcbc_ctr": [
+          1590
+        ],
+        "br_aes_ct_ctrcbc_mac": [
+          3508
+        ],
+        "br_aes_ct_ctrcbc_encrypt": [
+          4605
+        ],
+        "br_aes_ct_ctrcbc_decrypt": [
+          7797
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_dec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_dec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "c7b936d1a01555a358b0f735abdbedf0530e817b8729cdc184205d1f0173be19",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_bitslice_invSbox": [
+          "AES"
+        ],
+        "br_aes_ct_bitslice_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_bitslice_invSbox": [
+          1193
+        ],
+        "br_aes_ct_bitslice_decrypt": [
+          4363
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_enc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_ct_enc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "003134e506993a663ae71f80b525b09e17c85841e658914c2138e0b6ac699127",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_ct_bitslice_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_ct_bitslice_encrypt": [
+          2598
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "dbd22ca0259dfeb8217be7bcdfec42c0a1fb688bde9f1a40c2f7865e2af9e6f4",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_cbcdec_init": [
+          "AES"
+        ],
+        "br_aes_small_cbcdec_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_cbcdec_init": [
+          1201
+        ],
+        "br_aes_small_cbcdec_run": [
+          1424
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a7574db914f092f8df5ec9c59076fbb9e98eab13da15974cb1fc44aae5b513aa",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_cbcenc_init": [
+          "AES"
+        ],
+        "br_aes_small_cbcenc_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_cbcenc_init": [
+          1201
+        ],
+        "br_aes_small_cbcenc_run": [
+          1424
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_ctr.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_ctr.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "6e3adac365de8a4296bd060e3dfc98f279bdde1153673e07f814f7a158bdab32",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_ctr_init": [
+          "AES"
+        ],
+        "br_aes_small_ctr_run": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_ctr_init": [
+          1201
+        ],
+        "br_aes_small_ctr_run": [
+          1591
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_ctrcbc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_ctrcbc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "405a8ab4d2acb7d768deadf6d31f47b4bd6521c32184059af61fe4f9ba3d4c87",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_ctrcbc_init": [
+          "AES"
+        ],
+        "br_aes_small_ctrcbc_ctr": [
+          "AES"
+        ],
+        "br_aes_small_ctrcbc_mac": [
+          "AES"
+        ],
+        "br_aes_small_ctrcbc_encrypt": [
+          "AES"
+        ],
+        "br_aes_small_ctrcbc_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_ctrcbc_init": [
+          1201
+        ],
+        "br_aes_small_ctrcbc_ctr": [
+          1596
+        ],
+        "br_aes_small_ctrcbc_mac": [
+          2498
+        ],
+        "br_aes_small_ctrcbc_encrypt": [
+          2816
+        ],
+        "br_aes_small_ctrcbc_decrypt": [
+          3064
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_dec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_dec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "20a72db356463babfbdfc3637171267cbf81b47a353d2c04bcbfa6e9706d1625",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_decrypt": [
+          4627
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_enc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/aes_small_enc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "721c6569375e9e478eb5e60a7a835c4386d4f259d83aaf3260a521f858dd98da",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_aes_small_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "br_aes_small_encrypt": [
+          2677
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/chacha20_ct.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/chacha20_ct.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "cf260259de701678e619cf8883a4053035b890d9c89db42fcf6927197a82b99a",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_chacha20_ct_run": [
+          "ChaCha20"
+        ]
+      },
+      "definition_offsets": {
+        "br_chacha20_ct_run": [
+          1205
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/chacha20_sse2.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/chacha20_sse2.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "5dd01ed460893ae574b90b073d9480a46d6c4895ac8dafb898a69c8a7e2d779e",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_chacha20_sse2_get": [
+          "ChaCha20"
+        ],
+        "br_chacha20_sse2_run": [
+          "ChaCha20"
+        ]
+      },
+      "definition_offsets": {
+        "br_chacha20_sse2_get": [
+          1369,
+          5792
+        ],
+        "br_chacha20_sse2_run": [
+          1873
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "a33b5437fe85077415486b1c52b93b4db6bbde6fc75fd554bc5025c34a25080c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_ct_keysched": [
+          "DES"
+        ],
+        "br_des_ct_process_block": [
+          "DES"
+        ],
+        "br_des_ct_skey_expand": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_ct_keysched": [
+          4993
+        ],
+        "br_des_ct_process_block": [
+          11588
+        ],
+        "br_des_ct_skey_expand": [
+          11980
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "67851eb4a50a39f4784972c2289dc7b499b9378a8cd18070b374fe8bbae808c3",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_ct_cbcdec_init": [
+          "DES"
+        ],
+        "br_des_ct_cbcdec_run": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_ct_cbcdec_init": [
+          1201
+        ],
+        "br_des_ct_cbcdec_run": [
+          1716
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_ct_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "fea272adeaf332c1048e450c0cb51831eea843febe8fdd259205bf8b42bd62c4",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_ct_cbcenc_init": [
+          "DES"
+        ],
+        "br_des_ct_cbcenc_run": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_ct_cbcenc_init": [
+          1201
+        ],
+        "br_des_ct_cbcenc_run": [
+          1418
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_support.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_support.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "2b13035bda4655a9a918433a2d8fea2e4b1437449fc8d8000cdfb77084cc2fd1",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_do_IP": [
+          "DES"
+        ],
+        "br_des_do_invIP": [
+          "DES"
+        ],
+        "br_des_keysched_unit": [
+          "DES"
+        ],
+        "br_des_rev_skey": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_do_IP": [
+          1193
+        ],
+        "br_des_do_invIP": [
+          1838
+        ],
+        "br_des_keysched_unit": [
+          2298
+        ],
+        "br_des_rev_skey": [
+          3879
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "74e8203341cc17a00c2936e924172848d8349406b6f06887b4611a9230df66d9",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_tab_process_block": [
+          "DES"
+        ],
+        "br_des_tab_keysched": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_tab_process_block": [
+          9140
+        ],
+        "br_des_tab_keysched": [
+          10013
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab_cbcdec.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab_cbcdec.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "80b3ca5250c70f990563d3e80a2867967c4dac5e2419a7cf3f553c8896fb4cee",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_tab_cbcdec_init": [
+          "DES"
+        ],
+        "br_des_tab_cbcdec_run": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_tab_cbcdec_init": [
+          1201
+        ],
+        "br_des_tab_cbcdec_run": [
+          1720
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/public-benchmark/sources/tasmota/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab_cbcenc.c",
+        "url": "https://raw.githubusercontent.com/arendst/Tasmota/db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892/lib/lib_ssl/bearssl-esp8266/src/symcipher/des_tab_cbcenc.c",
+        "commit": "db3ae7e0276fdc38b7aeb241a2a8e33d8ffd6892",
+        "sha256": "35873e9fa1edc6e01ed9b74eb45913b5b6261bf47c9a100a968dbbf2491ca66c",
+        "license": "MIT (BearSSL)"
+      },
+      "functions": {
+        "br_des_tab_cbcenc_init": [
+          "DES"
+        ],
+        "br_des_tab_cbcenc_run": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "br_des_tab_cbcenc_init": [
+          1201
+        ],
+        "br_des_tab_cbcenc_run": [
+          1422
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/aes.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/aes.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "f30e6b7139527b41c32f68cc5430ceafa213e7fdf7a39bf4981f6a20cd0e77a1",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_aes_setkey_enc": [
+          "AES"
+        ],
+        "mbedtls_aes_setkey_dec": [
+          "AES"
+        ],
+        "mbedtls_aes_xts_setkey_enc": [
+          "AES"
+        ],
+        "mbedtls_aes_xts_setkey_dec": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_ecb": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_cbc": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_xts": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_cfb128": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_cfb8": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_ofb": [
+          "AES"
+        ],
+        "mbedtls_aes_crypt_ctr": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_aes_setkey_enc": [
+          23157
+        ],
+        "mbedtls_aes_setkey_dec": [
+          26951
+        ],
+        "mbedtls_aes_xts_setkey_enc": [
+          29593
+        ],
+        "mbedtls_aes_xts_setkey_dec": [
+          30361
+        ],
+        "mbedtls_aes_crypt_ecb": [
+          39167
+        ],
+        "mbedtls_aes_crypt_cbc": [
+          40463
+        ],
+        "mbedtls_aes_crypt_xts": [
+          43788
+        ],
+        "mbedtls_aes_crypt_cfb128": [
+          47256
+        ],
+        "mbedtls_aes_crypt_cfb8": [
+          48785
+        ],
+        "mbedtls_aes_crypt_ofb": [
+          49920
+        ],
+        "mbedtls_aes_crypt_ctr": [
+          50768
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/chacha20.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/chacha20.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "53300418d833bda5c999a3dce3d174d19ebeb1908c4ee1f94c63afe4439a9abd",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_chacha20_setkey": [
+          "ChaCha20"
+        ],
+        "mbedtls_chacha20_starts": [
+          "ChaCha20"
+        ],
+        "mbedtls_chacha20_update": [
+          "ChaCha20"
+        ],
+        "mbedtls_chacha20_crypt": [
+          "ChaCha20"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_chacha20_setkey": [
+          4672
+        ],
+        "mbedtls_chacha20_starts": [
+          5437
+        ],
+        "mbedtls_chacha20_update": [
+          6039
+        ],
+        "mbedtls_chacha20_crypt": [
+          7367
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/chachapoly.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/chachapoly.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "c1c7770ea6098bd480eae14094215d0df3cd05c3cbdd7f4386822b3d3cb5b30a",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_chachapoly_setkey": [
+          "ChaCha20"
+        ],
+        "mbedtls_chachapoly_encrypt_and_tag": [
+          "ChaCha20"
+        ],
+        "mbedtls_chachapoly_auth_decrypt": [
+          "ChaCha20"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_chachapoly_setkey": [
+          2489
+        ],
+        "mbedtls_chachapoly_encrypt_and_tag": [
+          7888
+        ],
+        "mbedtls_chachapoly_auth_decrypt": [
+          8591
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/des.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/des.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "b3d91e02055fc05f0d28f820e8731445eeeb73a6708bbafc3c988bf631a243b0",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_des_setkey_enc": [
+          "DES"
+        ],
+        "mbedtls_des_setkey_dec": [
+          "DES"
+        ],
+        "mbedtls_des3_set2key_enc": [
+          "3DES"
+        ],
+        "mbedtls_des3_set2key_dec": [
+          "3DES"
+        ],
+        "mbedtls_des3_set3key_enc": [
+          "3DES"
+        ],
+        "mbedtls_des3_set3key_dec": [
+          "3DES"
+        ],
+        "mbedtls_des_crypt_ecb": [
+          "DES"
+        ],
+        "mbedtls_des_crypt_cbc": [
+          "DES"
+        ],
+        "mbedtls_des3_crypt_ecb": [
+          "3DES"
+        ],
+        "mbedtls_des3_crypt_cbc": [
+          "3DES"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_des_setkey_enc": [
+          18152
+        ],
+        "mbedtls_des_setkey_dec": [
+          18358
+        ],
+        "mbedtls_des3_set2key_enc": [
+          19276
+        ],
+        "mbedtls_des3_set2key_dec": [
+          19593
+        ],
+        "mbedtls_des3_set3key_enc": [
+          20437
+        ],
+        "mbedtls_des3_set3key_dec": [
+          20754
+        ],
+        "mbedtls_des_crypt_ecb": [
+          21101
+        ],
+        "mbedtls_des_crypt_cbc": [
+          21752
+        ],
+        "mbedtls_des3_crypt_ecb": [
+          23137
+        ],
+        "mbedtls_des3_crypt_cbc": [
+          23968
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/ecdh.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/ecdh.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "85439414902f8421db8921c69a0be771ed69a7c69f0722127298f41a1d330ba8",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_ecdh_gen_public": [
+          "ECDH"
+        ],
+        "mbedtls_ecdh_compute_shared": [
+          "ECDH"
+        ],
+        "mbedtls_ecdh_setup": [
+          "ECDH"
+        ],
+        "mbedtls_ecdh_make_public": [
+          "ECDH"
+        ],
+        "mbedtls_ecdh_read_public": [
+          "ECDH"
+        ],
+        "mbedtls_ecdh_calc_secret": [
+          "ECDH"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_ecdh_gen_public": [
+          2052
+        ],
+        "mbedtls_ecdh_compute_shared": [
+          3423
+        ],
+        "mbedtls_ecdh_setup": [
+          5262
+        ],
+        "mbedtls_ecdh_make_public": [
+          16174
+        ],
+        "mbedtls_ecdh_read_public": [
+          17960
+        ],
+        "mbedtls_ecdh_calc_secret": [
+          20466
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/ecdsa.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/ecdsa.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "fe5ef0be180c189181892903e4eb2c79d79b108c117398cbf968f6f52ca0b858",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_ecdsa_sign": [
+          "ECDSA"
+        ],
+        "mbedtls_ecdsa_sign_det_ext": [
+          "ECDSA"
+        ],
+        "mbedtls_ecdsa_verify": [
+          "ECDSA"
+        ],
+        "mbedtls_ecdsa_write_signature": [
+          "ECDSA"
+        ],
+        "mbedtls_ecdsa_read_signature": [
+          "ECDSA"
+        ],
+        "mbedtls_ecdsa_genkey": [
+          "ECDSA"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_ecdsa_sign": [
+          11837
+        ],
+        "mbedtls_ecdsa_sign_det_ext": [
+          14972
+        ],
+        "mbedtls_ecdsa_verify": [
+          18971
+        ],
+        "mbedtls_ecdsa_write_signature": [
+          22235
+        ],
+        "mbedtls_ecdsa_read_signature": [
+          22821
+        ],
+        "mbedtls_ecdsa_genkey": [
+          25207
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/md5.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/md5.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "887eca6a51f8dfd8c3fd1a9dab6ff083e1795644e88b39c87640b56fcd33503b",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_md5_starts": [
+          "MD5"
+        ],
+        "mbedtls_md5_update": [
+          "MD5"
+        ],
+        "mbedtls_md5_finish": [
+          "MD5"
+        ],
+        "mbedtls_md5": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_md5_starts": [
+          904
+        ],
+        "mbedtls_md5_update": [
+          7401
+        ],
+        "mbedtls_md5_finish": [
+          8460
+        ],
+        "mbedtls_md5": [
+          9939
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/rsa.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/rsa.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "24d4328f1fa3faafc2ad1a4c5f9274404381c08718920f2da23c5867f27f74d7",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_rsa_gen_key": [
+          "RSA"
+        ],
+        "mbedtls_rsa_public": [
+          "RSA"
+        ],
+        "mbedtls_rsa_private": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsaes_oaep_encrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsaes_pkcs1_v15_encrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_pkcs1_encrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsaes_oaep_decrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsaes_pkcs1_v15_decrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_pkcs1_decrypt": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsassa_pss_sign": [
+          "RSA"
+        ],
+        "mbedtls_rsa_pkcs1_sign": [
+          "RSA"
+        ],
+        "mbedtls_rsa_rsassa_pss_verify": [
+          "RSA"
+        ],
+        "mbedtls_rsa_pkcs1_verify": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_rsa_gen_key": [
+          33405
+        ],
+        "mbedtls_rsa_public": [
+          39168
+        ],
+        "mbedtls_rsa_private": [
+          45012
+        ],
+        "mbedtls_rsa_rsaes_oaep_encrypt": [
+          54932
+        ],
+        "mbedtls_rsa_rsaes_pkcs1_v15_encrypt": [
+          57045
+        ],
+        "mbedtls_rsa_pkcs1_encrypt": [
+          58403
+        ],
+        "mbedtls_rsa_rsaes_oaep_decrypt": [
+          59393
+        ],
+        "mbedtls_rsa_rsaes_pkcs1_v15_decrypt": [
+          63114
+        ],
+        "mbedtls_rsa_pkcs1_decrypt": [
+          64327
+        ],
+        "mbedtls_rsa_rsassa_pss_sign": [
+          71266
+        ],
+        "mbedtls_rsa_pkcs1_sign": [
+          78410
+        ],
+        "mbedtls_rsa_rsassa_pss_verify": [
+          82602
+        ],
+        "mbedtls_rsa_pkcs1_verify": [
+          85398
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "third_party/mbedtls/library/sha1.c",
+        "url": "https://github.com/Mbed-TLS/mbedtls/blob/c765c831e5c2a0971410692f92f7a81d6ec65ec2/library/sha1.c",
+        "commit": "c765c831e5c2a0971410692f92f7a81d6ec65ec2",
+        "sha256": "277b7499fe8315a46442c39c762e8768056114e3694215e4e2cadbd1ebfbce12",
+        "license": "Apache-2.0 (mbedTLS dual license; Apache option selected)"
+      },
+      "functions": {
+        "mbedtls_sha1_starts": [
+          "SHA-1"
+        ],
+        "mbedtls_sha1_update": [
+          "SHA-1"
+        ],
+        "mbedtls_sha1_finish": [
+          "SHA-1"
+        ],
+        "mbedtls_sha1": [
+          "SHA-1"
+        ]
+      },
+      "definition_offsets": {
+        "mbedtls_sha1_starts": [
+          929
+        ],
+        "mbedtls_sha1_update": [
+          8803
+        ],
+        "mbedtls_sha1_finish": [
+          9871
+        ],
+        "mbedtls_sha1": [
+          11413
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/aes/aes_core.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/aes/aes_core.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "0d703d395429714f070f22f8b5e623184c17653f53a2dad68bad5de9c275296f",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "AES_set_encrypt_key": [
+          "AES"
+        ],
+        "AES_set_decrypt_key": [
+          "AES"
+        ],
+        "AES_encrypt": [
+          "AES"
+        ],
+        "AES_decrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "AES_set_encrypt_key": [
+          19999,
+          52777,
+          75386
+        ],
+        "AES_set_decrypt_key": [
+          20527,
+          55346,
+          77974
+        ],
+        "AES_encrypt": [
+          20726,
+          56975
+        ],
+        "AES_decrypt": [
+          21004,
+          65057
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/rc4/rc4_enc.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/rc4/rc4_enc.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "5aa4a9e10a1810c2d99eb581b92524295333363a512a7128d3af9932f8fea0f1",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "RC4": [
+          "RC4"
+        ]
+      },
+      "definition_offsets": {
+        "RC4": [
+          714
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/md5/md5_dgst.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/md5/md5_dgst.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "01e6f37a3d6fe89b71064400dc580897b00eaa5c8a774f21bad5ef9b51f179f8",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "MD5_Init": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "MD5_Init": [
+          800
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/guomi-development-20261012/sources/openssl/crypto/sha/sha256.c",
+        "url": "https://github.com/openssl/openssl/blob/122db7eb076bf0625df87b91bcc2dccfaccc4900/crypto/sha/sha256.c",
+        "commit": "122db7eb076bf0625df87b91bcc2dccfaccc4900",
+        "sha256": "3a967cf8a2ac9624c28b1c769074b54cc5ae451b8946c73d9d7b7ab1c9b49f21",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "SHA256_Init": [
+          "SHA-256"
+        ],
+        "SHA256_Update": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "SHA256_Init": [
+          1026
+        ],
+        "SHA256_Update": [
+          5053
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/research-development-20261013/sources/boringssl/crypto/des/des.cc",
+        "url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/crypto/des/des.cc",
+        "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+        "sha256": "fa76a7550ee80fa65a296de5689ae03d393d529428d134b47f6fc3ec8bffdbd3",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "DES_set_key": [
+          "DES"
+        ],
+        "DES_ecb_encrypt": [
+          "DES"
+        ],
+        "DES_ncbc_encrypt": [
+          "DES"
+        ],
+        "DES_set_key_unchecked": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "DES_set_key": [
+          18484
+        ],
+        "DES_ecb_encrypt": [
+          26468
+        ],
+        "DES_ncbc_encrypt": [
+          27083
+        ],
+        "DES_set_key_unchecked": [
+          32640
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/research-development-20261013/sources/boringssl/crypto/rc4/rc4.cc",
+        "url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/crypto/rc4/rc4.cc",
+        "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+        "sha256": "9a1f06723bee2760d884801487410ffcfd965851c6f8f35edd23097a39133f28",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "RC4": [
+          "RC4"
+        ],
+        "RC4_set_key": [
+          "RC4"
+        ]
+      },
+      "definition_offsets": {
+        "RC4": [
+          665
+        ],
+        "RC4_set_key": [
+          1051
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/research-development-20261013/sources/boringssl/crypto/md5/md5.cc",
+        "url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/crypto/md5/md5.cc",
+        "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+        "sha256": "5145083380673c9e54ebc2f5cae7c78480a640d58f8034d67a2651762874f0cc",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "MD5": [
+          "MD5"
+        ],
+        "MD5_Init": [
+          "MD5"
+        ],
+        "MD5_Update": [
+          "MD5"
+        ],
+        "MD5_Final": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "MD5": [
+          859
+        ],
+        "MD5_Init": [
+          1040
+        ],
+        "MD5_Update": [
+          1901
+        ],
+        "MD5_Final": [
+          2090
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/research-development-20261013/sources/boringssl/crypto/fipsmodule/rsa/rsa_impl.cc.inc",
+        "url": "https://github.com/google/boringssl/blob/5b83e5d1abf0ae0033ae52ab579d906b67633b2c/crypto/fipsmodule/rsa/rsa_impl.cc.inc",
+        "commit": "5b83e5d1abf0ae0033ae52ab579d906b67633b2c",
+        "sha256": "41b73cbca743bf84cb3a020092bdf3fa350f4344b7e5c931362178967ccc3c86",
+        "license": "Apache-2.0; retained upstream notices"
+      },
+      "functions": {
+        "RSA_generate_key_ex": [
+          "RSA"
+        ]
+      },
+      "definition_offsets": {
+        "RSA_generate_key_ex": [
+          33260
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/aes.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/aes.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "f59be01f535478a16264a82f304802a627362ca27328c35efd9af816ea0e0d45",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "aes_encrypt": [
+          "AES"
+        ]
+      },
+      "definition_offsets": {
+        "aes_encrypt": [
+          36586
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/des.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/des.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "a19af365968d4b5f4f99958b05ab50c8127e11b05e1d804a356be5a39dd1a29f",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "f": [
+          "DES"
+        ],
+        "des_crypt": [
+          "DES"
+        ]
+      },
+      "definition_offsets": {
+        "f": [
+          7329
+        ],
+        "des_crypt": [
+          11691
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/arcfour.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/arcfour.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "1ff12d57f47ea299ccdb51bec9b23166593866895e74ac3b17db328ff46ddeb8",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "arcfour_generate_stream": [
+          "RC4"
+        ]
+      },
+      "definition_offsets": {
+        "arcfour_generate_stream": [
+          1040
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/md5.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/md5.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "c97df0fa155b7b421a9ea8815f0e6ff9c64b2a2096a3cfd445b7e288a126aa84",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "md5_transform": [
+          "MD5"
+        ]
+      },
+      "definition_offsets": {
+        "md5_transform": [
+          1382
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/sha1.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/sha1.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "7e5965e83bcafc361e31aff99136ba5ebae338448d4d33496e11e071ec437029",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "sha1_transform": [
+          "SHA-1"
+        ]
+      },
+      "definition_offsets": {
+        "sha1_transform": [
+          897
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "samples/semantic-development-20261013/sources/bcon/sha256.c",
+        "url": "https://github.com/B-Con/crypto-algorithms/blob/cfbde48414baacf51fc7c74f275190881f037d32/sha256.c",
+        "commit": "cfbde48414baacf51fc7c74f275190881f037d32",
+        "sha256": "4cbc93d30c28cee2a056d6f52cbce6e66ff9450f1d712ee4f59761b9b4486fad",
+        "license": "Public domain; README and source notices retained"
+      },
+      "functions": {
+        "sha256_transform": [
+          "SHA-256"
+        ],
+        "sha256_init": [
+          "SHA-256"
+        ]
+      },
+      "definition_offsets": {
+        "sha256_transform": [
+          2334
+        ],
+        "sha256_init": [
+          3181
+        ]
+      }
+    }
+  ]
+}

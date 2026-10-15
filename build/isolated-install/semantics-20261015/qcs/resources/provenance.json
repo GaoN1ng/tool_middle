@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {
+      "path": "yara/LICENSE",
+      "source": "third_party/crypto-detection/LICENSE",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "fe91e5f0d13df520b8a4100434ba8c5734491f45bf4a512d813f554443231808"
+    },
+    {
+      "path": "yara/aes/aes_common.yar",
+      "source": "third_party/crypto-detection/yararules/aes/aes_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "5b6e19aef5e48888ab307e0b016a66c51a347ed9afae67b4b080a7bb138eb139"
+    },
+    {
+      "path": "yara/aes/aes_x64.yar",
+      "source": "third_party/crypto-detection/yararules/aes/aes_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "86b707ff086d4269d75fb8b6f1a0cda5858e242e2eb2f7fb3fe1a66f8c2c4b87"
+    },
+    {
+      "path": "yara/base64/base64_common.yar",
+      "source": "third_party/crypto-detection/yararules/base64/base64_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "84f43cbfc3d4ac33f75fa7cd36e95407fa3d7652dbcaeec91d3b50149186f9d3"
+    },
+    {
+      "path": "yara/base64/base64_x64.yar",
+      "source": "third_party/crypto-detection/yararules/base64/base64_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "559187fa2413d0b2ca65f720e2dab575ca7ebc5ba4ca9a37f2bb0d8a61160bb0"
+    },
+    {
+      "path": "yara/chacha/chacha_common.yar",
+      "source": "third_party/crypto-detection/yararules/chacha/chacha_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "d33ef5e6ba7548f9df81715d54d59986c9ad27c7b9865be8201c5ed7d114bedf"
+    },
+    {
+      "path": "yara/chacha/chacha_x64.yar",
+      "source": "third_party/crypto-detection/yararules/chacha/chacha_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "168665f07f6827c306aa5f33e7e51e9a937ea38d65d008d6e8e5389abf3ff4ae"
+    },
+    {
+      "path": "yara/des/des_common.yar",
+      "source": "third_party/crypto-detection/yararules/des/des_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "feb5fa3e7d526699d1dbcf372055341992db54cc673956ae77e00b9b65d5c0f1"
+    },
+    {
+      "path": "yara/des/des_x64.yar",
+      "source": "third_party/crypto-detection/yararules/des/des_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "ca0ed9251549817481db68f791b2c9f1228d86f42b6ff9fa997499ef8ca24de4"
+    },
+    {
+      "path": "yara/md5/md5_common.yar",
+      "source": "third_party/crypto-detection/yararules/md5/md5_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "fe137609a41584bdd3795aae73473d52945c8c0edf525fdfd97173fbd262943e"
+    },
+    {
+      "path": "yara/md5/md5_x64.yar",
+      "source": "third_party/crypto-detection/yararules/md5/md5_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "33a474e26fb718cb6862987808a1a788681fa61c6dd2a279fc66711e55303aa9"
+    },
+    {
+      "path": "yara/rc4/rc4_common.yar",
+      "source": "third_party/crypto-detection/yararules/rc4/rc4_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "079bafa0e73a38ff5b893d3dd59428609db2160c958ec00daa5367eaa1a3da7b"
+    },
+    {
+      "path": "yara/rc4/rc4_x64.yar",
+      "source": "third_party/crypto-detection/yararules/rc4/rc4_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "21554a258c4fc3a2a21a0e7509d6f1ed8b9e7019400615fbc1d29e7eb8990d6e"
+    },
+    {
+      "path": "yara/rules.yar",
+      "source": "third_party/crypto-detection/yararules/rules.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "13187461b448b1c300b4fbcdcab0db08fba08cadeeef8d8bb06c07d60843a652"
+    },
+    {
+      "path": "yara/sha1/sha1_common.yar",
+      "source": "third_party/crypto-detection/yararules/sha1/sha1_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "847d2938ea5ca1936a8c00368bccb0d563698f1a2d0f9bf9cce4e2fdaabec245"
+    },
+    {
+      "path": "yara/sha1/sha1_x64.yar",
+      "source": "third_party/crypto-detection/yararules/sha1/sha1_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "78b39331e44981fb04ec6eec798d6d631fc7d211805399e0a9a9f0392d7faad0"
+    },
+    {
+      "path": "yara/sha2/sha2_common.yar",
+      "source": "third_party/crypto-detection/yararules/sha2/sha2_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "3cdf83b28b6f1d0187069dd1ff07c1042ec8a61a827f51e9cf2c5746ac6abc02"
+    },
+    {
+      "path": "yara/sha2/sha2_x64.yar",
+      "source": "third_party/crypto-detection/yararules/sha2/sha2_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "2e75490dcc429a2de462390bdc5cb81833c8522f2ff50ddf2097bddcf7b90917"
+    },
+    {
+      "path": "yara/sha3/sha3_common.yar",
+      "source": "third_party/crypto-detection/yararules/sha3/sha3_common.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "e63f44357ddf6e3539f0343ffbc3c47252be5dfd1f4644548b8f7bccdfda98af"
+    },
+    {
+      "path": "yara/sha3/sha3_x64.yar",
+      "source": "third_party/crypto-detection/yararules/sha3/sha3_x64.yar",
+      "repository": "https://github.com/kionactf/crypto-detection",
+      "commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+      "sha256": "e6a0fde4f34128f66ab89db185296c1f9bb27bbfbfdfd40cf027a22d947b03e2"
+    },
+    {
+      "path": "windriver/LICENSE",
+      "source": "third_party/crypto-detector/LICENSE",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "9a183f4e440d308700519e3ca7a708c5915e68daa04d204b5c99ec5392293ac7"
+    },
+    {
+      "path": "windriver/cryptodetector/__init__.py",
+      "source": "third_party/crypto-detector/cryptodetector/__init__.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "fe79720b125aab41490aee87d35e0c438c112ed228669d4d954884d98dba338c"
+    },
+    {
+      "path": "windriver/cryptodetector/crypto_output.py",
+      "source": "third_party/crypto-detector/cryptodetector/crypto_output.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "2a4c9bc668e499e0e729c008ff06911b6c5474efdc243adddc97bcdcfe1df6fd"
+    },
+    {
+      "path": "windriver/cryptodetector/cryptodetector.py",
+      "source": "third_party/crypto-detector/cryptodetector/cryptodetector.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "a389b7278cb89418a219600f3f9a02eea233f9b7bb049c5d9fea59a1137b852d"
+    },
+    {
+      "path": "windriver/cryptodetector/exceptions.py",
+      "source": "third_party/crypto-detector/cryptodetector/exceptions.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "7dfd3d61b98170aad189112d99ba0b7c8ca1f779d5f5246ab0efa70d23125b22"
+    },
+    {
+      "path": "windriver/cryptodetector/filelister.py",
+      "source": "third_party/crypto-detector/cryptodetector/filelister.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "93d6d3821be892f90bef4ad22f8a869ed97c241e84c738e431c22800d253ab40"
+    },
+    {
+      "path": "windriver/cryptodetector/language.py",
+      "source": "third_party/crypto-detector/cryptodetector/language.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "a7ecb43add141e1bdd9506395ffc93abf77abeb44d3afd7562bfc16d256cba19"
+    },
+    {
+      "path": "windriver/cryptodetector/logger.py",
+      "source": "third_party/crypto-detector/cryptodetector/logger.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "1ddaf10a8c40b7cfb6cb622a7ff8e6ed07a3acd114fbddb957c640d56749789c"
+    },
+    {
+      "path": "windriver/cryptodetector/method.py",
+      "source": "third_party/crypto-detector/cryptodetector/method.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "9a36c6dcbc3f2e2cd358e32488924ed07a21abcaee122fe044c6259f86704fe7"
+    },
+    {
+      "path": "windriver/cryptodetector/methods/api/api_definitions.txt",
+      "source": "third_party/crypto-detector/cryptodetector/methods/api/api_definitions.txt",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "187bffb04cdb510fbdedf7d5f360a2abcb0b57d5d2ae19e179b0834ff52fa5f7"
+    },
+    {
+      "path": "windriver/cryptodetector/methods/api/api_finder.py",
+      "source": "third_party/crypto-detector/cryptodetector/methods/api/api_finder.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "1c7919309e4b3b6a5d64b20fe564e2e4a9af10333b6f86b340f4d5240845c9cc"
+    },
+    {
+      "path": "windriver/cryptodetector/methods/hello_world/hello_world_method.py",
+      "source": "third_party/crypto-detector/cryptodetector/methods/hello_world/hello_world_method.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "785747c397fc4cac9eea0ebf33118b92bfcb64c71ada29515220e4699075770c"
+    },
+    {
+      "path": "windriver/cryptodetector/methods/keyword/keyword_list.txt",
+      "source": "third_party/crypto-detector/cryptodetector/methods/keyword/keyword_list.txt",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "cc028f546fcf653ccc3b11b57c8c463fc8e9bfdbb67e300efecb7f6c51604409"
+    },
+    {
+      "path": "windriver/cryptodetector/methods/keyword/keyword_search.py",
+      "source": "third_party/crypto-detector/cryptodetector/methods/keyword/keyword_search.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "c57fa9322528f43342224bee537e485c89b82d36599825639655af95e3453a30"
+    },
+    {
+      "path": "windriver/cryptodetector/options.py",
+      "source": "third_party/crypto-detector/cryptodetector/options.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "30f72883c3e42f776630076912c58495b748995588c5ac395fa5b9785b977935"
+    },
+    {
+      "path": "windriver/cryptodetector/output.py",
+      "source": "third_party/crypto-detector/cryptodetector/output.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "731c34be929687466bf899eced17252bff9726b086938384981cdd892b329786"
+    },
+    {
+      "path": "windriver/cryptodetector/regex.py",
+      "source": "third_party/crypto-detector/cryptodetector/regex.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "c66d80b0323fca3da64277bc5623c62cb1802add231161824202b7c8f7172558"
+    },
+    {
+      "path": "windriver/cryptodetector/rpm.py",
+      "source": "third_party/crypto-detector/cryptodetector/rpm.py",
+      "repository": "https://github.com/Wind-River/crypto-detector",
+      "commit": "d6156a818f57826e520ca117cc3baed55f51483c",
+      "sha256": "9d002b99625570c9af85f9ceaa345cd6d1a47b3c822b1faab6fb787c6d5a3dec"
+    }
+  ]
+}

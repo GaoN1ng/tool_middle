@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "7be317728368d9a0a28ebcbac18aaaa6c2658ddff0462de46d633a68afd3e7d4",
+  "lock_sha256": "a476b277437f3f19be06bbb4dd09636ca248f7b81df16041c17f62abef787ecf",
+  "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/semantics-20261015/release-revision-package",
+  "package_sha256": "b12808998c257afa749aa7ad6e58097728c6c2ddcee0d2731e272c38fd8eb45a",
+  "metric_unit": "content-deduplicated file/algorithm; declared known scope",
+  "policy": "All locked labelled files including failed/partial scans. No holdout-driven detector changes."
+}

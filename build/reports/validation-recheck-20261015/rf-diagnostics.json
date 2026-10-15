@@ -1,0 +1,15 @@
+{
+  "probe_statuses": {
+    "completed": 150,
+    "not_applicable": 77,
+    "not_run": 22,
+    "budget_unavailable": 3
+  },
+  "behavioral_matches": {
+    "ECDH": 12
+  },
+  "errors": [],
+  "failed_workers": [],
+  "budget_abstentions": [],
+  "isolated_source_contexts_all_locked_and_inside_input_boundary": true
+}

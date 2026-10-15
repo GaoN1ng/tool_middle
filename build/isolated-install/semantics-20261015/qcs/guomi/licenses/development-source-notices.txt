@@ -1,0 +1,284 @@
+samples/guomi-development-20261012/sources/wolfsm/sm2.c
+/* sm2.c
+ *
+ * Copyright (C) 2006-2024 wolfSSL Inc.
+ *
+ * This file is part of wolfSSL.
+ *
+ * wolfSSL is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * wolfSSL is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
+ */
+
+/* Based on 'SM2 Digital Signature Algorithm draft-shen-sm2-ecdsa-02'
+ *   https://datatracker.ietf.org/doc/html/draft-shen-sm2-ecdsa-02
+ */
+
+#include <wolfssl/wolfcrypt/libwolfssl_sources.h>
+
+
+samples/guomi-development-20261012/sources/wolfsm/sm3.c
+/* sm3.c
+ *
+ * Copyright (C) 2006-2024 wolfSSL Inc.
+ *
+ * This file is part of wolfSSL.
+ *
+ * wolfSSL is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * wolfSSL is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
+ */
+
+/* For more info on the algorithm, see:
+ *   https://datatracker.ietf.org/doc/html/draft-oscca-cfrg-sm3-02
+ */
+
+#include <wolfssl/wolfcrypt/libwolfssl_sources.h>
+
+
+samples/guomi-development-20261012/sources/wolfsm/sm4.c
+/* sm4.c
+ *
+ * Copyright (C) 2006-2024 wolfSSL Inc.
+ *
+ * This file is part of wolfSSL.
+ *
+ * wolfSSL is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * wolfSSL is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
+ */
+
+/* For more info on the algorithm, see:
+ *  https://datatracker.ietf.org/doc/html/draft-ribose-cfrg-sm4
+ */
+
+#include <wolfssl/wolfcrypt/libwolfssl_sources.h>
+
+
+samples/guomi-development-20261012/sources/openssl/crypto/sm3/sm3.c
+/*
+ * Copyright 2017-2021 The OpenSSL Project Authors. All Rights Reserved.
+ * Copyright 2017 Ribose Inc. All Rights Reserved.
+ * Ported from Ribose contributions from Botan.
+ *
+ * Licensed under the Apache License 2.0 (the "License").  You may not use
+ * this file except in compliance with the License.  You can obtain a copy
+ * in the file LICENSE in the source distribution or at
+ * https://www.openssl.org/source/license.html
+ */
+
+#include <openssl/e_os2.h>
+#include "sm3_local.h"
+
+int ossl_sm3_init(SM3_CTX *c)
+{
+    memset(c, 0, sizeof(*c));
+    c->A = SM3_A;
+    c->B = SM3_B;
+    c->C = SM3_C;
+    c->D = SM3_D;
+    c->E = SM3_E;
+    c->F = SM3_F;
+    c->G = SM3_G;
+    c->H = SM3_H;
+    return 1;
+}
+
+samples/guomi-development-20261012/sources/openssl/crypto/sm4/sm4.c
+/*
+ * Copyright 2017-2024 The OpenSSL Project Authors. All Rights Reserved.
+ * Copyright 2017 Ribose Inc. All Rights Reserved.
+ * Ported from Ribose contributions from Botan.
+ *
+ * Licensed under the Apache License 2.0 (the "License").  You may not use
+ * this file except in compliance with the License.  You can obtain a copy
+ * in the file LICENSE in the source distribution or at
+ * https://www.openssl.org/source/license.html
+ */
+
+#include <openssl/e_os2.h>
+#include "crypto/sm4.h"
+
+static const uint8_t SM4_S[256] = {
+    0xD6, 0x90, 0xE9, 0xFE, 0xCC, 0xE1, 0x3D, 0xB7, 0x16, 0xB6, 0x14, 0xC2,
+    0x28, 0xFB, 0x2C, 0x05, 0x2B, 0x67, 0x9A, 0x76, 0x2A, 0xBE, 0x04, 0xC3,
+    0xAA, 0x44, 0x13, 0x26, 0x49, 0x86, 0x06, 0x99, 0x9C, 0x42, 0x50, 0xF4,
+    0x91, 0xEF, 0x98, 0x7A, 0x33, 0x54, 0x0B, 0x43, 0xED, 0xCF, 0xAC, 0x62,
+    0xE4, 0xB3, 0x1C, 0xA9, 0xC9, 0x08, 0xE8, 0x95, 0x80, 0xDF, 0x94, 0xFA,
+    0x75, 0x8F, 0x3F, 0xA6, 0x47, 0x07, 0xA7, 0xFC, 0xF3, 0x73, 0x17, 0xBA,
+    0x83, 0x59, 0x3C, 0x19, 0xE6, 0x85, 0x4F, 0xA8, 0x68, 0x6B, 0x81, 0xB2,
+    0x71, 0x64, 0xDA, 0x8B, 0xF8, 0xEB, 0x0F, 0x4B, 0x70, 0x56, 0x9D, 0x35,
+    0x1E, 0x24, 0x0E, 0x5E, 0x63, 0x58, 0xD1, 0xA2, 0x25, 0x22, 0x7C, 0x3B,
+    0x01, 0x21, 0x78, 0x87, 0xD4, 0x00, 0x46, 0x57, 0x9F, 0xD3, 0x27, 0x52,
+    0x4C, 0x36, 0x02, 0xE7, 0xA0, 0xC4, 0xC8, 0x9E, 0xEA, 0xBF, 0x8A, 0xD2,
+    0x40, 0xC7, 0x38, 0xB5, 0xA3, 0xF7, 0xF2, 0xCE, 0xF9, 0x61, 0x15, 0xA1,
+
+samples/guomi-development-20261012/sources/openssl/crypto/sm2/sm2_sign.c
+/*
+ * Copyright 2017-2026 The OpenSSL Project Authors. All Rights Reserved.
+ * Copyright 2017 Ribose Inc. All Rights Reserved.
+ * Ported from Ribose contributions from Botan.
+ *
+ * Licensed under the Apache License 2.0 (the "License").  You may not use
+ * this file except in compliance with the License.  You can obtain a copy
+ * in the file LICENSE in the source distribution or at
+ * https://www.openssl.org/source/license.html
+ */
+
+#include "internal/deprecated.h"
+
+#include "crypto/sm2.h"
+#include "crypto/sm2err.h"
+#include "crypto/ec.h" /* ossl_ec_group_do_inverse_ord() */
+#include "crypto/bn.h" /* fixed-top / Montgomery constant-time BN helpers */
+#include "internal/numbers.h"
+#include <openssl/err.h>
+#include <openssl/evp.h>
+#include <openssl/bn.h>
+#include <string.h>
+
+/*
+ * [SM2 Signature Scheme]
+ * (https://datatracker.ietf.org/doc/html/rfc8998#section-3.2.1)
+ *
+
+samples/guomi-development-20261012/sources/openssl/crypto/sm2/sm2_crypt.c
+/*
+ * Copyright 2017-2026 The OpenSSL Project Authors. All Rights Reserved.
+ * Copyright 2017 Ribose Inc. All Rights Reserved.
+ * Ported from Ribose contributions from Botan.
+ *
+ * Licensed under the Apache License 2.0 (the "License").  You may not use
+ * this file except in compliance with the License.  You can obtain a copy
+ * in the file LICENSE in the source distribution or at
+ * https://www.openssl.org/source/license.html
+ */
+
+/*
+ * ECDSA low level APIs are deprecated for public use, but still ok for
+ * internal use.
+ */
+#include "internal/deprecated.h"
+
+#include "crypto/sm2.h"
+#include "crypto/sm2err.h"
+#include "crypto/ec.h" /* ossl_ecdh_kdf_X9_63() */
+#include <openssl/err.h>
+#include <openssl/evp.h>
+#include <openssl/bn.h>
+#include <openssl/asn1.h>
+#include <openssl/asn1t.h>
+#include <string.h>
+
+
+samples/guomi-development-20261012/sources/libgcrypt/cipher/sm3.c
+/* sm3.c - SM3 hash function
+ * Copyright (C) 2017 Jia Zhang
+ *
+ * This file is part of Libgcrypt.
+ *
+ * Libgcrypt is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * Libgcrypt is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+/*  Test vectors:
+
+    "abc"
+    SM3: 66c7f0f4 62eeedd9 d1f2d46b dc10e4e2 4167c487 5cf2f7a2 297da02b 8f4ba8e0
+
+    "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"
+    SM3: debe9ff9 2275b8a1 38604889 c18e5a4d 6fdb70e5 387e5765 293dcba3 9c0c5732
+
+samples/guomi-development-20261012/sources/libgcrypt/cipher/sm4.c
+/* sm4.c  -  SM4 Cipher Algorithm
+ * Copyright (C) 2020 Alibaba Group.
+ * Copyright (C) 2020-2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2020-2022 Jussi Kivilinna <jussi.kivilinna@iki.fi>
+ *
+ * This file is part of Libgcrypt.
+ *
+ * Libgcrypt is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * Libgcrypt is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+#include <config.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "types.h"  /* for byte and u32 typedefs */
+#include "bithelp.h"
+
+Inline development dependency: wolfSSL wolfcrypt/src/misc.c, GPL-3.0-or-later
+/* misc.c
+ *
+ * Copyright (C) 2006-2026 wolfSSL Inc.
+ *
+ * This file is part of wolfSSL.
+ *
+ * wolfSSL is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * wolfSSL is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
+ */
+/*
+

@@ -1,0 +1,12 @@
+test_aarch64_halfword_constant_initialization (test_sha256_rounds.SHA256RoundTests.test_aarch64_halfword_constant_initialization) ... ok
+test_algorithm_like_macro_names_do_not_supply_missing_operations (test_sha256_rounds.SHA256RoundTests.test_algorithm_like_macro_names_do_not_supply_missing_operations) ... ok
+test_all_ones_xor_is_boolean_complement_in_source_and_binary (test_sha256_rounds.SHA256RoundTests.test_all_ones_xor_is_boolean_complement_in_source_and_binary) ... ok
+test_complete_round_without_local_message_expansion (test_sha256_rounds.SHA256RoundTests.test_complete_round_without_local_message_expansion) ... ok
+test_identity_masks_do_not_replace_boolean_producers (test_sha256_rounds.SHA256RoundTests.test_identity_masks_do_not_replace_boolean_producers) ... ok
+test_macro_arguments_do_not_cascade_and_typedef_casts_are_real (test_sha256_rounds.SHA256RoundTests.test_macro_arguments_do_not_cascade_and_typedef_casts_are_real) ... ok
+test_wrong_input_maps_and_variant_stay_negative (test_sha256_rounds.SHA256RoundTests.test_wrong_input_maps_and_variant_stay_negative) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 10.163s
+
+OK

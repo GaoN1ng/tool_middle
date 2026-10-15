@@ -1,0 +1,702 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so",
+  "input_kind": "executable",
+  "timestamp": "2026-10-15T04:57:29.406292+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "pyelftools": "0.32",
+    "symbol_rules_sha256": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "terminal_api_mapping_sha256": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "yara": {
+      "python_binding": "4.5.4",
+      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+      "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
+      "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
+      "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
+    },
+    "function_signatures": {
+      "database_sha256": "64d146345830637ef575a51d66ab5d939c8f73fa9422cc979681eb0f5ad95bc0",
+      "schema_version": "1.0",
+      "signature_count": 1028,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_constants_sha256": "6379a7c48c3900c1e4ae328948aa4ec21ed8850c69b7203855b7f87608f56403",
+    "guomi_function_signature": {
+      "database_sha256": "9e323479d69a63f6e2885bf62708d0c9810c463254972c283025ffab887c1b99",
+      "schema_version": "1.0",
+      "signature_count": 152,
+      "method": "whole_function_relocation_mask_literals_and_audited_linker_variants",
+      "environment_reference_policy": "guomi-environment-references-1"
+    },
+    "guomi_development_signature": {
+      "database_sha256": "6ed9bad63fcc2780a27986229ee244d8f292c9dcf4d745a777776cafcaca5241",
+      "schema_version": "1.0",
+      "signature_count": 211,
+      "method": "whole_function_relocation_mask_and_literals"
+    },
+    "guomi_standard_sha256": "914deec5e3c6c09f7e42f768bf0585873663e2766d3dfe2c710011e08343ec15"
+  },
+  "artifact": {
+    "kind": "executable",
+    "format": "ELF",
+    "architecture": "MIPS",
+    "sha256": "ecc04ed9cac17d4e1ab5fec380be44e4fe26486cda2b130f8e62db98710992ac",
+    "firmware_relative_path": null,
+    "size_bytes": 1093904,
+    "machine": "EM_MIPS",
+    "bits": 32,
+    "endianness": "big",
+    "symbol_tables": [
+      ".dynsym"
+    ],
+    "function_symbol_count": 0,
+    "symbol_state": "stripped_or_dynamic_only"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "symbol": {
+      "status": "completed"
+    },
+    "yara": {
+      "status": "completed",
+      "suppressed_instruction_rules": []
+    },
+    "function_signature": {
+      "status": "completed",
+      "architectures": [
+        "mips_be"
+      ],
+      "matched_families": 0
+    },
+    "guomi_constants": {
+      "status": "completed"
+    },
+    "guomi_function_signature": {
+      "status": "completed",
+      "architectures": [
+        "mips_be"
+      ],
+      "matched_families": 0
+    },
+    "guomi_development_signature": {
+      "status": "completed",
+      "architectures": [
+        "mips_be"
+      ],
+      "matched_families": 0
+    },
+    "guomi_semantic": {
+      "status": "completed",
+      "architectures": [
+        "mips_be"
+      ],
+      "instructions": 53372,
+      "matched_algorithms": []
+    },
+    "operation_binary": {
+      "status": "completed",
+      "architectures": [
+        "mips_be"
+      ],
+      "matched_algorithms": [],
+      "shared_analysis": "guomi_semantic"
+    },
+    "semantic_probes": {
+      "method": "bounded private-memory concrete semantics",
+      "target_native_execution": false,
+      "target_system_calls": false,
+      "candidate_algorithms": [
+        "DES",
+        "RC4"
+      ],
+      "matches": [
+        {
+          "algorithm": "DES",
+          "address": 94052,
+          "setup_address": 92768,
+          "vectors": 3,
+          "boundary_encoding": "IP-boundary-word-byteswap",
+          "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors under the explicit IP-boundary-word-byteswap encoding",
+          "modeled_imports": [],
+          "architecture": "mips_be"
+        }
+      ],
+      "limitations": [
+        "Finite probes do not prove equivalence for all inputs",
+        "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+        "Candidate and time budgets; unmodeled imports decline the probe"
+      ],
+      "status": "completed"
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "ELF static symbol table absent: known-function recognition can supply selected asymmetric implementation evidence; unmatched unnamed operations remain a coverage gap.",
+    "YARA x86-64 instruction mappings suppressed on other/unknown architectures; constants provide limited coverage.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Function signatures recognize recorded library/compiler/configuration builds, including selected Thumb/MIPS/Xtensa and static PE references. Unrecorded builds, LTO, inlining and obfuscation remain limitations; shared SHA compression alone stays unresolved.",
+    "Guomi binary operation witnesses are bounded local data-flow and code-neighbourhood heuristics, not complete control-flow or semantic proofs; unsupported lifting may miss implementations."
+  ],
+  "extraction_chain": [],
+  "findings": [
+    {
+      "algorithm": "DES",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "semantic_probes",
+      "evidence_type": "binary_instruction",
+      "identifier": "bounded_behavioral_witness",
+      "line": null,
+      "offset": 28516,
+      "confidence": "medium",
+      "confidence_reason": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors under the explicit IP-boundary-word-byteswap encoding",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "architecture": "mips_be",
+      "virtual_address": 94052,
+      "implementation_verification": "finite_standard_vector_emulation",
+      "behavioral_witness": {
+        "algorithm": "DES",
+        "address": 94052,
+        "setup_address": 92768,
+        "vectors": 3,
+        "boundary_encoding": "IP-boundary-word-byteswap",
+        "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors under the explicit IP-boundary-word-byteswap encoding",
+        "modeled_imports": []
+      },
+      "limitations": [
+        "Finite probes do not prove equivalence for all inputs",
+        "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+        "Candidate and time budgets; unmodeled imports decline the probe"
+      ],
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    }
+  ],
+  "algorithm_assets": [
+    {
+      "algorithm": "DES",
+      "algorithm_category": "symmetric",
+      "confidence": "medium",
+      "confidence_reason": "Strongest rule basis retained; evidence count is not a probability.",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "algorithm": "DES",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "semantic_probes",
+          "evidence_type": "binary_instruction",
+          "identifier": "bounded_behavioral_witness",
+          "line": null,
+          "offset": 28516,
+          "confidence": "medium",
+          "confidence_reason": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors under the explicit IP-boundary-word-byteswap encoding",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "architecture": "mips_be",
+          "virtual_address": 94052,
+          "implementation_verification": "finite_standard_vector_emulation",
+          "behavioral_witness": {
+            "algorithm": "DES",
+            "address": 94052,
+            "setup_address": 92768,
+            "vectors": 3,
+            "boundary_encoding": "IP-boundary-word-byteswap",
+            "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors under the explicit IP-boundary-word-byteswap encoding",
+            "modeled_imports": []
+          },
+          "limitations": [
+            "Finite probes do not prove equivalence for all inputs",
+            "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+            "Candidate and time budgets; unmodeled imports decline the probe"
+          ],
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+        }
+      ],
+      "runtime_usage": "unknown"
+    }
+  ],
+  "clues": [
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_ip",
+      "line": null,
+      "offset": 1380,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1380,
+          "matched_length": 64,
+          "matched_hex": "3a322a221a120a023c342c241c140c043e362e261e160e06403830282018100839312921191109013b332b231b130b033d352d251d150d053f372f271f170f07"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES IP table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_fp",
+      "line": null,
+      "offset": 1444,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1444,
+          "matched_length": 64,
+          "matched_hex": "280830103818402027072f0f37173f1f26062e0e36163e1e25052d0d35153d1d24042c0c34143c1c23032b0b33133b1b22022a0a32123a1a2101290931113919"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES FP(IPinv) table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_P",
+      "line": null,
+      "offset": 1508,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1508,
+          "matched_length": 32,
+          "matched_hex": "100714151d0c1c11010f171a05121f0a0208180e201b0309130d1e06160b0419"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES P table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_1",
+      "line": null,
+      "offset": 868,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 868,
+          "matched_length": 64,
+          "matched_hex": "0e040d01020f0b08030a060c05090007000f07040e020d010a060c0b0905030804010e080d06020b0f0c0907030a05000f0c080204090107050b030e0a00060d"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox1 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_2",
+      "line": null,
+      "offset": 932,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 932,
+          "matched_length": 64,
+          "matched_hex": "0f01080e060b03040907020d0c00050a030d04070f02080e0c00010a06090b05000e070b0a040d0105080c060903020f0d080a01030f04020b06070c00050e09"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox2 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_3",
+      "line": null,
+      "offset": 996,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 996,
+          "matched_length": 64,
+          "matched_hex": "0a00090e06030f05010d0c070b0402080d0700090304060a0208050e0c0b0f010d060409080f03000b01020c050a0e07010a0d0006090807040f0e030b05020c"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox3 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_4",
+      "line": null,
+      "offset": 1060,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1060,
+          "matched_length": 64,
+          "matched_hex": "070d0e030006090a010208050b0c040f0d080b05060f00030407020c010a0e090a0609000c0b070d0f01030e05020804030f00060a010d080904050b0c07020e"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox4 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_5",
+      "line": null,
+      "offset": 1124,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1124,
+          "matched_length": 64,
+          "matched_hex": "020c0401070a0b060805030f0d000e090e0b020c04070d0105000f0a030908060402010b0a0d07080f090c050603000e0b080c07010e020d060f00090a040503"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox5 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_6",
+      "line": null,
+      "offset": 1188,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1188,
+          "matched_length": 64,
+          "matched_hex": "0c010a0f09020608000d03040e07050b0a0f0402070c090506010d0e000b0308090e0f0502080c030700040a010d0b060403020c09050f0a0b0e01070600080d"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox6 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_7",
+      "line": null,
+      "offset": 1252,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1252,
+          "matched_length": 64,
+          "matched_hex": "040b020e0f00080d030c0907050a06010d000b070409010a0e03050c020f080601040b0d0c03070e0a0f060800050902060b0d0801040a070905000f0e02030c"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox7 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_Sbox_8",
+      "line": null,
+      "offset": 1316,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 1316,
+          "matched_length": 64,
+          "matched_hex": "0d020804060f0b010a09030e05000c07010f0d080a0307040c05060b000e0902070b0401090c0e0200060a0d0f03050802010e07040a080d0f0c09000305060b"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES Sbox8 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_PC1",
+      "line": null,
+      "offset": 760,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 760,
+          "matched_length": 56,
+          "matched_hex": "39312921191109013a322a221a120a023b332b231b130b033c342c243f372f271f170f073e362e261e160e063d352d251d150d051c140c04"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES PC1 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    },
+    {
+      "algorithm": null,
+      "algorithm_category": "unknown",
+      "candidate_algorithms": [
+        "DES",
+        "3DES"
+      ],
+      "engine": "yara",
+      "evidence_type": "binary_constant",
+      "identifier": "DES_PC2",
+      "line": null,
+      "offset": 816,
+      "confidence": "low",
+      "confidence_reason": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "matches": [
+        {
+          "identifier": "$c0",
+          "offset": 816,
+          "matched_length": 48,
+          "matched_hex": "0e110b180105031c0f06150a17130c041a0810071b140d0229341f252f371e28332d21302c31273822352e2a32241d20"
+        }
+      ],
+      "rule_metadata": {
+        "description": "DES PC2 table",
+        "date": "2022-04"
+      },
+      "rule_architecture": "any",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/ec/ecc04ed9cac17d4e/ordinary.so"
+    }
+  ],
+  "dependencies": [],
+  "components": [],
+  "operation_diagnostics": {
+    "binary": [
+      {
+        "architecture": "mips_be",
+        "event_counts": {
+          "immediate": 28729,
+          "constant": 9065,
+          "add": 14596,
+          "andi": 3905,
+          "and": 1923,
+          "subu": 1628,
+          "xor": 2312,
+          "sub": 334,
+          "rotate": 2,
+          "table_read": 1
+        },
+        "table_reads": {
+          "des_s": 1
+        },
+        "located_tables": {
+          "des_s": 8
+        },
+        "helper_calls": 0,
+        "stage": "bounded_lifting_finished"
+      }
+    ]
+  },
+  "controlflow_analysis": [
+    {
+      "architecture": "mips_be",
+      "section_address": 92768,
+      "status": "limited",
+      "steps": 122971,
+      "blocks": 4851,
+      "loop_edges": 777,
+      "joins": 4199,
+      "widened_blocks": 0,
+      "entry_count": 451,
+      "declined_transfers": 79,
+      "replayed_blocks": 4379,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 73512,
+      "component_count": 474,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "mips_be",
+      "section_address": 92768,
+      "phase": "natural_loop_entry_prefix",
+      "status": "limited",
+      "steps": 2354,
+      "blocks": 4851,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 451,
+      "declined_transfers": 79,
+      "replayed_blocks": 169,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 1177,
+      "component_count": 4678,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    }
+  ]
+}

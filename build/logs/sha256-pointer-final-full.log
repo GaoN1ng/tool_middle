@@ -1,0 +1,6 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-pointer-20261015/final-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+50/2344 files, 31.0s
+100/2344 files, 54.4s
+150/2344 files, 79.4s
+200/2344 files, 108.3s

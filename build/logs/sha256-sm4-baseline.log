@@ -1,0 +1,186 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-sm4-20261014/baseline-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+50/2344 files, 17.1s
+100/2344 files, 31.3s
+150/2344 files, 44.3s
+200/2344 files, 58.6s
+250/2344 files, 69.5s
+300/2344 files, 81.8s
+350/2344 files, 95.6s
+400/2344 files, 107.3s
+450/2344 files, 121.9s
+500/2344 files, 138.5s
+550/2344 files, 152.7s
+600/2344 files, 166.3s
+650/2344 files, 179.0s
+700/2344 files, 190.9s
+750/2344 files, 201.3s
+800/2344 files, 216.9s
+850/2344 files, 229.6s
+900/2344 files, 240.9s
+950/2344 files, 253.0s
+1000/2344 files, 270.6s
+1050/2344 files, 283.7s
+1100/2344 files, 295.6s
+1150/2344 files, 308.3s
+1200/2344 files, 321.7s
+1250/2344 files, 334.9s
+1300/2344 files, 346.3s
+1350/2344 files, 358.4s
+1400/2344 files, 373.6s
+1450/2344 files, 389.4s
+1500/2344 files, 403.1s
+1550/2344 files, 418.3s
+1600/2344 files, 433.6s
+1650/2344 files, 447.9s
+1700/2344 files, 466.9s
+1750/2344 files, 481.7s
+1800/2344 files, 499.5s
+1850/2344 files, 509.1s
+1900/2344 files, 524.6s
+1950/2344 files, 536.1s
+2000/2344 files, 547.5s
+2050/2344 files, 560.5s
+2100/2344 files, 575.4s
+2150/2344 files, 587.8s
+2200/2344 files, 602.4s
+2250/2344 files, 616.9s
+2300/2344 files, 629.4s
+2344/2344 files, 647.0s
+{
+  "files": 2344,
+  "positive_labels": 1572,
+  "scan_status": {
+    "completed": 2344
+  },
+  "micro": {
+    "TP": 1197,
+    "FP": 0,
+    "FN": 375,
+    "TN": 24070,
+    "recall": 0.7614503816793893,
+    "false_negative_rate": 0.2385496183206107,
+    "precision": 1.0
+  },
+  "per_algorithm": {
+    "AES": {
+      "TP": 123,
+      "FP": 0,
+      "FN": 22,
+      "TN": 1716,
+      "recall": 0.8482758620689655,
+      "false_negative_rate": 0.15172413793103448,
+      "precision": 1.0
+    },
+    "ChaCha20": {
+      "TP": 129,
+      "FP": 0,
+      "FN": 11,
+      "TN": 1721,
+      "recall": 0.9214285714285714,
+      "false_negative_rate": 0.07857142857142857,
+      "precision": 1.0
+    },
+    "DES": {
+      "TP": 109,
+      "FP": 0,
+      "FN": 22,
+      "TN": 1730,
+      "recall": 0.8320610687022901,
+      "false_negative_rate": 0.16793893129770993,
+      "precision": 1.0
+    },
+    "ECDH": {
+      "TP": 42,
+      "FP": 0,
+      "FN": 59,
+      "TN": 1760,
+      "recall": 0.4158415841584158,
+      "false_negative_rate": 0.5841584158415841,
+      "precision": 1.0
+    },
+    "ECDSA": {
+      "TP": 41,
+      "FP": 0,
+      "FN": 21,
+      "TN": 1799,
+      "recall": 0.6612903225806451,
+      "false_negative_rate": 0.3387096774193548,
+      "precision": 1.0
+    },
+    "MD5": {
+      "TP": 103,
+      "FP": 0,
+      "FN": 5,
+      "TN": 1753,
+      "recall": 0.9537037037037037,
+      "false_negative_rate": 0.046296296296296294,
+      "precision": 1.0
+    },
+    "RC4": {
+      "TP": 89,
+      "FP": 0,
+      "FN": 19,
+      "TN": 1753,
+      "recall": 0.8240740740740741,
+      "false_negative_rate": 0.17592592592592593,
+      "precision": 1.0
+    },
+    "RSA": {
+      "TP": 57,
+      "FP": 0,
+      "FN": 7,
+      "TN": 1797,
+      "recall": 0.890625,
+      "false_negative_rate": 0.109375,
+      "precision": 1.0
+    },
+    "SHA-1": {
+      "TP": 102,
+      "FP": 0,
+      "FN": 20,
+      "TN": 1739,
+      "recall": 0.8360655737704918,
+      "false_negative_rate": 0.16393442622950818,
+      "precision": 1.0
+    },
+    "SHA-256": {
+      "TP": 78,
+      "FP": 0,
+      "FN": 91,
+      "TN": 1692,
+      "recall": 0.46153846153846156,
+      "false_negative_rate": 0.5384615384615384,
+      "precision": 1.0
+    },
+    "SM2": {
+      "TP": 107,
+      "FP": 0,
+      "FN": 50,
+      "TN": 2187,
+      "recall": 0.6815286624203821,
+      "false_negative_rate": 0.3184713375796178,
+      "precision": 1.0
+    },
+    "SM3": {
+      "TP": 113,
+      "FP": 0,
+      "FN": 32,
+      "TN": 2199,
+      "recall": 0.7793103448275862,
+      "false_negative_rate": 0.2206896551724138,
+      "precision": 1.0
+    },
+    "SM4": {
+      "TP": 104,
+      "FP": 0,
+      "FN": 16,
+      "TN": 2224,
+      "recall": 0.8666666666666667,
+      "false_negative_rate": 0.13333333333333333,
+      "precision": 1.0
+    }
+  },
+  "seconds": 647.3009610371664,
+  "focus": null
+}

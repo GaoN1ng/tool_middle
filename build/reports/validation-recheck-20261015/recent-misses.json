@@ -1,0 +1,2896 @@
+{
+  "rows": [
+    {
+      "id": "miracl--core-c_ecdh.c-x86_64-O0",
+      "sha256": "07aefdb50949f58105708419aacba9f31f817326a0b72dd210986eda263e31ac",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-x86_64-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 2.889141676016152
+    },
+    {
+      "id": "stbrumme--hash-library-sha1.cpp-thumb-O0",
+      "sha256": "096e615fcdcc6c39000fd7cdcd3abb7b7b5d8283bc810789886078afc4ca0bb0",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-sha1.cpp-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha1.cpp",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-1"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-1"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 42.01649979176
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-source-raw",
+      "sha256": "0a51a448ea64ae6a81a6a257f5b137e9d720d1d21d6ee5b3e1b12f81bf858847",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/miracl--core/c/ecdh.c",
+      "kind": "source",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 2.8252448947168887
+    },
+    {
+      "id": "ogay--sha2-sha2.c-thumb-O0",
+      "sha256": "0e68dc2601da19603097f274fa9afc559dde675bfce3cf2c6b35854453cd38aa",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/ogay--sha2-sha2.c-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-256"
+      ],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "partial",
+      "seconds": 32.312465858180076
+    },
+    {
+      "id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-thumb-O0",
+      "sha256": "118df48619de6bc8adc1d2950375ad09ad3e2de12f7bad41de7af352d77f6e9f",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "MD5"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "MD5"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 38.72842916985974
+    },
+    {
+      "id": "miracl--core-c_rsa.c-thumb-O0",
+      "sha256": "16fea904dd15cf15f90d76dca62a6c0c0f3bdf0ca0480f1f87eccd8c2e86d848",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 24.810810026247054
+    },
+    {
+      "id": "miracl--core-c_hash.c-thumb-O2",
+      "sha256": "1aad563777296f758a32bb4352c5bd04e79c2ef8a2e7afedccd14de8b56baefe",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-thumb-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "partial",
+      "seconds": 25.934055448975414
+    },
+    {
+      "id": "ogay--sha2-sha2.c-thumb-Os",
+      "sha256": "1bf00f494bf23e6a9fe45476e47280b09e2bc79ed59b6fcd660d41f6d4b729e4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/ogay--sha2-sha2.c-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-256"
+      ],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "partial",
+      "seconds": 22.08258380787447
+    },
+    {
+      "id": "rxi--ini-src_ini.c-thumb-O0",
+      "sha256": "272c856072932dff33852053ef4c031dbfb2de40ce6adaec1ec0468d7ea5bebe",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/rxi--ini-src_ini.c-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "rxi--ini",
+      "family": "rxi--ini:src/ini.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [],
+      "false_positive": [],
+      "scan_status": "partial",
+      "seconds": 26.06090715015307
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mips_be-O2",
+      "sha256": "2df028704f49e72dd589ad04e67bb0fbfa8080a2834ee081d816da2e9616f392",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mips_be-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.23736419901251793
+    },
+    {
+      "id": "kerukuro--digestpp-algorithm_detail_sm3_provider.hpp-source-raw",
+      "sha256": "312f2888bd238981b5f4f6aa0bd8ba991abbe432a2b221f4751fbde83990504b",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/kerukuro--digestpp/algorithm/detail/sm3_provider.hpp",
+      "kind": "source",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SM3"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SM3"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.8692176192998886
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-thumb-O2",
+      "sha256": "33491108a2c5d4342fc120eb6abd091919949e765c310300daff224be8f71323",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-thumb-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 34.60675624292344
+    },
+    {
+      "id": "miracl--core-c_rsa.c-aarch64-O2",
+      "sha256": "34851034c45df8eacf3928e03c08ae1374b282d21077788cc054f29a0600123a",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-aarch64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.43669853638857603
+    },
+    {
+      "id": "ogay--sha2-sha2.c-mips_be-O0",
+      "sha256": "36544015a7d4c087d5ea57781809d57a28c51c8415cd8ad7be69ccf6057faa19",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/ogay--sha2-sha2.c-mips_be-O0/ordinary.so",
+      "kind": "executable",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 14.861628575716168
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-aarch64-O2",
+      "sha256": "3ad849df9096446a6ebc34fc2806791af57f93e48d90f4ba7a56e48e5d9f7119",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-aarch64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.6551818773150444
+    },
+    {
+      "id": "miracl--core-c_hash.c-x86_64-O2",
+      "sha256": "3b74f05574459ec05cf97f74fd9ba7c9473b3f9cd8823cf0ed99b9007da47d28",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1",
+        "SHA-256"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 1.2200850690715015
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mips_be-O0",
+      "sha256": "3e77c443bc2f8b276cf7b4098bccc8d50952b378667720a67943948f225919f1",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mips_be-O0/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 2.0564944851212204
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mipsel-Os",
+      "sha256": "4076e63a88862040f2325c1851201e8ad518707db036e30529c223bb074aaf9d",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mipsel-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.36969760013744235
+    },
+    {
+      "id": "miracl--core-c_rsa.c-thumb-O2",
+      "sha256": "41e2e7eb6610171cf835dedcc6696ec864f4fe1bc1ca6a26e7cb79ed858c2681",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-thumb-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 34.06992133194581
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mips_be-O0",
+      "sha256": "490793104c271a4dd84d95bb98c4a4cb327cdf44809010d73f7bbff7125db39e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mips_be-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.9782398529350758
+    },
+    {
+      "id": "stbrumme--hash-library-keccak.cpp-x86_64-Os",
+      "sha256": "4e131de6405b62c47be2ee188164e5672a280fba644e3b61003d2067733ea24e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-keccak.cpp-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:keccak.cpp",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 29.36062976717949
+    },
+    {
+      "id": "983--SHA-256-sha256.c-x86_64-O2",
+      "sha256": "4f9d5b81518f29fbf8d5ed410de148f9f9561cb7e880b533d27e111f0f681838",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.5901459539309144
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mips_be-O2",
+      "sha256": "555f4676c9ffe78be0c8a65ef85c5b951e0f13b73941037931807dd6ffff7f80",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mips_be-O2/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.35277351178228855
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mipsel-O0",
+      "sha256": "5c9edb39d2a262298aff049b1826616aa15c426f270505725daff03e1c45ba66",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mipsel-O0/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.6503449571318924
+    },
+    {
+      "id": "miracl--core-c_rsa.c-x86_64-O2",
+      "sha256": "6331fe8b5b6ab7f4644893cc1e41f7354820242a648487195a15398e4c85e6f7",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.2735592983663082
+    },
+    {
+      "id": "miracl--core-c_hash.c-aarch64-O2",
+      "sha256": "63641bc2062dc0a686dd148ff9a0a2f4b7a03c2be189326983b8dcb85d8e2bfd",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-aarch64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.1923008668236434
+    },
+    {
+      "id": "miracl--core-c_rsa.c-thumb-Os",
+      "sha256": "6411be246846f4538043bf2a259fe1c80c4f2057cc93d35dfb40db04008845ca",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 29.911286151967943
+    },
+    {
+      "id": "miracl--core-c_rsa.c-x86_64-O0",
+      "sha256": "648fd947f68dccd8248b7fbd919a10bf3df916bc5033834b4dba41ad4f2c9cfc",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-x86_64-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.7331800260581076
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-x86_64-O2",
+      "sha256": "6594bfbe8e7926d3eef1480690fa25bd484486b2000cc70acbba3545c41456fe",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.6379648288711905
+    },
+    {
+      "id": "983--SHA-256-sha256.c-aarch64-Os",
+      "sha256": "65d09deda06b0e41a74022e80018037526bcc4a08c4f0a0d2569a72db995de2e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-aarch64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.31688755424693227
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-thumb-Os",
+      "sha256": "74c1ad54e61c6b1ed20d95e77382222790434fae49b2545a243f76ea788ee21b",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 30.235049836803228
+    },
+    {
+      "id": "stbrumme--hash-library-sha3.cpp-x86_64-O2",
+      "sha256": "763b79c659aec40dcc3887de2e8717d0e8e6092ffcc79eb473ab146ee18d4e30",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-sha3.cpp-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha3.cpp",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 31.005146505776793
+    },
+    {
+      "id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-aarch64-O0",
+      "sha256": "76a1e310ac5ce750c3ff8b0777e4a8a9071fefb09e5293a128b85244b1a459f9",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-aarch64-O0/ordinary.so",
+      "kind": "executable",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "MD5"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "MD5"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 23.47500936081633
+    },
+    {
+      "id": "kerukuro--digestpp-algorithm_detail_sha2_provider.hpp-source-raw",
+      "sha256": "7808bab9cfc1a1e83d4dc997aeaaa5f8a3590752fc8da0e8731065b184f84ef4",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/kerukuro--digestpp/algorithm/detail/sha2_provider.hpp",
+      "kind": "source",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 2.0300090541131794
+    },
+    {
+      "id": "miracl--core-c_rsa.c-x86_64-Os",
+      "sha256": "782f33a2ea1b8f62494c6c4b2b1e03995479a235068c5d28b242fd5677c6bf0f",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.31084998417645693
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mipsel-O2",
+      "sha256": "7902c2ef0d07b29c6e5665f23715191c2f84ab2fe152d14707b47505eafb2555",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mipsel-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.4670044328086078
+    },
+    {
+      "id": "983--SHA-256-sha256.c-thumb-O2",
+      "sha256": "791cd76179ef443f35b62e9819da54affc31bfe9434eeb205b9b3290fc229d2a",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-thumb-O2/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 32.41212598886341
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mipsel-Os",
+      "sha256": "7aa99986ea6f72a83fa222aa7b1038b747b4f981dcb45f85c9ffd21378be2663",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mipsel-Os/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.538904161658138
+    },
+    {
+      "id": "ogay--sha2-sha2.c-source-raw",
+      "sha256": "7c3d891116381f5119e823463772ea5994cbf18ab78843af52c507647f516b14",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/ogay--sha2/sha2.c",
+      "kind": "source",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.5762919741682708
+    },
+    {
+      "id": "stbrumme--hash-library-md5.cpp-thumb-O0",
+      "sha256": "7ccad74b2b836b0e419823b8acd8ce7e48a9e65133a697a18d3fd3b57ab9a223",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-md5.cpp-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:md5.cpp",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "MD5"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "MD5"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 59.58232887322083
+    },
+    {
+      "id": "JuneAndGreen--sm-crypto-src_sm2_index.js-source-raw",
+      "sha256": "7dd833aa6b926935326d8fe86b89fe1477029f760a29e7ebf81a4c2a8f456ed8",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/JuneAndGreen--sm-crypto/src/sm2/index.js",
+      "kind": "source",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SM2"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SM2"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.02174066286534071
+    },
+    {
+      "id": "983--SHA-256-sha256.c-thumb-Os",
+      "sha256": "853d30759fbe7b5bb5754f64398e33cf0e725f2086272bb63b90c4779e77de90",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 29.510452813003212
+    },
+    {
+      "id": "miracl--core-c_rsa.c-source-raw",
+      "sha256": "88954d152eab048f1e9b145a9cad07302015b7a4f9eb7063b7a161ed388f911c",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/miracl--core/c/rsa.c",
+      "kind": "source",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.879944708198309
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mipsel-O2",
+      "sha256": "89b28a291d7796657cb40c7a7f9143af8b1a9b2355cf801dde0fd4800dec4d02",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mipsel-O2/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.37383032077923417
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-x86_64-Os",
+      "sha256": "8f4429d507c3fb1fa24f025f8bd6252982877a51ce1558554831fbcecb44b98e",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.6589645831845701
+    },
+    {
+      "id": "983--SHA-256-sha256.c-mips_be-Os",
+      "sha256": "975c82a1e9977d65f1228487eb44632a16886b4b08dff5451371a72982c6d78f",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-mips_be-Os/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.4632806023582816
+    },
+    {
+      "id": "miracl--core-c_hash.c-thumb-Os",
+      "sha256": "9a7db5ddd8ea8efdaabdaeb8a842da1fd3189b267391b0f958dc17b36597f475",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-thumb-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 29.76142673380673
+    },
+    {
+      "id": "983--SHA-256-sha256.c-aarch64-O2",
+      "sha256": "9e1b1a78f4ae7b8f7c789a303bb4442478a55b36afde57be47810d574c85ff28",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-aarch64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.43460032483562827
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-thumb-O0",
+      "sha256": "9f6bdbf4f27166c5cfb9f5e5aa8de0c69378450c2cbbc85573efe7dddc2ad7b7",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 40.11467989999801
+    },
+    {
+      "id": "stbrumme--hash-library-sha3.cpp-x86_64-Os",
+      "sha256": "9fa7a83bf4a291171565300f5d8e7e4050f6a73afe3fbbc38902c3f476d6b2d5",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-sha3.cpp-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha3.cpp",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 29.578311130404472
+    },
+    {
+      "id": "miracl--core-c_rsa.c-aarch64-O0",
+      "sha256": "abd9dd0ba7e91512f063ae782c6401b7a1a5196138d6baae9a402053084013ed",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-aarch64-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.9603523989208043
+    },
+    {
+      "id": "983--SHA-256-sha256.c-x86_64-Os",
+      "sha256": "b10ee14d96b80e77161775d05ea2907a1600b675e53b699e85aae932ce4aa3cb",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/983--SHA-256-sha256.c-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.500543415080756
+    },
+    {
+      "id": "JuneAndGreen--sm-crypto-src_sm4_index.js-source-raw",
+      "sha256": "b157752d42005b863c75b554a4cec22128ea4824d4c6e754e101c1a8da3e9357",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/JuneAndGreen--sm-crypto/src/sm4/index.js",
+      "kind": "source",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SM4"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SM4"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.022407617885619402
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mipsel-O0",
+      "sha256": "b71c80b8224f883797e83f48d4fba8f6ecb46ea3a0db769dbed2920662e36d46",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mipsel-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.20517691783607
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-aarch64-O0",
+      "sha256": "b74e76ef29f7e07b6baf9ac19a073d659265d9ea41333b33c6273c155d0022d1",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-aarch64-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.4403231567703187
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mips_be-Os",
+      "sha256": "b96cb01b51a74a3161dbe7be7966549161e6aeb74655d247b0e9eb54a2fc5334",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mips_be-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.47516044275835156
+    },
+    {
+      "id": "stbrumme--hash-library-keccak.cpp-x86_64-O2",
+      "sha256": "b9876aab3076bc04f91eace726a7d9b071964e966811327cbd1d032df6ca990a",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-keccak.cpp-x86_64-O2/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:keccak.cpp",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 34.53443561075255
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mipsel-O0",
+      "sha256": "bb23ae04db2c4de7fbd06d3a70d04ac034fcb9bb98f2b6c0752477e63565cc13",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mipsel-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.7026274679228663
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-aarch64-Os",
+      "sha256": "c43a1296a259159d1865752c161d2e894abeef7e765a9d1599990bf8f7bf6ed2",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-aarch64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.4331800742074847
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mips_be-Os",
+      "sha256": "c46d679e7ed37765d8d7a6f8e5f80d3495f750c686ae53c5197bb65bcdf66760",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mips_be-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.2343830126337707
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mips_be-O0",
+      "sha256": "cbbcc63ed12e0a56f57b21c2319226d1c5257524c2177448f3be40542516d882",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mips_be-O0/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.746349198743701
+    },
+    {
+      "id": "miracl--core-c_hash.c-aarch64-Os",
+      "sha256": "cd180f239f80e3fe490f896d20f7c5537c7b0ba97cdaf56387839d722840f7ed",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-aarch64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.0619154102168977
+    },
+    {
+      "id": "JuneAndGreen--sm-crypto-src_sm2_sm3.js-source-raw",
+      "sha256": "ce5561fd9e91ee91be4e90d3cb3f0d58fbf5a7f37dfe11b39df0d67033943e67",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/JuneAndGreen--sm-crypto/src/sm2/sm3.js",
+      "kind": "source",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SM3"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SM3"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.008726850152015686
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mipsel-Os",
+      "sha256": "d3ac9aa69db55bc18ad0e041da08cb5483aed3cb93fdf4b582457169b6c0a8cd",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mipsel-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.6402625176124275
+    },
+    {
+      "id": "miracl--core-c_ecdh.c-mips_be-O2",
+      "sha256": "d79ed8530a82ff914c5a0b7c4d1a7839886b75ceaaa58b52d8c082abfb4167c9",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_ecdh.c-mips_be-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "architecture": "mips_be",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "ECDH",
+        "ECDSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.5169518678449094
+    },
+    {
+      "id": "kerukuro--digestpp-algorithm_detail_md5_provider.hpp-source-raw",
+      "sha256": "d8dff283c913cce20595031bdea13587f379f9b08c28af6ec8e1e1b45fa83046",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/kerukuro--digestpp/algorithm/detail/md5_provider.hpp",
+      "kind": "source",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "MD5"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "MD5"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 1.8843119819648564
+    },
+    {
+      "id": "miracl--core-c_hash.c-x86_64-Os",
+      "sha256": "dc332c240ddedc5efa08adb57ba64b3216e25f3d615f18b751e19108ac0a81e2",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_hash.c-x86_64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "architecture": "x86_64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [
+        "SHA-1",
+        "SHA-256"
+      ],
+      "false_negative": [],
+      "false_positive": [
+        "SHA-1"
+      ],
+      "scan_status": "completed",
+      "seconds": 1.1085628168657422
+    },
+    {
+      "id": "miracl--core-c_rsa.c-aarch64-Os",
+      "sha256": "ece1d1424bbeb357237680b1f3a7386d3ac8d391705e35c3a69298130fde7059",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-aarch64-Os/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "aarch64",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.4236502842977643
+    },
+    {
+      "id": "stbrumme--hash-library-sha256.cpp-thumb-O0",
+      "sha256": "f219d324f9d4af4461d8c42ad678b2fda4fbd1d43fc58ad6489e9bc035ce3920",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/stbrumme--hash-library-sha256.cpp-thumb-O0/ordinary.so",
+      "kind": "executable",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha256.cpp",
+      "architecture": "thumb",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "partial",
+      "seconds": 60.424606507178396
+    },
+    {
+      "id": "miracl--core-c_rsa.c-mipsel-O2",
+      "sha256": "f2df59eea8ff267a142f96da31fea6daf022a56e082ec0f24c2b0195799819de",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/miracl--core-c_rsa.c-mipsel-O2/ordinary.so",
+      "kind": "executable",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "RSA"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "RSA"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.35506605776026845
+    },
+    {
+      "id": "ogay--sha2-sha2.c-mipsel-O0",
+      "sha256": "f3577401f9bc0a14d5a6dc0b41f0301db03c152a19b5ecd4ffda8e521fce2cff",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/elf_samples/independent-20261015/ogay--sha2-sha2.c-mipsel-O0/ordinary.so",
+      "kind": "executable",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "architecture": "mipsel",
+      "compiler_flags": null,
+      "symbol_state": "stripped and hidden definitions",
+      "truth": [
+        "SHA-256"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SHA-256"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 14.409363366197795
+    },
+    {
+      "id": "JuneAndGreen--sm-crypto-src_sm3_index.js-source-raw",
+      "sha256": "f5c470298aa008f04ac98a7d33acb4768d69deffa51daf9d4904901e74249938",
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/isolated-inputs/recent/JuneAndGreen--sm-crypto/src/sm3/index.js",
+      "kind": "source",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+      "architecture": null,
+      "compiler_flags": null,
+      "symbol_state": null,
+      "truth": [
+        "SM3"
+      ],
+      "known_algorithms": [
+        "AES",
+        "ChaCha20",
+        "DES",
+        "ECDH",
+        "ECDSA",
+        "MD5",
+        "RC4",
+        "RSA",
+        "SHA-1",
+        "SHA-256",
+        "SM2",
+        "SM3",
+        "SM4"
+      ],
+      "origins": null,
+      "predicted": [],
+      "false_negative": [
+        "SM3"
+      ],
+      "false_positive": [],
+      "scan_status": "completed",
+      "seconds": 0.005610723048448563
+    }
+  ],
+  "groups": [
+    {
+      "algorithm": "ECDH",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "TP": 0,
+      "FP": 0,
+      "FN": 16,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "ECDSA",
+      "project": "miracl--core",
+      "family": "miracl--core:c/ecdh.c",
+      "TP": 0,
+      "FP": 0,
+      "FN": 16,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "MD5",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/md5_provider.hpp",
+      "TP": 7,
+      "FP": 0,
+      "FN": 3,
+      "TN": 0,
+      "recall": 0.7,
+      "false_negative_rate": 0.3,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "MD5",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:md5.cpp",
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "RSA",
+      "project": "miracl--core",
+      "family": "miracl--core:c/rsa.c",
+      "TP": 0,
+      "FP": 0,
+      "FN": 16,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SHA-1",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha1.cpp",
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "983--SHA-256",
+      "family": "983--SHA-256:sha256.c",
+      "TP": 4,
+      "FP": 0,
+      "FN": 12,
+      "TN": 0,
+      "recall": 0.25,
+      "false_negative_rate": 0.75,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/sha2_provider.hpp",
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "miracl--core",
+      "family": "miracl--core:c/hash.c",
+      "TP": 12,
+      "FP": 0,
+      "FN": 4,
+      "TN": 0,
+      "recall": 0.75,
+      "false_negative_rate": 0.25,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "ogay--sha2",
+      "family": "ogay--sha2:sha2.c",
+      "TP": 13,
+      "FP": 0,
+      "FN": 3,
+      "TN": 0,
+      "recall": 0.8125,
+      "false_negative_rate": 0.1875,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SHA-256",
+      "project": "stbrumme--hash-library",
+      "family": "stbrumme--hash-library:sha256.cpp",
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SM2",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm2/index.js",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SM3",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm2/sm3.js",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SM3",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm3/index.js",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    },
+    {
+      "algorithm": "SM3",
+      "project": "kerukuro--digestpp",
+      "family": "kerukuro--digestpp:algorithm/detail/sm3_provider.hpp",
+      "TP": 9,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.9,
+      "false_negative_rate": 0.1,
+      "precision": 1.0
+    },
+    {
+      "algorithm": "SM4",
+      "project": "JuneAndGreen--sm-crypto",
+      "family": "JuneAndGreen--sm-crypto:src/sm4/index.js",
+      "TP": 0,
+      "FP": 0,
+      "FN": 1,
+      "TN": 0,
+      "recall": 0.0,
+      "false_negative_rate": 1.0,
+      "precision": null
+    }
+  ]
+}

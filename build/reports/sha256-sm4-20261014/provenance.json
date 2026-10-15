@@ -1,0 +1,71 @@
+{
+  "baseline_executables_protocol": {
+    "development_only": true,
+    "manifests": [
+      "samples__operation-development-20261013__manifest.json",
+      "samples__guomi-development-20261012__all-manifest.json",
+      "samples__guomi-operations-20261012__manifest.json",
+      "samples__research-development-20261013__manifest.json",
+      "samples__semantic-development-20261013__manifest.json",
+      "samples__controlflow-development-20261014__manifest.json"
+    ],
+    "files": 2344,
+    "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-sm4-20261014/baseline-package",
+    "focus": null,
+    "metric_unit": "content-deduplicated file/algorithm; declared known scope only; incomplete scans remain in denominators",
+    "target_execution": false
+  },
+  "baseline_source_context_protocol": {
+    "development_only": true,
+    "manifests": [
+      "samples__operation-development-20261013__manifest.json",
+      "samples__guomi-development-20261012__all-manifest.json",
+      "samples__guomi-operations-20261012__manifest.json",
+      "samples__research-development-20261013__manifest.json",
+      "samples__semantic-development-20261013__manifest.json",
+      "samples__controlflow-development-20261014__manifest.json"
+    ],
+    "files": 154,
+    "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-sm4-20261014/baseline-package",
+    "focus": null,
+    "kind_filter": "source",
+    "source_contexts": "build/datasets/development-source-context/index.json",
+    "metric_unit": "content-deduplicated file/algorithm; declared known scope only; incomplete scans remain in denominators",
+    "target_execution": false
+  },
+  "release_protocol": {
+    "development_only": true,
+    "manifests": [
+      "samples__operation-development-20261013__manifest.json",
+      "samples__guomi-development-20261012__all-manifest.json",
+      "samples__guomi-operations-20261012__manifest.json",
+      "samples__research-development-20261013__manifest.json",
+      "samples__semantic-development-20261013__manifest.json",
+      "samples__controlflow-development-20261014__manifest.json"
+    ],
+    "manifest_digests": {
+      "samples__operation-development-20261013__manifest.json": "79c6d4253bb0cbbdacaf526482b48da3890a2937b046d1df7eb2ec647ac0dd8f",
+      "samples__guomi-development-20261012__all-manifest.json": "916f30b5058233d472550ba5981d211f454d052056bf3f42342d87515c00a8b8",
+      "samples__guomi-operations-20261012__manifest.json": "37bf8b155975c8d1e54a3cc67c990870ce19770f3c06df877dcc6cfada78137c",
+      "samples__research-development-20261013__manifest.json": "72bfb77f3f474986e8f1d3e30cbba0ecdc02b33d8c5929bd4bab4342b7df0d75",
+      "samples__semantic-development-20261013__manifest.json": "ae66419bf9372ca69b08bf15e1f3412784448378e2429c9a24666c2e54919fd9",
+      "samples__controlflow-development-20261014__manifest.json": "d7bc4083c088f0c52b29ad2e633d8d4e42063357bdff96842c0a39bcf2bfcda3"
+    },
+    "package_sha256": "836183e395fde05613530344224945a72357238a1a43b8080d3cf9f226d97abd",
+    "runner_sha256": "9c1791ad20abe96bc22b6a8a8e08b902c27ee247587a0303b510daaf22283042",
+    "context_files_sha256": "35a2883f19098e8828b461bff1a2bf25593eb1b1b832d9a15f24484a5f59d4b0",
+    "files": 2344,
+    "package": "/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/sha256-sm4-20261014/release-package",
+    "focus": null,
+    "kind_filter": null,
+    "source_contexts": "build/datasets/development-source-context/index.json",
+    "metric_unit": "content-deduplicated file/algorithm; declared known scope only; incomplete scans remain in denominators",
+    "target_execution": false
+  },
+  "retired_candidates": {
+    "candidate-final-full-context": "Name/count fallback paths removed; 20.17% not accepted as current result",
+    "reviewed-helpers-full": "Incomplete; known RC4 regression repaired before final evaluation",
+    "final-full": "Complete intermediate result; four regressions repaired before release freeze"
+  },
+  "validation_used_for_tuning": false
+}

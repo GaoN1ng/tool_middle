@@ -63,7 +63,7 @@ def main():
     passed_location = "site-packages/qcs" in location and str(ROOT / "src") not in location
     checks.append({"name": "installed-package-location", "passed": passed_location, "path": location})
     report = {"passed": all(c["passed"] for c in checks), "checks": checks,
-              "policy": "No PYTHONPATH; installed wheel used from a directory with spaces; target programs never executed"}
+              "policy": "No PYTHONPATH; installed wheel used from a directory with spaces; no native target execution; bounded private-memory instruction emulation may run"}
     output = ROOT / "build/checks/installed-runtime.json"
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))

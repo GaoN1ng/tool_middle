@@ -1,0 +1,342 @@
+{
+  "completed_at": "2026-10-15T16:23:42.415666+08:00",
+  "package_sha256": "ec83619ac1310c59211bc944fa0c48690c605ff9d2ae8ab7b50e17a61faa568d",
+  "package": "build/experiments/major-gaps-20261015/release-stable-package",
+  "new_independent_validation": false,
+  "detector_changes": false,
+  "truth_changes": false,
+  "denominator_changes": false,
+  "primary_protocol": "All source rows rescanned under isolated input boundaries. Every executable row from the complete frozen scan is retained without reselection.",
+  "baseline_reuse": "Old executable predictions reused from their complete historical frozen runs; all 222 source files rerun in matching isolated contexts for each baseline. This is not a full current-environment rerun of the old binary scanners.",
+  "raw_scan_outputs": [
+    "build/validation/major-gaps-recheck-20261015/recent-232",
+    "build/validation/major-gaps-recheck-20261015/history-2855"
+  ],
+  "inputs": {
+    "files": 2855,
+    "positive_labels": 1455,
+    "kinds": {
+      "executable": 2677,
+      "source": 178
+    },
+    "locked_files": 2860,
+    "content_duplicate_records": 0,
+    "original_manifests": [
+      {
+        "manifest": "build/datasets/manifests/validation_set__manifest.json",
+        "sha256": "fb6e9e2d348dbfa56edf2af05c33fa67fc8acfa7e7d4ae6f6bff77bc45d687a6",
+        "records": 1265
+      },
+      {
+        "manifest": "build/datasets/manifests/validation_set__guomi-operations-20261012__manifest.json",
+        "sha256": "5a0bd2866d230e516a2ff5ccdf3bc11f78793e4100ccd73a2ddd3ab1864e483a",
+        "records": 791
+      },
+      {
+        "manifest": "build/datasets/manifests/validation_set__operations-independent-20261013__manifest.json",
+        "sha256": "ed14d998fb2cdd89b91fb2e79991b69e14df53e97d679a3bb97c056c86f2bcca",
+        "records": 280
+      },
+      {
+        "manifest": "build/datasets/manifests/validation_set__semantic-independent-20261013__manifest.json",
+        "sha256": "f47223a8b917700dab0a6218c10d7344dfa548ece95cfd2f5354176967907dee",
+        "records": 235
+      },
+      {
+        "manifest": "build/datasets/manifests/validation_set__controlflow-independent-20261014__manifest.json",
+        "sha256": "02d3233634e311a7e65cdef49bbcce65857016a9b50c4434087c156cf30c505e",
+        "records": 284
+      }
+    ],
+    "package_sha256": "ec83619ac1310c59211bc944fa0c48690c605ff9d2ae8ab7b50e17a61faa568d",
+    "checkout_code_and_runtime_match_freeze": true,
+    "truth_and_known_scope_match_historical_baseline": true,
+    "historical_development_overlap": [],
+    "note": "Historical overlap remains visible and in original denominator; no claims of fresh independence."
+  },
+  "isolation": {
+    "reason": "Observed automatic header lookup traversing workspace and reading other projects/development headers",
+    "policy": "Input-boundary control only. No detector rules, thresholds, target bytes, labels or denominators changed.",
+    "prepared_at": "2026-10-15T15:56:38.096756+08:00",
+    "sets": [
+      {
+        "set": "history",
+        "source_files": 178,
+        "locked_files": 356
+      },
+      {
+        "set": "recent",
+        "source_files": 22,
+        "locked_files": 671
+      }
+    ],
+    "historical_baseline_package_sha256": "2e6ad85328fb86cf8e6df349b12737c3e2df90adbd47f0e029cc986bc8e20f05",
+    "historical_baseline_origin": "/var/home/gzn/ourtask/quantum-crypto-scanner/artifacts/controlflow-primitives-20261014/frozen",
+    "historical_baseline_freeze_sha256": "e9b038b57f786bf721b2d1f4262d161543674636363b268c4607d7eb3ebb9bf5",
+    "recent_baseline_package_sha256": "b12808998c257afa749aa7ad6e58097728c6c2ddcee0d2731e272c38fd8eb45a",
+    "comparison_policy": "Compare both frozen versions under identical isolated source inputs; original binary rows remain separately identified."
+  },
+  "catalog_overlap_audit": {
+    "history": {
+      "files": 2855,
+      "physical_test_set_entries": [
+        {
+          "id": "sm4ni-reference-source-0",
+          "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+          "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c",
+          "roles": [
+            "development_or_regression",
+            "historical_validation"
+          ],
+          "uses": [
+            {
+              "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+              "id": "sm4ni-reference-source",
+              "historical_split": "development",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "AES",
+                "DES",
+                "RC4",
+                "ChaCha20",
+                "RSA",
+                "ECDSA",
+                "ECDH",
+                "MD5",
+                "SHA-1",
+                "SHA-256",
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            }
+          ]
+        },
+        {
+          "id": "sm4ni-aesni-source-1",
+          "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+          "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c",
+          "roles": [
+            "development_or_regression",
+            "historical_validation"
+          ],
+          "uses": [
+            {
+              "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+              "id": "sm4ni-affine-AESNI-source",
+              "historical_split": "development",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "AES",
+                "DES",
+                "RC4",
+                "ChaCha20",
+                "RSA",
+                "ECDSA",
+                "ECDH",
+                "MD5",
+                "SHA-1",
+                "SHA-256",
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-affine-AESNI"
+            },
+            {
+              "manifest": "validation_set/guomi-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            },
+            {
+              "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            },
+            {
+              "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            }
+          ]
+        }
+      ],
+      "catalog_overlap_entries": [
+        {
+          "id": "sm4ni-reference-source-0",
+          "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+          "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c"
+        },
+        {
+          "id": "sm4ni-aesni-source-1",
+          "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+          "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c"
+        }
+      ]
+    },
+    "recent": {
+      "files": 232,
+      "physical_test_set_entries": [],
+      "catalog_overlap_entries": []
+    },
+    "rf": {
+      "files": 252,
+      "physical_test_set_entries": [],
+      "catalog_overlap_entries": []
+    }
+  },
+  "environment": {
+    "started_at": "2026-10-15T15:53:38.718367+08:00",
+    "python": "3.12.3",
+    "executable": "/var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python",
+    "platform": "Linux-6.14.11-300.fc42.x86_64-x86_64-with-glibc2.41",
+    "logical_cpus": 48,
+    "allowed_cpus": 48,
+    "workers": {
+      "recent-232": 8,
+      "history-2855": 32
+    },
+    "default_scan_timeout_seconds": 60,
+    "dependencies": {
+      "pip": "25.2",
+      "yara-python": "4.5.4",
+      "pyelftools": "0.32",
+      "tree-sitter-javascript": "0.25.0",
+      "tree-sitter-cpp": "0.23.4",
+      "tree-sitter-c": "0.24.1",
+      "tree-sitter": "0.25.2",
+      "setuptools": "80.9.0",
+      "pefile": "2024.8.26",
+      "capstone": "5.0.6",
+      "qcs-prototype": "0.1.0.post1",
+      "threadpoolctl": "3.6.0",
+      "numpy": "2.2.6",
+      "joblib": "1.5.2",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.7.2",
+      "unicorn": "2.1.4"
+    },
+    "evaluated_mode": "default rules, static semantics and enabled bounded behavioral probes; RF not merged",
+    "detector_edits_this_run": false
+  },
+  "scripts": {
+    "prepare_history.py": "09d59a3bdffad7f7615aca66c0764c20c2639e018e975fcc37d091ab8df9b5fa",
+    "prepare_isolation.py": "a8b7b4aa172c0d3671efa78bc558de1bce814cd680f4bd39e2c3f4960d873840",
+    "summarize_recheck.py": "86cd64af89713759c15ef4059b24145ecb01d903bf6aefc0179176aaecc36436",
+    "prepare_rf_holdout.py": "0dda2747beb4c5f6238f3e5720e7180199e001957569db686ffa82e4b57f37d0"
+  },
+  "limitations": [
+    "Repeated evaluation of already observed validation inputs; not a fresh author holdout.",
+    "Recent SM2/SM4 have one JavaScript positive each; no recent DES/RC4/ChaCha20 positives.",
+    "Historical source controls are single-file inputs, with archived headers not reconstructed; recent sources retain only their own archived project.",
+    "Two historical SM4 source inputs have recorded development uses outside the fixed six development manifests; preserved in historical denominator, with a separate overlap sensitivity report.",
+    "Optional budgets and incomplete scans are retained; completed does not prove algorithm absence.",
+    "Raw source header lookup crosses workspace boundaries; this behavior is recorded and not repaired using validation outputs."
+  ]
+}

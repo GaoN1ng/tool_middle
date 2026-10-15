@@ -1,0 +1,378 @@
+
+CASE gmssl-modern-sm2_exch-mipsel-O2
+0x16a7c sm2_z256_point_mul ['stack:0[-120]', 'input:0:a0[96]', 'input:0:a1', 'input:0:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16a98 sm2_z256_point_get_xy ['stack:0[-120]', 'stack:0[-152]', '0', 'unknown-argument@92824:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16aac sm2_z256_to_bytes ['stack:0[-152]', 'input:0:a2', 'unknown-argument@92844:a2', 'unknown-argument@92844:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@92824:0', 'affine-x@92824:1']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16ac0 gmssl_secure_clear ['stack:0[-120]', '96', 'unknown-argument@92864:a2', 'unknown-argument@92864:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@92824:0', 'affine-x@92824:1']
+STATE {} {} PEERS set() {} set()
+0x16b80 sm2_z256_point_from_octets ['stack:0[-120]', 'input:0:a1', '65', 'input:0:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {} PEERS set() {} set()
+0x16ba8 sm2_z256_point_mul ['stack:0[-120]', 'input:0:a0[96]', 'stack:0[-120]', 'unknown-argument@93096:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'stack:0[-120]': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bc4 sm2_z256_point_get_xy ['stack:0[-120]', 'stack:0[-152]', '0', 'unknown-argument@93124:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'stack:0[-120]': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bd8 sm2_z256_to_bytes ['stack:0[-152]', 'input:0:a2', 'unknown-argument@93144:a2', 'unknown-argument@93144:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@93124:0', 'affine-x@93124:1']
+STATE {} {'stack:0[-120]': {'stack:0[-120]': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bec gmssl_secure_clear ['stack:0[-120]', '96', 'unknown-argument@93164:a2', 'unknown-argument@93164:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@93124:0', 'affine-x@93124:1']
+STATE {} {} PEERS set() {} set()
+0x16d58 sm2_z256_point_from_octets ['stack:0[-136]', 'load:stack:0[32]', '65', 'input:0:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16e50 sm2_z256_point_get_xy ['load:stack:0[28]', 'stack:0[-520]', '0', 'unknown-argument@93776:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16ebc sm2_z256_point_get_xy ['stack:0[-136]', 'stack:0[-520]', '0', 'unknown-argument@93884:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f24 sm2_z256_modn_mul ['stack:0[-328]', 'stack:0[-264]', 'load:stack:0[124]', 'unknown-argument@93988:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f3c sm2_z256_modn_add ['stack:0[-328]', 'stack:0[-328]', 'input:0:a1[96]', 'unknown-argument@94012:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f58 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-296]', 'stack:0[-136]', 'unknown-argument@94040:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f70 sm2_z256_point_add ['stack:0[-232]', 'load:stack:0[16]', 'stack:0[-232]', 'unknown-argument@94064:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f80 sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@94080:a1', 'unknown-argument@94080:a2', 'unknown-argument@94080:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16fa0 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-328]', 'stack:0[-232]', 'unknown-argument@94112:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fac sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@94124:a1', 'unknown-argument@94124:a2', 'unknown-argument@94124:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fd0 sm2_z256_point_to_uncompressed_octets ['stack:0[-232]', 'load:stack:0[36]', 'unknown-argument@94160:a2', 'unknown-argument@94160:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16ff4 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@94196:a2', 'unknown-argument@94196:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17118 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16ff4 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@94196:a2', 'unknown-argument@94196:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17118 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16e50 sm2_z256_point_get_xy ['load:stack:0[28]', 'stack:0[-520]', '0', 'unknown-argument@93776:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16ebc sm2_z256_point_get_xy ['stack:0[-136]', 'stack:0[-520]', '0', 'unknown-argument@93884:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f24 sm2_z256_modn_mul ['stack:0[-328]', 'stack:0[-264]', 'load:stack:0[124]', 'unknown-argument@93988:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f3c sm2_z256_modn_add ['stack:0[-328]', 'stack:0[-328]', 'input:0:a1[96]', 'unknown-argument@94012:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16f58 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-296]', 'stack:0[-136]', 'unknown-argument@94040:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f70 sm2_z256_point_add ['stack:0[-232]', 'load:stack:0[16]', 'stack:0[-232]', 'unknown-argument@94064:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f80 sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@94080:a1', 'unknown-argument@94080:a2', 'unknown-argument@94080:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16fa0 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-328]', 'stack:0[-232]', 'unknown-argument@94112:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fac sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@94124:a1', 'unknown-argument@94124:a2', 'unknown-argument@94124:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fd0 sm2_z256_point_to_uncompressed_octets ['stack:0[-232]', 'load:stack:0[36]', 'unknown-argument@94160:a2', 'unknown-argument@94160:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16ff4 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@94196:a2', 'unknown-argument@94196:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17118 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x16ff4 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@94196:a2', 'unknown-argument@94196:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17118 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {'stack:0[-232]': {'load:stack:0[16]': Value(num={('load:stack:0[124]', 'stack:0[-264]'): 1, ('input:0:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('load:stack:0[124]', 'stack:0[-264]', 'stack:0[-296]'): 1, ('input:0:a1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:stack:0[-536]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:0[-532]', 'load:stack:0[40]', 'load:stack:0[44]']
+STATE {} {} PEERS set() {} set()
+0x17620 sm2_z256_point_from_octets ['stack:0[-136]', 'input:0:t5', '65', 'input:0:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x17640 sm2_z256_point_from_octets ['stack:0[-232]', 'input:0:t4', '65', 'unknown-argument@95808:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x1778c sm2_z256_point_to_bytes ['stack:0[-136]', 'stack:0[-552]', 'unknown-argument@96140:a2', 'unknown-argument@96140:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x177a0 sm2_z256_point_to_bytes ['stack:0[-328]', 'stack:0[-616]', 'unknown-argument@96160:a2', 'unknown-argument@96160:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x177b4 sm2_z256_point_to_bytes ['stack:0[-424]', 'stack:0[-680]', 'unknown-argument@96180:a2', 'unknown-argument@96180:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x1778c sm2_z256_point_to_bytes ['stack:0[-136]', 'stack:0[-552]', 'unknown-argument@96140:a2', 'unknown-argument@96140:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x177a0 sm2_z256_point_to_bytes ['stack:0[-328]', 'stack:0[-616]', 'unknown-argument@96160:a2', 'unknown-argument@96160:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x177b4 sm2_z256_point_to_bytes ['stack:0[-424]', 'stack:0[-680]', 'unknown-argument@96180:a2', 'unknown-argument@96180:a3', 'load:stack:0[-856]', 'load:stack:0[-852]', 'load:stack:0[-848]', 'input:0:t7']
+STATE {} {} PEERS set() {} set()
+0x16a7c sm2_z256_point_mul ['stack:0[-120]', 'input:0:a0[96]', 'input:0:a1', 'input:0:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16a98 sm2_z256_point_get_xy ['stack:0[-120]', 'stack:0[-152]', '0', 'unknown-argument@92824:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'load:stack:0[-152]', 'load:stack:0[-148]']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16aac sm2_z256_to_bytes ['stack:0[-152]', 'input:0:a2', 'unknown-argument@92844:a2', 'unknown-argument@92844:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@92824:0', 'affine-x@92824:1']
+STATE {} {'stack:0[-120]': {'input:0:a1': Value(num={('input:0:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16ac0 gmssl_secure_clear ['stack:0[-120]', '96', 'unknown-argument@92864:a2', 'unknown-argument@92864:a3', 'load:stack:0[-160]', 'load:stack:0[-156]', 'affine-x@92824:0', 'affine-x@92824:1']
+STATE {} {} PEERS set() {} set()
+0x16b80 sm2_z256_point_from_octets ['stack:1[-120]', 'unknown-argument@93056:a1', '65', 'unknown-argument@93056:a3', 'load:stack:1[-160]', 'load:stack:1[-156]', 'load:stack:1[-152]', 'load:stack:1[-148]']
+STATE {} {} PEERS set() {} set()
+0x16ba8 sm2_z256_point_mul ['stack:1[-120]', 'input:1:a0[96]', 'stack:1[-120]', 'unknown-argument@93096:a3', 'load:stack:1[-160]', 'load:stack:1[-156]', 'load:stack:1[-152]', 'load:stack:1[-148]']
+STATE {} {'stack:1[-120]': {'stack:1[-120]': Value(num={('input:1:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bc4 sm2_z256_point_get_xy ['stack:1[-120]', 'stack:1[-152]', '0', 'unknown-argument@93124:a3', 'load:stack:1[-160]', 'load:stack:1[-156]', 'load:stack:1[-152]', 'load:stack:1[-148]']
+STATE {} {'stack:1[-120]': {'stack:1[-120]': Value(num={('input:1:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bd8 sm2_z256_to_bytes ['stack:1[-152]', 'input:1:a2', 'unknown-argument@93144:a2', 'unknown-argument@93144:a3', 'load:stack:1[-160]', 'load:stack:1[-156]', 'affine-x@93124:0', 'affine-x@93124:1']
+STATE {} {'stack:1[-120]': {'stack:1[-120]': Value(num={('input:1:a0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16bec gmssl_secure_clear ['stack:1[-120]', '96', 'unknown-argument@93164:a2', 'unknown-argument@93164:a3', 'load:stack:1[-160]', 'load:stack:1[-156]', 'affine-x@93124:0', 'affine-x@93124:1']
+STATE {} {} PEERS set() {} set()
+0x16d58 sm2_z256_point_from_octets ['stack:2[-136]', 'load:stack:2[32]', '65', 'input:2:a3', 'load:stack:2[-536]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x16e50 sm2_z256_point_get_xy ['load:stack:2[28]', 'stack:2[-520]', '0', 'unknown-argument@93776:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x16ebc sm2_z256_point_get_xy ['stack:2[-136]', 'stack:2[-520]', '0', 'unknown-argument@93884:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x16f24 sm2_z256_modn_mul ['stack:2[-328]', 'stack:2[-264]', 'load:stack:2[124]', 'unknown-argument@93988:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x16f3c sm2_z256_modn_add ['stack:2[-328]', 'stack:2[-328]', 'input:2:a1[96]', 'unknown-argument@94012:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x16f58 sm2_z256_point_mul ['stack:2[-232]', 'stack:2[-296]', 'stack:2[-136]', 'unknown-argument@94040:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'stack:2[-136]': Value(num={('stack:2[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f70 sm2_z256_point_add ['stack:2[-232]', '4294967295', 'stack:2[-232]', 'unknown-argument@94064:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:2[-136]': Value(num={('stack:2[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16f80 sm2_z256_point_is_at_infinity ['stack:2[-232]', 'unknown-argument@94080:a1', 'unknown-argument@94080:a2', 'unknown-argument@94080:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:2[-136]': Value(num={('stack:2[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x16fa0 sm2_z256_point_mul ['stack:2[-232]', 'stack:2[-328]', 'stack:2[-232]', 'unknown-argument@94112:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={('load:stack:2[124]', 'stack:2[-264]'): 1, ('input:2:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:2[-136]': Value(num={('load:stack:2[124]', 'stack:2[-264]', 'stack:2[-296]'): 1, ('input:2:a1[96]', 'stack:2[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fac sm2_z256_point_is_at_infinity ['stack:2[-232]', 'unknown-argument@94124:a1', 'unknown-argument@94124:a2', 'unknown-argument@94124:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={('load:stack:2[124]', 'stack:2[-264]'): 1, ('input:2:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:2[-136]': Value(num={('load:stack:2[124]', 'stack:2[-264]', 'stack:2[-296]'): 1, ('input:2:a1[96]', 'stack:2[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16fd0 sm2_z256_point_to_uncompressed_octets ['stack:2[-232]', 'load:stack:2[36]', 'unknown-argument@94160:a2', 'unknown-argument@94160:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={('load:stack:2[124]', 'stack:2[-264]'): 1, ('input:2:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:2[-136]': Value(num={('load:stack:2[124]', 'stack:2[-264]', 'stack:2[-296]'): 1, ('input:2:a1[96]', 'stack:2[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x16ff4 sm2_z256_point_to_bytes ['stack:2[-232]', 'stack:2[-520]', 'unknown-argument@94196:a2', 'unknown-argument@94196:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={('load:stack:2[124]', 'stack:2[-264]'): 1, ('input:2:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:2[-136]': Value(num={('load:stack:2[124]', 'stack:2[-264]', 'stack:2[-296]'): 1, ('input:2:a1[96]', 'stack:2[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17118 sm2_kdf ['stack:2[-520]', '128', 'load:stack:2[40]', 'load:stack:2[44]', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {'stack:2[-232]': {'4294967295': Value(num={('load:stack:2[124]', 'stack:2[-264]'): 1, ('input:2:a1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:2[-136]': Value(num={('load:stack:2[124]', 'stack:2[-264]', 'stack:2[-296]'): 1, ('input:2:a1[96]', 'stack:2[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x17164 gmssl_secure_clear ['stack:2[-232]', '96', 'unknown-argument@94564:a2', 'unknown-argument@94564:a3', 'load:359864[1384]', 'load:stack:2[-532]', 'load:stack:2[40]', 'load:stack:2[44]']
+STATE {} {} PEERS set() {} set()
+0x17620 sm2_z256_point_from_octets ['stack:4[-136]', 'input:4:t5', '65', 'input:4:a3', 'load:stack:4[-856]', 'load:stack:4[-852]', 'load:stack:4[-848]', 'input:4:t7']
+STATE {} {} PEERS set() {} set()
+0x17640 sm2_z256_point_from_octets ['stack:4[-232]', 'input:4:t4', '65', 'unknown-argument@95808:a3', 'load:stack:4[-856]', 'load:stack:4[-852]', 'load:stack:4[-848]', 'input:4:t7']
+STATE {} {} PEERS set() {} set()
+0x1778c sm2_z256_point_to_bytes ['stack:4[-136]', 'stack:4[-552]', 'unknown-argument@96140:a2', 'unknown-argument@96140:a3', 'load:359864[1603]', 'load:stack:4[-852]', 'load:stack:4[-848]', 'input:4:t7']
+STATE {} {} PEERS set() {} set()
+0x177a0 sm2_z256_point_to_bytes ['stack:4[-328]', 'stack:4[-616]', 'unknown-argument@96160:a2', 'unknown-argument@96160:a3', 'load:359864[1603]', 'load:stack:4[-852]', 'load:stack:4[-848]', 'input:4:t7']
+STATE {} {} PEERS set() {} set()
+0x177b4 sm2_z256_point_to_bytes ['stack:4[-424]', 'stack:4[-680]', 'unknown-argument@96180:a2', 'unknown-argument@96180:a3', 'load:359864[1603]', 'load:stack:4[-852]', 'load:stack:4[-848]', 'input:4:t7']
+STATE {} {} PEERS set() {} set()
+[]
+
+CASE gmssl-modern-sm2_exch-arm-O2
+0x1324c sm2_z256_point_mul ['stack:0[-112]', 'input:0:r0[96]', 'unknown@78320:r2', 'input:0:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'load:stack:0[-144]', 'load:stack:0[-140]']
+STATE {} {'stack:0[-112]': {'unknown@78320:r2': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13260 sm2_z256_point_get_xy ['stack:0[-112]', 'stack:0[-144]', '0', 'unknown-argument@78432:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'load:stack:0[-144]', 'load:stack:0[-140]']
+STATE {} {'stack:0[-112]': {'unknown@78320:r2': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1326c sm2_z256_to_bytes ['stack:0[-144]', 'unknown@78316:r4', 'unknown-argument@78444:r2', 'unknown-argument@78444:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'affine-x@78432:0', 'affine-x@78432:1']
+STATE {} {'stack:0[-112]': {'unknown@78320:r2': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13278 gmssl_secure_clear ['stack:0[-112]', '96', 'unknown-argument@78456:r2', 'unknown-argument@78456:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'affine-x@78432:0', 'affine-x@78432:1']
+STATE {} {} PEERS set() {} set()
+0x1330c sm2_z256_point_from_octets ['stack:0[-112]', 'input:0:r1', '65', 'input:0:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'load:stack:0[-144]', 'load:stack:0[-140]']
+STATE {} {} PEERS set() {} set()
+0x13328 sm2_z256_point_mul ['stack:0[-112]', 'input:0:r0[96]', 'stack:0[-112]', 'unknown-argument@78632:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'load:stack:0[-144]', 'load:stack:0[-140]']
+STATE {} {'stack:0[-112]': {'stack:0[-112]': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1333c sm2_z256_point_get_xy ['stack:0[-112]', 'stack:0[-144]', '0', 'unknown-argument@78652:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'load:stack:0[-144]', 'load:stack:0[-140]']
+STATE {} {'stack:0[-112]': {'stack:0[-112]': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13348 sm2_z256_to_bytes ['stack:0[-144]', 'input:0:r2', 'unknown-argument@78664:r2', 'unknown-argument@78664:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'affine-x@78652:0', 'affine-x@78652:1']
+STATE {} {'stack:0[-112]': {'stack:0[-112]': Value(num={('input:0:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13354 gmssl_secure_clear ['stack:0[-112]', '96', 'unknown-argument@78676:r2', 'unknown-argument@78676:r3', 'load:stack:0[-152]', 'load:stack:0[-148]', 'affine-x@78652:0', 'affine-x@78652:1']
+STATE {} {} PEERS set() {} set()
+0x13488 sm2_z256_point_from_octets ['stack:0[-136]', 'load:stack:0[32]', '65', 'input:0:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'load:stack:0[-520]', 'load:stack:0[-516]']
+STATE {} {} PEERS set() {} set()
+0x13540 sm2_z256_point_get_xy ['unknown@78832:fp', 'stack:0[-520]', '0', 'unknown-argument@79168:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'load:stack:0[-520]', 'load:stack:0[-516]']
+STATE {} {} PEERS set() {} set()
+0x1358c sm2_z256_point_get_xy ['stack:0[-136]', 'stack:0[-520]', '0', 'unknown-argument@79244:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79168:0', 'affine-x@79168:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x135e0 sm2_z256_modn_mul ['stack:0[-328]', 'stack:0[-264]', 'unknown@78832:fp[96]', 'unknown-argument@79328:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x135f0 sm2_z256_modn_add ['stack:0[-328]', 'stack:0[-328]', 'input:0:r1[96]', 'unknown-argument@79344:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x13604 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-296]', 'stack:0[-136]', 'unknown-argument@79364:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13614 sm2_z256_point_add ['stack:0[-232]', 'unknown@78812:sl', 'stack:0[-232]', 'unknown-argument@79380:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1361c sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@79388:r1', 'unknown-argument@79388:r2', 'unknown-argument@79388:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13638 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-328]', 'stack:0[-232]', 'unknown-argument@79416:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13640 sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@79424:r1', 'unknown-argument@79424:r2', 'unknown-argument@79424:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x1365c sm2_z256_point_to_uncompressed_octets ['stack:0[-232]', 'load:stack:0[36]', 'unknown-argument@79452:r2', 'unknown-argument@79452:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13670 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@79472:r2', 'unknown-argument@79472:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x136b8 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79604:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79960:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@80004:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x13670 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@79472:r2', 'unknown-argument@79472:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x136b8 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79604:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79960:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79872:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79828:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138c0 gmssl_secure_clear ['stack:0[-264]', '32', 'unknown-argument@80064:r2', 'unknown-argument@80064:r3', 'unknown@79700:r0', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x13540 sm2_z256_point_get_xy ['unknown@78832:fp', 'stack:0[-520]', '0', 'unknown-argument@79168:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'load:stack:0[-520]', 'load:stack:0[-516]']
+STATE {} {} PEERS set() {} set()
+0x1358c sm2_z256_point_get_xy ['stack:0[-136]', 'stack:0[-520]', '0', 'unknown-argument@79244:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79168:0', 'affine-x@79168:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x135e0 sm2_z256_modn_mul ['stack:0[-328]', 'stack:0[-264]', 'unknown@78832:fp[96]', 'unknown-argument@79328:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x135f0 sm2_z256_modn_add ['stack:0[-328]', 'stack:0[-328]', 'input:0:r1[96]', 'unknown-argument@79344:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {} PEERS set() {} set()
+0x13604 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-296]', 'stack:0[-136]', 'unknown-argument@79364:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13614 sm2_z256_point_add ['stack:0[-232]', 'unknown@78812:sl', 'stack:0[-232]', 'unknown-argument@79380:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1361c sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@79388:r1', 'unknown-argument@79388:r2', 'unknown-argument@79388:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-136]': Value(num={('stack:0[-296]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13638 sm2_z256_point_mul ['stack:0[-232]', 'stack:0[-328]', 'stack:0[-232]', 'unknown-argument@79416:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13640 sm2_z256_point_is_at_infinity ['stack:0[-232]', 'unknown-argument@79424:r1', 'unknown-argument@79424:r2', 'unknown-argument@79424:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x1365c sm2_z256_point_to_uncompressed_octets ['stack:0[-232]', 'load:stack:0[36]', 'unknown-argument@79452:r2', 'unknown-argument@79452:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13670 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@79472:r2', 'unknown-argument@79472:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x136b8 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79604:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79960:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@80004:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x13670 sm2_z256_point_to_bytes ['stack:0[-232]', 'stack:0[-520]', 'unknown-argument@79472:r2', 'unknown-argument@79472:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x136b8 sm2_kdf ['stack:0[-520]', '128', 'load:stack:0[40]', 'load:stack:0[44]', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:0[-264]': 'unknown@78832:fp'} {'stack:0[-232]': {'unknown@78812:sl': Value(num={('unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:0[-136]': Value(num={('stack:0[-296]', 'unknown@78832:fp[96]', 'xhat:unknown@78832:fp'): 1, ('input:0:r1[96]', 'stack:0[-296]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79604:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'load:stack:0[-528]', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79960:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79872:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:0[-232]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@79828:r3', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x138c0 gmssl_secure_clear ['stack:0[-264]', '32', 'unknown-argument@80064:r2', 'unknown-argument@80064:r3', 'unknown@79700:r0', 'load:stack:0[-524]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x13b3c sm2_z256_point_from_octets ['stack:0[-136]', 'unknown@80584:r1', '65', 'input:0:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13b54 sm2_z256_point_from_octets ['stack:0[-232]', 'load:stack:0[16]', '65', 'unknown-argument@80724:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c4c sm2_z256_point_to_bytes ['stack:0[-136]', 'stack:0[-552]', 'unknown-argument@80972:r2', 'unknown-argument@80972:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c5c sm2_z256_point_to_bytes ['stack:0[-328]', 'stack:0[-616]', 'unknown-argument@80988:r2', 'unknown-argument@80988:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c6c sm2_z256_point_to_bytes ['stack:0[-424]', 'stack:0[-680]', 'unknown-argument@81004:r2', 'unknown-argument@81004:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c4c sm2_z256_point_to_bytes ['stack:0[-136]', 'stack:0[-552]', 'unknown-argument@80972:r2', 'unknown-argument@80972:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c5c sm2_z256_point_to_bytes ['stack:0[-328]', 'stack:0[-616]', 'unknown-argument@80988:r2', 'unknown-argument@80988:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x13c6c sm2_z256_point_to_bytes ['stack:0[-424]', 'stack:0[-680]', 'unknown-argument@81004:r2', 'unknown-argument@81004:r3', 'load:stack:0[-840]', 'load:stack:0[-836]', 'load:stack:0[-832]', 'load:stack:0[-828]']
+STATE {} {} PEERS set() {} set()
+0x1324c sm2_z256_point_mul ['stack:1[40]', 'input:1:r0[96]', 'input:1:r2', 'input:1:r3', 'load:stack:1[0]', 'load:stack:1[4]', 'load:stack:1[8]', 'load:stack:1[12]']
+STATE {} {'stack:1[40]': {'input:1:r2': Value(num={('input:1:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13260 sm2_z256_point_get_xy ['stack:1[40]', 'stack:1[8]', '0', 'unknown-argument@78432:r3', 'load:stack:1[0]', 'load:stack:1[4]', 'load:stack:1[8]', 'load:stack:1[12]']
+STATE {} {'stack:1[40]': {'input:1:r2': Value(num={('input:1:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1326c sm2_z256_to_bytes ['stack:1[8]', 'input:1:r4', 'unknown-argument@78444:r2', 'unknown-argument@78444:r3', 'load:stack:1[0]', 'load:stack:1[4]', 'affine-x@78432:0', 'affine-x@78432:1']
+STATE {} {'stack:1[40]': {'input:1:r2': Value(num={('input:1:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13278 gmssl_secure_clear ['stack:1[40]', '96', 'unknown-argument@78456:r2', 'unknown-argument@78456:r3', 'load:stack:1[0]', 'load:stack:1[4]', 'affine-x@78432:0', 'affine-x@78432:1']
+STATE {} {} PEERS set() {} set()
+0x1330c sm2_z256_point_from_octets ['stack:3[40]', 'input:3:r1', '65', 'input:3:r3', 'load:stack:3[0]', 'load:stack:3[4]', 'load:stack:3[8]', 'load:stack:3[12]']
+STATE {} {} PEERS set() {} set()
+0x13328 sm2_z256_point_mul ['stack:3[40]', 'input:3:r0[96]', 'stack:3[40]', 'unknown-argument@78632:r3', 'load:stack:3[0]', 'load:stack:3[4]', 'load:stack:3[8]', 'load:stack:3[12]']
+STATE {} {'stack:3[40]': {'stack:3[40]': Value(num={('input:3:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1333c sm2_z256_point_get_xy ['stack:3[40]', 'stack:3[8]', '0', 'unknown-argument@78652:r3', 'load:stack:3[0]', 'load:stack:3[4]', 'load:stack:3[8]', 'load:stack:3[12]']
+STATE {} {'stack:3[40]': {'stack:3[40]': Value(num={('input:3:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13348 sm2_z256_to_bytes ['stack:3[8]', 'input:3:r2', 'unknown-argument@78664:r2', 'unknown-argument@78664:r3', 'load:stack:3[0]', 'load:stack:3[4]', 'affine-x@78652:0', 'affine-x@78652:1']
+STATE {} {'stack:3[40]': {'stack:3[40]': Value(num={('input:3:r0[96]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13354 gmssl_secure_clear ['stack:3[40]', '96', 'unknown-argument@78676:r2', 'unknown-argument@78676:r3', 'load:stack:3[0]', 'load:stack:3[4]', 'affine-x@78652:0', 'affine-x@78652:1']
+STATE {} {} PEERS set() {} set()
+0x13488 sm2_z256_point_from_octets ['stack:5[392]', 'input:5:r1', '65', 'input:5:r3', 'load:stack:5[0]', 'load:stack:5[4]', 'load:stack:5[8]', 'load:stack:5[12]']
+STATE {} {} PEERS set() {} set()
+0x13540 sm2_z256_point_get_xy ['input:5:fp', 'stack:5[8]', '0', 'unknown-argument@79168:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'load:stack:5[8]', 'load:stack:5[12]']
+STATE {} {} PEERS set() {} set()
+0x1358c sm2_z256_point_get_xy ['stack:5[392]', 'stack:5[8]', '0', 'unknown-argument@79244:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79168:0', 'affine-x@79168:1']
+STATE {'stack:5[264]': 'input:5:fp'} {} PEERS set() {} set()
+0x135e0 sm2_z256_modn_mul ['stack:5[200]', 'stack:5[264]', 'input:5:fp[96]', 'unknown-argument@79328:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {} PEERS set() {} set()
+0x135f0 sm2_z256_modn_add ['stack:5[200]', 'stack:5[200]', 'input:5:r7[96]', 'unknown-argument@79344:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {} PEERS set() {} set()
+0x13604 sm2_z256_point_mul ['stack:5[296]', 'stack:5[232]', 'stack:5[392]', 'unknown-argument@79364:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'stack:5[392]': Value(num={('stack:5[232]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13614 sm2_z256_point_add ['stack:5[296]', 'input:5:sl', 'stack:5[296]', 'unknown-argument@79380:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:5[392]': Value(num={('stack:5[232]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x1361c sm2_z256_point_is_at_infinity ['stack:5[296]', 'unknown-argument@79388:r1', 'unknown-argument@79388:r2', 'unknown-argument@79388:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'stack:5[392]': Value(num={('stack:5[232]',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x13638 sm2_z256_point_mul ['stack:5[296]', 'stack:5[200]', 'stack:5[296]', 'unknown-argument@79416:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={('input:5:fp[96]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:5[392]': Value(num={('input:5:fp[96]', 'stack:5[232]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]', 'stack:5[232]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13640 sm2_z256_point_is_at_infinity ['stack:5[296]', 'unknown-argument@79424:r1', 'unknown-argument@79424:r2', 'unknown-argument@79424:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={('input:5:fp[96]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:5[392]': Value(num={('input:5:fp[96]', 'stack:5[232]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]', 'stack:5[232]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x1365c sm2_z256_point_to_uncompressed_octets ['stack:5[296]', 'load:stack:5[564]', 'unknown-argument@79452:r2', 'unknown-argument@79452:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={('input:5:fp[96]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:5[392]': Value(num={('input:5:fp[96]', 'stack:5[232]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]', 'stack:5[232]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x13670 sm2_z256_point_to_bytes ['stack:5[296]', 'stack:5[8]', 'unknown-argument@79472:r2', 'unknown-argument@79472:r3', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={('input:5:fp[96]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:5[392]': Value(num={('input:5:fp[96]', 'stack:5[232]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]', 'stack:5[232]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x136b8 sm2_kdf ['stack:5[8]', '128', 'load:stack:5[568]', 'load:stack:5[572]', 'unknown@79084:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {'stack:5[264]': 'input:5:fp'} {'stack:5[296]': {'input:5:sl': Value(num={('input:5:fp[96]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'stack:5[392]': Value(num={('input:5:fp[96]', 'stack:5[232]', 'xhat:input:5:fp'): 1, ('input:5:r7[96]', 'stack:5[232]'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0x138b4 gmssl_secure_clear ['stack:5[296]', '96', 'unknown-argument@80052:r2', 'unknown-argument@80052:r3', 'unknown@80004:r3', 'load:stack:5[4]', 'affine-x@79244:0', 'affine-x@79244:1']
+STATE {} {} PEERS set() {} set()
+0x13b3c sm2_z256_point_from_octets ['stack:8[704]', 'input:8:r1', '65', 'input:8:r3', 'load:stack:8[0]', 'load:stack:8[4]', 'load:stack:8[8]', 'load:stack:8[12]']
+STATE {} {} PEERS set() {} set()
+0x13b54 sm2_z256_point_from_octets ['stack:8[608]', 'input:8:sb', '65', 'unknown-argument@80724:r3', 'load:stack:8[0]', 'load:stack:8[4]', 'load:stack:8[8]', 'load:stack:8[12]']
+STATE {} {} PEERS set() {} set()
+0x13c4c sm2_z256_point_to_bytes ['stack:8[704]', 'stack:8[288]', 'unknown-argument@80972:r2', 'unknown-argument@80972:r3', 'unknown@80856:r3', 'load:stack:8[4]', 'load:stack:8[8]', 'load:stack:8[12]']
+STATE {} {} PEERS set() {} set()
+0x13c5c sm2_z256_point_to_bytes ['stack:8[512]', 'stack:8[224]', 'unknown-argument@80988:r2', 'unknown-argument@80988:r3', 'unknown@80856:r3', 'load:stack:8[4]', 'load:stack:8[8]', 'load:stack:8[12]']
+STATE {} {} PEERS set() {} set()
+0x13c6c sm2_z256_point_to_bytes ['stack:8[416]', 'stack:8[160]', 'unknown-argument@81004:r2', 'unknown-argument@81004:r3', 'unknown@80856:r3', 'load:stack:8[4]', 'load:stack:8[8]', 'load:stack:8[12]']
+STATE {} {} PEERS set() {} set()
+[]

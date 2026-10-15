@@ -1,0 +1,391 @@
+/* Base64 encoder and decoder
+ *
+ * Copyright (C) 2018 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "base64.h"
+#include "initialization.h"
+#include "ret_checkers.h"
+
+static const char encoding_table[] = {
+	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+	'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+	'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+	'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'
+};
+
+/*
+ * Generated with:
+ * for (i = 0; i < 64; i++)
+ *	decoding_table[(unsigned char)encoding_table[i]] = (char)i;
+ */
+static const unsigned char decoding_table[] = {
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x3e, 0xff, 0xff, 0xff, 0x3f,
+	0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06,
+	0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f, 0x10, 0x11, 0x12,
+	0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0x1a, 0x1b, 0x1c, 0x1d, 0x1e, 0x1f, 0x20, 0x21, 0x22, 0x23, 0x24,
+	0x25, 0x26, 0x27, 0x28, 0x29, 0x2a, 0x2b, 0x2c, 0x2d, 0x2e, 0x2f, 0x30,
+	0x31, 0x32, 0x33, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff
+};
+
+#ifdef LC_BASE64_URLSAFE
+/* Filename and URL safe */
+static const unsigned char encoding_table_safe[] = {
+	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+	'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+	'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+	'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '_'
+};
+
+/*
+ * Generated with:
+ * for (i = 0; i < 64; i++)
+ *	decoding_table_safe[(unsigned char)encoding_table_safe[i]] =
+ *			    (char)i;
+ */
+static const char decoding_table_safe[] = {
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x3e, 0xff, 0xff,
+	0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06,
+	0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f, 0x10, 0x11, 0x12,
+	0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0xff, 0xff, 0xff, 0xff, 0x3f,
+	0xff, 0x1a, 0x1b, 0x1c, 0x1d, 0x1e, 0x1f, 0x20, 0x21, 0x22, 0x23, 0x24,
+	0x25, 0x26, 0x27, 0x28, 0x29, 0x2a, 0x2b, 0x2c, 0x2d, 0x2e, 0x2f, 0x30,
+	0x31, 0x32, 0x33, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+	0xff, 0xff, 0xff, 0xff
+};
+#endif
+
+int lc_base64_encode_len(size_t ilen, size_t *olen, enum lc_base64_flags flags)
+{
+	size_t elen = 4 * ((ilen + 2) / 3);
+
+	switch (flags) {
+	case lc_base64_flag_pem:
+		/* after 64 characters we have a LF */
+		if (elen)
+			elen += ((elen - 1) >> 6);
+		break;
+	case lc_base64_flag_unknown:
+		break;
+	default:
+		return -EINVAL;
+	};
+
+	*olen = elen;
+	return 0;
+}
+
+int lc_base64_decode_len(const char *idata, size_t ilen, size_t *olen,
+			 uint8_t *blank_chars, enum lc_base64_flags flags)
+{
+	size_t dlen, numlf = 0;
+
+	switch (flags) {
+	case lc_base64_flag_pem:
+		/* after 64 characters we have an LF, CR or CRLF */
+		if (ilen > 65 && (idata[64] == 0x0d) && (idata[65] == 0x0a)) {
+			/* We have a CRLF. */
+			numlf = ilen / 66;
+			/*
+			 * As we have 2 characters per line feed, multiply
+			 * numlf by two
+			 */
+			numlf <<= 1;
+			if ((ilen - numlf) % 4 != 0)
+				return -EINVAL;
+			*blank_chars = 2;
+		} else if (ilen > 64 &&
+			   ((idata[64] == 0x0a) || (idata[64] == 0x0d))) {
+			/* We have only an LF or a CR. */
+			numlf = ilen / 65;
+			if ((ilen - numlf) % 4 != 0)
+				return -EINVAL;
+			*blank_chars = 1;
+		} else {
+			if (ilen > 1 && (idata[ilen - 1] == 0x0d) &&
+			    (idata[ilen - 2] == 0x0a)) {
+				if ((ilen - 2) % 4 != 0)
+					return -EINVAL;
+				*blank_chars = 2;
+			} else if (ilen > 0 && ((idata[ilen - 1] == 0x0a) ||
+						(idata[ilen - 1] == 0x0d))) {
+				if ((ilen - 1) % 4 != 0)
+					return -EINVAL;
+				*blank_chars = 1;
+			} else {
+				if (ilen % 4 != 0)
+					return -EINVAL;
+			}
+		}
+		break;
+	case lc_base64_flag_unknown:
+		break;
+	default:
+		return -EINVAL;
+	};
+
+	dlen = (ilen - numlf) / 4 * 3;
+
+	if (ilen >= 1 && idata[ilen - 1] == '=')
+		dlen--;
+	if (ilen >= 2 && idata[ilen - 2] == '=')
+		dlen--;
+
+	*olen = dlen;
+
+	return 0;
+}
+
+static int __base64_encode(const uint8_t *idata, size_t ilen, char *odata,
+			   size_t olen, enum lc_base64_flags flags,
+			   const char table[])
+{
+	size_t elen, i, j;
+	unsigned int mod_table[] = { 0, 2, 1 };
+	int ret;
+	uint8_t chars;
+
+	if (!ilen)
+		return 0;
+
+	CKINT(lc_base64_encode_len(ilen, &elen, flags));
+	if (olen < elen)
+		return -EOVERFLOW;
+
+	for (i = 0, j = 0, chars = 0; i < ilen;) {
+		uint32_t octet_a = i < ilen ? idata[i++] : 0;
+		uint32_t octet_b = i < ilen ? idata[i++] : 0;
+		uint32_t octet_c = i < ilen ? idata[i++] : 0;
+		uint32_t triple =
+			(octet_a << 0x10) + (octet_b << 0x08) + octet_c;
+
+		/* Add LF after 64 Base64 characters in PEM format */
+		if ((flags == lc_base64_flag_pem) && chars == 64) {
+			odata[j++] = 0x0a;
+			chars = 0;
+		}
+
+		odata[j++] = table[(triple >> 3 * 6) & 0x3F];
+		odata[j++] = table[(triple >> 2 * 6) & 0x3F];
+		odata[j++] = table[(triple >> 1 * 6) & 0x3F];
+		odata[j++] = table[(triple >> 0 * 6) & 0x3F];
+		chars += 4;
+	}
+
+	for (i = 0; i < mod_table[ilen % 3]; i++) {
+		size_t location = elen - 1 - i;
+
+		/* If we have a LF, do not overwrite it */
+		if ((flags == lc_base64_flag_pem) && location &&
+		    (location & 0x3f) == 0)
+			location--;
+
+		odata[location] = '=';
+	}
+
+out:
+	return ret;
+}
+
+static int __base64_decode(const char *idata, size_t ilen, uint8_t *odata,
+			   size_t olen, enum lc_base64_flags flags,
+			   const unsigned char table[])
+{
+	size_t dlen, i, j;
+	int ret;
+	uint32_t sextet_a, sextet_b, sextet_c, sextet_d;
+	uint8_t blank_chars, chars;
+	char input;
+
+	if (!ilen)
+		return 0;
+
+	CKINT(lc_base64_decode_len(idata, ilen, &dlen, &blank_chars, flags));
+	if (olen < dlen)
+		return -EOVERFLOW;
+
+	for (i = 0, j = 0, chars = 0; i < ilen;) {
+		/* Add LF after 64 Base64 characters in PEM format */
+		if ((flags == lc_base64_flag_pem) && chars == 64) {
+			if (blank_chars == 1) {
+				/*
+				 * We reached the last character without any
+				 * trailing CR or LF
+				 */
+				if (i >= ilen - 1)
+					return 0;
+
+				if ((idata[i++] != 0x0a) && (idata[i] != 0x0d))
+					return -EINVAL;
+			}
+			if (blank_chars == 2) {
+				/*
+				 * We reached the last character without any
+				 * trailing CR/LF
+				 */
+				if (i >= ilen - 2)
+					return 0;
+
+				if ((idata[i++] != 0x0d) ||
+				    (idata[i++] != 0x0a))
+					return -EINVAL;
+			}
+
+			chars = 0;
+		}
+
+		if (ilen < i + 4) {
+			ret = -EINVAL;
+			goto out;
+		}
+
+		/*
+		 * Only allow the equal sign at the end of the string.
+		 *
+		 * Also, reject all non-alphabet characters including
+		 * intermittent line feeds which implies that PEM data is
+		 * not formatted to have a line break after 64 chars.
+		 */
+		unsigned int equal_seen = 0;
+
+		input = idata[i++];
+		sextet_a = (uint32_t)table[(unsigned char)input];
+		if (input != '=') {
+			if (sextet_a == 0xff)
+				return -EINVAL;
+		} else {
+			equal_seen++;
+			sextet_a = 0;
+		}
+
+		input = idata[i++];
+		sextet_b = (uint32_t)table[(unsigned char)input];
+		if (input != '=') {
+			if (sextet_b == 0xff || equal_seen)
+				return -EINVAL;
+		} else {
+			equal_seen++;
+			sextet_b = 0;
+		}
+
+		input = idata[i++];
+		sextet_c = (uint32_t)table[(unsigned char)input];
+		if (input != '=') {
+			if (sextet_c == 0xff || equal_seen)
+				return -EINVAL;
+		} else {
+			equal_seen++;
+			sextet_c = 0;
+		}
+
+		input = idata[i++];
+		sextet_d = (uint32_t)table[(unsigned char)input];
+		if (input != '=') {
+			if (sextet_d == 0xff || equal_seen)
+				return -EINVAL;
+		} else {
+			equal_seen++;
+			sextet_d = 0;
+		}
+
+		uint32_t triple = (sextet_a << 3 * 6) + (sextet_b << 2 * 6) +
+				  (sextet_c << 1 * 6) + (sextet_d << 0 * 6);
+
+		chars += 4;
+
+		if (j < dlen)
+			odata[j++] = (triple >> 2 * 8) & 0xFF;
+		if (j < dlen)
+			odata[j++] = (triple >> 1 * 8) & 0xFF;
+		if (j < dlen)
+			odata[j++] = (triple >> 0 * 8) & 0xFF;
+
+		/*
+		 * Any equal sign implies the end of the string
+		 */
+		if (equal_seen) {
+			if (ilen > i)
+				return -EINVAL;
+			break;
+		}
+	}
+
+out:
+	return ret;
+}
+
+int lc_base64_decode(const char *idata, size_t ilen, uint8_t *odata,
+		     size_t olen, enum lc_base64_flags flags)
+{
+	return __base64_decode(idata, ilen, odata, olen, flags, decoding_table);
+}
+
+int lc_base64_encode(const uint8_t *idata, size_t ilen, char *odata,
+		     size_t olen, enum lc_base64_flags flags)
+{
+	return __base64_encode(idata, ilen, odata, olen, flags, encoding_table);
+}
+
+#ifdef LC_BASE64_URLSAFE
+
+int lc_base64_encode_safe(const uint8_t *idata, size_t ilen, char *odata,
+			  size_t olen, enum lc_base64_flags flags)
+{
+	return __base64_encode(idata, ilen, odata, olen, flags,
+			       encoding_table_safe);
+}
+
+int lc_base64_decode_safe(const char *idata, size_t ilen, uint8_t *odata,
+			  size_t olen, enum lc_base64_flags flags)
+{
+	return __base64_decode(idata, ilen, odata, olen, flags,
+			       decoding_table_safe);
+}
+#endif

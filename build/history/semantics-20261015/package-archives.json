@@ -1,0 +1,20 @@
+[
+  {
+    "version": "baseline",
+    "path": "build/history/semantics-20261015/baseline-package.tar.gz",
+    "sha256": "4e670e2043a36d6c66b4bb020a40006021bf47c457491a7bf9e1acd0165f34a6",
+    "bytes": 4841380
+  },
+  {
+    "version": "initial-freeze",
+    "path": "build/history/semantics-20261015/initial-freeze-package.tar.gz",
+    "sha256": "3529ec56176033616747b4579dca28ad86fc202e0fc97e26c2c2d48c7b9a113b",
+    "bytes": 4860981
+  },
+  {
+    "version": "address-revision",
+    "path": "build/history/semantics-20261015/address-revision-package.tar.gz",
+    "sha256": "788890a81e47de350b144b7ee0e120e055e6c77549cbf4a9ca587eedc2e38d2b",
+    "bytes": 4861041
+  }
+]

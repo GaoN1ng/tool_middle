@@ -19,7 +19,7 @@ def doctor(options):
                "python_executable": sys.executable}]
     for module, package in [("yara", "yara-python"), ("elftools", "pyelftools"), ("pefile", "pefile"), ("capstone", "capstone"),
                             ('tree_sitter','tree-sitter'),('tree_sitter_javascript','tree-sitter-javascript'),
-                            ('tree_sitter_c','tree-sitter-c'),('tree_sitter_cpp','tree-sitter-cpp')]:
+                            ('tree_sitter_c','tree-sitter-c'),('tree_sitter_cpp','tree-sitter-cpp'),('unicorn','unicorn')]:
         try:
             importlib.import_module(module)
             checks.append({"dependency": package, "status": "available", "version": importlib.metadata.version(package)})

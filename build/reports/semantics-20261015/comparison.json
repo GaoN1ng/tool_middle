@@ -1,0 +1,1732 @@
+{
+  "before": {
+    "TP": 1273,
+    "FP": 0,
+    "FN": 299,
+    "TN": 24070,
+    "recall": 0.8097964376590331,
+    "false_negative_rate": 0.19020356234096691,
+    "precision": 1.0
+  },
+  "after": {
+    "TP": 1375,
+    "FP": 0,
+    "FN": 197,
+    "TN": 24070,
+    "recall": 0.8746819338422391,
+    "false_negative_rate": 0.1253180661577608,
+    "precision": 1.0
+  },
+  "gained_true_labels": [
+    {
+      "id": "bn-sign-mipsel-Os",
+      "sha256": "0423cc055b3a376327fd1268a1bdab1e1f1ec8fec31d832764b2836df99c3c8a",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "sp_sign-mipsel-O0",
+      "sha256": "07d75065ca4b96f9df2605441ccc8783a675c629c0a7816e9707033b79077f11",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "sp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-arm-Os",
+      "sha256": "0e067c0248b294dc16b4baadd273433b819aff86af91b0f8072f2824c683a2b3",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-O2",
+      "sha256": "173cb81c775053045f8f8c83eccd700d05a7689660c6cb82bdd6d981f470f392",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-O0",
+      "sha256": "1f5de6480c0378c48c6d792153da24af47fbd3afee08c758e0bdb4fbb7a93244",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "bn-sign-mipsel-O0",
+      "sha256": "20f05a1d8b8ff21ac8d4536ca3fa41661965464ca725f19c3278a8a9e02fc556",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdsa-common-arm-Os",
+      "sha256": "21ea0c7813b6e0aaef03a0192cd628b13b67df002966747113f4dd046a4fd779",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "arduinolibs-sha256-arm-O2",
+      "sha256": "31849584529c10d180470958b9910d1c3eb6d88ba025a7f0fbf36dfc1d78ad45",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "nettle-rsa-sign-mips_be-O2",
+      "sha256": "3be02f5b4dccb08aafdcda194d05917287e9ee710a354d06b077fb3e779d26b6",
+      "kind": "executable",
+      "project": "nettle",
+      "family": "nettle-rsa-sign",
+      "algorithm": "RSA"
+    },
+    {
+      "id": "mhash-sha256_sha224-thumb-O2",
+      "sha256": "3c61da59a160e5ce805542af0e2d92536ae3e698ce0b8571aed8899b8c483ab0",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "ippcrypto-sha256-source",
+      "sha256": "3d898d8be25eb4f93f82c952c60ec11f1ff48b654b4f817d39abe3b8070117e4",
+      "kind": "source",
+      "project": "ippcrypto",
+      "family": "ippcrypto-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mhash-sha256_sha224-aarch64-O0",
+      "sha256": "3f6c3860515f784e8af90ca8789181afb504d67c109b187d251ed35502490c46",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O0",
+      "sha256": "407fd021ac864c1df834138ebae79442a9b0c9c56b0da789fc9f0b6af9f7e3fe",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-thumb-O0",
+      "sha256": "40b6c05a493507a7c7a2278471c75c0606e61bcf4732e50613e726a1b37ac37f",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "arduinolibs-sha1-source",
+      "sha256": "4170ec3b3e0a91b3dec6b4ba4dd5a4381680760b7e00a1a4ed2ca4d931e2d33e",
+      "kind": "source",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha1",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "libecc-ecdh-aarch64-Os",
+      "sha256": "44c4906c896912d49275055f82eb2bbb55ecb234a0d7217052e752cd7b18fe5a",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-O2",
+      "sha256": "450884806642a78fae5848206b173235f945ccd32afdbf09fc675e7fd4609097",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-sha256-mipsel-O0",
+      "sha256": "450c62857902d399171b0bbc6dbb87d9cd533278668e0589cbb214abc3445ee2",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-ecdh-x86_64-O0",
+      "sha256": "4bf81b4af7e3ade0905e465aba7b6a0bd21bfeec706dfc41af3656fdd98c19c5",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-x86_64-O2",
+      "sha256": "4ddb39d96a1c052c0ce0bdb0bc85c28e373622f26fb855e216b1710f7b8aa976",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "ippcrypto-sha1-source",
+      "sha256": "4f60fd778e402244f94c2f6ed41d8400cac323ffe8090aebd353396ed962d030",
+      "kind": "source",
+      "project": "ippcrypto",
+      "family": "ippcrypto-sha1",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "arduinolibs-sha256-arm-Os",
+      "sha256": "504465b3404f393f5fac987543b7ac07957ef865163fc66c1bdcf0c8f61647c3",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-arm-Os",
+      "sha256": "50e279b6ed46b35c84323bc7d80917541b74e9e8f160c244ecf96d776caedba2",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sm2-mipsel-O0",
+      "sha256": "51010d209506b0a7fc296872b94afc8a1a38abd373a6a8c2ae21cc3d3fc766e6",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-arm-O0",
+      "sha256": "53626e2081b15bf41a114b5c988dbacc05acbf2f0a8edf7faba6d53df2ad4ba7",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O2",
+      "sha256": "54595609057c75b34312fb59745def9a6ff30604e8395f95f1153d6b752a6ea1",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "arduinolibs-sha256-thumb-O2",
+      "sha256": "55692f836589c9f6fd83c58f72f792bae4815285846a9788c995c401a7435117",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-O0",
+      "sha256": "558e0f4f6e533db4c84e964cbe0c3c3b2d5a80bae9f8eb368e29ea8b61bf553d",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-O0",
+      "sha256": "57be0197f426975562dda5fcfd7e0cb0f4734087205da73295e5555eac428795",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-Os",
+      "sha256": "5977903879de9d499f98ce3f05d06436ea9bbba869c19ef373d14895e6893d6e",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "bn-verify-mipsel-O0",
+      "sha256": "59cac1f852061f69b56990ac74c14752cc2142b3c69823818da3a5e16be06836",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-verify",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-sha256-mipsel-O0",
+      "sha256": "59e2b1f96f2c755816c3ca7d31dcb108367e6718ef66da9296a4d983edf42571",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "split-compression-mipsel-O0",
+      "sha256": "5cb48a9698838b3b20d99c07b94c6f187623ca95f44277a4aa1f1fea79a18872",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-thumb-O0",
+      "sha256": "644cccdc6dde000f2d597645cf86e044c5d17d2c750ae0a850f379b668c2d5a1",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "mp_sign-mipsel-Os",
+      "sha256": "67eb8986dddef53613346fb35828a0a35c1e56851839fe6afdcbb65119c2dc17",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "mp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdh-aarch64-O0",
+      "sha256": "6e9a8589f9c0e3e9921693c3cefe7a7bb3a40de8ce4d6c7e3ee04e002e579fb3",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-sm2-mips_be-O0",
+      "sha256": "7008b2c82a4c62c2c5b07aec08252f087fa6896dc61f7f63eb269aa64c7ecb1d",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-O2",
+      "sha256": "7186669866826000665796f8e00c1fdce3bb65258a98215bd8d7969c590bff96",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "sp_sign-mips_be-Os",
+      "sha256": "744f88eb9816745b7d032b9083610964e469c1ba8909dfd5a8f9a95c9533cf8b",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "sp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-O2",
+      "sha256": "7955f93b74e116aaf3ab02945a855ae396f99d0ba65af0890cce44650a20899c",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-Os",
+      "sha256": "79fe7d2e68bff4e73781b854ff958a029671ad40cbf570a7967555b295d4eeec",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O2",
+      "sha256": "7c9fc0ca73cda7ddf5519c2a7817175bd4e5f53eb62abd7b3b0c421517831d6e",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-mipsel-Os",
+      "sha256": "7ca803bec83eca45420d62825c0f28b67793a47affc4c1fb3d58ee5144e212db",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_hash_sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-ecdsa-common-arm-O0",
+      "sha256": "7df38569dc141bc7ee85247db58e352df4213d9da01b38699b3f1883e66a3401",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "bn-verify-mips_be-Os",
+      "sha256": "7f4ce7f2ea66c77500cd7fdf7ee4d234e01db00d1d2f2c16d09add9b6b20c985",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-verify",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-mipsel-O0",
+      "sha256": "81dc483d4908039d514053a333e078fcdead4d46b1f978ef689518a2cac03223",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_stream_chacha20",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "arduinolibs-sha1-mips_be-O0",
+      "sha256": "867efcf79c2dd52f62cb67fdcc731130140f78aaa47ebe4812b2adf18ec77a63",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha1",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "libecc-ecdsa-common-mips_be-O0",
+      "sha256": "86bdbe1edbc4366b45477e707a42472b7df0f8c80804c31b5098d04ef5c40b91",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-x86_64-O0",
+      "sha256": "87a5d9b79ee8f93f7e1333b61b8d365fa5df2ec056db287ccf5f5579e8637d29",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_hash_sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-arm-O0",
+      "sha256": "87f83c97499d75ee28bd8fa900cf9efc97b43b92283cc5ed3bacd5ca5b037965",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_hash_sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "sp_sign-mips_be-O0",
+      "sha256": "8851d5b109fa7974fb79ddd00938c1a34380a20041eb4f265ce297e7debc23de",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "sp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "nettle-rsa-sign-mipsel-O2",
+      "sha256": "9308b56b76219d6b0b6d6cdf1700bf31e131f84366756de5d0b210b5ab92db81",
+      "kind": "executable",
+      "project": "nettle",
+      "family": "nettle-rsa-sign",
+      "algorithm": "RSA"
+    },
+    {
+      "id": "tinyssh-crypto_stream_chacha20-mips_be-O0",
+      "sha256": "93bb910e43c7a13ff903ec29fb88728d3ae4047e26da175479a5aa705b69cfd7",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_stream_chacha20",
+      "algorithm": "ChaCha20"
+    },
+    {
+      "id": "gmssl-modern-sm3-thumb-O0",
+      "sha256": "9414916b4b7d9527dd5e75b29d89e48100ce1ede852b30558147d0d2baca74f6",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-ecdsa-common-mipsel-O0",
+      "sha256": "946e73af735743161ff0df258cab2ff505008f7ff871b4bdc0f7c0019aebb294",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "mhash-sha256_sha224-mipsel-O0",
+      "sha256": "96651e9b34537efd10f4d58647321d8a181c74cde653fcc7dc03b1b70363fdf4",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-thumb-O0",
+      "sha256": "96d06b6f48989c1fcb581645c8baf9caea0d319a0e6a417f7786ad062298685f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-mips_be-O0",
+      "sha256": "9d5385e8854195281742ea2ed6ace0a55d5cd15fdb7d2ebdab4b8b9c279b1732",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bn-sign-mips_be-Os",
+      "sha256": "a199b2c6a4dddcf682b434cd25563e40badf2d252f7819d8900dcce6d22bb42a",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-sha1-mipsel-O0",
+      "sha256": "a488cfefda730858c3444fca17b3c21b238bd7b357fb64ac16794ea677c9ea8b",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha1",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "bn-sign-mips_be-O0",
+      "sha256": "a64097e93a3ee5bc5961bd2da55d1358a45f741b600176ceefb4b15a3bbb488a",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-sha256-thumb-Os",
+      "sha256": "a7f0d3309860ce169f2a51bec3d25b9500241f4c46a10e52299b2aee1bd47400",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "arduinolibs-sha256-thumb-Os",
+      "sha256": "aa1ea7818066e1cbfd4fa4bdc2a36336f35ae9c041305eb1051e876600b6e8c4",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-thumb-O2",
+      "sha256": "aa923f7e5d6ec8c62d9a8bd81b4db9d60f42730fcc7090794fd5315010f72d3b",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-ecdh-aarch64-O2",
+      "sha256": "aaef06ca8253521763aa067dec5542fbd0238ae11180c8c8a582e0b4a3ed1aa2",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "ippcrypto-md5-source",
+      "sha256": "adb664e03b624e74927d253e011c9340c0e547ddce4de761fd51536a9b5b1114",
+      "kind": "source",
+      "project": "ippcrypto",
+      "family": "ippcrypto-md5",
+      "algorithm": "MD5"
+    },
+    {
+      "id": "mp_sign-mipsel-O0",
+      "sha256": "ae9a3facb2db9c4b520e023ff350017e3fa197ad41ff2f4ed2f4a5add7272793",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "mp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "mhash-sha256_sha224-arm-O0",
+      "sha256": "afe0ca531ff8fce8ba00faf739cbeb7276ff22efdcff71fb1344b76fd0c57903",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mp_sign-mips_be-Os",
+      "sha256": "b39bd8ced1926db30ac8d856c13d9398f40c64713f4d87b098a293bc66d0cffc",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "mp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "mhash-sha256_sha224-mips_be-O0",
+      "sha256": "b828b13c2945812bc82e718e13fb04fd852f578ddf1986b2e76bf7bbf23c2604",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-mips_be-Os",
+      "sha256": "b8f14b3797d00eea41fd7ef1bb8a9a9837ca653e9287c3764d182fb60e1f1fe7",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_hash_sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bn-verify-mipsel-Os",
+      "sha256": "b9a4148f35d9f003d878f71a0a8eb22e223e657bc3555cb0708805121d64ae50",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-verify",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdsa-common-arm-O2",
+      "sha256": "bbeb98517f80ce035392bc6d55eb8865af30f20f4fd62e8aa81b1e00aefdf40d",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "arduinolibs-sha256-arm-O0",
+      "sha256": "bcde35aad374d7abdb3c13816f017f44924ecfeb69c0a36a0a35e9c0e7ae0cf2",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-Os",
+      "sha256": "bd7cc0bbcdf96bae7ed6264bbe27fefb9e0924434592a2fe2f302d97a23a2e48",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "bcon-sha256-mips_be-O0",
+      "sha256": "c22e57a87fd94ffbe0da9ccbd7d687ff0266ce76d56a104b835e8fd79d09bbf5",
+      "kind": "executable",
+      "project": "bcon",
+      "family": "bcon-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-sha256-arm-O0",
+      "sha256": "c2611d1141ad6e38770ac0e1fefaba4b5c481403d05f2e96b0542e3db81a0912",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-O0",
+      "sha256": "c81b8dec735c6e9ba035cd110863afd7b08f3c4c2decfc350b91f03b739e942d",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libecc-sha256-arm-O2",
+      "sha256": "cb7338c85758792b46c77a999a3f7ce251324dd5286bfe7aac998bde7174a3c1",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "mp_sign-mips_be-O0",
+      "sha256": "cbd1548e1b78bd6f7df2f0344c3fdd0df0d795ddecac725d116581ab4e6bd464",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "mp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "gmssl-modern-sm3-x86_64-O0",
+      "sha256": "cc8ded9760490219e24d42d22e10eb9d9345b513435d43262b1c91cc2ce74249",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-ecdsa-common-aarch64-Os",
+      "sha256": "cda8ac854403030c353c3a4c207d7be73a48b8fc7528654904b6650a377d4f0f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "mhash-sha256_sha224-thumb-Os",
+      "sha256": "d024e7c2ec8a4d5ebe2368cb54c4961a5be8763c3b4870a8fefe6bf6dfad0beb",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-Os",
+      "sha256": "d3e7073432fa7597d338597d86b12c91318d1adf0af50540716ac2af765527b5",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "split-compression-mips_be-O0",
+      "sha256": "d768c7c25f77eee0f8aca0b1151b17509a43fd508b892a09eacae043c096bb61",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-ecdsa-common-x86_64-O2",
+      "sha256": "da17bdaff4134a829213d5c0013d4e1c0650bbec5d22f2ac64f195fb13fa46ad",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "tinyssh-crypto_hash_sha256-thumb-O0",
+      "sha256": "da5ae0ed14fc1ca4d6bb544f67f23012ccbb1b5da827210f2c9797abcb8605b3",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_hash_sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-arm-O2",
+      "sha256": "e39db5e2513c0d9418675c797d4caab019647ee6697a05802104092b65e3c1ae",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "arduinolibs-sha256-mips_be-O0",
+      "sha256": "e4ce0a30b189ac8d9dfcf68b3c17fe8d1bdc6170ed795c6dfed60ee2d2f49261",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-source",
+      "sha256": "e5112ee8de67af0f65aa16023785c2f92d4b82734a9208e55bf6322e66f4a345",
+      "kind": "source",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-arm-O0",
+      "sha256": "e72b042bee4cab3d874b7fd3603e03ff0e61eef7d22ed7c08df7c76ac0f4aeea",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "bcon-sha256-mipsel-O0",
+      "sha256": "e78315dfdf3cb9e25ab0a906b78a20d319b39793e0a698b34d1057829065f22c",
+      "kind": "executable",
+      "project": "bcon",
+      "family": "bcon-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O0",
+      "sha256": "e8ad84e7afce9748bd4a65d07ca37507bcabfbeaa97b012aeb2cbcfa849b5fd1",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "sp_sign-mipsel-Os",
+      "sha256": "f0796f3fb9da343a4066623f8e5b2bda54f6b2750b7731e9e995150cf655be3c",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "sp_sign",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "mhash-sha256_sha224-thumb-O0",
+      "sha256": "f40c91468d2197dfee27cf10f7aab1ab67bc57f5b9ac297221d92f10418f727f",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "bcon-sha256-thumb-O0",
+      "sha256": "f6bf3ec15e8ba8504c29932ba73d80aae21b43d619191115a18ffaf115dcad0e",
+      "kind": "executable",
+      "project": "bcon",
+      "family": "bcon-sha256",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-thumb-O2",
+      "sha256": "f77e0f583f9eb2ae9f55fb64ce7e6dd3d73af1a680fdb22b295a446da845f6f4",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-x86_64-Os",
+      "sha256": "f81b3093a500f2a2e9f2ddcb40ae63dd876776fe2f9257d03424f33c0433ef93",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "mhash-sha256_sha224-x86_64-O0",
+      "sha256": "f8782ede9ae18d64cc6eca7eb3ca8bf3c89ab8d7f27ca231c6bdab96dd703bf0",
+      "kind": "executable",
+      "project": "mhash",
+      "family": "mhash-sha256_sha224",
+      "algorithm": "SHA-256"
+    },
+    {
+      "id": "libecc-ecdh-thumb-O0",
+      "sha256": "fa0967be4dfb07f7a838943cdf7d644ce91e0cbd9b25106ca097a17b1f8113de",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "tinyssh-crypto_scalarmult_curve25519-thumb-Os",
+      "sha256": "fc17940fec9a467f7f204b687d7fe743b742908e1df090b3f3bff35901a30fc3",
+      "kind": "executable",
+      "project": "tinyssh",
+      "family": "tinyssh-crypto_scalarmult_curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "bn-verify-mips_be-O0",
+      "sha256": "fcc9d00ec26d3da4f333a147b752044d23323283a76b7f66c103e4866217786d",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "bn-verify",
+      "algorithm": "SM2"
+    }
+  ],
+  "lost_true_labels": [],
+  "gained_by_algorithm": {
+    "SM2": 19,
+    "ECDH": 26,
+    "ECDSA": 11,
+    "SHA-256": 32,
+    "RSA": 2,
+    "SHA-1": 4,
+    "SM3": 5,
+    "ChaCha20": 2,
+    "MD5": 1
+  },
+  "denominator_unchanged": true,
+  "files": 2344,
+  "positive_labels": 1572,
+  "initial_freeze": {
+    "before": {
+      "TP": 1273,
+      "FP": 0,
+      "FN": 299,
+      "TN": 24070,
+      "recall": 0.8097964376590331,
+      "false_negative_rate": 0.19020356234096691,
+      "precision": 1.0
+    },
+    "after": {
+      "TP": 1375,
+      "FP": 0,
+      "FN": 197,
+      "TN": 24070,
+      "recall": 0.8746819338422391,
+      "false_negative_rate": 0.1253180661577608,
+      "precision": 1.0
+    },
+    "gained_true_labels": [
+      {
+        "id": "bn-sign-mipsel-Os",
+        "sha256": "0423cc055b3a376327fd1268a1bdab1e1f1ec8fec31d832764b2836df99c3c8a",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "sp_sign-mipsel-O0",
+        "sha256": "07d75065ca4b96f9df2605441ccc8783a675c629c0a7816e9707033b79077f11",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "sp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-arm-Os",
+        "sha256": "0e067c0248b294dc16b4baadd273433b819aff86af91b0f8072f2824c683a2b3",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-O2",
+        "sha256": "173cb81c775053045f8f8c83eccd700d05a7689660c6cb82bdd6d981f470f392",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdsa-common-aarch64-O0",
+        "sha256": "1f5de6480c0378c48c6d792153da24af47fbd3afee08c758e0bdb4fbb7a93244",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "bn-sign-mipsel-O0",
+        "sha256": "20f05a1d8b8ff21ac8d4536ca3fa41661965464ca725f19c3278a8a9e02fc556",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdsa-common-arm-Os",
+        "sha256": "21ea0c7813b6e0aaef03a0192cd628b13b67df002966747113f4dd046a4fd779",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "arduinolibs-sha256-arm-O2",
+        "sha256": "31849584529c10d180470958b9910d1c3eb6d88ba025a7f0fbf36dfc1d78ad45",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "nettle-rsa-sign-mips_be-O2",
+        "sha256": "3be02f5b4dccb08aafdcda194d05917287e9ee710a354d06b077fb3e779d26b6",
+        "kind": "executable",
+        "project": "nettle",
+        "family": "nettle-rsa-sign",
+        "algorithm": "RSA"
+      },
+      {
+        "id": "mhash-sha256_sha224-thumb-O2",
+        "sha256": "3c61da59a160e5ce805542af0e2d92536ae3e698ce0b8571aed8899b8c483ab0",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "ippcrypto-sha256-source",
+        "sha256": "3d898d8be25eb4f93f82c952c60ec11f1ff48b654b4f817d39abe3b8070117e4",
+        "kind": "source",
+        "project": "ippcrypto",
+        "family": "ippcrypto-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "mhash-sha256_sha224-aarch64-O0",
+        "sha256": "3f6c3860515f784e8af90ca8789181afb504d67c109b187d251ed35502490c46",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O0",
+        "sha256": "407fd021ac864c1df834138ebae79442a9b0c9c56b0da789fc9f0b6af9f7e3fe",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-thumb-O0",
+        "sha256": "40b6c05a493507a7c7a2278471c75c0606e61bcf4732e50613e726a1b37ac37f",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "arduinolibs-sha1-source",
+        "sha256": "4170ec3b3e0a91b3dec6b4ba4dd5a4381680760b7e00a1a4ed2ca4d931e2d33e",
+        "kind": "source",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha1",
+        "algorithm": "SHA-1"
+      },
+      {
+        "id": "libecc-ecdh-aarch64-Os",
+        "sha256": "44c4906c896912d49275055f82eb2bbb55ecb234a0d7217052e752cd7b18fe5a",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-x86_64-O2",
+        "sha256": "450884806642a78fae5848206b173235f945ccd32afdbf09fc675e7fd4609097",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-sha256-mipsel-O0",
+        "sha256": "450c62857902d399171b0bbc6dbb87d9cd533278668e0589cbb214abc3445ee2",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-ecdh-x86_64-O0",
+        "sha256": "4bf81b4af7e3ade0905e465aba7b6a0bd21bfeec706dfc41af3656fdd98c19c5",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-x86_64-O2",
+        "sha256": "4ddb39d96a1c052c0ce0bdb0bc85c28e373622f26fb855e216b1710f7b8aa976",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "ippcrypto-sha1-source",
+        "sha256": "4f60fd778e402244f94c2f6ed41d8400cac323ffe8090aebd353396ed962d030",
+        "kind": "source",
+        "project": "ippcrypto",
+        "family": "ippcrypto-sha1",
+        "algorithm": "SHA-1"
+      },
+      {
+        "id": "arduinolibs-sha256-arm-Os",
+        "sha256": "504465b3404f393f5fac987543b7ac07957ef865163fc66c1bdcf0c8f61647c3",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sha256-arm-Os",
+        "sha256": "50e279b6ed46b35c84323bc7d80917541b74e9e8f160c244ecf96d776caedba2",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sm2-mipsel-O0",
+        "sha256": "51010d209506b0a7fc296872b94afc8a1a38abd373a6a8c2ae21cc3d3fc766e6",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-arm-O0",
+        "sha256": "53626e2081b15bf41a114b5c988dbacc05acbf2f0a8edf7faba6d53df2ad4ba7",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O2",
+        "sha256": "54595609057c75b34312fb59745def9a6ff30604e8395f95f1153d6b752a6ea1",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "arduinolibs-sha256-thumb-O2",
+        "sha256": "55692f836589c9f6fd83c58f72f792bae4815285846a9788c995c401a7435117",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-O0",
+        "sha256": "558e0f4f6e533db4c84e964cbe0c3c3b2d5a80bae9f8eb368e29ea8b61bf553d",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-O0",
+        "sha256": "57be0197f426975562dda5fcfd7e0cb0f4734087205da73295e5555eac428795",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdsa-common-x86_64-Os",
+        "sha256": "5977903879de9d499f98ce3f05d06436ea9bbba869c19ef373d14895e6893d6e",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "bn-verify-mipsel-O0",
+        "sha256": "59cac1f852061f69b56990ac74c14752cc2142b3c69823818da3a5e16be06836",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-verify",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-sha256-mipsel-O0",
+        "sha256": "59e2b1f96f2c755816c3ca7d31dcb108367e6718ef66da9296a4d983edf42571",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "split-compression-mipsel-O0",
+        "sha256": "5cb48a9698838b3b20d99c07b94c6f187623ca95f44277a4aa1f1fea79a18872",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "split-compression",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-sm3-thumb-O0",
+        "sha256": "644cccdc6dde000f2d597645cf86e044c5d17d2c750ae0a850f379b668c2d5a1",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "mp_sign-mipsel-Os",
+        "sha256": "67eb8986dddef53613346fb35828a0a35c1e56851839fe6afdcbb65119c2dc17",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "mp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdh-aarch64-O0",
+        "sha256": "6e9a8589f9c0e3e9921693c3cefe7a7bb3a40de8ce4d6c7e3ee04e002e579fb3",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-sm2-mips_be-O0",
+        "sha256": "7008b2c82a4c62c2c5b07aec08252f087fa6896dc61f7f63eb269aa64c7ecb1d",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdsa-common-aarch64-O2",
+        "sha256": "7186669866826000665796f8e00c1fdce3bb65258a98215bd8d7969c590bff96",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "sp_sign-mips_be-Os",
+        "sha256": "744f88eb9816745b7d032b9083610964e469c1ba8909dfd5a8f9a95c9533cf8b",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "sp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-O2",
+        "sha256": "7955f93b74e116aaf3ab02945a855ae396f99d0ba65af0890cce44650a20899c",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mips_be-Os",
+        "sha256": "79fe7d2e68bff4e73781b854ff958a029671ad40cbf570a7967555b295d4eeec",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-aarch64-O2",
+        "sha256": "7c9fc0ca73cda7ddf5519c2a7817175bd4e5f53eb62abd7b3b0c421517831d6e",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_hash_sha256-mipsel-Os",
+        "sha256": "7ca803bec83eca45420d62825c0f28b67793a47affc4c1fb3d58ee5144e212db",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_hash_sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-ecdsa-common-arm-O0",
+        "sha256": "7df38569dc141bc7ee85247db58e352df4213d9da01b38699b3f1883e66a3401",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "bn-verify-mips_be-Os",
+        "sha256": "7f4ce7f2ea66c77500cd7fdf7ee4d234e01db00d1d2f2c16d09add9b6b20c985",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-verify",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "tinyssh-crypto_stream_chacha20-mipsel-O0",
+        "sha256": "81dc483d4908039d514053a333e078fcdead4d46b1f978ef689518a2cac03223",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_stream_chacha20",
+        "algorithm": "ChaCha20"
+      },
+      {
+        "id": "arduinolibs-sha1-mips_be-O0",
+        "sha256": "867efcf79c2dd52f62cb67fdcc731130140f78aaa47ebe4812b2adf18ec77a63",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha1",
+        "algorithm": "SHA-1"
+      },
+      {
+        "id": "libecc-ecdsa-common-mips_be-O0",
+        "sha256": "86bdbe1edbc4366b45477e707a42472b7df0f8c80804c31b5098d04ef5c40b91",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "tinyssh-crypto_hash_sha256-x86_64-O0",
+        "sha256": "87a5d9b79ee8f93f7e1333b61b8d365fa5df2ec056db287ccf5f5579e8637d29",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_hash_sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_hash_sha256-arm-O0",
+        "sha256": "87f83c97499d75ee28bd8fa900cf9efc97b43b92283cc5ed3bacd5ca5b037965",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_hash_sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "sp_sign-mips_be-O0",
+        "sha256": "8851d5b109fa7974fb79ddd00938c1a34380a20041eb4f265ce297e7debc23de",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "sp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "nettle-rsa-sign-mipsel-O2",
+        "sha256": "9308b56b76219d6b0b6d6cdf1700bf31e131f84366756de5d0b210b5ab92db81",
+        "kind": "executable",
+        "project": "nettle",
+        "family": "nettle-rsa-sign",
+        "algorithm": "RSA"
+      },
+      {
+        "id": "tinyssh-crypto_stream_chacha20-mips_be-O0",
+        "sha256": "93bb910e43c7a13ff903ec29fb88728d3ae4047e26da175479a5aa705b69cfd7",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_stream_chacha20",
+        "algorithm": "ChaCha20"
+      },
+      {
+        "id": "gmssl-modern-sm3-thumb-O0",
+        "sha256": "9414916b4b7d9527dd5e75b29d89e48100ce1ede852b30558147d0d2baca74f6",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-ecdsa-common-mipsel-O0",
+        "sha256": "946e73af735743161ff0df258cab2ff505008f7ff871b4bdc0f7c0019aebb294",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "mhash-sha256_sha224-mipsel-O0",
+        "sha256": "96651e9b34537efd10f4d58647321d8a181c74cde653fcc7dc03b1b70363fdf4",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sha256-thumb-O0",
+        "sha256": "96d06b6f48989c1fcb581645c8baf9caea0d319a0e6a417f7786ad062298685f",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sha256-mips_be-O0",
+        "sha256": "9d5385e8854195281742ea2ed6ace0a55d5cd15fdb7d2ebdab4b8b9c279b1732",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "bn-sign-mips_be-Os",
+        "sha256": "a199b2c6a4dddcf682b434cd25563e40badf2d252f7819d8900dcce6d22bb42a",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-sha1-mipsel-O0",
+        "sha256": "a488cfefda730858c3444fca17b3c21b238bd7b357fb64ac16794ea677c9ea8b",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha1",
+        "algorithm": "SHA-1"
+      },
+      {
+        "id": "bn-sign-mips_be-O0",
+        "sha256": "a64097e93a3ee5bc5961bd2da55d1358a45f741b600176ceefb4b15a3bbb488a",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-sha256-thumb-Os",
+        "sha256": "a7f0d3309860ce169f2a51bec3d25b9500241f4c46a10e52299b2aee1bd47400",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "arduinolibs-sha256-thumb-Os",
+        "sha256": "aa1ea7818066e1cbfd4fa4bdc2a36336f35ae9c041305eb1051e876600b6e8c4",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sha256-thumb-O2",
+        "sha256": "aa923f7e5d6ec8c62d9a8bd81b4db9d60f42730fcc7090794fd5315010f72d3b",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-ecdh-aarch64-O2",
+        "sha256": "aaef06ca8253521763aa067dec5542fbd0238ae11180c8c8a582e0b4a3ed1aa2",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "ippcrypto-md5-source",
+        "sha256": "adb664e03b624e74927d253e011c9340c0e547ddce4de761fd51536a9b5b1114",
+        "kind": "source",
+        "project": "ippcrypto",
+        "family": "ippcrypto-md5",
+        "algorithm": "MD5"
+      },
+      {
+        "id": "mp_sign-mipsel-O0",
+        "sha256": "ae9a3facb2db9c4b520e023ff350017e3fa197ad41ff2f4ed2f4a5add7272793",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "mp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "mhash-sha256_sha224-arm-O0",
+        "sha256": "afe0ca531ff8fce8ba00faf739cbeb7276ff22efdcff71fb1344b76fd0c57903",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "mp_sign-mips_be-Os",
+        "sha256": "b39bd8ced1926db30ac8d856c13d9398f40c64713f4d87b098a293bc66d0cffc",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "mp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "mhash-sha256_sha224-mips_be-O0",
+        "sha256": "b828b13c2945812bc82e718e13fb04fd852f578ddf1986b2e76bf7bbf23c2604",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_hash_sha256-mips_be-Os",
+        "sha256": "b8f14b3797d00eea41fd7ef1bb8a9a9837ca653e9287c3764d182fb60e1f1fe7",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_hash_sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "bn-verify-mipsel-Os",
+        "sha256": "b9a4148f35d9f003d878f71a0a8eb22e223e657bc3555cb0708805121d64ae50",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-verify",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdsa-common-arm-O2",
+        "sha256": "bbeb98517f80ce035392bc6d55eb8865af30f20f4fd62e8aa81b1e00aefdf40d",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "arduinolibs-sha256-arm-O0",
+        "sha256": "bcde35aad374d7abdb3c13816f017f44924ecfeb69c0a36a0a35e9c0e7ae0cf2",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-mipsel-Os",
+        "sha256": "bd7cc0bbcdf96bae7ed6264bbe27fefb9e0924434592a2fe2f302d97a23a2e48",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "bcon-sha256-mips_be-O0",
+        "sha256": "c22e57a87fd94ffbe0da9ccbd7d687ff0266ce76d56a104b835e8fd79d09bbf5",
+        "kind": "executable",
+        "project": "bcon",
+        "family": "bcon-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-sha256-arm-O0",
+        "sha256": "c2611d1141ad6e38770ac0e1fefaba4b5c481403d05f2e96b0542e3db81a0912",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-ecdsa-common-x86_64-O0",
+        "sha256": "c81b8dec735c6e9ba035cd110863afd7b08f3c4c2decfc350b91f03b739e942d",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libecc-sha256-arm-O2",
+        "sha256": "cb7338c85758792b46c77a999a3f7ce251324dd5286bfe7aac998bde7174a3c1",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "mp_sign-mips_be-O0",
+        "sha256": "cbd1548e1b78bd6f7df2f0344c3fdd0df0d795ddecac725d116581ab4e6bd464",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "mp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "gmssl-modern-sm3-x86_64-O0",
+        "sha256": "cc8ded9760490219e24d42d22e10eb9d9345b513435d43262b1c91cc2ce74249",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-ecdsa-common-aarch64-Os",
+        "sha256": "cda8ac854403030c353c3a4c207d7be73a48b8fc7528654904b6650a377d4f0f",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "mhash-sha256_sha224-thumb-Os",
+        "sha256": "d024e7c2ec8a4d5ebe2368cb54c4961a5be8763c3b4870a8fefe6bf6dfad0beb",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-Os",
+        "sha256": "d3e7073432fa7597d338597d86b12c91318d1adf0af50540716ac2af765527b5",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "split-compression-mips_be-O0",
+        "sha256": "d768c7c25f77eee0f8aca0b1151b17509a43fd508b892a09eacae043c096bb61",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "split-compression",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-ecdsa-common-x86_64-O2",
+        "sha256": "da17bdaff4134a829213d5c0013d4e1c0650bbec5d22f2ac64f195fb13fa46ad",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "tinyssh-crypto_hash_sha256-thumb-O0",
+        "sha256": "da5ae0ed14fc1ca4d6bb544f67f23012ccbb1b5da827210f2c9797abcb8605b3",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_hash_sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-arm-O2",
+        "sha256": "e39db5e2513c0d9418675c797d4caab019647ee6697a05802104092b65e3c1ae",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "arduinolibs-sha256-mips_be-O0",
+        "sha256": "e4ce0a30b189ac8d9dfcf68b3c17fe8d1bdc6170ed795c6dfed60ee2d2f49261",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-source",
+        "sha256": "e5112ee8de67af0f65aa16023785c2f92d4b82734a9208e55bf6322e66f4a345",
+        "kind": "source",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-arm-O0",
+        "sha256": "e72b042bee4cab3d874b7fd3603e03ff0e61eef7d22ed7c08df7c76ac0f4aeea",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "bcon-sha256-mipsel-O0",
+        "sha256": "e78315dfdf3cb9e25ab0a906b78a20d319b39793e0a698b34d1057829065f22c",
+        "kind": "executable",
+        "project": "bcon",
+        "family": "bcon-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-x86_64-O0",
+        "sha256": "e8ad84e7afce9748bd4a65d07ca37507bcabfbeaa97b012aeb2cbcfa849b5fd1",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "sp_sign-mipsel-Os",
+        "sha256": "f0796f3fb9da343a4066623f8e5b2bda54f6b2750b7731e9e995150cf655be3c",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "sp_sign",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "mhash-sha256_sha224-thumb-O0",
+        "sha256": "f40c91468d2197dfee27cf10f7aab1ab67bc57f5b9ac297221d92f10418f727f",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "bcon-sha256-thumb-O0",
+        "sha256": "f6bf3ec15e8ba8504c29932ba73d80aae21b43d619191115a18ffaf115dcad0e",
+        "kind": "executable",
+        "project": "bcon",
+        "family": "bcon-sha256",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-thumb-O2",
+        "sha256": "f77e0f583f9eb2ae9f55fb64ce7e6dd3d73af1a680fdb22b295a446da845f6f4",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-x86_64-Os",
+        "sha256": "f81b3093a500f2a2e9f2ddcb40ae63dd876776fe2f9257d03424f33c0433ef93",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "mhash-sha256_sha224-x86_64-O0",
+        "sha256": "f8782ede9ae18d64cc6eca7eb3ca8bf3c89ab8d7f27ca231c6bdab96dd703bf0",
+        "kind": "executable",
+        "project": "mhash",
+        "family": "mhash-sha256_sha224",
+        "algorithm": "SHA-256"
+      },
+      {
+        "id": "libecc-ecdh-thumb-O0",
+        "sha256": "fa0967be4dfb07f7a838943cdf7d644ce91e0cbd9b25106ca097a17b1f8113de",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "tinyssh-crypto_scalarmult_curve25519-thumb-Os",
+        "sha256": "fc17940fec9a467f7f204b687d7fe743b742908e1df090b3f3bff35901a30fc3",
+        "kind": "executable",
+        "project": "tinyssh",
+        "family": "tinyssh-crypto_scalarmult_curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "bn-verify-mips_be-O0",
+        "sha256": "fcc9d00ec26d3da4f333a147b752044d23323283a76b7f66c103e4866217786d",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "bn-verify",
+        "algorithm": "SM2"
+      }
+    ],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {
+      "SM2": 19,
+      "ECDH": 26,
+      "ECDSA": 11,
+      "SHA-256": 32,
+      "RSA": 2,
+      "SHA-1": 4,
+      "SM3": 5,
+      "ChaCha20": 2,
+      "MD5": 1
+    },
+    "denominator_unchanged": true,
+    "files": 2344,
+    "positive_labels": 1572
+  },
+  "regression_revision": {
+    "before": {
+      "TP": 1375,
+      "FP": 0,
+      "FN": 197,
+      "TN": 24070,
+      "recall": 0.8746819338422391,
+      "false_negative_rate": 0.1253180661577608,
+      "precision": 1.0
+    },
+    "after": {
+      "TP": 1375,
+      "FP": 0,
+      "FN": 197,
+      "TN": 24070,
+      "recall": 0.8746819338422391,
+      "false_negative_rate": 0.1253180661577608,
+      "precision": 1.0
+    },
+    "gained_true_labels": [],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {},
+    "denominator_unchanged": true,
+    "files": 2344,
+    "positive_labels": 1572
+  }
+}

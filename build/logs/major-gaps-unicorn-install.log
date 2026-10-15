@@ -1,0 +1,9 @@
+Collecting unicorn==2.1.4
+  Downloading unicorn-2.1.4-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Downloading unicorn-2.1.4-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.4/16.4 MB 9.5 MB/s  0:00:02
+Installing collected packages: unicorn
+Successfully installed unicorn-2.1.4
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: /var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python -m pip install --upgrade pip

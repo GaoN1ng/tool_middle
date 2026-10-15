@@ -132,8 +132,15 @@ def scan(path, kind="auto", options=None, *, budget=None, depth=0, firmware_cont
             remaining = max(.001, options.timeout - (time.monotonic() - budget.started))
             run_engine(report,'guomi',lambda: scan_binary(path,report,remaining))
             from .guomi.binary_semantics import scan_binary_semantics
-            remaining = max(.001, options.timeout - (time.monotonic() - budget.started))
+            # The last large lifting pass uses a soft deadline, checked at
+            # bounded instruction/path intervals. Leave time for its final
+            # summaries, optional-stage dispatch and report serialization.
+            reserve=min(2,options.timeout/10)
+            remaining = max(.001, options.timeout - (time.monotonic() - budget.started) - reserve)
             run_engine(report,'guomi_semantic',lambda: scan_binary_semantics(path,report,remaining))
+            from .semantic_probes import scan_probes
+            remaining = max(.001, options.timeout - (time.monotonic() - budget.started))
+            run_engine(report,'semantic_probes',lambda: scan_probes(path,report,remaining))
             from .operations import reconcile_shared_sha1
             reconcile_shared_sha1(report)
         elif kind == "firmware":

@@ -1,0 +1,71 @@
+libgcrypt libgcrypt-sm4 findings [] []
+tables {'ck': 'ck'} limits [] events {'constant': 1057, 'add': 145, 'and': 48, 'xor': 49, 'table_read': 4}
+elapsed 0.10184027021750808
+wolfsm wolfsm-sm4 findings [] []
+tables {'sm4_ck': 'ck', 'sm4_sbox': 'sbox', 'sm4_sbox_0': 'block_table', 'sm4_sbox_1': 'block_table', 'sm4_sbox_2': 'block_table', 'sm4_sbox_3': 'block_table'} limits [] events {'constant': 273, 'table_read': 23, 'and': 14, 'xor': 50, 'add': 31}
+elapsed 0.04898115899413824
+openssl openssl-sha256 findings [] []
+tables {'K256': 'sha256_k'} limits [] events {'constant': 226, 'iv_store': 16, 'xor': 50, 'add': 86, 'and': 48, 'table_read': 42}
+elapsed 0.10217231325805187
+ippcrypto ippcrypto-sha256 findings [] []
+tables {} limits [] events {}
+elapsed 7.282989099621773e-05
+bcon bcon-sha256 findings [] ['SHA-256']
+tables {'k': 'sha256_k'} limits [] events {'constant': 135, 'add': 31, 'rotate': 10, 'xor': 6, 'sha256_small1': 1, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 1, 'and': 10, 'table_read': 1, 'sha256_big0': 1, 'iv_store': 8}
+sha256_transform parseerror False events {'constant': 47, 'add': 22, 'rotate': 10, 'xor': 6, 'sha256_small1': 1, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 1, 'and': 2, 'table_read': 1, 'sha256_big0': 1} tables {'sha256_k': 1}
+elapsed 0.011597028002142906
+mbedtls mbedtls-sha256 findings [] ['SHA-256', 'SHA-256']
+tables {'K': 'sha256_k'} limits [] events {'constant': 585, 'and': 33, 'iv_store': 24, 'add': 79, 'rotate': 138, 'xor': 26, 'sha256_small1': 9, 'sha256_small0': 9, 'sha256_schedule': 9, 'table_read': 17, 'sha256_big1': 17, 'sha256_big0': 17}
+mbedtls_internal_sha256_process_c parseerror False events {'constant': 223, 'and': 26, 'rotate': 138, 'xor': 26, 'sha256_small1': 9, 'add': 61, 'sha256_small0': 9, 'sha256_schedule': 9, 'table_read': 17, 'sha256_big1': 17, 'sha256_big0': 17} tables {'sha256_k': 17}
+elapsed 0.14609934715554118
+libecc libecc-sha256 findings [] []
+tables {} limits [] events {'constant': 114, 'add': 15, 'iv_store': 24, 'and': 1}
+elapsed 0.009719595778733492
+gmssl-modern gmssl-sm4_ce findings [('SM4', 'sm4_encrypt'), ('SM4', 'sm4_encrypt_blocks')] []
+tables {'CK': 'ck'} limits [] events {'crypto_instruction': 24, 'constant': 64, 'add': 38, 'xor': 4}
+elapsed 0.009071792010217905
+openssl openssl-sm4 findings [('SM4', 'SM4_T_slow'), ('SM4', 'ossl_sm4_encrypt'), ('SM4', 'ossl_sm4_decrypt')] []
+tables {'SM4_S': 'sbox', 'SM4_SBOX_T0': 'block_table', 'SM4_SBOX_T1': 'block_table', 'SM4_SBOX_T2': 'block_table', 'SM4_SBOX_T3': 'block_table', 'CK': 'ck'} limits [] events {'constant': 292, 'add': 28, 'and': 42, 'table_read': 34, 'rotate': 30, 'xor': 49, 'sm4_l': 5, 'sm4_key_l': 13}
+SM4_T_slow parseerror False events {'constant': 12, 'and': 1, 'table_read': 1, 'rotate': 4, 'xor': 4, 'sm4_l': 1} tables {'sbox': 1}
+SM4_key_sub parseerror False events {'constant': 10, 'and': 1, 'table_read': 1, 'rotate': 2, 'xor': 2, 'sm4_key_l': 1} tables {'sbox': 1}
+ossl_sm4_set_key parseerror False events {'constant': 98, 'add': 11, 'xor': 24, 'table_read': 8, 'and': 4, 'rotate': 8, 'sm4_key_l': 12} tables {'ck': 4, 'sbox': 4}
+ossl_sm4_encrypt parseerror False events {'constant': 72, 'add': 7, 'xor': 8, 'and': 12, 'table_read': 8, 'rotate': 8, 'sm4_l': 2} tables {'sbox': 2, 'block_table': 6}
+ossl_sm4_decrypt parseerror False events {'constant': 72, 'add': 7, 'xor': 8, 'and': 12, 'table_read': 8, 'rotate': 8, 'sm4_l': 2} tables {'sbox': 2, 'block_table': 6}
+elapsed 0.0736446650698781
+gmssl-modern gmssl-sm4_avx2 findings [] []
+tables {'CK': 'ck', 'S': 'sbox', 'SM4_T': 'block_table'} limits [] events {'constant': 376, 'xor': 27, 'add': 99, 'table_read': 5, 'and': 3}
+elapsed 0.16461363714188337
+boringssl boringssl-sha256 findings [] []
+tables {'K256': 'sha256_k'} limits [] events {'constant': 83, 'iv_store': 8, 'add': 58, 'xor': 24, 'and': 24, 'table_read': 24}
+elapsed 0.06891592498868704
+gmssl-modern gmssl-modern-sm4 findings [] []
+tables {'CK': 'ck', 'S': 'sbox', 'T0': 'block_table', 'T1': 'block_table', 'T2': 'block_table', 'T3': 'block_table'} limits [] events {'constant': 371, 'xor': 235, 'add': 87, 'table_read': 197, 'and': 195}
+elapsed 0.11817271215841174
+ippcrypto ippcrypto-sm4 findings [] []
+tables {} limits [] events {'constant': 22, 'add': 15, 'xor': 4}
+elapsed 0.0014841780066490173
+arduinolibs arduinolibs-sha256 findings [] []
+tables {'k': 'sha256_k'} limits [] events {'constant': 116, 'iv_store': 8, 'add': 39, 'xor': 18, 'and': 10}
+elapsed 0.007162882015109062
+bearssl bearssl-sha2small findings [] ['SHA-256']
+tables {'br_sha256_IV': 'sha256_iv', 'K': 'sha256_k'} limits [] events {'constant': 155, 'rotate': 52, 'xor': 10, 'sha256_small1': 1, 'add': 46, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 8, 'and': 12, 'table_read': 9, 'sha256_big0': 8}
+br_sha2small_round parseerror False events {'constant': 105, 'rotate': 52, 'xor': 10, 'sha256_small1': 1, 'add': 37, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 8, 'and': 8, 'table_read': 8, 'sha256_big0': 8} tables {'sha256_k': 8}
+elapsed 0.032991557847708464
+authored-equation-controls split-word-rounds findings [('SM4', 'block')] []
+tables {'box': 'sbox', 'constants': 'ck'} limits [] events {'constant': 64, 'table_read': 7, 'and': 5, 'rotate': 12, 'xor': 20, 'sm4_l': 5, 'sm4_key_l': 6}
+linear parseerror False events {'constant': 5, 'rotate': 4, 'xor': 4, 'sm4_l': 1} tables {}
+keymap parseerror False events {'constant': 3, 'rotate': 2, 'xor': 2, 'sm4_key_l': 1} tables {}
+keys parseerror False events {'constant': 22, 'xor': 9, 'table_read': 2, 'and': 1, 'rotate': 2, 'sm4_key_l': 5} tables {'ck': 1, 'sbox': 1}
+block parseerror False events {'constant': 24, 'xor': 5, 'table_read': 1, 'and': 1, 'rotate': 4, 'sm4_l': 4} tables {'sbox': 1}
+elapsed 0.00414802972227335
+tinyssh tinyssh-crypto_hash_sha256 findings [] ['SHA-256']
+tables {'K': 'sha256_k', 'h': 'sha256_iv'} limits [] events {'constant': 74, 'add': 17, 'rotate': 10, 'xor': 6, 'sha256_small1': 1, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 1, 'and': 3, 'table_read': 2, 'sha256_big0': 1}
+blocks parseerror False events {'constant': 51, 'add': 14, 'rotate': 10, 'xor': 6, 'sha256_small1': 1, 'sha256_small0': 1, 'sha256_schedule': 1, 'sha256_big1': 1, 'and': 2, 'table_read': 1, 'sha256_big0': 1} tables {'sha256_k': 1}
+elapsed 0.0060230279341340065
+gmssl-modern gmssl-sm4_aesni findings [] []
+tables {'CK': 'ck', 'S': 'sbox'} limits [] events {'constant': 91, 'xor': 27, 'add': 20, 'table_read': 5, 'and': 3}
+elapsed 0.006311737932264805
+mhash mhash-sha256_sha224 findings [] []
+tables {'K': 'sha256_k', 'H0': 'sha256_iv'} limits [] events {'constant': 150, 'rotate': 208, 'xor': 40, 'sha256_big1': 24, 'add': 62, 'and': 45, 'sha256_big0': 24, 'sha256_small1': 16, 'sha256_small0': 16, 'sha256_schedule': 16}
+sha256_sha224_transform parseerror True events {'constant': 93, 'rotate': 208, 'xor': 40, 'sha256_big1': 24, 'add': 53, 'and': 40, 'sha256_big0': 24, 'sha256_small1': 16, 'sha256_small0': 16, 'sha256_schedule': 16} tables {}
+elapsed 0.07737352885305882

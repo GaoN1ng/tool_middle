@@ -1,0 +1,72 @@
+[
+  {
+    "module": "test_compression_probes",
+    "exit_code": 0,
+    "tests": 2,
+    "seconds": 0.1717957817018032,
+    "log": "build/logs/major-gaps-regression-release/test_compression_probes.log"
+  },
+  {
+    "module": "test_controlflow_primitives",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 65.07529999502003,
+    "log": "build/logs/major-gaps-regression-release/test_controlflow_primitives.log"
+  },
+  {
+    "module": "test_guomi_operations",
+    "exit_code": 0,
+    "tests": 8,
+    "seconds": 0.2752100042998791,
+    "log": "build/logs/major-gaps-regression-release/test_guomi_operations.log"
+  },
+  {
+    "module": "test_bound_static_state",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 81.7437527962029,
+    "log": "build/logs/major-gaps-regression-release/test_bound_static_state.log"
+  },
+  {
+    "module": "test_linux_runtime",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 4.671033155173063,
+    "log": "build/logs/major-gaps-regression-release/test_linux_runtime.log"
+  },
+  {
+    "module": "test_major_gaps",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 0.3144611590541899,
+    "log": "build/logs/major-gaps-regression-release/test_major_gaps.log"
+  },
+  {
+    "module": "test_message_schedules",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.27672004979103804,
+    "log": "build/logs/major-gaps-regression-release/test_message_schedules.log"
+  },
+  {
+    "module": "test_mips_controlflow",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 0.2311057597398758,
+    "log": "build/logs/major-gaps-regression-release/test_mips_controlflow.log"
+  },
+  {
+    "module": "test_ml_features",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.17756218696013093,
+    "log": "build/logs/major-gaps-regression-release/test_ml_features.log"
+  },
+  {
+    "module": "test_ml_learning",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 1.3695020321756601,
+    "log": "build/logs/major-gaps-regression-release/test_ml_learning.log"
+  }
+]

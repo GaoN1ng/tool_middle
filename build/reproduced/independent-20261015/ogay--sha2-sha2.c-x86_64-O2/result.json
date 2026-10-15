@@ -1,0 +1,25 @@
+{
+  "id": "ogay--sha2-sha2.c-x86_64-O2",
+  "command": [
+    "/var/home/gzn/ourtask/quantum-crypto-scanner/.venv-qcs/lib/python3.12/site-packages/ziglang/zig",
+    "cc",
+    "-target",
+    "x86_64-linux-musl",
+    "-O2",
+    "-shared",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "-nostdlib",
+    "-Wl,--no-gc-sections",
+    "-lc",
+    "-s",
+    "-std=c99",
+    "/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/ogay--sha2/sha2.c",
+    "-o",
+    "/var/home/gzn/ourtask/ustc_tool_middle/build/reproduced/independent-20261015/ogay--sha2-sha2.c-x86_64-O2/ordinary.so"
+  ],
+  "exit_code": 0,
+  "expected_sha256": "64a8f86336e123b45dc15282d5163dbb35c7eaf0336fdeb499a2f3d5f6ccc02b",
+  "actual_sha256": "64a8f86336e123b45dc15282d5163dbb35c7eaf0336fdeb499a2f3d5f6ccc02b",
+  "target_executed": false
+}

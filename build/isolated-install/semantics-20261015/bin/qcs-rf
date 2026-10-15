@@ -1,0 +1,7 @@
+#!/var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python
+import sys
+from qcs_ml.rf import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())

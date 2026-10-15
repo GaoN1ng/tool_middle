@@ -1,0 +1,4 @@
+test_ecdh_requires_peer_point_and_related_coordinate_output (test_operations.OperationsTests.test_ecdh_requires_peer_point_and_related_coordinate_output) ... ok
+test_ecdsa_equation_requires_nonce_point_coordinate_and_order (test_operations.OperationsTests.test_ecdsa_equation_requires_nonce_point_coordinate_and_order) ... ok
+test_macro_round_definitions_are_lexical (test_operations.OperationsTests.test_macro_round_definitions_are_lexical) ... ok
+test_neutral_binary_and_mutations (test_operations.OperationsTests.test_neutral_binary_and_mutations) ... 

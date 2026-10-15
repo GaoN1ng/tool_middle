@@ -1,0 +1,20 @@
+invariant 0x18e38 addu $at, $v0, $t9 addr {'v0': 363920, 'at': 465840} Kspill None
+invariant 0x18e3c sw $at, 0x12f4($fp) addr {'v0': 363920, 'at': 465840} Kspill None
+invariant 0x193b4 lw $at, 0x12f4($fp) addr {'v1': 0, 'at': 465840} Kspill None
+invariant 0x193cc lw $at, -0x7fe8($at) addr {'v1': 0, 'v0': 0, 'at': 0} Kspill None
+invariant 0x193d0 addiu $at, $at, 0x38c addr {'v1': 0, 'v0': 0, 'at': 908} Kspill None
+invariant 0x193d4 sw $at, 0x1360($fp) addr {'v1': 0, 'v0': 0, 'at': 908} Kspill 908
+invariant 0x19408 lw $at, 0x1368($fp) addr {'v1': 0, 'v0': 16} Kspill 908
+invariant 0x19408 lw $at, 0x1368($fp) addr {'v0': 16} Kspill None
+invariant 0x18e38 addu $at, $v0, $t9 addr {'v0': 363920, 'at': 465840} Kspill None
+invariant 0x18e3c sw $at, 0x12f4($fp) addr {'v0': 363920, 'at': 465840} Kspill None
+invariant 0x193b4 lw $at, 0x12f4($fp) addr {'v1': 0, 'at': 465840} Kspill None
+invariant 0x193cc lw $at, -0x7fe8($at) addr {'v1': 0, 'v0': 0, 'at': 0} Kspill None
+invariant 0x193d0 addiu $at, $at, 0x38c addr {'v1': 0, 'v0': 0, 'at': 908} Kspill None
+invariant 0x193d4 sw $at, 0x1360($fp) addr {'v1': 0, 'v0': 0, 'at': 908} Kspill 908
+invariant 0x19408 lw $at, 0x1368($fp) addr {'v0': 16} Kspill None
+{'status': 'completed', 'steps': 50270, 'blocks': 1901, 'loop_edges': 4, 'joins': 3861, 'widened_blocks': 0, 'entry_count': 1, 'declined_transfers': 0, 'replayed_blocks': 1901, 'unstable_reachable_blocks': 0, 'fixed_point_steps': 33675, 'component_count': 1, 'limited_components': 0, 'step_budget_per_component_per_phase': 80000, 'total_step_budget': 1000000}
+prefix 0x19408 lw $at, 0x1368($fp) addr {'v1': 0, 'v0': 16} Kspill 908
+prefix 0x19408 lw $at, 0x1368($fp) addr {'v1': 0, 'v0': 16} Kspill 908
+{'status': 'completed', 'steps': 31666, 'blocks': 1901, 'loop_edges': 0, 'joins': 901, 'widened_blocks': 0, 'entry_count': 1, 'declined_transfers': 0, 'replayed_blocks': 1832, 'unstable_reachable_blocks': 0, 'fixed_point_steps': 15833, 'component_count': 69, 'limited_components': 0, 'step_budget_per_component_per_phase': 80000, 'total_step_budget': 1000000}
+[(103924, 'table_read', 'sha256_k'), (104972, 'table_read', 'sha256_k'), (106028, 'table_read', 'sha256_k'), (107084, 'table_read', 'sha256_k'), (108140, 'table_read', 'sha256_k'), (109196, 'table_read', 'sha256_k'), (110252, 'table_read', 'sha256_k'), (111308, 'table_read', 'sha256_k')]

@@ -1,0 +1,33 @@
+-- SPDX-License-Identifier: BSD-3-Clause
+--
+-- Copyright (C) 2010 IETF Trust and the persons identified as authors
+-- of the code
+--
+-- https://www.rfc-editor.org/rfc/rfc5958#section-2
+--
+-- This is the unencrypted variant
+--
+PrivateKeyInfo ::= SEQUENCE {
+	version			Version,
+	privateKeyAlgorithm	PrivateKeyAlgorithmIdentifier,
+	privateKey		PrivateKey,
+	attributes		[0] IMPLICIT Attributes OPTIONAL,
+	publicKey		[1] IMPLICIT PublicKey OPTIONAL
+}
+
+Version ::= INTEGER  ({ lc_pkcs8_note_version })
+
+PrivateKeyAlgorithmIdentifier ::= AlgorithmIdentifier ({ lc_pkcs8_note_algo })
+
+PrivateKey ::= OCTET STRING ({ lc_pkcs8_note_key })
+
+Attributes ::= SET OF Attribute
+
+Attribute ::= ANY
+
+PublicKey ::= ANY
+
+AlgorithmIdentifier ::= SEQUENCE {
+	algorithm   OBJECT IDENTIFIER ({ lc_pkcs8_note_OID }),
+	parameters  ANY OPTIONAL
+}

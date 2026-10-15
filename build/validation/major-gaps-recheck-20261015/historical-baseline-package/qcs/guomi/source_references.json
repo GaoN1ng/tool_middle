@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "references": [
+    {
+      "source": {
+        "path": "quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm3.c",
+        "url": "https://github.com/guanzhi/GmSSL/blob/24ae482701a7b124826c382fffc55c19f76d475d/src/sm3.c",
+        "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+        "sha256": "b10d23bf2668b4362fb0fc188d831262300b4b80629926f979ea7b85c88911cc",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "sm3_compress_blocks": [
+          "SM3"
+        ],
+        "sm3_finish": [
+          "SM3"
+        ],
+        "sm3_init": [
+          "SM3"
+        ],
+        "sm3_update": [
+          "SM3"
+        ]
+      },
+      "definition_offsets": {
+        "sm3_compress_blocks": [
+          1556,
+          3943
+        ],
+        "sm3_finish": [
+          8029
+        ],
+        "sm3_init": [
+          6944
+        ],
+        "sm3_update": [
+          7248
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm4.c",
+        "url": "https://github.com/guanzhi/GmSSL/blob/24ae482701a7b124826c382fffc55c19f76d475d/src/sm4.c",
+        "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+        "sha256": "99c1fff1664ce07fc41bb9fad831cd72ad084c2ced578137d9c04d38e3f595a8",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "sm4_encrypt": [
+          "SM4"
+        ],
+        "sm4_encrypt_blocks": [
+          "SM4"
+        ],
+        "sm4_set_decrypt_key": [
+          "SM4"
+        ],
+        "sm4_set_encrypt_key": [
+          "SM4"
+        ]
+      },
+      "definition_offsets": {
+        "sm4_encrypt": [
+          3649,
+          18893
+        ],
+        "sm4_encrypt_blocks": [
+          4103,
+          20293
+        ],
+        "sm4_set_decrypt_key": [
+          3193
+        ],
+        "sm4_set_encrypt_key": [
+          2769
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_sign.c",
+        "url": "https://github.com/guanzhi/GmSSL/blob/24ae482701a7b124826c382fffc55c19f76d475d/src/sm2_sign.c",
+        "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+        "sha256": "2cb03227c8fed440e2586d2cdb352470c26dbef02ac3f56b6069b047504d5da8",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "sm2_do_sign": [
+          "SM2"
+        ],
+        "sm2_do_verify": [
+          "SM2"
+        ]
+      },
+      "definition_offsets": {
+        "sm2_do_sign": [
+          470
+        ],
+        "sm2_do_verify": [
+          6224
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "quantum-crypto-scanner/artifacts/guomi-integration-20261012/upstream/gmssl/src/sm2_enc.c",
+        "url": "https://github.com/guanzhi/GmSSL/blob/24ae482701a7b124826c382fffc55c19f76d475d/src/sm2_enc.c",
+        "commit": "24ae482701a7b124826c382fffc55c19f76d475d",
+        "sha256": "a1cb9e4324eeba9dbd7e5977d66648d8b0961eb4b3abad0b5105f5d853518a54",
+        "license": "Apache-2.0"
+      },
+      "functions": {
+        "sm2_do_decrypt": [
+          "SM2"
+        ],
+        "sm2_do_encrypt": [
+          "SM2"
+        ]
+      },
+      "definition_offsets": {
+        "sm2_do_decrypt": [
+          7720
+        ],
+        "sm2_do_encrypt": [
+          4599
+        ]
+      }
+    }
+  ]
+}

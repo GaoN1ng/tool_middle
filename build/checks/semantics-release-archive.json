@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "files": 17005,
+  "verified_critical_payload_files": 15569,
+  "issues": [],
+  "archive": "build/dist/ustc_tool_middle.tar.gz",
+  "archive_bytes": 992015327,
+  "archive_sha256": "1fdac630cf5b2cdc65651d641dd4e7a7bfed73a5966b3fd7875a8d36be2ab2cf",
+  "excluded_validation_temporary_trees": true
+}

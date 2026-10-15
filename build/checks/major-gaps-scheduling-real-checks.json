@@ -1,0 +1,68 @@
+[
+  {
+    "path": "build/testing/workspace/quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/arm/gmssl-sm3-O0-small0.so",
+    "seconds": 42.46315167611465,
+    "status": "completed",
+    "predicted": [
+      "SM3"
+    ],
+    "errors": []
+  },
+  {
+    "path": "build/testing/workspace/quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/thumb/gmssl-sm3-O0-small0.so",
+    "seconds": 28.464220946189016,
+    "status": "completed",
+    "predicted": [
+      "SM3"
+    ],
+    "errors": []
+  },
+  {
+    "path": "build/testing/workspace/quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/arm/gmssl-sm4-O0-small0.so",
+    "seconds": 62.616114125121385,
+    "status": "partial",
+    "predicted": [
+      "SM4"
+    ],
+    "errors": [
+      {
+        "engine": "dispatch",
+        "code": "timeout",
+        "message": "Overall scan deadline exceeded"
+      }
+    ]
+  },
+  {
+    "path": "build/testing/workspace/quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/aarch64/gmssl-sm4-O0-small0.so",
+    "seconds": 59.2541754222475,
+    "status": "completed",
+    "predicted": [
+      "SM4"
+    ],
+    "errors": []
+  },
+  {
+    "path": "build/testing/workspace/quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/thumb/gmssl-sm4-O0-small0.so",
+    "seconds": 59.25203377613798,
+    "status": "completed",
+    "predicted": [
+      "SM4"
+    ],
+    "errors": []
+  },
+  {
+    "path": "build/testing/workspace/samples/guomi-operations-20261012/builds/bn-verify-arm-O0/sample.so",
+    "seconds": 30.034549126401544,
+    "status": "completed",
+    "predicted": [
+      "SM2"
+    ],
+    "errors": [
+      {
+        "engine": "guomi_semantic",
+        "code": "analysis_limit",
+        "message": "Local operation analysis budget exhausted"
+      }
+    ]
+  }
+]

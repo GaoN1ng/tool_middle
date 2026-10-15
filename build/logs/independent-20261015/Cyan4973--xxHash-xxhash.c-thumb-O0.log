@@ -1,0 +1,5 @@
+In file included from /var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/xxhash.c:42:
+/var/home/gzn/ourtask/ustc_tool_middle/Samples/val_set/code_samples/independent-20261015/Cyan4973--xxHash/xxhash.h:3969:5: warning: "XXH3 is highly inefficient without ARM or Thumb-2." [-W#warnings]
+ 3969 | #   warning "XXH3 is highly inefficient without ARM or Thumb-2."
+      |     ^
+1 warning generated.

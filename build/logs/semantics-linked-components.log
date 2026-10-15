@@ -1,0 +1,16 @@
+.................F...................
+======================================================================
+FAIL: test_unstable_runtime_loop_does_not_erase_an_independent_function (test_mips_controlflow.MIPSControlflowTests.test_unstable_runtime_loop_does_not_erase_an_independent_function)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_mips_controlflow.py", line 131, in test_unstable_runtime_loop_does_not_erase_an_independent_function
+    self.assertEqual(info['status'],'limited')
+AssertionError: 'completed' != 'limited'
+- completed
++ limited
+
+
+----------------------------------------------------------------------
+Ran 37 tests in 7.211s
+
+FAILED (failures=1)

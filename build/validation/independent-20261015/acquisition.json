@@ -1,0 +1,128 @@
+[
+  {
+    "repository": "ogay/sha2",
+    "commit": "b90991f90967a46d0955dc981e9e3cd53c13b061",
+    "url": "https://codeload.github.com/ogay/sha2/tar.gz/b90991f90967a46d0955dc981e9e3cd53c13b061",
+    "archive_sha256": "95cfc40f231e17f25547d74afae28c98819092e857f5dccaa04f9e58d0b6c926",
+    "archive_bytes": 10208,
+    "directory": "build/validation/independent-20261015/upstream/ogay--sha2",
+    "acquired_at": "2026-10-15T02:55:20Z"
+  },
+  {
+    "repository": "stbrumme/hash-library",
+    "commit": "d389d18112bcf7e4786ec5e8723f3658a7f433d7",
+    "url": "https://codeload.github.com/stbrumme/hash-library/tar.gz/d389d18112bcf7e4786ec5e8723f3658a7f433d7",
+    "archive_sha256": "4a1be717e5b1836c8a4af1b58de54dafc69f0f8f9ffe01fa94fc6b90aa74ae11",
+    "archive_bytes": 51695,
+    "directory": "build/validation/independent-20261015/upstream/stbrumme--hash-library",
+    "acquired_at": "2026-10-15T02:55:20Z"
+  },
+  {
+    "repository": "kmackay/micro-ecc",
+    "commit": "541b3a78026420a3e369c4c9281c396b5e531113",
+    "url": "https://codeload.github.com/kmackay/micro-ecc/tar.gz/541b3a78026420a3e369c4c9281c396b5e531113",
+    "archive_sha256": "48b36c6ae7401dd27f5b478764cad8e42ca601e4e81f9984d07ec1c7f1251329",
+    "archive_bytes": 90435,
+    "directory": "build/validation/independent-20261015/upstream/kmackay--micro-ecc",
+    "acquired_at": "2026-10-15T02:55:20Z"
+  },
+  {
+    "repository": "983/SHA-256",
+    "commit": "72f3da007ea1fdbf43b2752adb36242d61e679ca",
+    "url": "https://codeload.github.com/983/SHA-256/tar.gz/72f3da007ea1fdbf43b2752adb36242d61e679ca",
+    "archive_sha256": "cbab31f513079472186432b2cf6c73260e3ac99dd820cfcf9790b8b43f381d75",
+    "archive_bytes": 65689,
+    "directory": "build/validation/independent-20261015/upstream/983--SHA-256",
+    "acquired_at": "2026-10-15T02:55:21Z"
+  },
+  {
+    "repository": "miracl/core",
+    "commit": "a6df6733c1ad1ad0918306abd0c3983b4cd4a58c",
+    "url": "https://codeload.github.com/miracl/core/tar.gz/a6df6733c1ad1ad0918306abd0c3983b4cd4a58c",
+    "archive_sha256": "c956279b49242af5afa8ee0da8a2e81142fc13b30316b11a0615738424b3588b",
+    "archive_bytes": 3191809,
+    "directory": "build/validation/independent-20261015/upstream/miracl--core",
+    "acquired_at": "2026-10-15T02:55:22Z"
+  },
+  {
+    "repository": "BLAKE3-team/BLAKE3",
+    "commit": "f55849f89cd85083c1c9daa2c5de20766f309c00",
+    "url": "https://codeload.github.com/BLAKE3-team/BLAKE3/tar.gz/f55849f89cd85083c1c9daa2c5de20766f309c00",
+    "archive_sha256": "20e370fc76069b443181185d209dc855510ca8bfa0c910d191fddfe82db2e70d",
+    "archive_bytes": 269607,
+    "directory": "build/validation/independent-20261015/upstream/BLAKE3-team--BLAKE3",
+    "acquired_at": "2026-10-15T02:55:23Z"
+  },
+  {
+    "repository": "kokke/tiny-regex-c",
+    "commit": "f2632c6d9ed25272987471cdb8b70395c2460bdb",
+    "url": "https://codeload.github.com/kokke/tiny-regex-c/tar.gz/f2632c6d9ed25272987471cdb8b70395c2460bdb",
+    "archive_sha256": "a79fe8748a56023c800a8e7356d30fee503f3e1ba4a69aca9d892b4a8bb18fa3",
+    "archive_bytes": 53442,
+    "directory": "build/validation/independent-20261015/upstream/kokke--tiny-regex-c",
+    "acquired_at": "2026-10-15T02:55:24Z"
+  },
+  {
+    "repository": "jkuhlmann/cgltf",
+    "commit": "85cd62382dfea638278962690cf515023f33ed00",
+    "url": "https://codeload.github.com/jkuhlmann/cgltf/tar.gz/85cd62382dfea638278962690cf515023f33ed00",
+    "archive_sha256": "793aba47e4bbe7a1a4c5822313e0b187c07cdb0a610d1ff65dcbd0619e90a65b",
+    "archive_bytes": 47826,
+    "directory": "build/validation/independent-20261015/upstream/jkuhlmann--cgltf",
+    "acquired_at": "2026-10-15T02:55:24Z"
+  },
+  {
+    "repository": "rxi/ini",
+    "commit": "13a254c9e38def8924a83badfea5eda5a01b9295",
+    "url": "https://codeload.github.com/rxi/ini/tar.gz/13a254c9e38def8924a83badfea5eda5a01b9295",
+    "archive_sha256": "b234e9d930bf1623f968025fa7093ebb83db2a50afc51148511dcab6032da8fb",
+    "archive_bytes": 3679,
+    "directory": "build/validation/independent-20261015/upstream/rxi--ini",
+    "acquired_at": "2026-10-15T02:55:25Z"
+  },
+  {
+    "repository": "Cyan4973/xxHash",
+    "commit": "680bf463fa1ca0461b9a7c2dab7556e1f54cf4cf",
+    "url": "https://codeload.github.com/Cyan4973/xxHash/tar.gz/680bf463fa1ca0461b9a7c2dab7556e1f54cf4cf",
+    "archive_sha256": "ea7fac09a7a5e4fcbcc96ce72683c1ffb13c4c6cb92beec9de5a5ca703e14755",
+    "archive_bytes": 1168861,
+    "directory": "build/validation/independent-20261015/upstream/Cyan4973--xxHash",
+    "acquired_at": "2026-10-15T02:55:27Z"
+  },
+  {
+    "repository": "kerukuro/digestpp",
+    "commit": "4beae7541f5c280389898ae6e6111028852f466a",
+    "url": "https://codeload.github.com/kerukuro/digestpp/tar.gz/4beae7541f5c280389898ae6e6111028852f466a",
+    "archive_sha256": "47b68a98477a88ffb039d549b2497dfb1cb71d18f61017ed567de7bf9d75ffbe",
+    "archive_bytes": 14673958,
+    "directory": "build/validation/independent-20261015/upstream/kerukuro--digestpp",
+    "acquired_at": "2026-10-15T02:55:29Z"
+  },
+  {
+    "repository": "smuellerDD/leancrypto",
+    "commit": "e491f454baadd17b310ef5b2ced5b61d429e458c",
+    "url": "https://codeload.github.com/smuellerDD/leancrypto/tar.gz/e491f454baadd17b310ef5b2ced5b61d429e458c",
+    "archive_sha256": "cd59a0b42b09f40617740979c3cb4a8095bf8dee4a03b48f6bded81252c38fd3",
+    "archive_bytes": 52875808,
+    "directory": "build/validation/independent-20261015/upstream/smuellerDD--leancrypto",
+    "acquired_at": "2026-10-15T02:56:37Z"
+  },
+  {
+    "repository": "JuneAndGreen/sm-crypto",
+    "commit": "295e1b16f6e8dc9e788cc74fd655f5d38a65bc39",
+    "url": "https://codeload.github.com/JuneAndGreen/sm-crypto/tar.gz/295e1b16f6e8dc9e788cc74fd655f5d38a65bc39",
+    "archive_sha256": "6df751d8368fbb1f734ce74efa61db99104d648f3c15030963ff553600e33d39",
+    "archive_bytes": 1770967,
+    "directory": "build/validation/independent-20261015/upstream/JuneAndGreen--sm-crypto",
+    "acquired_at": "2026-10-15T02:57:41Z"
+  },
+  {
+    "repository": "NEWPLAN/SMx",
+    "commit": "703ba41e52d73a0a496c0d0df06aa686299e98ea",
+    "url": "https://codeload.github.com/NEWPLAN/SMx/tar.gz/703ba41e52d73a0a496c0d0df06aa686299e98ea",
+    "archive_sha256": "3f1d31ff41dc598eac45acdc0d6aa6f41151c320f67ae86d2b4cd79eede12e22",
+    "archive_bytes": 5094001,
+    "directory": "build/validation/independent-20261015/upstream/NEWPLAN--SMx",
+    "acquired_at": "2026-10-15T02:57:43Z"
+  }
+]

@@ -1,0 +1,129 @@
+################################################################################
+# AEAD implementation
+
+leancrypto-$(CONFIG_LEANCRYPTO_AEAD)					       \
+				+= ../aead/src/aead_api.o		       \
+				   leancrypto_kernel_aead_helper.o
+
+leancrypto-$(CONFIG_LEANCRYPTO_SYMHMAC_CRYPT)				       \
+					+= ../aead/src/symhmac.o
+ifdef CONFIG_LEANCRYPTO_SYMHMAC_CRYPT
+ccflags-y				+= -DCONFIG_LEANCRYPTO_SYMHMAC_CRYPT
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= symhmac_test.o
+symhmac_test-y	  			+= ../aead/tests/symhmac_test.o
+endif
+
+leancrypto-$(CONFIG_LEANCRYPTO_SYMKMAC_CRYPT)				       \
+					+= ../aead/src/symkmac.o
+ifdef CONFIG_LEANCRYPTO_SYMKMAC_CRYPT
+ccflags-y				+= -DCONFIG_LEANCRYPTO_SYMKMAC_CRYPT
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= symkmac256_test.o symkmac128_test.o
+symkmac256_test-y	  		+= ../aead/tests/symkmac256_test.o
+symkmac128_test-y	  		+= ../aead/tests/symkmac128_test.o
+endif
+
+leancrypto-$(CONFIG_LEANCRYPTO_HASH_CRYPT)				       \
+					+= ../aead/src/hash_crypt.o
+ifdef CONFIG_LEANCRYPTO_HASH_CRYPT
+ccflags-y				+= -DCONFIG_LEANCRYPTO_HASH_CRYPT
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= hash_crypt_test.o
+hash_crypt_test-y 			+= ../aead/tests/hash_crypt_test.o
+endif
+
+leancrypto-$(CONFIG_LEANCRYPTO_CSHAKE_CRYPT)				       \
+					+= ../aead/src/cshake_crypt.o
+ifdef CONFIG_LEANCRYPTO_CSHAKE_CRYPT
+ccflags-y				+= -DCONFIG_LEANCRYPTO_CSHAKE_CRYPT
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= cshake_crypt_test.o
+cshake_crypt_test-y			+= ../aead/tests/cshake_crypt_test.o
+endif
+
+leancrypto-$(CONFIG_LEANCRYPTO_KMAC_CRYPT)				       \
+					+= ../aead/src/kmac_crypt.o
+ifdef CONFIG_LEANCRYPTO_KMAC_CRYPT
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= kmac_crypt_test.o
+kmac_crypt_test-y 			+= ../aead/tests/kmac_crypt_test.o
+endif
+
+################################################################################
+# AEAD implementation: Ascon and Ascon/Keccak
+ifdef CONFIG_LEANCRYPTO_ASCON_CRYPT
+ccflags-y			+= -DCONFIG_LEANCRYPTO_ASCON_CRYPT
+leancrypto-$(CONFIG_LEANCRYPTO_ASCON_CRYPT)				       \
+				+= ../aead/src/ascon.o			       \
+				   leancrypto_kernel_aead_ascon.o
+
+ifdef CONFIG_LEANCRYPTO_ASCON_HASH
+ccflags-y				+= -DLC_ASCON
+leancrypto-$(CONFIG_LEANCRYPTO_ASCON_CRYPT)				       \
+					+= ../aead/src/ascon_lightweight.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_aead_ascon_tester.o
+leancrypto_kernel_aead_ascon_tester-y	+= ../aead/tests/leancrypto_kernel_aead_ascon_tester.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= ascon_crypt_test.o
+ascon_crypt_test-y 			+= ../aead/tests/ascon_crypt_test.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_SHA3
+ccflags-y				+= -DLC_ASCON_KECCAK
+leancrypto-$(CONFIG_LEANCRYPTO_ASCON_CRYPT)				       \
+					+= ../aead/src/ascon_keccak.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= ascon_keccak_crypt_test.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= ascon_keccak_crypt_iuf_test.o
+ascon_keccak_crypt_test-y 		+= ../aead/tests/ascon_keccak_crypt_test.o
+ascon_keccak_crypt_iuf_test-y 		+= ../aead/tests/ascon_keccak_crypt_iuf_test.o
+endif
+
+endif
+
+################################################################################
+# AEAD implementation: ChaCha20 Poly1305
+
+ifdef CONFIG_LEANCRYPTO_CHACHA20_POLY1305
+ccflags-y			+= -DCONFIG_LEANCRYPTO_CHACHA20_POLY1305
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20_POLY1305)			       \
+				+= ../aead/src/chacha20poly1305.o	       \
+				   ../hash/src/poly1305.o		       \
+				   leancrypto_kernel_chacha20_poly1305.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_chacha20_poly1305_tester.o
+leancrypto_kernel_chacha20_poly1305_tester-y	+=			       \
+				   ../aead/tests/leancrypto_kernel_chacha20_poly1305_tester.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= chacha20poly1305_tester.o
+chacha20poly1305_tester-y		+= ../aead/tests/chacha20poly1305_tester.o
+
+endif
+
+################################################################################
+# AEAD implementation: AES GCM
+
+ifdef CONFIG_LEANCRYPTO_AES_GCM
+ccflags-y			+= -DCONFIG_LEANCRYPTO_AES_GCM
+leancrypto-$(CONFIG_LEANCRYPTO_AES_GCM)					       \
+				+= ../aead/src/gcm.o			       \
+				   leancrypto_kernel_aes_gcm.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_gcm_tester.o
+aes_gcm_tester-y			+= ../aead/tests/aes_gcm_tester.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_aes_gcm_tester.o
+leancrypto_kernel_aes_gcm_tester-y	+= ../aead/tests/leancrypto_kernel_aes_gcm_tester.o
+
+endif
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_GCM)					       \
+				+= ../aead/src/asm/X86_64/gfmul_x86_64.o       \
+				   ../aead/src/asm/X86_64/gfmul_x86_64_if.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_GCM)					       \
+				+= ../aead/src/asm/ARMv8/gfmul_neon.o	       \
+				   ../aead/src/asm/ARMv8/gfmul_neon_if.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES_GCM)					       \
+				+= ../aead/src/asm/riscv/gfmul_riscv.o	       \
+				   ../aead/src/asm/riscv/gfmul_riscv_if.o
+endif

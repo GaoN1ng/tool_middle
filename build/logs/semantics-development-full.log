@@ -1,0 +1,3 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/semantics-20261015/development-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+50/2344 files, 41.9s

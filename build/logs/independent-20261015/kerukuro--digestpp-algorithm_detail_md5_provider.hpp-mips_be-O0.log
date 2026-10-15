@@ -1,0 +1,284 @@
+ld.lld: error: relocation R_MIPS_32 cannot be used against symbol 'DW.ref.__gxx_personality_v0'; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x447F)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x4499)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x44BD)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x44DD)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x4501)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x4521)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o
+>>> referenced by md5.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/validation/independent-20261015/compile/kerukuro--digestpp-algorithm_detail_md5_provider.hpp-mips_be-O0/cache/o/376e2f3ce26c9643696955cbde343df3/md5.o:(.eh_frame+0x4541)
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x4561) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x4589) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x45AD) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x45D1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x45F5) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x461D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x4641) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x466D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x4691) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x46BD) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x46E5) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o)
+>>> referenced by cxa_exception.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/ce2abdf69bda71b0c975c285a45199ea/cxa_exception.o:(.eh_frame+0x4709) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/700b61ee9914ba0c209d9aa4f3c8e08e/cxa_handlers.o)
+>>> referenced by cxa_handlers.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/700b61ee9914ba0c209d9aa4f3c8e08e/cxa_handlers.o:(.eh_frame+0x472D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/700b61ee9914ba0c209d9aa4f3c8e08e/cxa_handlers.o)
+>>> referenced by cxa_handlers.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/700b61ee9914ba0c209d9aa4f3c8e08e/cxa_handlers.o:(.eh_frame+0x474D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/c1bd0d041be39cae6df2a4a4aeead84f/cxa_default_handlers.o)
+>>> referenced by cxa_default_handlers.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/c1bd0d041be39cae6df2a4a4aeead84f/cxa_default_handlers.o:(.eh_frame+0x4771) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x479D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x47D1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4805) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4839) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4869) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x488D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x48B1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x48D5) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x48F9) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x491D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4941) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4975) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x49A1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x49D5) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4A05) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4A39) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4A61) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4A89) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4AB9) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4AE5) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4B0D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4B39) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o)
+>>> referenced by cxa_demangle.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/d3715e004259be157550ea0f44d6601d/cxa_demangle.o:(.eh_frame+0x4B61) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7c5979ae8892ddf191508fec59d60511/cxa_personality.o)
+>>> referenced by cxa_personality.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7c5979ae8892ddf191508fec59d60511/cxa_personality.o:(.eh_frame+0x4B91) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1adeffd66676eef8b8d7de0463b059a0/fallback_malloc.o)
+>>> referenced by fallback_malloc.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1adeffd66676eef8b8d7de0463b059a0/fallback_malloc.o:(.eh_frame+0x4BC1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1adeffd66676eef8b8d7de0463b059a0/fallback_malloc.o)
+>>> referenced by fallback_malloc.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1adeffd66676eef8b8d7de0463b059a0/fallback_malloc.o:(.eh_frame+0x4BE9) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o)
+>>> referenced by stdlib_new_delete.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o:(.eh_frame+0x4C11) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o)
+>>> referenced by stdlib_new_delete.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o:(.eh_frame+0x4C35) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o)
+>>> referenced by stdlib_new_delete.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o:(.eh_frame+0x4C59) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o)
+>>> referenced by stdlib_new_delete.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/7471b08594d13dd5f1231c91bb24460c/stdlib_new_delete.o:(.eh_frame+0x4C7D) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/5c03150c76f778e95dd499916f305cc5/libc++abi.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o)
+>>> referenced by stdexcept.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o:(.eh_frame+0x4CA1) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o)
+>>> referenced by stdexcept.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o:(.eh_frame+0x4CCD) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o)
+>>> referenced by stdexcept.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o:(.eh_frame+0x4CF9) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o)
+>>> referenced by stdexcept.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o:(.eh_frame+0x4D25) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a
+
+ld.lld: error: relocation R_MIPS_32 cannot be used against local symbol; recompile with -fPIC
+>>> defined in /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a(/var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o)
+>>> referenced by stdexcept.cpp
+>>>               /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/1e3f56846373ee72477c910170ca5767/stdexcept.o:(.eh_frame+0x4D51) in archive /var/home/gzn/ourtask/ustc_tool_middle/build/cache/zig-independent-global/o/243350476efee3b459f3a17aef0c8099/libc++.a

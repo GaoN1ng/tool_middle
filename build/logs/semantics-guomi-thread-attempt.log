@@ -1,0 +1,21 @@
+test_c_apis_are_calls_not_implementations (test_guomi.GuomiTests.test_c_apis_are_calls_not_implementations) ... ok
+test_c_decoys_and_generic_curve_are_not_promoted (test_guomi.GuomiTests.test_c_decoys_and_generic_curve_are_not_promoted) ... ok
+test_constants_and_function_bytes_in_data_are_not_implementations (test_guomi.GuomiTests.test_constants_and_function_bytes_in_data_are_not_implementations) ... ok
+test_explicit_openssl_guomi_selectors (test_guomi.GuomiTests.test_explicit_openssl_guomi_selectors) ... ok
+test_javascript_false_positive_boundaries (test_guomi.GuomiTests.test_javascript_false_positive_boundaries) ... ok
+test_javascript_import_aliases_and_normal_sm3_calls (test_guomi.GuomiTests.test_javascript_import_aliases_and_normal_sm3_calls) ... ok
+test_javascript_invalid_encoding_is_partial (test_guomi.GuomiTests.test_javascript_invalid_encoding_is_partial) ... ok
+test_javascript_parse_errors_are_partial (test_guomi.GuomiTests.test_javascript_parse_errors_are_partial) ... ok
+test_pinned_source_recognized_after_rename_but_modified_bytes_not_approved (test_guomi.GuomiTests.test_pinned_source_recognized_after_rename_but_modified_bytes_not_approved) ... ok
+test_referenced_sm4_table_bytes_must_match (test_guomi.GuomiTests.test_referenced_sm4_table_bytes_must_match) ... ok
+test_required_operation_role_cannot_be_removed (test_guomi.GuomiTests.test_required_operation_role_cannot_be_removed) ... ok
+test_sm4_table_only_elf_stays_a_clue (test_guomi.GuomiTests.test_sm4_table_only_elf_stays_a_clue) ... ok
+test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) ... 
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-O2-small0.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-O2-small1.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-Os-small0.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-Os-small1.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/aarch64/gmssl-sm3-O2-small1.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-O0-small1.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/aarch64/gmssl-sm3-O2-small0.so') ... FAIL
+  test_stripped_relinked_operations_across_six_architectures (test_guomi.GuomiTests.test_stripped_relinked_operations_across_six_architectures) (path='quantum-crypto-scanner/artifacts/guomi-integration-20261012/verification/relinked/x86_64/gmssl-sm3-O0-small0.so') ... FAIL

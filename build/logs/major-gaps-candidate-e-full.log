@@ -1,0 +1,12 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/major-gaps-20261015/candidate-e-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+50/2344 files, 30.7s
+100/2344 files, 49.7s
+150/2344 files, 73.2s
+200/2344 files, 95.8s
+250/2344 files, 110.9s
+300/2344 files, 135.9s
+350/2344 files, 159.9s
+400/2344 files, 174.1s
+450/2344 files, 199.2s
+500/2344 files, 226.3s

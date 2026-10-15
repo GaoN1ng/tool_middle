@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "basis": "Team Semgrep API list audited against pinned GmSSL headers; OpenSSL explicit constructors/selectors. Names are exact; generic EC, BN, encrypt and sm2_z256 helpers do not prove SM2 operations.",
+  "apis": {
+    "SM2": ["sm2_key_generate", "sm2_sign", "sm2_verify", "sm2_sign_init", "sm2_sign_update", "sm2_sign_finish", "sm2_verify_init", "sm2_verify_update", "sm2_verify_finish", "sm2_encrypt", "sm2_decrypt", "sm2_do_sign", "sm2_do_verify", "sm2_do_encrypt", "sm2_do_decrypt"],
+    "SM3": ["sm3_init", "sm3_update", "sm3_finish", "sm3_digest", "sm3_hmac_init", "sm3_hmac_update", "sm3_hmac_finish", "sm3_hmac", "sm3_compress_blocks", "EVP_sm3"],
+    "SM4": ["sm4_set_encrypt_key", "sm4_set_decrypt_key", "sm4_encrypt", "sm4_encrypt_blocks", "sm4_cbc_encrypt", "sm4_cbc_decrypt", "sm4_ctr_encrypt", "sm4_cbc_encrypt_blocks", "sm4_cbc_decrypt_blocks", "sm4_ctr_encrypt_blocks", "sm4_gcm_encrypt", "sm4_gcm_decrypt", "EVP_sm4_ecb", "EVP_sm4_cbc", "EVP_sm4_cfb128", "EVP_sm4_ofb", "EVP_sm4_ctr"]
+  },
+  "js_library": "sm-crypto",
+  "js_operations": {
+    "sm2": ["doEncrypt", "doDecrypt", "doSignature", "doVerifySignature", "generateKeyPairHex"],
+    "sm3": [""],
+    "sm4": ["encrypt", "decrypt"]
+  }
+}

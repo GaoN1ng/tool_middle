@@ -1,0 +1,10 @@
+test_decoded_byte_load_matches_the_cached_array_cell (test_sm4_table_rounds.SM4TableRoundTests.test_decoded_byte_load_matches_the_cached_array_cell) ... ok
+test_exact_four_bytes_and_negative_relations (test_sm4_table_rounds.SM4TableRoundTests.test_exact_four_bytes_and_negative_relations) ... ok
+test_four_table_maps_keep_exact_positions (test_sm4_table_rounds.SM4TableRoundTests.test_four_table_maps_keep_exact_positions) ... ok
+test_pointer_spill_restores_only_pointer_width (test_sm4_table_rounds.SM4TableRoundTests.test_pointer_spill_restores_only_pointer_width) ... ok
+test_source_preexpanded_rounds_and_inert_table (test_sm4_table_rounds.SM4TableRoundTests.test_source_preexpanded_rounds_and_inert_table) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.530s
+
+OK

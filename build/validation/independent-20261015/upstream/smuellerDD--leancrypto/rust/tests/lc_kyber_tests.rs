@@ -1,0 +1,73 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+use leancrypto_sys::lcr_kyber::lcr_kyber;
+use leancrypto_sys::lcr_kyber::lcr_kyber_type;
+
+fn lc_rust_kyber_one(kyber_type: lcr_kyber_type) {
+    let mut kyber = lcr_kyber::new();
+
+    let result = kyber.keypair(kyber_type);
+    assert_eq!(result, Ok(()));
+
+    let result = kyber.encapsulate();
+    assert_eq!(result, Ok(()));
+
+    let ct_slice = kyber.get_ct().expect("get_ct");
+    let ct = ct_slice.to_vec();
+    let sk = Vec::from(kyber.get_sk().expect("get_sk").get_ref());
+
+    let mut kyber2 = lcr_kyber::new();
+    let result = kyber2.sk_load(&sk);
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber.get_sk().expect("get_sk").get_ref(),
+        kyber2.get_sk().expect("get_sk").get_ref()
+    );
+
+    let result = kyber2.ct_load(&ct);
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber.get_ct().expect("get_ct"),
+        kyber2.get_ct().expect("get_ct")
+    );
+
+    let result = kyber2.decapsulate();
+    assert_eq!(result, Ok(()));
+    assert_eq!(
+        kyber.get_ss().expect("get_ss").get_ref(),
+        kyber2.get_ss().expect("get_ss").get_ref()
+    );
+    //println!("ct {:x?}",  kyber2.ct().to_vec().chunks(10).next());
+}
+
+#[test]
+fn lc_rust_kyber_512() {
+    lc_rust_kyber_one(lcr_kyber_type::lcr_kyber_512);
+}
+
+#[test]
+fn lc_rust_kyber_768() {
+    lc_rust_kyber_one(lcr_kyber_type::lcr_kyber_768);
+}
+
+#[test]
+fn lc_rust_kyber_1024() {
+    lc_rust_kyber_one(lcr_kyber_type::lcr_kyber_1024);
+}

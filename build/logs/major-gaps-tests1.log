@@ -1,0 +1,30 @@
+test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store (test_major_gaps.MajorGapTests.test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store) ... ok
+test_imported_copy_only_invalidates_its_destination (test_major_gaps.MajorGapTests.test_imported_copy_only_invalidates_its_destination) ... ok
+test_macro_array_swap_requires_both_feedback_indices_and_keystream (test_major_gaps.MajorGapTests.test_macro_array_swap_requires_both_feedback_indices_and_keystream) ... ok
+test_macro_expansion_does_not_double_apply_post_increment (test_major_gaps.MajorGapTests.test_macro_expansion_does_not_double_apply_post_increment) ... FAIL
+test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool (test_major_gaps.MajorGapTests.test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool) ... ok
+test_uncompressed_point_export_is_read_only_except_output (test_major_gaps.MajorGapTests.test_uncompressed_point_export_is_read_only_except_output) ... ok
+
+======================================================================
+FAIL: test_macro_expansion_does_not_double_apply_post_increment (test_major_gaps.MajorGapTests.test_macro_expansion_does_not_double_apply_post_increment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/home/gzn/ourtask/ustc_tool_middle/tests/test_major_gaps.py", line 32, in test_macro_expansion_does_not_double_apply_post_increment
+    self.assertEqual(value,('constant',want))
+AssertionError: Tuples differ: ('constant', 3) != ('constant', 4)
+
+First differing element 1:
+3
+4
+
+- ('constant', 3)
+?              ^
+
++ ('constant', 4)
+?              ^
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.138s
+
+FAILED (failures=1)

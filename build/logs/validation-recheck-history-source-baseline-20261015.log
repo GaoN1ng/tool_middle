@@ -1,0 +1,25 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/validation/major-gaps-recheck-20261015/historical-baseline-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+25 / 178 43.7
+50 / 178 47.1
+75 / 178 50.7
+100 / 178 60.2
+125 / 178 70.5
+150 / 178 76.9
+175 / 178 79.8
+{
+  "files": 178,
+  "micro": {
+    "TP": 10,
+    "FP": 0,
+    "FN": 81,
+    "TN": 1456,
+    "recall": 0.10989010989010989,
+    "false_negative_rate": 0.8901098901098901,
+    "precision": 1.0
+  },
+  "scan_status": {
+    "completed": 177,
+    "partial": 1
+  }
+}

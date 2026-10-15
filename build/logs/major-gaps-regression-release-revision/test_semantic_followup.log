@@ -1,0 +1,13 @@
+test_bound_iv_rejects_changed_sha256_initializer_data (test_semantic_followup.SemanticFollowupTests.test_bound_iv_rejects_changed_sha256_initializer_data) ... ok
+test_mips_hash_lifting_regression (test_semantic_followup.SemanticFollowupTests.test_mips_hash_lifting_regression) ... ok
+test_rc4_indexed_memory_on_three_isas (test_semantic_followup.SemanticFollowupTests.test_rc4_indexed_memory_on_three_isas) ... ok
+test_rc4_stream_generator_without_xor_and_bad_swaps (test_semantic_followup.SemanticFollowupTests.test_rc4_stream_generator_without_xor_and_bad_swaps) ... ok
+test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) ... 
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O0', name='bn-sign') ... FAIL
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O0', name='bn-verify') ... FAIL
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O0', name='mp_sign') ... FAIL
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O0', name='sp_sign') ... FAIL
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O2', name='bn-sign') ... FAIL
+  test_sm2_arm_aapcs_stack_and_interworking_equations (test_semantic_followup.SemanticFollowupTests.test_sm2_arm_aapcs_stack_and_interworking_equations) (arch='arm', opt='O2', name='bn-verify') ... FAIL
+test_sm2_similar_equations_and_wrong_modulus_remain_negative (test_semantic_followup.SemanticFollowupTests.test_sm2_similar_equations_and_wrong_modulus_remain_negative) ... 
+  test_sm2_similar_equations_and_wrong_modulus_remain_negative (test_semantic_followup.SemanticFollowupTests.test_sm2_similar_equations_and_wrong_modulus_remain_negative) (arch='arm', name='wrong-order') ... FAIL

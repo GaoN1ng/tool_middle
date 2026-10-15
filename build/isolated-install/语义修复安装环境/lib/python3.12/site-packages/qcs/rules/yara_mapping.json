@@ -1,0 +1,979 @@
+{
+  "version": "qcs-yara-map-1",
+  "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96",
+  "rules": {
+    "RijnDael_AES": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDael_AES_CHAR": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_rev_mixcolumn": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_rev_sbox": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_rcon": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_rcon_32bit": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TE1": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TE2": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TE3": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TE4": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TD1": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TD2": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TD3": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_TD4": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_logtable": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "RijnDeal_AES_antilogtable": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_common.yar"
+    },
+    "AES_bytecode_openssl_x64": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_x64.yar"
+    },
+    "AES_bytecode_AESNI_x64": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_x64.yar"
+    },
+    "AES_openssl_vpaes_x64": {
+      "algorithm": "AES",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "aes/aes_x64.yar"
+    },
+    "BASE64_table": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_common.yar"
+    },
+    "BASE64_decoding_table": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_common.yar"
+    },
+    "BASE64_url_table": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_common.yar"
+    },
+    "BASE64_url_decoding_table": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Reviewed algorithm-specific table/constants; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_common.yar"
+    },
+    "BASE64_bytecode_encode_x64": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_x64.yar"
+    },
+    "BASE64_bytecode_decode_x64": {
+      "algorithm": "Base64",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "base64/base64_x64.yar"
+    },
+    "Chacha_128_constant": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8",
+        "Salsa20"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "expand 16/32-byte constants are shared with Salsa and do not encode round count",
+      "confidence": "low",
+      "source_file": "chacha/chacha_common.yar"
+    },
+    "Chacha_256_constant": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8",
+        "Salsa20"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "expand 16/32-byte constants are shared with Salsa and do not encode round count",
+      "confidence": "low",
+      "source_file": "chacha/chacha_common.yar"
+    },
+    "Chacha_128_constant_32bit": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8",
+        "Salsa20"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "expand 16/32-byte constants are shared with Salsa and do not encode round count",
+      "confidence": "low",
+      "source_file": "chacha/chacha_common.yar"
+    },
+    "Chacha_256_constant_32bit": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8",
+        "Salsa20"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "expand 16/32-byte constants are shared with Salsa and do not encode round count",
+      "confidence": "low",
+      "source_file": "chacha/chacha_common.yar"
+    },
+    "Chacha_rol_x64": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "ChaCha quarter-round rotations do not establish twenty rounds",
+      "confidence": "low",
+      "source_file": "chacha/chacha_x64.yar"
+    },
+    "ChaCha_rol_x64_openssl_SSE3": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "ChaCha quarter-round rotations do not establish twenty rounds",
+      "confidence": "low",
+      "source_file": "chacha/chacha_x64.yar"
+    },
+    "ChaCha_rol_x64_openssl_8x": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "ChaCha quarter-round rotations do not establish twenty rounds",
+      "confidence": "low",
+      "source_file": "chacha/chacha_x64.yar"
+    },
+    "ChaCha_rol_x64_openssl_AVX512": {
+      "algorithm": null,
+      "candidates": [
+        "ChaCha20",
+        "ChaCha12",
+        "ChaCha8"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "ChaCha quarter-round rotations do not establish twenty rounds",
+      "confidence": "low",
+      "source_file": "chacha/chacha_x64.yar"
+    },
+    "DES_ip": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_fp": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_E": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_P": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_1": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_2": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_3": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_4": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_5": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_6": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_7": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_Sbox_8": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_PC1": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_PC2": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox1": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox2": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox3": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox4": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox5": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox6": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox7": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_SPbox8": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_common.yar"
+    },
+    "DES_bytecode_openssl_x64": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_x64.yar"
+    },
+    "DES_bytecode_openssl_x64_2": {
+      "algorithm": null,
+      "candidates": [
+        "DES",
+        "3DES"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "DES primitive is shared by single and triple DES; cannot distinguish from these signatures",
+      "confidence": "low",
+      "source_file": "des/des_x64.yar"
+    },
+    "MD5_Constants": {
+      "algorithm": "MD5",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Requires an MD5 round-2 constant as well as upstream condition; IVs alone are shared",
+      "confidence": "medium",
+      "source_file": "md5/md5_common.yar",
+      "required_any_identifier": [
+        "$c8",
+        "$c9"
+      ],
+      "fallback_candidates": [
+        "MD4",
+        "MD5",
+        "SHA-1"
+      ]
+    },
+    "MD5_bytecode_x64": {
+      "algorithm": "MD5",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "md5/md5_x64.yar"
+    },
+    "MD5_bytecode_x64_openssl": {
+      "algorithm": "MD5",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "md5/md5_x64.yar"
+    },
+    "RC4_optimized": {
+      "algorithm": null,
+      "candidates": [
+        "RC4"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Short ascending byte sequences may occur in ordinary data; insufficient to identify RC4",
+      "confidence": "low",
+      "source_file": "rc4/rc4_common.yar"
+    },
+    "rc4_ksa": {
+      "algorithm": null,
+      "candidates": [
+        "RC4"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Only cmp 255/256 or byte increment/branch instructions; generic loops are insufficient to identify RC4",
+      "confidence": "low",
+      "source_file": "rc4/rc4_x64.yar"
+    },
+    "rc4_ksa_x64_2": {
+      "algorithm": null,
+      "candidates": [
+        "RC4"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Only cmp 255/256 or byte increment/branch instructions; generic loops are insufficient to identify RC4",
+      "confidence": "low",
+      "source_file": "rc4/rc4_x64.yar"
+    },
+    "rc4_ksa_openssl_x64": {
+      "algorithm": null,
+      "candidates": [
+        "RC4"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Only cmp 255/256 or byte increment/branch instructions; generic loops are insufficient to identify RC4",
+      "confidence": "low",
+      "source_file": "rc4/rc4_x64.yar"
+    },
+    "SHA1_Constants": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Requires SHA-1-specific fifth IV or final round constant; first four IVs are shared",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_common.yar",
+      "required_any_identifier": [
+        "$c4",
+        "$c9",
+        "$c10"
+      ],
+      "fallback_candidates": [
+        "MD4",
+        "MD5",
+        "SHA-1"
+      ]
+    },
+    "SHA1_bytecode_x64": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_x64.yar"
+    },
+    "SHA1_bytecode_x64_intelsha1": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_x64.yar"
+    },
+    "SHA1_bytecode_x64_openssl_ssse3": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_x64.yar"
+    },
+    "SHA1_bytecode_x64_openssl_avx": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_x64.yar"
+    },
+    "SHA1_bytecode_x64_openssl_avx2": {
+      "algorithm": "SHA-1",
+      "candidates": [],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Reviewed algorithm-specific opcode pattern; static implementation clue, not runtime proof",
+      "confidence": "medium",
+      "source_file": "sha1/sha1_x64.yar"
+    },
+    "SHA512_Constants": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256",
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Five-of condition can match high words of shared SHA-2 round constants; digest variant unresolved",
+      "confidence": "low",
+      "source_file": "sha2/sha2_common.yar"
+    },
+    "SHA2_BLAKE2_IVs": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256",
+        "BLAKE2",
+        "Argon2"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Shared initial values; no concrete algorithm assignment",
+      "confidence": "low",
+      "source_file": "sha2/sha2_common.yar"
+    },
+    "SHA256_bytecode_x64": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA256_bytecode_x64_openssl": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA256_bytecode_x64_intelsha256": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA256_bytecode_x64_openssl_ssse3": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA256_bytecode_x64_openssl_avx": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA256_bytecode_x64_openssl_avx2": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-224",
+        "SHA-256"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-224 and SHA-256 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA512_bytecode_x64": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-384 and SHA-512 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA512_bytecode_x64_openssl": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-384 and SHA-512 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA512_bytecode_x64_openssl_xop": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-384 and SHA-512 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA512_bytecode_x64_openssl_avx": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-384 and SHA-512 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA512_bytecode_x64_openssl_avx2": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-384",
+        "SHA-512"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "SHA-384 and SHA-512 share the compression function",
+      "confidence": "low",
+      "source_file": "sha2/sha2_x64.yar"
+    },
+    "SHA3_constants": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-3",
+        "Keccak"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Keccak permutation/round constants do not establish SHA-3 padding or digest size",
+      "confidence": "low",
+      "source_file": "sha3/sha3_common.yar"
+    },
+    "SHA3_interleaved": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-3",
+        "Keccak"
+      ],
+      "type": "binary_constant",
+      "architecture": "any",
+      "basis": "Keccak permutation/round constants do not establish SHA-3 padding or digest size",
+      "confidence": "low",
+      "source_file": "sha3/sha3_common.yar"
+    },
+    "SHA3_bytecode_x64": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-3",
+        "Keccak"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Keccak permutation/round constants do not establish SHA-3 padding or digest size",
+      "confidence": "low",
+      "source_file": "sha3/sha3_x64.yar"
+    },
+    "SHA3_bytecode_x64_openssl": {
+      "algorithm": null,
+      "candidates": [
+        "SHA-3",
+        "Keccak"
+      ],
+      "type": "binary_instruction",
+      "architecture": "x86_64",
+      "basis": "Keccak permutation/round constants do not establish SHA-3 padding or digest size",
+      "confidence": "low",
+      "source_file": "sha3/sha3_x64.yar"
+    }
+  }
+}

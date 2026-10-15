@@ -1,0 +1,19 @@
+STORE 0x14154 input:0:r1[0] affine-x@82004:0 False
+STORE 0x14158 input:0:r1[4] affine-x@82004:1 False
+STORE 0x14288 input:0:r1[8] affine-x@82004:2 False
+STORE 0x1428c input:0:r1[12] high-bit@82420 False
+STORE 0x14318 input:0:r1[20] 0 False
+STORE 0x1431c input:0:r1[16] 0 False
+STORE 0x143a4 input:0:r1[28] 0 False
+STORE 0x143a8 input:0:r1[24] 0 True
+STORE 0x14154 input:0:r1[0] affine-x@82004:0 False
+STORE 0x14158 input:0:r1[4] affine-x@82004:1 False
+STORE 0x14288 input:0:r1[8] affine-x@82004:2 False
+STORE 0x1428c input:0:r1[12] high-bit@82420 False
+STORE 0x14318 input:0:r1[20] 0 False
+STORE 0x1431c input:0:r1[16] 0 False
+STORE 0x143a4 input:0:r1[28] 0 False
+STORE 0x143a8 input:0:r1[24] 0 True
+MATCHES []
+HELPERS [{'address': 81936, 'method': 'inferred affine x-hat helper', 'point_argument': 0, 'destination_argument': 1}]
+LIMITED [{'method': 'path-specific unwind range', 'address': 150588, 'bytes': 920, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 151820, 'bytes': 672, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 152776, 'bytes': 768, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 154016, 'bytes': 7036, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 174624, 'bytes': 1168, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 175908, 'bytes': 5224, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 183796, 'bytes': 2636, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 212520, 'bytes': 2892, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 217416, 'bytes': 2240, 'explored_paths': 128, 'limited': True}]

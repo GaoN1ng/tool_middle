@@ -1,0 +1,31 @@
+test_exact_four_bytes_and_negative_relations (test_sm4_table_rounds.SM4TableRoundTests.test_exact_four_bytes_and_negative_relations) ... ok
+test_four_table_maps_keep_exact_positions (test_sm4_table_rounds.SM4TableRoundTests.test_four_table_maps_keep_exact_positions) ... ok
+test_pointer_spill_restores_only_pointer_width (test_sm4_table_rounds.SM4TableRoundTests.test_pointer_spill_restores_only_pointer_width) ... ok
+test_source_preexpanded_rounds_and_inert_table (test_sm4_table_rounds.SM4TableRoundTests.test_source_preexpanded_rounds_and_inert_table) ... ok
+test_ecdh_requires_peer_point_and_related_coordinate_output (test_operations.OperationsTests.test_ecdh_requires_peer_point_and_related_coordinate_output) ... ok
+test_ecdsa_equation_requires_nonce_point_coordinate_and_order (test_operations.OperationsTests.test_ecdsa_equation_requires_nonce_point_coordinate_and_order) ... ok
+test_macro_round_definitions_are_lexical (test_operations.OperationsTests.test_macro_round_definitions_are_lexical) ... ok
+test_neutral_binary_and_mutations (test_operations.OperationsTests.test_neutral_binary_and_mutations) ... ok
+test_quarter_round_requires_all_dependencies (test_operations.OperationsTests.test_quarter_round_requires_all_dependencies) ... ok
+test_rc4_requires_recurrence_swap_and_output (test_operations.OperationsTests.test_rc4_requires_recurrence_swap_and_output) ... ok
+test_rsa_crt_requires_shared_base_reduction_and_recombination (test_operations.OperationsTests.test_rsa_crt_requires_shared_base_reduction_and_recombination) ... ok
+test_shared_sha1_constants_remain_clues_without_operations (test_operations.OperationsTests.test_shared_sha1_constants_remain_clues_without_operations) ... ok
+test_sigma_has_exact_logical_shift (test_operations.OperationsTests.test_sigma_has_exact_logical_shift) ... ok
+test_projective_ecdh_requires_peer_normalization_and_x_output (test_message_schedules.MessageScheduleTests.test_projective_ecdh_requires_peer_normalization_and_x_output) ... ok
+test_sha1_and_sm3_exact_ring_equations (test_message_schedules.MessageScheduleTests.test_sha1_and_sm3_exact_ring_equations) ... ok
+test_sha256_ring_read_write_recurrence_and_mutations (test_message_schedules.MessageScheduleTests.test_sha256_ring_read_write_recurrence_and_mutations) ... ok
+test_unsigned_power_summary_declines_preloop_mutation (test_message_schedules.MessageScheduleTests.test_unsigned_power_summary_declines_preloop_mutation) ... ok
+test_different_inputs_real_arm_negatives (test_research_operations.ResearchOperationsTests.test_different_inputs_real_arm_negatives) ... ok
+test_full_width_bit_equivalence_and_partial_negatives (test_research_operations.ResearchOperationsTests.test_full_width_bit_equivalence_and_partial_negatives) ... ok
+test_guard_requires_terminal_trap_without_side_effects (test_research_operations.ResearchOperationsTests.test_guard_requires_terminal_trap_without_side_effects) ... ok
+test_header_only_unused_algorithm_is_not_inherited (test_research_operations.ResearchOperationsTests.test_header_only_unused_algorithm_is_not_inherited) ... ok
+test_header_scalar_helper_actual_equation (test_research_operations.ResearchOperationsTests.test_header_scalar_helper_actual_equation) ... ok
+test_local_shadowing_and_builtin_width (test_research_operations.ResearchOperationsTests.test_local_shadowing_and_builtin_width) ... ok
+test_real_compiler_guard_and_arm_forms (test_research_operations.ResearchOperationsTests.test_real_compiler_guard_and_arm_forms) ... ok
+test_reference_requires_ecdh_operation_body_not_forwarder (test_research_operations.ResearchOperationsTests.test_reference_requires_ecdh_operation_body_not_forwarder) ... ok
+test_role_tags_bind_only_the_matching_input (test_research_operations.ResearchOperationsTests.test_role_tags_bind_only_the_matching_input) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 51.567s
+
+OK

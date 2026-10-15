@@ -1,0 +1,3 @@
+{"id": "arduinolibs-curve25519-x86_64-O2", "found": [], "seconds": 0.34}
+{"id": "libmcrypt-rijndael-128-x86_64-O2", "found": [{"algorithm": "AES", "address": 37344, "setup_address": 35376, "vectors": 3, "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors", "modeled_imports": []}], "seconds": 0.35}
+{"id": "libmcrypt-des-x86_64-O2", "found": [{"algorithm": "DES", "address": 37328, "setup_address": 36144, "vectors": 3, "relation": "Key setup and in-place block transformation match three distinct standard key/plaintext/ciphertext vectors", "modeled_imports": []}], "seconds": 0.57}

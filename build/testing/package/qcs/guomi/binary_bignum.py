@@ -19,6 +19,10 @@ TRUSTED.update({'BN_bn2bin','BN_bn2binpad','mbedtls_mpi_write_binary'})
 TRUSTED.update({'nn_inc','nn_export_to_buf','fp_export_to_buf','prj_pt_unique',
                 'prj_pt_import_from_buf','prj_pt_import_from_aff_buf',
                 'ec_pub_key_import_from_aff_buf','_prj_pt_unprotected_mult'})
+from ..curve_ladder import FIELD_APIS
+TRUSTED.update(FIELD_APIS)
+from ..curve_exchange import APIS as EXCHANGE_APIS
+TRUSTED.update(EXCHANGE_APIS)
 
 
 def import_slots(path):
@@ -36,23 +40,47 @@ def import_slots(path):
                 if not index:continue
                 sym=syms.get_symbol(index)
                 if sym['st_shndx']=='SHN_UNDEF':slots[reloc['r_offset']]=sym.name
+        if elf['e_machine']=='EM_MIPS':
+            # The MIPS ABI describes global GOT slots through dynamic tags,
+            # without one relocation per imported symbol. Bind only the
+            # indexed, undefined dynamic symbol in that actual GOT layout.
+            tags={tag.entry.d_tag:tag.entry.d_val
+                  for segment in elf.iter_segments() if segment['p_type']=='PT_DYNAMIC'
+                  for tag in segment.iter_tags()}
+            required={'DT_PLTGOT','DT_MIPS_LOCAL_GOTNO','DT_MIPS_GOTSYM','DT_SYMTAB'}
+            if required<=tags.keys():
+                symbols=next((s for s in elf.iter_sections()
+                              if s['sh_type']=='SHT_DYNSYM' and s['sh_addr']==tags['DT_SYMTAB']),None)
+                first=tags['DT_MIPS_GOTSYM'];local=tags['DT_MIPS_LOCAL_GOTNO']
+                if symbols is not None and 0<=first<=symbols.num_symbols() and local<=1_000_000:
+                    width=elf.elfclass//8
+                    for i in range(first,symbols.num_symbols()):
+                        sym=symbols.get_symbol(i)
+                        address=tags['DT_PLTGOT']+(local+i-first)*width
+                        allocated=any(seg['p_type']=='PT_LOAD' and
+                                      seg['p_vaddr']<=address and address+width<=seg['p_vaddr']+seg['p_filesz']
+                                      for seg in elf.iter_segments())
+                        if allocated and sym.name and sym['st_shndx']=='SHN_UNDEF':
+                            slots.setdefault(address,sym.name)
     return slots
 
 
 class PointerLift:
-    def __init__(self,domain,regions,slots,static_targets=None):
+    def __init__(self,domain,regions,slots,static_targets=None, *, mips_gp=None):
         from .binary_semantics import Lift
         self.domain,self.regions,self.slots=domain,regions,slots
         self.keys=Lift(domain,[],regions)
-        self.regs={};self.memory={};self.equations=ConventionalEquations();self.matches=[]
+        self.regs={};self.memory={};self.equations=ConventionalEquations(pointer_size=8 if domain in {'x86_64','aarch64'} else 4);self.matches=[]
         self.frame=0;self.calls=0
         self.target_cache={}
         self.static_targets=static_targets or {}
+        self.mips_gp=mips_gp;self.lui_sites={}
+        self.coordinate_words={};self.high_bit_words={};self.xhat_buffers={}
 
     def key(self,ins,reg):return self.keys.key(ins,reg)
     def reg(self,ins,reg):
         key=self.key(ins,reg)
-        if key in {'xzr','wzr'}:return '0'
+        if key in {'xzr','wzr','zero'}:return '0'
         if key not in self.regs:self.regs[key]=('stack:'+str(self.frame)+'[0]' if key=='sp' else 'input:'+str(self.frame)+':'+key)
         return self.regs[key]
     def address(self,ins,op):
@@ -60,7 +88,7 @@ class PointerLift:
         if mem.base and ins.reg_name(mem.base)=='rip':return ins.address+ins.size+mem.disp
         if not mem.base:return mem.disp
         base=self.reg(ins,mem.base)
-        if mem.index:return None
+        if getattr(mem,'index',0):return None
         if base.isdigit():return int(base)+mem.disp
         return self.offset(base,mem.disp)
     @staticmethod
@@ -81,11 +109,31 @@ class PointerLift:
         if op.type==1:self.regs[self.key(ins,op.reg)]=value
         elif op.type==3:
             address=self.address(ins,op)
-            if address is not None:self.memory[address]=value
+            if address is not None:
+                self.memory[address]=value
+                if value=='0' and getattr(op,'size',0)==16:
+                    self.memory[self.offset(address,8)]='0'
+                coordinate=self.coordinate_words.get(value)
+                if coordinate and coordinate[1]==0:self.xhat_buffers[address]=coordinate[0]
+                for buffer,point in list(self.xhat_buffers.items()):
+                    low=self.memory.get(buffer)
+                    high=self.memory.get(self.offset(buffer,8))
+                    valid=(self.coordinate_words.get(low)==(point,0) and self.high_bit_words.get(high)==(point,1) and
+                        self.memory.get(self.offset(buffer,16))=='0' and
+                        self.memory.get(self.offset(buffer,24))=='0')
+                    if not valid and str(address) in {str(self.offset(buffer,n)) for n in (0,8,16,24)}:
+                        self.equations.exchange.xhats.pop(buffer,None)
+                        self.equations.exchange.scalars.pop(buffer,None)
+                    if valid:
+                        self.equations.exchange.xhat(buffer,point,ins.address,
+                            'Actual affine x low limb copied, next limb OR 2^63, upper two limbs zero')
 
     def target(self,ins):
         from .binary_semantics import disassembler,decode
         ops=ins.operands
+        if self.domain in {'mipsel','mips_be'} and ins.mnemonic in {'jalr','jr'} and ops and ops[-1].type==1:
+            value=self.reg(ins,ops[-1].reg)
+            return value.removeprefix('import:') if value.startswith('import:') else None
         if len(ops)!=1:return None
         if ops[0].type==3:return self.slots.get(self.address(ins,ops[0]))
         if ops[0].type!=2:return None
@@ -140,9 +188,15 @@ class PointerLift:
                 if op.mnemonic=='adrp':regs[op.reg_name(o[0].reg)]=o[1].imm
                 elif op.mnemonic=='ldr' and o[1].type==3:
                     base=regs.get(op.reg_name(o[1].mem.base))
-                    if base is not None:
+                    target=op.reg_name(o[0].reg)
+                    if isinstance(base,int):
                         name=self.slots.get(base+o[1].mem.disp)
-                        if name:regs[op.reg_name(o[0].reg)]=name
+                        if name:regs[target]=name
+                        else:regs.pop(target,None)
+                    else:
+                        # A previously resolved API name is not an address.
+                        # Unknown loads invalidate the destination as well.
+                        regs.pop(target,None)
                 elif op.mnemonic=='br':
                     name=regs.get(op.reg_name(o[0].reg))
                     return name if isinstance(name,str) else None
@@ -165,34 +219,73 @@ class PointerLift:
     def finish(self):
         self.matches.extend(self.equations.matches)
         self.matches.extend(self.equations.general_matches)
-        self.equations=ConventionalEquations();self.regs={};self.memory={};self.frame+=1
+        self.equations=ConventionalEquations(pointer_size=8 if self.domain in {'x86_64','aarch64'} else 4);self.regs={};self.memory={};self.frame+=1
+        self.lui_sites.clear()
+        self.coordinate_words.clear();self.high_bit_words.clear();self.xhat_buffers.clear()
 
     def step(self,ins):
         import capstone as cs
         if not ins.id:return
         ops=ins.operands;m=ins.mnemonic.split('.')[0]
         arm=self.domain in {'arm','thumb'}
+        mips=self.domain in {'mipsel','mips_be'}
         if arm and m in {'movs','adds','subs'}:m=m[:-1]
-        if ins.group(cs.CS_GRP_RET) or (arm and ((m=='pop' and any(o.type==1 and ins.reg_name(o.reg)=='pc' for o in ops)) or (m=='bx' and ops and ins.reg_name(ops[0].reg)=='lr'))):
+        if ins.group(cs.CS_GRP_RET) or (mips and m=='jr' and ins.op_str=='$ra') or (arm and ((m=='pop' and any(o.type==1 and ins.reg_name(o.reg)=='pc' for o in ops)) or (m=='bx' and ops and ins.reg_name(ops[0].reg)=='lr'))):
             self.finish();return
-        tail=ins.group(cs.CS_GRP_JUMP) and m in {'jmp','b'} and self.target(ins) in TRUSTED
-        if ins.group(cs.CS_GRP_CALL) or tail:
+        tail=((ins.group(cs.CS_GRP_JUMP) and m in {'jmp','b'}) or (mips and m=='jr')) and self.target(ins) in TRUSTED
+        if ins.group(cs.CS_GRP_CALL) or (mips and m in {'jal','jalr','bal'}) or tail:
             name=self.target(ins);self.calls+=1
-            argsregs=(['rdi','rsi','rdx','rcx','r8','r9'] if self.domain=='x86_64' else ['r'+str(i) for i in range(4)] if arm else ['x'+str(i) for i in range(8)])
+            argsregs=(['rdi','rsi','rdx','rcx','r8','r9'] if self.domain=='x86_64' else ['a'+str(i) for i in range(4)] if mips else ['r'+str(i) for i in range(4)] if arm else ['x'+str(i) for i in range(8)])
             args=[self.regs.get(k,'unknown-argument@'+str(ins.address)+':'+k) for k in argsregs]
-            if arm:
+            if arm or mips:
                 sp=self.regs.get('sp','stack:'+str(self.frame)+'[0]')
-                args.extend(self.memory.get(self.offset(sp,i),'load:'+str(self.offset(sp,i))) for i in range(0,16,4))
+                args.extend(self.memory.get(self.offset(sp,i),'load:'+str(self.offset(sp,i))) for i in range(16 if mips else 0,32 if mips else 16,4))
             self.equations.feed(name or 'unknown-local-call',args,ins.address)
-            saved=({'rbx','rbp','rsp','r12','r13','r14','r15'} if self.domain=='x86_64' else {'sp','fp','sb','sl',*('r'+str(i) for i in range(4,12))} if arm else {'sp','fp',*('x'+str(i) for i in range(19,30))})
+            if name=='sm2_z256_point_get_xy' and self.domain in {'x86_64','aarch64'}:
+                for j in range(4):
+                    token='affine-x@'+str(ins.address)+':'+str(j)
+                    self.coordinate_words[token]=(args[0],j)
+                    self.memory[self.offset(args[1],8*j)]=token
+            saved=({'rbx','rbp','rsp','r12','r13','r14','r15'} if self.domain=='x86_64' else {'sp','fp',*('s'+str(i) for i in range(8))} if mips else {'sp','fp','sb','sl',*('r'+str(i) for i in range(4,12))} if arm else {'sp','fp',*('x'+str(i) for i in range(19,30))})
             self.regs={k:v for k,v in self.regs.items() if k in saved}
-            ret='rax' if self.domain=='x86_64' else 'r0' if arm else 'x0'
+            ret='rax' if self.domain=='x86_64' else 'v0' if mips else 'r0' if arm else 'x0'
             self.regs[ret]='1' if name=='BN_value_one' else 'result@'+str(ins.address)
             if name=='EC_GROUP_get0_order':self.equations.group_orders[args[0]]=self.regs[ret]
             elif name=='EC_GROUP_get_mont_data':self.equations.mont_groups[self.regs[ret]]=args[0]
             if tail:
                 self.finish()
             return
+        if mips:
+            if m=='lui' and len(ops)==2:
+                self.write(ins,ops[0],str((ops[1].imm<<16)&0xffffffff))
+                self.lui_sites[self.key(ins,ops[0].reg)]=ins.address;return
+            if m in {'addiu','addi','ori'} and len(ops)==3 and ops[2].type==2:
+                source=self.value(ins,ops[1]);n=ops[2].imm
+                value=str((int(source)|n if m=='ori' else int(source)+n)&0xffffffff) if source.lstrip('-').isdigit() else str(self.offset(source,n))
+                self.write(ins,ops[0],value)
+                source_key=self.key(ins,ops[1].reg);destination=self.key(ins,ops[0].reg)
+                if source_key in self.lui_sites:self.lui_sites[destination]=self.lui_sites[source_key]
+                return
+            if m=='addu' and len(ops)==3:
+                a,b=[self.value(ins,o) for o in ops[1:]]
+                value=None
+                if a.lstrip('-').isdigit() and b.lstrip('-').isdigit():value=str((int(a)+int(b))&0xffffffff)
+                elif self.mips_gp is not None:
+                    for source,other in ((ops[1],ops[2]),(ops[2],ops[1])):
+                        key=self.key(ins,source.reg);site=self.lui_sites.get(key)
+                        n=self.value(ins,source)
+                        if (self.key(ins,other.reg)=='t9' and site is not None and 0<=ins.address-site<=128
+                            and n.isdigit() and (int(n)+site)&0xffffffff==self.mips_gp):value=str(self.mips_gp)
+                self.write(ins,ops[0],value or 'unknown@'+str(ins.address));return
+            if m in {'lw','sw','move','li'} and len(ops)==2:
+                dest,source=(ops[1],ops[0]) if m=='sw' else ops
+                address=self.address(ins,source) if source.type==3 else None
+                name=self.slots.get(address)
+                self.write(ins,dest,'import:'+name if name else self.value(ins,source));return
+            # Unknown MIPS instructions explicitly clobber their destination.
+            # Branches, NOPs and stores have no pointer destination here.
+            if m not in {'nop','j','b','beq','bne','beqz','bnez','bgtz','bgez','bltz','blez','break','sb','sh'} and ops and ops[0].type==1:
+                self.write(ins,ops[0],'unknown@'+str(ins.address));return
         if arm and m=='push':
             sp=self.regs.get('sp','stack:'+str(self.frame)+'[0]');new=self.offset(sp,-4*len(ops))
             for i,o in enumerate(ops):self.memory[self.offset(new,4*i)]=self.value(ins,o)
@@ -209,13 +302,21 @@ class PointerLift:
                 else:self.write(ins,o,self.memory.get(address,'load:'+str(address)))
             if ins.writeback:self.write(ins,ops[0],str(self.offset(base,4*(len(ops)-1))))
             return
-        if m in {'mov','movw','movabs','movzx','movsxd','ldr','ldur','str','stur'} and len(ops)==2:
+        if m in {'mov','movw','movabs','movzx','movsxd','ldr','ldur','str','stur',
+                 'movaps','movups','movdqa','movdqu'} and len(ops)==2:
             dest,src=(ops[1],ops[0]) if m in {'str','stur'} else ops
             self.write(ins,dest,self.value(ins,src));return
         if m=='lea' and len(ops)==2:
             self.write(ins,ops[0],str(self.address(ins,ops[1])));return
-        if m in {'xor','eor'} and len(ops)>=2 and ops[-1].type==ops[-2].type==1 and ops[-1].reg==ops[-2].reg:
+        if m in {'xor','eor','xorps','pxor'} and len(ops)>=2 and ops[-1].type==ops[-2].type==1 and ops[-1].reg==ops[-2].reg:
             self.write(ins,ops[0],'0');return
+        if m in {'or','orr'} and len(ops) in {2,3}:
+            operands=ops if len(ops)==2 else ops[1:]
+            a,b=[self.value(ins,o) for o in operands]
+            for literal,other in ((a,b),(b,a)):
+                if literal in {str(1<<63),str(-(1<<63))} and other in self.coordinate_words:
+                    token='high-bit@'+str(ins.address);self.high_bit_words[token]=self.coordinate_words[other]
+                    self.write(ins,ops[0],token);return
         if m in {'adr','adrp'} and len(ops)==2:
             self.write(ins,ops[0],str(ops[1].imm));return
         if m in {'add','sub'} and len(ops)>=2 and ops[-1].type==2:
@@ -240,18 +341,45 @@ class PointerLift:
 def binary_equations(path,regions,domain,deadline,*,primitive_records=None):
     import time
     from .binary_semantics import disassembler,decode
-    if domain not in {'x86_64','aarch64','arm','thumb'}:return []
+    if domain not in {'x86_64','aarch64','arm','thumb','mipsel','mips_be'}:return []
     slots=import_slots(path)
     from ..static_binary import targets
     static_targets,static_witnesses=targets(regions,domain,deadline,path=path)
     if primitive_records is not None:primitive_records.extend(static_witnesses)
     if not set(slots.values())&TRUSTED and not static_targets:return []
-    lift=PointerLift(domain,regions,slots,static_targets)
+    gp=None
+    if domain in {'mipsel','mips_be'}:
+        from elftools.elf.elffile import ELFFile
+        with path.open('rb') as stream:
+            elf=ELFFile(stream)
+            gp=next(((t.entry.d_val+0x7ff0)&0xffffffff for s in elf.iter_segments()
+                     if s['p_type']=='PT_DYNAMIC' for t in s.iter_tags() if t.entry.d_tag=='DT_PLTGOT'),None)
+    lift=PointerLift(domain,regions,slots,static_targets,mips_gp=gp)
     n=0
+    path_matches=[]
+    from ..pointer_paths import unwind_ranges,analyze as analyze_paths
+    ranges=unwind_ranges(path)
+    if ranges:
+        instructions=[ins for base,_,data,flags in regions if flags&1
+                      for ins in decode(disassembler(domain),data,base)]
+        path_matches,records=analyze_paths(PointerLift(domain,regions,slots,static_targets,mips_gp=gp),
+                                         instructions,ranges,deadline)
+        if primitive_records is not None:primitive_records.extend({'method':'path-specific unwind range',**r} for r in records)
     for base,_,data,flags in regions:
         if not flags&1:continue
-        for ins in decode(disassembler(domain),data,base):
+        instructions=iter(decode(disassembler(domain),data,base))
+        for ins in instructions:
             n+=1
             if n%1024==0 and (n>500000 or time.monotonic()>deadline):raise ValueError('Big-number call analysis budget exhausted')
+            if domain in {'mipsel','mips_be'} and ins.mnemonic in {'jal','jalr','bal','jr'}:
+                slot=next(instructions,None)
+                from ..controlflow import mips_transfer
+                if slot is None or slot.address!=ins.address+4 or mips_transfer(slot):
+                    lift.finish();continue
+                lift.step(slot)
             lift.step(ins)
-    return [*lift.matches,*lift.equations.matches,*lift.equations.general_matches]
+    result=[];seen=set()
+    for match in [*path_matches,*lift.matches,*lift.equations.matches,*lift.equations.general_matches]:
+        key=(match.get('algorithm'),match.get('offset'),match.get('equation'))
+        if key not in seen:seen.add(key);result.append(match)
+    return result

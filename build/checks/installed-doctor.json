@@ -6,7 +6,7 @@
       "status": "available",
       "system": "Linux",
       "architecture": "x86_64",
-      "python_executable": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/bin/python"
+      "python_executable": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/bin/python"
     },
     {
       "dependency": "yara-python",
@@ -49,6 +49,11 @@
       "version": "0.23.4"
     },
     {
+      "dependency": "unicorn",
+      "status": "available",
+      "version": "2.1.4"
+    },
+    {
       "dependency": "yara_rules",
       "status": "available",
       "sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5"
@@ -68,7 +73,7 @@
     {
       "dependency": "windriver",
       "status": "available",
-      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/windriver"
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/windriver"
     },
     {
       "dependency": "guomi_module",

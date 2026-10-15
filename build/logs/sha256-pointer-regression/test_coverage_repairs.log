@@ -1,0 +1,20 @@
+test_declared_elf_zero_tail_is_lazy_bounded_and_never_executable (test_coverage_repairs.CoverageRepairTests.test_declared_elf_zero_tail_is_lazy_bounded_and_never_executable) ... ok
+test_esp_native_scan_and_depth_budget (test_coverage_repairs.CoverageRepairTests.test_esp_native_scan_and_depth_budget) ... ok
+test_esp_parser_checks_lengths_checksum_and_segment_overlap (test_coverage_repairs.CoverageRepairTests.test_esp_parser_checks_lengths_checksum_and_segment_overlap) ... ok
+test_generic_custom_function_names_do_not_become_global_rules (test_coverage_repairs.CoverageRepairTests.test_generic_custom_function_names_do_not_become_global_rules) ... ok
+test_gzip_ota_limits_and_nested_provenance (test_coverage_repairs.CoverageRepairTests.test_gzip_ota_limits_and_nested_provenance) ... ok
+test_native_firmware_doctor_does_not_require_binwalk (test_coverage_repairs.CoverageRepairTests.test_native_firmware_doctor_does_not_require_binwalk) ... ok
+test_new_architecture_negative_controls_and_exec_mapped_rodata (test_coverage_repairs.CoverageRepairTests.test_new_architecture_negative_controls_and_exec_mapped_rodata) ... ok
+test_new_architectures_and_compiler_have_real_hidden_witnesses (test_coverage_repairs.CoverageRepairTests.test_new_architectures_and_compiler_have_real_hidden_witnesses) ... ok
+test_pe_o0_pointer_relocations_preserve_hidden_ec_operations (test_coverage_repairs.CoverageRepairTests.test_pe_o0_pointer_relocations_preserve_hidden_ec_operations) ... ok
+test_pinned_custom_sources_are_recognized_after_rename (test_coverage_repairs.CoverageRepairTests.test_pinned_custom_sources_are_recognized_after_rename) ... ok
+test_rc4_requires_schedule_and_stream_witnesses (test_coverage_repairs.CoverageRepairTests.test_rc4_requires_schedule_and_stream_witnesses) ... ok
+test_real_tasmota_boot_and_application_crc (test_coverage_repairs.CoverageRepairTests.test_real_tasmota_boot_and_application_crc) ... ok
+test_squashfs_offset_text_and_symlinks_without_binwalk (test_coverage_repairs.CoverageRepairTests.test_squashfs_offset_text_and_symlinks_without_binwalk) ... ok
+test_xtensa_bss_pointer_constraint_rejects_changed_initial_data (test_coverage_repairs.CoverageRepairTests.test_xtensa_bss_pointer_constraint_rejects_changed_initial_data) ... ok
+test_xtensa_hidden_elf_and_esp_operational_witnesses (test_coverage_repairs.CoverageRepairTests.test_xtensa_hidden_elf_and_esp_operational_witnesses) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 44.219s
+
+OK

@@ -1,0 +1,4 @@
+{
+  "reason": "Candidate b diagnostic regression reproduced backend reuse failures; final candidate d is rerun from scratch",
+  "completed_reports_preserved": true
+}

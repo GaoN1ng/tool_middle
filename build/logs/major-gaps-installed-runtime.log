@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "installed-doctor",
+      "passed": true,
+      "returncode": 0,
+      "scan_status": null,
+      "predicted": [],
+      "stderr": "",
+      "errors": []
+    },
+    {
+      "name": "installed-source",
+      "passed": true,
+      "returncode": 0,
+      "scan_status": "completed",
+      "predicted": [
+        "AES"
+      ],
+      "stderr": "",
+      "errors": []
+    },
+    {
+      "name": "installed-elf",
+      "passed": true,
+      "returncode": 0,
+      "scan_status": "completed",
+      "predicted": [
+        "RC4"
+      ],
+      "stderr": "",
+      "errors": []
+    },
+    {
+      "name": "installed-firmware",
+      "passed": true,
+      "returncode": 0,
+      "scan_status": "completed",
+      "predicted": [],
+      "stderr": "",
+      "errors": []
+    },
+    {
+      "name": "installed-pe",
+      "passed": true,
+      "returncode": 0,
+      "scan_status": "completed",
+      "predicted": [
+        "ECDH",
+        "ECDSA",
+        "RSA"
+      ],
+      "stderr": "",
+      "errors": []
+    },
+    {
+      "name": "installed-package-location",
+      "passed": true,
+      "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/__init__.py"
+    }
+  ],
+  "policy": "No PYTHONPATH; installed wheel used from a directory with spaces; target programs never executed"
+}

@@ -1,4 +1,5 @@
 from support import WORKSPACE
+from concurrent.futures import ProcessPoolExecutor
 import json
 from pathlib import Path
 import tempfile
@@ -8,6 +9,10 @@ from qcs.model import predictions
 from qcs.scanner import Options, scan
 
 BASE=WORKSPACE/'quantum-crypto-scanner/artifacts/guomi-integration-20261012'
+
+def scan_relinked(row):
+    """Keep every real scan and assertion while running independent inputs concurrently."""
+    return row,scan(WORKSPACE/row['path'])
 
 class GuomiTests(unittest.TestCase):
     def source(self,text,suffix='.c'):
@@ -95,13 +100,13 @@ class GuomiTests(unittest.TestCase):
         self.assertEqual(len(rows),108)
         self.assertEqual({r['reference']['architecture'] for r in rows},
                          {'x86_64','aarch64','arm','thumb','mipsel','mips_be'})
-        for row in rows:
-            with self.subTest(path=row['path']):
-                r=scan(WORKSPACE/row['path'])
-                self.assertEqual(r['scan_status'],'completed',r['errors'])
-                self.assertEqual(predictions(r,'implementation_contains'),set(row['expected']))
-                self.assertNotIn('.symtab',r['artifact']['symbol_tables'])
-                self.assertTrue(any(f['engine']=='guomi_function_signature' for f in r['findings']))
+        with ProcessPoolExecutor(max_workers=6) as pool:
+            for row,r in pool.map(scan_relinked,rows):
+                with self.subTest(path=row['path']):
+                    self.assertEqual(r['scan_status'],'completed',r['errors'])
+                    self.assertEqual(predictions(r,'implementation_contains'),set(row['expected']))
+                    self.assertNotIn('.symtab',r['artifact']['symbol_tables'])
+                    self.assertTrue(any(f['engine']=='guomi_function_signature' for f in r['findings']))
 
     def test_required_operation_role_cannot_be_removed(self):
         for module,role,algorithm in [('sm3','finalization','SM3'),('sm4','key_schedule','SM4')]:

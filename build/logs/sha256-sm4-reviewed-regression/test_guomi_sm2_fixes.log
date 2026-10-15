@@ -1,0 +1,15 @@
+test_changed_operation_code_is_rejected (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_changed_operation_code_is_rejected) ... ok
+test_diagnostic_path_format_and_function_name_data_do_not_identify_sm2 (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_diagnostic_path_format_and_function_name_data_do_not_identify_sm2) ... ok
+test_ecdsa_generic_curve_and_bignum_are_not_sm2 (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_ecdsa_generic_curve_and_bignum_are_not_sm2) ... ok
+test_only_audited_mov_lea_pair_is_accepted (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_only_audited_mov_lea_pair_is_accepted) ... ok
+test_preserved_constant_and_code_payloads_in_nonexecuting_data (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_preserved_constant_and_code_payloads_in_nonexecuting_data) ... ok
+test_sm3_sm4_algorithm_data_constraints_are_preserved (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_sm3_sm4_algorithm_data_constraints_are_preserved) ... ok
+test_source_path_link_mode_and_optimization_variants (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_source_path_link_mode_and_optimization_variants) ... ok
+test_stdio_pointer_initial_values_do_not_identify_sm2 (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_stdio_pointer_initial_values_do_not_identify_sm2) ... ok
+test_two_original_stripped_sm2_regressions (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_two_original_stripped_sm2_regressions) ... ok
+test_unmapped_stdio_reference_is_rejected (test_guomi_sm2_fixes.GuomiSM2PortabilityTests.test_unmapped_stdio_reference_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 283.780s
+
+OK

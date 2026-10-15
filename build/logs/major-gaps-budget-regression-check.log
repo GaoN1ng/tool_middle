@@ -1,0 +1,1 @@
+60.72190108336508 partial {'SM3'} [{'engine': 'dispatch', 'code': 'timeout', 'message': 'Overall scan deadline exceeded'}] {'status': 'budget_unavailable', 'method': 'bounded private-memory concrete semantics', 'candidate_algorithms': [], 'matches': [], 'reason': 'No optional search time remains after preceding engines'}

@@ -1,0 +1,4 @@
+{
+  "reason": "Final revision counts all probe preparation time and reserves bounded-lifting finalization time within the overall scanner deadline; rerun under a single final revision freeze",
+  "completed_reports_preserved": true
+}

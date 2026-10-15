@@ -1,0 +1,212 @@
+################################################################################
+# Symmetric implementation: AES
+
+ccflags-y 			+= -I$(src)/../sym/src
+
+leancrypto-y	 		+= ../sym/src/sym.o
+
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/aes_sbox.o		       \
+				   ../sym/src/aes_ct.o			       \
+				   ../sym/src/aes_block.o		       \
+				   ../sym/src/aes_selector.o		       \
+				   leancrypto_kernel_aes_block.o
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/asm/AESNI_x86_64/aes_aesni_x86_64.o\
+				   ../sym/src/aes_block_aesni.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/aes_block_aesni_null.o
+endif
+
+ifdef CONFIG_ARM64
+asflags-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= -march=armv8-a+crypto
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/asm/ARMv8/aes_armv8_ce.o	       \
+				   ../sym/src/aes_block_armce_v8.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/aes_block_armce_v8_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/asm/riscv64/riscv64_aes_asm.o    \
+				   ../sym/src/aes_block_riscv64.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES)					       \
+				+= ../sym/src/aes_block_riscv64_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_AES
+ccflags-y				+= -DCONFIG_LEANCRYPTO_AES
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_dec_tester.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_enc_tester.o
+aes_dec_tester-y			+= ../sym/tests/aes_dec_tester.o
+aes_enc_tester-y			+= ../sym/tests/aes_enc_tester.o
+endif
+
+ifndef CONFIG_LEANCRYPTO_AES_CBC
+leancrypto-y			+= ../sym/src/aes_cbc_null.o
+endif
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc.o			       \
+				   ../sym/src/mode_cbc.o		       \
+				   leancrypto_kernel_aes_cbc.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_aes_cbc_tester.o
+leancrypto_kernel_aes_cbc_tester-y	+= ../sym/tests/leancrypto_kernel_aes_cbc_tester.o
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_aesni.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_aesni_null.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_armce_v8.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_armce_v8_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_riscv64.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CBC)					       \
+				+= ../sym/src/aes_cbc_riscv64_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_AES_CBC
+ccflags-y			+= -DCONFIG_LEANCRYPTO_AES_CBC
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_cbc_dec_tester.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_cbc_enc_tester.o
+aes_cbc_dec_tester-y		+= ../sym/tests/aes_cbc_dec_tester.o
+aes_cbc_enc_tester-y		+= ../sym/tests/aes_cbc_enc_tester.o
+endif
+
+ifndef CONFIG_LEANCRYPTO_AES_CTR
+leancrypto-y			+= ../sym/src/aes_ctr_null.o
+endif
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr.o			       \
+				   ../sym/src/mode_ctr.o		       \
+				   leancrypto_kernel_aes_ctr.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_aes_ctr_tester.o
+leancrypto_kernel_aes_ctr_tester-y	+= ../sym/tests/leancrypto_kernel_aes_ctr_tester.o
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_aesni.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_aesni_null.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_armce_v8.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_armce_v8_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_riscv64.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_CTR)					       \
+				+= ../sym/src/aes_ctr_riscv64_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_AES_CTR
+ccflags-y				+= -DCONFIG_LEANCRYPTO_AES_CTR
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_ctr_tester.o
+aes_ctr_tester-y			+= ../sym/tests/aes_ctr_tester.o
+endif
+
+ifndef CONFIG_LEANCRYPTO_AES_KW
+leancrypto-y			+= ../sym/src/aes_kw_null.o
+endif
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw.o			       \
+				   ../sym/src/mode_kw.o
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_aesni.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_aesni_null.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_armce_v8.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_armce_v8_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_riscv64.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_KW)					       \
+				+= ../sym/src/aes_kw_riscv64_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_AES_KW
+ccflags-y				+= -DCONFIG_LEANCRYPTO_AES_KW
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_kw_tester.o
+aes_kw_tester-y				+= ../sym/tests/aes_kw_tester.o
+endif
+
+ifndef CONFIG_LEANCRYPTO_AES_XTS
+leancrypto-y			+= ../sym/src/aes_xts_null.o
+endif
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts.o			       \
+				   ../sym/src/mode_xts.o		       \
+				   leancrypto_kernel_aes_xts.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_aes_xts_tester.o
+leancrypto_kernel_aes_xts_tester-y	+= ../sym/tests/leancrypto_kernel_aes_xts_tester.o
+
+ifdef CONFIG_X86_64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_aesni.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_aesni_null.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_armce_v8.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_armce_v8_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_riscv64.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_AES_XTS)					       \
+				+= ../sym/src/aes_xts_riscv64_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_AES_XTS
+ccflags-y				+= -DCONFIG_LEANCRYPTO_AES_XTS
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= aes_xts_tester.o
+aes_xts_tester-y			+= ../sym/tests/aes_xts_tester.o
+endif

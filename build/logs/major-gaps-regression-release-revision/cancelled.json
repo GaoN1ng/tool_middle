@@ -1,0 +1,4 @@
+{
+  "reason": "Preserve regressions exposing optional path/preparation budget exhaustion; final scheduling freeze avoids relifting verified SM3/SM4 function bytes and reserves linear-analysis time",
+  "completed_reports_preserved": true
+}

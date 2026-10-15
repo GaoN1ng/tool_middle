@@ -1,0 +1,170 @@
+[
+  {
+    "module": "test_controlflow_primitives",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 65.26148058986291,
+    "log": "build/logs/major-gaps-regression-final/test_controlflow_primitives.log"
+  },
+  {
+    "module": "test_guomi_operations",
+    "exit_code": 0,
+    "tests": 8,
+    "seconds": 0.27519857604056597,
+    "log": "build/logs/major-gaps-regression-final/test_guomi_operations.log"
+  },
+  {
+    "module": "test_bound_static_state",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 92.18350977124646,
+    "log": "build/logs/major-gaps-regression-final/test_bound_static_state.log"
+  },
+  {
+    "module": "test_linux_runtime",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 4.7280189180746675,
+    "log": "build/logs/major-gaps-regression-final/test_linux_runtime.log"
+  },
+  {
+    "module": "test_major_gaps",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 0.2977214460261166,
+    "log": "build/logs/major-gaps-regression-final/test_major_gaps.log"
+  },
+  {
+    "module": "test_message_schedules",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.27369714993983507,
+    "log": "build/logs/major-gaps-regression-final/test_message_schedules.log"
+  },
+  {
+    "module": "test_mips_controlflow",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 0.24182111863046885,
+    "log": "build/logs/major-gaps-regression-final/test_mips_controlflow.log"
+  },
+  {
+    "module": "test_ml_features",
+    "exit_code": 0,
+    "tests": 4,
+    "seconds": 0.1943175010383129,
+    "log": "build/logs/major-gaps-regression-final/test_ml_features.log"
+  },
+  {
+    "module": "test_ml_learning",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 5.112568001728505,
+    "log": "build/logs/major-gaps-regression-final/test_ml_learning.log"
+  },
+  {
+    "module": "test_operations",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 1.7605152749456465,
+    "log": "build/logs/major-gaps-regression-final/test_operations.log"
+  },
+  {
+    "module": "test_coverage_repairs",
+    "exit_code": 1,
+    "tests": 15,
+    "seconds": 125.70649273181334,
+    "log": "build/logs/major-gaps-regression-final/test_coverage_repairs.log"
+  },
+  {
+    "module": "test_guomi_generalization",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 129.90977399190888,
+    "log": "build/logs/major-gaps-regression-final/test_guomi_generalization.log"
+  },
+  {
+    "module": "test_scanner",
+    "exit_code": 0,
+    "tests": 41,
+    "seconds": 42.617563312873244,
+    "log": "build/logs/major-gaps-regression-final/test_scanner.log"
+  },
+  {
+    "module": "test_semantic_paths",
+    "exit_code": 0,
+    "tests": 11,
+    "seconds": 0.49537162110209465,
+    "log": "build/logs/major-gaps-regression-final/test_semantic_paths.log"
+  },
+  {
+    "module": "test_semantic_probes",
+    "exit_code": 0,
+    "tests": 8,
+    "seconds": 1.088811093941331,
+    "log": "build/logs/major-gaps-regression-final/test_semantic_probes.log"
+  },
+  {
+    "module": "test_sha256_rounds",
+    "exit_code": 0,
+    "tests": 7,
+    "seconds": 11.482915116008371,
+    "log": "build/logs/major-gaps-regression-final/test_sha256_rounds.log"
+  },
+  {
+    "module": "test_sm4_table_rounds",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 0.6297924760729074,
+    "log": "build/logs/major-gaps-regression-final/test_sm4_table_rounds.log"
+  },
+  {
+    "module": "test_source_linkage",
+    "exit_code": 0,
+    "tests": 5,
+    "seconds": 0.6287653311155736,
+    "log": "build/logs/major-gaps-regression-final/test_source_linkage.log"
+  },
+  {
+    "module": "test_source_pointers",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 0.3671796671114862,
+    "log": "build/logs/major-gaps-regression-final/test_source_pointers.log"
+  },
+  {
+    "module": "test_yara_instructions",
+    "exit_code": 0,
+    "tests": 3,
+    "seconds": 49.21228429907933,
+    "log": "build/logs/major-gaps-regression-final/test_yara_instructions.log"
+  },
+  {
+    "module": "test_research_operations",
+    "exit_code": 0,
+    "tests": 9,
+    "seconds": 128.67696418520063,
+    "log": "build/logs/major-gaps-regression-final/test_research_operations.log"
+  },
+  {
+    "module": "test_function_signatures",
+    "exit_code": 1,
+    "tests": 7,
+    "seconds": 652.7812287309207,
+    "log": "build/logs/major-gaps-regression-final/test_function_signatures.log"
+  },
+  {
+    "module": "test_guomi_sm2_fixes",
+    "exit_code": 1,
+    "tests": 10,
+    "seconds": 740.57908292301,
+    "log": "build/logs/major-gaps-regression-final/test_guomi_sm2_fixes.log"
+  },
+  {
+    "module": "test_semantic_followup",
+    "exit_code": 0,
+    "tests": 6,
+    "seconds": 731.4471922698431,
+    "log": "build/logs/major-gaps-regression-final/test_semantic_followup.log"
+  }
+]

@@ -1,0 +1,108 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "aes_c.h"
+#include "ext_headers_internal.h"
+#include "helper.h"
+#include "initialization.h"
+#include "lc_init.h"
+#include "status_algorithms.h"
+#include "visibility.h"
+
+#define LC_INIT_AES_MASK (LC_INIT_AES_SBOX | LC_INIT_AES_CT)
+
+LC_INIT_FUNCTION(int, lc_init, unsigned int flags)
+{
+	int aes_done __maybe_unused = 0;
+	int ret;
+
+	switch (flags & LC_INIT_AES_MASK) {
+#if (defined(LC_AES) || defined(CONFIG_LEANCRYPTO_AES))
+	case LC_INIT_AES_SBOX:
+		lc_aes_c = lc_aes_sbox;
+		aes_fastest_impl();
+		aes_done = 1;
+		break;
+	case LC_INIT_AES_CT:
+		lc_aes_c = lc_aes_ct;
+		aes_fastest_impl();
+		aes_done = 1;
+		break;
+#endif
+	case 0:
+		/* Caller does not want any specific AES setting. */
+		break;
+	default:
+		return -EINVAL;
+	}
+
+	if (flags & LC_INIT_NON_PQC_ENABLED)
+		non_pqc_algs_enable();
+
+	if (flags & LC_INIT_LINUX_L1D_FLUSH) {
+		ret = secure_execution_linux_l1d_flush();
+		if (ret)
+			return ret;
+	}
+
+	/*
+	 * Handle graceful the invocation of this functions multiple times
+	 * or even when the initializations automatically were performed.
+	 */
+	if (lc_status_get_result(LC_ALG_STATUS_LIB) >
+	    lc_alg_status_result_ongoing)
+		return 0;
+
+#if (defined(LC_ASCON_HASH) || defined(CONFIG_LEANCRYPTO_ASCON_HASH))
+	ascon_fastest_impl();
+#endif
+
+#if (defined(LC_SHA2_256) || defined(CONFIG_LEANCRYPTO_SHA2_256))
+	sha256_fastest_impl();
+#endif
+
+#if (defined(LC_SHA2_512) || defined(CONFIG_LEANCRYPTO_SHA2_512))
+	sha512_fastest_impl();
+#endif
+
+#if (defined(LC_SHA3) || defined(CONFIG_LEANCRYPTO_SHA3))
+	sha3_fastest_impl();
+#endif
+
+#if (defined(LC_AES) || defined(CONFIG_LEANCRYPTO_AES))
+	if (!aes_done)
+		aes_fastest_impl();
+#endif
+
+#if ((defined(LC_KYBER) || defined(CONFIG_LEANCRYPTO_KEM)) &&                  \
+     defined(LC_HOST_RISCV64))
+	kyber_riscv_rvv_selector();
+#endif
+
+#if (defined(LC_CHACHA20) || defined(CONFIG_LEANCRYPTO_CHACHA20))
+	chacha20_fastest_impl();
+#endif
+
+	secure_execution_linux_store_bypass();
+	secure_execution_linux_indirect_branch();
+
+	lc_activate_library_internal();
+
+	return 0;
+}

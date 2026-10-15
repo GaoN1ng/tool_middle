@@ -1,0 +1,52 @@
+tinyssh-crypto_hash_sha256-mipsel-Os /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/7c/7ca803bec83eca45/ordinary.so /var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/fa/fa33c06297a3f0bb/inspection.so
+FUNCTION memcpy 0x45954 96
+0x45954 beqz $a2, 0x459ac
+0x45958 nop 
+0x4595c lbu $at, ($a1)
+0x45960 addiu $v0, $a2, -1
+0x45964 beqz $v0, 0x459ac
+0x45968 sb $at, ($a0)
+0x4596c addiu $sp, $sp, -8
+0x45970 sw $ra, 4($sp)
+0x45974 sw $fp, ($sp)
+0x45978 move $fp, $sp
+0x4597c addiu $v1, $a1, 1
+0x45980 addiu $a1, $a0, 1
+0x45984 lbu $at, ($v1)
+0x45988 addiu $v1, $v1, 1
+0x4598c addiu $v0, $v0, -1
+0x45990 sb $at, ($a1)
+0x45994 bnez $v0, 0x45984
+0x45998 addiu $a1, $a1, 1
+0x4599c move $sp, $fp
+0x459a0 lw $ra, 4($sp)
+0x459a4 lw $fp, ($sp)
+0x459a8 addiu $sp, $sp, 8
+0x459ac jr $ra
+0x459b0 move $v0, $a0
+FUNCTION __memcpy_chk 0x45dcc 100
+0x45dcc lui $v0, 2
+0x45dd0 addiu $v0, $v0, -0x6f9c
+0x45dd4 addiu $sp, $sp, -0x20
+0x45dd8 sw $ra, 0x1c($sp)
+0x45ddc sw $fp, 0x18($sp)
+0x45de0 sw $s0, 0x14($sp)
+0x45de4 move $fp, $sp
+0x45de8 addu $gp, $v0, $t9
+0x45dec beqz $a2, 0x45e14
+0x45df0 move $s0, $a0
+0x45df4 lbu $at, ($a1)
+0x45df8 addiu $a2, $a2, -1
+0x45dfc beqz $a2, 0x45e14
+0x45e00 sb $at, ($s0)
+0x45e04 lw $t9, -0x7fc4($gp)
+0x45e08 addiu $a0, $s0, 1
+0x45e0c bal 0x45954
+0x45e10 addiu $a1, $a1, 1
+0x45e14 move $v0, $s0
+0x45e18 move $sp, $fp
+0x45e1c lw $s0, 0x14($sp)
+0x45e20 lw $fp, 0x18($sp)
+0x45e24 lw $ra, 0x1c($sp)
+0x45e28 jr $ra
+0x45e2c addiu $sp, $sp, 0x20

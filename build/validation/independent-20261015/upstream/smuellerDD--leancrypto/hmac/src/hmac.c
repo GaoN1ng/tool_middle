@@ -1,0 +1,307 @@
+/* Generic HMAC implementation
+ *
+ * Copyright (C) 2020 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#include "compare.h"
+#include "fips_mode.h"
+#include "hmac_selftest.h"
+#include "lc_hmac.h"
+#include "ret_checkers.h"
+#include "timecop.h"
+#include "visibility.h"
+
+#define IPAD 0x36
+#define OPAD 0x5c
+
+static void hmac_selftest(void)
+{
+	LC_SELFTEST_RUN(LC_ALG_STATUS_HMAC);
+
+	if (hmac_sha256_selftest())
+		return;
+	if (hmac_sha512_selftest())
+		return;
+	hmac_sha3_selftest();
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hmac_reinit, struct lc_hmac_ctx *hmac_ctx)
+{
+	struct lc_hash_ctx *hash_ctx;
+	const struct lc_hmac_key *key;
+
+	if (!hmac_ctx)
+		return;
+
+	hash_ctx = &hmac_ctx->hash_ctx;
+	if (lc_hash_init(hash_ctx))
+		return;
+
+	key = hmac_ctx->key;
+	if (!key)
+		return;
+	lc_hash_update(hash_ctx, key->k_ipad, lc_hash_blocksize(hash_ctx));
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hmac_setkey, struct lc_hmac_key *hmac_key,
+		      const struct lc_hash *hash, const uint8_t *key,
+		      size_t keylen)
+{
+	uint8_t *k_opad, *k_ipad;
+	unsigned int i;
+	int ret = 0;
+
+	CKNULL(hash, -EINVAL);
+	/* Prevent blocksize to not overflow hmac_key->k_opad */
+	CKRET(hash->sponge_rate > LC_SHA_MAX_SIZE_BLOCK, -EOPNOTSUPP);
+
+	const unsigned int blocksize = hash->sponge_rate;
+	const size_t digestsize = hash->get_digestsize(NULL);
+
+	CKINT(fips140_min_keysize(keylen));
+
+	/* Timecop: key is sensitive. */
+	poison(key, keylen);
+
+	k_opad = hmac_key->k_opad;
+	k_ipad = hmac_key->k_ipad;
+
+	if (keylen > blocksize) {
+		CKINT(lc_hash(hash, key, keylen, k_opad));
+		lc_memset_secure(k_opad + digestsize, 0,
+				 blocksize - digestsize);
+	} else if (keylen == 0) {
+		lc_memset_secure(k_opad, 0, blocksize);
+	} else {
+		memcpy(k_opad, key, keylen);
+		lc_memset_secure(k_opad + keylen, 0, blocksize - keylen);
+	}
+
+	for (i = 0; i < blocksize; i++) {
+		k_ipad[i] = k_opad[i] ^ IPAD;
+		k_opad[i] ^= OPAD;
+	}
+
+out:
+	return ret;
+}
+
+static int lc_hmac_init_nocheck(struct lc_hmac_ctx *hmac_ctx,
+				const uint8_t *key, size_t keylen)
+{
+	const struct lc_hash_ctx *hash_ctx;
+	const struct lc_hash *hash;
+	struct lc_hmac_key *hmac_key;
+	int ret = 0;
+
+	CKNULL(hmac_ctx, -EINVAL);
+
+	hash_ctx = &hmac_ctx->hash_ctx;
+	hash = hash_ctx->hash;
+
+	/*
+	 * _LC_HMAC_SET_CTX sets the hmac_key buffer directly following the
+	 * lc_hmac_ctx structure.
+	 */
+	hmac_key = (struct lc_hmac_key *)(hmac_ctx->key);
+
+	CKINT(lc_hmac_setkey(hmac_key, hash, key, keylen));
+	lc_hmac_reinit(hmac_ctx);
+
+out:
+	return ret;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hmac_init, struct lc_hmac_ctx *hmac_ctx,
+		      const uint8_t *key, size_t keylen)
+{
+	hmac_selftest();
+	LC_SELFTEST_COMPLETED(LC_ALG_STATUS_HMAC);
+
+	return lc_hmac_init_nocheck(hmac_ctx, key, keylen);
+}
+
+static int
+lc_hmac_init_with_hmac_key_nocheck(struct lc_hmac_ctx *hmac_ctx,
+				   const struct lc_hmac_key *hmac_key)
+{
+	int ret = 0;
+
+	CKNULL(hmac_ctx, -EINVAL);
+	CKNULL(hmac_key, -EINVAL);
+
+	hmac_ctx->key = hmac_key;
+	lc_hmac_reinit(hmac_ctx);
+
+out:
+	return ret;
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hmac_init_with_hmac_key,
+		      struct lc_hmac_ctx *hmac_ctx,
+		      const struct lc_hmac_key *hmac_key)
+{
+	hmac_selftest();
+	LC_SELFTEST_COMPLETED(LC_ALG_STATUS_HMAC);
+
+	return lc_hmac_init_with_hmac_key_nocheck(hmac_ctx, hmac_key);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hmac_update, struct lc_hmac_ctx *hmac_ctx,
+		      const uint8_t *in, size_t inlen)
+{
+	struct lc_hash_ctx *hash_ctx;
+
+	if (!hmac_ctx)
+		return;
+
+	hash_ctx = &hmac_ctx->hash_ctx;
+	lc_hash_update(hash_ctx, in, inlen);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hmac_final, struct lc_hmac_ctx *hmac_ctx,
+		      uint8_t *mac)
+{
+	struct lc_hash_ctx *hash_ctx;
+	const struct lc_hmac_key *key;
+	const uint8_t *k_opad;
+
+	if (!hmac_ctx)
+		return;
+
+	hash_ctx = &hmac_ctx->hash_ctx;
+	key = hmac_ctx->key;
+	k_opad = key->k_opad;
+
+	lc_hash_final(hash_ctx, mac);
+
+	if (lc_hash_init(hash_ctx)) {
+		memset(mac, 0, lc_hash_digestsize(hash_ctx));
+		return;
+	}
+	lc_hash_update(hash_ctx, k_opad, lc_hash_blocksize(hash_ctx));
+	lc_hash_update(hash_ctx, mac, lc_hash_digestsize(hash_ctx));
+	lc_hash_final(hash_ctx, mac);
+
+	/* Timecop: mac is not sensitive regarding side-channels. */
+	unpoison(mac, lc_hash_digestsize(hash_ctx));
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hmac_alloc, const struct lc_hash *hash,
+		      struct lc_hmac_ctx **hmac_ctx)
+{
+	struct lc_hmac_ctx *out_ctx = NULL;
+	int ret = lc_alloc_aligned((void **)&out_ctx, LC_HASH_COMMON_ALIGNMENT,
+				   LC_HMAC_CTX_SIZE);
+
+	if (ret)
+		return ret;
+
+	LC_HMAC_SET_CTX(out_ctx, hash);
+
+	*hmac_ctx = out_ctx;
+
+	return 0;
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hmac_zero_free, struct lc_hmac_ctx *hmac_ctx)
+{
+	if (!hmac_ctx)
+		return;
+
+	lc_hmac_zero(hmac_ctx);
+	lc_free(hmac_ctx);
+}
+
+LC_INTERFACE_FUNCTION(void, lc_hmac_zero, struct lc_hmac_ctx *hmac_ctx)
+{
+	uint8_t *implied_key;
+	if (!hmac_ctx)
+		return;
+
+	lc_hash_zero(&hmac_ctx->hash_ctx);
+
+	/*
+	 * Only clear the key buffer if it was allocated with lc_hmac_alloc or
+	 * LC_HMAC_SET_CTX (i.e. its buffer is right behind the lc_hmac_ctx).
+	 * All others must zeroize the key state themselves.
+	 */
+	implied_key = (uint8_t *)hmac_ctx + sizeof(struct lc_hmac_ctx);
+	if ((uint8_t *)hmac_ctx->key == implied_key)
+		lc_memset_secure(implied_key, 0, LC_HMAC_KEY_SIZE);
+}
+
+LC_INTERFACE_FUNCTION(size_t, lc_hmac_macsize, struct lc_hmac_ctx *hmac_ctx)
+{
+	struct lc_hash_ctx *hash_ctx = &hmac_ctx->hash_ctx;
+
+	return lc_hash_digestsize(hash_ctx);
+}
+
+LC_INTERFACE_FUNCTION(int, lc_hmac, const struct lc_hash *hash,
+		      const uint8_t *key, size_t keylen, const uint8_t *in,
+		      size_t inlen, uint8_t *mac)
+{
+	LC_HMAC_CTX_ON_STACK(hmac_ctx, hash);
+	int ret;
+
+	CKINT(lc_hmac_init(hmac_ctx, key, keylen));
+	lc_hmac_update(hmac_ctx, in, inlen);
+	lc_hmac_final(hmac_ctx, mac);
+
+out:
+	lc_hmac_zero(hmac_ctx);
+	return ret;
+}
+
+void lc_hmac_nocheck(const struct lc_hash *hash, const uint8_t *key,
+		     size_t keylen, const uint8_t *in, size_t inlen,
+		     uint8_t *mac)
+{
+	LC_HMAC_CTX_ON_STACK(hmac_ctx, hash);
+
+	if (lc_hmac_init_nocheck(hmac_ctx, key, keylen)) {
+		struct lc_hash_ctx *hash_ctx = &hmac_ctx->hash_ctx;
+
+		memset(mac, 0, lc_hash_digestsize(hash_ctx));
+		return;
+	}
+	lc_hmac_update(hmac_ctx, in, inlen);
+	lc_hmac_final(hmac_ctx, mac);
+
+	lc_hmac_zero(hmac_ctx);
+}
+
+LC_INTERFACE_FUNCTION(enum lc_alg_status_val, lc_hmac_alg_status,
+		      const struct lc_hash *hash)
+{
+	if (!hash)
+		return 0;
+
+	/* A priori, all hash types are allowed for FIPS */
+	return lc_alg_status(LC_ALG_STATUS_HMAC | LC_ALG_STATUS_FIPS);
+}
+
+LC_INTERFACE_FUNCTION(enum lc_alg_status_val, lc_hmac_ctx_alg_status,
+		      const struct lc_hash_ctx *ctx)
+{
+	if (!ctx)
+		return 0;
+
+	return lc_hmac_alg_status(ctx->hash);
+}

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/build/checks/structural-imports.exe",
   "input_kind": "executable",
-  "timestamp": "2026-10-14T09:48:32.460059+00:00",
+  "timestamp": "2026-10-15T05:28:28.854674+00:00",
   "tool": {
     "name": "qcs",
     "version": "0.1.0",
@@ -15,7 +15,7 @@
     "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
     "yara": {
       "python_binding": "4.5.4",
-      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
       "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
       "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
       "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
@@ -96,6 +96,19 @@
       ],
       "matched_algorithms": [],
       "shared_analysis": "guomi_semantic"
+    },
+    "semantic_probes": {
+      "method": "bounded private-memory concrete semantics",
+      "target_native_execution": false,
+      "target_system_calls": false,
+      "candidate_algorithms": [],
+      "matches": [],
+      "limitations": [
+        "Finite probes do not prove equivalence for all inputs",
+        "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+        "Candidate and time budgets; unmodeled imports decline the probe"
+      ],
+      "status": "not_applicable"
     }
   },
   "errors": [],
@@ -264,5 +277,17 @@
     }
   ],
   "components": [],
+  "operation_diagnostics": {
+    "binary": [
+      {
+        "architecture": "pe_x86_64",
+        "event_counts": {},
+        "table_reads": {},
+        "located_tables": {},
+        "helper_calls": 0,
+        "stage": "bounded_lifting_finished"
+      }
+    ]
+  },
   "controlflow_analysis": []
 }

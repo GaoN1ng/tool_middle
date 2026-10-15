@@ -1,0 +1,2 @@
+('arm', 64.68414603592828, 'partial', ['SM3'], [{'engine': 'guomi_semantic', 'code': 'analysis_limit', 'message': 'Local operation analysis budget exhausted'}, {'engine': 'dispatch', 'code': 'timeout', 'message': 'Overall scan deadline exceeded'}])
+('thumb', 63.29331160103902, 'partial', ['SM3'], [{'engine': 'dispatch', 'code': 'timeout', 'message': 'Overall scan deadline exceeded'}])

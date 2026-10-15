@@ -1,0 +1,14 @@
+test_different_inputs_real_arm_negatives (test_research_operations.ResearchOperationsTests.test_different_inputs_real_arm_negatives) ... ok
+test_full_width_bit_equivalence_and_partial_negatives (test_research_operations.ResearchOperationsTests.test_full_width_bit_equivalence_and_partial_negatives) ... ok
+test_guard_requires_terminal_trap_without_side_effects (test_research_operations.ResearchOperationsTests.test_guard_requires_terminal_trap_without_side_effects) ... ok
+test_header_only_unused_algorithm_is_not_inherited (test_research_operations.ResearchOperationsTests.test_header_only_unused_algorithm_is_not_inherited) ... ok
+test_header_scalar_helper_actual_equation (test_research_operations.ResearchOperationsTests.test_header_scalar_helper_actual_equation) ... ok
+test_local_shadowing_and_builtin_width (test_research_operations.ResearchOperationsTests.test_local_shadowing_and_builtin_width) ... ok
+test_real_compiler_guard_and_arm_forms (test_research_operations.ResearchOperationsTests.test_real_compiler_guard_and_arm_forms) ... ok
+test_reference_requires_ecdh_operation_body_not_forwarder (test_research_operations.ResearchOperationsTests.test_reference_requires_ecdh_operation_body_not_forwarder) ... ok
+test_role_tags_bind_only_the_matching_input (test_research_operations.ResearchOperationsTests.test_role_tags_bind_only_the_matching_input) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 110.916s
+
+OK

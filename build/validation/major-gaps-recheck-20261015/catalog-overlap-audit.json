@@ -1,0 +1,215 @@
+{
+  "history": {
+    "files": 2855,
+    "physical_test_set_entries": [
+      {
+        "id": "sm4ni-reference-source-0",
+        "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+        "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c",
+        "roles": [
+          "development_or_regression",
+          "historical_validation"
+        ],
+        "uses": [
+          {
+            "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+            "id": "sm4ni-reference-source",
+            "historical_split": "development",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "AES",
+              "DES",
+              "RC4",
+              "ChaCha20",
+              "RSA",
+              "ECDSA",
+              "ECDH",
+              "MD5",
+              "SHA-1",
+              "SHA-256",
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-reference"
+          },
+          {
+            "manifest": "validation_set/guomi-20261012/manifest.json",
+            "id": "sm4ni-reference-source-0",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-reference"
+          },
+          {
+            "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+            "id": "sm4ni-reference-source-0",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-reference"
+          },
+          {
+            "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+            "id": "sm4ni-reference-source-0",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-reference"
+          }
+        ]
+      },
+      {
+        "id": "sm4ni-aesni-source-1",
+        "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+        "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c",
+        "roles": [
+          "development_or_regression",
+          "historical_validation"
+        ],
+        "uses": [
+          {
+            "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+            "id": "sm4ni-affine-AESNI-source",
+            "historical_split": "development",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "AES",
+              "DES",
+              "RC4",
+              "ChaCha20",
+              "RSA",
+              "ECDSA",
+              "ECDH",
+              "MD5",
+              "SHA-1",
+              "SHA-256",
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-affine-AESNI"
+          },
+          {
+            "manifest": "validation_set/guomi-20261012/manifest.json",
+            "id": "sm4ni-aesni-source-1",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-aesni"
+          },
+          {
+            "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+            "id": "sm4ni-aesni-source-1",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-aesni"
+          },
+          {
+            "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+            "id": "sm4ni-aesni-source-1",
+            "historical_split": "acceptance",
+            "truth": {
+              "implementation_contains": [
+                "SM4"
+              ],
+              "api_reference": null
+            },
+            "known_algorithms": [
+              "SM2",
+              "SM3",
+              "SM4"
+            ],
+            "project": "sm4ni",
+            "family": "sm4ni-aesni"
+          }
+        ]
+      }
+    ],
+    "catalog_overlap_entries": [
+      {
+        "id": "sm4ni-reference-source-0",
+        "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+        "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c"
+      },
+      {
+        "id": "sm4ni-aesni-source-1",
+        "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+        "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c"
+      }
+    ]
+  },
+  "recent": {
+    "files": 232,
+    "physical_test_set_entries": [],
+    "catalog_overlap_entries": []
+  },
+  "rf": {
+    "files": 252,
+    "physical_test_set_entries": [],
+    "catalog_overlap_entries": []
+  }
+}

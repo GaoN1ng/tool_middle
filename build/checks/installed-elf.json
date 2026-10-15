@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/elf_samples/35/354aeed5b977b597/rc4-holdout.so",
   "input_kind": "executable",
-  "timestamp": "2026-10-14T09:48:28.174406+00:00",
+  "timestamp": "2026-10-15T05:28:19.356170+00:00",
   "tool": {
     "name": "qcs",
     "version": "0.1.0",
@@ -15,7 +15,7 @@
     "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
     "yara": {
       "python_binding": "4.5.4",
-      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+      "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
       "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
       "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
       "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
@@ -107,6 +107,19 @@
       ],
       "matched_algorithms": [],
       "shared_analysis": "guomi_semantic"
+    },
+    "semantic_probes": {
+      "method": "bounded private-memory concrete semantics",
+      "target_native_execution": false,
+      "target_system_calls": false,
+      "candidate_algorithms": [],
+      "matches": [],
+      "limitations": [
+        "Finite probes do not prove equivalence for all inputs",
+        "ELF ABI: out/scalar/point; context/key/length and context/block[/length]",
+        "Candidate and time budgets; unmodeled imports decline the probe"
+      ],
+      "status": "not_applicable"
     }
   },
   "errors": [],
@@ -419,50 +432,121 @@
     }
   ],
   "components": [],
+  "operation_diagnostics": {
+    "binary": [
+      {
+        "architecture": "x86_64",
+        "event_counts": {
+          "sub": 6,
+          "immediate": 53,
+          "add": 51,
+          "xor": 83,
+          "constant": 20,
+          "and": 6
+        },
+        "table_reads": {},
+        "located_tables": {},
+        "helper_calls": 0,
+        "stage": "bounded_lifting_finished"
+      }
+    ]
+  },
   "controlflow_analysis": [
     {
       "architecture": "x86_64",
       "section_address": 5508,
       "status": "completed",
-      "steps": 9,
+      "steps": 16,
       "blocks": 3,
       "loop_edges": 0,
       "joins": 1,
       "widened_blocks": 0,
-      "entry_count": 1
+      "entry_count": 1,
+      "declined_transfers": 0,
+      "replayed_blocks": 3,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 9,
+      "component_count": 1,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
     },
     {
       "architecture": "x86_64",
       "section_address": 5532,
       "status": "completed",
-      "steps": 3,
+      "steps": 6,
       "blocks": 1,
       "loop_edges": 0,
       "joins": 0,
       "widened_blocks": 0,
-      "entry_count": 1
+      "entry_count": 1,
+      "declined_transfers": 0,
+      "replayed_blocks": 1,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 3,
+      "component_count": 1,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
     },
     {
       "architecture": "x86_64",
       "section_address": 5552,
       "status": "completed",
-      "steps": 476,
+      "steps": 742,
       "blocks": 13,
       "loop_edges": 8,
       "joins": 15,
       "widened_blocks": 0,
-      "entry_count": 3
+      "entry_count": 3,
+      "declined_transfers": 0,
+      "replayed_blocks": 13,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 476,
+      "component_count": 3,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
+    },
+    {
+      "architecture": "x86_64",
+      "section_address": 5552,
+      "phase": "natural_loop_entry_prefix",
+      "status": "completed",
+      "steps": 130,
+      "blocks": 13,
+      "loop_edges": 0,
+      "joins": 0,
+      "widened_blocks": 0,
+      "entry_count": 3,
+      "declined_transfers": 0,
+      "replayed_blocks": 4,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 65,
+      "component_count": 9,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
     },
     {
       "architecture": "x86_64",
       "section_address": 6704,
       "status": "completed",
-      "steps": 2,
+      "steps": 4,
       "blocks": 5,
       "loop_edges": 0,
       "joins": 0,
       "widened_blocks": 0,
-      "entry_count": 1
+      "entry_count": 1,
+      "declined_transfers": 0,
+      "replayed_blocks": 1,
+      "unstable_reachable_blocks": 0,
+      "fixed_point_steps": 2,
+      "component_count": 5,
+      "limited_components": 0,
+      "step_budget_per_component_per_phase": 80000,
+      "total_step_budget": 1000000
     }
   ]
 }

@@ -1,0 +1,2583 @@
+{
+  "policy": "Auxiliary sensitivity only; primary 2855-file denominator and labels are unchanged.",
+  "catalog_overlap": {
+    "history": {
+      "files": 2855,
+      "physical_test_set_entries": [
+        {
+          "id": "sm4ni-reference-source-0",
+          "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+          "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c",
+          "roles": [
+            "development_or_regression",
+            "historical_validation"
+          ],
+          "uses": [
+            {
+              "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+              "id": "sm4ni-reference-source",
+              "historical_split": "development",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "AES",
+                "DES",
+                "RC4",
+                "ChaCha20",
+                "RSA",
+                "ECDSA",
+                "ECDH",
+                "MD5",
+                "SHA-1",
+                "SHA-256",
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            },
+            {
+              "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+              "id": "sm4ni-reference-source-0",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-reference"
+            }
+          ]
+        },
+        {
+          "id": "sm4ni-aesni-source-1",
+          "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+          "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c",
+          "roles": [
+            "development_or_regression",
+            "historical_validation"
+          ],
+          "uses": [
+            {
+              "manifest": "samples/controlflow-diversity-addendum-20261014/manifest.json",
+              "id": "sm4ni-affine-AESNI-source",
+              "historical_split": "development",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "AES",
+                "DES",
+                "RC4",
+                "ChaCha20",
+                "RSA",
+                "ECDSA",
+                "ECDH",
+                "MD5",
+                "SHA-1",
+                "SHA-256",
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-affine-AESNI"
+            },
+            {
+              "manifest": "validation_set/guomi-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            },
+            {
+              "manifest": "validation_set/guomi-improved-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            },
+            {
+              "manifest": "validation_set/guomi-operations-20261012/manifest.json",
+              "id": "sm4ni-aesni-source-1",
+              "historical_split": "acceptance",
+              "truth": {
+                "implementation_contains": [
+                  "SM4"
+                ],
+                "api_reference": null
+              },
+              "known_algorithms": [
+                "SM2",
+                "SM3",
+                "SM4"
+              ],
+              "project": "sm4ni",
+              "family": "sm4ni-aesni"
+            }
+          ]
+        }
+      ],
+      "catalog_overlap_entries": [
+        {
+          "id": "sm4ni-reference-source-0",
+          "sha256": "8befe6d2710ea2e042ba49bb9bf95a67bceba15a613721ba6495dc3701fbb9f1",
+          "path": "Samples/test_set/code_samples/8b/8befe6d2710ea2e0/sm4_ref.c"
+        },
+        {
+          "id": "sm4ni-aesni-source-1",
+          "sha256": "df96261bf65369e290c53d50c562cae1a1f860e7275d8ac6d07631afb5f40460",
+          "path": "Samples/test_set/code_samples/df/df96261bf65369e2/sm4ni.c"
+        }
+      ]
+    },
+    "recent": {
+      "files": 232,
+      "physical_test_set_entries": [],
+      "catalog_overlap_entries": []
+    },
+    "rf": {
+      "files": 252,
+      "physical_test_set_entries": [],
+      "catalog_overlap_entries": []
+    }
+  },
+  "excluded_files": 2,
+  "before": {
+    "files": 2853,
+    "positive_labels": 1453,
+    "scan_status": {
+      "completed": 2852,
+      "partial": 1
+    },
+    "micro": {
+      "TP": 492,
+      "FP": 6,
+      "FN": 961,
+      "TN": 23945,
+      "recall": 0.33860977288368893,
+      "false_negative_rate": 0.6613902271163111,
+      "precision": 0.9879518072289156
+    },
+    "per_algorithm": {
+      "AES": {
+        "TP": 112,
+        "FP": 0,
+        "FN": 28,
+        "TN": 1924,
+        "recall": 0.8,
+        "false_negative_rate": 0.2,
+        "precision": 1.0
+      },
+      "ChaCha20": {
+        "TP": 77,
+        "FP": 0,
+        "FN": 55,
+        "TN": 1932,
+        "recall": 0.5833333333333334,
+        "false_negative_rate": 0.4166666666666667,
+        "precision": 1.0
+      },
+      "DES": {
+        "TP": 7,
+        "FP": 0,
+        "FN": 68,
+        "TN": 1989,
+        "recall": 0.09333333333333334,
+        "false_negative_rate": 0.9066666666666666,
+        "precision": 1.0
+      },
+      "ECDH": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 115,
+        "TN": 1949,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "ECDSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 59,
+        "TN": 2005,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "MD5": {
+        "TP": 78,
+        "FP": 0,
+        "FN": 40,
+        "TN": 1946,
+        "recall": 0.6610169491525424,
+        "false_negative_rate": 0.3389830508474576,
+        "precision": 1.0
+      },
+      "RC4": {
+        "TP": 29,
+        "FP": 0,
+        "FN": 46,
+        "TN": 1989,
+        "recall": 0.38666666666666666,
+        "false_negative_rate": 0.6133333333333333,
+        "precision": 1.0
+      },
+      "RSA": {
+        "TP": 7,
+        "FP": 0,
+        "FN": 95,
+        "TN": 1962,
+        "recall": 0.06862745098039216,
+        "false_negative_rate": 0.9313725490196079,
+        "precision": 1.0
+      },
+      "SHA-1": {
+        "TP": 71,
+        "FP": 6,
+        "FN": 83,
+        "TN": 1904,
+        "recall": 0.461038961038961,
+        "false_negative_rate": 0.538961038961039,
+        "precision": 0.922077922077922
+      },
+      "SHA-256": {
+        "TP": 27,
+        "FP": 0,
+        "FN": 148,
+        "TN": 1889,
+        "recall": 0.15428571428571428,
+        "false_negative_rate": 0.8457142857142858,
+        "precision": 1.0
+      },
+      "SM2": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 114,
+        "TN": 1474,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SM3": {
+        "TP": 70,
+        "FP": 0,
+        "FN": 26,
+        "TN": 1492,
+        "recall": 0.7291666666666666,
+        "false_negative_rate": 0.2708333333333333,
+        "precision": 1.0
+      },
+      "SM4": {
+        "TP": 14,
+        "FP": 0,
+        "FN": 84,
+        "TN": 1490,
+        "recall": 0.14285714285714285,
+        "false_negative_rate": 0.8571428571428571,
+        "precision": 1.0
+      }
+    },
+    "implementation_groups": [
+      {
+        "algorithm": "AES",
+        "project": "axtls",
+        "family": "axtls-aes",
+        "TP": 21,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9545454545454546,
+        "false_negative_rate": 0.045454545454545456,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "cifra",
+        "family": "cifra-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "cifra",
+        "family": "cifra-aes-no-cache-protection",
+        "TP": 18,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "libgcrypt",
+        "family": "libgcrypt-rijndael",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "AES",
+        "project": "libsodium",
+        "family": "libsodium-aead_aes256gcm_aesni",
+        "TP": 3,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-aes",
+        "TP": 16,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9411764705882353,
+        "false_negative_rate": 0.058823529411764705,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "nettle",
+        "family": "nettle-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8571428571428571,
+        "false_negative_rate": 0.14285714285714285,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "putty",
+        "family": "putty-aes",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "AES",
+        "project": "wolfssl",
+        "family": "wolfssl-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "cifra",
+        "family": "cifra-chacha20",
+        "TP": 12,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7058823529411765,
+        "false_negative_rate": 0.29411764705882354,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libgcrypt",
+        "family": "libgcrypt-chacha20",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libsodium",
+        "family": "libsodium-chacha20_ref",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-chacha",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "monocypher",
+        "family": "monocypher-main",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "nettle",
+        "family": "nettle-chacha",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "putty",
+        "family": "putty-chacha",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "wolfssl",
+        "family": "wolfssl-chacha",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "libgcrypt",
+        "family": "libgcrypt-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-des",
+        "TP": 6,
+        "FP": 0,
+        "FN": 13,
+        "TN": 0,
+        "recall": 0.3157894736842105,
+        "false_negative_rate": 0.6842105263157895,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "DES",
+        "project": "nettle",
+        "family": "nettle-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "putty",
+        "family": "putty-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "wolfssl",
+        "family": "wolfssl-des",
+        "TP": 1,
+        "FP": 0,
+        "FN": 18,
+        "TN": 0,
+        "recall": 0.05263157894736842,
+        "false_negative_rate": 0.9473684210526315,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "cifra",
+        "family": "cifra-curve25519.tweetnacl",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libgcrypt",
+        "family": "libgcrypt-ecc-ecdh",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libsodium",
+        "family": "libsodium-x25519_ref10",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-ecdh",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "monocypher",
+        "family": "monocypher-main",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "putty",
+        "family": "putty-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "wolfssl",
+        "family": "wolfssl-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "libgcrypt",
+        "family": "libgcrypt-ecc-ecdsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-ecdsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 20,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "putty",
+        "family": "putty-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "wolfssl",
+        "family": "wolfssl-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "axtls",
+        "family": "axtls-md5",
+        "TP": 17,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7727272727272727,
+        "false_negative_rate": 0.22727272727272727,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "libgcrypt",
+        "family": "libgcrypt-md5",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-md5",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "nettle",
+        "family": "nettle-md5",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "putty",
+        "family": "putty-md5",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "rhash",
+        "family": "rhash-md5",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "wolfssl",
+        "family": "wolfssl-md5",
+        "TP": 3,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.15789473684210525,
+        "false_negative_rate": 0.8421052631578947,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "libgcrypt",
+        "family": "libgcrypt-arcfour",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RC4",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-rc4",
+        "TP": 11,
+        "FP": 0,
+        "FN": 8,
+        "TN": 0,
+        "recall": 0.5789473684210527,
+        "false_negative_rate": 0.42105263157894735,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "nettle",
+        "family": "nettle-rc4",
+        "TP": 8,
+        "FP": 0,
+        "FN": 11,
+        "TN": 0,
+        "recall": 0.42105263157894735,
+        "false_negative_rate": 0.5789473684210527,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "putty",
+        "family": "putty-rc4",
+        "TP": 10,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5263157894736842,
+        "false_negative_rate": 0.47368421052631576,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "wolfssl",
+        "family": "wolfssl-rc4",
+        "TP": 0,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "axtls",
+        "family": "axtls-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 42,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "libgcrypt",
+        "family": "libgcrypt-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-rsa",
+        "TP": 1,
+        "FP": 0,
+        "FN": 20,
+        "TN": 0,
+        "recall": 0.047619047619047616,
+        "false_negative_rate": 0.9523809523809523,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RSA",
+        "project": "putty",
+        "family": "putty-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "wolfssl",
+        "family": "wolfssl-rsa",
+        "TP": 6,
+        "FP": 0,
+        "FN": 13,
+        "TN": 0,
+        "recall": 0.3157894736842105,
+        "false_negative_rate": 0.6842105263157895,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "axtls",
+        "family": "axtls-sha1",
+        "TP": 13,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5909090909090909,
+        "false_negative_rate": 0.4090909090909091,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "cifra",
+        "family": "cifra-sha1",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "libgcrypt",
+        "family": "libgcrypt-sha1",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-sha1",
+        "TP": 11,
+        "FP": 0,
+        "FN": 8,
+        "TN": 0,
+        "recall": 0.5789473684210527,
+        "false_negative_rate": 0.42105263157894735,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "nayuki",
+        "family": "nayuki-sha1-C",
+        "TP": 7,
+        "FP": 0,
+        "FN": 10,
+        "TN": 0,
+        "recall": 0.4117647058823529,
+        "false_negative_rate": 0.5882352941176471,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "nettle",
+        "family": "nettle-sha1",
+        "TP": 10,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5263157894736842,
+        "false_negative_rate": 0.47368421052631576,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "putty",
+        "family": "putty-sha1",
+        "TP": 10,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5263157894736842,
+        "false_negative_rate": 0.47368421052631576,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "rhash",
+        "family": "rhash-sha1",
+        "TP": 8,
+        "FP": 0,
+        "FN": 11,
+        "TN": 0,
+        "recall": 0.42105263157894735,
+        "false_negative_rate": 0.5789473684210527,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "wolfssl",
+        "family": "wolfssl-sha1",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "axtls",
+        "family": "axtls-sha256",
+        "TP": 7,
+        "FP": 0,
+        "FN": 15,
+        "TN": 0,
+        "recall": 0.3181818181818182,
+        "false_negative_rate": 0.6818181818181818,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "cifra",
+        "family": "cifra-sha256",
+        "TP": 2,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.10526315789473684,
+        "false_negative_rate": 0.8947368421052632,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libgcrypt",
+        "family": "libgcrypt-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libsodium",
+        "family": "libsodium-hash_sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-sha256",
+        "TP": 6,
+        "FP": 0,
+        "FN": 13,
+        "TN": 0,
+        "recall": 0.3157894736842105,
+        "false_negative_rate": 0.6842105263157895,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nayuki",
+        "family": "nayuki-sha256-C",
+        "TP": 6,
+        "FP": 0,
+        "FN": 13,
+        "TN": 0,
+        "recall": 0.3157894736842105,
+        "false_negative_rate": 0.6842105263157895,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nayuki",
+        "family": "nayuki-sha256-asm",
+        "TP": 3,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nettle",
+        "family": "nettle-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "putty",
+        "family": "putty-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "rhash",
+        "family": "rhash-sha256",
+        "TP": 3,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.15789473684210525,
+        "false_negative_rate": 0.8421052631578947,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "wolfssl",
+        "family": "wolfssl-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "botan",
+        "family": "botan-sm2-encrypt",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "botan",
+        "family": "botan-sm2-sign",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "cyclone",
+        "family": "cyclone-sm2",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-encrypt",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-exchange",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-sign",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "botan",
+        "family": "botan-sm3",
+        "TP": 16,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8421052631578947,
+        "false_negative_rate": 0.15789473684210525,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "cryptopp",
+        "family": "cryptopp-sm3",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "cyclone",
+        "family": "cyclone-sm3",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "openhitls",
+        "family": "openhitls-sm3",
+        "TP": 12,
+        "FP": 0,
+        "FN": 8,
+        "TN": 0,
+        "recall": 0.6,
+        "false_negative_rate": 0.4,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "openhitls",
+        "family": "openhitls-sm3-small",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "botan",
+        "family": "botan-sm4",
+        "TP": 2,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.10526315789473684,
+        "false_negative_rate": 0.8947368421052632,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "cryptopp",
+        "family": "cryptopp-sm4",
+        "TP": 4,
+        "FP": 0,
+        "FN": 15,
+        "TN": 0,
+        "recall": 0.21052631578947367,
+        "false_negative_rate": 0.7894736842105263,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "cyclone",
+        "family": "cyclone-sm4",
+        "TP": 1,
+        "FP": 0,
+        "FN": 18,
+        "TN": 0,
+        "recall": 0.05263157894736842,
+        "false_negative_rate": 0.9473684210526315,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "openhitls",
+        "family": "openhitls-sm4",
+        "TP": 5,
+        "FP": 0,
+        "FN": 15,
+        "TN": 0,
+        "recall": 0.25,
+        "false_negative_rate": 0.75,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "sm4ni",
+        "family": "sm4ni-aesni",
+        "TP": 1,
+        "FP": 0,
+        "FN": 2,
+        "TN": 0,
+        "recall": 0.3333333333333333,
+        "false_negative_rate": 0.6666666666666666,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "sm4ni",
+        "family": "sm4ni-reference",
+        "TP": 1,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.05555555555555555,
+        "false_negative_rate": 0.9444444444444444,
+        "precision": 1.0
+      }
+    ]
+  },
+  "after": {
+    "files": 2853,
+    "positive_labels": 1453,
+    "scan_status": {
+      "completed": 2820,
+      "partial": 33
+    },
+    "micro": {
+      "TP": 683,
+      "FP": 6,
+      "FN": 770,
+      "TN": 23945,
+      "recall": 0.4700619408121129,
+      "false_negative_rate": 0.5299380591878872,
+      "precision": 0.9912917271407837
+    },
+    "per_algorithm": {
+      "AES": {
+        "TP": 112,
+        "FP": 0,
+        "FN": 28,
+        "TN": 1924,
+        "recall": 0.8,
+        "false_negative_rate": 0.2,
+        "precision": 1.0
+      },
+      "ChaCha20": {
+        "TP": 88,
+        "FP": 0,
+        "FN": 44,
+        "TN": 1932,
+        "recall": 0.6666666666666666,
+        "false_negative_rate": 0.3333333333333333,
+        "precision": 1.0
+      },
+      "DES": {
+        "TP": 37,
+        "FP": 0,
+        "FN": 38,
+        "TN": 1989,
+        "recall": 0.49333333333333335,
+        "false_negative_rate": 0.5066666666666667,
+        "precision": 1.0
+      },
+      "ECDH": {
+        "TP": 14,
+        "FP": 0,
+        "FN": 101,
+        "TN": 1949,
+        "recall": 0.12173913043478261,
+        "false_negative_rate": 0.8782608695652174,
+        "precision": 1.0
+      },
+      "ECDSA": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 59,
+        "TN": 2005,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "MD5": {
+        "TP": 95,
+        "FP": 0,
+        "FN": 23,
+        "TN": 1946,
+        "recall": 0.8050847457627118,
+        "false_negative_rate": 0.19491525423728814,
+        "precision": 1.0
+      },
+      "RC4": {
+        "TP": 30,
+        "FP": 0,
+        "FN": 45,
+        "TN": 1989,
+        "recall": 0.4,
+        "false_negative_rate": 0.6,
+        "precision": 1.0
+      },
+      "RSA": {
+        "TP": 19,
+        "FP": 0,
+        "FN": 83,
+        "TN": 1962,
+        "recall": 0.18627450980392157,
+        "false_negative_rate": 0.8137254901960784,
+        "precision": 1.0
+      },
+      "SHA-1": {
+        "TP": 95,
+        "FP": 6,
+        "FN": 59,
+        "TN": 1904,
+        "recall": 0.6168831168831169,
+        "false_negative_rate": 0.38311688311688313,
+        "precision": 0.9405940594059405
+      },
+      "SHA-256": {
+        "TP": 71,
+        "FP": 0,
+        "FN": 104,
+        "TN": 1889,
+        "recall": 0.4057142857142857,
+        "false_negative_rate": 0.5942857142857143,
+        "precision": 1.0
+      },
+      "SM2": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 114,
+        "TN": 1474,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      "SM3": {
+        "TP": 71,
+        "FP": 0,
+        "FN": 25,
+        "TN": 1492,
+        "recall": 0.7395833333333334,
+        "false_negative_rate": 0.2604166666666667,
+        "precision": 1.0
+      },
+      "SM4": {
+        "TP": 51,
+        "FP": 0,
+        "FN": 47,
+        "TN": 1490,
+        "recall": 0.5204081632653061,
+        "false_negative_rate": 0.47959183673469385,
+        "precision": 1.0
+      }
+    },
+    "implementation_groups": [
+      {
+        "algorithm": "AES",
+        "project": "axtls",
+        "family": "axtls-aes",
+        "TP": 21,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9545454545454546,
+        "false_negative_rate": 0.045454545454545456,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "cifra",
+        "family": "cifra-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "cifra",
+        "family": "cifra-aes-no-cache-protection",
+        "TP": 18,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "libgcrypt",
+        "family": "libgcrypt-rijndael",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "AES",
+        "project": "libsodium",
+        "family": "libsodium-aead_aes256gcm_aesni",
+        "TP": 3,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.75,
+        "false_negative_rate": 0.25,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-aes",
+        "TP": 16,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9411764705882353,
+        "false_negative_rate": 0.058823529411764705,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "nettle",
+        "family": "nettle-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8571428571428571,
+        "false_negative_rate": 0.14285714285714285,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "AES",
+        "project": "putty",
+        "family": "putty-aes",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "AES",
+        "project": "wolfssl",
+        "family": "wolfssl-aes",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "cifra",
+        "family": "cifra-chacha20",
+        "TP": 14,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8235294117647058,
+        "false_negative_rate": 0.17647058823529413,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libgcrypt",
+        "family": "libgcrypt-chacha20",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libsodium",
+        "family": "libsodium-chacha20_ref",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-chacha",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "monocypher",
+        "family": "monocypher-main",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "nettle",
+        "family": "nettle-chacha",
+        "TP": 16,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8421052631578947,
+        "false_negative_rate": 0.15789473684210525,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "putty",
+        "family": "putty-chacha",
+        "TP": 16,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8421052631578947,
+        "false_negative_rate": 0.15789473684210525,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ChaCha20",
+        "project": "wolfssl",
+        "family": "wolfssl-chacha",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "libgcrypt",
+        "family": "libgcrypt-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-des",
+        "TP": 19,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "DES",
+        "project": "nettle",
+        "family": "nettle-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "putty",
+        "family": "putty-des",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "DES",
+        "project": "wolfssl",
+        "family": "wolfssl-des",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "cifra",
+        "family": "cifra-curve25519.tweetnacl",
+        "TP": 2,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.10526315789473684,
+        "false_negative_rate": 0.8947368421052632,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libgcrypt",
+        "family": "libgcrypt-ecc-ecdh",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libsodium",
+        "family": "libsodium-x25519_ref10",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-ecdh",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "monocypher",
+        "family": "monocypher-main",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "putty",
+        "family": "putty-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDH",
+        "project": "wolfssl",
+        "family": "wolfssl-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "libgcrypt",
+        "family": "libgcrypt-ecc-ecdsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-ecdsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 20,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "putty",
+        "family": "putty-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "ECDSA",
+        "project": "wolfssl",
+        "family": "wolfssl-ecc",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "axtls",
+        "family": "axtls-md5",
+        "TP": 22,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "libgcrypt",
+        "family": "libgcrypt-md5",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "MD5",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-md5",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "nettle",
+        "family": "nettle-md5",
+        "TP": 19,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "putty",
+        "family": "putty-md5",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "rhash",
+        "family": "rhash-md5",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "MD5",
+        "project": "wolfssl",
+        "family": "wolfssl-md5",
+        "TP": 3,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.15789473684210525,
+        "false_negative_rate": 0.8421052631578947,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "libgcrypt",
+        "family": "libgcrypt-arcfour",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-rc4",
+        "TP": 10,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5263157894736842,
+        "false_negative_rate": 0.47368421052631576,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "nettle",
+        "family": "nettle-rc4",
+        "TP": 9,
+        "FP": 0,
+        "FN": 10,
+        "TN": 0,
+        "recall": 0.47368421052631576,
+        "false_negative_rate": 0.5263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "putty",
+        "family": "putty-rc4",
+        "TP": 10,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5263157894736842,
+        "false_negative_rate": 0.47368421052631576,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RC4",
+        "project": "wolfssl",
+        "family": "wolfssl-rc4",
+        "TP": 0,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "axtls",
+        "family": "axtls-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 42,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "libgcrypt",
+        "family": "libgcrypt-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-rsa",
+        "TP": 1,
+        "FP": 0,
+        "FN": 20,
+        "TN": 0,
+        "recall": 0.047619047619047616,
+        "false_negative_rate": 0.9523809523809523,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "RSA",
+        "project": "putty",
+        "family": "putty-rsa",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "RSA",
+        "project": "wolfssl",
+        "family": "wolfssl-rsa",
+        "TP": 18,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.9473684210526315,
+        "false_negative_rate": 0.05263157894736842,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "axtls",
+        "family": "axtls-sha1",
+        "TP": 17,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7727272727272727,
+        "false_negative_rate": 0.22727272727272727,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "cifra",
+        "family": "cifra-sha1",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "libgcrypt",
+        "family": "libgcrypt-sha1",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-sha1",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "nayuki",
+        "family": "nayuki-sha1-C",
+        "TP": 11,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6470588235294118,
+        "false_negative_rate": 0.35294117647058826,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "nettle",
+        "family": "nettle-sha1",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "putty",
+        "family": "putty-sha1",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "rhash",
+        "family": "rhash-sha1",
+        "TP": 12,
+        "FP": 0,
+        "FN": 7,
+        "TN": 0,
+        "recall": 0.631578947368421,
+        "false_negative_rate": 0.3684210526315789,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-1",
+        "project": "wolfssl",
+        "family": "wolfssl-sha1",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "axtls",
+        "family": "axtls-sha256",
+        "TP": 10,
+        "FP": 0,
+        "FN": 12,
+        "TN": 0,
+        "recall": 0.45454545454545453,
+        "false_negative_rate": 0.5454545454545454,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "cifra",
+        "family": "cifra-sha256",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libgcrypt",
+        "family": "libgcrypt-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libsodium",
+        "family": "libsodium-hash_sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 16,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "libtomcrypt",
+        "family": "libtomcrypt-sha256",
+        "TP": 14,
+        "FP": 0,
+        "FN": 5,
+        "TN": 0,
+        "recall": 0.7368421052631579,
+        "false_negative_rate": 0.2631578947368421,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nayuki",
+        "family": "nayuki-sha256-C",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nayuki",
+        "family": "nayuki-sha256-asm",
+        "TP": 3,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "recall": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "nettle",
+        "family": "nettle-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "putty",
+        "family": "putty-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "rhash",
+        "family": "rhash-sha256",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SHA-256",
+        "project": "wolfssl",
+        "family": "wolfssl-sha256",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "botan",
+        "family": "botan-sm2-encrypt",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "botan",
+        "family": "botan-sm2-sign",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "cyclone",
+        "family": "cyclone-sm2",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-encrypt",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-exchange",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM2",
+        "project": "openhitls",
+        "family": "openhitls-sm2-sign",
+        "TP": 0,
+        "FP": 0,
+        "FN": 19,
+        "TN": 0,
+        "recall": 0.0,
+        "false_negative_rate": 1.0,
+        "precision": null
+      },
+      {
+        "algorithm": "SM3",
+        "project": "botan",
+        "family": "botan-sm3",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "cryptopp",
+        "family": "cryptopp-sm3",
+        "TP": 16,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "recall": 0.8421052631578947,
+        "false_negative_rate": 0.15789473684210525,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "cyclone",
+        "family": "cyclone-sm3",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "openhitls",
+        "family": "openhitls-sm3",
+        "TP": 12,
+        "FP": 0,
+        "FN": 8,
+        "TN": 0,
+        "recall": 0.6,
+        "false_negative_rate": 0.4,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM3",
+        "project": "openhitls",
+        "family": "openhitls-sm3-small",
+        "TP": 15,
+        "FP": 0,
+        "FN": 4,
+        "TN": 0,
+        "recall": 0.7894736842105263,
+        "false_negative_rate": 0.21052631578947367,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "botan",
+        "family": "botan-sm4",
+        "TP": 2,
+        "FP": 0,
+        "FN": 17,
+        "TN": 0,
+        "recall": 0.10526315789473684,
+        "false_negative_rate": 0.8947368421052632,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "cryptopp",
+        "family": "cryptopp-sm4",
+        "TP": 8,
+        "FP": 0,
+        "FN": 11,
+        "TN": 0,
+        "recall": 0.42105263157894735,
+        "false_negative_rate": 0.5789473684210527,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "cyclone",
+        "family": "cyclone-sm4",
+        "TP": 13,
+        "FP": 0,
+        "FN": 6,
+        "TN": 0,
+        "recall": 0.6842105263157895,
+        "false_negative_rate": 0.3157894736842105,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "openhitls",
+        "family": "openhitls-sm4",
+        "TP": 18,
+        "FP": 0,
+        "FN": 2,
+        "TN": 0,
+        "recall": 0.9,
+        "false_negative_rate": 0.1,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "sm4ni",
+        "family": "sm4ni-aesni",
+        "TP": 1,
+        "FP": 0,
+        "FN": 2,
+        "TN": 0,
+        "recall": 0.3333333333333333,
+        "false_negative_rate": 0.6666666666666666,
+        "precision": 1.0
+      },
+      {
+        "algorithm": "SM4",
+        "project": "sm4ni",
+        "family": "sm4ni-reference",
+        "TP": 9,
+        "FP": 0,
+        "FN": 9,
+        "TN": 0,
+        "recall": 0.5,
+        "false_negative_rate": 0.5,
+        "precision": 1.0
+      }
+    ]
+  }
+}

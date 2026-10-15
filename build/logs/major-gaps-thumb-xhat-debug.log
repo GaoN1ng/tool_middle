@@ -1,0 +1,19 @@
+STORE 0x13ed8 input:0:r1[0] affine-x@81450:0 False
+STORE 0x13eda input:0:r1[4] affine-x@81450:1 False
+STORE 0x13f80 input:0:r1[8] affine-x@81450:2 False
+STORE 0x13f82 input:0:r1[12] high-bit@81712 False
+STORE 0x13fcc input:0:r1[20] 0 False
+STORE 0x13fce input:0:r1[16] 0 False
+STORE 0x14016 input:0:r1[28] 0 False
+STORE 0x14018 input:0:r1[24] 0 True
+STORE 0x13ed8 input:0:r1[0] affine-x@81450:0 False
+STORE 0x13eda input:0:r1[4] affine-x@81450:1 False
+STORE 0x13f80 input:0:r1[8] affine-x@81450:2 False
+STORE 0x13f82 input:0:r1[12] high-bit@81712 False
+STORE 0x13fcc input:0:r1[20] 0 False
+STORE 0x13fce input:0:r1[16] 0 False
+STORE 0x14016 input:0:r1[28] 0 False
+STORE 0x14018 input:0:r1[24] 0 True
+MATCHES []
+HELPERS [{'address': 81424, 'method': 'inferred affine x-hat helper', 'point_argument': 0, 'destination_argument': 1}]
+LIMITED [{'method': 'path-specific unwind range', 'address': 137048, 'bytes': 728, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 138020, 'bytes': 556, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 138792, 'bytes': 632, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 139842, 'bytes': 2270, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 142740, 'bytes': 1760, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 156568, 'bytes': 1032, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 157706, 'bytes': 996, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 158702, 'bytes': 2402, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 163912, 'bytes': 1066, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 164978, 'bytes': 854, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 180494, 'bytes': 968, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 187480, 'bytes': 952, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 188432, 'bytes': 1170, 'explored_paths': 128, 'limited': True}, {'method': 'path-specific unwind range', 'address': 190928, 'bytes': 1804, 'explored_paths': 128, 'limited': True}]

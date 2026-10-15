@@ -1,0 +1,14 @@
+test_development_negatives_source_and_stripped_binary (test_guomi_generalization.GuomiGeneralizationTests.test_development_negatives_source_and_stripped_binary) ... ok
+test_exact_byte_packing_and_word_width (test_guomi_generalization.GuomiGeneralizationTests.test_exact_byte_packing_and_word_width) ... ok
+test_inactive_source_and_untrusted_evidence_are_not_predictions (test_guomi_generalization.GuomiGeneralizationTests.test_inactive_source_and_untrusted_evidence_are_not_predictions) ... ok
+test_linear_maps_require_shared_input_and_all_rotations (test_guomi_generalization.GuomiGeneralizationTests.test_linear_maps_require_shared_input_and_all_rotations) ... ok
+test_locally_shadowed_bn_names_are_not_trusted_operations (test_guomi_generalization.GuomiGeneralizationTests.test_locally_shadowed_bn_names_are_not_trusted_operations) ... ok
+test_new_known_implementations_and_actual_cross_implementation_witnesses (test_guomi_generalization.GuomiGeneralizationTests.test_new_known_implementations_and_actual_cross_implementation_witnesses) ... ok
+test_renamed_edited_source_keeps_operation_evidence_without_hash_approval (test_guomi_generalization.GuomiGeneralizationTests.test_renamed_edited_source_keeps_operation_evidence_without_hash_approval) ... ok
+test_self_contained_compression_and_wrong_word_width (test_guomi_generalization.GuomiGeneralizationTests.test_self_contained_compression_and_wrong_word_width) ... ok
+test_sm2_verify_binds_point_coordinate_and_signature_inputs (test_guomi_generalization.GuomiGeneralizationTests.test_sm2_verify_binds_point_coordinate_and_signature_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 129.455s
+
+OK

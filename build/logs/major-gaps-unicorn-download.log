@@ -1,0 +1,8 @@
+Collecting unicorn==2.1.4
+  Using cached unicorn-2.1.4-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Using cached unicorn-2.1.4-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.4 MB)
+Saved ./build/wheelhouse/unicorn-2.1.4-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Successfully downloaded unicorn
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: /var/home/gzn/ourtask/ustc_tool_middle/build/venv/bin/python -m pip install --upgrade pip

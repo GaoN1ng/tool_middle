@@ -1,0 +1,177 @@
+
+CASE libecc-ecdh-mipsel-Os
+0x10650 prj_pt_mul_blind ['input:0:a0[8]', 'input:0:a1[8]', 'load:input:0:a1[2408]', 'unknown-argument@67152:a3', 'load:stack:0[-24]', 'input:0:s0', 'input:0:s1', 'input:0:s2']
+STATE {} {} PEERS set() {} set()
+0x10834 prj_pt_iszero ['input:0:a0[8]', 'stack:0[-24]', 'unknown-argument@67636:a2', 'unknown-argument@67636:a3', 'load:stack:0[-24]', 'input:0:s0', 'input:0:s1', 'input:0:s2']
+STATE {} {} PEERS set() {} set()
+0x10860 ec_pub_key_export_to_aff_buf ['input:0:a0', 'input:0:a1', 'input:0:a2', 'unknown-argument@67680:a3', 'load:stack:0[-24]', 'input:0:s0', 'input:0:s1', 'input:0:s2']
+STATE {} {} PEERS set() {} set()
+0x10904 ec_pub_key_import_from_aff_buf ['stack:0[-720]', 'load:input:0:a0[4]', 'input:0:a1', 'input:0:a2', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x10950 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@67920:a2', 'unknown-argument@67920:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x109f4 prj_pt_mul ['stack:0[-712]', 'input:0:a0[8]', 'stack:0[-712]', 'unknown-argument@68084:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} set()
+0x10a0c prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@68108:a2', 'unknown-argument@68108:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} set()
+0x10a3c prj_pt_unique ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@68156:a2', 'unknown-argument@68156:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} {'stack:0[-712]'}
+0x10a8c fp_export_to_buf ['input:0:a3', 'load:stack:0[16]', 'stack:0[-712]', 'unknown-argument@68236:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} {'stack:0[-712]'}
+MATCH ECDH
+MATCH ECDH
+0x109cc _prj_pt_unprotected_mult ['stack:0[-712]', 'load:input:0:a0[3292]', 'stack:0[-712]', 'unknown-argument@68044:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x10950 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@67920:a2', 'unknown-argument@67920:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x109f4 prj_pt_mul ['stack:0[-712]', 'input:0:a0[8]', 'stack:0[-712]', 'unknown-argument@68084:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} set()
+0x10a0c prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@68108:a2', 'unknown-argument@68108:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} set()
+0x10a3c prj_pt_unique ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@68156:a2', 'unknown-argument@68156:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} {'stack:0[-712]'}
+0x10a8c fp_export_to_buf ['input:0:a3', 'load:stack:0[16]', 'stack:0[-712]', 'unknown-argument@68236:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:a0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 68084)} {'stack:0[-712]'}
+MATCH ECDH
+MATCH ECDH
+0x10650 prj_pt_mul_blind ['input:3:a0[8]', 'input:3:a1[8]', 'load:input:3:a1[2408]', 'unknown-argument@67152:a3', 'load:stack:3[-24]', 'input:3:s0', 'input:3:s1', 'input:3:s2']
+STATE {} {} PEERS set() {} set()
+0x10834 prj_pt_iszero ['input:6:a0[8]', 'stack:6[-24]', 'unknown-argument@67636:a2', 'unknown-argument@67636:a3', 'load:stack:6[-24]', 'input:6:s0', 'input:6:s1', 'input:6:s2']
+STATE {} {} PEERS set() {} set()
+0x10860 ec_pub_key_export_to_aff_buf ['input:6:a0', 'input:6:a1', 'input:6:a2', 'unknown-argument@67680:a3', 'load:stack:6[-24]', 'input:6:s0', 'input:6:s1', 'input:6:s2']
+STATE {} {} PEERS set() {} set()
+0x10904 ec_pub_key_import_from_aff_buf ['stack:7[-720]', 'load:input:7:a0[4]', 'input:7:a1', 'input:7:a2', '15', 'load:stack:7[-724]', 'load:stack:7[-720]', 'load:stack:7[-716]']
+STATE {} {} PEERS {'stack:7[-712]', 'stack:7[-720].y'} {} set()
+0x10950 prj_pt_iszero ['stack:7[-712]', 'stack:7[-36]', 'unknown-argument@67920:a2', 'unknown-argument@67920:a3', '15', 'load:stack:7[-724]', 'load:stack:7[-720]', 'load:stack:7[-716]']
+STATE {} {} PEERS {'stack:7[-712]', 'stack:7[-720].y'} {} set()
+[{'algorithm': 'ECDH', 'equation': 'Static/projective Q=d*P; affine x(Q) serialized', 'offset': 68236, 'kind': 'peer_scalar_coordinate', 'modulus': None, 'operation_witnesses': [{'operation': 'ec_pub_key_import_from_aff_buf', 'arguments': ['stack:0[-720]', 'load:input:0:a0[4]', 'input:0:a1', 'input:0:a2', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 67844}, {'operation': 'prj_pt_mul', 'arguments': ['stack:0[-712]', 'input:0:a0[8]', 'stack:0[-712]', 'unknown-argument@68084:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 68084}, {'operation': 'prj_pt_unique', 'arguments': ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@68156:a2', 'unknown-argument@68156:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 68156}, {'operation': 'fp_export_to_buf', 'arguments': ['input:0:a3', 'load:stack:0[16]', 'stack:0[-712]', 'unknown-argument@68236:a3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 68236}]}]
+
+CASE gmssl-modern-sm2_exch-source
+0x244 sm2_z256_point_mul ['point', 'key->private_key', 'peer_key->public_key']
+STATE {} {'point': {'peer_key->public_key': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x28a sm2_z256_point_get_xy ['point', 'x', 'NULL']
+STATE {} {'point': {'peer_key->public_key': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x2b3 sm2_z256_to_bytes ['x', 'out']
+STATE {} {'point': {'peer_key->public_key': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x2d0 gmssl_secure_clear ['point', 'sizeof(SM2_Z256_POINT)']
+STATE {} {} PEERS set() {} set()
+0x411 sm2_z256_point_from_octets ['point', 'uncompressed_point', '65']
+STATE {} {} PEERS set() {} set()
+0x476 sm2_z256_point_mul ['point', 'key->private_key', 'point']
+STATE {} {'point': {'point': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x4ad sm2_z256_point_get_xy ['point', 'x', 'NULL']
+STATE {} {'point': {'point': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x4d6 sm2_z256_to_bytes ['x', 'out']
+STATE {} {'point': {'point': Value(num={('key->private_key',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0x4f3 gmssl_secure_clear ['point', 'sizeof(SM2_Z256_POINT)']
+STATE {} {} PEERS set() {} set()
+0x5c7 sm2_z256_point_get_xy ['P', 'x', 'NULL']
+STATE {} {} PEERS set() {} set()
+0x9d2 sm2_z256_point_from_octets ['peer_point', 'peer_key_exchange', '65']
+STATE {} {} PEERS set() {} set()
+0xbc1 sm2_z256_point_get_xy ['P', 'x', 'NULL']
+STATE {'local_x_hat': 'key_exchange->public_key'} {} PEERS set() {} set()
+0xc0c sm2_z256_point_get_xy ['P', 'x', 'NULL']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {} PEERS set() {} set()
+0xc68 sm2_z256_modn_mul ['t', 'local_x_hat', 'key_exchange->private_key']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {} PEERS set() {} set()
+0xca7 sm2_z256_modn_add ['t', 't', 'key->private_key']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {} PEERS set() {} set()
+0xcd4 sm2_z256_point_mul ['point', 'peer_x_hat', 'peer_point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_point': Value(num={('xhat:peer_point',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0xd0a sm2_z256_point_add ['point', 'peer_public_key->public_key', 'point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'peer_point': Value(num={('xhat:peer_point',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0xd51 sm2_z256_point_is_at_infinity ['point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={(): 1}, den={(): 1}, moduli=frozenset()), 'peer_point': Value(num={('xhat:peer_point',): 1}, den={(): 1}, moduli=frozenset())}} PEERS set() {} set()
+0xd9c sm2_z256_point_mul ['point', 't', 'point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key'): 1, ('key->private_key',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'peer_point': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key', 'xhat:peer_point'): 1, ('key->private_key', 'xhat:peer_point'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0xdc8 sm2_z256_point_is_at_infinity ['point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key'): 1, ('key->private_key',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'peer_point': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key', 'xhat:peer_point'): 1, ('key->private_key', 'xhat:peer_point'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0xe31 sm2_z256_point_to_uncompressed_octets ['point', 'optional_shared_point']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key'): 1, ('key->private_key',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'peer_point': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key', 'xhat:peer_point'): 1, ('key->private_key', 'xhat:peer_point'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0xea0 sm2_z256_point_to_bytes ['point', 'kdf_input']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key'): 1, ('key->private_key',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'peer_point': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key', 'xhat:peer_point'): 1, ('key->private_key', 'xhat:peer_point'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+0xf13 sm2_kdf ['kdf_input', 'sizeof(kdf_input)', 'shared_key_len', 'shared_key']
+STATE {'local_x_hat': 'key_exchange->public_key', 'peer_x_hat': 'peer_point'} {'point': {'peer_public_key->public_key': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key'): 1, ('key->private_key',): 1}, den={(): 1}, moduli=frozenset({'SM2-order'})), 'peer_point': Value(num={('key_exchange->private_key', 'xhat:key_exchange->public_key', 'xhat:peer_point'): 1, ('key->private_key', 'xhat:peer_point'): 1}, den={(): 1}, moduli=frozenset({'SM2-order'}))}} PEERS set() {} set()
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+0x1015 gmssl_secure_clear ['point', 'sizeof(point)']
+STATE {} {} PEERS set() {} set()
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+MATCH SM2
+0x14d3 sm2_z256_point_from_octets ['uv', 'shared_point', '65']
+STATE {} {} PEERS set() {} set()
+0x150f sm2_z256_point_from_octets ['peer_point', 'peer_key_exchange', '65']
+STATE {} {} PEERS set() {} set()
+0x1762 sm2_z256_point_to_bytes ['uv', 'xy']
+STATE {} {} PEERS set() {} set()
+0x1785 sm2_z256_point_to_bytes ['ra', 'ra_bytes']
+STATE {} {} PEERS set() {} set()
+0x17ae sm2_z256_point_to_bytes ['rb', 'rb_bytes']
+STATE {} {} PEERS set() {} set()
+[]
+
+CASE libecc-ecdh-arm-Os
+0x13174 prj_pt_mul_blind ['unknown@78056:r0[8]', 'input:0:r1[8]', 'unknown@78184:r2', 'unknown-argument@78196:r3', 'load:stack:0[-24]', 'load:stack:0[-20]', 'input:0:r4', 'input:0:r5']
+STATE {} {} PEERS set() {} set()
+0x1329c prj_pt_iszero ['input:0:r0[8]', 'stack:0[-20]', 'unknown-argument@78492:r2', 'unknown-argument@78492:r3', 'load:stack:0[-24]', 'load:stack:0[-20]', 'input:0:r4', 'input:0:r5']
+STATE {} {} PEERS set() {} set()
+0x132c4 ec_pub_key_export_to_aff_buf ['input:0:r0', 'input:0:r1', 'input:0:r2', 'unknown-argument@78532:r3', 'load:stack:0[-24]', 'load:stack:0[-20]', 'input:0:r4', 'input:0:r5']
+STATE {} {} PEERS set() {} set()
+0x1332c ec_pub_key_import_from_aff_buf ['stack:0[-720]', 'load:input:0:r0[4]', 'input:0:r1', 'input:0:r2', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x13378 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@78712:r2', 'unknown-argument@78712:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x133e0 prj_pt_mul ['stack:0[-712]', 'input:0:r0[8]', 'stack:0[-712]', 'unknown-argument@78816:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} set()
+0x133f8 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@78840:r2', 'unknown-argument@78840:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} set()
+0x1341c prj_pt_unique ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@78876:r2', 'unknown-argument@78876:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} {'stack:0[-712]'}
+0x13468 fp_export_to_buf ['input:0:r3', 'load:stack:0[0]', 'stack:0[-712]', 'unknown-argument@78952:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} {'stack:0[-712]'}
+MATCH ECDH
+MATCH ECDH
+0x133c0 _prj_pt_unprotected_mult ['stack:0[-712]', 'unknown@78660:r4', 'stack:0[-712]', 'unknown-argument@78784:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x13378 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@78712:r2', 'unknown-argument@78712:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {} set()
+0x133e0 prj_pt_mul ['stack:0[-712]', 'input:0:r0[8]', 'stack:0[-712]', 'unknown-argument@78816:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} set()
+0x133f8 prj_pt_iszero ['stack:0[-712]', 'stack:0[-36]', 'unknown-argument@78840:r2', 'unknown-argument@78840:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} set()
+0x1341c prj_pt_unique ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@78876:r2', 'unknown-argument@78876:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} {'stack:0[-712]'}
+0x13468 fp_export_to_buf ['input:0:r3', 'load:stack:0[0]', 'stack:0[-712]', 'unknown-argument@78952:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]']
+STATE {} {} PEERS {'stack:0[-720].y', 'stack:0[-712]'} {'stack:0[-712]': ('projective-group', Value(num={('input:0:r0[8]',): 1}, den={(): 1}, moduli=frozenset()), 'stack:0[-712]', 78816)} {'stack:0[-712]'}
+MATCH ECDH
+MATCH ECDH
+0x13174 prj_pt_mul_blind ['input:5:r4[8]', 'input:5:r5[8]', 'unknown@78184:r2', 'unknown-argument@78196:r3', 'load:stack:5[0]', 'load:stack:5[4]', 'load:stack:5[8]', 'load:stack:5[12]']
+STATE {} {} PEERS set() {} set()
+0x1329c prj_pt_iszero ['input:7:r0[8]', 'stack:7[-20]', 'unknown-argument@78492:r2', 'unknown-argument@78492:r3', 'load:stack:7[-24]', 'load:stack:7[-20]', 'input:7:r4', 'input:7:r5']
+STATE {} {} PEERS set() {} set()
+0x132c4 ec_pub_key_export_to_aff_buf ['input:7:r0', 'input:7:r1', 'input:7:r2', 'unknown-argument@78532:r3', 'load:stack:7[-24]', 'load:stack:7[-20]', 'input:7:r4', 'input:7:r5']
+STATE {} {} PEERS set() {} set()
+0x1332c ec_pub_key_import_from_aff_buf ['stack:8[-720]', 'load:input:8:r0[4]', 'input:8:r1', 'input:8:r2', '15', 'load:stack:8[-724]', 'load:stack:8[-720]', 'load:stack:8[-716]']
+STATE {} {} PEERS {'stack:8[-720].y', 'stack:8[-712]'} {} set()
+0x13378 prj_pt_iszero ['stack:8[-712]', 'stack:8[-36]', 'unknown-argument@78712:r2', 'unknown-argument@78712:r3', '15', 'load:stack:8[-724]', 'load:stack:8[-720]', 'load:stack:8[-716]']
+STATE {} {} PEERS {'stack:8[-720].y', 'stack:8[-712]'} {} set()
+0x133c0 _prj_pt_unprotected_mult ['input:9:r6', 'input:9:r4', 'input:9:r6', 'unknown-argument@78784:r3', 'load:stack:9[0]', 'load:stack:9[4]', 'load:stack:9[8]', 'load:stack:9[12]']
+STATE {} {} PEERS set() {} set()
+0x133e0 prj_pt_mul ['input:9:r6', 'input:9:r5[8]', 'input:9:r6', 'unknown-argument@78816:r3', 'load:stack:9[0]', 'load:stack:9[4]', 'load:stack:9[8]', 'load:stack:9[12]']
+STATE {} {} PEERS set() {} set()
+0x133f8 prj_pt_iszero ['input:9:r6', 'stack:9[692]', 'unknown-argument@78840:r2', 'unknown-argument@78840:r3', 'load:stack:9[0]', 'load:stack:9[4]', 'load:stack:9[8]', 'load:stack:9[12]']
+STATE {} {} PEERS set() {} set()
+0x1341c prj_pt_unique ['input:9:r6', 'input:9:r6', 'unknown-argument@78876:r2', 'unknown-argument@78876:r3', 'load:stack:9[0]', 'load:stack:9[4]', 'load:stack:9[8]', 'load:stack:9[12]']
+STATE {} {} PEERS set() {} set()
+0x13468 fp_export_to_buf ['input:9:sb', 'load:stack:9[728]', 'input:9:r6', 'unknown-argument@78952:r3', 'load:stack:9[0]', 'load:stack:9[4]', 'load:stack:9[8]', 'load:stack:9[12]']
+STATE {} {} PEERS set() {} set()
+[{'algorithm': 'ECDH', 'equation': 'Static/projective Q=d*P; affine x(Q) serialized', 'offset': 78952, 'kind': 'peer_scalar_coordinate', 'modulus': None, 'operation_witnesses': [{'operation': 'ec_pub_key_import_from_aff_buf', 'arguments': ['stack:0[-720]', 'load:input:0:r0[4]', 'input:0:r1', 'input:0:r2', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 78636}, {'operation': 'prj_pt_mul', 'arguments': ['stack:0[-712]', 'input:0:r0[8]', 'stack:0[-712]', 'unknown-argument@78816:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 78816}, {'operation': 'prj_pt_unique', 'arguments': ['stack:0[-712]', 'stack:0[-712]', 'unknown-argument@78876:r2', 'unknown-argument@78876:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 78876}, {'operation': 'fp_export_to_buf', 'arguments': ['input:0:r3', 'load:stack:0[0]', 'stack:0[-712]', 'unknown-argument@78952:r3', '15', 'load:stack:0[-724]', 'load:stack:0[-720]', 'load:stack:0[-716]'], 'offset': 78952}]}]

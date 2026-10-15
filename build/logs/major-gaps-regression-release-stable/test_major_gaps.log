@@ -1,0 +1,12 @@
+test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store (test_major_gaps.MajorGapTests.test_arm_neon_copy_checks_every_byte_and_rejects_wrong_store) ... ok
+test_imported_copy_only_invalidates_its_destination (test_major_gaps.MajorGapTests.test_imported_copy_only_invalidates_its_destination) ... ok
+test_macro_array_swap_requires_both_feedback_indices_and_keystream (test_major_gaps.MajorGapTests.test_macro_array_swap_requires_both_feedback_indices_and_keystream) ... ok
+test_macro_expansion_does_not_double_apply_post_increment (test_major_gaps.MajorGapTests.test_macro_expansion_does_not_double_apply_post_increment) ... ok
+test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool (test_major_gaps.MajorGapTests.test_thumb_unwind_entry_recovers_start_hidden_by_literal_pool) ... ok
+test_uncompressed_point_export_is_read_only_except_output (test_major_gaps.MajorGapTests.test_uncompressed_point_export_is_read_only_except_output) ... ok
+test_verified_functions_skip_only_their_executable_byte_intervals (test_major_gaps.MajorGapTests.test_verified_functions_skip_only_their_executable_byte_intervals) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.233s
+
+OK

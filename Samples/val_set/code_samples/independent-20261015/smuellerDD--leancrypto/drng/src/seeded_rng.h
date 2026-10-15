@@ -1,0 +1,62 @@
+/*
+ * Copyright (C) 2022 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+#ifndef SEEDED_RNG_H
+#define SEEDED_RNG_H
+
+#include "ext_headers_internal.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ * Number of seeded DRNG instances supported by leancrypto. The instance to
+ * be used is selected based on the a round robin mechanisms ANDed with the
+ * instance mask.
+ *
+ * This value must be 1 or a power of 2 to use a mask to be ANDed.
+ */
+#ifndef LC_SEEDED_RNG_INSTANCES
+#define LC_SEEDED_RNG_INSTANCES 8
+#endif
+#define LC_SEEDED_RNG_INSTANCES_MASK (LC_SEEDED_RNG_INSTANCES - 1)
+
+ssize_t get_full_entropy(uint8_t *buffer, size_t bufferlen);
+int seeded_rng_noise_init(void);
+void seeded_rng_noise_fini(void);
+void seeded_rng_status(char *buf, size_t len);
+
+#ifdef LC_DRNG_PRESENT
+void lc_seeded_rng_status(char *buf, size_t len);
+#else
+static inline void lc_seeded_rng_status(char *buf, size_t len)
+{
+	(void)buf;
+	(void)len;
+}
+#endif
+
+extern struct lc_rng_ctx *lc_seeded_rng_internal;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* SEEDED_RNG_H */

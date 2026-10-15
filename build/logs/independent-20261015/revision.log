@@ -1,0 +1,27 @@
+/var/home/gzn/ourtask/ustc_tool_middle/build/experiments/semantics-20261015/release-revision-package/qcs/resources/windriver/cryptodetector/regex.py:156: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  if language is not "all":
+25 / 232 65.8
+50 / 232 110.4
+75 / 232 150.7
+100 / 232 201.3
+125 / 232 257.1
+150 / 232 303.4
+175 / 232 333.4
+200 / 232 386.9
+225 / 232 441.1
+{
+  "files": 232,
+  "micro": {
+    "TP": 97,
+    "FP": 6,
+    "FN": 79,
+    "TN": 2834,
+    "recall": 0.5511363636363636,
+    "false_negative_rate": 0.44886363636363635,
+    "precision": 0.941747572815534
+  },
+  "scan_status": {
+    "completed": 231,
+    "partial": 1
+  }
+}

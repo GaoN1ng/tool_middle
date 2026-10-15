@@ -1,0 +1,3 @@
+[console_scripts]
+qcs = qcs.cli:main
+qcs-rf = qcs_ml.rf:main

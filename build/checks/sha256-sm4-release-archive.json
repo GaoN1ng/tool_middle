@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "archive": "build/dist/ustc_tool_middle.tar.gz",
+  "checked_selected_payloads": 9,
+  "file_count": 11608,
+  "excluded_git_and_experiments": true,
+  "issues": []
+}

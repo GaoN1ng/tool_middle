@@ -1,0 +1,54 @@
+################################################################################
+# Symmetric implementation: ChaCha20
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/chacha20.o		       \
+				   ../sym/src/chacha20_selector.o              \
+				   leancrypto_kernel_chacha20.o
+
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= leancrypto_kernel_chacha20_tester.o
+leancrypto_kernel_chacha20_tester-y	+= ../sym/tests/leancrypto_kernel_chacha20_tester.o
+
+ifdef CONFIG_X86_64
+chacha2_avx512_args += -mavx512bw -mavx512dq -mavx512f -mbmi2
+
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/asm/AVX2/chacha20_impl_avx2.o    \
+				   ../sym/src/asm/AVX512/chacha20_impl_avx512.o\
+				   ../sym/src/chacha20_avx2.o                  \
+				   ../sym/src/chacha20_avx512.o
+CFLAGS_../sym/src/asm/AVX512/chacha20_impl_avx512.o	+= $(chacha2_avx512_args)
+else
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/chacha20_avx2_null.o             \
+				   ../sym/src/chacha20_avx512_null.o
+endif
+
+ifdef CONFIG_ARM64
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/asm/ARMv8/chacha20_neon.o	       \
+				   ../sym/src/chacha20_neon.o
+else ifdef CONFIG_ARM
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/asm/ARMv7/chacha20_neon_armv7.o  \
+				   ../sym/src/chacha20_neon.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/chacha20_neon_null.o
+endif
+
+ifneq ($(and $(CONFIG_RISCV),$(CONFIG_64BIT)),)
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/asm/riscv64/chacha20_riscv64_v_zbb.o\
+				   ../sym/src/chacha20_riscv64_v_zbb.o
+else
+leancrypto-$(CONFIG_LEANCRYPTO_CHACHA20)				       \
+				+= ../sym/src/chacha20_riscv64_v_zbb_null.o
+endif
+
+ifdef CONFIG_LEANCRYPTO_CHACHA20
+ccflags-y			+= -DCONFIG_LEANCRYPTO_CHACHA20
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= chacha20_block_tester.o
+obj-$(CONFIG_LEANCRYPTO_TEST_MODULES)	+= chacha20_stream_tester.o
+chacha20_block_tester-y			+= ../sym/tests/chacha20_block_tester.o
+chacha20_stream_tester-y		+= ../sym/tests/chacha20_stream_tester.o
+endif

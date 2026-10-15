@@ -1,0 +1,36 @@
+{
+  "files": 2344,
+  "positive_labels": 1572,
+  "micro": {
+    "TP": 1273,
+    "FP": 0,
+    "FN": 299,
+    "TN": 24070,
+    "recall": 0.8097964376590331,
+    "false_negative_rate": 0.19020356234096691,
+    "precision": 1.0
+  },
+  "sha256": {
+    "TP": 123,
+    "FP": 0,
+    "FN": 46,
+    "TN": 1692,
+    "recall": 0.727810650887574,
+    "false_negative_rate": 0.27218934911242604,
+    "precision": 1.0
+  },
+  "sm4": {
+    "TP": 119,
+    "FP": 0,
+    "FN": 1,
+    "TN": 2224,
+    "recall": 0.9916666666666667,
+    "false_negative_rate": 0.008333333333333333,
+    "precision": 1.0
+  },
+  "gained": 6,
+  "lost": 0,
+  "scan_status": {
+    "completed": 2344
+  }
+}

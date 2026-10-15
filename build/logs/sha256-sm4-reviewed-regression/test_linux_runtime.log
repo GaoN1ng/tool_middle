@@ -1,0 +1,10 @@
+test_explicit_broken_interpreter_does_not_fall_back (test_linux_runtime.LinuxRuntimeTests.test_explicit_broken_interpreter_does_not_fall_back) ... ok
+test_launcher_from_unrelated_directory_and_symlink (test_linux_runtime.LinuxRuntimeTests.test_launcher_from_unrelated_directory_and_symlink) ... ok
+test_launcher_rejects_unsupported_python (test_linux_runtime.LinuxRuntimeTests.test_launcher_rejects_unsupported_python) ... ok
+test_missing_optional_tools_and_disabled_windriver (test_linux_runtime.LinuxRuntimeTests.test_missing_optional_tools_and_disabled_windriver) ... ok
+test_report_and_manifest_encoding_under_ascii_locale (test_linux_runtime.LinuxRuntimeTests.test_report_and_manifest_encoding_under_ascii_locale) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.600s
+
+OK

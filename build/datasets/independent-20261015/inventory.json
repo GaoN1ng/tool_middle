@@ -1,0 +1,20 @@
+{
+  "historical_unique_content_files": 10390,
+  "current_unique_content_files": 12870,
+  "current_physical_files": 12900,
+  "new_collection_physical_files": 2510,
+  "new_collection_distinct_new_contents": 2480,
+  "new_collection_same_content_as_catalog": 30,
+  "primary_evaluation_files": 232,
+  "positive_labels": 176,
+  "source_units": 22,
+  "elf_files": 210,
+  "author_families": 8,
+  "excluded_support_projects": [
+    "BLAKE3-team/BLAKE3",
+    "Cyan4973/xxHash",
+    "kmackay/micro-ecc",
+    "smuellerDD/leancrypto"
+  ],
+  "note": "Excluded and support files are not metrics denominators. Content-level counts do not equal source units or independent authors."
+}

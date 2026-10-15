@@ -1,0 +1,211 @@
+/* eslint-disable no-bitwise, no-mixed-operators, no-use-before-define, max-len */
+const {BigInteger} = require('jsbn')
+const {ECCurveFp} = require('./ec')
+const {SecureRandom} = require('./rng')
+
+const rng = new SecureRandom()
+const {curve, G, n} = generateEcparam()
+
+/**
+ * 获取公共椭圆曲线
+ */
+function getGlobalCurve() {
+  return curve
+}
+
+/**
+ * 生成ecparam
+ */
+function generateEcparam() {
+  // 椭圆曲线
+  const p = new BigInteger('FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFF', 16)
+  const a = new BigInteger('FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFC', 16)
+  const b = new BigInteger('28E9FA9E9D9F5E344D5A9E4BCF6509A7F39789F515AB8F92DDBCBD414D940E93', 16)
+  const curve = new ECCurveFp(p, a, b)
+
+  // 基点
+  const gxHex = '32C4AE2C1F1981195F9904466A39C9948FE30BBFF2660BE1715A4589334C74C7'
+  const gyHex = 'BC3736A2F4F6779C59BDCEE36B692153D0A9877CC62A474002DF32E52139F0A0'
+  const G = curve.decodePointHex('04' + gxHex + gyHex)
+
+  const n = new BigInteger('FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFF7203DF6B21C6052B53BBF40939D54123', 16)
+
+  return {curve, G, n}
+}
+
+/**
+ * 生成密钥对：publicKey = privateKey * G
+ */
+function generateKeyPairHex(a, b, c) {
+  const random = a ? new BigInteger(a, b, c) : new BigInteger(n.bitLength(), rng)
+  const d = random.mod(n.subtract(BigInteger.ONE)).add(BigInteger.ONE) // 随机数
+  const privateKey = leftPad(d.toString(16), 64)
+
+  const P = G.multiply(d) // P = dG，p 为公钥，d 为私钥
+  const Px = leftPad(P.getX().toBigInteger().toString(16), 64)
+  const Py = leftPad(P.getY().toBigInteger().toString(16), 64)
+  const publicKey = '04' + Px + Py
+
+  return {privateKey, publicKey}
+}
+
+/**
+ * 生成压缩公钥
+ */
+function compressPublicKeyHex(s) {
+  if (s.length !== 130) throw new Error('Invalid public key to compress')
+
+  const len = (s.length - 2) / 2
+  const xHex = s.substr(2, len)
+  const y = new BigInteger(s.substr(len + 2, len), 16)
+
+  let prefix = '03'
+  if (y.mod(new BigInteger('2')).equals(BigInteger.ZERO)) prefix = '02'
+
+  return prefix + xHex
+}
+
+/**
+ * utf8串转16进制串
+ */
+function utf8ToHex(input) {
+  input = unescape(encodeURIComponent(input))
+
+  const length = input.length
+
+  // 转换到字数组
+  const words = []
+  for (let i = 0; i < length; i++) {
+    words[i >>> 2] |= (input.charCodeAt(i) & 0xff) << (24 - (i % 4) * 8)
+  }
+
+  // 转换到16进制
+  const hexChars = []
+  for (let i = 0; i < length; i++) {
+    const bite = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff
+    hexChars.push((bite >>> 4).toString(16))
+    hexChars.push((bite & 0x0f).toString(16))
+  }
+
+  return hexChars.join('')
+}
+
+/**
+ * 补全16进制字符串
+ */
+function leftPad(input, num) {
+  if (input.length >= num) return input
+
+  return (new Array(num - input.length + 1)).join('0') + input
+}
+
+/**
+ * 转成16进制串
+ *
+ * 注意：不能直接使用 arr.map(...).join('')。
+ * 当 arr 是 Uint8Array 等 TypedArray 时，其 map 会返回同类 TypedArray，
+ * 回调返回的字符串会被强制转成数字（"80"->80, "ff"->NaN->0），
+ * 再 join('') 得到十进制串或丢失字节，导致签名/验签结果与 Array 输入不一致。
+ * 这里用显式循环 + 位与 0xff，兼容 Array / Uint8Array / Buffer 等所有类数组输入。
+ */
+function arrayToHex(arr) {
+  const hexChars = []
+  for (let i = 0; i < arr.length; i++) {
+    const byte = arr[i] & 0xff
+    hexChars.push((byte >>> 4).toString(16))
+    hexChars.push((byte & 0x0f).toString(16))
+  }
+  return hexChars.join('')
+}
+
+/**
+ * 转成utf8串
+ */
+function arrayToUtf8(arr) {
+  const words = []
+  let j = 0
+  for (let i = 0; i < arr.length * 2; i += 2) {
+    words[i >>> 3] |= parseInt(arr[j], 10) << (24 - (i % 8) * 4)
+    j++
+  }
+
+  try {
+    const latin1Chars = []
+
+    for (let i = 0; i < arr.length; i++) {
+      const bite = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff
+      latin1Chars.push(String.fromCharCode(bite))
+    }
+
+    return decodeURIComponent(escape(latin1Chars.join('')))
+  } catch (e) {
+    throw new Error('Malformed UTF-8 data')
+  }
+}
+
+/**
+ * 转成字节数组
+ */
+function hexToArray(hexStr) {
+  const words = []
+  let hexStrLength = hexStr.length
+
+  if (hexStrLength % 2 !== 0) {
+    hexStr = leftPad(hexStr, hexStrLength + 1)
+  }
+
+  hexStrLength = hexStr.length
+
+  for (let i = 0; i < hexStrLength; i += 2) {
+    words.push(parseInt(hexStr.substr(i, 2), 16))
+  }
+  return words
+}
+
+/**
+ * 验证公钥是否为椭圆曲线上的点
+ */
+function verifyPublicKey(publicKey) {
+  if (typeof publicKey !== 'string' || !publicKey) return false
+
+  let point
+  try {
+    point = curve.decodePointHex(publicKey)
+  } catch (e) {
+    return false
+  }
+  // 无穷远点（decodePointHex 对 00 前缀会返回 curve.infinity，其 x/y 为 null）不是合法公钥
+  if (!point || point.isInfinity()) return false
+
+  const x = point.getX()
+  const y = point.getY()
+
+  // 验证 y^2 是否等于 x^3 + ax + b
+  return y.square().equals(x.multiply(x.square()).add(x.multiply(curve.a)).add(curve.b))
+}
+
+/**
+ * 验证公钥是否等价，等价返回true
+ */
+function comparePublicKeyHex(publicKey1, publicKey2) {
+  if (!verifyPublicKey(publicKey1) || !verifyPublicKey(publicKey2)) return false
+
+  const point1 = curve.decodePointHex(publicKey1)
+  const point2 = curve.decodePointHex(publicKey2)
+
+  return point1.equals(point2)
+}
+
+module.exports = {
+  getGlobalCurve,
+  generateEcparam,
+  generateKeyPairHex,
+  compressPublicKeyHex,
+  utf8ToHex,
+  leftPad,
+  arrayToHex,
+  arrayToUtf8,
+  hexToArray,
+  verifyPublicKey,
+  comparePublicKeyHex,
+}

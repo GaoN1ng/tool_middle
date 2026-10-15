@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/Samples/test_set/firmware_samples/1d/1d2ce2dab00c352e/tasmota-official-ota-current.bin",
   "input_kind": "firmware",
-  "timestamp": "2026-10-14T09:48:30.611353+00:00",
+  "timestamp": "2026-10-15T05:28:24.512158+00:00",
   "tool": {
     "name": "qcs",
     "version": "0.1.0",
@@ -108,7 +108,7 @@
       "schema_version": "1.0",
       "input_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-0",
       "input_kind": "executable",
-      "timestamp": "2026-10-14T09:48:30.704970+00:00",
+      "timestamp": "2026-10-15T05:28:24.743053+00:00",
       "tool": {
         "name": "qcs",
         "version": "0.1.0",
@@ -117,7 +117,7 @@
       "versions": {
         "yara": {
           "python_binding": "4.5.4",
-          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
           "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
           "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
           "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"
@@ -223,7 +223,7 @@
       "schema_version": "1.0",
       "input_path": "firmware:1d2ce2dab00c352e7a1c0c54a454538e4e6dd95a9d8458161c52522678d18598/esp-image-1000",
       "input_kind": "executable",
-      "timestamp": "2026-10-14T09:48:32.292349+00:00",
+      "timestamp": "2026-10-15T05:28:28.553282+00:00",
       "tool": {
         "name": "qcs",
         "version": "0.1.0",
@@ -232,7 +232,7 @@
       "versions": {
         "yara": {
           "python_binding": "4.5.4",
-          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/独立 安装环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
+          "rule_entry": "/var/home/gzn/ourtask/ustc_tool_middle/build/isolated-install/主要漏报修复环境/lib/python3.12/site-packages/qcs/resources/yara/rules.yar",
           "rules_sha256": "7e95cf9864ed975f7bff4a06e36e7d8272de5974f3169209b53b37533775d6a5",
           "mapping_sha256": "98c98758e5ebbc80aa1f6a98451f0f3f1a832a9df5cf3c08ed2caaa71e888648",
           "upstream_commit": "1b1c7bfede7133f097ed823bed64df92f4a4bc96"

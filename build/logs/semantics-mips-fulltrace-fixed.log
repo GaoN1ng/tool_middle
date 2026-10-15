@@ -1,0 +1,49 @@
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193b4 {'v1': 0, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193cc {'v1': 0, 'v0': 0, 'at': 0} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193d0 {'v1': 0, 'v0': 0, 'at': 908} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193d4 {'v1': 0, 'v0': 0, 'at': 908} stack {'sp': -5016, 'fp': -5016} K 908
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x19408 {'v1': 0, 'v0': 16} stack {'sp': -5016, 'fp': -5016} K 908
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x19408 {'v0': 16} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e20 {'v0': 393216} stack {'sp': 0} K None
+invariant 0x18e38 {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x18e3c {'v0': 363920, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193b4 {'v1': 0, 'at': 465840} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193cc {'v1': 0, 'v0': 0, 'at': 0} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193d0 {'v1': 0, 'v0': 0, 'at': 908} stack {'sp': -5016, 'fp': -5016} K None
+invariant 0x193d4 {'v1': 0, 'v0': 0, 'at': 908} stack {'sp': -5016, 'fp': -5016} K 908
+invariant 0x19408 {'v0': 16} stack {'sp': -5016, 'fp': -5016} K None
+{'status': 'limited', 'steps': 170822, 'blocks': 7017, 'loop_edges': 658, 'joins': 8363, 'widened_blocks': 29, 'entry_count': 449, 'declined_transfers': 79, 'replayed_blocks': 6545, 'unstable_reachable_blocks': 0, 'fixed_point_steps': 105985, 'component_count': 472, 'limited_components': 0, 'step_budget_per_component_per_phase': 80000, 'total_step_budget': 1000000}
+prefix 0x19408 {'v1': 0, 'v0': 16} stack {'sp': -5016, 'fp': -5016} K 908
+prefix 0x19408 {'v1': 0, 'v0': 16} stack {'sp': -5016, 'fp': -5016} K 908
+{'status': 'limited', 'steps': 36924, 'blocks': 7017, 'loop_edges': 0, 'joins': 999, 'widened_blocks': 0, 'entry_count': 449, 'declined_transfers': 79, 'replayed_blocks': 2190, 'unstable_reachable_blocks': 0, 'fixed_point_steps': 18480, 'component_count': 4823, 'limited_components': 0, 'step_budget_per_component_per_phase': 80000, 'total_step_budget': 1000000}
+[(103924, 'table_read', 'sha256_k'), (104972, 'table_read', 'sha256_k'), (106028, 'table_read', 'sha256_k'), (107084, 'table_read', 'sha256_k'), (108140, 'table_read', 'sha256_k'), (109196, 'table_read', 'sha256_k'), (110252, 'table_read', 'sha256_k'), (111308, 'table_read', 'sha256_k')]

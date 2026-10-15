@@ -1,0 +1,3 @@
+{"id": "arduinolibs-curve25519-x86_64-O2", "error": "Declined: ELF mapping budget/address"}
+{"id": "libmcrypt-des-x86_64-O2", "error": "Declined: ELF mapping budget/address"}
+{"id": "libmcrypt-rijndael-128-x86_64-O2", "error": "Declined: ELF mapping budget/address"}

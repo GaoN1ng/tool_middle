@@ -1,0 +1,849 @@
+{
+  "schema_version": "1.0",
+  "input_path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-128.c",
+  "input_kind": "source",
+  "timestamp": "2026-10-15T05:28:13.906908+00:00",
+  "tool": {
+    "name": "qcs",
+    "version": "0.1.0",
+    "python": "3.12.3"
+  },
+  "versions": {
+    "source_rules": "qcs-source-2",
+    "source_rules_sha256": "1195baa1401b548a3cd6bdd95243205efa3975f1c0a1ca7da06d3a58e3c41ca7",
+    "source_parser_sha256": "4f569e7f3070be4bb8790fe47493d05331cf25cec6fb5747fd474d07de014da7",
+    "source_reference_sha256": "91a01301abad78d85c2d9c3041800d1adb294bb15b328fc698a3af1e71da94b6",
+    "terminal_api_mapping_sha256": "65fb6902d4fbef46f6b5cdbe5a83890cd257c418a67a4fa22b608e4d132327fc",
+    "guomi_api_mapping_sha256": "ce6ff9ad60006747859f59eea50e3ca89563bfe6fed648530ef513b3c35e5010",
+    "guomi_source_reference_sha256": "9e4f4321c0f33a583bc7cb0eb1ace0727fcc7acfac23ed300fd6607a1f060522",
+    "guomi_development_source_reference_sha256": "a309b103828f190ddbb9f584acac02bc535a2aad0849e373ff4d8a7917531f69"
+  },
+  "artifact": {
+    "kind": "source",
+    "format": "C/C++ text",
+    "architecture": null,
+    "sha256": "0a006fb52fb31b4ea912d7b79ba478e514c27bf65ff9aa778f4e3132e125c88f",
+    "firmware_relative_path": null,
+    "size_bytes": 11742,
+    "source_encoding": "utf-8"
+  },
+  "scan_status": "completed",
+  "engine_status": {
+    "source": {
+      "status": "completed"
+    },
+    "guomi_source": {
+      "status": "completed"
+    },
+    "guomi_source_semantic": {
+      "status": "completed",
+      "matched_algorithms": [],
+      "available_definitions": 25,
+      "node_visits": 3123,
+      "function_limits": [],
+      "function_node_visits": {
+        "pack": 24,
+        "unpack": 22,
+        "xtime": 15,
+        "bmul": 14,
+        "SubByte": 72,
+        "product": 131,
+        "InvMixCol": 645,
+        "ByteSub": 83,
+        "_mcrypt_rijndael_gentables": 377,
+        "_mcrypt_set_key": 1172,
+        "_mcrypt_encrypt": 276,
+        "_mcrypt_decrypt": 276,
+        "_mcrypt_get_size": 3,
+        "_mcrypt_get_block_size": 1,
+        "_is_block_algorithm": 1,
+        "_mcrypt_get_key_size": 1,
+        "_mcrypt_get_supported_key_sizes": 9,
+        "_mcrypt_get_algorithms_name": 0,
+        "_mcrypt_algorithm_version": 1,
+        "main": 0
+      }
+    },
+    "operation_source": {
+      "status": "completed",
+      "matched_algorithms": [
+        "AES"
+      ],
+      "available_definitions": 25,
+      "shared_analysis": "guomi_source_semantic"
+    },
+    "windriver": {
+      "status": "disabled"
+    }
+  },
+  "errors": [],
+  "coverage_notes": [
+    "Static evidence does not prove runtime use or absence of crypto.",
+    "Lexical C/C++ analysis; no preprocessing, inactive-branch evaluation, macro expansion, variable-selector or data-flow analysis.",
+    "The general source reference engine requires an exact pinned module SHA-256. Guomi has a separate bounded operation-witness engine for selected C/C++ bodies; unknown names alone remain clues.",
+    "Source operation graphs resolve bounded local header macros/scalar helpers at actual call sites; no full preprocessing. Evidence describes available source operations, not enabled compiled or runtime use."
+  ],
+  "extraction_chain": [],
+  "findings": [
+    {
+      "algorithm": "AES",
+      "algorithm_category": "symmetric",
+      "candidate_algorithms": [],
+      "engine": "operation_source",
+      "evidence_type": "source_operation_graph",
+      "identifier": "standard_operation_graph",
+      "line": 262,
+      "offset": 5857,
+      "confidence": "medium",
+      "confidence_reason": "Complete standard AES substitution or T tables actually read by masked XOR round operations",
+      "runtime_usage": "unknown",
+      "usage": null,
+      "operation_witnesses": [
+        {
+          "offset": 5859,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 5859,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 5859,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 5859,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 5859,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 5857,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 5916,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6076,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6234,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6368,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6368,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 6368,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 6368,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 6368,
+          "role": "table_read",
+          "detail": "aes_sbox"
+        },
+        {
+          "offset": 6366,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6531,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "and",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        },
+        {
+          "offset": 6858,
+          "role": "xor",
+          "detail": null
+        }
+      ],
+      "implementation_verification": "bounded_standard_operation_graph",
+      "source_role": "definition",
+      "offset_basis": "lexed_utf8_source",
+      "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-128.c"
+    }
+  ],
+  "algorithm_assets": [
+    {
+      "algorithm": "AES",
+      "algorithm_category": "symmetric",
+      "confidence": "medium",
+      "confidence_reason": "Strongest rule basis retained; evidence count is not a probability.",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "algorithm": "AES",
+          "algorithm_category": "symmetric",
+          "candidate_algorithms": [],
+          "engine": "operation_source",
+          "evidence_type": "source_operation_graph",
+          "identifier": "standard_operation_graph",
+          "line": 262,
+          "offset": 5857,
+          "confidence": "medium",
+          "confidence_reason": "Complete standard AES substitution or T tables actually read by masked XOR round operations",
+          "runtime_usage": "unknown",
+          "usage": null,
+          "operation_witnesses": [
+            {
+              "offset": 5859,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 5859,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 5859,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 5859,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 5859,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 5857,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 5916,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6076,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6234,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6368,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6368,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 6368,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 6368,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 6368,
+              "role": "table_read",
+              "detail": "aes_sbox"
+            },
+            {
+              "offset": 6366,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6531,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "and",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            },
+            {
+              "offset": 6858,
+              "role": "xor",
+              "detail": null
+            }
+          ],
+          "implementation_verification": "bounded_standard_operation_graph",
+          "source_role": "definition",
+          "offset_basis": "lexed_utf8_source",
+          "artifact_path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-128.c"
+        }
+      ],
+      "runtime_usage": "unknown"
+    }
+  ],
+  "clues": [],
+  "dependencies": [],
+  "components": [],
+  "source_parameter_linkage": {
+    "files": [
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/arcfour.c",
+        "sha256": "80c88914b8d2abe3fd84c63bc8a992caaaea97499ff4bfa65661ac61869ddb8c",
+        "bytes": 5222,
+        "relationship": "actual reverse call or descriptor assignment"
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/panama.c",
+        "sha256": "d27c4583217ce2d75a1af3fa2f3e5157c7b18becf8d027a36fcf1b578720fb89",
+        "bytes": 19854,
+        "relationship": "actual reverse call or descriptor assignment"
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-192.c",
+        "sha256": "af9e9c93153a220b989aad73755be11fec5c7177930ae51e92d222dd6347946a",
+        "bytes": 11771,
+        "relationship": "actual reverse call or descriptor assignment"
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael-256.c",
+        "sha256": "fa16b72832a4cda8fd9909d88c8a7b779d352bbfb13acf76d57391dfe9219821",
+        "bytes": 11788,
+        "relationship": "actual reverse call or descriptor assignment"
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/wake.c",
+        "sha256": "73f0369063b8acd9dac3374187b9329c11717e4befe4b8b2e518a765cacdf35c",
+        "bytes": 8262,
+        "relationship": "actual reverse call or descriptor assignment"
+      }
+    ],
+    "limited": false,
+    "bytes": 56897,
+    "bindings": []
+  },
+  "source_operation_context": {
+    "files": [
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/lib/libdefs.h",
+        "sha256": "d3de33ad9a60f716dbebe5826ed714cf9ab00b7fe66209f53e826e584151a901",
+        "bytes": 1938
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/lib/mcrypt_modules.h",
+        "sha256": "d44c59ce7d2d3daddc81f503b50c562055cc9859b6dd0a2d3caa886c21bd6dcb",
+        "bytes": 1104
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/modules/algorithms/rijndael.h",
+        "sha256": "57142416d7b11f6788a10ded626ad426aca430ed5bff34d60b87868feb3fe0e2",
+        "bytes": 383
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/config.h",
+        "sha256": "14e2bd898a08ed2d59e2c412283d9100df8e5ed0928984656221965d92582e45",
+        "bytes": 4956
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/lib/win32_comp.h",
+        "sha256": "0b7118d1cdf3e396333e84acc6960c048d5ff5f12080bb73a7955d2a2f09239e",
+        "bytes": 394
+      },
+      {
+        "path": "/var/home/gzn/ourtask/ustc_tool_middle/build/datasets/development-source-context/major-gaps-20261015/samples/controlflow-development-20261014/sources/libmcrypt/libltdl/ltdl.h",
+        "sha256": "5692fe2f610359a045ae706b2e413c070e8f34c7b40e7293ca2511d653a3723d",
+        "bytes": 11722
+      }
+    ],
+    "bytes": 20497,
+    "limited": false,
+    "scope": "Local macros and actual bounded scalar definitions; headers are not scanned as independent algorithm implementations"
+  },
+  "source_declaration_expansions": [],
+  "source_generated_tables": [
+    {
+      "table": "fbsub",
+      "kind": "aes_sbox",
+      "elements": 256,
+      "constructor": "_mcrypt_rijndael_gentables",
+      "offset": 3585,
+      "node_visits": 113843,
+      "method": "Complete typed bounded local initializer result matches a standard table; consumers require actual operation-graph reads"
+    },
+    {
+      "table": "rbsub",
+      "kind": "aes_sbox",
+      "elements": 256,
+      "constructor": "_mcrypt_rijndael_gentables",
+      "offset": 3585,
+      "node_visits": 113843,
+      "method": "Complete typed bounded local initializer result matches a standard table; consumers require actual operation-graph reads"
+    },
+    {
+      "table": "ftable",
+      "kind": "aes_t",
+      "elements": 256,
+      "constructor": "_mcrypt_rijndael_gentables",
+      "offset": 3585,
+      "node_visits": 113843,
+      "method": "Complete typed bounded local initializer result matches a standard table; consumers require actual operation-graph reads"
+    },
+    {
+      "table": "rtable",
+      "kind": "aes_t",
+      "elements": 256,
+      "constructor": "_mcrypt_rijndael_gentables",
+      "offset": 3585,
+      "node_visits": 113843,
+      "method": "Complete typed bounded local initializer result matches a standard table; consumers require actual operation-graph reads"
+    }
+  ],
+  "source_controlflow_analysis": {
+    "branches": 52,
+    "loops": 25,
+    "joins": 52
+  },
+  "operation_diagnostics": {
+    "source": {
+      "event_counts": {
+        "constant": 326,
+        "and": 23,
+        "xor": 45,
+        "add": 71,
+        "table_read": 24,
+        "rotate": 22
+      },
+      "table_reads": {
+        "aes_sbox": 16,
+        "aes_t": 8
+      },
+      "definitions": [
+        {
+          "name": "pack",
+          "offset": 2062,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 7
+          }
+        },
+        {
+          "name": "unpack",
+          "offset": 2242,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "and": 1,
+            "constant": 7
+          }
+        },
+        {
+          "name": "xtime",
+          "offset": 2415,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 4,
+            "and": 1,
+            "xor": 1
+          }
+        },
+        {
+          "name": "bmul",
+          "offset": 2527,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "add": 1,
+            "constant": 2
+          }
+        },
+        {
+          "name": "SubByte",
+          "offset": 2677,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 23,
+            "and": 1,
+            "table_read": 4
+          }
+        },
+        {
+          "name": "product",
+          "offset": 2842,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 19,
+            "and": 2,
+            "add": 4,
+            "xor": 3
+          }
+        },
+        {
+          "name": "InvMixCol",
+          "offset": 3090,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 33,
+            "and": 4,
+            "add": 4,
+            "xor": 4,
+            "rotate": 6
+          }
+        },
+        {
+          "name": "ByteSub",
+          "offset": 3369,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 4,
+            "xor": 5
+          }
+        },
+        {
+          "name": "_mcrypt_rijndael_gentables",
+          "offset": 3585,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 55,
+            "and": 5,
+            "xor": 7,
+            "table_read": 2,
+            "add": 4
+          }
+        },
+        {
+          "name": "_mcrypt_set_key",
+          "offset": 4521,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 84,
+            "add": 38,
+            "rotate": 4,
+            "and": 3,
+            "table_read": 2,
+            "xor": 7
+          }
+        },
+        {
+          "name": "_mcrypt_encrypt",
+          "offset": 7192,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 42,
+            "xor": 9,
+            "add": 10,
+            "and": 3,
+            "table_read": 8,
+            "rotate": 6
+          }
+        },
+        {
+          "name": "_mcrypt_decrypt",
+          "offset": 8538,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 42,
+            "xor": 9,
+            "add": 10,
+            "and": 3,
+            "table_read": 8,
+            "rotate": 6
+          }
+        },
+        {
+          "name": "_mcrypt_get_size",
+          "offset": 9833,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {}
+        },
+        {
+          "name": "_mcrypt_get_block_size",
+          "offset": 9896,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 1
+          }
+        },
+        {
+          "name": "_is_block_algorithm",
+          "offset": 9957,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 1
+          }
+        },
+        {
+          "name": "_mcrypt_get_key_size",
+          "offset": 10014,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 1
+          }
+        },
+        {
+          "name": "_mcrypt_get_supported_key_sizes",
+          "offset": 10121,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {}
+        },
+        {
+          "name": "_mcrypt_get_algorithms_name",
+          "offset": 10252,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {}
+        },
+        {
+          "name": "_mcrypt_algorithm_version",
+          "offset": 11515,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {
+            "constant": 1
+          }
+        },
+        {
+          "name": "main",
+          "offset": 11619,
+          "parse_error": false,
+          "limited": false,
+          "event_counts": {}
+        }
+      ],
+      "stage": "bounded_lifting_finished"
+    }
+  },
+  "source_state_components": [],
+  "static_primitive_summaries": [],
+  "static_limb_witnesses": []
+}

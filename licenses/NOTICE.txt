@@ -21,3 +21,7 @@ build/datasets/original_manifests/ 与 build/datasets/source_metadata/。
 祖先目录的 LICENSE 不自动取代子模块及源文件头声明；现有记录尚不构成
 所有样本/固件内部组件的完整许可审计。后续缺项按来源补齐，见 todo.md。
 Python 安装依赖的声明随各自 wheel 分发，build/wheelhouse/ 的轮子原样保留。
+
+2026-10-15：新增 Unicorn 2.1.4 外部仿真依赖，隔离子进程解释目标指令。
+核心上游声明为 GPLv2；不能仅依据 PyPI 的 BSD 元数据。完整文本和固定版本
+源码来源见 components/unicorn/ 及 INDEX.txt；QCS 的 Apache-2.0 不替代此依赖许可。

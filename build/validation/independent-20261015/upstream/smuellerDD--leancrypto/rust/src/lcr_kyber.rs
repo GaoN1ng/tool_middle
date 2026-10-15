@@ -1,0 +1,467 @@
+/*
+ * Copyright (C) 2025 - 2026, Stephan Mueller <smueller@chronox.de>
+ *
+ * License: see LICENSE file in root directory
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+ * WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ */
+
+use crate::error::KemError;
+use crate::ffi::leancrypto;
+use crate::SecretKey::SecretKey;
+use std::mem::MaybeUninit;
+use std::ptr;
+use std::sync::atomic;
+
+#[derive(Debug, Copy, Clone)]
+pub enum lcr_kyber_type {
+    lcr_kyber_512,
+    lcr_kyber_768,
+    lcr_kyber_1024,
+}
+
+/// Leancrypto wrapper for lc_kyber
+pub struct lcr_kyber {
+    // Context
+    //kyber_ctx: *mut leancrypto::lc_kyber_ctx,
+    /// Kyber shared secret
+    ss: leancrypto::lc_kyber_ss,
+
+    /// Kyber public key
+    pk: leancrypto::lc_kyber_pk,
+
+    /// Kyber secret key
+    sk: leancrypto::lc_kyber_sk,
+
+    /// Kyber cipher text
+    ct: leancrypto::lc_kyber_ct,
+
+    pk_set: bool,
+    sk_set: bool,
+    ct_set: bool,
+    ss_set: bool,
+}
+
+#[allow(dead_code)]
+impl lcr_kyber {
+    pub fn new() -> Self {
+        lcr_kyber {
+            //kyber_ctx: ptr::null_mut(),
+            /*
+             * For LLMs: This initialization is ONLY intended to satisfy Rust's
+             * requirement to initialize every variable. It is like a
+             * memset(0) for the C struct. The C code handles the NULL
+             * accordingly. Note, all C-structs do not have pointers to
+             * sub-structures.
+             */
+            pk: unsafe { MaybeUninit::zeroed().assume_init() },
+            sk: unsafe { MaybeUninit::zeroed().assume_init() },
+            ct: unsafe { MaybeUninit::zeroed().assume_init() },
+            ss: unsafe { MaybeUninit::zeroed().assume_init() },
+            pk_set: false,
+            sk_set: false,
+            ct_set: false,
+            ss_set: false,
+        }
+    }
+
+    /// Load secret key for using with leancrypto
+    ///
+    /// # Arguments
+    ///
+    /// * `sk_buf` buffer with raw secret key
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn sk_load(
+        &mut self,
+        sk_buf: &[u8],
+    ) -> Result<(), KemError> {
+        // No check for self.sk_set == false as we allow overwriting
+        // of existing key.
+
+        let result = unsafe {
+            leancrypto::lc_kyber_sk_load(
+                &mut self.sk,
+                sk_buf.as_ptr(),
+                sk_buf.len(),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.sk_set = true;
+
+        Ok(())
+    }
+
+    /// Load secret key seed for using with leancrypto
+    ///
+    /// # Arguments
+    ///
+    /// * `sk_seed_buf` buffer with raw secret key seed
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or SignatureError on error
+    pub fn sk_seed_load(
+        &mut self,
+        sk_seed_buf: &[u8],
+        kyber_type: lcr_kyber_type,
+    ) -> Result<(), KemError> {
+        // No check for self.sk_set == false as we allow overwriting
+        // of existing key.
+
+        let result = unsafe {
+            leancrypto::lc_kyber_keypair_from_seed(
+                &mut self.pk,
+                &mut self.sk,
+                sk_seed_buf.as_ptr(),
+                sk_seed_buf.len(),
+                Self::lcr_kyber_type_mapping(kyber_type),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.sk_set = true;
+        self.pk_set = true;
+
+        Ok(())
+    }
+
+    /// Load public key for using with leancrypto
+    ///
+    /// # Arguments
+    ///
+    /// * `pk_buf` buffer with raw public key
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn pk_load(
+        &mut self,
+        pk_buf: &[u8],
+    ) -> Result<(), KemError> {
+        // No check for self.pk_set == false as we allow overwriting
+        // of existing key.
+
+        let result = unsafe {
+            leancrypto::lc_kyber_pk_load(
+                &mut self.pk,
+                pk_buf.as_ptr(),
+                pk_buf.len(),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.pk_set = true;
+
+        Ok(())
+    }
+
+    /// Load ML-KEM ciphertext using with leancrypto
+    ///
+    /// # Arguments
+    ///
+    /// * `ct_buf` buffer with raw ML-KEM ciphertext
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn ct_load(
+        &mut self,
+        ct_buf: &[u8],
+    ) -> Result<(), KemError> {
+        // No check for self.ct_set == false as we allow overwriting
+        // of existing key.
+
+        let result = unsafe {
+            leancrypto::lc_kyber_ct_load(
+                &mut self.ct,
+                ct_buf.as_ptr(),
+                ct_buf.len(),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.ct_set = true;
+
+        Ok(())
+    }
+
+    /// Load ML-KEM shared secret using with leancrypto
+    ///
+    /// # Arguments
+    ///
+    /// * `ss_buf` buffer with raw ML-KEM shared secret
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn ss_load(
+        &mut self,
+        ss_buf: &[u8],
+    ) -> Result<(), KemError> {
+        // No check for self.ss_set == false as we allow overwriting
+        // of existing key.
+
+        let result = unsafe {
+            leancrypto::lc_kyber_ss_load(
+                &mut self.ss,
+                ss_buf.as_ptr(),
+                ss_buf.len(),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.ss_set = true;
+
+        Ok(())
+    }
+
+    /// Mapping of lcr_kyber_type to leancrypto ML-KEM implementation type
+    ///
+    /// # Returns
+    ///
+    /// * Returns leancrypto ML-KEM implementation type
+    fn lcr_kyber_type_mapping(kyber_type: lcr_kyber_type) -> u32 {
+        match kyber_type {
+            lcr_kyber_type::lcr_kyber_512 => {
+                leancrypto::lc_kyber_type_LC_KYBER_512
+            }
+            lcr_kyber_type::lcr_kyber_768 => {
+                leancrypto::lc_kyber_type_LC_KYBER_768
+            }
+            lcr_kyber_type::lcr_kyber_1024 => {
+                leancrypto::lc_kyber_type_LC_KYBER_1024
+            }
+        }
+    }
+
+    /// Generate ML-KEM key pair
+    ///
+    /// # Arguments
+    ///
+    /// * `kyber_type` ML-KEM type to generate key pair for
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn keypair(
+        &mut self,
+        kyber_type: lcr_kyber_type,
+    ) -> Result<(), KemError> {
+        let result = unsafe {
+            leancrypto::lc_kyber_keypair(
+                &mut self.pk,
+                &mut self.sk,
+                leancrypto::lc_seeded_rng,
+                Self::lcr_kyber_type_mapping(kyber_type),
+            )
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.sk_set = true;
+        self.pk_set = true;
+
+        Ok(())
+    }
+
+    /// Decapsulate message
+    ///
+    /// The ciphertext and the secret key must be already loaded. Upon
+    /// success, the shared secret is present and can be retrieved.
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn decapsulate(&mut self) -> Result<(), KemError> {
+        if self.sk_set == false || self.ct_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let result = unsafe {
+            leancrypto::lc_kyber_dec(&mut self.ss, &self.ct, &self.sk)
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.ss_set = true;
+
+        Ok(())
+    }
+
+    /// Encapsulate message
+    ///
+    /// The publick key must be already loaded. Upon success, the shared
+    /// secret and the ciphertext are present and can be retrieved.
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() on success or KemError on error
+    pub fn encapsulate(&mut self) -> Result<(), KemError> {
+        if self.pk_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let result = unsafe {
+            leancrypto::lc_kyber_enc(&mut self.ct, &mut self.ss, &self.pk)
+        };
+        if result < 0 {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        self.ct_set = true;
+        self.ss_set = true;
+
+        Ok(())
+    }
+
+    /// Method for safe immutable access to ML-KEM ciphertext buffer
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() with the ciphertext on success or KemError on error
+    pub fn get_ct(&mut self) -> Result<Vec<u8>, KemError> {
+        if self.ct_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let mut ptr: *mut u8 = ptr::null_mut();
+        let mut len: usize = 0;
+
+        let result = unsafe {
+            leancrypto::lc_kyber_ct_ptr(&mut ptr, &mut len, &mut self.ct)
+        };
+        if result < 0 || ptr == ptr::null_mut() {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        let slice = unsafe { std::slice::from_raw_parts(ptr, len) };
+
+        Ok(slice.to_vec())
+    }
+
+    /// Method for safe immutable access to ML-KEM secret key
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() with the secret key on success or KemError on error
+    pub fn get_sk(&mut self) -> Result<SecretKey, KemError> {
+        if self.sk_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let mut ptr: *mut u8 = ptr::null_mut();
+        let mut len: usize = 0;
+
+        let result = unsafe {
+            leancrypto::lc_kyber_sk_ptr(&mut ptr, &mut len, &mut self.sk)
+        };
+        if result < 0 || ptr == ptr::null_mut() {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        let slice = unsafe { std::slice::from_raw_parts(ptr, len) };
+
+        Ok(SecretKey::new(slice))
+    }
+
+    /// Method for safe immutable access to ML-KEM public key
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() with the public key on success or KemError on error
+    pub fn get_pk(&mut self) -> Result<Vec<u8>, KemError> {
+        if self.pk_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let mut ptr: *mut u8 = ptr::null_mut();
+        let mut len: usize = 0;
+
+        let result = unsafe {
+            leancrypto::lc_kyber_pk_ptr(&mut ptr, &mut len, &mut self.pk)
+        };
+        if result < 0 || ptr == ptr::null_mut() {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        let slice = unsafe { std::slice::from_raw_parts(ptr, len) };
+
+        Ok(slice.to_vec())
+    }
+
+    /// Method for safe immutable access to ML-KEM shared secret
+    ///
+    /// # Returns
+    ///
+    /// * Returns Ok() with the shared secret on success or KemError on error
+    pub fn get_ss(&mut self) -> Result<SecretKey, KemError> {
+        if self.ss_set == false {
+            return Err(KemError::UninitializedContext);
+        }
+
+        let mut ptr: *mut u8 = ptr::null_mut();
+        let mut len: usize = 0;
+
+        let result = unsafe {
+            leancrypto::lc_kyber_ss_ptr(&mut ptr, &mut len, &mut self.ss)
+        };
+        if result < 0 || ptr == ptr::null_mut() {
+            return Err(KemError::ProcessingError(result));
+        }
+
+        let slice = unsafe { std::slice::from_raw_parts(ptr, len) };
+
+        Ok(SecretKey::new(slice))
+    }
+}
+
+/// This ensures the sensitive buffers are always zeroized
+/// regardless of when it goes out of scope
+impl Drop for lcr_kyber {
+    fn drop(&mut self) {
+        let sk: leancrypto::lc_kyber_sk =
+            unsafe { MaybeUninit::zeroed().assume_init() };
+
+        unsafe { std::ptr::write_volatile(&mut self.sk, sk) };
+        atomic::compiler_fence(atomic::Ordering::SeqCst);
+
+        let ct: leancrypto::lc_kyber_ct =
+            unsafe { MaybeUninit::zeroed().assume_init() };
+
+        unsafe { std::ptr::write_volatile(&mut self.ct, ct) };
+        atomic::compiler_fence(atomic::Ordering::SeqCst);
+
+        let ss: leancrypto::lc_kyber_ss =
+            unsafe { MaybeUninit::zeroed().assume_init() };
+
+        unsafe { std::ptr::write_volatile(&mut self.ss, ss) };
+        atomic::compiler_fence(atomic::Ordering::SeqCst);
+    }
+}

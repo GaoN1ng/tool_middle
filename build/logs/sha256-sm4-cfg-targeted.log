@@ -1,0 +1,19 @@
+test_branch_slot_reads_real_table_in_both_endians (test_mips_controlflow.MIPSControlflowTests.test_branch_slot_reads_real_table_in_both_endians) ... ok
+test_call_slot_precedes_callee_clobber (test_mips_controlflow.MIPSControlflowTests.test_call_slot_precedes_callee_clobber) ... ok
+test_conflicting_join_does_not_keep_provisional_table_reads (test_mips_controlflow.MIPSControlflowTests.test_conflicting_join_does_not_keep_provisional_table_reads) ... ok
+test_pic_address_survives_a_loop_edge (test_mips_controlflow.MIPSControlflowTests.test_pic_address_survives_a_loop_edge) ... ok
+test_aarch64_halfword_constant_initialization (test_sha256_rounds.SHA256RoundTests.test_aarch64_halfword_constant_initialization) ... ok
+test_algorithm_like_macro_names_do_not_supply_missing_operations (test_sha256_rounds.SHA256RoundTests.test_algorithm_like_macro_names_do_not_supply_missing_operations) ... ok
+test_complete_round_without_local_message_expansion (test_sha256_rounds.SHA256RoundTests.test_complete_round_without_local_message_expansion) ... ok
+test_identity_masks_do_not_replace_boolean_producers (test_sha256_rounds.SHA256RoundTests.test_identity_masks_do_not_replace_boolean_producers) ... ok
+test_macro_arguments_do_not_cascade_and_typedef_casts_are_real (test_sha256_rounds.SHA256RoundTests.test_macro_arguments_do_not_cascade_and_typedef_casts_are_real) ... ok
+test_wrong_input_maps_and_variant_stay_negative (test_sha256_rounds.SHA256RoundTests.test_wrong_input_maps_and_variant_stay_negative) ... ok
+test_exact_four_bytes_and_negative_relations (test_sm4_table_rounds.SM4TableRoundTests.test_exact_four_bytes_and_negative_relations) ... ok
+test_four_table_maps_keep_exact_positions (test_sm4_table_rounds.SM4TableRoundTests.test_four_table_maps_keep_exact_positions) ... ok
+test_pointer_spill_restores_only_pointer_width (test_sm4_table_rounds.SM4TableRoundTests.test_pointer_spill_restores_only_pointer_width) ... ok
+test_source_preexpanded_rounds_and_inert_table (test_sm4_table_rounds.SM4TableRoundTests.test_source_preexpanded_rounds_and_inert_table) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.603s
+
+OK

@@ -1,0 +1,1844 @@
+{
+  "before": {
+    "TP": 1375,
+    "FP": 0,
+    "FN": 197,
+    "TN": 24070,
+    "recall": 0.8746819338422391,
+    "false_negative_rate": 0.1253180661577608,
+    "precision": 1.0
+  },
+  "after": {
+    "TP": 1484,
+    "FP": 0,
+    "FN": 88,
+    "TN": 24070,
+    "recall": 0.9440203562340967,
+    "false_negative_rate": 0.05597964376590331,
+    "precision": 1.0
+  },
+  "gained_true_labels": [
+    {
+      "id": "gmssl-modern-sm2_exch-thumb-O0",
+      "sha256": "03824b26d556f39a65bf9174286fc31e18e10a6da5e2f66b230e01acbcb180d6",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-arm-O2",
+      "sha256": "045420d1974be63e576119759603ff497508f52566d318ddd5f3fb79fb87d428",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "nettle-rsa-sign-mipsel-O0",
+      "sha256": "0721744bb3840cebf921d82dd62c8bbadad1f00444864a62d1256f83324b1bc7",
+      "kind": "executable",
+      "project": "nettle",
+      "family": "nettle-rsa-sign",
+      "algorithm": "RSA"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-source",
+      "sha256": "0a006fb52fb31b4ea912d7b79ba478e514c27bf65ff9aa778f4e3132e125c88f",
+      "kind": "source",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-Os",
+      "sha256": "0a183d495be3339b0d532ee20d263c53a5c31a19403989ecebe175475bf0acb6",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-sm3_arm64",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-thumb-O2",
+      "sha256": "0cd3232d5f7d9916ace5f5402d75fd4de287b6c179ac7bbed073ed48b4abddc9",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mips_be-Os",
+      "sha256": "10fecba4fef87c7ad08a108395f6fa5477f3e11f1970ae6e70f6e01d698efa61",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-des-mipsel-O2",
+      "sha256": "14f7256fe4fbfe99798f64783ccdd11dc78def9ee8d3859c3316b8ef374ee7a2",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libecc-sm2-thumb-O0",
+      "sha256": "18aba085ed9f2144401cfa8843af4b46ca606bb427365b1b584de6e507046724",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdsa-common-thumb-O2",
+      "sha256": "1ca6fb8662f2a4f24b7a05d965a907ca7adfab8d3b073a1d89ae5eb0f0bd1337",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-Os",
+      "sha256": "1cb681cac1f0627e92c3f31ec4569eeb1360a20df8ec1edb9bf249670168f04d",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libecc-ecdsa-common-thumb-Os",
+      "sha256": "1d4d92b6605b1a757609fa3d3fb07030e5a23332eeae6c1af15ef3e9d9581f95",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libecc-ecdsa-common-mips_be-Os",
+      "sha256": "1d5c8c9109f3a5ac2febe4f4f4218315a4d8e72931c716409f5056cb9c66420e",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libmcrypt-arcfour-mips_be-O0",
+      "sha256": "1fb0c25f630c6ee7195992c8dad983a54dfebba46d6bc87b5c559fec805204c7",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libecc-ecdh-mips_be-Os",
+      "sha256": "1feb65a36cf415d524dd7d4c23f05846fce77dbab459753658eb7b9b2003ec1e",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-arcfour-mipsel-Os",
+      "sha256": "2031289e8d5f5023489a4866fe319c77791f19aaa22f8eb8a33d76262a7dbac6",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libecc-sm2-mips_be-Os",
+      "sha256": "216dac5cacd47351f7f63dcf78c3fc7af0489b1413d8ef493679c27e02415437",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-mips_be-O0",
+      "sha256": "22d10c730fe0828a4bd92d183ae39dc6bf1460f603b7cef22c2df6c297be176e",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-arm-Os",
+      "sha256": "237963d5626ec03fa6693a0727d7f77d2b3a27436966cc032361a942c89dbf42",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mipsel-O0",
+      "sha256": "2934e449d5d4d447d294732c1da1ee97776a508877da6b728e24157c3fa01baa",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libmcrypt-arcfour-mips_be-O2",
+      "sha256": "2992a643395c4e22db8c5bdb1d5e99d88147164bbb5132b6f511f041e5f67570",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "arduinolibs-curve25519-mipsel-O2",
+      "sha256": "2ccb41d3becf46793e1ccdd0aca6fe201e6f0e94710ad65f57b887a160028a57",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "boringssl-sha1-source",
+      "sha256": "2f569523a7a8b8d32a829f3136b7c8dc93cb011fecc56316ec88edae9c9805e1",
+      "kind": "source",
+      "project": "boringssl",
+      "family": "boringssl-sha1",
+      "algorithm": "SHA-1"
+    },
+    {
+      "id": "arduinolibs-curve25519-mipsel-O0",
+      "sha256": "32a58690b90870c42506c7f0110bccd6b58b73b6118d41e5b302ecb394b91878",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-Os",
+      "sha256": "32cbbf038e419a45375a7d76d8902e6ab0fe2721aba88f419af41a59c171ff58",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mipsel-Os",
+      "sha256": "366c94cad12778b26e06b2bb474ecd2f15f41cc101679cd66284c8071bbaf49c",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-des-aarch64-O2",
+      "sha256": "387a228211fb7417393b5c81d8465b6ef0b42ad692b6688d7b6a6b3e00fdd86d",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mips_be-Os",
+      "sha256": "3a0213d6d3fbe39a58d216dc60aec5e31475a45e803d9376a211719905d4b59f",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-thumb-Os",
+      "sha256": "3d9eeab4f72f50c9f0bd8e5d5e9759e98e42efbc5324220d3685257cdab7ae12",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-O2",
+      "sha256": "3f619bc420a4695c1654e5c2aba9c40e3f23d753afdb893ccf0cef920cad1fed",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-O0",
+      "sha256": "403e1a3b45f7c89115c413fe994bc98187e07bfdf4bb5422c02ac444fd8446a5",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-thumb-Os",
+      "sha256": "418d68dc6f72f96321891620a4076f96e7214b123f2fc1d39b2feaafb29f551a",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mips_be-O2",
+      "sha256": "43bf401cebbd7b1b04c4c08cedd71f00e8ab3046e88668b2a1705fa7d9aa5ce9",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "gmssl-sm3_arm64-aarch64-O2",
+      "sha256": "445b5b8f5e902b423efb3cf8cbe5b173b9eb3ddd24d7db1fd13e481fd1143e58",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-sm3_arm64",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-ecdh-mips_be-O0",
+      "sha256": "45525185bb48426a400896f58153bf8d2d2f99bb13efb096766483e372f9a657",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "arduinolibs-curve25519-aarch64-O0",
+      "sha256": "45575687974f74b1d947c7f7191fd4bb687001d12da8e864a1d05b3a1a78f3ee",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-O0",
+      "sha256": "469f14ed1c1cb27088107d1f8d1fb26f74740be91630a710ab34852a6cdb657c",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-sm3-mipsel-O0",
+      "sha256": "4b187d30f43320bda7962db1570a645b6e18981ead298445afb0e451dabf3fbf",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "split-compression-mips_be-Os",
+      "sha256": "4c00cfd1ed508b8213ab0982e3861c4580b36e6873f9785a6db507affa7df38e",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "split-compression-mips_be-O2",
+      "sha256": "4c096b39de8c4f390377eae1301fd56f3e8b09f6863d6ac3c5c4759363484d93",
+      "kind": "executable",
+      "project": "authored-equation-controls",
+      "family": "split-compression",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-sm3-aarch64-O0",
+      "sha256": "4c6d34b43bd1a54726bd5179a2ba962e2a26f6885d9cc29e75f20cebb685f145",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mips_be-O2",
+      "sha256": "4c719fd6e629650afd8ab9f1aac6c061f5eee72b578e11a9f4ed98a677a8230c",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-thumb-O2",
+      "sha256": "4c852800f63b8562229cfb75378529cb47e8dd7f442be73b94754e9cfc12225a",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-arcfour-aarch64-O0",
+      "sha256": "531a28b768c698d4501790710bda47f50b675e0cabfd320fdcf32e6b89c582c7",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mipsel-O2",
+      "sha256": "54ebaabd80f635162f32195d1190fe9ef736af71aa4760c22adcbe47f455e9b7",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-mips_be-O2",
+      "sha256": "563054b82569b3d2a24eb71cf353a0345dd4290de998da62bdf5acf26ae747a5",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-Os",
+      "sha256": "5643844f8f99859fe61d1133c493f10908bf79fa77ffab78f47eda17847b936c",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-mips_be-Os",
+      "sha256": "5779d5bef1987d82c101037b68f84713a22eff803797c6bd0577fdddc2caa06b",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-arcfour-mipsel-O2",
+      "sha256": "5ef5693d4b060988d820237f4a4934cd4b0826e57171487c506b9cfa3c8b3ae6",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libecc-ecdh-thumb-O2",
+      "sha256": "6177ef4dc45f4c9ccb8a78f0650c68f1e23ee613332058f1e3f51ebf7eec3a24",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mipsel-O2",
+      "sha256": "62d5cae15a1a7c614efa79e474dae1954be80f65c645ce21034d26efba7df1a1",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mips_be-O0",
+      "sha256": "64640f46097240501f248172929f39bc05aedea389deff566f30f1e75337259e",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdh-mipsel-O0",
+      "sha256": "64e914ce9da1a45ed3efd79f6c578ece57441a0f55c6668943acafb18e4ccb02",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-mipsel-Os",
+      "sha256": "67abca30e44ed59ac03b4ce7995bacda199a8d2ea9aaab093144b735e5473d50",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-sm2-mips_be-O2",
+      "sha256": "6991978863f4949743ecfc3b0d02551c32efaa1b4160203df4f17bd3da31b398",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-thumb-O0",
+      "sha256": "6a085abb2c5ba2d9a83520331df7fb98fac2ab0858feb6b05b016f2e627ab0d2",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-des-aarch64-Os",
+      "sha256": "6c72a32e079b428f5b302d66b96ff8345224143bf89bfca2b6792284ed51d054",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libecc-ecdh-thumb-Os",
+      "sha256": "75a841bd35d58f6c19f0656375ec0ba66abba07c3d0bf18413f6efb2887139d3",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-O0",
+      "sha256": "79fb2688061060991340de94edacc2355c1763466770d2159984b6f822f1161d",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-O0",
+      "sha256": "79fffd6cad517d0fe639f21e8739d29d6b10a76140ce475d45adca2544dbe109",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-O2",
+      "sha256": "7a013aa6d15b5347dc26e245575e380db794113b797446cdd5e3e9dc23308bd9",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdsa-common-mipsel-Os",
+      "sha256": "7b512859a8ae9a557aafb60e8ba010f826e408a506de5d7c4bd64caf0360a265",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libmcrypt-arcfour-source",
+      "sha256": "80c88914b8d2abe3fd84c63bc8a992caaaea97499ff4bfa65661ac61869ddb8c",
+      "kind": "source",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "arduinolibs-curve25519-mipsel-Os",
+      "sha256": "81aa1ffda8d5e260780a0e3cf3265e29be2a2a286fb44ca78971147c8588ec01",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-sm3-arm-O0",
+      "sha256": "869c2d41cdd037de8b4e553a1e90965ddc8e0379b7f58d21b348519d9656e7e8",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-x86_64-Os",
+      "sha256": "88edec25c1133c49a7b12ba2319c545ed62e6a6daed8f8562078253d9b61f7d3",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "nettle-rsa-sign-mips_be-O0",
+      "sha256": "89be03d53f76e7f22525b22267716ed330b2d1c729cd0aed3d6763e8e604df89",
+      "kind": "executable",
+      "project": "nettle",
+      "family": "nettle-rsa-sign",
+      "algorithm": "RSA"
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-Os",
+      "sha256": "8d605022cd0627186750c095d5fde55e0479ae4269c159f0ebd4370b54d71f40",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "ippcrypto-sm3-source",
+      "sha256": "8ff22b0c1e2228a1e50c3f0cdff6d01fce82e8f0c07d6e38ef7f796bc3f2bc59",
+      "kind": "source",
+      "project": "ippcrypto",
+      "family": "ippcrypto-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-source",
+      "sha256": "91bc47c7049ef73b6fd59b7b6f37efa071611d4c83859d382dde3a2df7d489ac",
+      "kind": "source",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-sm3-mips_be-O0",
+      "sha256": "93062c1d2dcce2f5a1839f0268a06aec1ad928cae7a716e468afabe996b5320f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-aarch64-O2",
+      "sha256": "94c6dfa6bda1b04f83e1388579a75a9491248ec83875a9bc82e0681d21bf1515",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdh-arm-Os",
+      "sha256": "9712e1dedd27e3ad78e00033e612441e4f93c0bcec100a23ab6f2260bd94edb1",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-arm-O2",
+      "sha256": "9760a2a3f245b2c63ac4718cfb9e4aba773cf0f347a8b955a70bc0c26a467b9f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdsa-common-thumb-O0",
+      "sha256": "978d69ae5c2e84f1a47efe8055eabd403b6d8b4e9a5cbeaa65ea114e0c7d7762",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libmcrypt-arcfour-x86_64-O0",
+      "sha256": "9e587832e68cc89b048059202458d6feaee6735624129fc7f5573517cc750d47",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libecc-ecdsa-common-mips_be-O2",
+      "sha256": "a1c4a648c4e0fdc40a28836e3c4bb424c6775e6c38dcee7e2f1f607595e961a6",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-Os",
+      "sha256": "a53eb77c7f014a635f8e18667195e93333f1e4a929303083be21d4d9d6707cf5",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "arduinolibs-curve25519-arm-Os",
+      "sha256": "a55eea3f901ed59c144e499fb2e752d956fa77bf78177a0d93ef7f41ad124813",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-sm2-mipsel-Os",
+      "sha256": "a5f3f7ed40bb38c94e794379fe571943c388b25d28215b898c1bb0e8cbc3899f",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-arm-O0",
+      "sha256": "acddc10ef4578caec4d617125799d42cdda1741cd8de859e1178633830e2582f",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libecc-ecdh-mipsel-O2",
+      "sha256": "acecbca7ae81c794449fae60a31e4b8dffc74283cf5aa20adc2dac9d9a59495d",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-arm-O0",
+      "sha256": "adca2b0df4aa7b5614a1b13096ab8e134361a56ac8b3420ba23401b0608e648b",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "arduinolibs-curve25519-thumb-O0",
+      "sha256": "af32017c135118aed8802289e76b6bce1eecd7e321b7e62debd6362d859e9754",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-des-mips_be-Os",
+      "sha256": "b3eb92c5c745aff1f0e6e451ae8a3d6efe2d45ab8154cbe7d3cd20bb4243fee0",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libmcrypt-des-x86_64-Os",
+      "sha256": "b45e05e97abe532e3230165dd05ec44c78684b5544a49b26a358fc24ea39fac3",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-arm-O2",
+      "sha256": "b5d27327be402b62cd6f34fef4d212a3cedf206e288347a9cc1c140a0beacc95",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-thumb-Os",
+      "sha256": "b85a3c166801127ecc0cbf34cec9d710f61c1b2af83eea94da92050363e725e9",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-arm-O0",
+      "sha256": "b9bebd00b4cc82e70f2c2f40878e7f8b44d43f599471ac81d0ceff562659c0c3",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mipsel-O0",
+      "sha256": "bb889bcc71caf384489898db75e5e9cb9292e92bebfdebc2793ff7d7a5f5a8c3",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-arcfour-arm-O0",
+      "sha256": "be98171fc190c2bbff788d55e862a4a2866f55146f058b9cf9c4c327679234a1",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libmcrypt-des-x86_64-O2",
+      "sha256": "c33a2ff1ad426091ce8db5ee7fdf3647815a3b0ff0555efbd6cdca3aa70bec43",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-mips_be-O0",
+      "sha256": "c34eba85f02886532450cf8159f11ff73390d23718470c107992bf63141f55dc",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-des-mipsel-Os",
+      "sha256": "ccd202d28ad32270e2963c783f1abf3b81765557e73f3ccf613af8edb1ebb2c5",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-arm-Os",
+      "sha256": "d0d0cd5064ac8008656d61840e7b22ccde8740e103e83430e43bffb5bda8d804",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libecc-sm3-x86_64-O0",
+      "sha256": "d508a2aaa4e03442ff9de803986d20300bf7e04a6c8a7207bef36f771d831d84",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm3",
+      "algorithm": "SM3"
+    },
+    {
+      "id": "libecc-ecdsa-common-mipsel-O2",
+      "sha256": "d5aeaee52924fc51d4ee2f077b07597c920f3e76ae7ec0668c7afef96f7c5907",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdsa-common",
+      "algorithm": "ECDSA"
+    },
+    {
+      "id": "libecc-sm2-mipsel-O2",
+      "sha256": "d6db24dfc4242c1e3bb1d8c4ea8b265679adef8f7ea6d914a225482d3ac55fb2",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-sm2",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-thumb-O2",
+      "sha256": "d761427bbb29d4933afb6076c3064c2d7616416848e1729ffa7b050d7ebd86c9",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "libecc-ecdh-mips_be-O2",
+      "sha256": "d98ee9d2a7fd97d89dda7f2e33e1ff2bcd5f3198294b06d99fbfd0330ad89d0b",
+      "kind": "executable",
+      "project": "libecc",
+      "family": "libecc-ecdh",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-aarch64-O2",
+      "sha256": "e988a7a0ffbef274df0d3b4573b5d835f06db63a5179bdcab2037d14594db2a2",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-arcfour-mips_be-Os",
+      "sha256": "e9c88352874247c1a1d1ced40916ee73e0dc5fa695feb4b7c317d09afb99f616",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libmcrypt-des-mips_be-O2",
+      "sha256": "ecc04ed9cac17d4e1ab5fec380be44e4fe26486cda2b130f8e62db98710992ac",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    },
+    {
+      "id": "gmssl-modern-sm2_exch-mipsel-Os",
+      "sha256": "f06c4da590610de838ac8c298f13cd7d559d26f12db14491be43a2f28560edaa",
+      "kind": "executable",
+      "project": "gmssl-modern",
+      "family": "gmssl-modern-sm2_exch",
+      "algorithm": "SM2"
+    },
+    {
+      "id": "arduinolibs-curve25519-x86_64-O0",
+      "sha256": "f23e1c97831dc0872242804cf2243cf02e8bdacc0b93b58be19af8f74d54b09b",
+      "kind": "executable",
+      "project": "arduinolibs",
+      "family": "arduinolibs-curve25519",
+      "algorithm": "ECDH"
+    },
+    {
+      "id": "libmcrypt-arcfour-mipsel-O0",
+      "sha256": "f5d2ccccdd1ef50008f4d4c8a950592e35f6b86ed400e3052b2f5357e6c39928",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-arcfour",
+      "algorithm": "RC4"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-arm-O2",
+      "sha256": "f6335afef2bf1f312dfc33c36baf2113f3eb36f22221dce9f245e8c2839e37a3",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-rijndael-128-x86_64-O2",
+      "sha256": "f7c497c0d85ac68309ffcede8fe78cbfd0f5b585fc200aa18e6f38d65097b448",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-rijndael-128",
+      "algorithm": "AES"
+    },
+    {
+      "id": "libmcrypt-des-arm-O2",
+      "sha256": "fedecb340ae52088853bd2ea3f119e51c53ea0533e2faddc3c8c19d3b47f76ba",
+      "kind": "executable",
+      "project": "libmcrypt",
+      "family": "libmcrypt-des",
+      "algorithm": "DES"
+    }
+  ],
+  "lost_true_labels": [],
+  "gained_by_algorithm": {
+    "SM2": 23,
+    "ECDH": 28,
+    "RSA": 2,
+    "AES": 19,
+    "SM3": 10,
+    "DES": 9,
+    "ECDSA": 7,
+    "RC4": 10,
+    "SHA-1": 1
+  },
+  "denominator_unchanged": true,
+  "files": 2344,
+  "positive_labels": 1572,
+  "historical_comparison": {
+    "before": {
+      "TP": 1375,
+      "FP": 0,
+      "FN": 197,
+      "TN": 24070,
+      "recall": 0.8746819338422391,
+      "false_negative_rate": 0.1253180661577608,
+      "precision": 1.0
+    },
+    "after": {
+      "TP": 1484,
+      "FP": 0,
+      "FN": 88,
+      "TN": 24070,
+      "recall": 0.9440203562340967,
+      "false_negative_rate": 0.05597964376590331,
+      "precision": 1.0
+    },
+    "gained_true_labels": [
+      {
+        "id": "gmssl-modern-sm2_exch-thumb-O0",
+        "sha256": "03824b26d556f39a65bf9174286fc31e18e10a6da5e2f66b230e01acbcb180d6",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-arm-O2",
+        "sha256": "045420d1974be63e576119759603ff497508f52566d318ddd5f3fb79fb87d428",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "nettle-rsa-sign-mipsel-O0",
+        "sha256": "0721744bb3840cebf921d82dd62c8bbadad1f00444864a62d1256f83324b1bc7",
+        "kind": "executable",
+        "project": "nettle",
+        "family": "nettle-rsa-sign",
+        "algorithm": "RSA"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-source",
+        "sha256": "0a006fb52fb31b4ea912d7b79ba478e514c27bf65ff9aa778f4e3132e125c88f",
+        "kind": "source",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "gmssl-sm3_arm64-aarch64-Os",
+        "sha256": "0a183d495be3339b0d532ee20d263c53a5c31a19403989ecebe175475bf0acb6",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-sm3_arm64",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-thumb-O2",
+        "sha256": "0cd3232d5f7d9916ace5f5402d75fd4de287b6c179ac7bbed073ed48b4abddc9",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mips_be-Os",
+        "sha256": "10fecba4fef87c7ad08a108395f6fa5477f3e11f1970ae6e70f6e01d698efa61",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-des-mipsel-O2",
+        "sha256": "14f7256fe4fbfe99798f64783ccdd11dc78def9ee8d3859c3316b8ef374ee7a2",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "libecc-sm2-thumb-O0",
+        "sha256": "18aba085ed9f2144401cfa8843af4b46ca606bb427365b1b584de6e507046724",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdsa-common-thumb-O2",
+        "sha256": "1ca6fb8662f2a4f24b7a05d965a907ca7adfab8d3b073a1d89ae5eb0f0bd1337",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-aarch64-Os",
+        "sha256": "1cb681cac1f0627e92c3f31ec4569eeb1360a20df8ec1edb9bf249670168f04d",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libecc-ecdsa-common-thumb-Os",
+        "sha256": "1d4d92b6605b1a757609fa3d3fb07030e5a23332eeae6c1af15ef3e9d9581f95",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libecc-ecdsa-common-mips_be-Os",
+        "sha256": "1d5c8c9109f3a5ac2febe4f4f4218315a4d8e72931c716409f5056cb9c66420e",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libmcrypt-arcfour-mips_be-O0",
+        "sha256": "1fb0c25f630c6ee7195992c8dad983a54dfebba46d6bc87b5c559fec805204c7",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libecc-ecdh-mips_be-Os",
+        "sha256": "1feb65a36cf415d524dd7d4c23f05846fce77dbab459753658eb7b9b2003ec1e",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-arcfour-mipsel-Os",
+        "sha256": "2031289e8d5f5023489a4866fe319c77791f19aaa22f8eb8a33d76262a7dbac6",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libecc-sm2-mips_be-Os",
+        "sha256": "216dac5cacd47351f7f63dcf78c3fc7af0489b1413d8ef493679c27e02415437",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-mips_be-O0",
+        "sha256": "22d10c730fe0828a4bd92d183ae39dc6bf1460f603b7cef22c2df6c297be176e",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-arm-Os",
+        "sha256": "237963d5626ec03fa6693a0727d7f77d2b3a27436966cc032361a942c89dbf42",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mipsel-O0",
+        "sha256": "2934e449d5d4d447d294732c1da1ee97776a508877da6b728e24157c3fa01baa",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libmcrypt-arcfour-mips_be-O2",
+        "sha256": "2992a643395c4e22db8c5bdb1d5e99d88147164bbb5132b6f511f041e5f67570",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "arduinolibs-curve25519-mipsel-O2",
+        "sha256": "2ccb41d3becf46793e1ccdd0aca6fe201e6f0e94710ad65f57b887a160028a57",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "boringssl-sha1-source",
+        "sha256": "2f569523a7a8b8d32a829f3136b7c8dc93cb011fecc56316ec88edae9c9805e1",
+        "kind": "source",
+        "project": "boringssl",
+        "family": "boringssl-sha1",
+        "algorithm": "SHA-1"
+      },
+      {
+        "id": "arduinolibs-curve25519-mipsel-O0",
+        "sha256": "32a58690b90870c42506c7f0110bccd6b58b73b6118d41e5b302ecb394b91878",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "arduinolibs-curve25519-aarch64-Os",
+        "sha256": "32cbbf038e419a45375a7d76d8902e6ab0fe2721aba88f419af41a59c171ff58",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mipsel-Os",
+        "sha256": "366c94cad12778b26e06b2bb474ecd2f15f41cc101679cd66284c8071bbaf49c",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-des-aarch64-O2",
+        "sha256": "387a228211fb7417393b5c81d8465b6ef0b42ad692b6688d7b6a6b3e00fdd86d",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mips_be-Os",
+        "sha256": "3a0213d6d3fbe39a58d216dc60aec5e31475a45e803d9376a211719905d4b59f",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-thumb-Os",
+        "sha256": "3d9eeab4f72f50c9f0bd8e5d5e9759e98e42efbc5324220d3685257cdab7ae12",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "arduinolibs-curve25519-aarch64-O2",
+        "sha256": "3f619bc420a4695c1654e5c2aba9c40e3f23d753afdb893ccf0cef920cad1fed",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-x86_64-O0",
+        "sha256": "403e1a3b45f7c89115c413fe994bc98187e07bfdf4bb5422c02ac444fd8446a5",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-thumb-Os",
+        "sha256": "418d68dc6f72f96321891620a4076f96e7214b123f2fc1d39b2feaafb29f551a",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mips_be-O2",
+        "sha256": "43bf401cebbd7b1b04c4c08cedd71f00e8ab3046e88668b2a1705fa7d9aa5ce9",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "gmssl-sm3_arm64-aarch64-O2",
+        "sha256": "445b5b8f5e902b423efb3cf8cbe5b173b9eb3ddd24d7db1fd13e481fd1143e58",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-sm3_arm64",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-ecdh-mips_be-O0",
+        "sha256": "45525185bb48426a400896f58153bf8d2d2f99bb13efb096766483e372f9a657",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "arduinolibs-curve25519-aarch64-O0",
+        "sha256": "45575687974f74b1d947c7f7191fd4bb687001d12da8e864a1d05b3a1a78f3ee",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-aarch64-O0",
+        "sha256": "469f14ed1c1cb27088107d1f8d1fb26f74740be91630a710ab34852a6cdb657c",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-sm3-mipsel-O0",
+        "sha256": "4b187d30f43320bda7962db1570a645b6e18981ead298445afb0e451dabf3fbf",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "split-compression-mips_be-Os",
+        "sha256": "4c00cfd1ed508b8213ab0982e3861c4580b36e6873f9785a6db507affa7df38e",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "split-compression",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "split-compression-mips_be-O2",
+        "sha256": "4c096b39de8c4f390377eae1301fd56f3e8b09f6863d6ac3c5c4759363484d93",
+        "kind": "executable",
+        "project": "authored-equation-controls",
+        "family": "split-compression",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-sm3-aarch64-O0",
+        "sha256": "4c6d34b43bd1a54726bd5179a2ba962e2a26f6885d9cc29e75f20cebb685f145",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mips_be-O2",
+        "sha256": "4c719fd6e629650afd8ab9f1aac6c061f5eee72b578e11a9f4ed98a677a8230c",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-thumb-O2",
+        "sha256": "4c852800f63b8562229cfb75378529cb47e8dd7f442be73b94754e9cfc12225a",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-arcfour-aarch64-O0",
+        "sha256": "531a28b768c698d4501790710bda47f50b675e0cabfd320fdcf32e6b89c582c7",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mipsel-O2",
+        "sha256": "54ebaabd80f635162f32195d1190fe9ef736af71aa4760c22adcbe47f455e9b7",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-mips_be-O2",
+        "sha256": "563054b82569b3d2a24eb71cf353a0345dd4290de998da62bdf5acf26ae747a5",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-aarch64-Os",
+        "sha256": "5643844f8f99859fe61d1133c493f10908bf79fa77ffab78f47eda17847b936c",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-mips_be-Os",
+        "sha256": "5779d5bef1987d82c101037b68f84713a22eff803797c6bd0577fdddc2caa06b",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-arcfour-mipsel-O2",
+        "sha256": "5ef5693d4b060988d820237f4a4934cd4b0826e57171487c506b9cfa3c8b3ae6",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libecc-ecdh-thumb-O2",
+        "sha256": "6177ef4dc45f4c9ccb8a78f0650c68f1e23ee613332058f1e3f51ebf7eec3a24",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mipsel-O2",
+        "sha256": "62d5cae15a1a7c614efa79e474dae1954be80f65c645ce21034d26efba7df1a1",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mips_be-O0",
+        "sha256": "64640f46097240501f248172929f39bc05aedea389deff566f30f1e75337259e",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdh-mipsel-O0",
+        "sha256": "64e914ce9da1a45ed3efd79f6c578ece57441a0f55c6668943acafb18e4ccb02",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-mipsel-Os",
+        "sha256": "67abca30e44ed59ac03b4ce7995bacda199a8d2ea9aaab093144b735e5473d50",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-sm2-mips_be-O2",
+        "sha256": "6991978863f4949743ecfc3b0d02551c32efaa1b4160203df4f17bd3da31b398",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-thumb-O0",
+        "sha256": "6a085abb2c5ba2d9a83520331df7fb98fac2ab0858feb6b05b016f2e627ab0d2",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-des-aarch64-Os",
+        "sha256": "6c72a32e079b428f5b302d66b96ff8345224143bf89bfca2b6792284ed51d054",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "libecc-ecdh-thumb-Os",
+        "sha256": "75a841bd35d58f6c19f0656375ec0ba66abba07c3d0bf18413f6efb2887139d3",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-x86_64-O0",
+        "sha256": "79fb2688061060991340de94edacc2355c1763466770d2159984b6f822f1161d",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-aarch64-O0",
+        "sha256": "79fffd6cad517d0fe639f21e8739d29d6b10a76140ce475d45adca2544dbe109",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "arduinolibs-curve25519-x86_64-O2",
+        "sha256": "7a013aa6d15b5347dc26e245575e380db794113b797446cdd5e3e9dc23308bd9",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdsa-common-mipsel-Os",
+        "sha256": "7b512859a8ae9a557aafb60e8ba010f826e408a506de5d7c4bd64caf0360a265",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libmcrypt-arcfour-source",
+        "sha256": "80c88914b8d2abe3fd84c63bc8a992caaaea97499ff4bfa65661ac61869ddb8c",
+        "kind": "source",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "arduinolibs-curve25519-mipsel-Os",
+        "sha256": "81aa1ffda8d5e260780a0e3cf3265e29be2a2a286fb44ca78971147c8588ec01",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-sm3-arm-O0",
+        "sha256": "869c2d41cdd037de8b4e553a1e90965ddc8e0379b7f58d21b348519d9656e7e8",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-x86_64-Os",
+        "sha256": "88edec25c1133c49a7b12ba2319c545ed62e6a6daed8f8562078253d9b61f7d3",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "nettle-rsa-sign-mips_be-O0",
+        "sha256": "89be03d53f76e7f22525b22267716ed330b2d1c729cd0aed3d6763e8e604df89",
+        "kind": "executable",
+        "project": "nettle",
+        "family": "nettle-rsa-sign",
+        "algorithm": "RSA"
+      },
+      {
+        "id": "arduinolibs-curve25519-x86_64-Os",
+        "sha256": "8d605022cd0627186750c095d5fde55e0479ae4269c159f0ebd4370b54d71f40",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "ippcrypto-sm3-source",
+        "sha256": "8ff22b0c1e2228a1e50c3f0cdff6d01fce82e8f0c07d6e38ef7f796bc3f2bc59",
+        "kind": "source",
+        "project": "ippcrypto",
+        "family": "ippcrypto-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-source",
+        "sha256": "91bc47c7049ef73b6fd59b7b6f37efa071611d4c83859d382dde3a2df7d489ac",
+        "kind": "source",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-sm3-mips_be-O0",
+        "sha256": "93062c1d2dcce2f5a1839f0268a06aec1ad928cae7a716e468afabe996b5320f",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-aarch64-O2",
+        "sha256": "94c6dfa6bda1b04f83e1388579a75a9491248ec83875a9bc82e0681d21bf1515",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdh-arm-Os",
+        "sha256": "9712e1dedd27e3ad78e00033e612441e4f93c0bcec100a23ab6f2260bd94edb1",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-arm-O2",
+        "sha256": "9760a2a3f245b2c63ac4718cfb9e4aba773cf0f347a8b955a70bc0c26a467b9f",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdsa-common-thumb-O0",
+        "sha256": "978d69ae5c2e84f1a47efe8055eabd403b6d8b4e9a5cbeaa65ea114e0c7d7762",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libmcrypt-arcfour-x86_64-O0",
+        "sha256": "9e587832e68cc89b048059202458d6feaee6735624129fc7f5573517cc750d47",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libecc-ecdsa-common-mips_be-O2",
+        "sha256": "a1c4a648c4e0fdc40a28836e3c4bb424c6775e6c38dcee7e2f1f607595e961a6",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-x86_64-Os",
+        "sha256": "a53eb77c7f014a635f8e18667195e93333f1e4a929303083be21d4d9d6707cf5",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "arduinolibs-curve25519-arm-Os",
+        "sha256": "a55eea3f901ed59c144e499fb2e752d956fa77bf78177a0d93ef7f41ad124813",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-sm2-mipsel-Os",
+        "sha256": "a5f3f7ed40bb38c94e794379fe571943c388b25d28215b898c1bb0e8cbc3899f",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-arm-O0",
+        "sha256": "acddc10ef4578caec4d617125799d42cdda1741cd8de859e1178633830e2582f",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libecc-ecdh-mipsel-O2",
+        "sha256": "acecbca7ae81c794449fae60a31e4b8dffc74283cf5aa20adc2dac9d9a59495d",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-arm-O0",
+        "sha256": "adca2b0df4aa7b5614a1b13096ab8e134361a56ac8b3420ba23401b0608e648b",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "arduinolibs-curve25519-thumb-O0",
+        "sha256": "af32017c135118aed8802289e76b6bce1eecd7e321b7e62debd6362d859e9754",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-des-mips_be-Os",
+        "sha256": "b3eb92c5c745aff1f0e6e451ae8a3d6efe2d45ab8154cbe7d3cd20bb4243fee0",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "libmcrypt-des-x86_64-Os",
+        "sha256": "b45e05e97abe532e3230165dd05ec44c78684b5544a49b26a358fc24ea39fac3",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-arm-O2",
+        "sha256": "b5d27327be402b62cd6f34fef4d212a3cedf206e288347a9cc1c140a0beacc95",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-thumb-Os",
+        "sha256": "b85a3c166801127ecc0cbf34cec9d710f61c1b2af83eea94da92050363e725e9",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-arm-O0",
+        "sha256": "b9bebd00b4cc82e70f2c2f40878e7f8b44d43f599471ac81d0ceff562659c0c3",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mipsel-O0",
+        "sha256": "bb889bcc71caf384489898db75e5e9cb9292e92bebfdebc2793ff7d7a5f5a8c3",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-arcfour-arm-O0",
+        "sha256": "be98171fc190c2bbff788d55e862a4a2866f55146f058b9cf9c4c327679234a1",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libmcrypt-des-x86_64-O2",
+        "sha256": "c33a2ff1ad426091ce8db5ee7fdf3647815a3b0ff0555efbd6cdca3aa70bec43",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-mips_be-O0",
+        "sha256": "c34eba85f02886532450cf8159f11ff73390d23718470c107992bf63141f55dc",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-des-mipsel-Os",
+        "sha256": "ccd202d28ad32270e2963c783f1abf3b81765557e73f3ccf613af8edb1ebb2c5",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-arm-Os",
+        "sha256": "d0d0cd5064ac8008656d61840e7b22ccde8740e103e83430e43bffb5bda8d804",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libecc-sm3-x86_64-O0",
+        "sha256": "d508a2aaa4e03442ff9de803986d20300bf7e04a6c8a7207bef36f771d831d84",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm3",
+        "algorithm": "SM3"
+      },
+      {
+        "id": "libecc-ecdsa-common-mipsel-O2",
+        "sha256": "d5aeaee52924fc51d4ee2f077b07597c920f3e76ae7ec0668c7afef96f7c5907",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdsa-common",
+        "algorithm": "ECDSA"
+      },
+      {
+        "id": "libecc-sm2-mipsel-O2",
+        "sha256": "d6db24dfc4242c1e3bb1d8c4ea8b265679adef8f7ea6d914a225482d3ac55fb2",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-sm2",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-thumb-O2",
+        "sha256": "d761427bbb29d4933afb6076c3064c2d7616416848e1729ffa7b050d7ebd86c9",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "libecc-ecdh-mips_be-O2",
+        "sha256": "d98ee9d2a7fd97d89dda7f2e33e1ff2bcd5f3198294b06d99fbfd0330ad89d0b",
+        "kind": "executable",
+        "project": "libecc",
+        "family": "libecc-ecdh",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-aarch64-O2",
+        "sha256": "e988a7a0ffbef274df0d3b4573b5d835f06db63a5179bdcab2037d14594db2a2",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-arcfour-mips_be-Os",
+        "sha256": "e9c88352874247c1a1d1ced40916ee73e0dc5fa695feb4b7c317d09afb99f616",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libmcrypt-des-mips_be-O2",
+        "sha256": "ecc04ed9cac17d4e1ab5fec380be44e4fe26486cda2b130f8e62db98710992ac",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      },
+      {
+        "id": "gmssl-modern-sm2_exch-mipsel-Os",
+        "sha256": "f06c4da590610de838ac8c298f13cd7d559d26f12db14491be43a2f28560edaa",
+        "kind": "executable",
+        "project": "gmssl-modern",
+        "family": "gmssl-modern-sm2_exch",
+        "algorithm": "SM2"
+      },
+      {
+        "id": "arduinolibs-curve25519-x86_64-O0",
+        "sha256": "f23e1c97831dc0872242804cf2243cf02e8bdacc0b93b58be19af8f74d54b09b",
+        "kind": "executable",
+        "project": "arduinolibs",
+        "family": "arduinolibs-curve25519",
+        "algorithm": "ECDH"
+      },
+      {
+        "id": "libmcrypt-arcfour-mipsel-O0",
+        "sha256": "f5d2ccccdd1ef50008f4d4c8a950592e35f6b86ed400e3052b2f5357e6c39928",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-arcfour",
+        "algorithm": "RC4"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-arm-O2",
+        "sha256": "f6335afef2bf1f312dfc33c36baf2113f3eb36f22221dce9f245e8c2839e37a3",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-rijndael-128-x86_64-O2",
+        "sha256": "f7c497c0d85ac68309ffcede8fe78cbfd0f5b585fc200aa18e6f38d65097b448",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-rijndael-128",
+        "algorithm": "AES"
+      },
+      {
+        "id": "libmcrypt-des-arm-O2",
+        "sha256": "fedecb340ae52088853bd2ea3f119e51c53ea0533e2faddc3c8c19d3b47f76ba",
+        "kind": "executable",
+        "project": "libmcrypt",
+        "family": "libmcrypt-des",
+        "algorithm": "DES"
+      }
+    ],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {
+      "SM2": 23,
+      "ECDH": 28,
+      "RSA": 2,
+      "AES": 19,
+      "SM3": 10,
+      "DES": 9,
+      "ECDSA": 7,
+      "RC4": 10,
+      "SHA-1": 1
+    },
+    "denominator_unchanged": true,
+    "files": 2344,
+    "positive_labels": 1572
+  },
+  "source_context_effect": {
+    "before": {
+      "TP": 73,
+      "FP": 0,
+      "FN": 32,
+      "TN": 1607,
+      "recall": 0.6952380952380952,
+      "false_negative_rate": 0.3047619047619048,
+      "precision": 1.0
+    },
+    "after": {
+      "TP": 73,
+      "FP": 0,
+      "FN": 32,
+      "TN": 1607,
+      "recall": 0.6952380952380952,
+      "false_negative_rate": 0.3047619047619048,
+      "precision": 1.0
+    },
+    "gained_true_labels": [],
+    "lost_true_labels": [],
+    "gained_by_algorithm": {},
+    "denominator_unchanged": true,
+    "files": 154,
+    "positive_labels": 105
+  }
+}
